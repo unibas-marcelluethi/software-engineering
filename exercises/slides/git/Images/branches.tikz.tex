@@ -1,0 +1,16 @@
+\begin{tikzpicture}[startstop/.style={circle,
+                                        inner sep=0mm,outer sep=0,
+                                        draw=black, 
+										minimum width=0.25cm,
+                                      },
+					commitconnection/.style={
+									line width=0.25mm,	
+									->,
+									>=stealth
+									}
+                     ]
+\node[startstop,fill=yellow] (A) { };
+\node[left=1cm of A,left,align=left] {master};
+\node[startstop,below right=1cm of A,fill=red] (B) { };
+\node[below left=1cm of A,align=left] {feature \# 1};
+\end{tikzpicture}

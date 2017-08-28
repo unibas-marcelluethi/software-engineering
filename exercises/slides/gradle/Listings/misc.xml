@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<target name="jar" depends="build">
+...
+</target>
+
+<property name="srcDir" value="src" />
+<property name="buildDir" value="build" />
+
+<target name="compile">
+<javac srcdir="${srcDir}" destdir="${buildDir}/classes" />
+</target>
+
+<javac srcdir="." destdir="." />
+
+<mkdir dir="build" />
+
+<delete dir="build" />
+
+<java classname="core.Main" />

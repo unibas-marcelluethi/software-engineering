@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project name="projName" default="build" basedir=".">
+	<target name="clean">
+		<delete dir="build" />
+		<mkdir dir="build" />
+	</target>
+	<target name="build">
+		<mkdir dir="build/classes" />
+		<javac srcdir="src" destdir="build/classes" includes="**/*.java"/>
+	</target>
+	<target name="jar" depends="build">
+		<mkdir dir="build/jar" />
+		<jar destfile="build/jar/Demo.jar" basedir="build/classes">
+			<manifest>
+				<attribute name="Main-Class" value="AntDemo"/>
+			</manifest>
+		</jar>
+	</target>
+	<target name="run" depends="jar">
+		<java jar="build/jar/Demo.jar" fork="true" />
+	</target>
+</project>

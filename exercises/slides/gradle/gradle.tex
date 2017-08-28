@@ -1,0 +1,187 @@
+\documentclass{beamer}
+\usepackage{basileabeam}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ngerman}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{dirtree}
+\usepackage[normalem]{ulem}
+
+
+%notes
+%\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+% \setbeamertemplate{note page}[plain]
+% \setbeameroption{show notes on second screen=bottom}
+
+\title              {Gradle}
+
+\author             {Silvan Heller \textless silvan.heller@unibas.ch\textgreater}
+\email              {}
+\institute          {Department Mathematik \& Informatik, Universität Basel}
+
+\date               {HS17-- Software Engineering}
+
+
+\ulogo        		{Template/header}
+\ulistelement    	{Template/listelement}
+
+\graphicspath{{Figures/}}
+\definecolor{groovyblue}{HTML}{0000A0}
+\definecolor{groovygreen}{HTML}{008000}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+ 
+\lstdefinelanguage{Groovy}[]{Java}{
+  keywordstyle=\color{groovyblue}\bfseries,
+  stringstyle=\color{groovygreen}\ttfamily,
+  keywords=[3]{each, findAll, groupBy, collect, inject, eachWithIndex},
+  morekeywords={def, as, in, use},
+  moredelim=[is][\textcolor{darkgray}]{\%\%}{\%\%},
+  moredelim=[il][\textcolor{darkgray}]{§§}
+}
+\lstset{language=Groovy,showstringspaces=false}
+
+\begin{document}
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+\begin{frame}{Warum brauchen wir ein Build System?}
+	\begin{itemize}
+		\item \texttt{javac -cp libs/junit-4.5.jar:libs/slf4j-2.1.jar *.java \&\& jar cmf my\_manifest project *.class}
+		\item 'Manually add our 50 dependencies by hand via the user Interface of your IDE'
+		\item 'Before executing the tests, you need to manually run scripts/setup-test.sh' 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Manuelle Builds: Schwächen}
+	\begin{itemize}
+		\item Unübersichtlich
+		\item Systempfadabhängig
+		\item \texttt{javac} hat eine unübersichtliche Anzahl an Optionen
+		\item Wer ruft den Build Befehl auf? 
+		\item Manuelles Verwalten von verwendeten Libraries
+	\end{itemize}
+		\begin{center}
+			\begin{large}
+				Die Zeit des Entwicklers ist eine teure Ressource
+			\end{large}
+		\end{center}
+\end{frame}
+
+\begin{frame}{Warum nicht einfach Eclipse oder IntelliJ?}
+	Eclipse kann
+	\begin{itemize}
+		\item Automatisch jars erstellen
+	\end{itemize}
+	IDEs können meistens nicht (automatisch)
+	\begin{itemize}
+		\item Libraries verwalten
+		\item Optionen von \texttt{javac} abstrahieren
+		\item Von überall aufgerufen werden (ssh auf remote server)
+		\item Dependencies über mehrere Projekte cachen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Die Lösung}
+	\includegraphics[width=\linewidth]{logo_gradle.png}
+\end{frame}
+
+\begin{frame}{Gradle ist relevant!}
+	\begin{minipage}{0.49\linewidth}
+		\includegraphics[width=\linewidth]{logo-linkedin.png}
+	\end{minipage}
+	\begin{minipage}{0.49\linewidth}
+		\includegraphics[width=\linewidth]{logo-netflix.png}
+	\end{minipage}
+
+	\begin{minipage}{0.49\linewidth}
+		\includegraphics[width=\linewidth]{logo-adobe.png}
+	\end{minipage}
+	\begin{minipage}{0.49\linewidth}
+		\includegraphics[width=\linewidth]{logo-google.png}
+	\end{minipage}
+
+	\hspace*{2cm}\begin{minipage}{0.49\linewidth}
+		\includegraphics[width=\linewidth]{paypal_logo.jpg}
+	\end{minipage}
+\end{frame}
+\begin{frame}{Gradle: Aufbau}
+	\begin{itemize}
+		\item Gradle besteht aus zwei Teilen: \textbf{Projekten} und \textbf{Tasks}
+	\end{itemize}
+	\begin{description}
+		\item[Projekt] Sammlung von Aufgaben
+		\item[Task] Eine spezifische Aufgabe. Etwa das kompilieren einer Java Klasse 
+	\end{description}
+	\begin{itemize}
+		\item Gradle speichert alle Informationen in einer \textit{build.gradle} Datei 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Gradle: Ordnerstruktur}
+	Vorgeschlagene Ordnerstruktur
+	\dirtree{%
+	.1 src.
+	.2 main.
+	.3 resources.
+	.3 java.
+	.4 hello.
+	.5 SomeJavaFile.java.
+	.2 test.
+	.3 java.
+	.4 hello.
+	.5 SomeJavaFileTest.java.
+	.3 resources.
+	}
+\end{frame}
+
+\begin{frame}[fragile]{Gradle: Dependencies}
+	\begin{itemize}
+		\item Größere (Java) Projekte benötigen Libraries
+		\item Beispiele: HTTP, JSON, Logging, Testing, Math
+		\item[$\rightarrow$] Zentrales Repository mit verschiedenen Versionen der Library
+	\end{itemize}
+\begin{lstlisting}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile "joda-time:joda-time:2.2"
+    testCompile "junit:junit:4.12"
+    compile fileTree(dir: 'lib', include: ['*.jar'])  
+}
+\end{lstlisting}
+\begin{itemize}
+	\item \texttt{compile} und \texttt{testCompile} ermöglichen testspezifische Abhängigkeiten
+	\item Es können auch jars manuell eingebunden werden
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gradle: Wichtige Befehle (Standard)}
+	\begin{itemize}
+		\item Projekt bauen
+		\begin{itemize}
+			\item \texttt{gradle build}
+		\end{itemize}
+		\item Tests ausführen
+		\begin{itemize}
+			\item \texttt{gradle test}
+		\end{itemize}
+		\item Projekt bauen und ausführen
+		\begin{itemize}
+			\item \texttt{gradle run}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Gradle in Ganttproject}
+	\begin{itemize}
+		\item \sout{Vorgeschlagene Ordnerstruktur}
+		\item \sout{Dependency Management}
+		\item \sout{Gradle Wrapper}
+		\item Mehrere Subprojekte, jedes hat ein eigenes build.gradle file
+		\item Gradle wird zum builden verwendet und nicht / nur halb fürs dependency management
+		\item 'gradle runApp' zum starten
+	\end{itemize}
+\end{frame}
+\end{document}

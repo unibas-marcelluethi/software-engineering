@@ -1,0 +1,27 @@
+\begin{tikzpicture}[startstop/.style={circle,
+                                        inner sep=0mm,outer sep=0,
+                                        draw=black, 
+										minimum width=0.25cm,
+                                      },
+					commitconnection/.style={
+									line width=0.25mm,	
+									->,
+									>=stealth
+									}
+                     ]
+  \node[startstop,fill=yellow] (A)  { };
+  \node[startstop,below= 1cm of A,fill=yellow] (B)  { };
+  \node[startstop,below= 1cm of B,fill=yellow] (C) { };
+  \node[startstop,below right= 1.5cm of C,fill=red] (D) { };
+  \node[startstop,below= 1cm of C, fill=yellow] (E) { };
+  \node[startstop,below= 1cm of D, fill=red] (F) { };
+  \node[startstop,below left= 1.5cm of F, fill=orange] (G) { };
+  \draw [commitconnection]  (B) -- (C);
+  \draw [commitconnection]  (A) -- (B);
+  \draw [commitconnection, dashed]  (C) -- (D);
+  \draw [commitconnection] (C) -- (E);
+  \draw [commitconnection] (D) -- (F); 
+  \draw [commitconnection,dashed] (E) -- (G);
+  \draw [commitconnection,dashed] (F) -- (G);
+
+  \end{tikzpicture}

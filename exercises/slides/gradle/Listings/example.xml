@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+	<element attr="val" foo="1">
+		<child type="new">
+			<bar filled="false" />
+			<bar filled="true" />
+		</child>
+	</element>
+	<element attr="not" foo="3">
+		<child type="empty">
+	</child>
+</element>
+</root>
