@@ -21,9 +21,10 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 
 | Woche | Thema |
 | ------| ----- | 
-| 1  | Was ist Software engineering |
-|    | Warum brauchen wir Software engineering |
-|    | Kurze Geschichte des Software engineerings |
+| 1  | [Warum brauchen wir Software engineering](https://unibas-sweng.github.io/software-engineering/slides/01-why-software-engineering.html) |
+|    | [Was ist Software engineering](https://unibas-sweng.github.io/software-engineering/slides/01-what-is-sweng.html) |
+|    | [Kurze Geschichte des Software engineerings](https://unibas-sweng.github.io/software-engineering/slides/01-history.html) |
+|    | [Wie lese ich ein wissenschaftliches Paper](https://unibas-sweng.github.io/software-engineering/slides/01-how-to-read-a-paper.html)|
 | 2  | Eigenschaften von Software |
 |   | Software Qualit&auml;tsmerkmale | 
 |    | "No silver bullet" |
