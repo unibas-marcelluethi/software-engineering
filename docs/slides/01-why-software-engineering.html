@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Why software engineering</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/solarized.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<h1>
+					Warum Software Engineering?
+				</h1>
+				<p>
+					<small> Marcel L&uuml;thi </small>
+				</p>
+			</section>
+
+			<section>
+
+				<div style="width: 100%; vertical-align: top;">
+					<img src="./images/software-eating.jpg" style="width:100%;height:auto; float:center" />
+				</div>
+
+				<p style="font-size:large">
+					Source:
+					<a href="https://www.wsj.com/articles/SB10001424053111903480904576512250915629460">
+						Why Software is Eating the world
+					</a> Wall street journal
+				</p>
+
+
+			</section>
+
+
+			<section>
+
+					<h2>Bekannte Beispiele</h2>
+
+					<div style="width:80%; text-align:left; margin:0pt auto">
+					<ul>
+					<li> Buchhandel -> </li>
+					<li> Video -> </li>
+					<li> Entertainment -> </li>
+					<li> Filmindustrie -> </li>
+					<li> Recruiting -> </li>
+					<li> Finance -> </li>
+					<li> Transport -> </li>
+					<li> Hotel -> </li>
+				</ul>
+			</div>
+			</section>
+
+			<section>
+
+				<h2> Warum jetzt?</h2>
+
+				<div style="width:100%">
+					<ul>
+						<li> 70 Jahre computer </li>
+						<li> 50 Jahre Mikroprozessoren </li>
+						<li> 30 Jahre Internet </li>
+						<li> 30 Jahre Mobiltelefone </li>
+						<li> Internet of Things wird weitere Industriezweige revolutionieren</li>
+					</ul>
+				</div>
+
+				<br/>
+
+				<div style="float:center; border:solid;text-align:center; width:80%;margin:0px auto">
+					<ul>
+						<li>Die Technologien sind reif.</li>
+						<li>Die technische Infrastruktur besteht.</li>
+					</ul>
+				</div>
+
+			</section>
+
+
+			<section>
+				<h2>The mess we are in!</h2>
+
+				<div style="float:left; width:50%">
+					<figure>
+					<img src="images/buchstapel.png" class="plain"/>
+					<figcaption style="font-size:x-small">source: Flickr / FutUndBeidl / Colorful Books Stacked (Blender)</figcaption>
+					</figure>
+				</div>
+				<div style="float:right; width:50%">
+					<ul>
+						<li>Buch, 400 Seiten: 20'000 Zeilen Code </li>
+						<li>1 Meter Stapel, 1 Million Zeilen Code </li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>The mess we are in!</h2>
+
+				<div style="float:left; width:50%">
+					<figure>
+					<img src="images/roche-turm.jpg" style="height:10cm"/>
+					 <figcaption style="font-size:x-small">source: Wladyslaw Sojka, www.sojka.photo)</figcaption>
+					  </figure>
+					<p> Roche Turm: 178 m</p>
+				</div>
+				<div style="float:right; width:50%">
+
+					<ul>
+						 <li class="fragment"> Ganttproject : 120'000 Zeilen Code (6 B&uuml;cher)</li>
+						 <li class="fragment"> Firefox: 16 Millionen Zeilen Code </li>								  
+						 <li class="fragment"> Visual studio: 50 Millionen Zeilen Code </li>
+						 <li class="fragment"> Modernes Auto 100 Millionen Zeilen Code </li>
+    					 <li class="fragment"> Google 2'000 Millionen Zeilen Code </li>						  
+					</ul>
+				</div>
+
+				<div style="float:center; width:100%; text-align:center"; >
+				<ul class="fragment">
+					<br/>
+					<small>
+					<li>(Lustiges) Video zum Thema: Joe Armstrong - 
+						<a href="https://www.youtube.com/watch?v=lKXe3HUG2l4">The mess we are in</a> 
+					</li>
+					</small>
+				</ul>
+				</div>
+
+			</section>
+
+
+			<section>
+				<h2>Ein Problem </h2>
+					<div style="float:right; width:30%">
+					<figure>
+						<img src="images/huge-bookstack.jpg"/>
+						<figcaption style="font-size:x-small">source: https://www.pinterest.com/pin/438256607464529059/</figcaption>
+					</figure>
+					</div>
+					<div style="float:left; width:70%">
+						<p style="text-align: left">Wie versteht man ein Programm mit 2'000'000'000 Zeilen code ? </p>
+					<ul> 						
+						<li> Wie macht man &Auml;nderungen ohne das ganze System zu kennen?</li>
+						<li> Wie findet man Fehler </li>
+						<li> Wie kann man testen? </li>
+					</div>
+			</section>
+				
+			<section>
+				<h2> Ein grosses Problem </h2>
+					<figure>
+						<img src="images/radio-therapy.jpg" class="plain" width="50%"/>
+						<figcaption style="font-size:x-small">By Michael Goodyear - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61844004</figcaption>
+						</figure>
+	
+
+					<p> Von Software h&auml;ngen Menschenleben ab. </p>
+
+			</section>
+
+
+			<section>
+				<h2> L&ouml;sungsansatz: Gutes Engineering</h2>
+
+					<figure>
+						<img src="images/bridge.jpg" class="plain" width="50%" />
+						<figcaption style="font-size:x-small">By The original uploader was Sam at English Wikipedia - Transferred from en.wikipedia to Commons., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3891004</figcaption>
+					</figure>
+
+					<p> Design und Struktur helfen uns auch komplexe Artefakte zu verstehen. </p>
+
+			</section>
+
+			<section>
+				<h2>Unit tests</h2>
+				<ul>
+					<li> Weshalb wird Software immer wichtiger?
+					<li> Was sind die Herausforderungen bei riesigen Codebasen?</li>
+					<ul>
+						<li> Wie unterscheiden sich diese vom Verstehen eines kleinen Programms? </li> 
+					</ul>
+				</ul>
+			</section>
+
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				chalkboard: {
+					src: "chalkboard.json",
+					readOnly: undefined,
+					transition: 800,
+					theme: "whiteboard",
+					//toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+					//toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+					// configuration options for notes canvas and chalkboard
+					color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+					background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+					pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+				},
+				dependencies: [{
+						src: 'plugin/markdown/marked.js'
+					},
+					{
+						src: 'plugin/markdown/markdown.js'
+					},
+					{
+						src: 'plugin/notes/notes.js',
+						async: true
+					},
+					{
+						src: 'plugin/chalkboard/chalkboard.js'
+					},
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						callback: function() {
+							hljs.initHighlightingOnLoad();
+						}
+					}
+				],
+				keyboard: {
+					67: function() {
+						RevealChalkboard.toggleNotesCanvas()
+					}, // toggle notes canvas when 'c' is pressed
+					66: function() {
+						RevealChalkboard.toggleChalkboard()
+					}, // toggle chalkboard when 'b' is pressed
+					46: function() {
+						RevealChalkboard.clear()
+					}, // clear chalkboard when 'DEL' is pressed
+					8: function() {
+						RevealChalkboard.reset()
+					}, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+					68: function() {
+						RevealChalkboard.download()
+					}, // downlad recorded chalkboard drawing when 'd' is pressed
+				},
+			});
+	</script>
+</body>
+
+</html>
