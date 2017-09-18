@@ -2,8 +2,9 @@
 
 ## Administratives
 
-*Abgabe:* Bearbeiten bis 27. September 2017. Abgabe zusammen mit n&auml;chster &Uuml;bung bis 3. Oktober 2017 via Pullrequest
- auf Github. Details finden Sie auf dem n&auml;chsten &Uuml;bungsblatt.
+* Dieses &Uuml;bungsblatt sollte bis  27. September 2017 bearbeitet werden.  
+* Fragen und Probleme k&ouml;nnen in der  &Uuml;bungsstunde am 27. September besprochen werden.   
+* Es ist keine Abgabe erforderlich
 
 ## Einf&uuml;hrung
 
@@ -12,7 +13,7 @@ In dieser ersten &Uuml;bung werden Sie die Umgebung (Werkzeuge, Entwicklungsumge
 
 ## Vorbereitung
 
-Falls sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen sie bitte einen. Teilen sie mir Ihren Benutzernamen via Mail mait(marcel.luethi@unibas.ch), damit wir Ihnen Zugriff auf das Code-Repository geben k&ouml;nnen.  
+Falls sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen sie bitte einen. Teilen sie mir Ihren Benutzernamen via Mail an marcel.luethi@unibas.ch mit, damit wir Ihnen Zugriff auf das Code-Repository geben k&ouml;nnen.  
 
 ## Installation der Werkzeuge
 
@@ -29,26 +30,6 @@ git --version
 sollte die Version von Git ausgeben, also z.B.
 ```
 > git version 1.9.5.msysgit.1
-```
-
-### Gradle
-
-Installieren sie das Buildsystem [Gradle](https://gradle.org/). Informationen zu Download und Installation finden sie auf der Gradle [Homepage](https://gradle.org/).
-
-
-#### Test der Installation
-
-&Ouml;ffnen sie eine Konsole. Eingabe von
-``` 
-gradle --version 
-```
-sollte die Version von Grade ausgeben, also z.B.
-```
------------------------------------
-Gradle 3.5
------------------------------------
-...
-...
 ```
 
 ### IntelliJ Idea
@@ -82,23 +63,29 @@ git clone THE_URL_FOR_YOUR_PROJECT ganttproject
 
 ### Kompilieren des Projekts von der Kommandozeile
 
-Bevor wir das Projekt in der IDE bearbeiten, 
+Bevor wir das Projekt in der IDE bearbeiten, versuchen wir es zuerst von der Kommandozeile zu kompilieren und auszuf&uuml;hren. 
+
+Dazu wechseln sie zuerst in das Verzeichnis ```ganttproject-builder```:
 
 ```
 cd ganttproject
 cd ganttproject-builder
 ```
 
-```
-gradle updateLibs
-gradle distBin
-```
-
-Starten
+Dann f&uuml;hren sie folgende Kommandos aus (unter Windows muss ./ durch .\ ersetzt werden):
 
 ```
-gradle runApp
+./gradlew updateLibs
+./gradlew distBin
 ```
+
+Diese Befehle holen sich die ben&ouml;tigten Bibliotheken aus dem Internet und kompilieren das Projekt. 
+
+Mit dem Befehl
+```
+./gradlew runApp   
+```
+k&ouml;nnen wir das Projekt dann starten. 
 
 ### Bearbeiten des Projekts in der IDE
 
