@@ -93,7 +93,7 @@ Wir werden in diesem Kurs haupts&auml;chlich von der IDE arbeiten. Um das Projek
 ```
 ganttproject\ganttproject-builder\build.gradle
 ```
-Die Datei &ouml;ffnen sie mittels ```File->Open``` oder dem ```Open``` Button auf der Startscreen von Idea.
+Die Datei &ouml;ffnen sie mittels ```File->Open``` oder dem ```Open``` Button auf dem Startscreen von Idea.
 
 
 W&auml;hlen sie nun "Open as project". Sie sollten nun mit dem Projekt arbeiten k&ouml;nnen. Um das Projekt zu kompilieren, w&auml;hlen sie ```Build->Build Project```. 
