@@ -73,7 +73,7 @@ Auf der folgenden Seite k&ouml;nnen sie nun ihre &Auml;nderung kurz beschreiben,
 ![image](images/github-pr.png)
 Danach schliessen sie den Pull Request ab indem sie   ```Create Pull Request``` w&auml;hlen.
 
-Damit werden die von ihnen angegebenen Review dar&uuml;ber informiert, dass sie gerne ihren Code in den ```master``` Branch mergen wollen, und das sie den Code gerne zuvor gereviewed habe m&ouml;chten. In einem richtigen Projekt hätten die Reviewer nun die Aufgabe, die Codequalit&auml;t zu pr&uuml;fen bevor der Code in den Zielbranch gemerged wird. Die Reviewer k&ouml;nnten gegebenenfalls auch &Auml;nderungen verlangen. 
+Damit werden die von ihnen angegebenen Reviewers dar&uuml;ber informiert, dass sie gerne ihren Code in den ```master``` Branch mergen wollen, und das sie den Code gerne zuvor gereviewed habe m&ouml;chten. In einem richtigen Projekt hätten die Reviewer nun die Aufgabe, die Codequalit&auml;t zu pr&uuml;fen bevor der Code in den Zielbranch gemerged wird. Die Reviewer k&ouml;nnten gegebenenfalls auch &Auml;nderungen verlangen. 
 
 In unserem Fall dient der Pull Request als Abgabe und erlaubt uns Ihre &Auml;nderungen komfortabel durchzuschauen. Sie erhalten das Feedback dann direkt via Github. 
 
