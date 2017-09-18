@@ -51,9 +51,16 @@ Falls sie bereits Zugriff haben, sollte die Seite wie folgt aussehen:
 
 Sie k&ouml;nnen das Projekt forken indem sie oben rechts auf den "Fork" Button klicken.    Nach erfolgreichem Fork landen sie nun auf ihrer pers&ouml;nlichen Kopie des Projekts, auf der sie von nun an arbeiten werden. 
 
+##### Setzen der Projektzugriffsrechte
+
+Wird ein Fork eines Projekts erstellt, wird nicht nur das ganze Coderepository, sondern auch alle Zugriffsrechte kopiert. Da alles Studierenden im Kurs auf das Original Repository zugreifen konnten, ist das also nun auch bei ihrem Repository der Fall. Deshalb m&uuml;ssen sie im n&auml;chsten Schritt noch die Zugriffsrechte anpassen. 
+Dazu gehen sie auf ```Settings->Collaborators & Teams``` und entfernen das Team ```students``` durch Klicken auf das kleine Kreuz (siehe Screenshot).
+
+![image](images/github-collaborators.png)
+
 ### Klonen des Projekts
 
-Damit sie an dem Projekt arbeite k&ouml;nnen m&uuml;ssen sie das Repository noch auf Ihren eigenen Computer bringen (d.h. das Repository "klonen"). Dr&uuml;cken sie den gr&uuml;nen Button "Clone or Download" und kopieren sie die URL.
+Damit sie an dem Projekt arbeiten k&ouml;nnen m&uuml;ssen sie das Repository noch auf Ihren eigenen Computer bringen (d.h. das Repository "klonen"). Dr&uuml;cken sie den gr&uuml;nen Button "Clone or Download" und kopieren sie die URL.
  
 &Ouml;ffnen sie eine Konsole, welchseln sie in ihr gew&uuml;nschtes Arbeitsverzeichnis und geben sie folgendes ein:
 
