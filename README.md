@@ -60,6 +60,11 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |  2    | Ganttproject: Erste &Auml;nderungen | |
 |       | &Uuml;bungsblatt 2: Modularisierung | |
 
+#### Slides zu &Uuml;bungswerkzeugen
+| Woche | Thema |
+| ----- | ----- |
+| 1     | Git [(pdf)](https://unibas-sweng.github.io/software-engineering/exercises/slides/git/git.pdf)|
+|      | Gradle [(pdf)](https://unibas-sweng.github.io/software-engineering/exercises/slides/gradle/gradle.pdf) |
 
 ## Literatur / Weiterf&uuml;hrende Links
 
