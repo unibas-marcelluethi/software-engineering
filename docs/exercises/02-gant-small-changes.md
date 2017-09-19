@@ -48,7 +48,7 @@ Jede &Auml;nderung soll jeweils einem separatem Commit entsprechen. Von der Komm
 ```
 git commit -a -m "Ihre message"
 ```
-alle &Auml;nderungen commiten. Bitte schreiben Sie sinnvolle Commit Messages, die Ihre &Auml;nderungen gut beschreiben. Einige Hinweise wie gute Commit Messages aussehen sollen finden sie in diesem [Artikel](https://chris.beams.io/posts/git-commit/).
+alle &Auml;nderungen commiten. Bitte schreiben Sie sinnvolle Commit Messages, die Ihre &Auml;nderungen gut beschreiben. Einige Hinweise wie gute Commit Messages aussehen sollen finden sie in diesem [Artikel](https://chris.beams.io/posts/git-commit/). Ausserdem könnte dieses [Cheat Sheet](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf) zu IntellijIDEA von nutzen sein.
 
 
 ## Abgabe
