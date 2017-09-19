@@ -57,7 +57,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | ------| ----- | -------- | 
 |  1    | Ganttproject: Projekt Setup [(html)](https://unibas-sweng.github.io/software-engineering/exercises/01-gant-setting-up-the-environment.html) | 26. September 2017 |
 |       | &Uuml;bungsblatt 1: No Silver bullet [(html)](https://unibas-sweng.github.io/software-engineering/exercises/01-theory-no-silver-bullet.html)| 26. September 2017|
-|  2    | Ganttproject: Erste &Auml;nderungen | |
+|  2    | Ganttproject: Erste &Auml;nderungen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/02-gant-small-changes.html) |
 |       | &Uuml;bungsblatt 2: Modularisierung | |
 
 #### Slides zu &Uuml;bungswerkzeugen
