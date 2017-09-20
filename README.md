@@ -1,5 +1,5 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Gitter](https://badges.gitter.im/unibas-sweng/ganttproject.svg)](https://gitter.im/unibas-sweng/ganttproject?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/unibas-sweng/discussion.svg)](https://gitter.im/unibas-sweng/discussion?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # 10915-01: Software Engineering
 
