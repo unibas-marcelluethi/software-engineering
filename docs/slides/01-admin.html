@@ -1,0 +1,526 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Software Engineering</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/solarized.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>
+					Software Engineering
+				</h1>
+				<p>
+					<small> <u>Marcel</u> L&uuml;thi </br> 
+						Departement Mathematik und Informatik </small>
+				</p>
+				<p>
+					<image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+				</p>
+
+			</section>
+
+			<section>
+				<h2> Meine Vorstellung vom Kurs </h2>
+				Nicht so:
+				<figure>
+					<img src="images/drill-seargent.jpg" />
+					<figcaption style="font-size:x-small">Source: https://www.army.mil/article/155161/Marching_in_formation</figcaption>
+			</section>
+
+			<section>
+				<h2> Meine Vorstellung vom Kurs </h2>
+
+				Sondern so:
+				<figure>
+					<img src="images/cycling.jpg" style="width:50%" />
+					<figcaption style="font-size:x-small">By Maratona dles Dolomites Committee Photographer - Maratona dles Dolomites Committee, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=5908396</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2> Plan f&uuml;r heute</h2>
+				<ul>
+					<li> Allgemeines zum Kurs</li>
+					<li> Warum brauchen wir Software Engineering</li>
+					<li> Was ist Software Engineering</li>
+					<li> Lesen wissenschaftlicher Artikel </li>
+					<li> Ev. Geschichte des Software Engineerings</li>
+				</ul>
+			</section>
+
+			<section class="center">
+				<h2>
+					- Allgemeines zum Kurs -
+				</h2>
+				<p>
+					<small> Marcel L&uuml;thi </br> 
+						Departement Mathematik und Informatik </small>
+				</p>
+				<p>
+					<image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+				</p>
+
+			</section>
+
+
+
+			<section>
+				<h2>Wer bin ich?</h2>
+
+				<div style="text-align: left; margin-left: 5%">
+					<ul>
+						<li>
+							<u>Marcel</u> L&uuml;thi </li>
+						<li> Dozent 75 % (seit August) </li>
+						<li> Mitarbeiter in der Graphics and Vision Research Group </li>
+						<ul>
+							<li> Forschung im Bereich Medizinischer Bildanalyse </li>
+						</ul>
+					</ul>
+					<blockquote class="fragment">Mein erster Kurs auf Bachelorniveau.</blockquote>
+				</div>
+
+			</section>
+
+			<section>
+				<h2>Mini CV</h2>
+
+				<div style="text-align: left; margin-left: 5%; font-size:24pt">
+					<table style="width:100%">
+						<tr>
+							<th>Jahr</th>
+							<th>Funktion</th>
+						</tr>
+						<tr>
+							<td>1994-1997</td>
+							<td>Kaufm&auml;nnische Berufslehre</td>
+						</tr>
+						</tr>
+						<tr>
+							<td>1997-2002</td>
+							<td>Anwendungsentwicklung UBS <br/>(E-banking)</td>
+						</tr>
+						<tr>
+							<td>1999-2003</td>
+							<td>Informatikstudium FH Bern</td>
+						</tr>
+						<tr>
+							<td>2003-2005</td>
+							<td>Master in Ingenieursmathematik <br/> Chalmers Tekniska H&ouml;gskolan</td>
+						</tr>
+						<tr>
+							<td>2006-2017</td>
+							<td>Forschung im Bereich Medizinische Bildanalyse</td>
+						</tr>
+
+					</table>
+				</div>
+
+			</section>
+
+
+			<section>
+				<h2>Open source</h2>
+
+				<div style="text-align: center; margin-left: 5%; font-size:24pt;align-content:center ">
+
+					<figure>
+						<img src="images/scalismo-ui.png" style="width:50%" />
+						<figcaption><small>https://github.com/unibas-gravis/scalismo</small></figcaption>
+					</figure>
+				</div>
+
+				<ul>
+					<li>Framework zur Modell-basierten Bildanalyse</li>
+					<li>Programmiert in Scala</li>
+				</ul>
+
+			</section>
+
+			<section>
+				<h2>Tutoren</h2>
+
+				<div style="float:left; word-wrap:break-word; width:50%; text-align:center">
+					<img src="images/silvan.jpg" , style="height:10cm">
+					<p>Silvan Heller</p>
+
+				</div>
+				<div style="float:right; word-wrap:break-word; width:50%; text-align:center">
+					<img src="images/marvin.jpg" , style="height:10cm">
+					<p>Marvin Buff</p>
+				</div>
+
+			</section>
+
+
+			<section class="center">
+				<h2>Kursziele</h2>
+
+			</section>
+
+
+			<section>
+				<h2>Bauen</h2>
+
+				<div style="float:left; width:55%; vertical-align: top;">
+					<img src="./images/kheops.jpg" style="width:auto; float:center" />
+				</div>
+				<div style="float:right;width:45%">
+					<p style="text-align:left">
+						<ul>
+							<li>Gebaut ca 2500 a.d. </li>
+							<li>H&ouml;he: 146m </li>
+							<li> Arbeiter: Hundertausende </li>
+							<li> Bauzeit: 20 Jahre </li>
+					</p>
+
+				</div>
+
+
+			</section>
+
+
+			<section>
+				<h2>Engineering</h2>
+
+				<div style="float:left; width: 60%; vertical-align: top; ">
+					<img src="./images/empire-state.jpg" style="width:auto; float:center" />
+				</div>
+				<div style="float:right; width: 40%">
+					<ul>
+						<li> Gebaut 1930 </li>
+						<li> H&ouml;he: 381m </li>
+						<li> Arbeiter: ca. 3000 </li>
+						<li> Bauzeit: 11 Monate </li>
+					</ul>
+				</div>
+			</section>
+
+			<!--
+			<section>
+				<h2>Software engineering</h2>
+
+
+
+				<div style="text-align:center;width:90%;">
+					Die Anwendung von Methoden und Prinizipen des Ingenieurswesens auf die Softwareentwicklung.
+				</div>
+
+			</section>
+		-->
+
+
+			<section>
+				<h2>Kursziele (1)</h2>
+
+				<blockquote class="center"> Softwareentwicklung als Ingenieursdisziplin zu verstehen</blockquote>
+			</section>
+
+
+			<section>
+				<h2>Software engineering?</h2>
+
+				<img src="images/allan-kay.jpg" style="width:50%" />
+				<p> <small>&quot;Quite a bit of today's software and its construction process resemble the Egyptian pyramid,
+				but I would dare to say no one currently knows how to organize 3000 programmers to make a
+				major piece of software from scratch in less than 11 months.&quot; </small> </p>
+				<p style="text-align:right"> <small> Alan Kay, 2001 </small> </p>
+
+			</section>
+
+
+
+
+			<section>
+				<h2>Kursziele (2)</h2>
+
+				<blockquote>
+					Schwierigkeiten und Limitierungen in der Softwareentwicklung zu verstehen.
+				</blockquote>
+
+			</section>
+
+			<section>
+				<h2>Pop culture</h2>
+				<p style="font-size:smaller">
+					Computing spread out much, much faster than educating unsophisticated people can happen. In the last 25 years or so, we actually
+					got something like a pop culture, similar to what happened when television came on the scene and some of its inventors
+					thought it would be a way of getting Shakespeare to the masses. But they forgot that you have to be more sophisticated
+					and have more perspective to understand Shakespeare. What television was able to do was to capture people as they were.
+					So I think the lack of a real computer science today, and the lack of real software engineering today, is partly due
+					to this pop culture.
+					<p>
+						<p style="text-align:right"><small>Allan Kay, 2004</small></p>
+			</section>
+
+
+			<section>
+				<h2>Kursziele (3)</h2>
+
+				<blockquote>
+					<ul>
+						<li>Die Fundamente und Geschichte von Software Engineering kennenzulernen</li>
+						<li>Lernen &quot; Modeerscheinungen &quot; von fundamentalen Konzepten zu unterscheiden.</li>
+					</ul>
+				</blockquote>
+			</section>
+
+
+			<section>
+				<h2>Geschichte</h2>
+
+				<div style="text-align:center;width:100%;">
+					<img src="images/paper.png" style="width:60%" />
+				</div>
+
+				<div style="text-align:center;width:100%;">
+					<p> Experiment: Lesen und diskutieren von wichtigen wissenschaftlichen Artikeln</p>
+				</div>
+
+			</section>
+
+
+
+			<section>
+				<h2>Praktische Anwendung</h2>
+
+
+				<div style="float:center;text-align:center">
+					<img src="images/ganttproject.png" style="height:10cm" />
+				</div>
+
+				<ul>
+					<li>Praktische Arbeiten an einem Open Source Projekt</li>
+					<li>Benutzung moderner Methoden / Werkzeuge </li>
+				</ul>
+
+			</section>
+
+			<section>
+				<h2> Plan </h2>
+				<img src="images/outline.png" style="height:400pt" />
+			</section>
+
+
+
+			<section>
+				<h2>Literatur</h2>
+
+				<div style="float:left; width:50%;word-wrap:break-word">
+					<p>Empfehlung: <br/> (&Auml;lter aber gut) </p>
+					<img src="images/ghezzi.jpg" style="height:8cm">
+				</div>
+
+				<div style="float:right; width:50%;word-wrap:break-word">
+					<p>Aktuelles Standardwerk <br> (Kompendium)</p>
+					<img src="images/pfleeger.jpg" style="height:8cm">
+				</div>
+				<div style="width:100%">
+					<ul>
+						<li>Weitere Literaturhinweise auf Kurswebpage</li>
+					</ul>
+				</div>
+
+
+			</section>
+
+			<!--
+				<section>
+				<h2> Notizenpool? </h2>
+
+				<ul>
+					<li> Leider gibt es noch kein Kursskript </li>
+					<li> Ich werde meine Notizen verf&uuml;gbar machen</li>
+				</ul>
+				<blockquote>
+					Wir k&ouml;nnten Notizenpool organisieren.
+				</blockquote>
+
+			</section>
+-->
+			<!--
+			<section>
+				<h2>Meine Idealvorstellung von der Vorlesung </h2>
+
+				<div style="width:100%">
+					<img src="images/hiking.png", style="width:80%">
+				</div>
+			</section>
+		-->
+			<section>
+				<h2>Vorlesungszeiten</h2>
+
+				<ul>
+					Vorlesungen:
+					<ul>
+						<li> Mittwoch: 8.15 - 10.00 </li>
+						<li> Seminarraum 05.002, Spiegelgasse 5 </li>
+					</ul>
+
+					&Uuml;bungen:
+					<ul>
+						<li> Mittwoch: 13:15-15.00</li>
+						<li>
+							<mark class="highlight"> Seminarraum 05.002 </mark>, Spiegelgasse 5 </li>
+					</ul>
+				</ul>
+
+			</section>
+
+			<section>
+				<h2>&Uuml;bungen</h2>
+
+				<ul>
+
+					<li>Praktische Arbeiten an Ganttproject</li>
+					<li>Theoriefragen und lesen von Artikeln</li>
+				</ul>
+
+				<div style="float:left;text-align:center;width:50%">
+					<img src="images/ganttproject.png" />
+				</div>
+
+				<div style="float:right;text-align:center;width:50%">
+					<img src="images/paper.png" />
+				</div>
+
+				<p style="clear:both">
+					Aufwand: ca. 6 Stunden pro Woche.
+				</p>
+
+			</section>
+
+
+			<section>
+				<h2>Leistungs&uuml;berpr&uuml;fung</h2>
+
+				<div style="border-width:2pt;border-style:solid">
+					<p>Schriftliche Pr&uuml;fung am
+						<mark class="highlight">17.1.2018</mark> Semesters.</p>
+				</div>
+				<br/>
+				<ul>
+					<li>Aktive Teilnahme an den &Uuml;bungen</li>
+					<ul>
+						<li>Mindestens 75 % der &Uuml;bungen eingereicht</li>
+					</ul>
+					<li>Mitarbeit am Programmierprojekt</li>
+
+				</ul>
+				<div style="width:100%">
+					<p>
+						Anmeldung unter <a href="https://services.unibas.ch/">https://courses.cs.unibas.ch/</a>
+						<p>
+				</div>
+			</section>
+
+			<section>
+				<h2>Laptops </h2>
+
+				<a href="http://faculty.missouri.edu/segerti/1000/LaptopClassroomUse.pdf"><img src="images/logged-in-zoned-out.png" style="width:100%"> </a>
+
+			</section>
+
+
+			<section>
+				<h2>Kurswebpage</h2>
+				<div class="stretch">
+					<a href="https://github.com/unibas-sweng/software-engineering">
+					<img src="images/course-webpage.png" />
+					</a>
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			center: false,
+			chalkboard: {
+				src: "chalkboard.json",
+				readOnly: undefined,
+				transition: 800,
+				theme: "whiteboard",
+				//toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				//toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				// configuration options for notes canvas and chalkboard
+				color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+				background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+				pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+			},
+			dependencies: [{
+				src: 'plugin/markdown/marked.js'
+			},
+			{
+				src: 'plugin/markdown/markdown.js'
+			},
+			{
+				src: 'plugin/notes/notes.js',
+				async: true
+			},
+			{
+				src: 'plugin/chalkboard/chalkboard.js'
+			},
+			{
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				callback: function () {
+					hljs.initHighlightingOnLoad();
+				}
+			}
+			],
+			keyboard: {
+				67: function () {
+					RevealChalkboard.toggleNotesCanvas()
+				}, // toggle notes canvas when 'c' is pressed
+				66: function () {
+					RevealChalkboard.toggleChalkboard()
+				}, // toggle chalkboard when 'b' is pressed
+				46: function () {
+					RevealChalkboard.clear()
+				}, // clear chalkboard when 'DEL' is pressed
+				8: function () {
+					RevealChalkboard.reset()
+				}, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+				68: function () {
+					RevealChalkboard.download()
+				}, // downlad recorded chalkboard drawing when 'd' is pressed
+			},
+		});
+	</script>
+</body>
+
+</html>
