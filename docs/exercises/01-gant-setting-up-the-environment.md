@@ -15,7 +15,7 @@ In dieser ersten &Uuml;bung werden Sie die Umgebung (Werkzeuge, Entwicklungsumge
 
 Falls sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen sie bitte einen. Teilen sie mir Ihren Benutzernamen via Mail an marcel.luethi@unibas.ch mit, damit wir Ihnen Zugriff auf das Code-Repository geben k&ouml;nnen.  
 
-Loggen sie sich auf [Gitter](https://gitter.im) mit Ihrem Github-Account ein. Wir können Sie dann zum Gitter-Chatroom hinzufügen.
+Treten sie dem [Gitter Chatroom](https://gitter.im/unibas-sweng/discussion?utm_source=share-link&utm_medium=link&utm_campaign=share-link) bei.
 
 ## Installation der Werkzeuge
 
