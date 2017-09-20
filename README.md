@@ -1,4 +1,5 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Gitter](https://badges.gitter.im/unibas-sweng/ganttproject.svg)](https://gitter.im/unibas-sweng/ganttproject?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # 10915-01: Software Engineering
 
@@ -57,7 +58,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | ------| ----- | -------- | 
 |  1    | Ganttproject: Projekt Setup [(html)](https://unibas-sweng.github.io/software-engineering/exercises/01-gant-setting-up-the-environment.html) | 26. September 2017 |
 |       | &Uuml;bungsblatt 1: No Silver bullet [(html)](https://unibas-sweng.github.io/software-engineering/exercises/01-theory-no-silver-bullet.html)| 26. September 2017|
-|  2    | Ganttproject: Erste &Auml;nderungen | |
+|  2    | Ganttproject: Erste &Auml;nderungen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/02-gant-small-changes.html) |
 |       | &Uuml;bungsblatt 2: Modularisierung | |
 
 #### Slides zu &Uuml;bungswerkzeugen
