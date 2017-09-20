@@ -3,7 +3,7 @@
 
 # 10915-01: Software Engineering
 
-Departement Mathematik und [Informatik](https://informatik.unibas.ch), Universit&auml;t Basel
+Departement Mathematik und [Informatik](http://informatik.unibas.ch/), Universit&auml;t Basel
 
 Dozent: Marcel L&uuml;thi (<marcel.luethi@unibas.ch>)
 
