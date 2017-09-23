@@ -22,7 +22,7 @@ Frederick Brooks ist ein US-amerikanischer Informatiker. Bekannt wurde Brooks zu
 *Beachten sie:* Kurze Antworten (2-3 S&auml;tze pro Frage) sind vollkommen ausreichend.  
 
 
-* Was meint der Autor mit der Aussage "there is no Silver Bullet?
+* Was meint der Autor mit der Aussage "there is no Silver Bullet"?
 
 * Beschreiben sie kurz den Unterschied zwischen "Accidental complexity" und "Essential complexity" anhand eines konkreten Beispiels.
 
