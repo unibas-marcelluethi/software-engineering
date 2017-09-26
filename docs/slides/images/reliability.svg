@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="617.74915"
+   height="386.69809"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="reliability.svg"
+   inkscape:export-filename="/home/luetma00/documents/teaching/sweng/theory/lecture2/images/reliability.png"
+   inkscape:export-xdpi="113.86"
+   inkscape:export-ydpi="113.86">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.87885424"
+     inkscape:cx="15.511323"
+     inkscape:cy="166.49226"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1374"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-93.90607,-220.10962)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#27c0ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2985"
+       sodipodi:cx="467.65433"
+       sodipodi:cy="435.08121"
+       sodipodi:rx="256.01514"
+       sodipodi:ry="170.10785"
+       d="m 723.66946,435.08121 c 0,93.94797 -114.62188,170.10785 -256.01513,170.10785 -141.39326,0 -256.01514,-76.15988 -256.01514,-170.10785 0,-93.94797 114.62188,-170.10785 256.01514,-170.10785 141.39325,0 256.01513,76.15988 256.01513,170.10785 z"
+       transform="matrix(1.204116,0,0,1.133285,-160.31292,-79.608845)"
+       inkscape:export-xdpi="113.86"
+       inkscape:export-ydpi="113.86" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#e6e6e6;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3755"
+       sodipodi:cx="492.68692"
+       sodipodi:cy="447.5975"
+       sodipodi:rx="170.67677"
+       sodipodi:ry="85.907303"
+       d="m 663.36369,447.5975 c 0,47.4453 -76.41459,85.90731 -170.67677,85.90731 -94.26218,0 -170.67677,-38.46201 -170.67677,-85.90731 0,-47.44529 76.41459,-85.9073 170.67677,-85.9073 94.26218,0 170.67677,38.46201 170.67677,85.9073 z"
+       transform="matrix(0.99969698,0,0,1.217941,-64.707878,-137.94337)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3759"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       transform="translate(-64.857171,-21.619057)"><flowRegion
+         id="flowRegion3761"><rect
+           id="rect3763"
+           width="237.80963"
+           height="68.270706"
+           x="390.28088"
+           y="398.10126"
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial" /></flowRegion><flowPara
+         id="flowPara3765"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">Korrekt</flowPara></flowRoot>    <flowRoot
+       transform="translate(-120.64963,117.0853)"
+       xml:space="preserve"
+       id="flowRoot3759-3"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"><flowRegion
+         id="flowRegion3761-6"><rect
+           id="rect3763-7"
+           width="301.52896"
+           height="67.132843"
+           x="390.28088"
+           y="398.10126"
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial" /></flowRegion><flowPara
+         id="flowPara3765-5"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">Zuverlässig</flowPara></flowRoot>  </g>
+</svg>

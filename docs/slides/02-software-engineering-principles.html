@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Software engineering principles</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section  class="center">
+                <h2>
+                 Grundprinzipien des Software engineerings
+                </h2>
+                <p>
+                        <p>
+                            <small> Marcel L&uuml;thi </br> 
+                                        Departement Mathematik und Informatik </small>
+                        </p>
+                        <p>
+                            <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                        </p>
+                    </p>
+            </section>
+
+            <section>
+                <h3>Prinzip</h3>
+
+                <blockquote>
+                    Allgemeingültige Regel, Grundlage, auf der etwas aufgebaut ist; Grundregel; Grundsatz
+                    <br/>
+                    <div style="text-align:right"> - Duden </div>
+                </blockquote>
+
+                <ul class="fragment">
+                    <li>Technolgien in der Informatik entwickelt sich rasant.</li>
+                    <li>Grundlegende Prinzipien sind seit vielen Jahrzehnten stabil.</li>
+                    <ul>
+                        <li> Gelten f&uuml;r Produkt und Prozess </li>
+                    </ul>
+                </ul>
+
+            </section>
+
+            <section>
+                <h3>Eigenschaften guter Prinzipien</h3>
+
+                <blockquote> Gute Prinzipien sollten 
+                    <mark class="highlight">abstrakt</mark> und <mark class="highlight">falsifizierbar</mark>
+                    sein. 
+                </blockquote>
+
+                <div style="text-align:left">
+                Beispiele:
+                    <ul> 
+                        <li  class="fragment">Schlecht: Benutze JUnit um Tests zu schreiben </li>
+                        <li class="fragment">Schlecht: Schreibe qualitativ gute Software </li>
+                        <li class="fragment">Gut: Schreibe Tests immer zuerst </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Prinzip - Methoden - Tools</h3>
+
+                <img src="images/principles.svg" class="plain" style="width:50%" />
+
+            </section>
+
+            <section>
+                <h3>Wichtige Prinzipien</h3>
+
+                <ul>
+                    <li>Genauigkeit und formales Vorgehen</li>
+                    <li> Trennung der Verantwortlichkeiten (Separations of concerns)</li>
+                    <li> Modularit&auml;t </li>
+                    <li> Abstraktion</li>
+                    <li> Voraussehen von Ver&auml;nderungen </li>
+                    <li> Allgemeinheit </li>
+                    <li> Schrittweises Entwickeln (Incrementality) </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h3> Genauigkeit und formales Vorgehen</h3>
+                <ul>
+                    <li> Softwareentwicklung ist ein
+                        <mark class="highlight">kreativer</mark> Prozess</li>
+                    <li> ... Systematisches und rigoroses Vorgehen trotzdem unerl&auml;sslich. </li>
+                    <li>
+                        <mark class="highlight">Formale methoden</mark> sind die h&ouml;chste Form von Genauigkeit </li>
+                </ul>
+
+            </section>
+           
+            <section>
+                    <h3>Genauigkeit und formales Vorgehen </h3>
+                    <div style="float:right;width:100%; text-align:center; vertical-align:top">
+                        <img src="images/notes.png" />
+                    </div>
+                    
+                    <blockquote style="display:inline-block">Regeln m&uuml;ssen Kreativit&auml;t nicht einschr&auml;nken.</blockquote>
+                </section>    
+
+
+            <section>
+                <h3> Beispiele f&uuml;r Genauigkeit und Formalit&auml;t </h3>
+                <div style="float:left;width:50%">
+                    <h4>Produkt:</h4>
+                    <ul>
+                        <li>Formale Korrektheitsbeweise </li>
+                        <li>Systematische Generierung von Testdaten </li>
+                    </ul>
+                </div>
+                <div style="float:right;width:50%">
+                    <h4>Prozess:</h4>
+                    <ul>
+                        <li>
+                            Exakte, systematische Dokumentation des Entwicklungsprozesses
+                        </li>
+                        <li>
+                            Genau spezifizierte Releaseprozesse
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section>
+                <h3> Beispiele f&uuml;r Genauigkeit und Formalit&auml;t </h3>
+                <ul>
+                    <li> Typsignaturen sind ein Beispiel von einer formaler Spezifikation </li>
+                </ul>
+
+                <pre><code data-trim data-noescape>
+                 public int foo(String bar) { ??? }
+                </code></pre>
+
+                <div class="fragment">
+                    <pre><code data-trim data-noescape>
+                    public interface Stream&lt;T &gt; extends BaseStream&lt;T, Stream&lt;T&gt; &gt; {
+                       &lt;R&gt; Stream&lt;R&gt; map(Function&lt;? super T, ? extends R&gt; mapper);
+                    }
+                </code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h3> Separierung der Verantwortlichkeiten</h3>
+                <ul>
+                    <li>Verschiedene Probleme separat angehen </li>
+                    <ul>
+                        <li>Reduziert Komplexit&auml;t jeder Task </li>
+                        <li>Aufgaben und Verantwortlichkeiten k&ouml;nnen verteilt und parallelisiert werden </li>
+                    </ul>
+                    <ul>
+                        <li>Divide and Conquer</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Beispiele </h3>
+                <div style="float:left;width:50%">
+                    <h4>Produkt:</h4>
+                    <ul>
+                        <li>Anforderungen separat betrachten</li>
+                        <ul>
+                            <li>Funktionalit&auml;t</li>
+                            <li>Performance </li>
+                            <li>Benutzeroberfl&auml;che </li>
+                            <li>...</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div style="float:right;width:50%">
+                    <h4>Prozess:</h4>
+
+                    <ul>
+                        <li>
+                            Software Testing separiert von Entwicklung
+                            <ul> <li> Eigenes Team? </li> </ul>
+                        </li>
+                        <li>
+                            Phasen in Wasserfallmodell
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3> Modularit&auml;t</h3>
+                <ul>
+                    <li>Wichtigstes Prinzip in der Softwareentwicklung </li>
+                    <li>Reduziert Komplexit&auml;t </li>
+                    <ul>
+                        <li>Komplexes System wird in kleine Teile zerlegt</li>
+                        <li>Erlaubt Trennung der Verantwortlichkeiten </li>
+                    </ul>
+
+                </ul>
+                <figure>
+                    <img src="images/hubelino.jpg" style="width:50%" />
+                    <figcaption style="font-size:x-small">source: hubelino.de</figcaption>
+                    <figure/>
+
+            </section>
+
+            <section>
+                <h3>Modularit&auml;t</h3>
+                <figure>
+                <img src="images/hubelino-teile.png"/>
+                <figcaption style="font-size:x-small">source: https://miesmuschelchen.files.wordpress.com/2016/03/einzelneteile.png?w=760</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3> Modularit&auml;t</h3>
+
+                <div style="float:left;width:50%; vertical-align: top;">
+
+                    <figure>
+                        <img src="./images/modules-low-coupling.svg" style="width:60%; float:center" />
+                    </figure>
+                    <p>Modular:</p>
+                    <ul style="clear:both">
+                        <li> Lose Kopplung</li>
+                        <li> Starke Bindung</li>
+                    </ul>
+                </div>
+                <div style="float:right;width:50%; vertical-align: top;">
+                    <figure>
+                        <img src="./images/modules-high-coupling.svg" style="width:60%; float:center" />
+                    </figure>
+                    <p>Nicht-modular</p>
+                    <ul style="clear:both">
+                        <li> Starke Kopplung</li>
+                        <li> Lose Bindung</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3> Abstraktion </h3>
+                <ul>
+                    <li> Wichtige Aspekte eines Problems werden identifiziert</li>
+                    <li> Details werden ignoriert </li>
+                    <li> Spezialfall von "Trennung der Verantwortlichkeiten" </li>
+                    <ul>
+                        <li> Trennung wichtig / unwichtig (Details) </li>
+                    </ul>
+                </ul>
+            </section>
+            <section>
+                <h3> Beispiel</h3>
+                <div style="float:left;width:50%; vertical-align: top;">
+                    <ul>
+                        <li>Fahrer muss Funktionsweise des Gebriebes nicht kennen </li>
+                        <li>Zahlen 1-5 sind zweckm&auml;ssige Abstraktionen </li>
+                        <li> Erm&ouml;glicht zwischen Fahrzeugtypen zu wechseln </li>
+                    </ul>
+                </div>
+                <div style="float:right;width:50%; vertical-align: top;">
+                    <figure>
+                        <img src="./images/gear-shift.jpg" style="width:100%; float:center" />
+                        <figcaption style="font-size:x-small"> By User Bobo is soft on en.wikipedia - Photo taken by Bobo_is_soft, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1038737</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section>
+                <h3> Abstraktion in der Informatik</h3>
+                <ul>
+                    <li>Hardware: </li>
+                    <ul>
+                        <li> Bl&ouml;cke und Addressen </li>
+                    </ul>
+                    <li> Betriebssystem </li>
+                    <ul>
+                        <li> Dateien </li>
+                        <li> Netzwerk Sockets </li>
+                    </ul>
+                    <li> Programmiersprache (Java) </li>
+                    <ul>
+                        <li> OutputStream</li>
+                    </ul>
+
+                </ul>
+            </section>
+
+            <section>
+                <h3> Ver&auml;nderungen Voraussehen </h3>
+                <ul>
+                    <li>M&ouml;gliche Ver&auml;nderungen werden zur Designzeit identifiziert</li>
+                    <li>Design wird entsprechend angepasst </li>
+                    <li> Beispiel: Plattformunab&auml;ngiges Programmieren </li>
+                    <ul>
+                        </li> Betriebssystem spezifische Routinen werden abstrahiert </li>
+                    </ul>
+                </ul>
+
+                <blockquote class="fragment">Steht im Konflikt zum
+                    <mark class="highlight">YAGNI</mark> Prinzip
+                    <ul>
+                        <li>You ain't gonna need it </li>
+                    </ul>
+                </blockquote>
+            </section>
+
+            <section>
+                <h3> Allgemeinheit </h3>
+                <ul>
+                    <li> Oft ist es m&ouml;glich ein allgemeiners Problem zu l&ouml;sen </li>
+                    <li> Verallgemeinertes Problem muss nicht schwieriger sein </li>
+                    <li> Kann aber Codeverst&auml;ndnis extrem erschweren. </li>
+                </ul>
+                <blockquote class="fragment">
+                    <ul>
+                        <li>Gefahr von "Generalized abstract nonsense".</li>
+                    </ul>
+                </blockquote>
+            </section>
+
+            <section>
+                <h3> Allgemeinheit </h3>
+
+                <p> Vergleiche: </pl>
+                    <pre><code data-trim data-noescape>
+                                public interface IntStream {
+                                  StringStream map(Function&lt Int, String&gt; mapper);
+                                }
+                    </code></pre>
+                    <p> mit</p>
+                    <pre><code data-trim data-noescape>
+                            public interface Stream&lt;T &gt; extends BaseStream&lt;T, Stream&lt;T&gt; &gt; {
+                               &lt;R&gt; Stream&lt;R&gt; map(Function&lt;? super T, ? extends R&gt; mapper);
+                            }
+                </code></pre>
+            </section>
+
+            <section>
+                <h3> Schrittweises Entwickeln (Incrementatlity) </h3>
+
+                <ul>
+                    <li>Kleine, inkrementelle Schritte in der Entwicklung</li>
+                    <li>Wichtiges Prinzip im Entwicklungsprozess </li>
+                    <ul>
+                        <li>Grundlage agiler Softwareentwicklung </li>
+                    </ul>
+                </ul>
+
+                <blockquote>"Grow instead of build." </blockquote>
+            </section>
+
+
+            <section>
+                <h3> Unit tests </h3>
+                <ul>
+                    <li> Weshalb ist Falsifizierbarkeit eine wichtige Eigenschaft eines Prinzips?</li>
+                    <li> Was unterscheidet Prinzipen von Werkzeugen und Methoden?</li>
+                    <li> Wie hilft Modularit&auml;t Software zu verstehen? </li>
+                    <li> Was ist die Gefahr wenn wir das Design auf k&uuml;nftige Ver&auml;nderungen ausrichten?</li>
+                    <li> Nenne einen Vorteil des inkrementellen Entwickeln einer Software. </li> 
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>

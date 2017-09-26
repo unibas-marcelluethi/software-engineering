@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Qualit&auml;tsmerkmale von Software.</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h2>
+                    Qualit&aumltsmerkmale von Software
+                </h2>
+                <p>
+                    <p>
+                        <small> Marcel L&uuml;thi </br> 
+                                    Departement Mathematik und Informatik </small>
+                    </p>
+                    <p>
+                        <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                    </p>
+                </p>
+            </section>
+
+            <section>
+                <h3> Klassifikation von Qualit&auml;tsmerkmalen </h3>
+
+                <div>
+                    <div style="float:left;width:50">
+                        <h4> Externe Qualit&auml;tsmerkmale </h4>
+                        <ul>
+                            <li> Funktional </li>
+                            <li> F&uuml;r Benutzer ersichtlich </li>
+                        </ul>
+                    </div>
+                    <div style="float:right;width:50%">
+                        <h4> Interne Qualit&auml;tsmerkmale </h4>
+                        <ul>
+                            <li> Nichtfunktional </li>
+                            <li> Von Interesse f&uuml;r Entwickler</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fragment" style="clear:both; width:100%;margin-top:2cm;display:inline-block">
+
+                    <blockquote> Interne Qualit&auml;t beeinflusst externe Qualit&auml;t! </blockquote>
+                </div>
+            </section>
+
+
+            <section>
+                <h3> Klassifikation von Qualit&auml;tsmerkmalen </h3>
+                <div>
+                    <ul>
+                        <li> Produkt vs. Prozess Merkmale</li>
+                        <ul>
+                            <li> Ziel - Produkt zu entwickeln </li>
+                            <li> Prozess - Wie entwickeln wir das Produkt</li>
+                        </ul>
+                    </ul>
+                </div>
+                <blockquote class="fragment">
+                    <p> Prozessqualit&auml;t beeinflusst Produktqualit&auml;t </p>
+                </blockquote>
+            </section>
+
+
+            <section>
+                <h3> Einige Qualit&auml;tsmerkmale von Software</h3>
+                <ul style="font-size:xx-large">
+                    <li>Korrektheit (correctness)</li>
+                    <li>Zuverlässigkeit (reliability)</li>
+                    <li>Robustheit (robustness)</li>
+                    <li>Effizienz (performance)</li>
+                    <li>Benutzbarkeit (usability)</li>
+                    <li>Testbarkeit (verifiability) </li>
+                    <li>Wartbarkeit (maintainability) </li>
+                    <li>Reparierbarkeit (repairability) </li>
+                    <li>Erweiterbarkeit (evolvability) </li>
+                    <li>Wiederverwendbarkeit (reusability) </li>
+                    <li>Portabilit&auml;t (portability) </li>
+                    <li>Verständlichkeit (understandability) </li>
+                    <li>Interoperabilit&auml;t (interoperability) </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Korrektheit</h3>
+                <blockquote> Software ist korrekt, when sie die spezifizierten funktionalen Anforderungen erf&uuml;llt
+                </blockquote>
+
+                <ul>
+                    <li>Erfordert, dass Anforderungen spezifiziert wurden </li>
+                    <li>Formale Spezifikationen erlauben es Korrektheit zu beweisen oder zu falsifizieren (mit Gegenbeispiel)
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Korrektheit (2) </h3>
+                <ul>
+                    <li>Korrektheit ist absolut</li>
+                    <ul>
+                        <li> Es gib kein "ein bisschen falsch" </li>
+                        <li> Es gibt keine Metrik f&uuml;r Falschheit </li>
+                    </ul>
+                    <li> Was passiert wenn Spezifikationen falsch sind? </li>
+                    <ul>
+                        <li>Von falschen Anforderungen abgeleitet ? </li>
+                        <li>Falsche Businesslogik?
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Zuverl&auml;ssigkeit </h3>
+                <blockquote> Intuitiv: Der Benutzer kann sich auf die Software verlassen </blockquote>
+
+                <ul>
+                    <li> Formal: Wahrscheinlichkeit, dass in einem bestimmten Zeitinterval kein Fehler auftritt </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Zuverl&auml;ssigkeit </h3>
+                <ul>
+                    <li>Bei korrekter Spezifikation gilt: </li>
+                </ul>
+                <img class="plain" src="images/reliability.png" />
+
+            </section>
+
+            <section>
+                <h3> Quiz</h3>
+                <ul>
+                    <li>Ist dieses Programm korrekt? </li>
+                    <li>Ist es zuverl&auml;ssig? </li>
+                </ul>
+
+                <pre><code data-trim data-noescape>
+    double plus(double a, double b) { 
+        double sum = a + b;
+        Random r = new Random();
+        if (Math.abs(r.nextGaussian()) < 1000) {
+            return sum;
+        } else {
+            return sum + 1;
+        }
+    }
+	</code></pre>
+            </section>
+
+            <section>
+                <h3> Robustheit </h3>
+                <blockquote> Software verh&auml;lt sich auch unter unvorhergesehenen Umst&auml;nden sinnvoll </blockquote>
+
+                <ul>
+                    <li> Schwierig formal zu spezifizieren </li>
+                </ul>
+                <div>
+                    <p>Beispiele:</p>
+                    <ul>
+                        <li> Hardware Ausfall </li>
+                        <li> Falscher Input </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3> Robustheit und Korrektheit </h3>
+                <blockquote> Robustheit und Korrektheit sind eng verwandt.</blockquote>
+
+                <ul>
+                    <li>Anforderungen in Spezifikation -> Korrektheit</li>
+                    <li>Anforderung nicht spezifiziert -> Robustheit</li>
+                </ul>
+
+            </section>
+
+
+            <section>
+                <h3> Effizienz (Performance) </h3>
+                <blockquote> Effizienter Gebrauch von System-ressourcen (Speicher/CPU/Netzwerk)</blockquote>
+                <ul>
+                    <li> Kann verifiziert werden </li>
+                    <ul>
+                        <li> Theoretisch: Komplexit&auml;tstheorie </li>
+                        <li> Praktisch: Simulation </li>
+                    </ul>
+                    <li> Beeinflusst Skalierbarkeit </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Verifizierbarkeit </h3>
+                <blockquote> Wie einfach ist es Eigenschaften zu verifizieren</blockquote>
+                <ul>
+                    <li> Wichtig z.B. f&uuml;r Securityaudits oder Resourcen-kritische Systeme</li>
+                    <li> Vorwiegend internes Qualit&auml;tsmerkmal</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Wartbarkeit (1) </h3>
+
+                <p> Software ist nicht das ... </p>
+
+                <image src="images/tractor.jpg" style="width:60%" />
+            </section>
+
+            <section>
+                <h3> Wartbarkeit (1) </h3>
+
+                <p> sondern das! </p>
+
+                <image src="images/cow.jpg" style="width:60%" />
+            </section>
+
+
+            <section>
+                <h3> Wartbarkeit (2)</h3>
+                <blockquote> Wie einfach ist es die Software weiterzuentwickeln </blockquote>
+
+                <ul>
+                    <li> Hauptkategorien Softwarewartung: </li>
+                    <ul>
+                        <li>Fehlerbehebung </li>
+                        <li>Anpassung an neue Anforderunge (Hardware/Betriebssystem,...) </li>
+                        <li>Verbesserungen (Wartbarkeit, Performance, ...) </li>
+                    </ul>
+                    <li> 80/20 Regel </li>
+                    <ul>
+                        <li>Wartungs machen ca 80 % der Gesamtkosten aus. </li>
+                        <li>Entwicklungskosten 20 % </li>
+                    </ul>
+
+                </ul>
+
+            </section>
+
+            <section>
+                <h3> Wiederverwendbarkeit</h3>
+                <blockquote> Wie einfach ist es die Software in anderem Kontext wiederzuverwenden</blockquote>
+
+                <ul>
+                    <li>Erm&ouml;glicht komponentenbasierte Softwareentwicklung </li>
+                    <li>Drastische Kostenreduktion, da Kosten f&uuml;r Verifikation, Wartung, etc. nur pro Komponente und nicht
+                        pro Produkt anfallen </li>
+                </ul>
+
+            </section>
+
+
+            <section>
+                <h3>Wiederverwendbarkeit</h3>
+                <ul>
+                    <li>Beispiel Unix </li>
+                </ul>
+
+                <pre><code data-trim data-noescape>
+                            $ less /etc/passwd 
+                            </code></pre>
+
+                <pre><code data-trim data-noescape>
+                    $ find . -iname "*.java" |less            
+	                </code></pre>
+
+                <pre><code data-trim data-noescape>
+                    $ cat /etc/passwd | cut -d":" -f1 | less 
+                            </code></pre>
+
+            </section>
+
+            <section>
+                <h3> Portabilit&auml;t </h3>
+                <blockquote>Grad der Plattformunabhängigkeit einer Software</blockquote>
+                <ul>
+                    <li>M&ouml;gliche Plattformen</li>
+                    <ul>
+                        <li>Verschiedene Browser </li>
+                        <li> Verschiedene Betriebssysteme </li>
+                        <li> Verschiedene Hardware </li>
+                    </ul>
+                </ul>
+            </section>
+
+
+            <section>
+                <h3> Verst&auml;ndlichkeit</h3>
+                <blockquote>Wie einfach ist es den Code der Software zu verstehen</blockquote>
+                <ul>
+                    <li>Um ein Programm anzupassen muss man es verstehen k&ouml;nnen. </li>
+                </ul>
+
+                <figure>
+                <code style="font-size:smaller" data-trim class="plain">
+                    <pre>
+                    #include <stdio.h>
+                            int l;int main(int o,char **O,
+                            int I){char c,*D=O[1];if(o>0){
+                            for(l=0;D[l              ];D[l
+                            ++]-=10){D   [l++]-=120;D[l]-=
+                            110;while   (!main(0,O,l))D[l]
+                            +=   20;   putchar((D[l]+1032)
+                            /20   )   ;}putchar(10);}else{
+                            c=o+     (D[I]+82)%10-(I>l/2)*
+                            (D[I-l+I]+72)/10-9;D[I]+=I<0?0
+                            :!(o=main(c/10,O,I-1))*((c+999
+                            )%10-(D[I]+92)%10);}return o;}
+                    </pre>
+                </code>
+                <figcaption style="font-size:x-small"> Winner 2001, Best Short Program, International Obfuscated C code Contest</figcaption>
+            </figure>
+            </section>
+
+            <section>
+                <h3>Interoperabilit&auml;t</h3>
+                <blockquote>Wie gut kann ein Programm mit anderen Zusammenarbeiten</blockquote>
+                <ul>
+                    <li>M&ouml;glichkeiten um Interoperabilit&auml;t zu gew&auml;hrleisten </li>
+                    <ul>
+                        <li>Kompatible Fileformate</li>
+                        <li> OLE Schnittstellen (Word / Excel) </li>
+                        <li> Standard Protokolle </li>
+                    </ul>
+                </ul>
+            </section>
+
+
+
+            <section>
+                <h3> Qualit&auml;tsmerkmale von Prozessen</h3>
+                <ul>
+                    <li>Produktivit&auml;tat </li>
+                    <ul>
+                        <li> Effektivit&auml;t und Zeitanforderungen des Prozesses </li>
+                    </ul>
+                    <li>Verf&uuml;gbarkeit (Timeliness) </li>
+                    <ul>
+                        <li>Kann die Software rechtzeitig geliefert werden? </li>
+                    </ul>
+                    <li> Transparenz (Visibility)</li>
+                    <ul>
+                        <li> Ist der Prozess selbst dokumentiert? </li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Anwendungsspezifische Qualit&auml;tsmerkmale </h3>
+                <ul>
+                    <li> Sicherheit </li>
+                    <li> Datenintegrit&auml;t </li>
+                    <li> Verf&uuml;gbarkeit </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h3> Qualit&auml;tsmerkmale quantifizieren </h3>
+                <blockquote> Viele Eigenschaften schlecht direkt zu quantifizieren</blockquote>
+                <ul>
+                    <li> Performance l&auml;sst sich einfach messen </li>
+                    <li> Wie quantifiziert man Verst&auml;ndlichkeit oder Wartbarkeit? </li>
+                    <li> H&auml;ufig sehr subjektiv. </ul>
+
+            </section>
+            <section>
+                <h3> Unit tests </h3>
+
+                <ul>
+                    <li> Weshalb sind interne Qualit&auml;ten auch f&uuml;r den Benutzer wichtig?</li>
+                    <li> Warum beeinflusst die Prozessqualit&auml;t die Produktqualit&auml;t?
+                        <li> Wehalb ist Wartbarkeit besonders wichtig? </li>
+                        <li> Angenommen es tritt ein unvorhergesehener Fehler auf. Trotzdem l&auml;sst das Programm korrekt weiter.
+                            Ist die Software nun robust oder korrekt?
+                        </li>
+                        <li> Weshalb kann ein zuverl&auml;ssiges Programm sogar dann n&uuml;tzlich sein, wenn es nicht korrekt
+                            ist?
+                        </li>
+                </ul>
+
+
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+            // Display the page number of the current slide
+            slideNumber: false,
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>

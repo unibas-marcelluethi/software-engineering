@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Eigenschaften von Software</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h3>
+                    Eigenschaften von Software
+                </h3>
+                <p>
+                    <small> Marcel L&uuml;thi </br> 
+						Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section>
+            <section>
+                <h3>Was macht ein Ingenieur?</h3>
+                <blockquote>
+                    Ziel des Ingenieurs ist ein Produkt zu bauen.
+                </blockquote>
+
+
+                <div style="font-size:smaller">
+                    <div style="float:left;width:25%; vertical-align: top;">
+
+                        <figure>
+                            <img src="./images/circuitery.jpg" style="width:100%; float:center" />
+                            <figcaption style="font-size:x-small">By AAAndrey A - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10062999</figcaption>
+                        </figure>
+                    </div>
+                    <div style="float:left;width:25%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/engine.jpg" style="width:100%; float:center" />
+                            <figcaption style="font-size:x-small">By Florian Lindner (User:SuperFloh) - Own work, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=184607</figcaption>
+                        </figure>
+                    </div>
+                    <div style="float:left;width:25%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/bridge.jpg" style="width:100%; float:center" />
+                            <figcaption style="font-size:x-small">Von Störfix - Eigenes Werk (selbst fotografiert), CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=250504</figcaption>
+                        </figure>
+                    </div>
+                    <div style="float:left;width:25%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/ganttproject.png" style="width:100%; float:center" />
+                            <figcaption style="font-size:x-small">By Dbarashev - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59176852</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div style="clear:both" class="fragment">
+                    <ul>
+                        <li>Das Produkt Software ist irgendwie anders!</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section>
+                <h3>Eigenschaften von Software (1)</h3>
+
+                <blockquote> Software ist formbar (engl. malleable) </blockquote>
+
+                <div style="float:left;width:60%">
+                    <ul>
+                        <li> Das
+                            <text style="color:blue">Produkt</text> l&auml;sst sich einfach ver&auml;ndern </li>
+                        <li> Das
+                            <text style="color:blue">Design</text> ist jedoch starr </li>
+                    </ul>
+
+                </div>
+                <div style="float:right;width:40%; vertical-align: top;">
+                    <figure>
+                        <img src="./images/ganttproject.png" style="width:100%; float:center" />
+                        <figcaption style="font-size:x-small">By Dbarashev - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59176852</figcaption>
+                    </figure>
+                </div>
+                </ul>
+
+            </section>
+
+
+            <section>
+                <h3>Gefahr von Ver&auml;nderungen </h3>
+
+                <ul>
+                    <li>Software wird ver&auml;ndert ohne das Design zu &auml;ndern.</li>
+                    <li>Produkt und Design divergieren</li>
+                </ul>
+
+                <div style="float:center;width:100%; vertical-align:top;">
+                    <figure>
+                        <img src="./images/darwin.jpg" style="width:50%; float:center" />
+                        <figcaption style="font-size:x-small">source: http://www.ronpatrickstuff.com/</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+
+
+            <section>
+                <h3>Eigenschaften von Software (2)</h3>
+
+                <blockquote> Software ist
+                    <text style="color:blue;width=100%">immateriell.</text>
+                    Produktkosten entstehen haupts&auml;chlich durch Entwicklung/Wartung </blockquote>
+
+            </section>
+
+            <section>
+                <h3>Eigenschaften von Software (2)</h3>
+
+
+                <div style="float:left;width:50%; text-align:left; vertical-align:top">
+                    <h4>Traditionelle Ingenieursdisziplin</h4>
+                    <ul>
+                        <li>Herstellung (manufacturing) gr&ouml;sster Kostenfaktor.
+                            <li> Fehler sind teuer </li>
+                            <ul>
+                                <li>Fokus: Reibungslose Produktion garantieren</li>
+                            </ul>
+                    </ul>
+
+                </div>
+
+                <div style="float:left;width:50%; text-align:left; vertical-align:top">
+                    <h4>Softwareengwicklung</h4>
+                    <ul>
+                        <li> Herstellung ist trivial (kopieren) </li>
+                        <li> Fokus: Design und Implementation </li>
+                        <ul>
+                            <li> Prozess braucht definierte Qualit&auml;tskriterien </li>
+                        </ul>
+                    </ul>
+                </div>
+
+
+            </section>
+
+            <section>
+                <h3>Eigenschaften von Software (3)</h3>
+                <blockquote> Software folgt nicht den Naturgesetzen </blockquote>
+                <div style="float:left;width:50%; text-align:left; vertical-align:top">
+                    <ul>
+                        <li> Naturgesetze definieren L&ouml;sungsraum</li>
+                        <ul>
+                            <li> Geben uns Hinweise was wir nicht versuchen m&uuml;ssen</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div style="float:right;width:50%;height:100%;;vertical-align:middle;display:inline-block">
+                    <figure>
+                        <img class="plain" src="images/bending.png" />
+                        <figcaption style="font-size:x-small">By AndrewRDawson - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=34910928</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+
+            <section>
+                <h3>Software Engineering vs. Physics </h3>
+
+                <blockquote>"God does not play dice with the universe" - Einstein</blockquote>
+
+                <ul>
+                    <li> Naturgesetzte / Physik lassen uns Schlussfolgerungen ziehen </li>
+                    <li> Software hat wenig verl&auml;ssiliche Strukturen </li>
+                    <ul>
+                        <li> Logische Folgerungen &uuml;ber sind schwierig </li>
+                        <li> Mathematische Strukturen m&uuml;ssen explizit Designed und Dokumentiert werden </li>
+                    </ul>
+
+                </ul>
+
+
+
+
+            </section>
+
+            <!--
+            <section>
+                <h3>Einschr&auml;nkungen als Chance. </h3>
+                <blockquote> Mehr M&ouml;glichkeiten != Bessere L&ouml;sung </blockquote>
+                <div style="float:right;width:100%; text-align:center; vertical-align:top">
+                    <img src="images/notes.png" />
+                </div>
+            </section>
+        -->
+
+
+            <section>
+                <h3>Eigenschaften von Software (4)</h3>
+
+                <blockquote> Anforderung an Softwareprodukt ist schwierig von Designkriterien zu trennen. </blockquote>
+
+                <ul>
+                    <li>Typische Anforderungen:</li>
+                    <ul>
+                        <li> System soll wartbar und erweiterbar sein </li>
+                        <li> System soll skalieren </li>
+                    </ul>
+                    <li> Schwierig zu beurteilen ohne das Design zu betrachten </li>
+                    <ul>
+                        <li> Keine Physik, die uns hilft Schlussfolgerungen zu ziehen </li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section class="center">
+
+                <blockquote> Wir brauchen Disziplin und gute Regeln um gute Software zu bauen </blockquote>
+                <ul class="fragment">
+                    <li> Was ist denn eigentlich gute Software? </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Unit tests </h3>
+
+                <ul>
+                    <li> Wo muss ich ansetzen um Softwarequalit&auml;t zu beeinflussen </li>
+                    <li> Was sind die Vorteile / Nachteile das Software formbar (malleable) ist? </li>
+                    <li> Weshalb ist es problematisch, dass keine mathematischen Eigenschaften (Naturgesetze) existieren, welche
+                        die Software beschreiben? </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>
