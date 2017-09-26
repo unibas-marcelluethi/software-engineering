@@ -21,36 +21,35 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 
 *Die Druckversion der Vorlesungsfolien ist für Chrome und Chromium optimiert. Druckfertige pdf Versionen  gibt es auf [Adam](https://adam.unibas.ch/goto_adam_crs_527111.html)*
 
-| Woche | Thema |
-| ------| ----- | 
-| 1  | Warum brauchen wir Software engineering [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-why-software-engineering.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-why-software-engineering.html?print-pdf) |
-|    | Was ist Software engineering [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-what-is-sweng.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-what-is-sweng.html?print-pdf) |
-|    | Kurze Geschichte des Software engineerings [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html?print-pdf) |
-|    | Wie lese ich ein wissenschaftliches Paper [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-how-to-read-a-paper.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-how-to-read-a-paper.html?print-pdf)|
-| 2  | Eigenschaften von Software |
-|   | Software Qualit&auml;tsmerkmale | 
-|    | "No silver bullet" |
-|    | Prinzipien des Software engineerings |
-| 3   | Software Design Prinzipen  |
-|     | Abstrakte Datentypen |
-|     | Module und Komponenten |
-| 4   | OO Design | 
-|     | Design strategien |
-|     | UML Klassendiagramme |
-| 5   | Spezifizieren von Software |
-|     | UML | 
-| 6   | Validierung und Testen |
-|     | Test theorie |
-|     | Unit testing und test first development |
-| 7   | Formale Methoden zur Softwarevalidierung |
-| 8   | Requirementsengineering |
-| 9   | Software prozesse |
-| 10  | Architekturmuster |
-|     | Objektorientierte Entwurfsmuster |
-| 11  | Funktionale Entwurfsmuster |
-|     | Entwurfsmuster f&uuml;r Verteilte Programmierung |
-| 12  | Refactoring |
-| 13 - 14  | Nach Ank&uuml;ndigung |
+| Woche | Thema | Bemerkung |
+| ------| ----- | --------- |
+| 1  | Warum brauchen wir Software engineering [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-why-software-engineering.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-why-software-engineering.html?print-pdf) | |
+|    | Was ist Software engineering [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-what-is-sweng.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-what-is-sweng.html?print-pdf) | |
+|    | Kurze Geschichte des Software engineerings [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html?print-pdf) | ge&auml;ndert 26.9|
+|    | Wie lese ich ein wissenschaftliches Paper [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-how-to-read-a-paper.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-how-to-read-a-paper.html?print-pdf)| |
+| 2  | Eigenschaften von Software [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html?print-pdf)| |
+|   | Software Qualit&auml;tsmerkmale [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-qualities.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-qualities.html?print-pdf) |  |
+|    | Prinzipien des Software engineerings  [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-engineering-principles.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-engineering-principles.html?print-pdf) | |
+| 3   | Software Design Prinzipen  | |
+|     | Abstrakte Datentypen | |
+|     | Module und Komponenten | |
+| 4   | OO Design | |
+|     | Design strategien | |
+|     | UML Klassendiagramme | |
+| 5   | Spezifizieren von Software | |
+|     | UML | |
+| 6   | Validierung und Testen | |
+|     | Test theorie | |
+|     | Unit testing und test first development | |
+| 7   | Formale Methoden zur Softwarevalidierung | |
+| 8   | Requirementsengineering | |
+| 9   | Software prozesse | |
+| 10  | Architekturmuster | |
+|     | Objektorientierte Entwurfsmuster | |
+| 11  | Funktionale Entwurfsmuster | |
+|     | Entwurfsmuster f&uuml;r Verteilte Programmierung | |
+| 12  | Refactoring | |
+| 13 - 14  | Nach Ank&uuml;ndigung | |
 
 ## &Uuml;bungen 
 
