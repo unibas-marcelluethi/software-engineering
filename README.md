@@ -23,14 +23,14 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 
 | Woche | Thema | Bemerkung |
 | ------| ----- | --------- |
-| 1  | Warum brauchen wir Software engineering [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-why-software-engineering.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-why-software-engineering.html?print-pdf) | |
+| 1  | Einf&uuml;hrung / Administratives [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-admin.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-admin.html?print-pdf) | |
+|   | Warum brauchen wir Software engineering [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-why-software-engineering.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-why-software-engineering.html?print-pdf) | |
 |    | Was ist Software engineering [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-what-is-sweng.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-what-is-sweng.html?print-pdf) | |
-|    | Kurze Geschichte des Software engineerings [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html?print-pdf) | ge&auml;ndert 26.9|
 |    | Wie lese ich ein wissenschaftliches Paper [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-how-to-read-a-paper.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-how-to-read-a-paper.html?print-pdf)| |
-| 2  | Eigenschaften von Software [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html?print-pdf)| |
+| 2  | Kurze Geschichte des Software engineerings [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html?print-pdf) | ge&auml;ndert 26.9|
+|  | Eigenschaften von Software [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html?print-pdf)| |
 |   | Software Qualit&auml;tsmerkmale [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-qualities.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-qualities.html?print-pdf) |  |
-|    | Prinzipien des Software engineerings  [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-engineering-principles.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-engineering-principles.html?print-pdf) | |
-| 3   | Software Design Prinzipen  | |
+| 3   | Prinzipien des Software engineerings  [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-engineering-principles.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-engineering-principles.html?print-pdf) | |
 |     | Abstrakte Datentypen | |
 |     | Module und Komponenten | |
 | 4   | OO Design | |
