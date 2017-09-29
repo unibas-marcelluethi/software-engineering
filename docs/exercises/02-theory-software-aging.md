@@ -32,5 +32,5 @@ Lesen Sie das [Paper](http://www.inf.ed.ac.uk/teaching/courses/seoc/2004_2005/re
 * Das Paper legt grossen Wert auf das Information Hiding. Erkl&auml;ren Sie kurz das Konzept und weshalb es f&uuml;r die "gute Alterung" von Software von zentraler Bedeutung ist. 
 
 * K&ouml;nnen wir verhindern, dass Software veraltet und unwartbar wird? Warum/Warum nicht?
-* Das Paper ist inzwischen schon &uuml;ber 20 Jahre alt. Welche der obigen Probleme, denken Sie, existieren auch heute noch? Was denken Sie: ist die Situation heute besser oder schlechter? Weshalb?
+* Das Paper ist inzwischen schon &uuml;ber 20 Jahre alt. Welche der obigen Probleme, denken Sie, existieren auch heute noch? Was denken Sie: Ist die Situation heute besser oder schlechter? Weshalb?
 
