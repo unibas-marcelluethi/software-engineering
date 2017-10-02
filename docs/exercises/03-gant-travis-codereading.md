@@ -28,13 +28,19 @@ git branch
 Sie sollten nun alle ihre Branches sehen. Vor dem aktiven Branch (also master) sollte nun ein Sternchen sein. 
 
 #### Synchronisieren ihres Repositories mit dem Upstream Repository
-In der ersten &Uuml;bung haben sie das ganttproject Repository via Github "Fork" dupliziert. Sie arbeiten nun auf einem Repository, welches komplett vom original Repository abgekoppelt ist. Dies bedeutet aber auch, dass wenn nun im original Repository &Auml;nderungen vorgenommen werden, dass diese keine Auswirkungen auf ihr Repository haben. 
+In der ersten &Uuml;bung haben sie das ganttproject Repository via Github "Fork" dupliziert. Sie arbeiten nun auf einem Repository, welches komplett vom originalen Repository abgekoppelt ist. Dies bedeutet aber auch, dass wenn nun im originalen Repository &Auml;nderungen vorgenommen werden, diese keine Auswirkungen auf ihr Repository haben. 
 
 Sie k&ouml;nnen jedoch diese &Auml;nderungen wieder manuell in ihr Projekt einpflegen. Dazu m&uuml;ssen sie zuerst das original Repository als neues Remote Repository hinzuf&uuml;gen. Dies machen sie mit 
 ```
 git remote add upstream https://github.com/unibas-sweng/ganttproject.git
 ```
 (Das Originalrepository wird per Konvention upstream genannt. Sie k&ouml;nnten diesem jedoch einen beliebigen Namen geben. Es handelt sich hier nur um einen Kurznamen f&uuml;r die URL).
+
+Verifizieren Sie das hinzufügen mithilfe von:
+
+```
+git remote -v
+```
 
 Als n&auml;chstes k&ouml;nnen sie die &Auml;nderungen via ```git pull``` zu sich ins Repository bringen. In unserem Fall m&ouml;chten wir die &Auml;nderungen vom Master Branch holen. Wir benutzen dazu das Kommando: 
 ```
@@ -83,12 +89,12 @@ Sie haben gesehen, dass eine der neuen &Auml;nderungen die Datei .travis.yml bet
 *Finden sie (z.B. mit google) heraus was Travis ist und wozu es gebraucht wird und beantworten sie folgende Fragen:*
 
 1. Wozu brauchen wir Travis?
-2. Was mach die Datei travis.yml?
+2. Was macht die Datei .travis.yml?
 3. Weshalb sind solche Systeme in der modernen Softwareentwicklung unerl&auml;sslich?
 
-Schreiben sie ihre Antworten in eine Textdatei Datei die sei ```exercise2.txt``` nennen. Die Datei k&ouml;nnen sie dem Projekt mit
+Schreiben sie ihre Antworten in eine Textdatei Datei die sie ```exercise3.txt``` nennen. Die Datei k&ouml;nnen sie dem Projekt mit
 ```
-git add exercises3.txt
+git add exercise3.txt
 ```
 hinzuf&uuml;gen. 
 
@@ -102,7 +108,10 @@ Damit sie Travis auch f&uuml;r ihr Projekt verwenden k&ouml;nnen, m&uuml;ssen si
 
 ![img](images/travis.png)
 
-*Anmerkung: Travis ist ein kommerzieller Service. Sie haben aber 99 Trial runs zur Verf&uuml;gung. Dies sollte f&uuml;r diesen Kurs reichen. F&uuml;r Open Source Projekte ist Travis aber gratis nutzbar. Deshalb ist Travis der Standard Service in der Open Source Entwicklung*. 
+*Anmerkung: Travis ist ein kommerzieller Service. Sie haben aber 99 Trial runs zur Verf&uuml;gung. Dies sollte f&uuml;r diesen Kurs reichen. F&uuml;r Open Source Projekte ist Travis aber gratis nutzbar. Deshalb ist Travis der Standard Service in der Open Source Entwicklung*.
+
+*Anmerkung 2: Wenn Sie sich für das [Github Educational Pack](https://education.github.com/pack) registriert haben, haben Sie gratis builds für private repositories.*.
+
 
 Probieren sie aus was passiert wenn sie Code committen (und auf Github pushen), der nicht kompiliert. 
 
@@ -116,7 +125,7 @@ Wenn sie auf diesen Klicken sehen sie eine URL. Diese URL zeigt auf ein kleines 
 
 ## 3. Code lesen
 
-In diesem Teil der &Uuml;bung geht es darum, dass sie sich einen Grob&uuml;berblick &uuml;ber die Strukur des Ganttproject Codes erarbeiten sowie auch lernen fremden Code zu lesen und zu verstehen.
+In diesem Teil der &Uuml;bung geht es darum, dass sie sich einen Grob&uuml;berblick &uuml;ber die Strukur des Ganttproject Codes erarbeiten sowie auch lernen, fremden Code zu lesen und zu verstehen.
 
 #### Dokumentieren der Packages
 
@@ -139,12 +148,12 @@ Sie k&ouml;nnen diese mittels Javadoc dokumentieren, indem sie in jedes Verzeich
 package biz.ganttproject.core; // package name 
 ```
 Die Beschreibung sollte in max 2-3 S&auml;tzen den Zweck des Packages zusammenfassen.
-Vergessen sie nicht, diesem mittels ```git add package-info.java``` dem Repository hinzuzuf&uuml;gen.
+Vergessen sie nicht, diese Files mit dem ```git add``` command dem Repository hinzuzuf&uuml;gen.
 
 #### Dokumentieren sie eine Klasse
 
 Dokumentieren sie die Klasse 
-```net.sourceforge.ganttproject.task.TaskMutator;``` sowie alle Methoden mittels Javadoc. Beschreiben sie in jeweis 2-3 S&auml;tzen was die Klasse sowie jede Methode macht. 
+```net.sourceforge.ganttproject.task.TaskMutator``` sowie alle Methoden mittels Javadoc. Beschreiben sie in jeweis 2-3 S&auml;tzen was die Klasse sowie jede Methode macht. 
 
 
 ### Abgabe
@@ -152,7 +161,7 @@ Die Abgabe der &Uuml;bung erfolgt durch push des entsprechenden Branch
 ```
 git push origin exercise3
 ``` 
-und entsprechenden Pull Request bei dem sie 
+und entsprechenden Pull Request, bei dem sie 
 ```marcelluethi```, ```silvanheller``` und ```marvinbuff``` als Reviewer angeben.
 (Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/exercises/02-gant-small-changes.html)).
  
