@@ -3,7 +3,7 @@
 ## Administratives
 
 * Dieses &Uuml;bungsblatt sollte bis am 16. Oktober 2017 bearbeitet werden.  
-* Fragen und Probleme k&ouml;nnen in den  &Uuml;bungsstunden am 4 und 11. Oktober besprochen werden.   
+* Fragen und Probleme k&ouml;nnen in den  &Uuml;bungsstunden am 4. und 11. Oktober besprochen werden.   
 * Abgabe via Pull Request bis sp&auml;testens 16. Oktober, 23.59.
 
 ## Einf&uuml;hrung
@@ -21,7 +21,7 @@ Da wir die &Auml;nderungen der letzten &Uuml;bung hier nicht ben&ouml;tigen, sta
 git checkout master
 ```
 
-Um sicherzustellen, dass sie auf dem richtigen repository sind, nutzen sie das Kommando 
+Um sicherzustellen, dass sie auf dem richtigen Repository sind, nutzen sie das Kommando 
 ```
 git branch
 ```
@@ -30,7 +30,7 @@ Sie sollten nun alle ihre Branches sehen. Vor dem aktiven Branch (also master) s
 #### Synchronisieren ihres Repositories mit dem Upstream Repository
 In der ersten &Uuml;bung haben sie das ganttproject Repository via Github "Fork" dupliziert. Sie arbeiten nun auf einem Repository, welches komplett vom original Repository abgekoppelt ist. Dies bedeutet aber auch, dass wenn nun im original Repository &Auml;nderungen vorgenommen werden, dass diese keine Auswirkungen auf ihr Repository haben. 
 
-Sie k&ouml;nnen jedoch diese &Auml;nderungen wieder manuell in ihr Projekt einpflegen. Dazu m&uuml;ssen sie zuerst das original Repository als neues Remote repository hinzuf&uuml;gen. Dies machen sie mit 
+Sie k&ouml;nnen jedoch diese &Auml;nderungen wieder manuell in ihr Projekt einpflegen. Dazu m&uuml;ssen sie zuerst das original Repository als neues Remote Repository hinzuf&uuml;gen. Dies machen sie mit 
 ```
 git remote add upstream https://github.com/unibas-sweng/ganttproject.git
 ```
@@ -65,7 +65,7 @@ Das erste gibt ihnen alle Commit Messages der neuen &Auml;nderungen aus. Das let
 Ihr master branch des Repositories ist nun wieder auf dem aktuellen Stand ist und sie k&ouml;nnen sie mit der &Uuml;bung beginnen. 
 
 
-## Travis
+## 2. Travis
 
 
 #### Vorbereitung
@@ -107,11 +107,14 @@ Damit sie Travis auch f&uuml;r ihr Projekt verwenden k&ouml;nnen, m&uuml;ssen si
 Probieren sie aus was passiert wenn sie Code committen (und auf Github pushen), der nicht kompiliert. 
 
 #### Status batch ersetzen
+Auf der &Uuml;bersichtsseite von Travis sehen sie oben einen "Batch" (siehe Screenshot)
+![img](images/travis-batch.png)
+Wenn sie auf diesen Klicken sehen sie eine URL. Diese URL zeigt auf ein kleines Bild (genannt Batch) welches den aktuellen Buildstatus von Travis anzeigt. Es ist &uuml;blich, dieses Bild in die Datei ```Readme.md``` des Projekts einzuf&uuml;gen. Im Falle von Ganttproject wurde dies schon gemacht - jedoch ist die URL falsch. 
+
+* Ersetzen sie den Batch mit der richtigen URL. 
 
 
-
-
-## 2. Code lesen
+## 3. Code lesen
 
 In diesem Teil der &Uuml;bung geht es darum, dass sie sich einen Grob&uuml;berblick &uuml;ber die Strukur des Ganttproject Codes erarbeiten sowie auch lernen fremden Code zu lesen und zu verstehen.
 
