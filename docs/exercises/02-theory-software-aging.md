@@ -22,15 +22,15 @@ Lesen Sie das [Paper](http://www.inf.ed.ac.uk/teaching/courses/seoc/2004_2005/re
 
 *Beachten sie:* Kurze Antworten (2-3 S&auml;tze pro Frage) sind vollkommen ausreichend.  
 
-* Software ist ein mathematisches Konstrukt und als solches eigentlich nicht direkter "Abnutzung" ausgesetzt. Erkl&auml;ren sie, weshalb Software trotzdem altert.
-* Welche Probleme treten auf, wenn im Rahmer den Wartung &Auml;nderungen gemacht werden, die nicht konsistent mit dem urspr&uuml;nglichen Design sind?
-* Welche drei Strategien schl&auml;gt Parnas vor um das Problem der Alterung entgegenzuwirken?
+* Software ist ein mathematisches Konstrukt und als solches eigentlich nicht direkter "Abnutzung" ausgesetzt. Erkl&auml;ren Sie, weshalb Software trotzdem altert.
+* Welche Probleme treten auf, wenn im Rahmen der Wartung &Auml;nderungen gemacht werden, die nicht konsistent mit dem urspr&uuml;nglichen Design sind?
+* Welche drei Strategien schl&auml;gt Parnas vor, um dem Problem der Alterung entgegenzuwirken?
 * Software ist h&auml;ufig nicht gut dokumentiert
     * Was sind die Konsequenzen von fehlender Dokumentation?
-    * Welche positiven Nebeneffekte k&ouml;nnen beim nachtr&auml;glichen Dokumentieren von Software aufreten. Weshalb ist das so?
+    * Welche positiven Nebeneffekte k&ouml;nnen beim nachtr&auml;glichen Dokumentieren von Software aufreten? Weshalb ist das so?
     * Warum soll die Dokumentation trotzdem nicht nachtr&auml;glich, sondern w&auml;hrend dem Design erstellt werden?
-* Das Paper legt grossen Wert auf das Information Hiding. Erkl&auml;ren sie kurz das Konzept und weshalb es f&uuml;r die "gute Alterung" von Software von zentraler Bedeutung ist. 
+* Das Paper legt grossen Wert auf das Information Hiding. Erkl&auml;ren Sie kurz das Konzept und weshalb es f&uuml;r die "gute Alterung" von Software von zentraler Bedeutung ist. 
 
-* K&ouml;nnen wir verhindern dass Software veraltet und unwartbar wird? Warum/Warum nicht?
-* Das Paper ist inzwischen schon &uuml;ber 20 Jahre alt. Welche von obigen Problemen denken sie existieren auch heute noch? Was denken sie: ist die Situation heute besser oder schlechter? Weshalb?
+* K&ouml;nnen wir verhindern, dass Software veraltet und unwartbar wird? Warum/Warum nicht?
+* Das Paper ist inzwischen schon &uuml;ber 20 Jahre alt. Welche der obigen Probleme, denken Sie, existieren auch heute noch? Was denken Sie: Ist die Situation heute besser oder schlechter? Weshalb?
 
