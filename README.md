@@ -31,8 +31,8 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |  | Eigenschaften von Software [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html?print-pdf)| |
 |   | Software Qualit&auml;tsmerkmale [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-qualities.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-qualities.html?print-pdf) |  |
 | 3   | Prinzipien des Software engineerings  [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-software-engineering-principles.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-software-engineering-principles.html?print-pdf) | ge&auml;ndert 3.10 |
-|     | Software design - &Uuml;bersicht und Einf&uuml;hrung|  [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-design-objectives.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-design-objectives.html?print-pdf) |
-|     | Modulstruktur / Softwarearchitektur |  [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-module-structure.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-module-structure?print-pdf)|
+|     | Software design - &Uuml;bersicht und Einf&uuml;hrung [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-design-objectives.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-design-objectives.html?print-pdf)|  |
+|     | Modulstruktur / Softwarearchitektur   [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-module-structure.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-module-structure?print-pdf) | |
 | 4   | OO Design | |
 |     | Design strategien | |
 |     | UML Klassendiagramme | |
