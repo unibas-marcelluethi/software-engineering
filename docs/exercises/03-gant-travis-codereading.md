@@ -28,13 +28,13 @@ git branch
 Sie sollten nun alle ihre Branches sehen. Vor dem aktiven Branch (also master) sollte nun ein Sternchen sein. 
 
 #### Synchronisieren ihres Repositories mit dem Upstream Repository
-In der ersten &Uuml;bung haben sie das ganttproject Repository via Github "Fork" dupliziert. Sie arbeiten nun auf einem Repository, welches komplett vom originalen Repository abgekoppelt ist. Dies bedeutet aber auch, dass wenn nun im originalen Repository &Auml;nderungen vorgenommen werden, diese keine Auswirkungen auf ihr Repository haben. 
+In der ersten &Uuml;bung haben sie das ganttproject Repository via Github "Fork" dupliziert. Sie arbeiten nun auf einem Repository, welches komplett vom Ursprungsepository abgekoppelt ist. Dies bedeutet aber auch, dass wenn nun im Ursprungsepository &Auml;nderungen vorgenommen werden, diese keine Auswirkungen auf ihr Repository haben. 
 
-Sie k&ouml;nnen jedoch diese &Auml;nderungen wieder manuell in ihr Projekt einpflegen. Dazu m&uuml;ssen sie zuerst das original Repository als neues Remote Repository hinzuf&uuml;gen. Dies machen sie mit 
+Sie k&ouml;nnen jedoch diese &Auml;nderungen wieder manuell in ihr Projekt einpflegen. Dazu m&uuml;ssen sie zuerst das Ursprungsrepository als neues remote Repository hinzuf&uuml;gen. Dies machen sie mit 
 ```
 git remote add upstream https://github.com/unibas-sweng/ganttproject.git
 ```
-(Das Originalrepository wird per Konvention upstream genannt. Sie k&ouml;nnten diesem jedoch einen beliebigen Namen geben. Es handelt sich hier nur um einen Kurznamen f&uuml;r die URL).
+(Das Ursprungsrepository wird per Konvention upstream genannt. Sie k&ouml;nnten diesem jedoch einen beliebigen Namen geben. Es handelt sich hier nur um einen Kurznamen f&uuml;r die URL).
 
 Verifizieren Sie das hinzufügen mithilfe von:
 
