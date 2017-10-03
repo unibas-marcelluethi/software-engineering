@@ -59,6 +59,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |       | &Uuml;bungsblatt 1: No Silver bullet [(html)](https://unibas-sweng.github.io/software-engineering/exercises/01-theory-no-silver-bullet.html)| 26. September 2017|
 |  2    | &Uuml;bungsblatt 2: Software Aging [(html)](https://unibas-sweng.github.io/software-engineering/exercises/02-theory-software-aging.html)| 03. Oktober 2017|
 |  2-3    | Ganttproject: Erste &Auml;nderungen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/02-gant-small-changes.html) | 10. Oktober 2017 |
+|  3-4    | Ganttproject: Travis & Codereading [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-gant-travis-codereading.md) | 17. Oktober 2017 |
 
 
 #### Slides zu &Uuml;bungswerkzeugen
