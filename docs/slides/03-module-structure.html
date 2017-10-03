@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Modul Struktur</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h3>
+                    Modulstruktur / Softwarearchitektur
+                </h3>
+                <p>
+                    <small> Marcel L&uuml;thi </br> 
+                                    Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section>
+
+
+            <section>
+                <h3>Wichtige Fragen </h3>
+                <ul>
+                    <li> Wie definiert man die Struktur eines modularen Systems?</li>
+                    <li> Was f&uuml;r Eigenschaften sollte so ein System haben? </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Beziehungen zwischen Modulen </h3>
+
+                Module: \[ S = \{M_1, \ldots, M_n\} \] Bin&auml;re Relation r ist eine Teilmenge $ r \subset S \times S$:
+
+                <p>Wir schreiben
+                    <p>
+                        \[ M_i\, r\, M_j \text{ falls } (M_i, M_j) \in r \]
+
+            </section>
+
+            <section>
+                <h3> Transitive H&uuml;lle</h3>
+                \[ \begin{align} &M_i\, r^+\, M_j \text{ genau dann, wenn } \\ &M_i\, r \, M_j \\ &\text{ oder } \\ &\exists M_k \in S \;
+                \text{so dass} \; M_i r M_k \text{ und } M_k r^+ M_j \end{align} \]
+
+            </section>
+
+            <section>
+                <h3> Hierarchien </h3>
+                $r$ ist eine
+                <mark class="highlight">Hierarchie</mark> genau dann, wenn keine zwei Elemente $M_i, M_j$ existieren, so dass \[ M_i \, r^+ \, M_j
+                \text{ und } M_j \, r^+ \, M_i \]
+            </section>
+
+            <section>
+                <h3> Quiz </h3>
+                <ul><li>
+                    Was ist die transitive H&uuml;lle von M2?</li>
+                    <li>Welche Graph beschreibt eine Hierarchie?</li>
+                </ul>
+                <div style="width:50%;float:left">
+                    <img src="images/module-dag.png" class="plain"></img>
+                </div>
+                <div style="width:50%;float:right">
+                    <img src="images/module-hierarchy.png" class="plain"></img>
+                </div>
+
+            </section>
+
+            <section>
+                <h3> "Uses" Beziehung </h3>
+
+                <div style="float:left;width:80%">
+                    <ul>
+                        <li> A "uses" B </li>
+                        <ul>
+                            <li>B stellt Funktionalit&auml;t f&uuml;r A zur Verf&uuml;gung</li>
+                            <li>Services von B werden via Schnittstelle zur Verf&uuml;gung gestellt </li>
+                            <li>Funktionalit&auml;t von A h&auml;ngt von B ab. </li>
+                            <li>A ist der "client", B der "server" </li>
+                        </ul>
+                        <blockquote class="fragment"> Die Beziehung ist
+                            <mark class="highlight">statisch </mark> definiert.
+                        </blockquote>
+                    </ul>
+                </div>
+                <div style="float:right;width:20%">
+                    <img src="images/uses.png" class="plain" />
+                </div>
+            </section>
+
+            <section>
+                <h3>"Uses" Beziehung </h3>
+                <ul>
+                    <li>Idealerweise sind Module in Hierarchien organisiert</li>
+                    <ul>
+                        <li> Einfach zu verstehen (Bottom up)</li>
+                    </ul>
+                    <li> Erleichtert das Testen </li>
+                    <ul>
+                        <li> Funktionalit&auml;t kann isoliert getestet werden </li>
+                    </ul>
+                </ul>
+                <div style="float:left;width:50%">
+                    <figure>
+                        <img src="images/module-simple-hierarchy.png" class="plain" />
+                        <figcaption>Einfach</figcaption>
+                    </figure>
+                </div>
+                <div style="float:right;width:50%">
+                    <figure>
+                        <img src="images/module-simple-cycle.png" class="plain" />
+                        <figcaption>Schwierig</figcaption>
+                    </figure>
+                </div>
+
+            </section>
+
+            <section>
+                <h3> Sandwiching</h3>
+
+                <blockquote> Dient zum Aufbrechen zyklischer Strukturen</blockquote>
+
+                <ul>
+                    <li>
+                        Idee: Modulfunktionalit&auml;t in 2 Module aufteilen.
+                        <ul>
+                            <li>Modul 1: Nur inkommenden Abh&auml;ngigkeiten</li>
+                            <li>Modul 2: Nur ausgehende Abh&auml;ngigkeiten</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div style="display:inline-block">
+                    <div style="float:left;width:30%">
+                        <img src="images/module-sandwiching-1.png" class="plain" />
+                    </div>
+                    <div style="float:left;width:30%">
+                        <img src="images/module-sandwiching-2.png" class="plain" />
+                    </div>
+                    <div style="float:left;width:30%">
+                        <img src="images/module-sandwiching-3.png" class="plain" />
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section>
+                <h3>Abstraktionsebenen </h3>
+                <div style="padding-bottom:5mm">
+                    <ul>
+                        <li> Hierarchien organisieren Module als "Abstraktionsebenen"</li>
+                        <li> Jede Ebene definiert "Abstrakte Maschine" </li>
+                    </ul>
+                </div>
+                <div class="fragment" style="border-width:1pt;border-style:solid">
+                    <h4>Formale definition von Ebene:</h4>
+                    <ul>
+                        <li>
+                            $M_i$ ist auf Ebene 0, falls \[ \nexists M_j, \text{ so dass } M_i r M_j \]
+                        </li>
+                        <li>
+                            Sei $k$ die h&ouml;chste Ebene aller Module $M_j$, so dass $M_i r M_j$. Dann ist $M_i$ auf Ebene $k+1$
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                    <h3> Quiz </h3>
+                    <ul>
+                        <li>Auf welcher Ebene ist Knoten M3</li>
+                    </ul>
+                    <div style="width:50%;float:none;margin-left:auto;margin-right:auto">
+                        <img src="images/module-hierarchy.png" class="plain"></img>
+                    </div>
+    
+                </section>
+    
+    
+
+            <section>
+                <h3>Beispielarchitektur: Layering </h3>
+                <div>
+                    <img src="images/module-layering.png" class="plain" />
+                </div>
+                <ul>
+                    <li> Klassisches Beispiel: 3-Tier Architektur</li>
+                    <ol>
+                        <li> Pr&auml;sentation</li>
+                        <li> Anwendungslogik</li>
+                        <li>Datenbank</li>
+                    </ol>
+                </ul>
+            </section>
+
+
+            <section>
+                <h3>Beispielarchitektur: Layering </h3>
+
+                <ul>
+                    <li> ISO/OSI Referenzmodell </li>
+                </ul>
+                <figure>
+                    <img src="images/osi-model.png" />
+                    <figcaption style="font-size:x-small">By <a href="https://en.wikipedia.org/wiki/User:Dino.korah" class="extiw" title="en:User:Dino.korah">Dino.korah</a>                        - Created by <a href="https://en.wikipedia.org/wiki/User:Dino.korah" class="extiw" title="en:User:Dino.korah">Dino.korah</a>,
+                        who originally uploaded it to the <a class="external text" href="http://en.wikipedia.org">English Wikipedia</a>,
+                        <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>,
+                        <a href="https://commons.wikimedia.org/w/index.php?curid=5538589">Link</a></figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Beispielarchitektur: Pipelines </h3>
+                <div>
+                    <img src="images/module-pipeline.png" class="plain" />
+                </div>
+                <ul>
+                    <li>Hintereinanderausf&uuml;hren von Tasks</li>
+                    <li> Beispiele: </li>
+                    <ul>
+                        <li>Filterketten in Bildverarbeitung</li>
+                        <li>Unix Pipes</li>
+                    </ul>
+                </ul>
+                <div style="width:80%; margin-left:auto; margin-right:auto">
+                <pre><code data-trim data-noescape>
+                            $ cat /etc/passwd | cut -d":" -f1 | grep marcel | less 
+                </code></pre>
+            </div>
+            </section>
+
+            <section>
+                <h3>Beispielarchitektur: Blackboard </h3>
+                <div>
+                        <img src="images/module-blackboard.png" class="plain" />
+                    </div>
+
+                    <ul>
+                        <li>Kommunikation via zentrale Kommunikationsstelle.</li>
+                        <li>N&uuml;tzlich wenn viele Subsysteme miteinander kommunizieren m&uuml;ssen.</li>
+                    </ul>
+            </section>
+
+
+
+
+
+            <section>
+                <h3> Fan in / Fan out </h3>
+                <ul>
+                    <li> Fan-in: Anzahl einkommender Beziehungen</li>
+                    <li> Fan-out: Anzahl ausgehender Beziehungen </li>
+                </ul>
+                <div style="float:left;width:50%">
+                    <img src="images/module-high-fan-in.png" class="plain" />
+                </div>
+                <div style="float:right;width:50%">
+                    <img src="images/module-high-fan-out.png" class="plain" />
+                </div>
+
+                <ul>
+                    <li>Hoher fan-in ist Indikator f&uuml;r gute Abstraktion.</li>
+                    <ul>
+                        <li>Viele Module benutzen Modul</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Die Beziehung "is_component_of"</h3>
+
+                <div style="float:left; width:85%">
+                    <ul>
+                        <li>Ein Modul besteht aus einfacheren Modulen</li>
+                        <li>A "is_component_of" B </li>
+                        <ul>
+                            <li> B besteht aus mehreren Module, wovon eins A ist
+                        </ul>
+                        <li>Auch
+                            <mark class="highlight">Aggregation</mark> oder
+                            <mark class="highlight">Komposition</mark> genannt. </li>
+
+                    </ul>
+                </div>
+                <div style="float:left; width:15%">
+                    <img src="images/module-simple_is_component_of.png" class="plain" />
+                </div>
+                <blockquote style="display:inline-block"> Beschreibung eines Moduls auf h&ouml;herem Abstraktionsgrad. </blockquote>
+            </section>
+
+
+            <section>
+                <h3> Die Beziehung "is_component_of" </h3>
+                <img src="images/module-is_component_of.png" style="width:50%" class="plain" />
+            </section>
+
+            <section>
+                <h3> Beispiel von "is_component_of"
+                    <h3>
+
+                        <img class="plain   " src="images/browser-architecture.png" />
+
+            </section>
+
+            <section>
+                <h3> Unit Tests </h3>
+                <ul>
+                    <li> Was ist an zyklischen Modulstrukturen problematisch? </li>
+                    <li> Wie kann man zyklische Strukturen aufbrechen?</li>
+                    <li> Wie kann man mittels der "uses" Beziehung Abstraktionsebenen definieren? </li>
+                    <li> Weshalb ist hoher "fan in" ein Indikator f&uuml;r gutes Design?</li>
+                    <li> Wie unterscheiden sich Abstraktionsebenen die durch "uses" definiert sind von den 
+                        Abstraktionen die durch "is_component_of" definiert sind?
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>

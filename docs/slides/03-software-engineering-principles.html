@@ -71,7 +71,7 @@
                 </blockquote>
 
                 <div style="text-align:left">
-                Beispiele:
+                <text class="fragment">Beispiele:</text>
                     <ul> 
                         <li  class="fragment">Schlecht: Benutze JUnit um Tests zu schreiben </li>
                         <li class="fragment">Schlecht: Schreibe qualitativ gute Software </li>
@@ -117,7 +117,7 @@
             <section>
                     <h3>Genauigkeit und formales Vorgehen </h3>
                     <div style="float:right;width:100%; text-align:center; vertical-align:top">
-                        <img src="images/notes.png" />
+                        <img src="images/notes.png" class="plain"/>
                     </div>
                     
                     <blockquote style="display:inline-block">Regeln m&uuml;ssen Kreativit&auml;t nicht einschr&auml;nken.</blockquote>
@@ -150,20 +150,21 @@
             <section>
                 <h3> Beispiele f&uuml;r Genauigkeit und Formalit&auml;t </h3>
                 <ul>
-                    <li> Typsignaturen sind ein Beispiel von einer formaler Spezifikation </li>
+                    <li> Typsignaturen sind Beispiele von formaler Spezifikation </li>
                 </ul>
 
                 <pre><code data-trim data-noescape>
-                 public int foo(String bar) { ??? }
+                    int foo(String bar) { ??? }
                 </code></pre>
 
                 <div class="fragment">
                     <pre><code data-trim data-noescape>
-                    public interface Stream&lt;T &gt; extends BaseStream&lt;T, Stream&lt;T&gt; &gt; {
+                    interface Stream&lt;T &gt; extends BaseStream&lt;T, Stream&lt;T&gt; &gt; {
                        &lt;R&gt; Stream&lt;R&gt; map(Function&lt;? super T, ? extends R&gt; mapper);
                     }
                 </code></pre>
                 </div>
+
             </section>
 
             <section>
@@ -222,7 +223,6 @@
                 </ul>
                 <figure>
                     <img src="images/hubelino.jpg" style="width:50%" />
-                    <figcaption style="font-size:x-small">source: hubelino.de</figcaption>
                     <figure/>
 
             </section>
@@ -230,8 +230,7 @@
             <section>
                 <h3>Modularit&auml;t</h3>
                 <figure>
-                <img src="images/hubelino-teile.png"/>
-                <figcaption style="font-size:x-small">source: https://miesmuschelchen.files.wordpress.com/2016/03/einzelneteile.png?w=760</figcaption>
+                <img src="images/hubelino-teile.jpg"/>
                 </figure>
             </section>
 
@@ -316,11 +315,11 @@
                     <li>Design wird entsprechend angepasst </li>
                     <li> Beispiel: Plattformunab&auml;ngiges Programmieren </li>
                     <ul>
-                        </li> Betriebssystem spezifische Routinen werden abstrahiert </li>
+                        <li> Betriebssystem spezifische Routinen werden abstrahiert </li>
                     </ul>
                 </ul>
 
-                <blockquote class="fragment">Steht im Konflikt zum
+                <blockquote class="fragment">Steht in Konkurrenz zum
                     <mark class="highlight">YAGNI</mark> Prinzip
                     <ul>
                         <li>You ain't gonna need it </li>

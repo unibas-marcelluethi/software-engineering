@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Software Aging</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h2>
+                   Software Aging
+                </h2>
+                <p>
+                        <small> Marcel L&uuml;thi </br> 
+                                    Departement Mathematik und Informatik </small>
+                    </p>
+                    <p>
+                        <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                    </p>
+      
+            </section>
+
+            <section>
+                <h4> Warum altert Software?</h4>
+            </section>
+
+            <section>
+                <h4> Wenn unsere Software alt wird waren wir erfolgreich! </h4>
+                    <img src="images/emacs.png"/>
+
+                    <p>Beispiel einer erfolgreichen Software:
+                        <ul><li>Emacs - <text style="font-size:smaller">The Extensible, Customizable, <br/> Self-Documenting Display Editor</text></li></ul></p>
+                </section>
+    
+
+            <section>
+                <h4> Welche Probleme treten auf, wenn bei Wartung mit dem Design inkonsistente Änderungen gemacht werden?</h4>
+            </section>
+                
+            <section>
+
+                <h4> Drei Strategien um dem Problem der Alterung entgegenzuwirken? </h4>
+            </section>
+
+            <section>
+                    <h4>Was sind die Konsequenzen von fehlender Dokumentation?</h4>
+            </section>
+                
+            <section>
+                    <h4>Warum soll die Software trotzdem zur Entwicklungszeit dokumentiert werden</h4>
+            </section>
+            <section>
+                    <h4>Was ist information hiding?</h4>
+            </section>
+                <section>
+                    <h4>K&ouml;nnen wir verhindern, dass Software unwartbar wird?</h4>
+                </section>
+                
+                <section>
+                    <h4>Ist die Situation heute besser oder schlechter als vor 20 Jahren?</h4>
+                </section>
+                
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>
