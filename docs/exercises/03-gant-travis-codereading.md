@@ -2,9 +2,10 @@
 
 ## Administratives
 
-* Dieses &Uuml;bungsblatt sollte bis am 16. Oktober 2017 bearbeitet werden.  
+* Dieses &Uuml;bungsblatt sollte bis am 17. Oktober 2017 bearbeitet werden.  
+    * Abgabe via Pull Request bis sp&auml;testens 17. Oktober, 23.59.
 * Fragen und Probleme k&ouml;nnen in den  &Uuml;bungsstunden am 4. und 11. Oktober besprochen werden.   
-* Abgabe via Pull Request bis sp&auml;testens 16. Oktober, 23.59.
+
 
 ## Einf&uuml;hrung
 
