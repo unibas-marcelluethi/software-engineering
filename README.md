@@ -30,9 +30,9 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | 2  | Kurze Geschichte des Software engineerings [(html)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/01-history.html?print-pdf) | ge&auml;ndert 26.9|
 |  | Eigenschaften von Software [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-nature.html?print-pdf)| |
 |   | Software Qualit&auml;tsmerkmale [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-qualities.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-qualities.html?print-pdf) |  |
-| 3   | Prinzipien des Software engineerings  [(html)](https://unibas-sweng.github.io/software-engineering/slides/02-software-engineering-principles.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/02-software-engineering-principles.html?print-pdf) | |
-|     | Abstrakte Datentypen | |
-|     | Module und Komponenten | |
+| 3   | Prinzipien des Software engineerings  [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-software-engineering-principles.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-software-engineering-principles.html?print-pdf) | ge&auml;ndert 3.10 |
+|     | Software design - &Uuml;bersicht und Einf&uuml;hrung [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-design-objectives.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-design-objectives.html?print-pdf)|  |
+|     | Modulstruktur / Softwarearchitektur   [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-module-structure.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-module-structure?print-pdf) | |
 | 4   | OO Design | |
 |     | Design strategien | |
 |     | UML Klassendiagramme | |
