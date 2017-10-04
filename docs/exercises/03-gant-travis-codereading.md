@@ -136,9 +136,9 @@ Dokumentieren sie die Toplevel packages
 * ```biz.ganttproject.impex.ical```
 * ```biz.ganttproejct.impex.msproject2```
 * ```ganttproject```
-* ```ganttproject.tester```
+* ```ganttproject-tester```
 * ```org.ganttproject.chart.pert```
-* ```org.ganttproject.impex.html```
+* ```org.ganttproject.impex.htmlpdf```
 
 Sie k&ouml;nnen diese mittels Javadoc dokumentieren, indem sie in jedes Verzeichnis eine Datei
 ```package-info.java``` erstellen, die wie folgt aussieht
