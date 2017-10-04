@@ -9,7 +9,7 @@
 
 ## Einf&uuml;hrung
 
-In dieser &Uuml;bung werden Sie lernen wie sie &Auml;nderungen aus dem upstream Repository synchronisieren, was [Travis](www.travis-ci.com) ist und sich einen &Uuml;berblick &uuml;ber die Struktur des Codes verschaffen und Teile des Codes dokumentieren.  
+In dieser &Uuml;bung werden Sie lernen wie sie &Auml;nderungen aus dem upstream Repository synchronisieren, was [Travis](https://www.travis-ci.com) ist und sich einen &Uuml;berblick &uuml;ber die Struktur des Codes verschaffen und Teile des Codes dokumentieren.  
 
 
 ## 1. Synchronisieren ihres Repositories mit dem Upstream Repository
