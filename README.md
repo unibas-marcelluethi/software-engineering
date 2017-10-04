@@ -75,3 +75,12 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 * [C. Ghezzi, M. Jazayeri and D. Mandrioli, Fundamentals of Software Engineering](https://www.pearson.com/us/higher-education/program/Ghezzi-Fundamentals-of-Software-Engineering-2nd-Edition/PGM13112.html)
 
 
+#### Weiterführende Links und Literaturempfehlungen für besonders Interessierte
+* The mythical man month, Fred Brooks: [(pdf)](https://is.muni.cz/www/208322/The.Mythical.Man.Month.F.Brooks.pdf)
+    * Das Klassische Software Engineering Buch. Einfach und unterhaltsam zu lesen aber voller wertvoller Informationen.
+* Seminal papers in Software Engineering, The Carnegie Mellon Canonical Collection [(pdf)](http://repository.cmu.edu/cgi/viewcontent.cgi?article=2038&context=isr)
+    * Annotierter Katalog von klassischen Software Engineering Paper
+* Liskov's reading list [(html)](https://jpirker.com/hlf16-liskovs-reading-list-for-computer-scientists/)
+    * Must reads f&uuml;r Informatiker, zusammengestellt von [Barbara Liskov](https://en.wikipedia.org/wiki/Barbara_Liskov)
+
+
