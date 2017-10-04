@@ -111,7 +111,7 @@ Damit sie Travis auch f&uuml;r ihr Projekt verwenden k&ouml;nnen, m&uuml;ssen si
 
 *Anmerkung: Travis ist ein kommerzieller Service. Sie haben aber 99 Trial runs zur Verf&uuml;gung. Dies sollte f&uuml;r diesen Kurs reichen. F&uuml;r Open Source Projekte ist Travis aber gratis nutzbar. Deshalb ist Travis der Standard Service in der Open Source Entwicklung*.
 
-*Anmerkung 2: Wenn Sie sich für das [Github Educational Pack](https://education.github.com/pack) registriert haben, haben Sie gratis builds für private repositories. Falls Ihr Fork Public ist, müssen sie auf www.travis-ci.org wechseln. Die beiden Seiten sind identisch und werden von derselben Firma betrieben.*.
+*Anmerkung 2: Wenn Sie sich für das [Github Educational Pack](https://education.github.com/pack) registriert haben, haben Sie gratis builds für private repositories. Falls Ihr Fork public ist, müssen sie auf www.travis-ci.org wechseln. Die beiden Seiten sind identisch und werden von derselben Firma betrieben.*.
 
 
 Probieren sie aus was passiert wenn sie Code committen (und auf Github pushen), der nicht kompiliert. 
