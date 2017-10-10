@@ -33,19 +33,15 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | 3   | Prinzipien des Software engineerings  [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-software-engineering-principles.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-software-engineering-principles.html?print-pdf) | ge&auml;ndert 3.10 |
 |     | Software design - &Uuml;bersicht und Einf&uuml;hrung [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-design-objectives.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-design-objectives.html?print-pdf)|  |
 |     | Modulstruktur / Softwarearchitektur   [(html)](https://unibas-sweng.github.io/software-engineering/slides/03-module-structure.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/03-module-structure?print-pdf) | |
-| 4   | OO Design | |
-|     | Design strategien | |
-|     | UML Klassendiagramme | |
-| 5   | Spezifizieren von Software | |
+| 4   | Moduldesign  [(html)](https://unibas-sweng.github.io/software-engineering/slides/04-module-design.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/04-module-design?print-pdf) | |
+|     | Modul Beschreibung   [(html)](https://unibas-sweng.github.io/software-engineering/slides/04-module-description.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/04-module-description?print-pdf) | |
+|     | Kategorien von Modulen   [(html)](https://unibas-sweng.github.io/software-engineering/slides/04-module-categories.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/04-module-categories?print-pdf) | |
+| 5   | OO Design |
+| 6 /7   | Spezifizieren von Software | |
 |     | UML | |
-| 6   | Validierung und Testen | |
-|     | Test theorie | |
-|     | Unit testing und test first development | |
-| 7   | Formale Methoden zur Softwarevalidierung | |
-| 8   | Requirementsengineering | |
+| 8   | Validierung und Testen | |
 | 9   | Software prozesse | |
-| 10  | Architekturmuster | |
-|     | Objektorientierte Entwurfsmuster | |
+| 10  | Objektorientierte Entwurfsmuster | |
 | 11  | Funktionale Entwurfsmuster | |
 |     | Entwurfsmuster f&uuml;r Verteilte Programmierung | |
 | 12  | Refactoring | |
