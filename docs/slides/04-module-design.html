@@ -1,0 +1,568 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Module design</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h2>
+                    Modul design
+                </h2>
+                <p>
+                    <small> Marcel L&uuml;thi </br> 
+                                        Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section>
+
+
+            <section>
+                <h3> Modul Aufbau im Allgemeinen</h3>
+
+                <div style="float:left;width:70%">
+                    <ul>
+                        <li> Um die "Uses" Beziehung zu verstehen, m&uuml;ssen wir wissen, was der Server exportiert </li>
+                        <ul>
+                            <li>Export via wohldefiniertes Interface</li>
+                        </ul>
+                        <li> Der Client "importiert" eine exportierte Resource des Servers.</li>
+                        <li> Das Server Modul implementiert die Resource </li>
+                    </ul>
+                </div>
+                <div style="float:right;width:30%">
+                    <img class="plain" src="images/uses.png" />
+                </div>
+            </section>
+
+            <section>
+                <h3> Interface und Implementation</h3>
+                <div style="float:left;width:50%;margin-left:auto">
+                    <h5>Interface</h5>
+                    <figure>
+                        <img src="http://www.tractordata.com/photos/F000/107/107-td3t1.jpg" class="plain" />
+                        <figcaption style="font-size:x-small">source: tractordata.com</figcaption>
+                        <figure/>
+                </div>
+
+                <div style="float:right;width:50%;margin-right:auto">
+                    <h5>Implementation</h5>
+                    <figure>
+                        <img src="images/gearbox.jpg" class="plain" />
+                        <figcaption style="font-size:x-small">By <a href="//commons.wikimedia.org/wiki/User:Kozuch" title="User:Kozuch">Kozuch</a> - <span class="int-own-work"
+                                lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>,
+                            <a href="https://commons.wikimedia.org/w/index.php?curid=5575566">Link</a></figcaption>
+                        <figure/>
+                </div>
+                <blockquote style="display:inline-block">Interface
+                    <mark class="highlight">abstrahiert</mark> Funktionalit&auml;t</blockquote>
+            </section>
+
+
+            <section>
+                <h3>Interface und Implementation: Beispiel in Java</h3>
+                <pre><code data-trim class="java">
+                       class PriorityQueue&lt;E&gt; {
+
+                           private  Object[] queue;
+
+                           public void add(E element) { // implementation }
+                           public E poll() {// implementation }
+
+                           private void siftDown(int k, E element) {// implementation }
+                           private void siftUp(int k, E element)  {// implementation }
+                        }
+                        </code></pre>
+            </section>
+
+            <section>
+                <h3>Interface und Implementation: Beispiel in Java</h3>
+                <pre><code data-trim class="java">
+                           interface PriorityQueue&lt;E&gt; {
+        
+                               public void add(E element);
+                               public E poll();
+                           }
+                               
+                           class PriorityQueueImpl&lt;E&gt; implements PriorityQueue {
+                                public void add(E element) { // implementation }
+                                public E poll() {// implementation }
+
+                                private void siftDown(int k, E element) {// implementation }
+                                private void siftUp(int k, E element)  {// implementation }
+                            }
+                            </code></pre>
+            </section>
+
+
+            <section>
+                <h3> Interface und Implementation</h3>
+
+                <blockquote> Interface beschreibt
+                        <mark class="highlight">Vertrag</mark>
+                        zwischen Client und Server
+                    </blockquote>
+                    
+                <ul>
+                    <li>
+                        Erm&ouml;glicht Teilung der Verantwortlichkeiten
+                    </li>
+                    <ul>
+                        <li> Client benutzt Resourcen </li>
+                        <li> Server sorgt f&uuml;r richtige Implementation </li>
+                    </ul>
+                    <li> Implementation kann ausgetauscht werden</li>
+                    <ul>
+                        <li> Erleichtert das Testen: Dummy Implementationen m&ouml;glich </li>
+                    </ul>                    
+                </ul>
+
+            </section>
+
+
+            <section>
+                    <h3>Interfaces und Prototypen </h3>
+                    <ul>
+                        <li> Interfaces erm&ouml;glichen Rapid Prototyping</li>
+                        <li> Nach Definition der Schnittstelle kann mit der Implementation begonnen werden </li>
+                        <ul>
+                            <li>Erste Version: Einfach und e.v. noch ineffizient </li>
+                            <li>Danach iteratives verbessern </li>
+                        </ul>
+                        <li> Erste Version ist Prototyp </li>
+                        <ul>
+                            <li> Wird inkrementell zu Produkt verbessert </li>
+                        </ul>
+                    </ul>
+                </section>
+    
+
+            <section>
+                <h3> Designen einer Modulschnittstelle</h3>
+
+                <blockquote> Interface ist die
+                        <mark class="highlight">Firewall</mark>
+                        zwischen Client und Server.
+                    </blockquote>
+    
+                <ul>
+                    <li> Schnittstelle beschreibt nur was Clients wissen m&uuml;ssen </li>
+                    <ul>
+                        <li> M&ouml;glichst wenig Internas sollen preisgegeben werden</li>
+                    </ul>
+                    <li> Implementation sollte ge&auml;ndert werde k&ouml;nnen ohne dass Client ver&auml;ndert werden muss. </li>
+                </ul>
+
+            </section>
+
+
+            <!--
+            <section>
+                <h3>Charakteristiken guter Schnittstellen</h3>
+
+                <ul>
+                    <li>Einfach zu lernen </li>
+                    <li>Einfach zu nutzen </li>
+                    <ul>
+                        <li> auch ohne Dokumentation </li>
+                    </ul>
+                    <li>Schwierig zu missbrauchen </li>
+                    <li>Code der sie benutzt sollte einfach zu lsen sein </li>
+                    <li>Gen&uuml;gend m&auml;chtig um Anforderungen zu erf&uuml;llen </li>
+                    <li>Einfach erweiterbar</li>
+                    <li> Auf Zielgruppe ausgerichtet </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Beispiel Interface/ Implementation in Java</h3>
+            </section>
+        -->
+
+
+
+
+            <section>
+                <h3> Information hiding</h3>
+
+                <blockquote>
+                    Komponenten die sich (wahrscheinlich) <mark class="highlight">&auml;ndern werden</mark>  sollten immer hinter einem Interface vor dem Client versteckt werden.
+                </blockquote>
+                <ul>
+                    <li> Wichtigstes Designprinzip</li>
+                    <li> Speziell wichtig wenn Daten als Teil des Moduls modelliert werden </li>
+                    <li> Grundlage der gesamten Objekt Orientierten Programmierung </li>
+                </ul>
+            </section>
+
+
+
+
+            <section>
+                <h3>Kapselung</h3>
+
+                <blockquote>
+                    Sprachkonstrukt um Zugriff auf Teile eines Objekts einzuschr&auml;nken</li>
+                </blockquote>
+                <ul>
+                    <li>In OO Sprachen wird Information Hiding durch Kapselung erreicht.</li>
+                    <li>Information Hiding ist ein
+                        <mark class="highlight">Prinzip</mark>
+                    </li>
+                    <li>Kapselung ist die <mark class="highlight">Methode</mark> um das Prinzip zu erreichen.</li>
+                </ul>
+            </section>
+
+
+
+            <section>
+                    <h3>Information Hiding: Java Beispiel</h3>
+                    <pre><code data-trim class="java">
+                        class Employees { 
+                            private List&lt;Person&gt; employees;
+                            bool hire(Person p) { employees.add(p); }
+                            bool fire(Person p) { employees.remove(p); }
+                            bool isEmplyee(Person p) { employee.contains(p); }
+                        }
+                            </code></pre>
+                </section>
+    
+            <section>
+                <h3>Information Hiding: Java Beispiel</h3>
+                <pre><code data-trim class="java">
+                        interface List&lt;E&gt; {
+                            int size();
+                            int isEmpty();
+                            void add(E element);
+                            ...
+                        }
+                        </code></pre>
+                <pre><code data-trim class="java">
+                        class LinkedList&lt;E&gt; implements List&lt;E&gt; {
+                            private static class Node&lt;E&gt; {
+                                    E item;
+                                    Node&lt;E&gt; next;
+                                    Node&lt;E&gt; prev;
+                                        ... 
+                                    }
+                                }
+                            @override 
+                            void size() { // implementation}                                    
+                        }
+                        </code></pre>
+            </section>
+
+            <section>
+                <h3>Information hiding: Java Beispiel</h3>
+                <pre><code data-trim class="java">
+                            interface ImageReader {
+                                BufferedImage read();
+                            }
+                            </code></pre>
+                <pre><code data-trim class="java">
+                            public class PNGImageReader implements ImageReader {
+                                @override
+                                BufferedImage read() { // implementation }
+                            }
+                            </code></pre>
+                <pre><code data-trim class="java">
+                                    public class JPEGImageReader implements ImageReader {
+                                        @override
+                                        BufferedImage read() { // implementation }
+                                    }
+                            </code></pre>
+
+            </section>
+
+
+            <section>
+                <h2> Ausnahmebehandlung </h2>
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB6O3awv5xCoMma6fhPIDlEIBHnQhcgpzHsaEQ08Sm4ai192Po"/>
+                <ul>
+                    <li> Jedes Produkt, dass wir entwickeln kann fehlschlagen </li>
+                    <ul>
+                        <li> Fehlersituation m&uuml;ssen spezifiziert werden </li>
+                        <li> Ein Module muss in Fehlersituation diese als "Exception" anzeigen </li>
+                    </ul>
+                </ul>
+
+            </section>
+
+            <section>
+                <h2>Fehlerursachen</h2>
+
+
+                <ul>
+                    <li>Ein Modul $M$ sollte in folgenden Situationen einen Fehler anzeigen:</li>
+                    <ul>
+                        <li>Ein Client verletzt das "Protokoll" bei Serviceaufruf von $M$</li>
+                        <li>$M$ selbst verletzt das Protokoll wenn es eigene Services aufruft und schl&auml;gt deshalb fehl </li>
+                        <li> Hardware Fehler, Division durch 0, etc.</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h2> M&ouml;glichkeiten zur Fehlerbehandlung</h2>
+                <ul>
+                    <li> Spezielle
+                        <mark class="highlight">Exception Handler</mark>
+                        werden nach Fehler ausgef&uuml;hrt</li>
+                    <li>Idealfall:</li>
+                    <ul>
+                        <li> Fehler wird behoben.
+                        </li>
+                        <li>Modul kann weiterarbeiten -> Kein Fehler </li>
+                    </ul>
+
+                    <li> Keine L&ouml;sung m&ouml;glich</li>
+                    <ul>
+                        <li> Cleanup und Fehler propagieren </li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Exceptions und erwartete Fehler</h2>
+
+                <ul><li>Erwartete Fehler sollten &uuml;ber R&uuml;ckgabewert angezeigt werden.</li></ul>
+
+                Nicht ideal, da keine Ausnahme:
+                <pre><code  class="java" data-trim> 
+                        class List&lt;E&gt; {
+                            // return position of element in list 
+                            int findElement(E key) throws ElementNotFoundException;
+                        }
+                    </code></pre>
+ 
+                Besser:
+                <pre><code class="java" data-trim> 
+                        class List&lt;E&gt; { 
+                            // return position of element or -1 if element is not found
+                            int findElement(E key);
+                        }
+                    </code></pre>           
+               
+ 
+            </section>
+
+            <section>
+                <h2>Exceptions und erwartete Fehler</h2>
+
+                Am besten:
+                <pre><code class="java" data-trim data-no-escape> 
+                        class List&lt;E&gt; { 
+                                Optional&lt;int&gt; findElement(E key);
+                            }
+                        </code></pre>
+
+                <ul>
+                    <li> Spezieller Typ markiert den Fehler </li>
+                    <li> Server zwingt Client zum behandeln des Fehlers</li>
+                </ul>
+
+
+                <pre class="fragment"><code class="java" data-trim data-no-escape> 
+                    Optional&lt;int&gt; element = list.findElement("abc");
+                    if (element.isPresent()) {
+                        int elementIndex = element.get(); 
+                    }
+                    else { 
+                        // handle case that element is not found 
+                    }
+                        </code></pre>
+
+            </section>
+
+
+            <section>
+                    <h3>Grafische Modulbeschreibung</h3> 
+                    <ul> <li> Intuitive Beschreibung von Zusammenh&auml;ngen </li>
+                    <li>Abstrahiert Details</li>
+                    <li>Detailgrad kann Anwendung angepasst werden</li>
+                </ul>
+    
+                    <img src="images/modul-graph-blackbox.png" class="plain" style="width:50%"/>
+                </section>
+    
+    
+                <section>
+                    <h3>Grafische Modulbeschreibung</h3> 
+                    <ul> <li> Intuitive Beschreibung von Zusammenh&auml;ngen </li>
+                    <li>Abstrahiert Details</li></ul>
+                    <li>Detailgrad kann Anwendung angepasst werden</li>
+                    <img src="images/modul-graph-whitebox.png" class="plain" style="width:50%"/>
+                </section>
+    
+    
+                <section>
+                        <h3> Textuelle Modulbeschreibung</h3>
+        
+                        <ul>
+                            <li> Genauigkeit von grafischen Beschreibungen oft nicht ausreichend.</li>
+                            <li> Alternative: Textuelle Modulbeschreibung</li>
+                            <ul>
+                                <li> Syntax soll keiner realen Programmiersprache entsprechen </li>
+                            <li> Abstrahiert Implementationsdetails </li>
+                            <li> L&auml;sst uns idealisierte Konzepte ausdr&uuml;cken </li>                
+                        </ul>
+                        </ul>
+                    </section>
+        
+                    <section>
+                        <h3>Modul Spezifikation (abstrakt)</h3>
+        
+                        <pre><code data-trim>
+                        module X
+                            uses Y, Z;
+                        exports 
+                            var A: INTEGER;
+                            type B: array (1..10) of REAL;
+                            procedure C(D: in out B; E: in INTEGER; F: in REAL);
+                        implementation
+                            is composed of R, T
+                        end X
+                        </code></pre>
+                     
+                    </section>
+                    <section>
+                        <h3>Modul Spezifikation (abstrakt)</h3>
+        
+                        <pre><code data-trim>
+                            module R
+                                uses Y;
+                            exports 
+                                var K: record ... end;
+                                type B: array (1..10) of REAL;
+                                procedure C(D: in out B; E: in INTEGER; F: in REAL);
+                            implementation
+                                ...
+                            end R
+                        </code></pre>
+        
+                        <pre><code data-trim>
+                                module T
+                                uses Y, Z, R;
+                                exports 
+                                    var A: INTEGER;
+                                implementation
+                                    ...
+                                end T
+                            </code></pre>
+                
+                    </section>
+        
+          
+
+            <section>
+                <h3>Unit tests</h3>
+                <ul>
+                    <li>Welche Vorteile bringt eine klar definierte Schnittstelle?</li>
+                    <li>Wie hilft Information Hiding Software wartbar zu halten?</li>
+                    <li>Was ist Kapselung und wie erreichen wir damit "Information Hiding"?</li>
+                    <li>Wie kann ein Modul auf unerwartete Ereignisse reagieren? </li>
+                  </ul>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>

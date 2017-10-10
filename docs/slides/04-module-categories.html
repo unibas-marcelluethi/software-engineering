@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Kategorien von Modulen</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h2>
+                    Kategorien von Modulen
+                </h2>
+                <p>
+                        <small> Marcel L&uuml;thi </br> 
+                                        Departement Mathematik und Informatik </small>
+                    </p>
+                    <p>
+                        <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                    </p>
+            </section>
+
+        
+                <!--
+                <section>
+                    <h3> Modul Spezifikation (ab Java 9) </h3>
+    
+    
+                    <pre><code data-trim data-noescape>
+                            module java.sql {
+                                requires public java.logging;
+                                requires public java.xml;
+                                exports java.sql;
+                                exports javax.sql;
+                                exports javax.transaction.xa;
+                                uses java.sql.Driver;
+                            }
+                    </code></pre>
+                    <ul>
+                        <li> Funktionen / Methoden sind via Interfaces definiert. </li>
+                    </ul>
+                </section>
+    
+            -->
+
+            </section>
+
+
+            <section>
+                <h3> Beispielmodul: Prozedur/Funktion </h3>
+
+                <ul>
+                    <li> Kapselung eines einzelnen Algorithmus</li>
+                </ul>
+
+                <pre><code data-trim>
+                   procedure sort (a: in array of REAL; b: out array of REAL)
+                </code></pre>
+
+            </section>
+            <section>
+                <h3> Beispielmodul: Funktionsbibliothek </h3>
+
+                <ul>
+                    <li> Kapselung einer Klasse von Algorithmen</li>
+                </ul>
+
+                <pre><code data-trim>
+                        module MathLib
+                        exports 
+                            function log(REAL in value) : REAL;
+                            function square(REAL in value) : REAL;
+                        ...
+                           implementation
+                            ...
+             
+                        end MathLib
+                            </code></pre>
+
+            </section>
+
+            <section>
+                <h3> Beispielmodul: Datenpool </h3>
+
+                <ul>
+                    <li> Teilen von gmeinsam genutzten Daten</li>
+                </ul>
+
+                <pre><code data-trim>
+                    module Datapool
+                        exports 
+                            var maxNumberOfUsers : INTEGER;
+                            var maxItemsPerUser : INTEGER;
+                            ...
+                            
+                    end Datapool
+                    </code></pre>
+
+                <ul>
+                    <li> Typische Anwendung: Konfigurationseinstellungen</li>
+                </ul>
+
+                <blockquote class="fragment">              
+                        Sollte in Praxis
+                    <mark class="highlight">nicht</mark>
+                    verwendet werden!
+                    <ul>
+                        <li> Datenzugriff muss gekapselt sein.</li>
+                    </ul>
+                </blockquote>
+            </section>
+
+            <section>
+                <h3> Beispielmodul: Objekt </h3>
+                <pre><code data-trim>
+                module Stack
+                    exports 
+                        procedure push(VAL : in INTEGER);
+                        procedure pop(VAL : out INTEGER);
+                        ...
+                        
+                    implementation
+                        var STACK : array of INTEGER;
+                        var STACKPOINTER : INTEGER;
+                end Stack
+                            </code></pre>
+            </section>
+
+            <section>
+                <h3> Beispielmodul: Abstrakter Datentyp </h3>
+                <pre><code data-trim>
+                    module STACK_ADT
+                       
+                        exports 
+                       
+                        type STACK = ? // typ implementation ist abstrakt
+                        
+                            procedure push(S : in out STACK ; VAL: in INTEGER);
+                            procedure pop(S : in out STACK; VAL: out INTEGER);
+                            function empty (S: in STACK) : BOOLEAN;
+                            ...
+                             
+                        implementation
+                    end STACK_ADT
+                        </code></pre>
+            </section>
+
+            <section>
+                <h3>Abstrakter Datentyp</h3>
+                <ul>
+                    <li> Wichtiges Konzept in der Informatik</li>
+                    <li> Beschreibt Eigenschaften von Datenstruktur aus Benutzersicht</li>
+                    <ul> <li> Datenstruktur wird gekapselt</li></ul>
+                    <li> Erlaubt Erweiterung der Sprache durch eigene Abstraktionen</li>
+                </ul>
+                <blockquote style="display:inline-block">
+                        Liskov, B., &amp; Zilles, S. (1974, March). </br> 
+                        <a href="http://web.cs.iastate.edu/~hridesh/teaching/362/07/01/papers/p50-liskov.pdf">Programming with abstract data types.</a>                         
+                </blockquote>
+   
+            </section>
+
+            <section>
+                <h3> Unterschied abstract object, ADT </h3>
+                <ul>
+                    <li>ADT ist zustandslos </li>
+                    <li>Abstraktes Objekt kann jedoch mittels einem ADT gebaut werden </li>
+                </ul>
+
+                <blockquote>
+                    Java vereinheitlicht diese zwei Konzepte.
+                    <ul><li>ADT ist Klasse </li>
+                    <li>Abstrakte Objekte sind Instanz einer Klasse </li>
+                    </ul>
+                    
+                </blockquote>
+            </section>
+
+            <section>
+                <h3> Objekt-orientierte Programmierung </h3>
+                <ul>
+                    <li> Eine Klasse ist ein Spezialfall des ADT Moduls </li>
+                    <li> Klasse exportiert Operationen um Instanzen zu bearbeiten </li>
+                    <ul>
+                        <li> Operationen werden h&auml;ufig
+                            <mark class="highlight">Methoden</mark> genannt</li>
+                    </ul>
+                    <li>Instanzen sind als Referenzen verf&uuml;gbar</li>
+                    <li>Objektinstanz wird implizit &uuml;bergeben.
+                </ul>
+            </section>
+
+            <section>
+                <h3>Beispiel Java </h3>
+                <pre><code class="java" data-trim>
+                    class A {
+                        int foo() { // implementation }
+                    }
+                    
+                    val a = new A(); // referenz auf Instanz
+                    a.foo(); // nicht A.foo(a)
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Neue Beziehung: "Inherits from"</h3>
+            
+                <ul>
+                    <li>ADTs k&ouml;nnen in Hierarchien organisiert werden.</li>
+                    <li> Klasse B "spezialisiert" Klasse A</li>
+                    <ul><li> Klasse B "erbt von" Klasse A</li>
+                    <li>Klasse A generalisiert Klasse B</li></ul>
+                    <li>A ist Superklasse</li> 
+                    <li>B ist Subklasse</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Beispiel: "Inherits from" </h3>
+                <pre><code data-trim>
+                    class EMPLOYEE
+                        exports
+                            function FIRST_NAME(): STRING;
+                            function LAST_NAME(): STRING;
+                            function AGE(): INTEGER;
+                            procedure HIRE (FIRST_N: STRING, LAST_N: STRING; age : INTEGER);
+                            procedure FIRE();    
+                        implementation 
+                            var firstName : STRING;
+                            var lastName : STRING;
+                            var age : INTEGER;
+                        end EMPLOYEE                            
+                </code></pre>                
+            </section>
+
+
+            <section>
+                    <h3> Beispiel: "Inherits from" </h3>
+                    <pre><code data-trim>
+                        class ADMINISTRATIVE_STAFF inherits EMPLOYEE
+                        exports 
+                            procedure DO_THIS (F: FOLDER);
+                        end ADMINISTRATIVE_STAFF
+                    </code></pre>               
+                    <pre><code data-trim>
+                        class TECHNICAL_STAFF inherits EMPLOYEE
+                        exports 
+                            function GET_SKILL(): SKILL;
+                            procedure DEF_SKILL (SK: SKILL);
+                        end TECHNICAL_STAFF                                            
+                    </code></pre>                
+                </section>
+
+            <section>
+                <h3> Generische Module </h3>
+                <pre><code data-trim>                              
+                    module GENERIC_STACK(T)
+                    exports 
+                        procedure push(VAL : in T)
+                        procedure pop(VAL : out T);
+                        ...
+                        
+                    implementation
+                        var STACK : array of T
+                        var STACKPOINTER : integer
+                    end GENERIC_STACK
+                
+                </code></pre>
+                <pre><code data-trim> 
+                        module INTEGER_STACK is GENERIC_STACK(integer)
+                    </code></pre>
+
+            </section>
+
+            <section>
+                <h3>Operationen auf generischen Typen</h3>
+
+                <ul>
+                    <li> Annahme: Type T in Module $M(T)$ muss Operation $OP$ unterst&uuml;tzen.
+                    </li>
+                </ul>
+
+                <pre><code data-trim> 
+                            module GENERIC_LIST(T) with COMPARE(T)
+                            exports
+                                procedure sort()
+                            implementation
+                                var data : array of T
+                            end M
+                        </code></pre>
+
+                <ul>
+                    <li>Zur Laufzeit muss implementation der Prozedur $OP(T)$ mitgegeben werden </li>
+                </ul>
+
+                <pre><code data-trim> 
+                        module M_int is M(int) PROC (int)      
+                </code></pre>
+
+            </section>
+
+            
+            <section>
+                <h3>Beispiel aus Java </h3>
+
+                <pre>
+                    <code data-trim class="java">
+                        static &lt;T&gt; void sort(List&lt;T&gt; list, Comparator&lt;? super T&gt; c)
+                    </code>
+                </pre>
+
+                <pre>
+                    <code data-trim class="java"> 
+                            List&lt;String&gt; list = new LinkedList&lt;String&gt;();
+                                    
+                            Comparator&lt;String&gt; comp = new Comparator&lt;String&gt;() {
+                                @Override
+                                public int compare(String o1, String o2) {
+                                    return o1.compareTo(o2);
+                                }
+                            };
+                            Collections.sort(list, comp);
+                    </code>
+                </pre>
+
+            </section>
+
+
+        <section>
+            <h3>Unit Tests</h3>
+            <ul>
+                <li> Erkl&auml;re wie bereits eine einfache Prozedur/Funktion ein Modul darstellt</li>
+                <li> Erkl&auml;re die Beziehung: ADT, Klasse, Objekt?</li>
+                <li> Was erreicht die "Inherits from" Beziehung?</li>
+                <li> Welches Problem wird von generischen Modulen gel&ouml;st?</li>
+        </section>
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>
