@@ -91,7 +91,7 @@
                         exports 
                             function log(REAL in value) : REAL;
                             function square(REAL in value) : REAL;
-                        ...
+                            ...
                            implementation
                             ...
              
@@ -277,18 +277,18 @@
                 <pre><code data-trim>                              
                     module GENERIC_STACK(T)
                     exports 
-                        procedure push(VAL : in T)
+                        procedure push(VAL : in T);
                         procedure pop(VAL : out T);
                         ...
                         
                     implementation
-                        var STACK : array of T
-                        var STACKPOINTER : integer
+                        var STACK : array of T;
+                        var STACKPOINTER : INTEGER;
                     end GENERIC_STACK
                 
                 </code></pre>
                 <pre><code data-trim> 
-                        module INTEGER_STACK is GENERIC_STACK(integer)
+                        module INTEGER_STACK is GENERIC_STACK(INTEGER);
                     </code></pre>
 
             </section>
@@ -315,7 +315,7 @@
                 </ul>
 
                 <pre><code data-trim> 
-                        module M_int is M(int) PROC (int)      
+                        module M_int is M(INTEGER) PROC (INTEGER)      
                 </code></pre>
 
             </section>
@@ -324,14 +324,11 @@
             <section>
                 <h3>Beispiel aus Java </h3>
 
-                <pre>
-                    <code data-trim class="java">
+                <pre><code data-trim class="java">
                         static &lt;T&gt; void sort(List&lt;T&gt; list, Comparator&lt;? super T&gt; c)
-                    </code>
-                </pre>
+                    </code></pre>
 
-                <pre>
-                    <code data-trim class="java"> 
+                <pre><code data-trim class="java"> 
                             List&lt;String&gt; list = new LinkedList&lt;String&gt;();
                                     
                             Comparator&lt;String&gt; comp = new Comparator&lt;String&gt;() {
@@ -341,8 +338,7 @@
                                 }
                             };
                             Collections.sort(list, comp);
-                    </code>
-                </pre>
+                    </code></pre>
 
             </section>
 
