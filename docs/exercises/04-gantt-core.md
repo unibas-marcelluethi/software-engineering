@@ -4,11 +4,11 @@
 
 * Dieses &Uuml;bungsblatt sollte bis am 31. Oktober 2017 bearbeitet werden. 
     * Abgabe via Pull Request bis sp&auml;testens 23.59.
-* Fragen und Probleme k&ouml;nnen in den  &Uuml;bungsstunden am 25 Oktober besprochen werden.   
+* Fragen und Probleme k&ouml;nnen in der  &Uuml;bungsstunde am 25. Oktober besprochen werden.   
 
 
 ## Einf&uuml;hrung
-In dieser &Uuml;bung werden Sie einige der Kern-Datenstrukturen in Ganttproject, insbesondere das manager von Tasks und Projektpl&auml;nen anschauen. Dabei werden sie lernen, wie sie bestehende Unit Tests als Beispielcode und Dokumentation verwenden k&ouml;nnen. Diese &Uuml;bung ist diesbez&uuml;glich eine wichtige Vorbereitung f&uuml;r ihr eigenes Projekt. Sie werden ebenfalls ein [Github Issue](https://github.com/bardsoftware/ganttproject/issues/1382) fixen und automatisierte Tests dafür schreiben.
+In dieser &Uuml;bung werden Sie einige der Kern-Datenstrukturen in Ganttproject, insbesondere den Manager von Tasks und Projektpl&auml;nen anschauen. Dabei werden sie lernen, wie sie bestehende Unit Tests als Beispielcode und Dokumentation verwenden k&ouml;nnen. Diese &Uuml;bung ist diesbez&uuml;glich eine wichtige Vorbereitung f&uuml;r ihr eigenes Projekt. Sie werden ebenfalls ein [Github Issue](https://github.com/bardsoftware/ganttproject/issues/1382) fixen und automatisierte Tests dafür schreiben.
 
 ## Vorbereitung
 
@@ -32,7 +32,7 @@ Danach "pullen" sie die &Auml;nderungen aus dem Ursprungsrepository mit
 ```
 git pull upstream exercise_4_ganttproject
 ```
-Der letzte commit, den sie mit
+Der letzte commit, den Sie mit
 ```
 git log
 ```
@@ -61,16 +61,15 @@ cd ganttproject-builder
 gradlew test
 ```
 
-In beiden f&auml;llen sollten sie sehen, dass 5 Tests fehlschlagen. 
+In beiden F&auml;llen sollten sie sehen, dass 5 Tests fehlschlagen. 
 
 #### Ihre Aufgabe
-Ihre Aufgabe ist es die Methode ```createPlan``` der Klasse ```ProjectPlanCreationTests``` so zu implementieren, 
-dass alle Tests wieder erfolgreich durchlaufen. 
+Ihre Aufgabe ist es, die Methode ```createPlan``` der Klasse ```ProjectPlanCreationTests``` so zu implementieren, 
+dass alle Tests erfolgreich durchlaufen. 
 
 #### Tip 1: 
-Um zu sehen wie sie in Ganttproject Tasks programmatisch erstellen, schauen sie sich am besten andere Unit Tests
-in Ganttproject an. Viele Beispiele finden sie im Package
-```package net.sourceforge.ganttproject.test.tasks``` an und insbesondere in der Klasse ```TestLocalCriticalPath```.
+Um zu sehen, wie sie in Ganttproject Tasks programmatisch erstellen, schauen sie sich am besten andere Unit Tests an. Viele Beispiele finden sie im Package
+```package net.sourceforge.ganttproject.test.tasks``` und insbesondere in der Klasse ```TestLocalCriticalPath```.
 
 #### Tip 2: 
 In diesen Klassen werden selbst wieder Hilfsmethoden verwendet um Tasks zu definieren. Sie k&ouml;nnen in Idea mit ```Ctrl + LeftMouseClick``` zur Implementation springen.
@@ -81,7 +80,7 @@ Unser Vorgehen hier entspricht dem "Test First Ansatz" (auch bekannt als "Test d
 
 
 #### Anmerkung 2:
-Der Hauptzweck von Unit Tests ist gewisse Programmeigenschaften automatisch zu testen. Wie sie in dieser
+Der Hauptzweck von Unit Tests ist, gewisse Programmeigenschaften automatisch zu testen. Wie sie in dieser
 &Uuml;bung sehen, sind sie aber auch sehr hilfreich um zu verstehen, wie die Klassen eines Programms genutzt werden sollen. Gute geschriebene Unit Tests sind also eine Form von Dokumentation. Diese Art Dokumentation hat den Vorteil,
 dass sie immer mit den Klassen synchronisiert ist, da ansonsten das Projekt nicht kompilieren oder die Unit Tests fehlschlagen w&uuml;rden.
 
@@ -93,7 +92,7 @@ dass sie immer mit den Klassen synchronisiert ist, da ansonsten das Projekt nich
  
 ### Vorbereitung
 Schauen Sie sich das [Issue](https://github.com/bardsoftware/ganttproject/issues/1382) an. 
-Probieren Sie, das Issue zu reproduzieren. Bevor Sie mit dem programmieren beginnen, machen sie sich über die momentane Export-funktionalität schlau. 
+Probieren Sie, das Issue zu reproduzieren. Bevor Sie mit dem Programmieren beginnen, machen sie sich über die momentane Export-funktionalität schlau. 
 Kann man die Farbe eines Tasks in anderen Formaten als CSV bereits exportieren? Wie konfigurierbar ist die CSV-Exportierung momentan? Erstellen Sie in der UI Tasks, exportieren Sie diese und schauen Sie, was bereits f&uuml;r Funktionalit&auml;t implementiert ist.
 
 Suchen sie nachher im Code: Was passiert beim Export eines CSV-Dokumentes? Wie werden Spalten wie 'Name' exportiert? Wenn Sie das Gef&uuml;hl haben, einen ersten &Uuml;berblick zu haben, beginnen Sie mit der Implementierung.
