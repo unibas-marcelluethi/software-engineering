@@ -58,6 +58,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |  2-3    | Ganttproject: &Uuml;bung 2: Erste &Auml;nderungen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/02-gant-small-changes.html) | 10. Oktober 2017 |
 |  3-4    | Ganttproject: &Uuml;bung 3: Travis & Codereading [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-gant-travis-codereading.html) | 17. Oktober 2017 |
 |  4-5    | Theorie: &Uuml;bungsblatt 3: Module und Abstrakte Datentypen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-theory-modules-and-adts.html) | 24. Oktober 2017 |
+|  5-6    | Ganttproject: &Uuml;bung 4: Interne Datenstrukturen und Bugfix [(html)](https://unibas-sweng.github.io/software-engineering/exercises/04-gant-core-datastructures.html) | 31. Oktober 2017 |
 
 
 
