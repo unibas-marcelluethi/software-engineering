@@ -98,16 +98,16 @@ Kann man die Farbe eines Tasks in anderen Formaten als CSV bereits exportieren? 
 Suchen sie nachher im Code: Was passiert beim Export eines CSV-Dokumentes? Wie werden Spalten wie 'Name' exportiert? Wenn Sie das Gef&uuml;hl haben, einen ersten &Uuml;berblick zu haben, beginnen Sie mit der Implementierung.
 
 ### Schreiben eines Unit Tests
-Schreiben sie einen oder mehrere Unit Test der eine Korrekte l&ouml;sung des Problems testet. Da der Fehler im Moment existiert, sollte der Unit Test noch fehlschlagen. 
+Schreiben sie einen Unit Test der eine korrekte l&ouml;sung des Problems testet. Da der Fehler im Moment existiert, sollte der Unit Test noch fehlschlagen. 
  
 
 ### Implementierung
 Beheben Sie das Problem. Am Ende sollten Sie in der Lage sein, ein CSV-Dokument zu exportieren, welches für jeden Task auch die Farbe speichert. Dieses Dokument sollten sie dann importieren können und Unit-Tests für den Import und Export geschrieben haben
 
-### Tipps
+### Tips
 * Testen Sie __nicht__ mit der Default-Farbe.
 * Die Klasse ColorConvertion.java macht Serialisierung und Deserialisierung von Farben einfach.
 * Ganttproject-Options werden als .ganttproject-File in Ihrem Heimverzeichnis gespeichert. Sie müssen dieses File löschen, wenn sie etwas an der Optionen-Generierung &auml;ndern.
 
-### Abgabe
-* L&ouml;sung des Problems inklusive Unit-Tests, welche zeigen dass das Feature richtig funktioniert.
+## Abgabe
+* Wie in den vorigen &Uuml;bungen erfolgt die Abgabe durch einen Pull Request auf ihren master branch. Vergessen sie nicht ```silvanheller```, ```marvinbuff``` sowie ```marcelluethi``` als Reviewer anzugeben. 
