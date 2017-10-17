@@ -42,6 +42,53 @@
             </section>
 
             <section>
+            <section>
+                <h3>Abstraktionsgrad bisher</h3>
+
+                <div style="float:left;width:50%">
+
+                    <h5>Konzeptionell</h5>
+                    <img src="images/uses.png" class="plain" style="width:14%"/>
+
+                    <br/>
+                    <ul>
+                        <li>Sehr abstrakt</li>
+                        <li>Keine Details</li>
+                    </ul>
+                </div>
+
+                <div style="float:left;width:50%">                    
+                    <h5>Java</h5>
+                    <pre><code data-trim class="java">
+                         class A { 
+                             public A() {}
+                         }
+                         class B { 
+                             private A a = new A();
+                         }
+                    </code></pre>
+
+                    <ul style="clear:both;display:block">
+                        <li>Sehr konkrekt</li>
+                        <li>Alle Details</li>
+                    </ul>
+                </div>
+
+                <blockquote class="fragment" style="display:inline-block">
+                    Abstraktionsgrad soll je nach Anwendung gew&auml;hlt werden k&ouml;nnen.
+                </blockquote>
+   
+            </section>
+            <section>
+                <h3>Beispiel uses graph</h3>
+                <figure>
+                <img class="plain", src="http://img.thedailywtf.com/images/201111/NextGen-QuickClusters.jpg"/>
+                <figcaption style="font-size:x-small">Source: thedailywtf.com</figcaption>
+                </figure>
+            </section>
+        </section>
+
+            <section>
                     <h3>Grafische Modulbeschreibung</h3> 
                     <ul> <li> Intuitive Beschreibung von Zusammenh&auml;ngen </li>
                     <li>Abstrahiert Details</li>
@@ -58,6 +105,10 @@
                     <li>Abstrahiert Details</li></ul>
                     <li>Detailgrad kann Anwendung angepasst werden</li>
                     <img src="images/modul-graph-whitebox.png" class="plain" style="width:50%"/>
+
+                    <blockquote class="fragment">
+                        Bekannteste Notation: Unified Modelling Language (UML)
+                    </blockquote>
                 </section>
     
     
@@ -65,7 +116,7 @@
                         <h3> Textuelle Modulbeschreibung</h3>
         
                         <ul>
-                            <li> Genauigkeit von grafischen Beschreibungen oft nicht ausreichend.</li>
+                            <li> Genauigkeit von grafischen Beschreibungen manchmal nicht ausreichend.</li>
                             <li> Alternative: Textuelle Modulbeschreibung</li>
                             <ul>
                                 <li> Syntax soll keiner realen Programmiersprache entsprechen </li>
@@ -124,7 +175,7 @@
                 <h3>Unit tests</h3>
      
                 <ul>
-                <li> Was sind Vorteile einer idealisierten textuellen oder graphischen Notation?</li>
+                <li> Was sind Vorteile einer idealisierten textuellen oder graphischen Notation gegen&uuml;ber Beispielcode in Java?</li>
                 </ul>
             </section>
 

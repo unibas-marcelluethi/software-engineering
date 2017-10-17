@@ -211,17 +211,36 @@
                 </ul>
             </section>
 
+            
+            <section>
+                <h3>Beispiel in Python </h3>
+                <pre><code class="python" data-trim>
+                    class A:
+                        attribute = "bar"
+
+                        def foo(self): 
+                          print(self.attribute)
+                    
+                    
+                    a = A() # referenz auf Instanz
+                    a.foo() # nicht A.foo(a)
+                </code></pre>
+            </section>
+
             <section>
                 <h3>Beispiel Java </h3>
                 <pre><code class="java" data-trim>
                     class A {
-                        int foo() { // implementation }
+                        String attribute = new String("bar");
+                        void foo() { System.out.println(this.attribute); }
                     }
                     
                     val a = new A(); // referenz auf Instanz
                     a.foo(); // nicht A.foo(a)
                 </code></pre>
             </section>
+
+
 
             <section>
                 <h3>Neue Beziehung: "Inherits from"</h3>
@@ -321,6 +340,7 @@
             </section>
 
             
+            
             <section>
                 <h3>Beispiel aus Java </h3>
 
@@ -347,7 +367,7 @@
             <h3>Unit Tests</h3>
             <ul>
                 <li> Erkl&auml;re wie bereits eine einfache Prozedur/Funktion ein Modul darstellt</li>
-                <li> Erkl&auml;re die Beziehung: ADT, Klasse, Objekt?</li>
+                <li> Erkl&auml;re die Beziehung zwischen ADT, Klasse und Objekt.</li>
                 <li> Was erreicht die "Inherits from" Beziehung?</li>
                 <li> Welches Problem wird von generischen Modulen gel&ouml;st?</li>
         </section>
