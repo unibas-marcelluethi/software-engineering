@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Objektorientiertes Design</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h2>
+                    Objektorientiertes Design
+                </h2>
+                <p>
+                    <small> Marcel L&uuml;thi </br> 
+                                        Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section>
+
+
+            <section>
+                <h3>OO Design - &Uuml;bersicht</h3>
+                <ul>
+
+                    <li>Teilt ein System in Module auf
+                        <ul>
+                            <li>Module kapseln Daten und Funktionalit&auml;t</li>
+                        </ul>
+                        <li>Objekte sind zur Laufzeit eindeutig identifiziert</li>
+                        <ul>
+                            <li>K&ouml;nnen Nachrichten und Requests empfangen.</li>
+                        </ul>
+                        <li> Objekte k&ouml;nnen selbst wieder Objekte enthalten. </li>
+                        <li> Objektorientierter Code kann Polymorph sein.</li>                  
+                        <li>Implementation kann vererbt werden</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>OO Design und OO Programmiersprachen</h3>
+                <blockquote>
+                    OO Designs k&ouml;nnen, m&uuml;ssen aber nicht mit OO Sprachen umgesetzt werden.
+                </blockquote>
+                <div style="float:left;width:60%">
+                    <ul>
+                        <li>Mit OO Sprachen kann man Design direkt abbilden</li>
+                        <li>Nicht OO Sprachen verlangen etwas mehr Aufwand und Disziplin</li>
+                        <li>Beispiel OO Design in C: <a href="https://en.wikipedia.org/wiki/GTK%2B">GTK+</a></li>
+                    </ul>
+                </div>
+                <div style="float:right;width:40%">
+                    <figure>
+                        <img src="images/gtk3-widget.png" />
+                        <figcaption style="font-size:x-small">By <a href="//commons.wikimedia.org/w/index.php?title=User:%D7%99%D7%95%D7%A1%D7%A3_%D7%90%D7%95%D7%A8&amp;action=edit&amp;redlink=1"
+                                class="new" title="User:יוסף אור (page does not exist)">יוסף אור</a> - <span class="int-own-work"
+                                lang="en">Own work</span>, <a href="http://www.gnu.org/licenses/lgpl.html" title="GNU Lesser General Public License">LGPL</a>,
+                            <a href="https://commons.wikimedia.org/w/index.php?curid=39205896">Link</a> </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section>
+                <h3>Terminologie</h3>
+                <ul>
+                    <li>
+                        <mark class="highlight">Klasse</mark> implementiert (ganz oder teilweise) Abstrakten Datentyp</li>
+                    <li>Falls Implementationen fehlen ist die Klasse
+                        <mark class="highlight">abstrakt.</mark>
+                    </li>
+                    <li>Ein
+                        <mark class="highlight">Konstruktor</mark> kreiert neue Instanzen</li>
+                    <li><mark class="highlight">Instanzvariablen</mark> sind Referenzen auf Objekte</li>
+                    <li>Die
+                        <mark class="highlight">Laufzeitstruktur</mark> eines Systems bezeichnet die Menge der Objekte zur Laufzeit</li>
+                    <ul>
+                        <li>Jedes Objekt repr&auml;sentiert Daten und Methoden um diese Daten zu manipulieren.</li>
+                    </ul>
+                </ul>
+            </section>
+            <section>
+                <h3>Terminologie (2)</h3>
+                <ul>
+                    <li>Daten heissen <mark class="highlight">Attribute </mark> </li>
+                    <li>Operationen heissen
+                        <mark class="highlight">Methoden</mark>
+                    </li>
+                    <li>Ein Objekt kann mehrere
+                        <mark class="highlight">Schnittstellen (Interfaces)</mark> anbieten</li>
+                    <ul>
+                        <li> Jede Schnittstelle erlaubt unterschiedlichen Zugriff auf Daten / Methoden</li>
+                        <li> Beispiel: Java's Array List unterst&uuml;tzt sowohl <text class="code">RandomAccess</text> 
+                            als auch <text class="code">Iterable</text> interface.</li>
+                    </ul>         
+                </ul>
+            </section>
+
+            <section>
+                <h3>Hilfreiche sichtweise auf Objekte</h3>
+                
+                <ul>
+                    <li>Objekte verwalten Zustand der Daten (Attribute)</li>
+                    <li>Nehmen Nachrichten/Requests entgegen (Methoden)</li> 
+                    <li>Senden Antwort zur&uuml;ck und/oder ver&auml;ndern Zustand</li>
+                    <li>Methodenaufruf = senden einer Nachricht</li></ul>                    
+            </section>
+
+            <section>
+                    <h3>Beispiel: Methodenaufruf als Nachricht</h3>
+                    <div style="float:left; width:55%; height:100%">
+                    <pre><code  data-trim class="java" style="font-size:smaller">
+                        class BankAccount { 
+                          private FxConverter fx = new FxConverter();
+                          private double balanceInCHF;
+
+                          void depositEur(double amount) { 
+                            double asCHF = b.convertEurToCHF(amount))
+                            this.updateBalance(balanceInCHF += asCHF)
+                          }
+                          void updateBalance(double newBalance) {
+                              balanceInCHF = newBalance;
+                          }
+                        }
+                        
+                        // somewhere in currentObject                         
+                        someAccount.depositEUR(500);
+                        
+                    </code></pre>
+                </div>
+                <div style="float:right; width:45%">
+                    <img src="images/oocommunication.png" class="plain"/>
+                </div>
+                </section>
+    
+
+            <section>
+                <h3>Komposition und Vererbung</h3>
+                <div style="float:left;width:70%">
+                <ul>
+                    <ul>
+                    <li><mark class="highlight">Vererbung:</mark> Eine neue Klasse erbt Implementation von Superklasse.</li>
+                    <ul><li> Bricht Kapselung auf / verletzt Information Hiding</li></ul>
+                    <li><mark class="highlight">Komposition:</mark> Neue Klassen werden aus anderen Klassen zusammengesetzt.</li>    
+                </ul>
+                </ul>                
+            </div>
+            <div style="float:right;width:30%">
+                <img src="http://jestergoblin.com/wp-content/uploads/2012/03/2012-03-15_13-14-09_298-250x141.jpg" class="plain"/>
+                </div>
+
+                <blockquote style="display:inline-block">
+                        Komposition sollte wenn  m&ouml;glich bevorzugt werden. Vererbung nur von Interfaces. 
+                    </blockquote>
+            </section>
+
+            <section>
+                <h3>Quiz: Probleme mit Vererbung</h3>
+                <ul><li>Was passiert mit counter wenn addAll aufgerufen wird?</li></ul>
+
+                <pre><code data-trim class="java">
+                        public class CountingList&lt;T&gt; extends ArrayList&lt;T&gt; {
+                                private int counter = 0;
+                               
+                                @Override
+                                public void add(T elem) {
+                                  super.add(elem);
+                                  counter++;
+                                }
+                               
+                                @Override
+                                public void addAll(Collection&lt;T&gt; other) {
+                                  super.addAll(other);
+                                  counter += other.size();
+                                } 
+                              }
+                    </code></pre>
+            </section>
+
+            <section>
+                <h3>L&ouml;sung durch Komposition</h3>
+                <pre><code data-trim class="java">
+                        public class CountingList&lt;T&gt; implements List&lt;T&gt; {
+                                private final List&lt;T&gt; list = new ArrayList&lt;T&gt;();
+                                private int counter = 0;
+                               
+                                @Override
+                                public void add(T elem) {
+                                  list.add(elem);
+                                  counter++;
+                                }
+                               
+                                @Override
+                                public void addAll(Collection&lt;T&gt; other) {
+                                  list.addAll(other);
+                                  counter += other.size();
+                                } 
+                               
+                                ...
+                              }
+                    </code></pre>
+            </section>
+            <section>
+                <h3> Polymorphismus und dynamische Bindung</h3>
+                <ul>
+                    <li><mark class="highlight">Dynamische Bindung:</mark> Variablen k&ouml;nnen zur Laufzeit an verschiedene (verwandte) Typen gebunden werden</li>                                               
+                    <li><mark class="highlight">Polymorphismus:</mark> Zur Laufzeit wird Methode entsprechend dem Objekttyp verwendet. </li>
+                </ul>
+            </section>            
+            <section> <h3>Beispiel: Polymorphismus </h3>
+                <pre><code data-trim class="java"> 
+                    interface Foo {
+                        public void bar();
+                    }
+                    class FooImpl1 { 
+                        public void bar() { System.out.println("in FooImpl1"); }
+                    }
+                    class FooImpl2 { 
+                        public void bar() { System.out.println("in FooImpl2"); }
+                    }
+                    void doSomethingWithFoo(Foo foo) {
+                        foo.bar();
+                    }
+
+                    var Foo foo = new FooImpl1();
+                    doSomethingWithFoo(foo);
+                </code></pre>
+
+                <ul>
+                    <li>Unterschiedliche Ausgabe je nachdem ob 
+                        <text style="font-family:Courier New, Courier, monospace">foo</text> an
+                        <text style="font-family:Courier New, Courier, monospace">FooImpl1 </text> oder
+                        <text style="font-family:Courier New, Courier, monospace">FooImpl2</text> gebunden wird.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Unit Tests</h3>
+                <ul>
+                    <li>Nennen sie die wichtigsten Eigenschaften von OO Systemen?</li>
+                    <li>Was ist Polymorphismus und weshalb ist es wichtig?</li>
+                    <li>Erkl&auml;ren sie wie Objekte "kommunizieren"</li>
+                    <li>Was ist das Problem von Vererbung</li>
+                    <ul><li>Weshalb sollte Komposition bevorzugt werden?</li></ul>
+            </ul>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>
