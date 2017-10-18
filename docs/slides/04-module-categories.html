@@ -86,7 +86,7 @@
                     <li> Kapselung einer Klasse von Algorithmen</li>
                 </ul>
 
-                <pre><code data-trim>
+                <pre><code data-trim class="modula">
                         module MathLib
                         exports 
                             function log(REAL in value) : REAL;
@@ -153,8 +153,7 @@
                     module STACK_ADT
                        
                         exports 
-                       
-                        type STACK = ? // typ implementation ist abstrakt
+                           type STACK = ? // typ implementation ist abstrakt
                         
                             procedure push(S : in out STACK ; VAL: in INTEGER);
                             procedure pop(S : in out STACK; VAL: out INTEGER);
@@ -186,9 +185,10 @@
                 <ul>
                     <li>ADT ist zustandslos </li>
                     <li>Abstraktes Objekt kann jedoch mittels einem ADT gebaut werden </li>
+                    <ul><li>Braucht "Konstruktor funktion"</li></ul>
                 </ul>
-
-                <blockquote>
+                <pre><code data-trim>function create() : STACK</code></pre>
+                <blockquote class="fragment">
                     Java vereinheitlicht diese zwei Konzepte.
                     <ul><li>ADT ist Klasse </li>
                     <li>Abstrakte Objekte sind Instanz einer Klasse </li>
@@ -349,11 +349,11 @@
                     </code></pre>
 
                 <pre><code data-trim class="java"> 
-                            List&lt;String&gt; list = new LinkedList&lt;String&gt;();
+                            List&lt;Integer&gt; list = new LinkedList&lt;Integer&gt;();
                                     
-                            Comparator&lt;String&gt; comp = new Comparator&lt;String&gt;() {
+                            Comparator&lt;Integer&gt; comp = new Comparator&lt;Integer&gt;() {
                                 @Override
-                                public int compare(String o1, String o2) {
+                                public int compare(Integer o1, Integer o2) {
                                     return o1.compareTo(o2);
                                 }
                             };

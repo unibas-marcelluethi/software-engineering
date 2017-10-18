@@ -62,9 +62,10 @@
                     <pre><code data-trim class="java">
                          class A { 
                              public A() {}
-                         }
+                             private B b = new B();
+                             
                          class B { 
-                             private A a = new A();
+                            public B() {}
                          }
                     </code></pre>
 

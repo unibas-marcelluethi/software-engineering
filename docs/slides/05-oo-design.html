@@ -125,7 +125,10 @@
                     <li>Objekte verwalten Zustand der Daten (Attribute)</li>
                     <li>Nehmen Nachrichten/Requests entgegen (Methoden)</li> 
                     <li>Senden Antwort zur&uuml;ck und/oder ver&auml;ndern Zustand</li>
-                    <li>Methodenaufruf = senden einer Nachricht</li></ul>                    
+           </ul>
+           <blockquote>
+                Methodenaufruf = senden einer Nachricht       
+        </blockquote>                    
             </section>
 
             <section>
@@ -162,7 +165,7 @@
                 <ul>
                     <ul>
                     <li><mark class="highlight">Vererbung:</mark> Eine neue Klasse erbt Implementation von Superklasse.</li>
-                    <ul><li> Bricht Kapselung auf / verletzt Information Hiding</li></ul>
+                    <ul class="fragment"><li> Bricht Kapselung auf / verletzt Information Hiding</li></ul>
                     <li><mark class="highlight">Komposition:</mark> Neue Klassen werden aus anderen Klassen zusammengesetzt.</li>    
                 </ul>
                 </ul>                
@@ -171,7 +174,7 @@
                 <img src="http://jestergoblin.com/wp-content/uploads/2012/03/2012-03-15_13-14-09_298-250x141.jpg" class="plain"/>
                 </div>
 
-                <blockquote style="display:inline-block">
+                <blockquote class="fragment" style="display:inline-block">
                         Komposition sollte wenn  m&ouml;glich bevorzugt werden. Vererbung nur von Interfaces. 
                     </blockquote>
             </section>
@@ -234,10 +237,10 @@
                     interface Foo {
                         public void bar();
                     }
-                    class FooImpl1 { 
+                    class FooImpl1 implements Foo { 
                         public void bar() { System.out.println("in FooImpl1"); }
                     }
-                    class FooImpl2 { 
+                    class FooImpl2 implements Foo { 
                         public void bar() { System.out.println("in FooImpl2"); }
                     }
                     void doSomethingWithFoo(Foo foo) {
