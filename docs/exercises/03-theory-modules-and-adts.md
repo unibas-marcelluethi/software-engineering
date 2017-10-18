@@ -25,7 +25,7 @@ Importieren sie das Projekt in Intellij Idea, indem sie die Datei ```build.gradl
 
 ### Travis
 
-Aktivieren sie Travis f&uuml;r dieses Projekt. Daf&uuml;r gehen sie auf [https://www.travis-ci.com](www.travis-ci.com), und loggen sie mit ihrem Github Account ein. Damit sie das neue Projekt sehen, m&uuml;ssen sie eventuell auf ihrer Accountseite (Symbol oben rechts) auf ```Sync account``` klicken (siehe Bild). Danach k&ouml;nnen sie Travis f&uuml;r das neue Projekt aktivieren, durch setzen des entsprechenden H&auml;kchens.
+Aktivieren sie Travis f&uuml;r dieses Projekt. Daf&uuml;r gehen sie auf [https://www.travis-ci.com](https://www.travis-ci.com), und loggen sie mit ihrem Github Account ein. Damit sie das neue Projekt sehen, m&uuml;ssen sie eventuell auf ihrer Accountseite (Symbol oben rechts) auf ```Sync account``` klicken (siehe Bild). Danach k&ouml;nnen sie Travis f&uuml;r das neue Projekt aktivieren, durch setzen des entsprechenden H&auml;kchens.
 ![travis account sync](images/travis-account-sync.png) 
 
 ## Aufgabe 1: Implementation und Interface 
