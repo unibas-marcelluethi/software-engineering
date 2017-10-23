@@ -21,7 +21,7 @@ Synchronisieren Sie das Repository mit dem Upstream Repository, welches sie in [
 ```
 git pull upstream master
 ```
-Obiges Kommando synchronisiert die &Auml;nderungen die im Master branch des Ursprungsrepositories (upstream) mit ihrem Masterbranch.
+Obiges Kommando synchronisiert die &Auml;nderungen im Master branch des Ursprungsrepositories (upstream) mit ihrem Masterbranch.
 Zus&auml;tzlich haben wir f&uuml;r diese &Uuml;bung auch noch einen neuen Branch ```exercise_4_ganttproject``` vorbereitet. 
 Erstellen sie bei ihnen einen neuen Branch ```exercise_4_ganttproject``` und wechseln sie in diesen:
 ```
@@ -49,7 +49,7 @@ Date:   Mon Oct 16 11:25:28 2017 +0200
 
 ## Aufgabe 1. Erstellen sie programmatisch einen Projektplan
 
-Das Ziel dieser &Uuml;bung ist es, dass sie programmatisch einen Projektplan in Ganttproject erstellen, der gewisse Eigenschafter erf&uuml;llt. Diese Eigenschaften haben wir bereits mit Unit Tests spezifiziert. 
+Das Ziel dieser &Uuml;bung ist es, dass sie programmatisch einen Projektplan in Ganttproject erstellen, der gewisse Eigenschaften erf&uuml;llt. Diese Eigenschaften haben wir bereits mit Unit Tests spezifiziert. 
 Die Spezifikation durch die Unit Tests finden sie in der Klasse
 ```
 net.sourceforge.ganttproject.test.swengtests.ProjectPlanCreationTests;
