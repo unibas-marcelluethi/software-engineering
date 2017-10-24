@@ -38,7 +38,9 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |     | Kategorien von Modulen   [(html)](https://unibas-sweng.github.io/software-engineering/slides/04-module-categories.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/04-module-categories?print-pdf) | |
 |    | OO Design   [(html)](https://unibas-sweng.github.io/software-engineering/slides/05-oo-design.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/05-oo-design?print-pdf)| |
 |    | UML (statische Diagramme)   [(html)](https://unibas-sweng.github.io/software-engineering/slides/05-uml-static.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/05-uml-static?print-pdf)| | 
-| 6 /7   | Spezifizieren von Software | |
+| 6   | OO Design Prinzipien (SOLID)   [(html)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-solid.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-solid?print-pdf) | |
+|   | OO Design Heuristiken   [(html)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-design-heuristics.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-design-heuristics?print-pdf) | |
+| 7   | Spezifizieren von Software | |
 |     | UML | |
 | 8   | Validierung und Testen | |
 | 9   | Software prozesse | |
