@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>SOLID Prinzipien</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h2>
+                    Wichtige OO Prinzipien
+                </h2>
+                <p>
+                    <small> Marcel L&uuml;thi </br> 
+                                        Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section>
+
+            <section>
+                <h3> Einige Wichtige OO Design Prinzipien (SOLID)</h3>
+                
+                <ul>
+                    <li><mark class="highlight">S</mark>ingle Responsibility Prinzip</li>
+                    <li><mark class="highlight">O</mark>pen closed Prinzip</li>
+                    <li> <mark class="highlight">L</mark>iskovsches Substitutionsprinzip</li>                    
+                    <li><mark class="highlight">I</mark>nterface Segregation</li>
+                    <li><mark class="highlight">D</mark>ependency Inversion</li>   
+                    <ul>&nbsp</ul>
+                    <li>Gesetz von Demeter (nicht teil von SOLID)</li>
+                </ul>                
+
+
+                <blockquote>Prinzipien zielen auf einfache &Auml;nderbarkeit durch Entkopplung und Modularisierung ab.</blockquote>
+
+            </section>
+
+            <section>
+                <h3>Single responsibility Prinzip </h3>
+
+                <blockquote>
+                    Es sollte nie mehr als einen Grund geben, eine Klasse zu &auml;ndern. <br/>
+                    <text style="font-size:medium"> – Robert C. Martin: Agile Software Development: Principles, Patterns, and Practices (2002)</text>
+                </blockquote>
+                <ul>
+                    <li>Objekte sollten hohe Koh&auml;sion aufweisen</li>
+                    <li>Jede Klasse sollte nur f&uuml;r eine Sache verantwortlich sein</li>
+                    <ul><li>Verwandtes Prinzip: Separations of Concern</li></ul>
+                </ul>
+            </section>
+
+            <section>
+                    <h3> Beispiel: Single-responsibililty Prinzip </h3>
+    
+                    <div style="float:left; width:50%">
+                            Verantwortlichkeiten: Nur Kontof&uuml;hrung.
+                             <br/>&nbsp;<br/>
+
+                        <pre><code data-trim class="java">
+                            class BankAccount { 
+                              private double balance;
+
+                              void deposit(double amount) { 
+                                   //implementation 
+                              }
+                              void withdraw(double amount) { 
+                                   // implementation
+                              }
+                              boolean checkHasMoney() { 
+                                  // implementation
+                              }
+                            }
+                            </code></pre>
+    
+                    </div>                    
+                    <div style="float:right; width:50%">
+                        Verantwortlichkeiten: Kontof&uuml;hrung und Berichterstellung.
+                            <pre><code data-trim class="java">
+                                    class BankAccount { 
+                                      private double balance;
+                                      private Format format;
+
+                                      void deposit(double amount) { 
+                                          //implementation 
+                                      }
+                         
+                                      void formatAccountStatement() { 
+                                          // implementation
+                                      }
+                                    }
+                                    </code></pre>
+                    </div>
+                </section>
+    
+
+            <section>
+                <h3> Open-closed Prinzip </h3>
+                <blockquote>
+                    Module sollten sowohl offen (für Erweiterungen), als auch geschlossen (für Modifikationen) sein.<br/>
+                    <text style="font-size:medium">- Bertrand Meyer: Object Oriented Software Construction (1988)</text>
+                </blockquote>
+                
+                <ul>                    
+                    <li>Erm&ouml;glicht System um neue Features zu erweitern, ohne urspr&uuml;nglichen Code zu &auml;ndern.</li>
+                    <ul><li> Minimiert Risiko, dass existierende Funktionalit&auml;t wegen &Auml;nderung nicht mehr funktioniert.</li></ul>
+                    <li>M&ouml;gliche Umsetzung: Vererbung</li>
+                </ul>
+            </section>
+
+            <section>
+                    <h3> Beispiel: Open-closed Prinzip </h3>
+    
+                    <div style="float:left; width:50%">
+                        Neuer Printer (Printer2) hinzugef&uuml;gen f&uuml;hrt zu &Auml;nderung in Code
+                        <pre><code data-trim class="java">
+                        class Printer1 {
+                          void print(Document d);
+                        }
+                           
+                        class WordProcesser {
+                         ...
+
+                          void printDoc(Printer1 p) {
+                           p.print(document);
+                          }                        
+                        }
+                            </code></pre>
+    
+                    </div>                    
+                    <div style="float:right; width:50%">
+                            Printer2 kann hinzugef&uuml;gt werden ohne &Auml;nderung in Code
+                            <pre><code data-trim class="java">
+                                abstract class Printer {
+                                    void print(Document d);
+                                }
+                                class Printer1 extends Printer {
+                                    void print(Document d) {}
+                                }
+                                class Printer2 extends Printer {
+                                    void print((Document d) {}
+                                }
+                                
+                                class WordProcesser {
+                                     void printDoc(Printer p) {
+                                      p.print(document);
+                                     }                        
+                                   }   
+
+                            </code></pre>
+                    </div>
+
+                    
+                </section>
+    
+
+            <section>
+                <h3> Liskovsches Substitutionsprinzip </h3>
+
+                <blockquote>
+                Sei $\phi(x)$ eine beweisbare Eigenschaft von Objekt $x$ von Typ $T$. 
+                    Dann soll $\phi(y)$ für Objekte $y$ des Typs $S$ wahr sein, wobei $S$ ein Untertyp von $T$ ist.<br/>
+                    <text style="font-size:medium">B. H. Liskov, J. M. Wing: Behavioral Subtyping Using Invariants and Constraints (1999)</text>
+                </blockquote>
+
+                <ul>
+                    <li>Jedes Objekt kann durch ein Objekt der Subklasse ersetzt werden, ohne 
+                        dass sich das Verhalten &auml;ndert.
+                    </li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h3> Beispiel: Substitutionsprinzip</h3>
+
+            <pre><code data-trim class="java" style="font-size:smaller">
+               class Stack { 
+                   private List data = new LinkedList();
+                   void push(Object o) {data.add(o);}                   
+                   int size() { return data.size(); }
+                }
+                class BoundedStack extends Stack { 
+                    private Object[] data = new Array[10];
+                    void push(Object o) {
+                        if (data.size() < 10) {  data.add(o) }
+                    }
+                }
+                void testPushIncreasesSize(Stack s) {
+                    int stackSizeBeforePush = s.size();
+                    s.push(o);
+                    assert(stackSizeBeforePush + 1 == s.size())
+                }
+            </code></pre>
+            Test <text class="code">testPushIncreasesSize</text> schl&auml;gt fehlt, wenn 
+            <text class="code">BoundedStack</text> &uuml;bergeben wird.
+            </section>
+
+            <section>
+                <h3> Interface segregation </h3>
+
+                <blockquote>
+                    Clients sollten nicht dazu gezwungen werden, von Interfaces abzuhängen, die sie nicht verwenden<br/>
+                    <text style="font-size:medium"> – Robert C. Martin: The Interface Segregation Principle (1996)</text>
+                </blockquote>
+                <ul>
+                    <li>Kleine Interfaces mit wohldefinierter Funktionalit&auml;t sind zu bevorzugen</li>
+                    <ul><li>Anwendung von "Separations of Concerns"</li></ul>
+                    <li>Klassen werden entkoppelt </li>
+                    <ul><li>Vergleiche: Sandwiching</li></ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Dependency inversion </h3>
+
+                <blockquote>
+                    <ul><li>Module hoher Ebenen sollten nicht von Modulen niedriger Ebenen abhängen. Beide sollten von Abstraktionen abhängen.</li>
+                       <li>Abstraktionen sollten nicht von Details abhängen. Details sollten von Abstraktionen abhängen.</li> 
+                    </ul>
+                    <text style="font-size:medium"> – Robert C. Martin: Agile Software Development: Principles, Patterns, and Practices (2002)</text>
+                    </blockquote>
+
+
+            </section>
+            
+            <section>
+                    <h3> Dependency inversion </h3>
+                    <img src="images/dependency-inversion.png" class="plain"/>
+                    <ul>
+                        <li>Client und Server werden durch Interface entkoppelt</li>
+                        <li>Interface wird von Client nicht Server vorgegeben.</li>
+                    </ul>
+            </section>
+
+            <section>
+                <h3> Gesetz von Demeter </h3>
+                <blockquote>
+                    "Only talk to your friends"
+                </blockquote>
+                <li>Eine Methode m einer Klasse K soll nur auf folgende Elemente Zugreifen:</li>
+                <ul>
+                    <li>Methoden von K selbst</li>
+                    <li>Methoden von Objekten, die als Parameter an m übergeben werden</li>
+                    <li>Methoden von Objekten, die in Instanzvariablen von K abgelegt sind</li>
+                    <li>Methoden von Objekten, die m erzeugt</li>
+                </ul>
+                </section>
+
+                <section>
+                    <h3>Gesetz von Demeter</h3> 
+
+
+                    <ul>                  
+                    <li> Minimiert Kopplung von Objekten</li>
+                    <li> Interne Struktur von Objekten wird nicht ausgenutzt</li>
+                    <ul><li>Objekte delegiert Verantwortlichkeit</li></ul>
+                    <li> Nat&uuml;rliche Implementation: Layering  </li>                    
+                </ul>
+            </section>
+
+            <section>
+                <h3>Beispiel: Gesetz von Demeter </h3>
+                Schlechtes Beispiel
+                <pre><code data-trim>
+                        class Engine {
+                            public void start() {}
+                        }
+                        class Car {
+                            public Engine engine;
+                            public Car() {
+                                engine = new Engine();
+                            }
+                        }
+                        class Driver {
+                            public void drive() {
+                                Car car = new Car();
+                                car.engine.start(); // !!! Verstoss gegen Gesetz von Demeter
+                            }
+                        }    
+                </code></pre>
+                <p style="font-size:medium">Quelle: Wikipedia, Gesetz_von_Demeter</p>
+            </section>
+
+            <section>
+                    <h3>Beispiel: Gesetz von Demeter</h3>
+                    M&ouml;gliche L&ouml;sung
+                    <pre><code data-trim>
+                            class Engine {
+                                public void start() {}
+                            }
+                            class Car {
+                                private Engine engine; // !!! Engine ist private
+                                public Car() {  engine = new Engine();  }
+                                public start() {engine.start();   } // !!! Wrapper methode
+                            }
+                            class Driver {
+                                public void drive() {
+                                    Car car = new Car();
+                                }
+                            }    
+                    </code></pre>
+                    <p style="font-size:medium">Quelle: Wikipedia, Gesetz_von_Demeter</p>
+                </section>
+
+                <section>
+                    <h3>Unit tests</h3>
+                    <ul>
+                        <li>Weshalb sollte es nur einen Grund geben eine Klasse zu &auml;ndern</li>
+                        <li>Weshalb ist es wichtig, dass jede beweisbare Eigenschaft einer Klasse auch f&uuml;r die Subklasse gilt </li>
+                        <li>Was bedeutet das "Close" im Open Close Prinzip? Welches Risiko wird minimiert dadurch?</li>
+                        <li>Weshalb sollen Objekte besser nicht interne Objekte von anderen Objekten weiterverwenden?</li>
+                        <li>Welches Problem l&ouml;st Dependency Injection</li>
+                    </ul>
+                </section>
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>
