@@ -1,9 +1,9 @@
 # Bankomat Szenario
 
 Die Software die geschrieben werden muss, simuliert die Funktionalit&auml;t eines
-Bankomaten. Der Bankomat hat einen Kartenleser und ein Fach um Geld (d.h. Banknoten) einzuzahlen. Der Kunde interagierte via einer Konsole bestehend aus Tastatur
+Bankomaten. Der Bankomat hat einen Kartenleser und ein Fach um Geld (d.h. Banknoten) einzuzahlen sowie ein Geldausgabefach. Der Kunde interagiert via einer Konsole bestehend aus Tastatur
 und Display. Im Innern des Bankomaten befindet sich ein Drucker um Quittungen zu 
-drucken sowie ein Schalter, um den Bankomaten an und auszuschalten. 
+drucken. 
 Der Bankomat kommuniziert mit dem Bankensystem via einem Kommunikationslink. 
 
 Zu jedem Zeitpunkt kann nur 1 Kunde bedient werden. Ein Kunde muss seine Bankkarte in den 
@@ -16,10 +16,10 @@ Zu diesem Zeitpunkt wird die Karte zur&uuml;ckgegeben.
 
 Ein Bankomat bietet folgende Dienstleistungen an:
 
-* Ein Kunde kann Geld von einem Konto (dem Konto das auf der Karte codiert ist) abheben. Bevor das Geld ausgegeben wird, muss die Bank pr&uuml;fen ob gen&uuml;gend Geld vorhanden ist. 
+* Ein Kunde kann Geld von einem Konto (dem Konto das auf der Karte codiert ist) abheben. Bevor das Geld ausgegeben wird, muss die Bank pr&uuml;fen ob gen&uuml;gend Geld vorhanden ist. Das Geld wird via das Geldausgabefach ausgegeben.
 * Ein Kunde kann Geld auf das Konto einzahlen. Dazu wird das Geld in das Einzahlungsfach gelegt. Das Geld wird automatisch vom Bankomaten gez&auml;hlt. Wenn das Geld auf Echtheit gepr&uuml;ft 
 wurde und als korrekt erkannt wurde, wird das Geld auf das Konto einbezahlt. 
-* Ein Kunde kann den Kontostand abfragen
+* Ein Kunde kann den Kontostand abfragen.
 * Jede Transaktion kann vom Kunden zu jeder Zeit abgebrochen werden. 
 * Jede Transaktion wird an die Bank kommuniziert und nur abgeschlossen, nachdem sie von der Bank 
 freigegeben wird. 
