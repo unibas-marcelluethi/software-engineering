@@ -52,15 +52,16 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 
 ## &Uuml;bungen 
 
-| Woche | Thema | Deadline |
-| ------| ----- | -------- | 
-|  1    | Ganttproject: Projekt Setup [(html)](https://unibas-sweng.github.io/software-engineering/exercises/01-gant-setting-up-the-environment.html) | 26. September 2017 |
-|       | Theorie: &Uuml;bungsblatt 1: No Silver bullet [(html)](https://unibas-sweng.github.io/software-engineering/exercises/01-theory-no-silver-bullet.html)| 26. September 2017|
-|  2    | Theorie: &Uuml;bungsblatt 2: Software Aging [(html)](https://unibas-sweng.github.io/software-engineering/exercises/02-theory-software-aging.html)| 03. Oktober 2017|
-|  2-3    | Ganttproject: &Uuml;bung 2: Erste &Auml;nderungen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/02-gant-small-changes.html) | 10. Oktober 2017 |
-|  3-4    | Ganttproject: &Uuml;bung 3: Travis & Codereading [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-gant-travis-codereading.html) | 17. Oktober 2017 |
-|  4-5    | Theorie: &Uuml;bungsblatt 3: Module und Abstrakte Datentypen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-theory-modules-and-adts.html) | 24. Oktober 2017 |
-|  5-6    | Ganttproject: &Uuml;bung 4: Interne Datenstrukturen und Bugfix [(html)](https://unibas-sweng.github.io/software-engineering/exercises/04-gant-core-datastructures.html) | 31. Oktober 2017 |
+| Woche | Thema | Deadline | Kommentar |
+| ------| ----- | -------- | --------- |
+|  1    | Ganttproject: Projekt Setup [(html)](https://unibas-sweng.github.io/software-engineering/exercises/01-gant-setting-up-the-environment.html) | 26. September 2017 | |
+|       | Theorie: &Uuml;bungsblatt 1: No Silver bullet [(html)](https://unibas-sweng.github.io/software-engineering/exercises/01-theory-no-silver-bullet.html)| 26. September 2017| |
+|  2    | Theorie: &Uuml;bungsblatt 2: Software Aging [(html)](https://unibas-sweng.github.io/software-engineering/exercises/02-theory-software-aging.html)| 03. Oktober 2017| |
+|  2-3    | Ganttproject: &Uuml;bung 2: Erste &Auml;nderungen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/02-gant-small-changes.html) | 10. Oktober 2017 | |
+|  3-4    | Ganttproject: &Uuml;bung 3: Travis & Codereading [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-gant-travis-codereading.html) | 17. Oktober 2017 | |
+|  4-5    | Theorie: &Uuml;bungsblatt 3: Module und Abstrakte Datentypen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-theory-modules-and-adts.html) | 24. Oktober 2017 | |
+|  5-6    | Ganttproject: &Uuml;bung 4: Interne Datenstrukturen und Bugfix [(html)](https://unibas-sweng.github.io/software-engineering/exercises/04-gant-core-datastructures.html) | 31. Oktober 2017 ||
+|  6-7    | Theorie: &Uuml;bungsblatt 4: UML Klassendiagramme [(html)](https://unibas-sweng.github.io/software-engineering/exercises/04-theory-uml-static.html) | 06. November 2017 | Freiwillig |
 
 ## Projekt
 | Woche | Thema | Kommentar |
