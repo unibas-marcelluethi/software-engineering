@@ -1,0 +1,449 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Anforderungen</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h2>
+                    Anforderungen
+                </h2>
+                <p>
+                    <small> Marcel L&uuml;thi </br>
+                        Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section>
+
+            <section class="center">
+                <blockquote>
+                    <p>
+                        "Anforderung:" &lt;meist Plural &gt; das, was man von jmdm. als [Arbeits]leistung erwartet, von ihm verlangt"</p>
+                    <p>Duden</p>
+                </blockquote>
+
+            </section>
+
+            <section>
+                <h3>Anforderungen</h3>
+
+                <div style="text-align:left; width:80%; margin-left:auto; margin-right:auto">
+                    Anforderungen (requirements) legen fest, was man von einem Softwaresystem als Eigenschaften erwartet.</li>
+
+                    <div class="fragment">
+                        <p>Zwei Fragen:</p>
+                        <ol>
+                            <li>Wer ist "man"?</li>
+                            <li>Was sind "Eigenschaften"?</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Stakeholders</h3>
+
+                <ul>
+                    <li>Stakeholder bezeichnet alle Partien die </li>
+                    <ul>
+                        <li>Ein interesse an der Software haben</li>
+                        <li>Von der Entwicklung/Einsatz der Software betroffen sind</li>
+                    </ul>
+                    <li>Verallgemeinert den traditionellen Kundenbegriff</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Eigenschaften</h3>
+
+                <ul>
+                <li>Welche Eigenschaften m&uuml;ssen f&uuml;r ein neues Softwaresystem 
+                festgelegt werden? </li>
+                <ul>
+                    <li>Funktionale Eigenschaften</li>
+                    <li>Nichtfunktionale Eigenschaften</li>
+                    <li>(Prozesseigenschaften)</li>
+                </ul>
+                </ul>
+                
+
+
+            </section>
+
+            <section>
+                    <h3>Funktionale und nichtfunktionale Eigenschaften</h3>
+    
+                    <blockquote>
+                        Eine Funktionale Anforderung legt eine vom System 
+                        bereitzustellende Funktion fest. 
+                    </blockquote>
+                    <ul>
+                        <li>Was soll ein System tun?</li>
+                        <li>Beispiele </li>
+                        <ul>
+                            <li>Das System soll den Pin vom Kunden pr&uuml;fen.</li>
+                            <li>Das System soll den Auszahlungsbetrag erfragen, und falls gen&uuml;gend Geld vorhanden ist Geld ausgeben und das Kundenkonto belasten.</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Funktionale und nichtfunktionale Eigenschaften</h3>            
+                    <blockquote>
+                        Nichtfunktionale Anforderungen sind alle Anforderungen die
+                        nicht funktional sind. 
+                    </blockquote>
+                    <ul>
+                        <li>Betreffen nicht eine, sondern typischerweise alle Funktionen des Systems</li>
+                        <li>Beispielkategorien:</li>
+                        <ul>
+                        <li>Qualit&auml;tsmerkmale (Performance, Wartbarkeit, ...)</li>
+                        <li>Ethische oder Regulatorische Anforderungen</li>
+                        <li>Sicherheitsanforderungen</li>
+                        <li>...</li>
+                    </ul>
+                    </ul>
+                </section>
+                
+            <section>
+                    <h3>Woher kommen die Eigenschaften</h3>
+    
+                    <ul>
+                        <li> Visionen und Ziele</li>
+                        <ul><li>Typischerweise am Anfang einer Produktspezifikation</li></ul>
+                        <li> Rahmenbedingungen </li>
+                        <ul><li>Restriktionen f&uuml;r das System</li></ul>
+                        <li> Kontext und &Uuml;berblick</li>
+                        <ul><li>Umgebung in die das System eingebettet wird.</li></ul>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Visionen & Ziele</h3>
+                    <blockquote>
+                            Bevor Anforderungen definiert werden sollten Visionen und Ziele definiert werden
+                    </blockquote>
+                    <ul>
+                        <li>Kriterien f&uuml;r Anforderung:</li>
+                        <ul><li>
+                            Hilft es meine Vision zu erf&uuml;llen?
+                            </li>
+                            <li>Tr&auml;gt es bei das Ziel zu erreichen?</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section>
+                        <h3>Visionen & Ziele</h3>
+        
+                        <blockquote>
+                            Eine <mark class="highlight">Vision</mark> ist eine realit&auml;tsnahe
+                            Vorstellung der gew&uuml;nschten Zukunft.
+                        </blockquote>
+                        <ul>
+                            <li>Beschreibt <mark class="highlight">was</mark> erreicht werden soll
+                            aber nicht wie</li>
+                            <li class="fragment">Beispiel Ikea: KEA: "Einen besseren Alltag f&uuml;r die vielen Menschen schaffen."</li>
+                            <li class="fragment">Beispiel Projekt 1: "Realistische Projektpanung erm&ouml;glichen.</li>
+                        </ul>
+                    </section>
+        
+                    <section>
+                        <h3>Ziele</h3>
+                        <blockquote>
+                            Ein <mark class="highlight">Ziel</mark> verfeinert und operationalisiert die Vision.
+                        </blockquote>
+                        <ul>
+                            <li>Beispiel Ikea: Ikea soll praktische M&ouml;bel in gutem Design zu erschwinglichen Preisen anbieten</li>
+                            <li>Beispiel Projekt 1: Die Planung soll durch modellieren der Planungsungenauigkeit realistischer werden.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Rahmenbedingungen</h3>
+                        
+                        <blockquote>
+                            Legt organisatorisch und technische Restriktionen f&uuml;r das 
+                            Softwareystem oder den Prozess fest. 
+                        </blockquote>
+                        <ul>
+                            <li>Organisatiorisch</li>
+                            <ul>
+                                <li>Anwendungsbereich</li>
+                                <li>Zielgruppe</li>
+                                <li>Betriebsbedingungen</li>
+                            </ul>
+                            <li>Technisch</li>
+                            <ul>
+                                <li>Software (OS, DBMS,...)</li>
+                                <li>Hardware</li>
+                            </ul>
+                        </ul>
+                    </section>
+        
+                    <section>
+                        <h3>Kontext und &Uuml;berblick</h3>
+                        <blockquote>
+                            Software ist in eine materielle und imaterielle Umgebung eingebettet.
+                        </blockquote>
+                        <ul>
+                            <li>Materielle Umgebung:</li>
+                            <ul>
+                            <li> Sensoren </li>
+                            <li>Geb&auml;ude</li>
+                            <li>Personen</li>
+                        </ul>
+                        <li>Immaterielle Umgebung</li>
+                        <ul>
+                            <li>Schnittstellen zu anderen Softwaresystemen</li>
+                            <li>Internet</li>
+                        </ul>
+                        </ul>
+                    </section>
+        
+                    <section>
+                        <h3>Kontext und &Uuml;berblick</h3>
+                            <figure>
+                                    <img src="images/system-umgebung.png" class="plain" style="width:80%" />
+                                    <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 14.0-3</figcaption>
+                                </figure>
+                    </section>
+
+
+                    <section>
+                            <h3>Anforderungen Ermitteln</h3>
+            
+                            <figure>
+                            <img src="images/requirement-elicitation.png" class="plain" style="width:60%"/>
+                            <figcaption style="font-size:x-small">Nach: Helmut Balzert, Lehrbuch der Softwaretechnik, Abb 21.0.1</figcaption>
+                            </figure>
+                        </section>
+
+                    <section>
+                            <h3>Anforderungen an Anforderungen</h3>
+                            <ul>
+                                <li>Korrekt</li>
+                                <li>Eindeutig</li>
+                                <li>Vollst&auml;ndig</li>
+                                <li>Konsistent</li>
+                                <li>Klassifizierbar nach Wichtigkeit</li>
+                                <li>Klassifizierbar nach Stabilit&auml;t</li>
+                                <li>&Uuml;berp&uuml;fbar / testbar</li>
+                                <li>Verfolgbar</li>
+                            </ul>
+                        </section>
+            
+                        <section>
+                            <h3>Testbare Anforderungen</h3>
+                            
+                            <blockquote>Idealerweise sind Anforderungen testbar</blockquote>
+                            <ul>
+                                <li>Lassen sich als Test implementieren</li>
+                                <ul>
+                                    <li>Verwendung in Regressionstest</li>
+                                </ul>
+                                <li>Dient direkt als Abnahmekriterium</li>
+                                <li>Beispiele:</li>
+                                <ul>
+                                    <li>Nicht testbar: Der Kunde soll nicht l&auml;nge auf die Systemantwort warten m&uuml;ssen.</li>
+                                    <li>Testbar: Die &uuml;berpr&uuml;fung des PINs soll nicht l&aumkl;nger als 3 Sekunden dauern </li>
+                                </ul>
+                            </ul>
+                            
+                        </section>
+    
+    
+                        <section>
+                            <h3>Theorie vs. Praxis</h3>
+                            <blockquote>
+                                <p>In theory there is no difference between theory and practice. In practice there is.</p>
+                                <p>Yogi Berra</p>
+                            </blockquote>
+
+                            <ul>
+                                <li>In der Praxis werden Anforderungen nicht immer eingehalten</li>
+                                <li>Ziel des Requirement Engineers ist es zusammen mit dem Kunden m&ouml;glichst nahe an dieses Ideal zu kommen. </li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h3>Nat&uuml;rlichsprachliche Anforderungen</h3>
+
+                            <blockquote>
+                                Anforderungen werden meistens in nat&uuml;rlicher Sprache spezifiziert.
+                            </blockquote>
+
+                            <ul>
+                                <li>Was sind die Vor- und Nachteile?</li>
+                            </ul>
+                        </section>
+
+
+                        <section>
+                            <h3>Erstellen eines Glossars</h3>
+                            <blockquote style="width:80%; margin-left:auto; margin-right:auto">
+                                Glossar hilft mehrdeutigkeiten zu vermeiden.
+                            </blockquote>
+                            <div style="float:center; width:100%; text-align:left; margin-right:auto">
+                            Struktur eines Glossareintrags:
+                            <ul>
+                                <li>Begriff </li>
+                                <li>Definition</li>
+                                <li>Synonyme</li>
+                                <li>Plural (wenn ungew&ouml;hnlich)</li>
+                                <li>Kurzform (Falls vorhanden)</li>
+                                <li>Langform (Wenn Begriff in Kurzform angegeben ist)</li>
+                                <li>&Uuml;bersetzung (Wenn Projekt/Benutzeroberfl&ouml;che mehrsprachig ist)</li>
+                            </ul>   
+                        </div>  
+                        </section>
+
+                        <section>
+                            <h3>Sprachliche Anforderungstemplates</h3>
+                            
+                            <ul>
+                                Sprachtemplates helfen syntaktische und semantische Mehrdeutigkeiten zu reduzieren. 
+                            </ul>
+
+                            <figure>
+                                    <img src="images/language-template.png" class="plain" style="width:80%" />
+                                    <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 19.0-1</figcaption>
+                                </figure>
+                            <ul class="fragment">
+                                <li>muss (rechtlich bindend) </li>
+                                <li>soll (dringend empfohlen) </li> 
+                                <li>sollte in Zukunft (zuk&uuml;ftige Anorderung)</li>
+                        </ul>
+                        </section>
+
+                        <section>
+                            <h3>Beispiele</h3>
+                            <ul>
+                                <li>Das System muss dem Kunden die M&ouml;glichkeit bieten, Geld zu beziehen</li>
+                                <li>Das System muss ein Aktivit&auml;tsjournal f&uuml;hren.</li>
+                                <li>Die Konsole sollte dem Benutzer verst&auml;ndliche Fehlermeldungen ausgeben</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                                <h3>Vermeidung & Pr&auml;zisierung nat&uuml;rlichsprachlicher Anforderungen</h3>
+                                <ul>
+                                    <li>Nat&uuml;rlichsprachliche Anforderungen sollten wenn m&ouml;glich durch formale und semi-formale Konzepte erg&auml;nzt oder ersetzt werden</li>
+                                    <li>Viele m&ouml;gliche Modelle zur <mark class="highlight">Softwarespezifikation </mark>wurden entwickelt</li>
+                                    <ul><li>Thema von n&auml;chster Vorlesung</li></ul>
+                                </ul>
+                            </section>
+
+                        <section>
+                            <h3>Unit Tests</h3>
+                            
+                            <ul>
+                                <li>Was sind Stakeholders: Weshalb ist es wichtig nicht nur von Kunden zu sprechen?</li>
+                                <li>Wie unterscheidet sich die Auswirkung von nichtfunktionalen Anforderung auf das zu bauende System von funktionalen Anforderungen</li>
+                                <li>Weshalb sollen immer zuerst eine Vision und Ziele definiert werden?</li>
+                                <li>Weshalb sollten Anforderungen immer testbar sein?</li>
+                                <li>Was ist das gr&ouml;sste Problem von nat&uuml;rlichsprachlichen Anforderungen?</li>
+                            </ul>
+
+                        </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>
