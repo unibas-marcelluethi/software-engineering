@@ -40,15 +40,14 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |    | UML (statische Diagramme)   [(html)](https://unibas-sweng.github.io/software-engineering/slides/05-uml-static.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/05-uml-static?print-pdf)| | 
 | 6   | OO Design Prinzipien (SOLID)   [(html)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-solid.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-solid?print-pdf) | |
 |   | OO Design Heuristiken   [(html)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-design-heuristics.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-design-heuristics?print-pdf) | |
-| 7   | Spezifizieren von Software | |
-|     | UML | |
-| 8   | Validierung und Testen | |
-| 9   | Software prozesse | |
-| 10  | Objektorientierte Entwurfsmuster | |
-| 11  | Funktionale Entwurfsmuster | |
-|     | Entwurfsmuster f&uuml;r Verteilte Programmierung | |
-| 12  | Refactoring | |
-| 13 - 14  | Nach Ank&uuml;ndigung | |
+| 7   | Requirement Engineering  | Auszug aus Lehrbuch von Balzert [(pdf auf Adam)](https://adam.unibas.ch/goto_adam_file_596667_download.html)|
+|     | Requirements  |  |
+| 8  /9 | Softwarespezifikation  |  |
+| 9 / 10  | Validierung und Testen | |
+|  11  | Software prozesse / Agile Softwareentwicklung| |
+| 12  | Objektorientierte Entwurfsmuster | |
+| 13  | Funktionale Entwurfsmuster | |
+| 14    | Zusammenfassung / Pr&uuml;fungsvorbereitung | |
 
 ## &Uuml;bungen 
 
@@ -67,6 +66,10 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | Woche | Thema | Kommentar |
 | ------| ----- | -------- | 
 |  5    | Slides mit Projektideen [(html)](https://unibas-sweng.github.io/software-engineering/slides/project-ideas.html)
+|  7    | Projektplan |    |
+|  7    | [Beispiele](https://adam.unibas.ch/goto_adam_file_596666_download.html) Lastenheft / Pflichtenheft 
+
+
 #### Slides zu &Uuml;bungswerkzeugen
 | Woche | Thema |
 | ----- | ----- |
