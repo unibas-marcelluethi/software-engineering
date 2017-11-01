@@ -40,8 +40,8 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |    | UML (statische Diagramme)   [(html)](https://unibas-sweng.github.io/software-engineering/slides/05-uml-static.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/05-uml-static?print-pdf)| | 
 | 6   | OO Design Prinzipien (SOLID)   [(html)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-solid.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-solid?print-pdf) | |
 |   | OO Design Heuristiken   [(html)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-design-heuristics.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-design-heuristics?print-pdf) | |
-| 7   | Requirement Engineering  | Auszug aus Lehrbuch von Balzert [(pdf auf Adam)](https://adam.unibas.ch/goto_adam_file_596667_download.html)|
-|     | Requirements  |  |
+| 7   | Requirement Engineering  [(html)](https://unibas-sweng.github.io/software-engineering/slides/07-re-overview.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/07-re-overview.html?print-pdf)  | Auszug aus Lehrbuch von Balzert [(pdf auf Adam)](https://adam.unibas.ch/goto_adam_file_596667_download.html)|
+|     | Requirements  [(html)](https://unibas-sweng.github.io/software-engineering/slides/07-requirements.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/07-requirements.html?print-pdf)|  |
 | 8  /9 | Softwarespezifikation  |  |
 | 9 / 10  | Validierung und Testen | |
 |  11  | Software prozesse / Agile Softwareentwicklung| |
