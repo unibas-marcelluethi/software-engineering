@@ -96,42 +96,9 @@
 
             </section>
 
-            <section>
-                    <h3>Funktionale und nichtfunktionale Eigenschaften</h3>
-    
-                    <blockquote>
-                        Eine Funktionale Anforderung legt eine vom System 
-                        bereitzustellende Funktion fest. 
-                    </blockquote>
-                    <ul>
-                        <li>Was soll ein System tun?</li>
-                        <li>Beispiele </li>
-                        <ul>
-                            <li>Das System soll den Pin vom Kunden pr&uuml;fen.</li>
-                            <li>Das System soll den Auszahlungsbetrag erfragen, und falls gen&uuml;gend Geld vorhanden ist Geld ausgeben und das Kundenkonto belasten.</li>
-                        </ul>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Funktionale und nichtfunktionale Eigenschaften</h3>            
-                    <blockquote>
-                        Nichtfunktionale Anforderungen sind alle Anforderungen die
-                        nicht funktional sind. 
-                    </blockquote>
-                    <ul>
-                        <li>Betreffen nicht eine, sondern typischerweise alle Funktionen des Systems</li>
-                        <li>Beispielkategorien:</li>
-                        <ul>
-                        <li>Qualit&auml;tsmerkmale (Performance, Wartbarkeit, ...)</li>
-                        <li>Ethische oder Regulatorische Anforderungen</li>
-                        <li>Sicherheitsanforderungen</li>
-                        <li>...</li>
-                    </ul>
-                    </ul>
-                </section>
                 
             <section>
-                    <h3>Woher kommen die Eigenschaften</h3>
+                    <h3>Strukturieres Ermitteln der Anforderungen</h3>
     
                     <ul>
                         <li> Visionen und Ziele</li>
@@ -140,6 +107,8 @@
                         <ul><li>Restriktionen f&uuml;r das System</li></ul>
                         <li> Kontext und &Uuml;berblick</li>
                         <ul><li>Umgebung in die das System eingebettet wird.</li></ul>
+                        <li>Funktionale Anforderungen</li>
+                        <li>Nichtfunktionale Anforderungen</li>
                     </ul>
                 </section>
 
@@ -167,7 +136,7 @@
                         <ul>
                             <li>Beschreibt <mark class="highlight">was</mark> erreicht werden soll
                             aber nicht wie</li>
-                            <li class="fragment">Beispiel Ikea: KEA: "Einen besseren Alltag f&uuml;r die vielen Menschen schaffen."</li>
+                            <li class="fragment">Beispiel Ikea: "Einen besseren Alltag f&uuml;r die vielen Menschen schaffen."</li>
                             <li class="fragment">Beispiel Projekt 1: "Realistische Projektpanung erm&ouml;glichen.</li>
                         </ul>
                     </section>
@@ -233,7 +202,40 @@
                                 </figure>
                     </section>
 
-
+                    <section>
+                            <h3>Funktionale und nichtfunktionale Eigenschaften</h3>
+            
+                            <blockquote>
+                                Eine Funktionale Anforderung legt eine vom System 
+                                bereitzustellende Funktion fest. 
+                            </blockquote>
+                            <ul>
+                                <li>Was soll ein System tun?</li>
+                                <li>Beispiele </li>
+                                <ul>
+                                    <li>Das System soll den Pin vom Kunden pr&uuml;fen.</li>
+                                    <li>Das System soll den Auszahlungsbetrag erfragen, und falls gen&uuml;gend Geld vorhanden ist Geld ausgeben und das Kundenkonto belasten.</li>
+                                </ul>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Funktionale und nichtfunktionale Eigenschaften</h3>            
+                            <blockquote>
+                                Nichtfunktionale Anforderungen sind alle Anforderungen die
+                                nicht funktional sind. 
+                            </blockquote>
+                            <ul>
+                                <li>Betreffen nicht eine, sondern typischerweise alle Funktionen des Systems</li>
+                                <li>Beispielkategorien:</li>
+                                <ul>
+                                <li>Qualit&auml;tsmerkmale (Performance, Wartbarkeit, ...)</li>
+                                <li>Ethische oder regulatorische Anforderungen</li>
+                                <li>Sicherheitsanforderungen</li>
+                                <li>...</li>
+                            </ul>
+                            </ul>
+                        </section>
+              
                     <section>
                             <h3>Anforderungen Ermitteln</h3>
             
@@ -270,7 +272,7 @@
                                 <li>Beispiele:</li>
                                 <ul>
                                     <li>Nicht testbar: Der Kunde soll nicht l&auml;nge auf die Systemantwort warten m&uuml;ssen.</li>
-                                    <li>Testbar: Die &uuml;berpr&uuml;fung des PINs soll nicht l&aumkl;nger als 3 Sekunden dauern </li>
+                                    <li>Testbar: Die &uuml;berpr&uuml;fung des PINs soll nicht l&auml;nger als 3 Sekunden dauern </li>
                                 </ul>
                             </ul>
                             
@@ -402,6 +404,7 @@
             dependencies: [{
                 src: 'plugin/markdown/marked.js'
             },
+            { src: 'plugin/zoom-js/zoom.js', async: true },
             {
                 src: 'plugin/markdown/markdown.js'
             },
