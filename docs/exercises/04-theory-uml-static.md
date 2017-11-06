@@ -10,7 +10,7 @@ z&auml;hlt sie als bestandene &Uuml;bung. Falls nichts abgegeben wird oder die A
 
 ## Aufgabe
 
-Kreieren sie ein Klassendiagramm f&uuml;r das hier beschriebene [Bankomatenszenario](bankomat-szenario.html).
+Kreieren sie ein Klassendiagramm f&uuml;r das hier beschriebene [Bankomatenszenario](https://unibas-sweng.github.io/software-engineering/exercises/atm-scenario.html).
 Benutzen sie zur Erstellung des Diagramms die Software [Modelio](https://www.modelio.org).
 
 Es sollen mindestens die folgenden Klassen modelliert werden:
