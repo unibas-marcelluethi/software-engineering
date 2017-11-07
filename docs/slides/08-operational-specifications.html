@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Konstruktive Spezifikationsmethoden</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h2>
+                    Konstruktive Spezifikationsmethoden
+                </h2>
+                <p>
+                    <small> Marcel L&uuml;thi </br>
+                        Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section>
+
+
+            <section>
+                <h3>Datenflussdiagramme</h3>
+
+                <ul>
+                    <li> Semi-Formale konstruktive Spezifikation</li>
+                    <li> Systemsicht: Kollektionen von Daten die durch Funktionen "transformiert" werden</li>
+                    <ul>
+                        <li>Daten/Informationsfluss im Zentrum</li>
+                    </ul>
+                    <li> Daten k&ouml;nnen persistent sein</li>
+                    <ul>
+                        <li>k&ouml;nnen in Datenspeicher gespeichert sein </li>
+                    </ul>
+                </ul>
+
+            </section>
+
+            <section>
+                <h3>Datenflussdiagramme</h3>
+
+                <img src="images/dataflow-elements.png" class="plain" />
+            </section>
+
+            <section>
+                <h3>Datenflussdiagramme</h3>
+                <figure>
+                    <img src="images/dataflow-arithmetic.png" style="width:40%" class="plain" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Abbildung 5.3</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Pr&auml;zisierung</h3>
+                <figure>
+                    <img src="images/dataflow-ex-refinement-1.png" class="plain" width="60%" />
+            </section>
+
+            <section>
+                <h3>Pr&auml;zisierung</h3>
+                <figure>
+                    <img src="images/dataflow-ex-refinement-2.png" class="plain" width="60%" />
+            </section>
+
+            <section>
+                <h3>Pr&auml;zisierung</h3>
+                <figure>
+                    <img src="images/dataflow-ex-refinement-3.png" class="plain" width="60%" />
+            </section>
+            <section>
+                <h3>Datenflussdiagramm Beispiel</h3>
+                <figure>
+                    <img src="images/dataflow-library.png" class="plain" width="80%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Abbildung 5.4</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Datenflussdiagramm Beispiel: Pr&auml;zisierung</h3>
+                <figure>
+                    <img src="images/dataflow-library-refinement.png" class="plain" width="80%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Abbildung 5.5</figcaption>
+                </figure>
+            </section>
+
+
+
+            <section>
+                <h3>Vor / Nachteile von Datenflussdiagrammen</h3>
+                <ul>
+                    <li>Vorteil: Einfach zu lesen</li>
+                    <li>Nachteil: Keine Formale Definition der Semantik</li>
+                    <ul>
+                        <li>Nur Semi-formale Spezifikation</li>
+                    </ul>
+                </ul>
+
+                <figure>
+                    <img src="images/dataflow-multiple-outputs.png" style="width:60%" class="plain" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Fundamentals of Software Engineering, Abbildung 5.6</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Vor / Nachteile von Datenflussdiagrammen</h3>
+                <ul>
+                    <li>Keine Information &uuml;ber Kontrollfluss</li>
+                    <ul>
+                        <li>A produziert B, wartet bis B es konsumiert</li>
+                        <li>B kann Datum mehrmals lesen ohne es zu konsumieren</li>
+                        <li>Pipe Semantik</li>
+                    </ul>
+                </ul>
+
+
+                <figure>
+                    <img src="images/dataflow-ambiguity.png" class="plain" style="width:40%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.7</figcaption>
+                </figure>
+            </section>
+            
+            <section>
+                <h3>Use-cases</h3>
+
+                <blockquote>
+                    Textuelle Beschreibung einer Systeminteraktion eines Akteur um fachliches Ziel zu erreichen.        
+                </blockquote>
+                <ul>
+                    <li>Was muss gemacht werden um Ziel des Nutzers zu verwirklichen?</li>
+                    <ul>
+                        <li>Einnahme von Nutzersicht hilft Anforderungen zu finden</li>
+                    </ul>
+                    <li>Use-cases sollen nicht zu komplex sein</li>
+                    <ul><li>Kaffeepausen test: Anwendungsfall ist zu komplex, wenn Nutzer w&auml;hrend Interaktion Kaffeepause braucht</li></ul>
+                    
+                </ul>
+            </section>
+
+            <section>
+                <h3>Use-cases: Beispiel</h3>
+              
+
+                <div style="font-size:smaller;width:100%;margin-left:auto;margin-right:auto; text-align:left;border:1pt solid black">
+                    Name: Buch ausleihen
+                    <br/> Akteure: Bibliothekar, Kunde
+                    <br/> Standardablauf:
+                    <br/>
+                    <ol>
+                        <li>Kunde gibt Bibliothekar seine Karte</li>
+                        <li>Bibliothekar pr&uuml;ft Karte und schaut sich get&auml;tige Vorbestellung an</li>
+                        <li>Bibliothekar holt alle bestellten B&uuml;cher</li>
+                        <li>Bibliothekar vermerkt im System das B&uuml;cher vom Kunden ausgeliehen sind.</li>
+                    </ol>
+                </div>
+
+            </section>
+
+            
+            <section>
+                <h3>UML Use-case Diagramme</h3>
+                <ul>
+                    <li>Grafische Illustration eines Use-Cases </li>
+                </ul>
+                <figure>
+                    <img src="images/use-case.png" class="plain" style="width:70%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.9</figcaption>
+            </section>
+
+
+            
+
+            <section>
+                <h3>UML Sequenzdiagramme</h3>
+                <ul>
+                    <li>Beschreibt wie Objekte interagieren durch Senden von Nachrichten</li>
+                    <li>Erg&auml;nzt Klassendiagramme um dynamische Sicht</li>
+                </ul>
+                <figure>
+                    <img src="images/sequence-diagram.png" class="plain" style="width:60%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.10</figcaption>
+            </section>
+
+            <section>
+                <h3>UML Kommunikationsdiagram </h3>
+
+                <ul>
+                    <li>Semantische &Auml;quivalent zu Sequenzdiagram</li>
+                    <ul>
+                        <li>Sequenzdiagram: Fokus auf zeitliche Abfolge</li>
+                        <li>Kommunikationsdiagram: Fokus auf Struktur</li>
+                    </ul>
+                </ul>
+
+                <figure>
+                    <img src="images/collaboration-diagram.png" class="plain" style="width:100%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.11</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3>Endliche Automaten (Finite State Machines)</h3>
+
+                <div style="float:left; width:50%">
+                    <ul>
+                        <li>Eine Menge von Zust&auml;nden $Q$</li>
+                        <li>Eine endliche Menge von inputs $I$</li>
+                        <li>Transitionsfunktion $\phi : Q \times I \to Q$ </li>
+                        <ul>
+                            <li>$\phi$ kann partielle Funktion sein</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div style="float:right; width:50%">
+                    <figure>
+                        <img src="images/fsm.png" class="plain" style="width:100%" />
+                        <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.12</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section>
+                <h3>Beispiel: Lampe</h3>
+                <figure>
+                    <img src="images/fsm-lightswitch.png" class="plain" style="width:60%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.13</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>UML Zustandsdiagramme</h3>
+                <ul>
+                    <li>Vielfältige Modellierungsmöglichkeiten</li>
+                    <li>Unterstützt verschachtelte Zustände und viele weitere Erweiterungen</li>
+                </ul>
+                <figure>
+                    <img src="images/uml-statemachine.png" class="plain" style="width:100%" />
+                    <figcaption style="font-size:x-small"></figcaption>
+                </figure>
+
+            </section>
+
+
+            <section>
+                <h3>Petri-Netze: Spezifikation nebenl&auml;ufiger nicht-deterministischer Systeme</h3>
+
+                <ul>
+                    <li>Quadruple $(P, T, F, W)$</li>
+                    <ol>
+                        <li>$P$: (endliche) Menge von Stellen</li>
+                        <li>$T$: (endliche) Menge von Transitionen</li>
+                        <li>$F \subseteq \{P \times T\} \cup \{T \times P \}$: Flussrelation </li>
+                        <li>$W: F \to \mathbb{N^+}$: Gewichtsfunktion (default 1)</li>
+                    </ol>
+                    <li>Anfangsmarkierung $M : P \to \mathbb{N}$</li>
+                </ul>
+
+
+            </section>
+
+            <section>
+                <h3>Petri Netz : Grafische Darstellung</h3>
+
+                <div style="float:left; width:50%">
+                    <figure>
+                        <img src="images/petri-net-simple-initial.png" class="plain" style="width:70%" />
+                        <figcaption style="font-size:x-small">Diagramm nach Wikipedia - https://de.wikipedia.org/wiki/Petri-Netz</figcaption>
+                    </figure>
+                </div>
+                <div style="float:right; width:50%">
+                    <figure>
+                        <img src="images/petri-net-evolution-0.png" class="plain" style="width:70%" />
+                        <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.20</figcaption>
+                    </figure>
+                </div>
+
+            </section>
+
+            <section>
+                <h3>Petri Netz: Schaltregel</h3>
+                <blockquote style="width:100%">
+
+                    Eine Transition $t$ ist aktiviert wenn: 
+
+                    \[\forall p \in \text{Input Stellen}(t) : M(p) \ge  W((p,t)) \]
+                </blockquote>
+                <div style="float:center; width:50%; margin-left:auto; margin-right:auto">
+                    <figure>
+                        <img src="images/petri-net-simple-initial.png" class="plain" style="width:70%" />
+                        <figcaption style="font-size:x-small">Diagramm nach Wikipedia - https://de.wikipedia.org/wiki/Petri-Netz</figcaption>
+                        <br/>$t_1$ kann schalten
+                    </figure>
+                </div>
+             
+            </section>
+
+            <section>
+                    <h3>Petri Netz: Schaltregel</h3>
+                    <blockquote style="width:100%">
+                        Wenn t schaltet wird eine neue Markierung $M'$ kreiert:
+                        <text style="font-size:x-large">
+                        \[
+                        \begin{align}
+                        & \text{$p \in$ Input Stellen$(t)$}: \; M'(p) = M(p) - W((p,t))   \\
+                        & \text{$p \in$ Output Stellen$(t)$}: \; M'(p) = M(p) + W((t,p))   \\
+                        & \text{$p \in$ Input and Output Stellen$(t)$}: \; M'(p) = M(p) - W((p,t)) + W((t,p))  \\
+                        \end{align}
+                        \]
+                    </text>
+                    </blockquote>
+                    <div style="float:center; width:50%; margin-left:auto; margin-right:auto">                  
+                        <figure>
+                            <img src="images/petri-net-simple-fired.png" class="plain" style="width:70%" />
+                            <figcaption style="font-size:x-small">Diagramm nach Wikipedia - https://de.wikipedia.org/wiki/Petri-Netz</figcaption>
+                            <br/>Nach Schalten von $t_1$
+                        </figure>
+                    </div>
+                </section>
+
+                <section>
+                        <h3>Petri Netz: Dynamik</h3>
+        
+                        <ul>
+                            <li>Jede Transition kann schalten</li>
+                            <li>Modell spezifiziert nicht welche Transition schaltet oder wenn 
+                                sie schaltet.
+                            </li>
+                        </ul>
+        
+                        <figure style="float:center;width:80%;margin-left:auto;margin-right:auto">
+                                <img src="images/petri-net-evolution-0.png" class="plain" style="width:40%" />
+                            <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.20</figcaption>
+                            Ausgangszustand
+        
+                        </figure>
+                    </section>
+        
+            <section>
+                <h3>Petri Netz: Dynamik</h3>
+
+                <ul><li>M&ouml;gliche Zust&auml;nde nach dem Schalten</li></ul>
+
+                <figure style="float:center;width:100%;margin-left:auto;margin-right:auto">
+                    <img src="images/petri-net-evolution-1.png" class="plain" style="width:32%" />
+                    <img src="images/petri-net-evolution-2.png" class="plain" style="width:32%" />
+                    <img src="images/petri-net-evolution-3.png" class="plain" style="width:32%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.20</figcaption>
+
+                </figure>
+            </section>
+
+            <section>
+                <h3>Petri Netz: Deadlocks </h3>
+
+                <ul><li>Hier besteht die M&ouml;glichkeit eines Deadlocks. Wie?</li></ul>
+                <figure>
+                    <img src="images/petri-net-with-deadlock.png" class="plain" style="width:50%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.20</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Beispiel: Buch Ausleihe</h3>
+                <figure>
+                        <img src="images/petri-net-book.png" class="plain" style="width:100%" />
+                        <figcaption style="font-size:x-small">Diagramm nach Pfleeger & Atlee, Software Engineering, Abbildung 4.41</figcaption>
+                    </figure>
+
+            </section>
+
+
+
+            <section>
+                <h3>UML Aktivit&auml;tsdiagramme</h3>
+                
+                <ul>
+                    <li>Modelliert den Ablauf eines Anwendungsfall</li>
+                    <ul><li>Wie werden Aktivit&auml;ten kombiniert</li></ul>
+                    <li>Erlaubt Modellierung von sequentiellen und  parallelen Aktivit&auml;ten </li>
+                    <ul>
+                        <li>Semantik basierend auf Petri Netzen</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3>UML Aktivit&auml;tsdiagramme</h3>
+
+                <img src="images/activity-diagram-elements.png" class="plain"/>
+            </section>
+
+            <section>
+                <h3>Beispiel: UML Aktivit&auml;tsdiagramme</h3>
+                <figure>
+                        <img src="images/activity-diagram.png" class="plain" style="width:50%" />                    </figure>
+            </section>
+
+            <section>
+                <h3>Unit Tests</h3>
+                <ul>
+                    <li>Weshalb f&uuml;hren Datenflussdiagramme nur zu einer semi-formalen Spezifikation? </li>
+                    <li>Welche Spezifikationsmethode eignet sich um nebenl&auml;fige Prozesse zu modellieren?</li>
+                    <li>Wozu dient ein Use-case Diagramm?</li>
+                    <ul><li>Wie k&ouml;nnen use-cases in der Anforderungsanalyse verwendet werden?</li></ul>
+                    <li>Was wird mittels einem Aktivit&auml;tsdiagramm modelliert?</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            // Zoom in and out with Alt+click
+            { src: 'plugin/zoom-js/zoom.js', async: true },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>
