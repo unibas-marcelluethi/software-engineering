@@ -104,6 +104,7 @@
                     <img src="images/dataflow-library-refinement.png" class="plain" width="80%" />
                     <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Abbildung 5.5</figcaption>
                 </figure>
+       
             </section>
 
 
@@ -117,35 +118,49 @@
                         <li>Nur Semi-formale Spezifikation</li>
                     </ul>
                 </ul>
+                </section>
+                <section>
+                    <h3>Unklarheit im Datenfluss</h3>
+                    <figure>
+                            <img src="images/dataflow-multiple-outputs.png" style="width:70%" class="plain" />
+                            <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Fundamentals of Software Engineering, Abbildung 5.6</figcaption>
+                        </figure>
+                        <ul>
+                            <li>Braucht D Information von A, B und C?</li>
+                            <li>Gibt D dieselben Daten an E und F?</li>
+                        </ul>
+                  
+                </section>
+          
+            <section>
+                <h3>Unklarheit im Kontrollfluss</h3>
 
                 <figure>
-                    <img src="images/dataflow-multiple-outputs.png" style="width:60%" class="plain" />
-                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Fundamentals of Software Engineering, Abbildung 5.6</figcaption>
-                </figure>
-            </section>
-
-            <section>
-                <h3>Vor / Nachteile von Datenflussdiagrammen</h3>
+                        <img src="images/dataflow-ambiguity.png" class="plain" style="width:40%" />
+                        <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.7</figcaption>
+                    </figure>   
                 <ul>
-                    <li>Keine Information &uuml;ber Kontrollfluss</li>
+                    <li>M&ouml;gliche Interpretation:</li>
                     <ul>
-                        <li>A produziert B, wartet bis B es konsumiert</li>
-                        <li>B kann Datum mehrmals lesen ohne es zu konsumieren</li>
+                        <li>A und B sind sequentielle Funktionen</li>
+                        <ul>
+                        <li>A produziert Datum f&uuml;r B, wartet bis B es konsumiert</li>
+                    </ul>
+                    <li>A und B sind autonome Prozesse</li>
+                    <ul>
+                        <li>B kann Datum mehrmals lesen </li>
                         <li>Pipe Semantik</li>
+                    </ul>
                     </ul>
                 </ul>
 
 
-                <figure>
-                    <img src="images/dataflow-ambiguity.png" class="plain" style="width:40%" />
-                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.7</figcaption>
-                </figure>
             </section>
             
             <section>
                 <h3>Use-cases</h3>
 
-                <blockquote>
+                <blockquote style="width:80%; margin-left:auto; margin-right:auto">
                     Textuelle Beschreibung einer Systeminteraktion eines Akteur um fachliches Ziel zu erreichen.        
                 </blockquote>
                 <ul>
@@ -154,7 +169,7 @@
                         <li>Einnahme von Nutzersicht hilft Anforderungen zu finden</li>
                     </ul>
                     <li>Use-cases sollen nicht zu komplex sein</li>
-                    <ul><li>Kaffeepausen test: Anwendungsfall ist zu komplex, wenn Nutzer w&auml;hrend Interaktion Kaffeepause braucht</li></ul>
+                    <ul><li>Kaffeepausentest: Anwendungsfall ist zu komplex, wenn Nutzer w&auml;hrend Interaktion Kaffeepause braucht</li></ul>
                     
                 </ul>
             </section>
@@ -207,7 +222,7 @@
                 <h3>UML Kommunikationsdiagram </h3>
 
                 <ul>
-                    <li>Semantische &Auml;quivalent zu Sequenzdiagram</li>
+                    <li>Semantisch &Auml;quivalent zu Sequenzdiagram</li>
                     <ul>
                         <li>Sequenzdiagram: Fokus auf zeitliche Abfolge</li>
                         <li>Kommunikationsdiagram: Fokus auf Struktur</li>
@@ -342,8 +357,8 @@
                         <h3>Petri Netz: Dynamik</h3>
         
                         <ul>
-                            <li>Jede Transition kann schalten</li>
-                            <li>Modell spezifiziert nicht welche Transition schaltet oder wenn 
+                            <li>Jede aktivierte Transition kann schalten</li>
+                            <li>Modell spezifiziert nicht wann Transition schaltet oder wenn 
                                 sie schaltet.
                             </li>
                         </ul>
