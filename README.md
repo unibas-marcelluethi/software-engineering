@@ -42,7 +42,8 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |   | OO Design Heuristiken   [(html)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-design-heuristics.html) [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/06-oo-design-heuristics?print-pdf) | |
 | 7   | Requirement Engineering  [(html)](https://unibas-sweng.github.io/software-engineering/slides/07-re-overview.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/07-re-overview.html?print-pdf)  | Auszug aus Lehrbuch von Balzert [(pdf auf Adam)](https://adam.unibas.ch/goto_adam_file_596667_download.html)|
 |     | Requirements  [(html)](https://unibas-sweng.github.io/software-engineering/slides/07-requirements.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/07-requirements.html?print-pdf)|  |
-| 8  /9 | Softwarespezifikation  |  |
+| 8  | Softwarespezifikation (&Uuml;bersicht) [(html)](https://unibas-sweng.github.io/software-engineering/slides/08-specification-overview.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/08-specification-overview.html?print-pdf) |  |
+|   | Konstruktive Softwarespezifikation [(html)](https://unibas-sweng.github.io/software-engineering/slides/08-operational-specifications.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/08-operational-specifications.html?print-pdf) |  |
 | 9 / 10  | Validierung und Testen | |
 |  11  | Software prozesse / Agile Softwareentwicklung| |
 | 12  | Objektorientierte Entwurfsmuster | |
@@ -60,7 +61,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |  3-4    | Ganttproject: &Uuml;bung 3: Travis & Codereading [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-gant-travis-codereading.html) | 17. Oktober 2017 | |
 |  4-5    | Theorie: &Uuml;bungsblatt 3: Module und Abstrakte Datentypen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-theory-modules-and-adts.html) | 24. Oktober 2017 | |
 |  5-6    | Ganttproject: &Uuml;bung 4: Interne Datenstrukturen und Bugfix [(html)](https://unibas-sweng.github.io/software-engineering/exercises/04-gant-core-datastructures.html) | 31. Oktober 2017 ||
-|  6-7    | Theorie: &Uuml;bungsblatt 4: UML Klassendiagramme [(html)](https://unibas-sweng.github.io/software-engineering/exercises/04-theory-uml-static.html) | 06. November 2017 | Freiwillig |
+|  6-7    | Theorie: &Uuml;bungsblatt 4: UML Klassendiagramme [(html)](https://unibas-sweng.github.io/software-engineering/exercises/04-theory-uml-static.html) | *verl&auml;ngert bis 14. November 2017* | Freiwillig |
 
 ## Projekt
 | Woche | Thema | Kommentar |
