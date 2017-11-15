@@ -44,7 +44,9 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |     | Requirements  [(html)](https://unibas-sweng.github.io/software-engineering/slides/07-requirements.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/07-requirements.html?print-pdf)|  |
 | 8  | Softwarespezifikation (&Uuml;bersicht) [(html)](https://unibas-sweng.github.io/software-engineering/slides/08-specification-overview.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/08-specification-overview.html?print-pdf) |  |
 |   | Konstruktive Softwarespezifikation [(html)](https://unibas-sweng.github.io/software-engineering/slides/08-operational-specifications.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/08-operational-specifications.html?print-pdf) |  |
-| 9 / 10  | Validierung und Testen | |
+| 9  | Deskriptive Softwarespezifikation [(html)](https://unibas-sweng.github.io/software-engineering/slides/09-descriptive-specifications.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/09-descriptive-specifications.html?print-pdf) | |
+|   | Verifikation (&Uuml;berblick) [(html)](https://unibas-sweng.github.io/software-engineering/slides/09-verification-overview.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/09-verification-overview.html?print-pdf) | |
+| 10 | Testen | |
 |  11  | Software prozesse / Agile Softwareentwicklung| |
 | 12  | Objektorientierte Entwurfsmuster | |
 | 13  | Funktionale Entwurfsmuster | |
