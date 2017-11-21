@@ -30,7 +30,7 @@
         <div class="slides">
             <section class="center">
                 <h3>
-                    Verifikation und Testen
+                    Verifikation von Software
                 </h3>
                 <p>
                     <small> Marcel L&uuml;thi </br>
@@ -45,7 +45,7 @@
                 <h3>Validierung und Verifikation</h3>
 
                 <div style="float:left; width:50%; text-align:left">
-                    Validierung:
+                    <h4>Validierung:</h4>
                 <ul>
                     <li>Bauen wir das richtige Produkt?</li>
                     <li>K&ouml;nnen Nutzer die festgelegten Ziele erreichen?</li>
@@ -53,16 +53,16 @@
                 </ul>
             </div>  
             <div style="float:right; width:50%; text-align:left">
-                Verifikation:
+                <h4>Verifikation:</h4>
                     <ul><li>Bauen wir das Produkt richtig? </li>
                     <li>Erf&uuml;llt Produkt spezifizierte Eigenschaften ?</li>
                     </ul>
             </div>
             <blockquote class="fragment" style="width:100%; display:inline-block; text-align:left">
-                <h6>Beispiel: Zulassung Medizinprodukt  </h6>
+                <h4>Beispiel: Zulassung Medizinprodukt  </h4>
                     <ul>
                     <li> Nachweis des medizinischen Nutzens</li>
-                    <li>Nachweis das Projekt die vorgeschriebene Funktion erf&uuml;llt.</li>
+                    <li>Nachweis, dass Projekt die vorgeschriebene Funktion erf&uuml;llt.</li>
                 </ul>
                 </ul>
             </blockquote>
@@ -71,7 +71,7 @@
             <section>
                 <h3>Warum braucht es Validierung / Verifikation?</h3>
                 <blockquote>
-                    Nicht n&ouml;tig in perfekter Welt.
+                    Nicht n&ouml;tig in perfekter Welt!
                 </blockquote>
                 <ul class="fragment">
                     <li>Fehler schleichen sich &uuml;berall im Prozess ein</li>
@@ -179,7 +179,7 @@
                 </ul>
 
                 
-                <blockquote class="fragment">
+                <blockquote>
                     <p>
                         Program testing can be used to show the presence of bugs, but never to show their absence!
                     </p>
@@ -243,15 +243,93 @@
             </div>            
             </section>
 
+
+            <section>
+                <h3>Testing in the small vs Testing in the large</h3>
+        
+                        <figure>
+                            <img src="images/test-progression-small-large.png" class="plain" />
+                            <figcaption style="font-size:x-small">Abbildung angelehnt an: Pfleeger & Atlee, Software Engineering, Abbildung 8.3</figcaption>
+                        </figure>
+                    </section>
+        
+
+            </section>
+
+            <section>
+                    <h3>Unit Testing</h3>
+
+                    <blockquote style="width:100%">Testen von Funktionalen Einheiten (Module)</blockquote>
+                    <div style="float:left; width:45%">
+                    <ul>
+                        <li>H&auml;ufig, aber nicht zwingend, automatisiert</li>
+                        <li>Unterst&uuml;tzung durch testing Frameworks (wie JUnit)</li>
+                    </ul>                    
+                </div>
+                <div style="float:right; width:55%">
+                    <figure>
+                    <pre><code data-trim style="font-size:smaller">
+                        public class FoobarTest {
+                          @Before
+                          public void setUp() throws Exception {
+                            // Code executed before each test
+                          }                             
+                          @Test
+                          public void testOneThing() {
+                           // Code that tests one thing
+                          }
+                          @After
+                          public void tearDown() throws Exception {
+                            // Code executed after each test 
+                          }                             
+                        }
+                    </code></pre>
+                    <figcaption style="font-size:small">Beispiel nach : https://en.wikipedia.org/wiki/JUnit</figcaption>
+                </figure>
+                </div>
+            </section>
+
+
+            <section>
+                    <h3>Testing in the small</h3>
+    
+                    <div style="float:right;width:50%">
+                        <h4>Black box testing</h4>
+                        <ul>
+                            <li>Funktionales Testen</li>
+                            <li>Partitionierung der Testf&auml;lle basierend auf Spezifikation</li>
+                            <li>Testen was das Programm
+                                <mark class="highlight">machen sollte</mark>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div style="float:left;width:50%">
+                        <h4> White box testing</h4>
+                        <ul>
+                            <li>Strukturelles Testen</li>
+                            <li>Partitionierung der Testf&auml;lle basierend auf interner Struktur
+                            </li>
+                            <li>Testen was das Programm
+                                <mark class="highlight">macht</mark>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+    
+
+        
+    
+
             <section>
                 <h3>Unit Tests</h3>
                 <ul>
                     <li>Was ist der Unterschied zwischen Validierung und Verifikation?</li>
                     <ul><li>Weshalb ist beides wichtig?</li></ul>
                     <li>Weshalb m&uuml;ssen sogar mathematisch exakte, formale Spezifikationen validiert werden?</li>                    
-                    <li>Was erreichen wir durch (Code) reviews?</li>
                     <li>Weshalb kann die statische Analyse nur einen kleinen Teil der Fehler finden?</li>
                     <li>Was ist gemeint damit, dass wir uns beim Testen nicht auf Kontinuit&auml;t verlassen k&ouml;nnen?</li>
+                    <li>Was ist der Unterschied zwischen "Testing in the Small" und "Testing in the Large"</li>
                 </ul>
             </section>
         </div>
