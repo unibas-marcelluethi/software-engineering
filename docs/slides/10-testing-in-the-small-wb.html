@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>White-box testing</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <div class="slides">
+                <section class="center">
+                    <h3>
+                        Testing in the small
+                    </h3>
+                    <h4>White box testing</h4>
+                    <p>
+                        <small> Marcel L&uuml;thi </br>
+                            Departement Mathematik und Informatik </small>
+                    </p>
+                    <p>
+                        <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                    </p>
+                </section>
+
+
+                <section>
+                    <h3>White box testing</h3>
+                    <div style="float:left; width:50%">
+                        <figure>
+                        <pre><code class="Pascal" data-trim >
+                                        begin
+                                            read (x); 
+                                            read (y);
+                                        
+                                            while x != y loop 
+                                                if x > y then 
+                                                    x := x - y;
+                                                else 
+                                                    y := y - x; 
+                                                end if;
+                                            end loop;
+                                            gcd := x;
+                                        end;                        
+                                    </code></pre>                                    
+                                    <figcaption style="font-size:smaller"> Euklid's Algorithmus </figcaption>
+                                </figure>
+                    
+                    </div>
+                    <div style="float:left; width:50%">
+                        <ul>
+                            <li>Nutzen der internen Struktur um Testf&auml;lle zu finden</li>
+                            <ul>
+                                <li>Spezifikation nicht im Vordergrund.</li>
+                            </ul>     
+                            <li>Beobachtung: Testf&auml;lle bei denen  x = y lassen grosse Teile des Programms ungetest.</li>                       
+                        </ul>
+                    </div>
+                    <blockquote style="display:inline-block; width:100%" class="fragment">
+                        Struktur kann benutzt werden um &Auml;quivalenzklassen zu definieren.
+                    </blockquote>
+                </section>
+
+                <section>
+                    <h3>&Uuml;berdeckung (coverage)</h3>
+                    <blockquote>
+                        Falls signifikante Teile des Codes nicht getestet sind, ist das Testen inad&auml;quat.
+                    </blockquote>
+                    <ul>
+                        <li>Kriterien</li>
+                        <ul>
+                            <li>Anweisungs&uuml;berdeckung</li>
+                            <li>Zweig&uuml;berdeckung</li>
+                            <li>Bedingungs&uuml;berdeckung</li>
+                            <li>Pfad&uuml;berdeckung</li>
+                        </ul>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Anweisungs&uuml;berdeckung</h3>
+                    <blockquote style="width:80%">
+                        W&auml;hle Testmenge $T$ so, dass jedes Statement in Programm $P$ mindestens einmal ausgef&uuml;hrt wird (f&uuml;r beliebiges
+                        $d \in T$)
+                    </blockquote>
+                    <ul>
+                        <li>F&uuml;r jedes $d$ werden mehrere Statements ausgef&uuml;hrt</li>
+                        <ul>
+                            <li>Ziel: minimieren der Anzahl Testcases f&uuml;r gew&uuml;nschte Abdeckung.</li>
+                        </ul>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Beispiel: Anweisungs&uuml;berdeckung</h3>
+
+                    <pre><code data-trim>
+                        read (x); read (y);
+                        if x > 0 then 
+                            write ("1");
+                        else 
+                            write ("2");
+                        end if;
+                        if y > 0 then 
+                            write ("3");
+                        else 
+                            write ("4");
+                        end if;
+                </code></pre>
+                    <ul style="font-size:smaller">
+                        <li>$\{x = 2, y = 3; x = - 13, y = 51; x = 97, y = 17; x = - 1, y = - 1\}$ f&uuml;hrt zu vollst&auml;ndiger
+                            Abdeckung
+
+                        </li>
+                        <li>$ \{x = - 13, y = 51; x = 2, y = - 3 \} $ ist minimal</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Schw&auml;che von Kriterium</h3>
+                    <pre><code data-trim>
+                    if x &lt 0 then
+                     x = -x
+                    end if
+                    z = x;
+                </code></pre>
+                    <ul>
+                        <li>$x = -3$ deckt alle Statements ab</li>
+                        <ul>
+                            <li>Kein Test f&uuml;r $x$ positiv. </li>
+                        </ul>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Zweig&uuml;berdeckung (Edge coverage)</h3>
+
+                    <blockquote>
+                        Die Testmenge $T$ wird so gew&auml;hlt, dass jeder Zweig des Kontrollflusses mindestens einmal durchlaufen wird.
+                    </blockquote>
+
+                    <ul>
+                        <li>Formalisierung von Kontrollflussgraphen n&ouml;tig.</li>
+                        <ul>
+                            <li>Definiere Graph $G$ durch</li>
+                            <ul>
+                                <li>Kante repr&auml;sentiert Answeisungen</li>
+                                <li>Anfang und Endknoten: Entry/Exit Punkt</li>
+                            </ul>
+                            <li>Induktion: Graph kann Subgraph von neuem Graphen sein (Codebl&ouml;cke)</li>
+                        </ul>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Kontrollflussgraph: Elemente</h3>
+                    <figure>
+                        <img src="images/cfg.png" class="plain" />
+                        <figcaption style="font-size:x-small">Abbildung nach Ghezzi et al. Fundamentals of Software Engineering, Abbildung 6.1</figcaption>
+                    </figure>
+
+                </section>
+
+                <section>
+                    <h3>Kontrollflussgraph: Vereinfachung</h3>
+                    <figure>
+                        <img src="images/cfg-simplification.png" class="plain" />
+                        <figcaption style="font-size:x-small">Abbildung nach Ghezzi et al. Fundamentals of Software Engineering, Abbildung 6.2</figcaption>
+                    </figure>
+
+                </section>
+
+
+                <section>
+                    <h3>Beispiel: Euklid's Algorithmus</h3>
+                    <div style="float:left; width:50%">
+                        <pre><code class="Pascal" data-trim >
+                        begin
+                            read (x); 
+                            read (y);
+                        
+                            while x != y loop 
+                                if x > y then 
+                                    x := x - y;
+                                else 
+                                    y := y - x; 
+                                end if;
+                            end loop;
+                            gcd := x;
+                        end;                        
+                    </code></pre>
+                    </div>
+
+                    <div style="float:right; width:30%">
+                        <img src="images/cfg-euclid.png" class="plain" />
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3>Schw&auml;chen vom Kriterium</h3>
+                    <pre><code data-trim>
+                    found := false; counter :=1;
+                    while (not found) and (counter < number_of_items) loop
+                        if table(counter) = desired_element then
+                            found := true;
+                        end if
+                        counter := counter + 1;
+                    end loop
+                    </code></pre>
+
+                    <ul>
+                        <li>Testf&auml;lle:
+                            <ol>
+                                <li> table =(), desired_element = beliebig </li>
+                                <li>table = (7, 3, 1), desired_element = 3</li>
+                            </ol>
+                            <li class="fragment">Off by 1 error ($
+                                <$ statt $<=$) in loop</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Bedingungs&uuml;berdeckung</h3>
+
+                    <blockquote>
+                        Die Testmenge $T$ wird so gew&auml;hlt, dass jeder Zweig des Kontrollflusses mindestens einmal durchlaufen wird und alle
+                        m&ouml;glichen Elemente von zusammengesetzten Bedingungen mindestens einmal aktiv sind.
+                    </blockquote>
+                    <ul>
+                        <li>St&auml;rkeres Kriterium als Zweig&uuml;berdeckung.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Bedingungs&uuml;berdeckung und Zweig&uuml;berdeckung</h3>
+                    <ul>
+                        <li>Programm kann umgeschrieben werden, so dass Bedingungs&uuml;berdeckung = Zweig&uuml;berdeckung</li>
+                    </ul>
+                    <div style="float:left; width:50%">
+                        <pre><code data-trim>
+                        if (c1 and c2) then
+                            st;
+                        else
+                            sf;
+                        end if
+                    </code></pre>
+                    </div>
+                    <div style="float:right; width:50%">
+                        <pre><code data-trim>
+                                if (c1) then
+                                    if (c2) then
+                                        st;
+                                    else
+                                        sf;
+                                    end if
+                                else
+                                    sf;
+                                end if
+                            </code></pre>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h3>Schw&auml;chen vom Kriterium</h3>
+                    <pre><code data-trim>
+                    if x != 0 then
+                        y := 5;
+                    else    
+                        z := z - x;
+                    end if;
+                    if z > 1 then
+                        z := z / x
+                    else   
+                        z := 0;
+                    end if;
+                    </code></pre>
+
+                    <ul>
+                        <li>Testf&auml;lle: 1) x = 0, z = 1; x=1, z = 3</li>
+                        <li class="fragment">Division durch 0 f&uuml;r x =0, z= 3 wird nicht entdeckt</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Pfad&uuml;berdeckung</h3>
+
+                    <blockquote>
+                        Die Testmenge $T$ wird so gew&auml;hlt, so dass jeder Pfad zwischen dem initialen und dem Endknoten durchlaufen wird.
+                    </blockquote>
+                    <ul>
+                        <li>Bestes Kriterium - aber nicht praktikabel</li>
+                        <ul>
+                            <li>N&uuml;tzliches Ideal, welches angestrebt werden sollte.</li>
+                        </ul>
+                        <li>Kreativit&auml;t vom Tester gefordert</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h3>Limitierungen von Pfad&uuml;berdeckung</h3>
+                    <ul>
+                        <li>Viele (syntaktisch erreichbare) Zweige und Pfade sind nicht relevant</li>
+                        <li>Beispiele:</li>
+                        <ul>
+                            <li>Eine Funktion ist implementert wird aber nie aufgerufen</li>
+                            <li>Bedingung die nie erf&uuml;llt werden kann</li>
+                        </ul>
+                        <li>100 % &Uuml;berdeckung wird nie erreicht</li>                        
+                    </ul>
+                    <blockquote style="width:100%" class="fragment">
+                        Auch perfekte Pfad&uuml;berdeck kann nicht verhindern, dass Teile der Spezifikation nicht implementiert sind.
+                    </blockquote>
+    
+                    </section>
+                    
+                    <section>
+                        <h3>Unit Tests</h3>
+
+                        <ul>
+                            <li>Anhand welchen Kriterien werden beim White Box Testing &Auml;quivalenzklassen definiert?</li>
+                            <li>Was sind die St&auml;rken und Schw&auml;chen von &Uuml;berdeckung als Kriterium?</li>
+                            <li>Was ist ein Kontrollflussgraph?</li>
+                            <li>Ist es garantiert, dass Testf&auml;lle mit perfekter Pfad&uuml;berdeckung alle Fehler aufdecken?</li>
+                        </ul>
+
+                    </section>
+
+            </div>
+        </div>
+
+
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                center: false,
+
+                chalkboard: {
+                    src: "chalkboard.json",
+                    readOnly: undefined,
+                    transition: 800,
+                    theme: "whiteboard",
+                    //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                    //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                    // configuration options for notes canvas and chalkboard
+                    color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                    background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                    pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+                },
+                dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                { src: 'plugin/math/math.js', async: true },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/chalkboard/chalkboard.js'
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+                ],
+                math: {
+                    // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'
+                },
+                keyboard: {
+                    67: function () {
+                        RevealChalkboard.toggleNotesCanvas()
+                    }, // toggle notes canvas when 'c' is pressed
+                    66: function () {
+                        RevealChalkboard.toggleChalkboard()
+                    }, // toggle chalkboard when 'b' is pressed
+                    46: function () {
+                        RevealChalkboard.clear()
+                    }, // clear chalkboard when 'DEL' is pressed
+                    8: function () {
+                        RevealChalkboard.reset()
+                    }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                    68: function () {
+                        RevealChalkboard.download()
+                    }, // downlad recorded chalkboard drawing when 'd' is pressed
+                },
+            });
+        </script>
+</body>
+
+</html>
