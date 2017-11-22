@@ -45,11 +45,13 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | 8  | Softwarespezifikation (&Uuml;bersicht) [(html)](https://unibas-sweng.github.io/software-engineering/slides/08-specification-overview.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/08-specification-overview.html?print-pdf) |  |
 |   | Konstruktive Softwarespezifikation [(html)](https://unibas-sweng.github.io/software-engineering/slides/08-operational-specifications.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/08-operational-specifications.html?print-pdf) |  |
 | 9  | Deskriptive Softwarespezifikation [(html)](https://unibas-sweng.github.io/software-engineering/slides/09-descriptive-specifications.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/09-descriptive-specifications.html?print-pdf) | |
-|   | Verifikation (&Uuml;berblick) [(html)](https://unibas-sweng.github.io/software-engineering/slides/09-verification-overview.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/09-verification-overview.html?print-pdf) | |
-| 10 | Testen | |
-|  11  | Software prozesse / Agile Softwareentwicklung| |
-| 12  | Objektorientierte Entwurfsmuster | |
-| 13  | Funktionale Entwurfsmuster | |
+| 10  | Verifikation (&Uuml;berblick) [(html)](https://unibas-sweng.github.io/software-engineering/slides/09-verification-overview.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/09-verification-overview.html?print-pdf) | (aktualisiert 21.11)|
+|  | Testen (Grundlagen) [(html)](https://unibas-sweng.github.io/software-engineering/slides/10-testing-foundations.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/10-testing-foundations.html?print-pdf) | |
+|  | Testen im Kleinen - Whitebox testing [(html)](https://unibas-sweng.github.io/software-engineering/slides/10-testing-in-the-small-wb.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/10-testing-in-the-small-wb.html?print-pdf) | |
+| 11 | Testen im Kleinen - Blackbox testing | |
+|    | Testen im Grossen || 
+|  12  | Software prozesse / Agile Softwareentwicklung| |
+| 13  | Entwurfsmuster | |
 | 14    | Zusammenfassung / Pr&uuml;fungsvorbereitung | |
 
 ## &Uuml;bungen 
