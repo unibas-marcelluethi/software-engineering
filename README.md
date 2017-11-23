@@ -66,6 +66,8 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |  4-5    | Theorie: &Uuml;bungsblatt 3: Module und Abstrakte Datentypen [(html)](https://unibas-sweng.github.io/software-engineering/exercises/03-theory-modules-and-adts.html) | 24. Oktober 2017 | |
 |  5-6    | Ganttproject: &Uuml;bung 4: Interne Datenstrukturen und Bugfix [(html)](https://unibas-sweng.github.io/software-engineering/exercises/04-gant-core-datastructures.html) | 31. Oktober 2017 ||
 |  6-7    | Theorie: &Uuml;bungsblatt 4: UML Klassendiagramme [(html)](https://unibas-sweng.github.io/software-engineering/exercises/04-theory-uml-static.html) | *verl&auml;ngert bis 14. November 2017* | Freiwillig |
+| 12      | Theorie: Lesen des Papers [A rational design process](http://web.engr.oregonstate.edu/~digd/courses/cs361_W15/docs/IEEE86_Parnas_Clement.pdf) |  6. Dezember 2017 | Freiwillig (keine Punkte)|
+
 
 ## Projekt
 | Woche | Thema | Kommentar |
