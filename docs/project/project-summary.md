@@ -79,7 +79,7 @@ Implementieren sie die Software gem&auml;ss den Vorgaben des Pflichtenhefts. Die
 
 ## Aufgabe 5. Erstellen des Testplan
 
-Erstellen sie einen Testplan, in welchem Sie detailiert ausf&uuml;hren wie sie die Software testen. Richten sie sich dabei nach folgendem [Template](TODO)
+Erstellen sie einen Testplan, in welchem Sie detailiert ausf&uuml;hren wie sie die Software testen. Richten sie sich dabei nach folgendem [Template](testplan.md)
 
 *Abgabe (Via pull request)* Sonntag 10. Dezember
 
