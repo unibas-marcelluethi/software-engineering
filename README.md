@@ -48,9 +48,10 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | 10  | Verifikation (&Uuml;berblick) [(html)](https://unibas-sweng.github.io/software-engineering/slides/09-verification-overview.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/09-verification-overview.html?print-pdf) | (aktualisiert 21.11)|
 |  | Testen (Grundlagen) [(html)](https://unibas-sweng.github.io/software-engineering/slides/10-testing-foundations.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/10-testing-foundations.html?print-pdf) | |
 |  | Testen im Kleinen - Whitebox testing [(html)](https://unibas-sweng.github.io/software-engineering/slides/10-testing-in-the-small-wb.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/10-testing-in-the-small-wb.html?print-pdf) | |
-| 11 | Testen im Kleinen - Blackbox testing | |
-|    | Testen im Grossen || 
-|  12  | Software prozesse / Agile Softwareentwicklung| |
+| 11 | Testen im Kleinen - Blackbox testing [(html)](https://unibas-sweng.github.io/software-engineering/slides/11-testing-in-the-small-bb.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/11-testing-in-the-small-bb.html?print-pdf) | |
+|    | Testen im Grossen [(html)](https://unibas-sweng.github.io/software-engineering/slides/11-testing-in-the-large.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/11-testing-in-the-large.html?print-pdf)|| 
+|    | Software prozesse [(html)](https://unibas-sweng.github.io/software-engineering/slides/11-software-process.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/11-software-process.html?print-pdf)| |
+| 12   | Agile Softwareentwicklung / Scrum              | |
 | 13  | Entwurfsmuster | |
 | 14    | Zusammenfassung / Pr&uuml;fungsvorbereitung | |
 
