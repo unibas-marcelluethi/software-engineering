@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Verifikation</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section class="center">
+                <h3>
+                    Testing in the large
+                </h3>
+                <p>
+                    <small> Marcel L&uuml;thi </br>
+                        Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section>
+
+
+            <section>
+                <h3>&Uuml;bersicht</h3>
+
+                <figure>
+                    <img src="images/test-progression.png" class="plain" />
+                    <figcaption style="font-size:x-small">Abbildung nach: Pfleeger & Atlee, Software Engineering, Abbildung 8.3</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Modultest (Unit Test)</h3>
+
+                <ul>
+                    <li>Module sind &uuml;blicherweise Teil eines gr&ouml;sseren Systems</li>
+                    <li>Wir brauchen Hilfskonstrukte um Module zu testen</li>
+                    <ul>
+                        <li>Andere Module sind noch in Entwicklung</li>
+                        <li>Zugriff auf richtige Ressourcen zu teuer</li>
+                        <li>Modul soll m&ouml;glichst isoliert getestet werden</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Stubs & Drivers</h3>
+
+                <div style="margin: auto; position:relative">
+                    <img class="plain" data-fragment-index="0" src="images/stub-and-driver.png" />
+                    <img class="fragment fade-in plain " data-fragment-index="0" src="images/stub-and-driver-2.png" />
+                </div>
+                <ul class="fragment">
+                    <li>Formale Spezifikationen helfen die Stubs und Drivers zu schreiben</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h3>Integrationstests</h3>
+
+                <div style="float:left;width:50%">
+                    <h4>Big-bang</h4>
+                    <ul>
+                        <li>Alle Module werden nur in Isolation getestet</li>
+                        <li>Danach ganzes System testen</li>
+                    </ul>
+
+                </div>
+                <div style="float:right;width:50%">
+                    <h4>Inkrementelles testen</h4>
+                    <ul>
+                        <li>Progressives integrieren und testen</li>
+                        <li>"top down"</li>
+                        <ul>
+                            <li>driver ersetzten</li>
+                        </ul>
+                        <li>"bottom up"</li>
+                        <ul>
+                            <li>stub ersetzen</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>"Top down" vs "bottom up"</h3>
+
+                <div style="float:left; width:50%">
+                    <img src="images/module-hierarchy.png" class="plain" />
+                </div>
+
+                <div style="float:right; width:50%">
+                    <ul>
+                        <li>In Hierarchien wird Testen einfacher</li>
+                        <li>Top down</li>
+                        <ul>
+                            <li> Nur stubs</li>
+                        </ul>
+                        <li>Bottom up</li>
+                        <ul>
+                            <li> Nur drivers</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div style="display:inline-block" class="fragment">
+                    Was sind die Vorteile von Bottom Up / Top Down?
+                </div>
+            </section>
+
+            <section>
+                <h3>Beispiel</h3>
+
+                <div style="text-align:left">
+                    <img src="images/stub-driver-composed.png" class="plain">
+
+                    <ul>
+                        <li>Strategie 1</li>
+                        <ul>
+                            <li>$M_1$ testen, driver f&uuml;r $M_1$, stub f&uuml;r $M_2$</li>
+                        </ul>
+                        <li>Strategie 2</li>
+                        <ul>
+                            <li>$M_{2,2}$ testen, driver f&uuml;r $M_{2,1}$</li>
+                            <li>$M_{2,1}$ designen und $M_2$ mittels driver testen</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Testen objektorientierter Programme</h3>
+                <ul>
+                    <li>Eigenschaften von OO-Systemen beeinflusst Testing</li>
+                    <ul>
+                        <li>Kapselung macht Unit Tests einfach, aber Integrationstest schwierig!</li>
+                    </ul>
+                </ul>
+                <figure>
+                    <img src="images/oo-testing.png" class="plain" style="width:60%" />
+                    <figcaption style="font-size:x-small">Abbildung nach Pfleeger & Atlee, Software Engineering, Abbildung 8.16</figcaption>
+                </figure>
+
+            </section>
+
+
+
+            <section>
+                <h3>Regressionstest</h3>
+
+                <blockquote>
+                    Wiederholung der Testf&auml;lle wenn Software ver&auml;ndert wird.
+                </blockquote>
+
+                <ul>
+                    <li>Automatisierung der Tests enorm hilfreich</li>
+                    <li>Continuous Integration Systeme (wie z.B. Jenkins oder Travis) erlauben Tests bei jedem Commit durchzuf&uuml;hren</li>
+                    <li>Korrektheit kann durch Spezifikation, Testorakel, oder durch Vergleich mit fr&uuml;heren Testruns gepr&uuml;ft
+                        werden. </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h3>Systemtest</h3>
+                <div style="float:left; width:40%">
+                    <figure>
+                        <img src="images/radio-therapy.jpg" class="plain" />
+                        <figcaption style="font-size:x-small">By Michael Goodyear - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61844004</figcaption>
+                    </figure>
+                </div>
+                <div style="float:right; width:60%">
+                    <ul>                        
+                        <li>Testen des Ganzen Systems gegen die Funktionalen Anforderungen</li>
+                        <li>Wird h&auml;ufig auf separater Testumgebung durchgef&uuml;hrt</li>
+                        <ul><li>Testumgebung soll Kundenumgebung simulieren</li></ul>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Testplan </h3>
+
+                <blockquote>
+                    Testen eines Systems ist komplexes Unterfangen.
+                </blockquote>
+               <ul>                
+                <li>Testplan hilft, die Aktivit&auml;ten zu planen und koordinieren</li>
+                <ul>
+                    <li> Was muss getestet werden?</li>
+                    <li> Warum werden die Tests gemacht?</li>
+                    <li> Wie werden die Tests ausgef&uuml;hrt?</li>
+                    <li> Wann m&uuml;ssen die Tests ausgef&uuml;hrt werden</li>
+                </ul>
+                <li>Testplan sollte von separatem Team (oder anderem Entwickler) geschrieben werden.</li>
+                </ul> 
+            </section>
+
+            <section>
+                <h3>Unit Tests</h3>
+                <ul>
+                    <li>Wozu braucht es stubs und drivers?</li>
+                    <li>Was sind Vor- und Nachteile von Bottom-up / Top-down integration</li>
+                    <li>Weshalb macht Kapselung Software
+                        <ul><li> einfach zu testen</li></ul>                 
+                        <ul><li> schwierig zu testen</li></ul>   
+                    <li>Wie helfen automatisierte Tests f&uuml;r Regressionstesting?</li>                    
+                    <li>Wieso sind Hierarchien (von Modulen) einfach zu testen?</li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>

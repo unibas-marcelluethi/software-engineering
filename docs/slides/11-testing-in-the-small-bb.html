@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Testing in the small</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <div class="slides">
+                <section class="center">
+                    <h3>
+                        Testing in the small
+                    </h3>
+                    <h4>
+                        Black box testing, Weitere Aspekte
+                    </h4>
+
+                    <p>
+                        <small> Marcel L&uuml;thi </br>
+                            Departement Mathematik und Informatik </small>
+                    </p>
+                    <p>
+                        <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                    </p>
+                </section>
+
+
+                <section>
+                    <h3>Black box testing</h3>
+
+                    <blockquote>
+                        Testf&auml;lle werden aus Spezifikation abgeleiten.
+                    </blockquote>
+                    <ul>
+                        <li>Interne Struktur des Moduls wird nicht ber&uuml;cksichtigt.</li>
+                        <li>Testen des Vertrags und nicht der Internas</li>
+                        <ul>
+                            <li>Vorteil: Internas k&ouml;nnen sich &auml;ndern ohne das Test sich &auml;ndert</li>
+                            <li>Empfohlene Praxis f&uuml;r automatisierte Unit Tests</li>
+                        </ul>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h3>Beispiel Spezifikation</h3>
+
+                    <blockquote style="width:100%; font-size:smaller; text-align:left">
+                        Das Programm bekommt als Input eine Repr&auml;sentation (Datenstruktur) einer Einzahlung. Diese Einzahlung muss in eine Tabelle
+                        von Einzahlungen eingeordnet werden, welche nach Datum sortiert ist. Falls andere Einzahlungen mit
+                        demselben Datum existieren, wird die neue Einzahlung nach dem letzten Eintrag dieses Datums einsortiert.
+                        Es sollen auch verschiedene Konsistenzchecks durchgef&uuml;hrt werden:
+                        <ul>
+                            <li>Ist der Kunde bereits im Kundenverzeichnis</li>
+                            <li>Stimmt der Name in den Verzeichnissen &uuml;berein</li>
+                            <li>...</li>
+                        </ul>
+                    </blockquote>
+                </section>
+
+
+                <section>
+                    <h3>Testen &Auml;quivlanzklassen</h3>
+
+                    <p style="text-align:left">
+                        Auch hier k&ouml;nnen (intuitive) &Auml;quivalenzklassen definiert werden.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Aktuelles Datum der Einzahlung
+                        </li>
+                        <li>
+                            Datum in der Vergangenheit
+                        </li>
+                        <ul>
+                            <li>Es gibt bereits Zahlungen an diesem Tag</li>
+                            <li>Es gibt keine andere Zahlung an diesem Tag</li>
+                        </ul>
+                        <li>Inkorrekte Einzahlungen um Inkonsistenzen zu testen</li>
+
+                    </ul>
+
+                </section>
+
+
+                <section>
+                    <h3>Beispiel Spezifikation</h3>
+
+                    <blockquote style="width:100%; font-size:smaller">
+                        Ein Kunde kommt in die Bibliothek und will sich ein Buch ausleihen. Die Bibliothekarin pr&uuml;ft als erstes seinen Ausweis
+                        und ob das Benutzerkonto aktiv ist. Falls der Ausweis nicht g&uuml;ltig ist und oder falls der Kunde
+                        fällige Mahngebühren nicht bezahlt hat, wird das Konto gesperrt. Falls das Konto aktiv ist, wird
+                        zus&auml;tzlich &uuml;berpr&uuml;ft ob der Kunde bereits die maximal m&ouml;gliche Anzahl von B&uuml;chern
+                        ausgeliehen hat. Falls dies der Fall ist wird der Ausleihwunsch zur&uuml;ckgewiesen. Ansonsten wird
+                        dem Kunden das gewünschte Buch ausgeliehen.
+                    </blockquote>
+                </section>
+
+                <section>
+                    <h3>Ursache-Wirkungs-Graph</h3>
+
+                    <img src="images/cause-effect-graph.png" class="plain" />
+
+                    <ul class="fragment">
+                        <li>Kann benutzt werden um Entscheidungstabelle zu generieren</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Entscheidungstabellen</h3>
+                    <table style="font-size:smaller">
+                        <tr>
+                            <td>Ausweis g&uuml;ltig?</td>
+                            <td>N</td>
+                            <td>J</td>
+                            <td>J</td>
+                            <td>J</td>
+                            <td>J</td>
+                            <td>J</td>
+                        </tr>
+                        <tr>
+                            <td>Konto Aktiv?</td>
+                            <td>-</td>
+                            <td>N</td>
+                            <td>N</td>
+                            <td>J</td>
+                            <td>J</td>
+                            <td>J</td>
+                        </tr>
+                        <tr>
+                            <td>F&auml;llige Mahngeb&uuml;hren?</td>
+                            <td>-</td>
+                            <td>J</td>
+                            <td>N</td>
+                            <td>J</td>
+                            <td>N</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Max. Anzahl B&uuml;cher?</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>N</td>
+                            <td>J</td>
+                        </tr>
+                        <tr style="background-color:lightgray">
+                            <td>Aktionen</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Benutzerdaten abrufen</td>
+                            <td>N</td>
+                            <td>J</td>
+                            <td>J</td>
+                            <td>J</td>
+                            <td>J</td>
+                            <td>J</td>
+                        </tr>
+                        <tr>
+                            <td>Konto Sperren</td>
+                            <td>J</td>
+                            <td>J</td>
+                            <td>N</td>
+                            <td>J</td>
+                            <td>N</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Buch ausleihen</td>
+                            <td>N</td>
+                            <td>N</td>
+                            <td>N</td>
+                            <td>N</td>
+                            <td>J</td>
+                            <td>N</td>
+                        </tr>
+
+                    </table>
+                    <blockquote style="width:100%">
+                        &Uuml;berdeckungskriterium: Einen Testfall pro Spalte
+                    </blockquote>
+                </section>
+
+
+
+                <section>
+                        <h3>Grenzf&auml;lle Testen</h3>
+                        <blockquote style="width:100%">
+                            <p>Viele Fehler treten an den Grenzen von 
+                            &Auml;quivalenzklassen auf.
+                        </p>
+                            <ul>
+                                <li>Gilt sowohl f&uuml;r Black-box als auch White-box testing</li>
+                            </ul>
+                        </blockquote>
+                        <div style="text-align:left" class="fragment">
+                            <h4>Beispiel</h4>
+                        <div style="float:left;width:50%">
+                            <pre><code data-trim>
+                            if (x > y) then
+                                S1;
+                            else
+                                S2;
+                            end if
+                            </code></pre>
+                        </div>
+                        <div style="float:right;width:50%">
+                            <ul>
+                                <li>&Auml;quivalenzklassen</li>
+                                <ul>
+                                    <li>x &gt; y</li>
+                                    <li>x &lt;= y</li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <ul>               
+                            <li>Weiterer wichtiger Testfall: x = y</li>             
+                        </ul>
+                        </div>
+                    </section>
+    
+    
+                    <section>
+                        <h3>Test Orakel</h3>
+                        <blockquote>
+                            Ein Test Orakel gibt uns den korrekten Output zu einem 
+                            gegebenen Testfall.
+                        </blockquote>
+                        <ul>
+                            <li>Automatisierte Orakel n&ouml;tig bei automatisierten Tests und wenn viele Tests durchgef&uuml;hrt werden sollen.</li>
+                            <li>Design von Orakel insbesondere f&uuml;r white box Tests oft schwierig</li>
+                            <ul><li>
+                                Programmstruktur gibt keine Anhaltspunkte, was Output sein sollte.
+                            </li></ul>
+                        </ul>
+
+                        
+                    </section>
+
+                    <section>
+                        <h3>Beispiele von Test Orakeln</h3>
+                        
+                        <ul>
+                            <li>Menschlicher Tester</li>
+                            <li>Spezifikation</li>
+                            <ul>
+                                <li>Idealfall: Postcondition ist formal definiert</li>
+                            </ul>
+                            <li>Andere Programme</li>
+                            <li>Modell des Systems</li>
+                            <li>Statistische Methoden</li>
+                        </ul>
+                    </section>
+
+     
+                <section>
+                        <h3>Interessanter Ansatz: Property based testing</h3>
+                        <blockquote>
+                            Idee: Spezifizierte Eigenschaften werden auf vielen automatisch 
+                            generierten Testf&auml;llen &uuml;berpr&uuml;ft.
+                        </blockquote>
+
+                        
+                        <figure>
+                        <pre><code data-trim>                               
+                                public int plus(int a, int b) { return a + b; }
+
+                                @Test                                
+                                public void addingTwoPositiveIntegersAlwaysGivesAPositiveInteger(){
+                                  qt()
+                                  .forAll(integers().allPositive()
+                                        , integers().allPositive())
+                                  .check((i,j) -> plus(a, b) > 0); 
+                                }
+                        </code></pre>
+                        <figcaption style="font-size:smaller">Beispiel in QuickTheories (https://github.com/ncredinburgh/QuickTheories)</figcaption>
+                    </figure>
+                    </section>
+    
+    
+
+                <section>
+                    <h3>Unit Tests</h3>
+                    <ul>
+                        <li>Weshalb wird f&uuml;r automatisierte Unit Tests Black Box Testing empfohlen?</li>
+                        <li>Wie helfen uns Entscheidungstabellen systematisch zu testen?</li>
+                        <li>Was ist ein Testorakel?</li>
+                        <ul><li>Weshalb sind Testorakel einfacher f&uuml;r Black box Tests als f&uuml;r White box Tests zu definieren?</li></ul>
+                        <li>Weshalb sollte man immer Elemente an der Grenze von &Auml;quivalenzklassen testen?</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                center: false,
+
+                chalkboard: {
+                    src: "chalkboard.json",
+                    readOnly: undefined,
+                    transition: 800,
+                    theme: "whiteboard",
+                    //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                    //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                    // configuration options for notes canvas and chalkboard
+                    color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                    background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                    pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+                },
+                dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                { src: 'plugin/math/math.js', async: true },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/chalkboard/chalkboard.js'
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+                ],
+                math: {
+                    // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'
+                },
+                keyboard: {
+                    67: function () {
+                        RevealChalkboard.toggleNotesCanvas()
+                    }, // toggle notes canvas when 'c' is pressed
+                    66: function () {
+                        RevealChalkboard.toggleChalkboard()
+                    }, // toggle chalkboard when 'b' is pressed
+                    46: function () {
+                        RevealChalkboard.clear()
+                    }, // clear chalkboard when 'DEL' is pressed
+                    8: function () {
+                        RevealChalkboard.reset()
+                    }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                    68: function () {
+                        RevealChalkboard.download()
+                    }, // downlad recorded chalkboard drawing when 'd' is pressed
+                },
+            });
+        </script>
+</body>
+
+</html>
