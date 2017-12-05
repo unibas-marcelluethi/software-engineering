@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>A rational design process</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section class="center">
+                <h3>
+                    Paperbesprechung:
+                    <br/> - A Rational Design Process -
+                </h3>
+
+                <p>
+                    <small> Marcel L&uuml;thi </br>
+                        Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section>
+
+            <section>
+                <img src="images/rational-design-process-paper.png" class="plain" style="width:55%"/>
+            </section>
+            <section>
+                <h3>&Uuml;berblick</h3>
+
+                <blockquote style="width:100%">
+                        These: <br/>Der ideale Softwareprozess ist die
+                        systematische Ableitung der Software von Anforderungen.
+                </blockquote>
+                <ul class="fragment">
+                    <li>Der ideale Prozess kann nie erreicht werden</li>
+                    <li>Wir k&ouml;nnen ihn aber ann&auml;hern</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Metaphor: Mathematischer Beweise</h3>
+                <div style="float:left;width:50%">
+                    <h4>Pr&auml;sentation</h4>
+                    <ul>
+                        <li>Starten mit klaren Anforderungen</li>
+                        <li>Schrittweise logische deduktion</li>
+                        <li>Schlussfolgerung / Resultat beschreiben</li>
+                    </ul>
+                </div>
+                <div style="float:right;width:50%">
+                    <h4>Realit&auml;t</h4>
+                    <ul>
+                        <li>Ausprobieren, Simulieren, Visualisierung</li>
+                        <li>Erster Beweis</li>
+                        <ul>
+                            <li>Oft kompliziert und umst&auml;ndlich</li>
+                        </ul>
+                        <li>Beweis vereinfachen</li>
+                    </ul>
+                </div>
+                <blockquote style="display:inline-block; width:100%" class="fragment">Interesse gilt Endresultat nicht Prozess.</blockquote>
+            </section>
+
+            <section>
+                <h3>Idealer Prozess in Software Engineering</h3>
+                <img src="images/ideal-process.png" style="width:70%" class="plain"/>
+            </section>
+          
+            <section>
+                    <h3>Rolle von Dokumentation in diesem Prozess</h3>
+                    <ul>
+                        <li>Festhalten von Entscheidungen</li>
+                            <ul>
+                                <li>Was wurde entschieden?</li>
+                                <li>Wieso wurde es entschieden?</li>
+                            </ul>
+    
+                    </ul>
+                    <blockquote>
+                    Anforderungen von aktuellen Entwicklern 
+                    sowie <mark class="highlight">k&uuml;nftigen Entwicklern</mark> gerecht werden.
+                </blockquote>
+                </section>
+    
+            <section>
+                <h3>Warum erreichen wir den idealen Prozess nicht?</h3>
+                <ul>
+                    <li>Auftraggeber wissen nicht was sie wollen</li>
+                    <ul><li>... oder k&ouml;nnen Details nicht so spezifizieren dass man Programme entwicklen kann</li></ul>
+                    <li>Entwickler/Analysten sind mit der F&uuml;lle von Details &uuml;berfordert</li>
+                    <li>&Auml;nderungen in Anforderungen</li>
+                    <li>Entwickler / Analysten sind fehlbar und voreingenommen</li>
+                    <li>Wirtschaftliche Einschr&auml;nkungen</li>
+                    <ul><li>Wiederverwendung von bestehenden Komponenten</li></ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Wie soll man vorgehen</h3>
+                <ul>
+                    <li>Ideal im Kopf behalten</li>
+                    <li>Dokumente schreiben. 
+                        <ul><li>Unklarheiten aussparen und markieren</li></ul>
+                    <li>Sobald etwas klar wird, erg&auml;nzen</li>
+                    <li>Templates / vorstrukturierte Dokumente nutzen</li>
+                </ul>
+               
+                
+            </section>
+
+            <section>
+                <h3>Was bedeutet das?</h3>
+                <ul>
+                    <li>Gute Projektdokumentation wird gebraucht.</li>
+                    <ul>
+                        <li>W&auml;hrend Entwicklung</li>
+                        <li>Als Grundlage in Wartungsphase</li>
+                    </ul>
+                    <li>Dokumentation sollte idealem Prozess folgen - Rationale Schritte </li>
+                    <li>Prozess kann (sollte/muss) ganz anders verlaufen. </li>
+                </ul>
+
+                <blockquote class="fragment" style="width:100%">
+                    Der Artikel wurde 1987 geschrieben. Ansatz ist vollkommen kompatibel mit modernen, agilen Vorgehensmodellen.
+                    </blockquote>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>
