@@ -93,8 +93,8 @@
                     <img src="images/process-blackbox.png" class="plain" style="width:70%"/>
                     <ul>
                         <li>Interaktion mit Benutzer nur am Anfang und Ende</li>
-                        <li>Nicht geeignet f&uuml;r Software.</li>
-                        <ul><li>Viele Qualit&auml;tseigenschaften k&ouml;nnen nicht direkt von Endprodukt abgeleitet werden.</li>
+                        <li class="fragment" data-fragment-index="1">Nicht geeignet f&uuml;r Software.</li>
+                        <ul class="fragment" data-fragment-index="1"><li>Viele Qualit&auml;tseigenschaften k&ouml;nnen nicht direkt von Endprodukt abgeleitet werden.</li>
                             <li>Fehler in Anforderungen k&ouml;nnen erst am Ende entddeckt werden.</li>
                         </ul>
                     </ul>
@@ -223,20 +223,13 @@
                             <li>Grundidee: Gliederung der Software in kleine, aufeinander aufbauende, betriebsf&auml;hige Releases</li>
                         <ul><li>System wird nicht konstruiert sondern w&auml;chst.</li></ul>
                         
-                        <li>Extremfall: Kontinuierliche Integration</li>
+                        <li>Extremfall: Continuous Delivery</li>
                     </ul>
 
                     <img src="images/small-releases.png" class="plain" style="width:70%"/>
                 </section>
 
-                <section class="center">
-                        <blockquote>
-                                Disziplin und gute Planung werden verlangt, damit es nicht zu <mark class="highlight">Code and Fix</mark>
-                                Modell verkommt. 
-                            </blockquote>                    
-                 
-                </section>
-
+           
                 <section>
                     <h3>Iteratives vs. Inkrementelles Modell</h3>
                     <figure>
@@ -251,6 +244,15 @@
                     </figure>
     
                 </section>
+
+                <section class="center">
+                        <blockquote>
+                                Disziplin und gute Planung werden verlangt, damit es nicht zu <mark class="highlight">Code and Fix</mark>
+                                Modell verkommt. 
+                            </blockquote>                    
+                 
+                </section>
+
 
                 <section>
                     <h3>Spiralmodell</h3>
@@ -318,6 +320,7 @@
                 dependencies: [{
                     src: 'plugin/markdown/marked.js'
                 },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
                 {
                     src: 'plugin/markdown/markdown.js'
                 },
