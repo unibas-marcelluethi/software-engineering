@@ -51,7 +51,9 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | 11 | Testen im Kleinen - Blackbox testing [(html)](https://unibas-sweng.github.io/software-engineering/slides/11-testing-in-the-small-bb.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/11-testing-in-the-small-bb.html?print-pdf) | |
 |    | Testen im Grossen [(html)](https://unibas-sweng.github.io/software-engineering/slides/11-testing-in-the-large.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/11-testing-in-the-large.html?print-pdf)|| 
 |    | Software prozesse [(html)](https://unibas-sweng.github.io/software-engineering/slides/11-software-process.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/11-software-process.html?print-pdf)| |
-| 12   | Agile Softwareentwicklung / Scrum              | |
+| 12   | Paperbesprechung: A rational design process   [(html)](https://unibas-sweng.github.io/software-engineering/slides/12-rational-design-process.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/12-rational-design-process.html?print-pdf)             | |
+|    | Agile Softwareentwicklung   [(html)](https://unibas-sweng.github.io/software-engineering/slides/12-agile.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/12-agile.html?print-pdf)             | |
+|    | Scrum  [(pdf)](https://unibas-sweng.github.io/software-engineering/slides/scrum.pdf)            | |
 | 13  | Entwurfsmuster | |
 | 14    | Zusammenfassung / Pr&uuml;fungsvorbereitung | |
 
