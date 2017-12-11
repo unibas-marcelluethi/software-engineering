@@ -80,7 +80,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |  7    | [Beispiele](https://adam.unibas.ch/goto_adam_file_596666_download.html) Lastenheft / Pflichtenheft |
 |  7    | Templates: [Lastenheft](https://unibas-sweng.github.io/software-engineering/project/lastenheft-template.html), [Pflichtenheft](https://unibas-sweng.github.io/software-engineering/project/pflichtenheft-template.html), [Glossar](https://unibas-sweng.github.io/software-engineering/project/glossar.html)|
 | 11    | Template: [Testplan](https://unibas-sweng.github.io/software-engineering/project/testplan.html)|
-
+| 13    | Template: [Technische Dokumentation](https://unibas-sweng.github.io/software-engineering/project/technical-doc.html)
 
 
 #### Slides zu &Uuml;bungswerkzeugen
