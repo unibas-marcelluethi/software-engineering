@@ -16,7 +16,7 @@ Dabei sollen sie folgende Teilaufgaben, welche unten genauer beschrieben sind, b
 | Prototyp erstellen | 1 | Demo: 29. November |
 | Testplan erstellen | 1 |  Endversion: 10. Dezember | 
 | Finale Implementation | 2 | Demo: 19. Dezember |
-| Technische Dokumentation | 1 | Endversion: 17. Dezember |
+| Technische Dokumentation | 1 | Endversion: 19. Dezember |
 
 
 ## Form der Dokumentation
@@ -74,12 +74,12 @@ Implementieren sie die Software gem&auml;ss den Vorgaben des Pflichtenhefts. Die
 
 *Besprechung:* Nach Bedarf
 
-*Abgabe ( Via pull request ):* Sonntag 17. Dezember 
+*Abgabe ( Via pull request ):* Dienstag 19. Dezember 
 
 
 ## Aufgabe 5. Erstellen des Testplan
 
-Erstellen sie einen Testplan, in welchem Sie detailiert ausf&uuml;hren wie sie die Software testen. Richten sie sich dabei nach folgendem [Template](testplan.md)
+Erstellen sie einen Testplan, in welchem Sie detailiert ausf&uuml;hren wie sie die Software testen. Richten sie sich dabei nach folgendem [Template](TODO)
 
 *Abgabe (Via pull request)* Sonntag 10. Dezember
 
@@ -94,7 +94,7 @@ Zus&auml;tzlich zur technischen Dokumentation sollten sie auch noch einen kurzen
 * Lessons learned: Was haben sie in diesem Projekt gelernt. Was w&uuml;rden sie im Nachhinein anders machen?
 * Selbsteinsch&auml;tzung: Wie ist die Qualit&auml;t des von ihnen abgegebenen Projekts. W&auml;re der Code und die Dokumentation schon so gut, dass man einen Pull Request ins Ganttproject Repository machen k&ouml;nnte?
 
-*Abgabe  (Via pull request)* Sonntag 17. Dezember
+*Abgabe  (Via pull request)* Dienstag 19. Dezember
 
 
 
