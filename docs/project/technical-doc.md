@@ -45,3 +45,11 @@ In grösseren Systemen wird typischerweise zwischen High-level Design (Architekt
 
 Geben sie eine Übersicht wie die Komponenten des Systems auf physischen Systemen installiert wird und beschreiben sie, falls nötig, spezielle 
 Installationsschritte.
+
+
+# 7. Weitere Hinweise
+
+Wir wären froh, wenn Sie uns zusätzlich zur Dokumentation noch Feedback zu folgenden Punkten geben könnten:
+
+* Lessons learned. Was haben sie in diesem Projekt gelernt. Was würden sie jetzt anders machen?
+* Selbsteinschätzung: Wie sehen sie die Qualität des Projekts? Kann das von ihnen implementierte Feature in die Offizielle Kursversion vom Ganttproject integriert werden? Könnte es vielleicht sogar in die offizielle Version integriert werden?
