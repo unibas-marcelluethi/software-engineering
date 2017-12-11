@@ -99,6 +99,8 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 #### Weiterführende Links und Literaturempfehlungen für besonders Interessierte
 * The mythical man month, Fred Brooks: [(pdf)](https://is.muni.cz/www/208322/The.Mythical.Man.Month.F.Brooks.pdf)
     * Das Klassische Software Engineering Buch. Einfach und unterhaltsam zu lesen aber voller wertvoller Informationen.
+* The Good, the Hype and the Ugly, Bertrand Mejer [(Amazon)](https://www.amazon.com/Agile-Good-Hype-Bertrand-Meyer/dp/3319051547)
+    * Sehr gute Einf&uuml;hrung in Agile Methoden, die Agile Methoden auch in Kontext mit traditionellen Software Engineering Ans&auml;tzen setzt.
 * Seminal papers in Software Engineering, The Carnegie Mellon Canonical Collection [(pdf)](http://repository.cmu.edu/cgi/viewcontent.cgi?article=2038&context=isr)
     * Annotierter Katalog von klassischen Software Engineering Paper
 * Liskov's reading list [(html)](https://jpirker.com/hlf16-liskovs-reading-list-for-computer-scientists/)
