@@ -1,0 +1,655 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Design Patterns</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h2>
+                    Design Patterns
+
+                </h2>
+                <p>
+                    <small> Marcel L&uuml;thi </br>
+                        Departement Mathematik und Informatik </small>
+                </p>
+                <p>
+                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                </p>
+            </section class="center">
+
+            <section class="center">
+                <blockquote>
+                    <p>"Abstraction should follow experience, not precede it."</p>
+                    <p> Michael Atiyah</p>
+                </blockquote>
+
+            </section>
+
+            <section>
+                <h3>Einordnung</h3>
+                <blockquote>
+                    Design Pattern: Bew&auml;hrte L&ouml;sungsans&auml;tze f&uuml;r wiederkehrende Designprobleme.
+                </blockquote>
+                <div style="float:right; width:50%">
+                    <img src="images/course-overview-patterns.png" style="width:100%" class="plain" />
+                </div>
+                <div style="float:left; width:50%">
+                    <img src="images/waterfall-design-pattern.png" style="width:100%" class="plain" />
+                </div>
+            </section>
+
+            <section>
+                <h3>Ursprung</h3>
+
+                <div style="float:left;width:50%">
+                    <img src="https://www.pearsonhighered.com/assets/bigcovers/0/2/0/1/0201633612.jpg" class="plain" />
+                </div>
+                <div style="float:right;width:50%">
+
+                    <ul>
+                        <li>Idee stammt aus Architektur</li>
+                        <li>Eingef&uuml;hrt in Software von "Gang of Four"</li>
+                        <li>Muster wurden auch vorher benutzt</li>
+                        <ul>
+                            <li>Nicht katalogisiert und formal niedergeschrieben</li>
+                            <li>Expertenwissen</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>Warum Design Patterns</h3>
+
+                <blockquote>
+                    Ein Design Pattern "standardisiert" den L&ouml;sungsansatz
+                </blockquote>
+                <ul>
+                    <li>Bauteil f&uuml;r den Designer</li>
+                    <li>Vereinfacht Kommunikation</li>
+                    <li>Vereinfacht Lesen/Verstehen von Code</li>
+                </ul>
+            </section>
+
+
+
+            <section>
+                <h3>Klassifikation von Patterns</h3>
+                <ul>
+                    <li>
+                        <mark class="highlight">Erzeugungsmuster</mark> (Creational Patterns)</li>
+                    <ul>
+                        <li>Strategien um Objekte zu erzeugen</li>
+                    </ul>
+                    <li>
+                        <mark class="highlight">Strukturmuster </mark> (Structural Patterns)</li>
+                    <ul>
+                        <li>Strategien um Beziehungen zwischen Klassen zu realisieren</li>
+                    </ul>
+                    <li>
+                        <mark class="highlight">Verhaltensmuster</mark> (Behavioral Patterns)</li>
+                    <ul>
+                        <li>Strategien um Kommunikation zwischen Objekten zu realisieren</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Gang of Four Patterns</h3>
+                <div style="float:left;font-size:x-large; width:33%">
+                    <h4>Erzeugungsmuster</h4>
+                    <ul>
+                        <li>Abstrakte Fabrik</li>
+                        <li>Erbauer</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Fabrikmethode</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Prototyp</li>
+                        <li>Singleton</li>
+                    </ul>
+                </div>
+                <div style="float:left;font-size:x-large; width:33%">
+                    <h4>Strukturmuster</h4>
+                    <ul>
+                        <li class="fragment fade-out" data-fragment-index="1">Adapter</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Br&uuml;cke</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Dekorierer</li>
+                        <li>Fassade</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Fliegengewicht</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Kompositum</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Proxy</li>
+                    </ul>
+                </div>
+                <div style="float:left;font-size:x-large; width:33%">
+                    <h4>Verhaltensmuster</h4>
+                    <ul>
+                        <li class="fragment fade-out" data-fragment-index="1">Befehl</li>
+                        <li>Beobachter (Observer)</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Besucher</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Interpreter</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Iterator</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Memento</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Schablonenmethode</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Strategie</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Vermittler</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Zustand</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Designproblem 1</h3>
+                <blockquote>
+                    Manchmal darf es nur eine Instanz von einem Objekt geben.
+                </blockquote>
+
+                Beispiele:
+                <ul>
+                    <li>Es gibt viele Drucker aber nur einen Druckerspooler</li>
+                    <li>Es sollte nur ein Windowmanagement geben</li>
+                    <li>Ein Buchhaltungssytem dient nur genau einer Firma</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Singleton Pattern</h3>
+                <ul>
+                    <li>Es soll genau eine Instanz einer Klasse geben</li>
+                    <li>Diese soll durch Unterklassen erweiterbar sein</li>
+                </ul>
+                <figure>
+                    <img src="images/patterns-singleton-class.png" class="plain" />
+                </figure>
+            </section>
+
+            <section>
+                <h3>Singleton Pattern </h3>
+
+                Definition:
+                <pre><code data-trim>
+                    public final class Singleton {
+                        private static final Singleton instance = new Singleton();
+                        
+                        private Singleton() {}
+                        
+                        public static Singleton getInstance() {
+                            return instance;
+                        }
+                    }
+                </code></pre> Nutzung:
+                <pre><code data-trim>
+                    Singleton singletonInstance = Singleton.getInstance()
+                </code></pre>
+
+            </section>
+
+            <section>
+                <h3>Designproblem 2</h3>
+                <blockquote>
+                    Ein System soll unabh&auml;ngig davon sein wie seine "Produkte" (Objekte) erzeugt werden soll.
+                </blockquote>
+
+              
+                <ul>
+                    <li>Beispiel: GUI Bibliothek soll Widget Klassen mit verschiedenen Look and Feels unterst&uuml;tzen</li>
+                </ul>
+                <figure>
+                    <img src="images/patterns-factory-example-class.png" class="plain" style="width:50%"/>
+                </figure>
+            </section>
+
+
+            <section>
+                <h3>Abstract Factory</h3>
+                <ul>
+                    <li>Methode um Typ (Klasse) von kreiertem Objekt zu bestimmen, ohne diesen explizit angeben zu m&uuml;ssen.</li>
+                    <li>Verschiedene Factory Implementation erlauben es verschiedene Subtypen zu kreieren.</li>
+                </ul>
+                <figure>
+                    <img src="images/patterns-factory-pattern-concrete.png" class="plain" style="width:60%"/>
+                </figure>
+            </section>
+
+            <section>
+                    <h3>Abstract Factory</h3>
+                  
+                    <figure>
+                        <img src="images/patterns-abstract-factory-uml.jpg" class="plain" />
+                        <figcaption style="font-size:x-small">By Vanderjoe - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61500904</figcaption>
+                    </figure>
+                </section>
+
+            <section>
+                <h3>Abstract Factory</h3>
+
+                <ul>
+                    <li>Beispiel, adaptiert aus Ganttproject</li>
+                    <pre style="width:100%"><code data-trim>
+                        public interface ICalendarFactory {
+                            Calendar newCalendar();
+                        }                        
+                        class DefaultCalendarFactory implements ICalendarFactory {
+                            @Override  public Calendar newCalendar() {
+                                return new GanttCalendar(...);
+                            }
+                        }                                                                
+                        public Date adjustLeft(ICalendarFactory factory, Date d) {
+                            Calendar c = factory.newCalendar();
+                            while (c.get(Calendar.DAY_OF_WEEK) != c.getFirstDayOfWeek()) {
+                                ...
+                            }
+                        }
+                            
+                    </code></pre>
+            </section>
+
+
+            <section>
+                    <h3>Designproblem 3</h3>
+                    <blockquote style="width:100%">
+                        Der Algorithmus zum Erzeugen eines komplexen Objekts soll unabh&auml;ngig von 
+                        den Teilen sein, aus denen das Objekt besteht und wie sie zusammengesetzt werden.
+                    </blockquote>
+    
+                    <pre><code data-trim>
+                        class Task {
+                            private int a;
+                            private String b;
+                            ...
+                            private double z;
+
+                            public Task(int a, String b, ..., double z)
+                        }
+                    </code></pre>
+                    <ul>
+                        <li>Kann ich ein Objekt kreieren, indem ich nur Wert f&uuml;r b angebe?</li>
+                    </ul>
+                  
+                </section>
+    
+
+            <section>
+                <h3>Builder Pattern</h3>
+                <ul>
+                    <li>Vereinfacht Erzeugung von komplexen Objekten</li>
+                </ul>
+
+                <figure style="width:50%;float:left">
+                    <img src="images/patterns-builder-class.png" class="plain" />
+
+                </figure>
+                <figure style="width:50%;float:right">
+                        <img src="images/patterns-builder-seq.png" class="plain" />
+                    </figure>
+    
+            </section>
+
+            <section>
+                <h3>Builder Pattern</h3>
+                <ul>
+                    <li>Beispiel adaptiert aus Ganttproject</li>
+                </ul>
+                <pre style="width:100%"><code data-trim>
+                            abstract class TaskBuilder {                        
+                                Integer myId;
+                                TimeDuration myDuration;
+                                ...
+                            
+                                public TaskBuilder withId(int id) {
+                                    myId = id;  return this;
+                                }                    
+                                public TaskBuilder withDuration(TimeDuration duration) {
+                                  myDuration = duration;   return this;
+                                }
+                                ...
+                                public abstract Task build();
+                                }                        
+                            }
+                    </code></pre>
+            </section>
+
+            <section>
+                <h3>Builder Pattern</h3>
+                <ul>
+                    <li>Beispiel adaptiert aus Ganttproject</li>
+                </ul>
+                <pre style="width:100%; font-size:x-large"><code data-trim>
+        
+                                class TaskBuilderImpl extens TaskBuilder {
+                                  @override public Task build() {                                
+                                    if (myId == null || myTaskMap.getTask(myId) != null) {
+                                      myId = getAndIncrementId();
+                                    }                                
+                                    if (myDuration != null) {
+                                      duration = myDuration;
+                                    } else {
+                                      duration = (myEndDate == null) ? createLength(defaultTimeUnit(), 1.0f) 
+                                          : createLength(defaultTimeUnit(), myStartDate, myEndDate);
+                                    }
+                                    ...
+                                  }
+                                }
+                        </code></pre> Nutzung:
+                <pre style="width:100%; font-size:x-large"><code data-trim>
+                                Task newTask = new TaskBuilderImp().withId(1).withDuration(10).build();
+                                </code></pre>
+            </section>
+
+
+            <section>
+                    <h3>Designproblem 4</h3>
+                    <blockquote style="width:100%">
+                        Wenn ein Projekt stark modularisiert ist, eine Klasse jedoch viele 
+                        Module nutzen muss, kommt es zu einer starken Kopplung der Klassen
+                    </blockquote>
+    
+                    Beispiel:
+                    <ul>
+                        <li>Um eine GUI anzusteuern braucht man gleichzeitig Window, Statusbar, Menubar, ... </li>
+                        <li>Klient koppelt sich an alle diese GUI Elemente</li>
+                        <li>Schnittstellen sind e.v. auch inkonsistent</li>
+                    </ul>
+                  
+                </section>
+
+            <section>
+                <h3>Facade Pattern</h3>
+                <ul>
+                    <li>Bietet einheitliche Schnittstelle zu verschiedenen Subsystemen an.</li>
+                    <li>Reduziert Kopplung.</li>
+                </ul>
+
+                <figure>
+                    <img src="images/patterns-facade-uml.jpg" class="plain" />
+                    <figcaption style="font-size:x-small"> By Vanderjoe - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61495624</figcaption>
+                </figure>
+            </section>
+
+
+
+
+            <section>
+                <h3>Facade Pattern</h3>
+                <ul>
+                    <li>Adaptiert aus Ganttproject</li>
+                </ul>
+                <pre style="width:100%"><code data-trim>
+                                class UIFacade {
+                                    private final JFrame myMainFrame;
+                                    ...
+                                    private final GanttStatusBar myStatusBar
+    
+                                    public void setStatusText(String text) {
+                                        myStatusBar.setFirstText(text, 2000);
+                                    }
+    
+                                    public void setWorkbenchTitle(String title) {
+                                        myMainFrame.setTitle(title);
+                                      }
+                                    
+                                }
+                            </code></pre>
+            </section>
+
+            <section>
+                    <h3>Designproblem 5</h3>
+                    <blockquote style="width:100%">
+                        Eine Menge von Objekten muss &uuml;ber Zustands&auml;nderungen informiert werden, 
+                        jedoch m&ouml;chte man die Klassen nicht eng aneinander koppeln.                         
+                    </blockquote>
+    
+                    Beispiel Tabellenkalkulation:
+                    <ul>
+                        <li>Trennung von GUI (Anzeige) und Datenhaltung</li>                        
+                        <li>Wenn sich Daten &auml;dern sollen sich folgende Dinge &auml;ndern</li>
+                        <ul>
+                        <li>Darstellung der entsprechenden Zelle</li>
+                        <li>Diagramme die auf Daten zugreifen</li>
+                        <li>Berechnete Zellen</li>
+                        </ul>
+                    </ul>
+                  
+                </section>
+
+            <section>
+                <h3>Observer Pattern</h3>
+
+                <ul>
+                    <li>Automatische Benachrichtigung von $n$ Objekten </li>
+                </ul>
+
+                <figure>
+                    <img src="images/patterns-observer-uml.jpg" class="plain" />
+                    <figcaption style="font-size:x-small"> By Vanderjoe - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61495624</figcaption>
+                </figure>
+
+            </section>
+
+            <section>
+                <h3>Observer Pattern</h3>
+                <ul>
+                    <li>Adaptiert aus Ganttproject</li>
+                </ul>
+                <pre style="width:100%; font-size:x-large"><code data-trim>
+                                    public interface RoleManager {
+    
+                                        public interface Listener extends EventListener {
+                                            public void rolesChanged(RoleEvent e);
+                                          }                                      
+                                          private final List&lt;Listener&gt; myListeners 
+                                               = new ArrayList&ltListener&gt;();
+    
+                                          public void addRoleListener(Listener listener) { 
+                                              myListeners.add(listener);
+                                          }
+                                                                        
+                                      
+                                        void fireRolesChanged(RoleSet changedRoleSet) {
+                                            RoleEvent event = new RoleEvent(this, changedRoleSet);
+                                            for (int i = 0; i < myListeners.size(); i++) {
+                                              Listener next = myListeners.get(i);
+                                              next.rolesChanged(event);
+                                            }
+                                          }                 
+                                          
+                                          public Role createRole(String name, int persistentID) {
+                                            RoleImpl result = new RoleImpl(persistentID, name, this);
+                                            myRoles.add(result);
+                                            myRoleManager.fireRolesChanged(this);
+                                            return result;
+                                          }
+                                        
+                                        }
+                            </code></pre>
+            </section>
+
+            <section>
+                <h3>Observer Pattern</h3>
+                <ul>
+                    <li>Adaptiert aus Ganttproject</li>
+                </ul>
+                <pre style="width:100%; font-size:x-large"><code data-trim>
+                                        public class RoleSet  {
+                                          
+                                            private boolean isEnabled;
+                                          
+                                            private final RoleManagerImpl myRoleManager;
+    
+                                        }
+    
+                                        public void setEnabled(boolean isEnabled) {
+                                            this.isEnabled = isEnabled;
+                                            myRoleManager.fireRolesChanged(this);
+                                          }
+                                        }
+                                </code></pre>
+            </section>
+
+            <section>
+                <h3>Design Patterns im Kontext</h3>
+
+                <ul>
+                    <li>Design Patterns leben im Kontext von Programmiersprachen/Paradigmen</li>
+                    <li>Verschiedene Sprachen/Paradigment f&uuml;hren zu verschiedenen Patterns</li>
+                    <ul>
+                        <li>Pattern wird von neuen Sprachen als Sprachkonstrukt implementiert</li>
+                        <ul>
+                            <li>Beispiel: Objekt als Sprachkonstrukt</li>
+                        </ul>
+                        <li>Paradigma macht Pattern unn&ouml;tig</li>
+                        <ul>
+                            <li>Beispiel: Patterns f&uuml;r Zustandsmanagement in funktionalen Programmiersprachen</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Beispiel: Singleton Pattern in Java und Scala</h3>
+
+                Java
+                <pre style="font-size:x-large"><code data-trim>
+                    public final class Singleton {
+                      private static Singleton theInstance = new Singleton();
+                        
+                      private Singleton() {}
+                      public static Singleton getInstance() { return theInstance; }                                             
+                      public int foo() { return 0; }                        
+                    }
+                 
+                    Singleton.getInstance().foo();
+                </code></pre> Scala (kennt Object als Sprachkonstrukt)
+                <pre style="font-size:x-large"><code data-trim class="scala">
+                       object Singleton {
+                            def foo() { return 0 }                            
+                       }
+
+                       Singleton.foo()                       
+                    </code></pre>
+
+            </section>
+
+
+            <section>
+                <h3>Design Patterns im Kontext</h3>
+
+
+                <blockquote>
+                    Design Patterns helfen Programmierer/Designer/Software Architekten miteinander zu kommunizieren.
+                </blockquote>
+                <ul>
+                    <li>Ein Pattern sagt mehr als viele Zeilen Code!</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Unit Tests</h3>
+                <ul>
+                    <li>Wie helfen uns Patterns beim Design von Software?</li>
+                    <li>Wie helfen uns Patterns in der Kommunikation?</li>
+                    <ul>
+                        <li>Wie helfen Patterns Code zu verstehen?</li>
+                    </ul>
+                    <li>Wie helfen uns Patterns bessere Software zu schreiben?</li>
+                    <li>Weshalb unterscheiden sich die verwendeten Patterns in den verschiedenen Programmier&shy;paradigmen?</li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            { src: 'plugin/math/math.js', async: true },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/chalkboard/chalkboard.js'
+            },
+            { src: 'plugin/zoom-js/zoom.js', async: true },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>

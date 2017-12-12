@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <title>Singleton Pattern</title>
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+        g{
+          stroke       : #000;
+        }
+        rect, path, circle{
+          fill         : #fff;
+          fill-opacity : 0;
+        }
+        rect{
+          stroke-width : 6;
+        }
+        path, circle, line{
+          stroke-width : 2;
+        }
+        text{
+          fill         : #000;
+          stroke-width : 0;
+          font-family  : sans-serif;
+          font-size    : 25px;
+        }
+        text.name{
+          fill         : #000;
+          stroke-width : 0;
+          font-weight  : bold;
+          text-anchor  : middle;
+          font-family  : sans-serif;
+          font-size    : 25px;
+        }
+        text.visibility{
+          fill         : #000;
+          stroke-width : 0;
+          font-size    : 28px;
+          font-family  : monospace;
+          font-weight  : bold;
+          text-anchor  : middle;
+        }
+      ]]>
+    </style>
+  </defs>
+  <g transform="translate(50,50)">
+    <rect width="400" height="200" />
+    <line x1="0" x2="400" y1="60"  y2="60" />
+    <line x1="0" x2="400" y1="110" y2="110" />
+    <text x="200" y="45"  class="name">Singleton</text>
+    <text x="30"  y="95"  class="visibility">-</text>
+    <text x="60"  y="95">singleton : Singleton</text>
+    <line x1="30" x2="370" y1="100" y2="100" />
+    <text x="30"  y="145" class="visibility">-</text>
+    <text x="60"  y="145">Singleton()</text>
+    <text x="30"  y="180" class="visibility">+</text>
+    <text x="60"  y="180">getInstance() : Singleton</text>
+    <line x1="30" x2="370" y1="185" y2="185" />
+  </g>
+</svg>
