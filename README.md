@@ -54,7 +54,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | 12   | Paperbesprechung: A rational design process   [(html)](https://unibas-sweng.github.io/software-engineering/slides/12-rational-design-process.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/12-rational-design-process.html?print-pdf)             | |
 |    | Agile Softwareentwicklung   [(html)](https://unibas-sweng.github.io/software-engineering/slides/12-agile.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/12-agile.html?print-pdf)             | |
 |    | Scrum  [(pdf)](https://unibas-sweng.github.io/software-engineering/slides/scrum.pdf)            | |
-| 13  | Entwurfsmuster | |
+| 13  | Entwurfsmuster  [(html)](https://unibas-sweng.github.io/software-engineering/slides/13-design-patterns.html)  [(Druckversion)](https://unibas-sweng.github.io/software-engineering/slides/13-design-patterns.html?print-pdf) | |
 | 14    | Zusammenfassung / Pr&uuml;fungsvorbereitung | |
 
 ## &Uuml;bungen 
