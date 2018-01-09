@@ -336,7 +336,7 @@
                 </ul>
                 <pre style="width:100%; font-size:x-large"><code data-trim>
         
-                                class TaskBuilderImpl extens TaskBuilder {
+                                class TaskBuilderImpl extends TaskBuilder {
                                   @override public Task build() {                                
                                     if (myId == null || myTaskMap.getTask(myId) != null) {
                                       myId = getAndIncrementId();
