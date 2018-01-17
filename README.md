@@ -105,5 +105,6 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
     * Annotierter Katalog von klassischen Software Engineering Paper
 * Liskov's reading list [(html)](https://jpirker.com/hlf16-liskovs-reading-list-for-computer-scientists/)
     * Must reads f&uuml;r Informatiker, zusammengestellt von [Barbara Liskov](https://en.wikipedia.org/wiki/Barbara_Liskov)
-
+* Peter Naur, Program as theory building [(pdf)](http://pages.cs.wisc.edu/~remzi/Naur.pdf)
+    * Classical papers, which takes the view that programs are theories of the world. It discusses the implication on the design and programming process.
 
