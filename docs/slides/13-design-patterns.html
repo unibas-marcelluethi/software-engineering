@@ -34,11 +34,11 @@
 
                 </h2>
                 <p>
-                    <small> Marcel L&uuml;thi </br>
+                    <small> Marcel L&uuml;thi <br>
                         Departement Mathematik und Informatik </small>
                 </p>
                 <p>
-                    <image class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
+                    <img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
                 </p>
             </section class="center">
 
@@ -458,7 +458,7 @@
                     public interface Listener extends EventListener {
                         public void rolesChanged(RoleEvent e);
                     }                                      
-                    private final List&lt;Listener&gt; myListeners  = new ArrayList&ltListener&gt;();
+                    private final List&lt;Listener&gt; myListeners  = new ArrayList&lt;Listener&gt;();
                     public void addRoleListener(Listener listener) { myListeners.add(listener);}
                                                     
                     void fireRolesChanged(RoleSet changedRoleSet) {
