@@ -9,14 +9,14 @@ Dozent: Marcel Lüthi (<marcel.luethi@unibas.ch>)
 
 ## Kursbeschreibung
 
-Die Vorlesung gibt einen erste Einführung in das Software engineering. 
+Die Vorlesung gibt eine erste Einführung in das Software Engineering. 
 Das Hauptziel der Vorlesung ist die Studierenden mit den Grundprinzipien der Softwaretechnik, sowie, zu einem gewissen Grad, auch mit der Geschichte des Gebiets vertraut zu machen. 
 Aktuelle Methoden und Tools werden im Rahmen eines vorlesungsbegleitenden Projekts eingeführt.
 
 ### Projekt
 
 Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://github.com/unibas-sweng/ganttproject) dient als Grundlage für die praktischen 
-übungen. Die Studierenden implementieren in Gruppen kleine änderungen am Projekt, studieren den Source Code und implementieren eigene Erweiterungen. 
+übungen. Die Studierenden implementieren in Gruppen kleine Änderungen am Projekt, studieren den Source Code und implementieren eigene Erweiterungen. 
 
 
 ## Programm (Änderungen vorbehalten)
