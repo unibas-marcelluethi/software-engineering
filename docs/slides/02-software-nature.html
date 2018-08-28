@@ -8,7 +8,7 @@
     <title>Eigenschaften von Software</title>
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/solarized.css">
+    <link rel="stylesheet" href="css/theme/unibas.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -28,229 +28,218 @@
 <body>
     <div class="reveal">
         <div class="slides">
+
+
             <section class="center">
-                <h3>
-                    Eigenschaften von Software
-                </h3>
-                <p>
-                    <small> Marcel L&uuml;thi<br>
-						Departement Mathematik und Informatik </small>
-                </p>
-                <p>
-                    <img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
-                </p>
+                <div class="titleblock">
+
+                    <p>
+                        <img class="plain" src="images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+                    </p>
+
+
+                    <h1 style="clear:both;margin-top:20%">
+                        Eigenschaften von Software
+
+                    </h1>
+                    <h3>
+                        Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+                    </h3>
+
+                </div>
             </section>
-            <section>
-                <h3>Was macht ein Ingenieur?</h3>
-                <blockquote>
-                    Ziel des Ingenieurs ist ein Produkt zu bauen.
+
+            <section class="center">
+                <h1>Das Produkt "Software"</h1>
+
+                <div style="clear:both">
+                    <ul>
+                        <li> Ingenieure entwickeln Produkte</li>
+                    </ul>
+                </div>
+
+
+                <div style="font-size:smaller; align-content:  center">
+                    <div style="float:left;width:50%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/radio-therapy.jpg" style="width:50%; height:4cm; float:center" class="plain" />
+                            <figcaption style="font-size:xx-small">By Michael Goodyear - Own work, <br/> CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61844004
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div style="float:left;width:50%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/engine.jpg" style="width:50%; height:4cm; float:center" class="plain" />
+                            <figcaption style="font-size:xx-small">By Florian Lindner- Own work, <br/> CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=184607
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div style="float:left;width:50%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/bridge.jpg" style="width:50%; height:4cm; float:center" class="plain" />
+                            <figcaption style="font-size:xx-small">Von Störfix - Own work, <br/> CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=250504
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div style="float:left;width:50%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/ganttproject.png" style="width:50%; height:4cm; float:center" class="plain" />
+                            <figcaption style="font-size:xx-small">By Dbarashev - Own work, <br/> CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59176852
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <blockquote style="display: inline-block" class="fragment">
+                    Software ist irgendwie anders!
                 </blockquote>
 
 
-                <div style="font-size:smaller">
-                    <div style="float:left;width:25%; vertical-align: top;">
-
-                        <figure>
-                            <img src="./images/circuitery.jpg" style="width:100%; float:center" />
-                            <figcaption style="font-size:x-small">By AAAndrey A - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10062999</figcaption>
-                        </figure>
-                    </div>
-                    <div style="float:left;width:25%; vertical-align: top;">
-                        <figure>
-                            <img src="./images/engine.jpg" style="width:100%; float:center" />
-                            <figcaption style="font-size:x-small">By Florian Lindner (User:SuperFloh) - Own work, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=184607</figcaption>
-                        </figure>
-                    </div>
-                    <div style="float:left;width:25%; vertical-align: top;">
-                        <figure>
-                            <img src="./images/bridge.jpg" style="width:100%; float:center" />
-                            <figcaption style="font-size:x-small">Von Störfix - Eigenes Werk (selbst fotografiert), CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=250504</figcaption>
-                        </figure>
-                    </div>
-                    <div style="float:left;width:25%; vertical-align: top;">
-                        <figure>
-                            <img src="./images/ganttproject.png" style="width:100%; float:center" />
-                            <figcaption style="font-size:x-small">By Dbarashev - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59176852</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div style="clear:both" class="fragment">
-                    <ul>
-                        <li>Das Produkt Software ist irgendwie anders!</li>
-                    </ul>
-                </div>
 
             </section>
 
             <section>
-                <h3>Eigenschaften von Software (1)</h3>
+                <h1>Eigenschaft 1: Formbarkeit</h1>
 
-                <blockquote> Software ist formbar (engl. malleable) </blockquote>
 
                 <div style="float:left;width:60%">
                     <ul>
-                        <li> Das
-                            <text style="color:blue">Produkt</text> l&auml;sst sich einfach ver&auml;ndern </li>
-                        <li> Das
-                            <text style="color:blue">Design</text> ist jedoch starr </li>
+                        <li> Software ist formbar<br/> (engl. malleable)
+                        </li>
+                        <li> Das <mark class="highlight">Produkt </mark> l&auml;sst sich einfach ver&auml;ndern </li>
+                        <li>Keine teure Änderung der Produktionsanlagen nötig</li>
                     </ul>
 
                 </div>
+
                 <div style="float:right;width:40%; vertical-align: top;">
                     <figure>
-                        <img src="./images/ganttproject.png" style="width:100%; float:center" />
-                        <figcaption style="font-size:x-small">By Dbarashev - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59176852</figcaption>
+                        <img src="./images/ganttproject.png" style="width:100%; float:center" class="plain" />
+                        <figcaption style="font-size:xx-small">By Dbarashev - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59176852</figcaption>
                     </figure>
                 </div>
-                </ul>
+
+
+                <blockquote style="display: inline-block" class="fragment"> Aber: Das <mark class="highlight">Design</mark>
+                    ist starr! </blockquote>
+
 
             </section>
 
 
             <section>
-                <h3>Gefahr von Ver&auml;nderungen </h3>
+                <h1>Gefahr der Formbarkeit </h1>
 
                 <ul>
-                    <li>Software wird ver&auml;ndert ohne das Design zu &auml;ndern.</li>
-                    <li>Produkt und Design divergieren</li>
+                    <li>Software wird ver&auml;ndert ohne das Design anzupassen.</li>
+                    <ul>
+                        <li>Produkt und Design divergieren</li>
+                    </ul>
                 </ul>
 
                 <div style="float:center;width:100%; vertical-align:top;">
                     <figure>
-                        <img src="./images/darwin.jpg" style="width:50%; float:center" />
-                        <figcaption style="font-size:x-small">source: http://www.ronpatrickstuff.com/</figcaption>
+                        <img src="./images/darwin.jpg" style="width:50%; float:center" class="plain" />
+                        <figcaption style="font-size:xx-small">Source: http://www.ronpatrickstuff.com/</figcaption>
                     </figure>
                 </div>
+
+
             </section>
 
 
 
             <section>
-                <h3>Eigenschaften von Software (2)</h3>
-
-                <blockquote> Software ist
-                    <text style="color:blue;width:100%">immateriell.</text>
-                    Produktkosten entstehen haupts&auml;chlich durch Entwicklung/Wartung </blockquote>
-
-            </section>
-
-            <section>
-                <h3>Eigenschaften von Software (2)</h3>
-
-
-                <div style="float:left;width:50%; text-align:left; vertical-align:top">
-                    <h4>Traditionelle Ingenieursdisziplin</h4>
-                    <ul>
-                        <li>Herstellung (manufacturing) gr&ouml;sster Kostenfaktor.
-                            <li> Fehler sind teuer </li>
-                            <ul>
-                                <li>Fokus: Reibungslose Produktion garantieren</li>
-                            </ul>
-                    </ul>
-
-                </div>
-
-                <div style="float:left;width:50%; text-align:left; vertical-align:top">
-                    <h4>Softwareengwicklung</h4>
-                    <ul>
-                        <li> Herstellung ist trivial (kopieren) </li>
-                        <li> Fokus: Design und Implementation </li>
-                        <ul>
-                            <li> Prozess braucht definierte Qualit&auml;tskriterien </li>
-                        </ul>
-                    </ul>
-                </div>
-
-
-            </section>
-
-            <section>
-                <h3>Eigenschaften von Software (3)</h3>
-                <blockquote> Software folgt nicht den Naturgesetzen </blockquote>
-                <div style="float:left;width:50%; text-align:left; vertical-align:top">
-                    <ul>
-                        <li> Naturgesetze definieren L&ouml;sungsraum</li>
-                        <ul>
-                            <li> Geben uns Hinweise was wir nicht versuchen m&uuml;ssen</li>
-                        </ul>
-                    </ul>
-                </div>
-                <div style="float:right;width:50%;height:100%;;vertical-align:middle;display:inline-block">
-                    <figure>
-                        <img class="plain" src="images/bending.png" />
-                        <figcaption style="font-size:x-small">By AndrewRDawson - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=34910928</figcaption>
-                    </figure>
-                </div>
-            </section>
-
-
-            <section>
-                <h3>Software Engineering vs. Physics </h3>
-
-                <blockquote>"God does not play dice with the universe" - Einstein</blockquote>
+                <h1>Eigenschaft 2: Immaterialität</h1>
 
                 <ul>
-                    <li> Naturgesetzte / Physik lassen uns Schlussfolgerungen ziehen </li>
-                    <li> Software hat wenig verl&auml;ssliche Strukturen </li>
-                    <ul>
-                        <li> Logische Folgerungen und ableiten von Eigenschaften von Software sind schwierig </li>
-                        <li> Mathematische Strukturen m&uuml;ssen explizit designed und dokumentiert werden </li>
-                    </ul>
-
+                    <li>Software ist <mark class="highlight">immateriell</mark></li>
+                    <!-- <li> Produktkosten entstehen haupts&auml;chlich durch Entwicklung und Wartung</li>--> 
                 </ul>
 
 
+                <p style="margin-bottom: 1cm"></p>
+
+                <div class="box" style="font-size:smaller">
+                    <div style="float:left;width:50%; text-align:left; vertical-align:top; ">
+                        <text style="font-weight: bold"> Traditionelles Produkt</text>
+                        <ul>
+                            <li>Herstellung gr&ouml;sster Kostenfaktor.</li>
+                            <li>Fokus: Reibungslose Produktion garantieren</li>                                                        
+                            <ul><li>Qualitätskriterien in Produktion</li></ul>
+                        </ul>
+                    </div>
 
 
+                    <div style="float:left;width:50%; text-align:left; vertical-align:top">
+                            <text style="font-weight: bold"> Software </text>
+                        <ul>
+                            <li> Herstellung ist trivial (kopieren) </li>
+                            <li> Fokus: Design und Implementation</li>              
+                            <ul><li>Qualitätskriterien in Entwicklungsprozess</li></ul>              
+                        </ul>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section>
+                <h1>Physik als Leitfaden</h1>            
+
+                <div style="display:inline-block">
+                <div style="float:left;width:60%; text-align:left; vertical-align:top">
+                    Physik hilft uns Produkte zu entwickeln:
+                    <ul>                        
+                        <li> definiert Lösungsraum</li>
+                        <li> hilft uns Eigenschaften abzuleiten </li>
+                        <li> hilft uns Anforderungen zu testen</li>
+                    </ul>
+                </div>
+                <div style="float:right;width:40%;height:100%;;vertical-align:middle;display:inline-block">
+                    <figure>
+                        <img class="plain" src="images/bending.png" />
+                        <figcaption style="font-size:xx-small">By AndrewRDawson - Own work, Public Domain, <br/> https://commons.wikimedia.org/w/index.php?curid=34910928</figcaption>
+                    </figure>
+                </div>
+            </div>
+            </section>
+
+
+            <section>
+                <h1> Eigenschaft 3: Software untersteht nicht den Naturgesetzen!</h1>
+                   
+                <ul>
+                    <li> Software hat wenig verl&auml;ssliche Strukturen </li>                    
+                    <li> Logische Folgerungen / Ableiten von Eigenschaften sind schwierig</li>                                        
+                    <ul><li>
+                        Erschwert sowohl Entwicklung als auch die Verifikation.
+                    </li></ul>
+                </ul>
+
+                <blockquote> Alle logischen Strukturen müssen designed und dokumentiert werden. </blockquote>
+
+                </section>
+
+                <section class="center">
+                    <h1>Take-away</h1>
+                
+                    <blockquote style="vertical-align:center">Gute Software braucht Disziplin und gute Prozesse </blockquote>
             </section>
 
             <!--
-            <section>
-                <h3>Einschr&auml;nkungen als Chance. </h3>
-                <blockquote> Mehr M&ouml;glichkeiten != Bessere L&ouml;sung </blockquote>
-                <div style="float:right;width:100%; text-align:center; vertical-align:top">
-                    <img src="images/notes.png" />
-                </div>
-            </section>
-        -->
-
-
-            <section>
-                <h3>Eigenschaften von Software (4)</h3>
-
-                <blockquote> Anforderung an Softwareprodukt ist schwierig von Designkriterien zu trennen. </blockquote>
-
-                <ul>
-                    <li>Typische Anforderungen:</li>
-                    <ul>
-                        <li> System soll wartbar und erweiterbar sein </li>
-                        <li> System soll skalieren </li>
-                    </ul>
-                    <li> Schwierig zu beurteilen ohne das Design zu betrachten </li>
-                    <ul>
-                        <li> Keine Physik, die uns hilft Schlussfolgerungen zu ziehen </li>
-                    </ul>
-                </ul>
-            </section>
-
-            <section class="center">
-
-                <blockquote> Wir brauchen Disziplin und gute Regeln um gute Software zu bauen </blockquote>
-                <ul class="fragment">
-                    <li> Was ist denn eigentlich gute Software? </li>
-                </ul>
-            </section>
-
             <section>
                 <h3> Unit tests </h3>
 
                 <ul>
                     <li> Wo muss ich ansetzen um Softwarequalit&auml;t zu beeinflussen </li>
                     <li> Was sind die Vorteile / Nachteile das Software formbar (malleable) ist? </li>
-                    <li> Weshalb ist es problematisch, dass keine mathematischen Eigenschaften (Naturgesetze) existieren, welche
-                        die Software beschreiben? </li>
+                    <li> Weshalb ist es problematisch, dass keine mathematischen Eigenschaften (Naturgesetze) existieren,
+                        welche die Software beschreiben? </li>
                 </ul>
             </section>
+        -->
 
         </div>
     </div>
