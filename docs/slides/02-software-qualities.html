@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Qualit&auml;tsmerkmale von Software.</title>
+    <title>Wichtige Qualitätsmerkmale im Detail</title>
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/solarized.css">
+    <link rel="stylesheet" href="css/theme/unibas.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -28,181 +28,108 @@
 <body>
     <div class="reveal">
         <div class="slides">
+
             <section class="center">
-                <h2>
-                    Qualit&aumltsmerkmale von Software
-                </h2>
-                <p>
+                <div class="titleblock">
+
                     <p>
-                        <small> Marcel L&uuml;thi<br>
-                                    Departement Mathematik und Informatik </small>
+                        <img class="plain" src="images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
                     </p>
-                    <p>
-                        <img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
-                    </p>
-                </p>
-            </section>
 
-            <section>
-                <h3> Klassifikation von Qualit&auml;tsmerkmalen </h3>
 
-                <div>
-                    <div style="float:left;width:50">
-                        <h4> Externe Qualit&auml;tsmerkmale </h4>
-                        <ul>
-                            <li> Funktional </li>
-                            <li> F&uuml;r Benutzer ersichtlich </li>
-                        </ul>
-                    </div>
-                    <div style="float:right;width:50%">
-                        <h4> Interne Qualit&auml;tsmerkmale </h4>
-                        <ul>
-                            <li> Nichtfunktional </li>
-                            <li> Von Interesse f&uuml;r Entwickler</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="fragment" style="clear:both; width:100%;margin-top:2cm;display:inline-block">
+                    <h1 style="clear:both;margin-top:20%">
+                        Wichtige Qualitätsmerkmale im Detail
 
-                    <blockquote> Interne Qualit&auml;t beeinflusst externe Qualit&auml;t! </blockquote>
+                    </h1>
+                    <h3>
+                        Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+                    </h3>
+
                 </div>
             </section>
-
-
             <section>
-                <h3> Klassifikation von Qualit&auml;tsmerkmalen </h3>
-                <div>
-                    <ul>
-                        <li> Produkt vs. Prozess Merkmale</li>
-                        <ul>
-                            <li> Ziel - Produkt zu entwickeln </li>
-                            <li> Prozess - Wie entwickeln wir das Produkt</li>
-                        </ul>
-                    </ul>
-                </div>
-                <blockquote class="fragment">
-                    <p> Prozessqualit&auml;t beeinflusst Produktqualit&auml;t </p>
-                </blockquote>
-            </section>
-
-
-            <section>
-                <h3> Einige Qualit&auml;tsmerkmale von Software</h3>
-                <ul style="font-size:xx-large">
-                    <li>Korrektheit (correctness)</li>
-                    <li>Zuverlässigkeit (reliability)</li>
-                    <li>Robustheit (robustness)</li>
-                    <li>Effizienz (performance)</li>
-                    <li>Benutzbarkeit (usability)</li>
-                    <li>Verifizierbarkeit (verifiability) </li>
-                    <li>Wartbarkeit (maintainability) </li>
-                    <li>Reparierbarkeit (repairability) </li>
-                    <li>Erweiterbarkeit (evolvability) </li>
-                    <li>Wiederverwendbarkeit (reusability) </li>
-                    <li>Portabilit&auml;t (portability) </li>
-                    <li>Verständlichkeit (understandability) </li>
-                    <li>Interoperabilit&auml;t (interoperability) </li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>Korrektheit</h3>
-                <blockquote> Software ist korrekt, when sie die spezifizierten funktionalen Anforderungen erf&uuml;llt
+                <h1>Korrektheit</h1>
+                <blockquote> Software ist korrekt, wenn sie die spezifizierten funktionalen Anforderungen erf&uuml;llt
                 </blockquote>
 
                 <ul>
-                    <li>Erfordert, dass Anforderungen spezifiziert wurden </li>
-                    <li>Formale Spezifikationen erlauben es Korrektheit zu beweisen oder zu falsifizieren (mit Gegenbeispiel)
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h3> Korrektheit (2) </h3>
-                <ul>
+                    <li>Erfordert spezifizierte Anforderungen </li>                                     
                     <li>Korrektheit ist absolut</li>
-                    <ul>
-                        <li> Es gib kein "ein bisschen falsch" </li>
-                        <li> Es gibt keine Metrik f&uuml;r Falschheit </li>
-                    </ul>
-                    <li> Was passiert wenn Spezifikationen falsch sind? </li>
-                    <ul>
-                        <li>Von falschen Anforderungen abgeleitet ? </li>
-                        <li>Falsche Businesslogik?
-                    </ul>
+                    <ul><li>Programm ist nicht "ein bisschen falsch"</li></ul>
+                    <li>Formale Spezifikationen erlauben Korrektheitsbeweise</li>
                 </ul>
             </section>
 
             <section>
-                <h3> Zuverl&auml;ssigkeit </h3>
-                <blockquote> Intuitiv: Der Benutzer kann sich auf die Software verlassen </blockquote>
+                <h1> Zuverl&auml;ssigkeit </h1>
+                <blockquote> Wahrscheinlichkeit, dass in einem bestimmten Zeitinterval kein Fehler auftritt </blockquote>
 
                 <ul>
-                    <li> Formal: Wahrscheinlichkeit, dass in einem bestimmten Zeitinterval kein Fehler auftritt </li>
+                    <li> Intuitiv: Der Benutzer kann sich auf die Software verlassen </li>
                 </ul>
+
+                <img class="plain" src="images/reliability.png" style="width:50%" />
             </section>
 
+           
             <section>
-                <h3> Zuverl&auml;ssigkeit </h3>
-                <ul>
-                    <li>Bei korrekter Spezifikation gilt: </li>
-                </ul>
-                <img class="plain" src="images/reliability.png" />
-
-            </section>
-
-            <section>
-                <h3> Quiz</h3>
+                <h1> Quiz</h1>
                 <ul>
                     <li>Ist dieses Programm korrekt? </li>
                     <li>Ist es zuverl&auml;ssig? </li>
                 </ul>
 
                 <pre><code data-trim data-noescape>
-    double plus(double a, double b) { 
-        double sum = a + b;
-        Random r = new Random();
-        if (Math.abs(r.nextGaussian()) < 1000) {
-            return sum;
-        } else {
-            return sum + 1;
-        }
-    }
-	</code></pre>
+                double plus(double a, double b) { 
+                    double sum = a + b;
+                    Random r = new Random();
+                    if (Math.abs(r.nextGaussian()) < 1000) {
+                        return sum;
+                    } else {
+                        return sum + 1;
+                    }
+                }
+            	</code></pre>
             </section>
 
             <section>
-                <h3> Robustheit </h3>
+                <h1> Robustheit </h1>
                 <blockquote> Software verh&auml;lt sich auch unter unvorhergesehenen Umst&auml;nden sinnvoll </blockquote>
 
+                <div style="align:center; text-align: left; width:80%; margin:auto">
+                        <ul>
+                                <li>Schwierig formal zu spezifizieren</li>
+                            </ul>
+        
+                    <p> Beispiele: </p>
                 <ul>
-                    <li> Schwierig formal zu spezifizieren </li>
-                </ul>
-                <div>
-                    <p>Beispiele:</p>
-                    <ul>
-                        <li> Hardware Ausfall </li>
-                        <li> Falscher Input </li>
+                    <li> Hardware Ausfall </li>
+                    <li> Falscher Input </li>
+                </ul>                    
+                <p> </p>
+
+    
+            </div>
+
+        </section>
+
+            <section>
+                <h1> Robustheit und Korrektheit </h1>
+
+                <ul>
+                        <li>Anforderungen in Spezifikation -> Korrektheit</li>
+                        <li>Anforderung nicht spezifiziert -> Robustheit</li>
                     </ul>
-                </div>
-            </section>
-
-            <section>
-                <h3> Robustheit und Korrektheit </h3>
-                <blockquote> Robustheit und Korrektheit sind eng verwandt.</blockquote>
-
-                <ul>
-                    <li>Anforderungen in Spezifikation -> Korrektheit</li>
-                    <li>Anforderung nicht spezifiziert -> Robustheit</li>
-                </ul>
 
             </section>
 
 
             <section>
-                <h3> Effizienz (Performance) </h3>
-                <blockquote> Effizienter Gebrauch von System-ressourcen (Speicher/CPU/Netzwerk)</blockquote>
+                <h1> Effizienz (Performance) </h1>
+                <blockquote> Effizienter Gebrauch von System-ressourcen </blockquote>
                 <ul>
+                    
+                    <li>Typische Resourcen: Speicher, CPU, Netzwerk</li>
                     <li> Kann verifiziert werden </li>
                     <ul>
                         <li> Theoretisch: Komplexit&auml;tstheorie </li>
@@ -212,6 +139,7 @@
                 </ul>
             </section>
 
+                        <!--
             <section>
                 <h3> Verifizierbarkeit </h3>
                 <blockquote> Wie einfach ist es Eigenschaften zu verifizieren</blockquote>
@@ -223,79 +151,111 @@
 
             </section>
 
+
             <section>
-                <h3> Wartbarkeit (1) </h3>
+                <h3>Interoperabilit&auml;t</h3>
+                <blockquote>Wie gut kann ein Programm mit anderen Zusammenarbeiten</blockquote>
+                <ul>
+                    <li>M&ouml;glichkeiten um Interoperabilit&auml;t zu gew&auml;hrleisten </li>
+                    <ul>
+                        <li>Kompatible Fileformate</li>
+                        <li> OLE Schnittstellen (Word / Excel) </li>
+                        <li> Standard Protokolle </li>
+                    </ul>
+                </ul>
+            </section>
+        -->
+
+
+
+            <section>
+                <h1> Wartbarkeit (1) </h1>
 
                 <p> Software ist nicht das ... </p>
 
-                <img src="images/tractor.jpg" style="width:60%" />
+                <img src="images/tractor.jpg" style="width:60%" class="plain"/>
             </section>
 
             <section>
-                <h3> Wartbarkeit (1) </h3>
+                <h1> Wartbarkeit (1) </h1>
 
                 <p> sondern das! </p>
 
-                <img src="images/cow.jpg" style="width:60%" />
+                <img src="images/cow.jpg" style="width:60%" class="plain"/>
             </section>
 
 
             <section>
-                <h3> Wartbarkeit (2)</h3>
-                <blockquote> Wie einfach ist es die Software weiterzuentwickeln </blockquote>
+                <h1> Wartbarkeit (2)</h1>
+                <blockquote> Wie einfach ist es die Software weiterzuentwickeln? </blockquote>
 
-                <ul>
-                    <li> Hauptkategorien Softwarewartung: </li>
+            
+                <div style="align:center; text-align: left; width:100%; margin:auto">
+                <p>Faustregel (80/20 Regel): </p>
                     <ul>
+                        <li>Wartungskosten: 80% der Gesamtkosten </li>
+                        <li>Entwicklungskosten: 20% der Gesamtkosten </li>
+                    </ul>
+
+            </div>
+
+            </section>
+
+            <section>
+                <h1> Wartbarkeit (3) </h1>
+                <div style="align:center; text-align: left; width:80%; margin:auto">
+                <p>Hauptwartungsarbeiten:</p>
+                <ul>
                         <li>Fehlerbehebung </li>
                         <li>Anpassung an neue Anforderungen (Hardware/Betriebssystem,...) </li>
                         <li>Verbesserungen (Wartbarkeit, Performance, ...) </li>
                     </ul>
-                    <li> 80/20 Regel </li>
-                    <ul>
-                        <li>Wartungs machen ca 80 % der Gesamtkosten aus. </li>
-                        <li>Entwicklungskosten 20 % </li>
-                    </ul>
-
-                </ul>
-
+                </div>
             </section>
 
             <section>
-                <h3> Wiederverwendbarkeit</h3>
-                <blockquote> Wie einfach ist es die Software in anderem Kontext wiederzuverwenden</blockquote>
+                <h1> Wiederverwendbarkeit</h1>
+                <blockquote> Wie einfach ist es die Software in anderem Kontext wiederzuverwenden?</blockquote>
 
                 <ul>
-                    <li>Erm&ouml;glicht komponentenbasierte Softwareentwicklung </li>
-                    <li>Drastische Kostenreduktion, da Kosten f&uuml;r Verifikation, Wartung, etc. nur pro Komponente und nicht
-                        pro Produkt anfallen </li>
+                    <li>Ermöglicht <mark class="highlight"> komponentenbasierte</mark> Softwareentwicklung </li>
+                    <li>Drastische Kostenreduktion
+                        <ul> <li>Kosten für Verifikation, Wartung, etc.  pro Komponente und nicht pro Produkt </li></ul>
                 </ul>
 
             </section>
 
 
             <section>
-                <h3>Wiederverwendbarkeit</h3>
+                <h1>Wiederverwendbarkeit</h1>
+                
+                <div style="align:center; text-align: left; width:80%; margin:auto">
+                <p>Beispiel Unix:</p>
+                
                 <ul>
-                    <li>Beispiel Unix </li>
+                    <li> <code>less</code> zeigt Text seitenweise an</li>
                 </ul>
 
+                <div class="framebox" >
+                <p>Anzeige einer Datei:</p>
                 <pre><code data-trim data-noescape>
-                            $ less /etc/passwd 
+                    $ cat /etc/passwd |less
                             </code></pre>
 
+                Anzeige von Resultaten einer Suche.
                 <pre><code data-trim data-noescape>
                     $ find . -iname "*.java" |less            
 	                </code></pre>
-
-                <pre><code data-trim data-noescape>
-                    $ cat /etc/passwd | cut -d":" -f1 | less 
-                            </code></pre>
-
+                </div>
+                
+                <ul>
+                    <li>Eine Lösung für viele Anwendungen.</li>
+                </ul>
+                </div>
             </section>
 
             <section>
-                <h3> Portabilit&auml;t </h3>
+                <h1> Portabilit&auml;t </h1>
                 <blockquote>Grad der Plattformunabhängigkeit einer Software</blockquote>
                 <ul>
                     <li>M&ouml;gliche Plattformen</li>
@@ -309,11 +269,8 @@
 
 
             <section>
-                <h3> Verst&auml;ndlichkeit</h3>
-                <blockquote>Wie einfach ist es den Code der Software zu verstehen</blockquote>
-                <ul>
-                    <li>Um ein Programm anzupassen muss man es verstehen k&ouml;nnen. </li>
-                </ul>
+                <h1> Verst&auml;ndlichkeit</h1>
+                <blockquote>Wie einfach ist es den Programmcode zu verstehen?</blockquote>
 
                 <figure>
                 <code style="font-size:smaller" data-trim class="plain">
@@ -336,58 +293,7 @@
             </figure>
             </section>
 
-            <section>
-                <h3>Interoperabilit&auml;t</h3>
-                <blockquote>Wie gut kann ein Programm mit anderen Zusammenarbeiten</blockquote>
-                <ul>
-                    <li>M&ouml;glichkeiten um Interoperabilit&auml;t zu gew&auml;hrleisten </li>
-                    <ul>
-                        <li>Kompatible Fileformate</li>
-                        <li> OLE Schnittstellen (Word / Excel) </li>
-                        <li> Standard Protokolle </li>
-                    </ul>
-                </ul>
-            </section>
-
-
-
-            <section>
-                <h3> Qualit&auml;tsmerkmale von Prozessen</h3>
-                <ul>
-                    <li>Produktivit&auml;tat </li>
-                    <ul>
-                        <li> Effektivit&auml;t und Zeitanforderungen des Prozesses </li>
-                    </ul>
-                    <li>Verf&uuml;gbarkeit (Timeliness) </li>
-                    <ul>
-                        <li>Kann die Software rechtzeitig geliefert werden? </li>
-                    </ul>
-                    <li> Transparenz (Visibility)</li>
-                    <ul>
-                        <li> Ist der Prozess selbst dokumentiert? </li>
-                    </ul>
-                </ul>
-            </section>
-
-            <section>
-                <h3> Anwendungsspezifische Qualit&auml;tsmerkmale </h3>
-                <ul>
-                    <li> Sicherheit </li>
-                    <li> Datenintegrit&auml;t </li>
-                    <li> Verf&uuml;gbarkeit </li>
-                </ul>
-            </section>
-
-
-            <section>
-                <h3> Qualit&auml;tsmerkmale quantifizieren </h3>
-                <blockquote> Viele Eigenschaften schlecht direkt zu quantifizieren</blockquote>
-                <ul>
-                    <li> Performance l&auml;sst sich einfach messen </li>
-                    <li> Wie quantifiziert man Verst&auml;ndlichkeit oder Wartbarkeit? </li>
-                    <li> H&auml;ufig sehr subjektiv. </ul>
-
-            </section>
+            <!--
             <section>
                 <h3> Unit tests </h3>
 
@@ -405,7 +311,7 @@
 
 
             </section>
-
+                -->
         </div>
     </div>
 
