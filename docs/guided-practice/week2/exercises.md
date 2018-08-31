@@ -21,8 +21,8 @@ Literatur:
 ## 3. Qualitätsmerkmale: 
 
 ### 3.1 Zusammenhänge
-* Diskutieren Sie wie Verfügbarkeit die Verlässlichkeit von software beeinflusst
-* Was sind die unterschiede zwischen Portabilität und Wiederverendbarkeit?
+* Diskutieren Sie wie Verfügbarkeit die Verlässlichkeit von Software beeinflusst
+* Was sind die Unterschiede zwischen Portabilität und Wiederverwendbarkeit?
 * Zeichnen Sie grafisch die Zusammenhänge zwischen den verschiedenen Qualitätsmerkmalen auf. Die Qualitätsmerkmale werden als 
 Knoten dargestellt, und wenn ein Qualitätsmerkmal ein anderes beeinflusst, wird dies durch einen Pfeil dargestellt. 
 Was können Sie aus dem resultierenden Graphen ableiten?
