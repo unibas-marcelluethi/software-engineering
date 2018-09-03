@@ -114,11 +114,11 @@
         </section>
 
             <section>
-                <h1> Robustheit und Korrektheit </h1>
+                <h1> Korrektheit und Robustheit</h1>
 
                 <ul>
-                        <li>Anforderungen in Spezifikation -> Korrektheit</li>
-                        <li>Anforderung nicht spezifiziert -> Robustheit</li>
+                        <li>Anforderungen spezifiziert &rarr; Korrektheit</li>
+                        <li>Anforderung nicht spezifiziert &rarr; Robustheit</li>
                     </ul>
 
             </section>
@@ -135,7 +135,6 @@
                         <li> Theoretisch: Komplexit&auml;tstheorie </li>
                         <li> Praktisch: Simulation </li>
                     </ul>
-                    <li> Beeinflusst Skalierbarkeit </li>
                 </ul>
             </section>
 
@@ -344,6 +343,7 @@
             dependencies: [{
                 src: 'plugin/markdown/marked.js'
             },
+            { src: 'plugin/mouse-pointer/mouse-pointer.js', async: true }, 
             {
                 src: 'plugin/markdown/markdown.js'
             },

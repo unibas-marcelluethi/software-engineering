@@ -40,7 +40,7 @@ Es gibt eine Vielzahl von möglichen Qualitätsmerkmale. Nicht alle sind für je
 
 * Produktivität (productivity)
 * Verfügbarkeit (timeliness)
-* Transparenz (Visibility)
+* Transparenz (visibility)
 
 Es gibt auch Qualitätsmerkmale die nur in bestimmten Anwendungen wichtig sind. Dazu gehören zum Beispiel die 
 *Sicherheit*, *Datenintegrität* oder *Verfügbarkeit*. Diese Qualitätsmerkmale sind zum Beispiel für die Software in einem Bankomaten essentiell. 
@@ -51,5 +51,5 @@ Bei einer Präsentationssoftware hingegen, sind die Qualitätsmerkmale *Sicherhe
 
 Als Ingenieure möchten wir uns nicht nur auf Gefühle verlassen, sondern unser Ziel sollte es immer sein, etwas quantifizier- und somit messbar zu machen. 
 Damit wäre es einfach, die Qualität zu optimieren, oder auch vertraglich festzulegen, dass eine gewisse Qualitätsstufe erreicht wird. 
-Leider ist dies im Softwareengineering nicht immer möglich. Häufig sind die Kriterien sehr subjektiv. Es ist, zum Beispiel, nicht klar, wie man Wartbarkeit quantifiziert. Ob ein Programm wartbar ist, hängt nicht nur von der Software selbst, sondern auch vom Programmieren, dem wissen im Team, etc. zusammen. 
+Leider ist dies im Softwareengineering nicht immer möglich. Häufig sind die Kriterien sehr subjektiv. Es ist, zum Beispiel, nicht klar, wie man Wartbarkeit quantifiziert. Ob ein Programm wartbar ist, hängt nicht nur von der Software selbst, sondern auch vom Programmieren, dem Wissen im Team, etc. zusammen. 
 
