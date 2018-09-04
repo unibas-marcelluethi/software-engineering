@@ -48,10 +48,9 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](./exercises/theory-exercises.html). 
 Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam]((https://adam.unibas.ch/goto_adam_exc_700910.html)) ein .
 
-*Abgabetermin ist Dienstag, 2. Oktober*
+Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten.
 
-Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten
-
+*Abgabetermin ist Dienstag, 2. Oktober, 23.59*
 
 ### Feedback
 
