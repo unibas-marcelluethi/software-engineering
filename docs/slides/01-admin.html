@@ -8,7 +8,7 @@
 	<title>Software Engineering</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/solarized.css">
+	<link rel="stylesheet" href="css/theme/unibas.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -28,84 +28,115 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section>
-				<h1>
-					Software Engineering
-				</h1>
-				<p>
-					<small> <u>Marcel</u> L&uuml;thi<br>
-						Departement Mathematik und Informatik </small>
-				</p>
-				<p>
-					<img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
-				</p>
-
-			</section>
-
-			<section>
-				<h2> Meine Vorstellung vom Kurs </h2>
-				Nicht so:
-				<figure>
-					<img src="images/drill-sergeant.jpg" />
-					<figcaption style="font-size:x-small">Source: https://www.army.mil/article/155161/Marching_in_formation</figcaption>
-			</section>
-
-			<section>
-				<h2> Meine Vorstellung vom Kurs </h2>
-
-				Sondern so:
-				<figure>
-					<img src="images/cycling.jpg" style="width:50%" />
-					<figcaption style="font-size:x-small">By Maratona dles Dolomites Committee Photographer - Maratona dles Dolomites Committee, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=5908396</figcaption>
-				</figure>
-			</section>
-			<section>
-				<h2> Plan f&uuml;r heute</h2>
-				<ul>
-					<li> Allgemeines zum Kurs</li>
-					<li> Warum brauchen wir Software Engineering</li>
-					<li> Was ist Software Engineering</li>
-					<li> Lesen wissenschaftlicher Artikel </li>
-					<li> Ev. Geschichte des Software Engineerings</li>
-				</ul>
-			</section>
 
 			<section class="center">
-				<h2>
-					- Allgemeines zum Kurs -
-				</h2>
-				<p>
-					<small> Marcel L&uuml;thi<br>
-						Departement Mathematik und Informatik </small>
-				</p>
-				<p>
-					<img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
-				</p>
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Software Engineering
+
+					</h1>
+					<h3>
+						<text style="text-decoration:underline">Marcel</text> L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+				</div>
+			</section>
+
+			<section>
+				<h1> Plan der heutigen Vorlesung</h1>
+
+				<table style="width:100%">
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td> Das Team</td>
+					</tr>
+					<tr>
+						<td>Kursziele</td>
+					</tr>
+					<tr>
+						<td>Wie funktioniert der Kurs</td>
+					</tr>
+					<tr>
+						<td>Warum brauchen wir Software Engineering</td>
+					</tr>
+					<tr>
+						<td>Was ist Software Engineering</td>
+					</tr>
+					<tr>
+						<td>Geschichte des Software Engineerings</td>
+					</tr>
+					<tr></tr>
+				</table>
+			</section>
+
+
+			<section>
+				<h1> Plan der heutigen Vorlesung</h1>
+
+				<table style="width:100%">
+					<tr>
+						<td></td>
+					</tr>
+					<tr class="highlight">
+						<td> Das Team</td>
+					</tr>
+					<tr>
+						<td>Kursziele</td>
+					</tr>
+
+					<tr>
+						<td>Wie funktioniert der Kurs</td>
+					</tr>
+					<tr>
+						<td>Warum brauchen wir Software Engineering</td>
+					</tr>
+					<tr>
+						<td>Was ist Software Engineering</td>
+					</tr>
+					<tr>
+						<td>Geschichte des Software Engineerings</td>
+					</tr>
+					<tr></tr>
+				</table>
 
 			</section>
 
 
 
 			<section>
-				<h2>Wer bin ich?</h2>
+				<h1>Dozent</h1>
 
-				<div style="text-align: left; margin-left: 5%">
+				<div style="text-align: left; float: left; width:80%">
 					<ul>
 						<li>
 							<u>Marcel</u> L&uuml;thi </li>
-						<li> Dozent 75 % (seit August) </li>
-						<li> Mitarbeiter in der Graphics and Vision Research Group </li>
+						<li> Dozent 75% (seit August 2017) </li>
+						<li> Mitglied der Forschungsgruppe GRAVIS</li>
+						<li>Forschungsgebiet:</li>
 						<ul>
-							<li> Forschung im Bereich Medizinischer Bildanalyse </li>
+							<li>Medizinischer Bildanalyse</li>
+							<li>Statistische Formmodellierung </li>
 						</ul>
 					</ul>
-					<blockquote class="fragment">Mein erster Kurs auf Bachelorniveau.</blockquote>
 				</div>
 
+				<div style="text-align: left; float: right; width:20%">
+					<video style="width:100%" autoplay loop>
+						<source src="./images/bone-movie.mp4" type="video/mp4">
+					</video>
+				</div>
 			</section>
 
 			<section>
-				<h2>Mini CV</h2>
+				<h1>Erfahrung mit Software Engineering</h1>
 
 				<div style="text-align: left; margin-left: 5%; font-size:24pt">
 					<table style="width:100%">
@@ -114,25 +145,17 @@
 							<th>Funktion</th>
 						</tr>
 						<tr>
-							<td>1994-1997</td>
-							<td>Kaufm&auml;nnische Berufslehre</td>
-						</tr>
-						</tr>
-						<tr>
 							<td>1997-2002</td>
-							<td>Anwendungsentwicklung UBS <br/>(E-banking)</td>
+							<td>Arbeit als Applikationsentwickler UBS <br/>(E-banking)
+							</td>
 						</tr>
 						<tr>
 							<td>1999-2003</td>
-							<td>Informatikstudium FH Bern</td>
+							<td>Informatikstudium FH Bern, Schwerpunkt Software Engineering</td>
 						</tr>
 						<tr>
-							<td>2003-2005</td>
-							<td>Master in Ingenieursmathematik <br/> Chalmers Tekniska H&ouml;gskolan</td>
-						</tr>
-						<tr>
-							<td>2006-2017</td>
-							<td>Forschung im Bereich Medizinische Bildanalyse</td>
+							<td>2008-</td>
+							<td>Open-source Softwareentwicklung für medizinische Bildanalyse</td>
 						</tr>
 
 					</table>
@@ -142,80 +165,157 @@
 
 
 			<section>
-				<h2>Open source</h2>
+				<h1>Open source</h1>
 
 				<div style="text-align: center; margin-left: 5%; font-size:24pt;align-content:center ">
 
 					<figure>
-						<img src="images/scalismo-ui.png" style="width:50%" />
-						<figcaption><small>https://github.com/unibas-gravis/scalismo</small></figcaption>
+						<img src="images/scalismo-ui.png" style="width:50%" class="plain" />
+						<figcaption style="font-size: x-small">https://github.com/unibas-gravis/scalismo</figcaption>
 					</figure>
 				</div>
 
 				<ul>
 					<li>Framework zur Modell-basierten Bildanalyse</li>
-					<li>Programmiert in Scala</li>
+					<ul>
+						<li>Programmiert in Scala</li>
+					</ul>
+					<li>Grundlage aller Entwicklung in der GRAVIS Gruppe</li>
 				</ul>
 
 			</section>
 
 			<section>
-				<h2>Tutoren</h2>
+				<h1>Tutoren</h1>
 
 				<div style="float:left; word-wrap:break-word; width:50%; text-align:center">
 					<img src="images/silvan.jpg" , style="height:10cm">
-					<p>Silvan Heller</p>
-
+					<div style="text-align:left">
+						Jan Schönholz
+						<ul>
+							<li>Informatikstudent: 3 Semester</li>
+							<li>Software-Engineering: HS2017</li>
+						</ul>
+					</div>
 				</div>
+
 				<div style="float:right; word-wrap:break-word; width:50%; text-align:center">
 					<img src="images/marvin.jpg" , style="height:10cm">
-					<p>Marvin Buff</p>
-				</div>
-
-			</section>
-
-
-			<section class="center">
-				<h2>Kursziele</h2>
-
-			</section>
-
-
-			<section>
-				<h2>Bauen</h2>
-
-				<div style="float:left; width:55%; vertical-align: top;">
-					<img src="./images/kheops.jpg" style="width:auto; float:center" />
-				</div>
-				<div style="float:right;width:45%">
-					<p style="text-align:left">
+					<div style="text-align:left">
+						Michael Plüss
 						<ul>
-							<li>Gebaut ca 2500 a.d. </li>
-							<li>H&ouml;he: 146m </li>
-							<li> Arbeiter: Hundertausende </li>
-							<li> Bauzeit: 20 Jahre </li>
-					</p>
-
+							<li>Informatikstudent: 5 Semester</li>
+							<li>Software-Engineering: HS2017</li>
+						</ul>
+					</div>
 				</div>
+
+			</section>
+
+			<section>
+				<h1>Wichtigste Teammitglieder</h1>
+
+				<figure>
+					<img src="images/you.jpg" class="plain">
+				</figure>
+
+			</section>
+
+
+
+
+			<section>
+				<h2> Meine Vorstellung vom Kurs </h2>
+
+
+				Nicht so:
+
+				<figure>
+					<img src="images/drill-sergeant.jpg" style="width:50%" class="plain">
+					<figcaption style="font-size:xx-small">Source: https://www.army.mil/article/155161/Marching_in_formation</figcaption>
+				</figure>
+
+
+
+			</section>
+
+			<section data-transition-speed="fast">
+				<h2> Meine Vorstellung vom Kurs </h2>
+
+
+				Sondern so!
+				<figure>
+					<img src="images/rowing.jpg" style="width:50%" class="plain" />
+					<figcaption style="font-size:xx-small">Source: Von Emanuel Michler D. https://commons.wikimedia.org/w/index.php?curid=11873466</figcaption>
+				</figure>
 
 
 			</section>
 
 
-			<section>
-				<h2>Engineering</h2>
 
-				<div style="float:left; width: 60%; vertical-align: top; ">
-					<img src="./images/empire-state.jpg" style="width:auto; float:center" />
-				</div>
-				<div style="float:right; width: 40%">
+			<section>
+				<h1> Plan der heutigen Vorlesung</h1>
+
+				<table style="width:100%">
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td> Das Team</td>
+					</tr>
+					<tr class="highlight">
+						<td> Kursziele</td>
+					</tr>
+					<tr>
+						<td>Wie funktioniert der Kurs</td>
+					</tr>
+					<tr>
+						<td>Warum brauchen wir Software Engineering</td>
+					</tr>
+					<tr>
+						<td>Was ist Software Engineering</td>
+					</tr>
+					<tr>
+						<td>Geschichte des Software Engineerings</td>
+					</tr>
+					<tr></tr>
+				</table>
+
+			</section>
+
+
+			<section>
+				<h1>Bauen</h1>
+
+				<figure>
+				<img src="./images/kheops.jpg" style="width:50%; float:center" class="plain" />
+				<figcaption style="font-size:xx-small">Von Nina - Eigenes Werk, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=282496</figcaption>
+			</figure>
+
+				<ul>
+					<li>Gebaut ca 2500 a.d. </li>
+					<li>H&ouml;he: 146m </li>
+					<li> Arbeiter: Hundertausende </li>
+					<li> Bauzeit: 20 Jahre </li>
+				</ul>
+			</section>
+
+
+			<section>
+				<h1>Engineering</h1>
+				<figure>
+					<img src="./images/empire-state.jpg" style="height: auto; float:center" class="plain"/>
+					<figcaption style="font-size:xx-small">Quelle: Von Jiuguang Wang - CC BY-SA 2.0, <br/> https://commons.wikimedia.org/w/index.php?curid=10887229</figcaption>
+				</figure>
+
 					<ul>
 						<li> Gebaut 1930 </li>
 						<li> H&ouml;he: 381m </li>
 						<li> Arbeiter: ca. 3000 </li>
 						<li> Bauzeit: 11 Monate </li>
 					</ul>
-				</div>
+
 			</section>
 
 			<!--
@@ -233,19 +333,19 @@
 
 
 			<section>
-				<h2>Kursziele (1)</h2>
+				<h1>Kursziele (1)</h1>
 
 				<blockquote class="center"> Softwareentwicklung als Ingenieursdisziplin zu verstehen</blockquote>
 			</section>
 
 
 			<section>
-				<h2>Software engineering?</h2>
+				<h1>Software engineering?</h1>
 
 				<img src="images/allan-kay.jpg" style="width:50%" />
-				<p> <small>&quot;Quite a bit of today's software and its construction process resemble the Egyptian pyramid,
-				but I would dare to say no one currently knows how to organize 3000 programmers to make a
-				major piece of software from scratch in less than 11 months.&quot; </small> </p>
+				<p> <small>&quot;Quite a bit of today's software and its construction process resemble the Egyptian pyramid, but I would
+						dare to say no one currently knows how to organize 3000 programmers to make a major piece of software from scratch
+						in less than 11 months.&quot; </small> </p>
 				<p style="text-align:right"> <small> Alan Kay, 2001 </small> </p>
 
 			</section>
@@ -254,7 +354,7 @@
 
 
 			<section>
-				<h2>Kursziele (2)</h2>
+				<h1>Kursziele (2)</h1>
 
 				<blockquote>
 					Schwierigkeiten und Limitierungen in der Softwareentwicklung zu verstehen.
@@ -263,7 +363,7 @@
 			</section>
 
 			<section>
-				<h2>Pop culture</h2>
+				<h1>Pop culture</h1>
 				<p style="font-size:smaller">
 					Computing spread out much, much faster than educating unsophisticated people can happen. In the last 25 years or so, we actually
 					got something like a pop culture, similar to what happened when television came on the scene and some of its inventors
@@ -277,7 +377,7 @@
 
 
 			<section>
-				<h2>Kursziele (3)</h2>
+				<h1>Kursziele (3)</h1>
 
 				<blockquote>
 					<ul>
@@ -289,53 +389,190 @@
 
 
 			<section>
-				<h2>Geschichte</h2>
+				<h1>Software Wartung</h1>
 
-				<div style="text-align:center;width:100%;">
-					<img src="images/paper.png" style="width:60%" />
+				<figure>
+				<img src="images/maintanance-costs.png" style="width:70%" class="plain">
+				<figcaption style="font-size:xx-small">Quelle: Software Engineering for Students, D. Bell </figcaption>
+			</figure>
+			</section>
+
+
+
+			<section>
+				<h1>Kursziele (4)</h1>
+
+				<blockquote>
+					<ul>
+						<li>Lernen existierende Programme zu verstehen</li>					
+					</ul>					
+				</blockquote>
+
+				<ul>
+					<li>Selbstvertrauen, existierende Projekte zu erweitern.</li>
+				</ul>
+
+				<div style="float:center;text-align:center">
+					<img src="images/ganttproject.png" style="width:60%" class="plain"/>
 				</div>
 
-				<div style="text-align:center;width:100%;">
-					<p> Experiment: Lesen und diskutieren von wichtigen wissenschaftlichen Artikeln</p>
-				</div>
+
+			</section>
+
+			<section>
+				<h1>Kursziele (5)</h1>
+
+				<blockquote>
+					<ul>
+						<li>Werkzeuge des modernen Software Engineerings kenenlernen</li>					
+					</ul>
+				</blockquote>
+
+				<img src="images/git.png" style="height:3cm" class="plain"/>
+				<img src="images/github.png" style="height:3cm"  class="plain"/>
+				<img src="images/travis.png" style="height:3cm"  class="plain"/>
+				<img src="images/intellij-logo.png" style="height:3cm"  class="plain"/>
+				<img src="images/scrum.png" style="height:3cm"  class="plain"/>
+			</section>
+		
+
 
 			</section>
 
 
 
 			<section>
-				<h2>Praktische Anwendung</h2>
+				<h1> Plan der heutigen Vorlesung</h1>
+
+				<table style="width:100%">
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td> Das Team</td>
+					</tr>
+					<tr>
+						<td> Kursziele</td>
+					</tr>
+					<tr  class="highlight">
+						<td>Wie funktioniert der Kurs</td>
+					</tr>
+					<tr>
+						<td>Warum brauchen wir Software Engineering</td>
+					</tr>
+					<tr>
+						<td>Was ist Software Engineering</td>
+					</tr>
+					<tr>
+						<td>Geschichte des Software Engineerings</td>
+					</tr>
+					<tr></tr>
+				</table>
+
+			</section>
 
 
-				<div style="float:center;text-align:center">
-					<img src="images/ganttproject.png" style="height:10cm" />
-				</div>
+			<section>
+				<h1> Plan (Übersicht) </h1>
+				<img src="images/advance-organizer-1.png" style="width:100%" class="plain" />
+			</section>
+
+
+			<section>
+				<h1> Plan (Chronologisch) </h1>
+				<img src="images/advance-organizer-2.png" style="width:100%" class="plain" />
+			</section>
+
+
+		
+			<section>
+				<h1>Vorlesungszeiten</h1>
+
 
 				<ul>
-					<li>Praktische Arbeiten an einem Open Source Projekt</li>
-					<li>Benutzung moderner Methoden / Werkzeuge </li>
+
+					<p style="margin-top:1cm"></p>
+					Theorie
+					<ul>
+						<li> Mittwoch: 8.15 - 10.00 </li>
+						<li> Seminarraum 05.002, Spiegelgasse 5 </li>
+					</ul>
+
+					<p style="margin-top:1cm"></p>
+					Praxis
+					<ul>
+						<li> Mittwoch: 12:15-14.00</li>
+						<li>
+							 Seminarraum 05.002, Spiegelgasse 5 </li>
+					</ul>
+
 				</ul>
 
 			</section>
 
+
 			<section>
-				<h2> Plan </h2>
-				<img src="images/outline.png" style="height:400pt" />
+				<h1>Flipped Classroom</h1>
+				
+				<figure>
+					<img src="images/flipped-classroom.jpg" class="plain"/>
+					<figcaption style="font-size:xx-small">By AJC1 -  CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=63464282</figcaption>
+				</figure>
+
 			</section>
 
 
+			<section>
+				<h1>Ablauf</h1>
+
+				<ol>
+					<li> Selbststudium Vorlesungsmaterial gemäss Anleitung</li>
+					<li> (Multiple-choice) Test bearbeiten (Adam)</li>
+					<li> Theoriestunde besuchen, mitdiskutieren, Übungen lösen</li>					
+					<li> Praxisstunde besuchen</li>
+					<li> Theorieübungsblatt abgeben (Adam)</li>
+					<li> Praktische Übungen einreichen (Github) </li>
+				</ol>
+			</section>
 
 			<section>
-				<h2>Literatur</h2>
+				<h1>Leistungsüberprüfung</h1>
+
+				<ul>
+					Bedingungen für Prüfungszulassung
+					<ul>
+						<li>75% der Theorieübungen (Test und Übungsblatt) bestanden</li>
+						<li>75% der praktischen Übungen bestanden</li>
+						<li>Erfolgreiches bearbeiten des Projekts</li>
+					</ul>
+				</ul>
+				
+				<blockquote>
+					Die schriftliche Prüfung findet am 16.01.2019, 10.00 - 12.00
+				</blockquote>
+			</section>
+
+
+			<section>
+				<h1>Praktische Übungen und Projekt</h1>
+				
+				ganttprojekt
+
+				Erweiterung 
+			</section>
+
+			<section>
+				<h2>Literaturempfehlung (nicht obligatorisch)</h2>
 
 				<div style="float:left; width:50%;word-wrap:break-word">
-					<p>Empfehlung: <br/> (&Auml;lter aber gut) </p>
-					<img src="images/ghezzi.jpg" style="height:8cm">
+					<p>Grundlage dieses Kurses:</p>
+					</p>
+					<img src="images/ghezzi.jpg" style="height:8cm" class="plain">
 				</div>
 
 				<div style="float:right; width:50%;word-wrap:break-word">
 					<p>Aktuelles Standardwerk<br>(Kompendium)</p>
-					<img src="images/pfleeger.jpg" style="height:8cm">
+					<img src="images/pfleeger.jpg" style="height:8cm" class="plain">
 				</div>
 				<div style="width:100%">
 					<ul>
@@ -346,109 +583,41 @@
 
 			</section>
 
-			<!--
-				<section>
-				<h2> Notizenpool? </h2>
 
-				<ul>
-					<li> Leider gibt es noch kein Kursskript </li>
-					<li> Ich werde meine Notizen verf&uuml;gbar machen</li>
-				</ul>
-				<blockquote>
-					Wir k&ouml;nnten Notizenpool organisieren.
-				</blockquote>
 
-			</section>
--->
-			<!--
+
+
 			<section>
-				<h2>Meine Idealvorstellung von der Vorlesung </h2>
-
-				<div style="width:100%">
-					<img src="images/hiking.png", style="width:80%">
-				</div>
-			</section>
-		-->
-			<section>
-				<h2>Vorlesungszeiten</h2>
-
-				<ul>
-					Vorlesungen:
+					<h2>Plagiate </h2>
+	
+					<blockquote style="font-size:x-large">
+							<p>
+							Ein  Plagiat  ([. . . ]  aus  lateinisch  plagiarius,  deutsch
+							”
+							Seelenverkäufer, Menschenräuber“) ist die Anmaßung fremder geistiger  Leistungen.  
+							Dies  kann  sich  auf  die Übernahme fremder  Texte  oder  anderer  Darstellungen  [. . . ],  fremder
+							Ideen [. . . ] oder beides gleichzeitig [. . . ] beziehen.
+						</p>
+							<p style="text-align: right; margin:auto">Wikipedia</p>
+					</blockquote>
+					
 					<ul>
-						<li> Mittwoch: 8.15 - 10.00 </li>
-						<li> Seminarraum 05.002, Spiegelgasse 5 </li>
+							Folge:
+							<ul>
+								<li>0 Punkte für Übungsblatt sowie Verwahrnung (beim ersten Mal)</li>
+								<li>Nicht-Zulassung zur Prüfung (Wiederholungsfall)</li>
+							</ul>
 					</ul>
-
-					&Uuml;bungen:
-					<ul>
-						<li> Mittwoch: 13:15-15.00</li>
-						<li>
-							<mark class="highlight"> Seminarraum 05.002 </mark>, Spiegelgasse 5 </li>
-					</ul>
-				</ul>
-
-			</section>
-
-			<section>
-				<h2>&Uuml;bungen</h2>
-
-				<ul>
-
-					<li>Praktische Arbeiten an Ganttproject</li>
-					<li>Theoriefragen und lesen von Artikeln</li>
-				</ul>
-
-				<div style="float:left;text-align:center;width:50%">
-					<img src="images/ganttproject.png" />
-				</div>
-
-				<div style="float:right;text-align:center;width:50%">
-					<img src="images/paper.png" />
-				</div>
-
-				<p style="clear:both">
-					Aufwand: ca. 6 Stunden pro Woche.
-				</p>
-
-			</section>
-
-
-			<section>
-				<h2>Leistungs&uuml;berpr&uuml;fung</h2>
-
-				<div style="border-width:2pt;border-style:solid">
-					<p>Schriftliche Pr&uuml;fung am
-						<mark class="highlight">17.1.2018</mark>.</p>
-				</div>
-				<br/>
-				<ul>
-					<li>Aktive Teilnahme an den &Uuml;bungen</li>
-					<ul>
-						<li>Mindestens 75 % der &Uuml;bungen eingereicht</li>
-					</ul>
-					<li>Mitarbeit am Programmierprojekt</li>
-
-				</ul>
-				<div style="width:100%">
-					<p>
-						Anmeldung unter <a href="https://services.unibas.ch/">https://courses.cs.unibas.ch/</a>
-						<p>
-				</div>
-			</section>
-
-			<section>
-				<h2>Laptops </h2>
-
-				<a href="http://faculty.missouri.edu/segerti/1000/LaptopClassroomUse.pdf"><img src="images/logged-in-zoned-out.png" style="width:100%"> </a>
-
-			</section>
+	
+				</section>
+	
 
 
 			<section>
 				<h2>Kurswebpage</h2>
 				<div class="stretch">
 					<a href="https://github.com/unibas-sweng/software-engineering">
-					<img src="images/course-webpage.png" />
+						<img src="images/course-webpage.png" />
 					</a>
 				</div>
 			</section>

@@ -1,0 +1,1076 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Zusammenfassung</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/unibas.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <div class="titleblock">
+
+                    <p>
+                        <img class="plain" src="images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+                    </p>
+
+
+                    <h1 style="clear:both;margin-top:20%">
+                        Titel-/Kapitelfolie
+
+                    </h1>
+                    <h3>
+                        Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+                    </h3>
+
+                </div>
+            </section>
+
+            <section>
+                <h1>Hinweise zur Pr&uuml;fung</h1>
+
+                <ul style="font-size:smaller">
+                    <li>Alle in dieser Zusammenfassung diskutierten Themen sind Pr&uuml;fungsrelevant</li>
+                    <ul>
+                        <li>Auch hier nicht erw&auml;hnte Aspekte k&ouml;nnen gepr&uuml;ft werden.</li>
+                    </ul>
+
+                    <li>Projekt ist nicht Teil der Prüfung
+                        <ul>
+                            <li>
+                                Einfache Fragen zu Tools (Git/ Github / Gradle / Travis) sind möglich</li>
+                        </ul>
+                </ul>
+                <blockquote>
+                    Verstehen der "Unit Test Fragen" ist gute Voraussetzung f&uuml;r eine gen&uuml;gende Note.
+                </blockquote>
+            </section>
+
+            <section class="center">
+                <h3>Software Engineering
+                    <br/> Eigenschaften von Software
+                </h3>
+            </section>
+            <section>
+                <h3>Software ist wichtig</h3>
+                <div style="width: 100%; vertical-align: top;">
+                    <img src="./images/software-eating.jpg" style="width:100%;height:auto; float:center" />
+                </div>
+
+                <p style="font-size:large">
+                    Source:
+                    <a href="https://www.wsj.com/articles/SB10001424053111903480904576512250915629460">
+                        Why Software is Eating the world
+                    </a> Wall street journal
+                </p>
+            </section>
+
+
+
+            <section>
+                <h3>Software ist komplex</h3>
+
+                <div style="float:left; width:50%">
+                    <figure>
+                        <img src="images/buchstapel.png" class="plain" style="width:80%" />
+                        <figcaption style="font-size:x-small">source: Flickr / FutUndBeidl / Colorful Books Stacked (Blender)</figcaption>
+                    </figure>
+                </div>
+                <div style="float:right; width:50%">
+
+                    <ul>
+                        <li> Ganttproject : 120'000 Zeilen Code (6 B&uuml;cher)</li>
+                        <li> Firefox: 16 Millionen Zeilen Code </li>
+                        <li> Visual studio: 50 Millionen Zeilen Code </li>
+                        <li> Modernes Auto 100 Millionen Zeilen Code </li>
+                        <li> Google 2'000 Millionen Zeilen Code </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section>
+                <h3> Software zu Entwickeln ist schwierig</h3>
+
+                <img src="images/silver-bullet.png" class="plain" />
+            </section>
+
+
+            <section>
+                <h3>Software ist anders</h3>
+                <ul>
+                    <li>Software ist formbar</li>
+                    <ul>
+                        <li>&Auml;nderungen einfach m&ouml;glich</li>
+                    </ul>
+                    <li>Software ist immateriell</li>
+                    <ul>
+                        <li>Qualit&auml;t wird durch Entwicklungsprozess und nicht durch Produktionsprozess erreicht.</li>
+                        <li>Kosten entstehen in Entwicklung / Wartung</li>
+                    </ul>
+                    <li>Software folgt nicht den Naturgesetzen</li>
+                </ul>
+
+                <div style="font-size:smaller">
+                    <div style="float:left;width:25%; vertical-align: top;">
+
+                        <figure>
+                            <img src="./images/circuitery.jpg" style="width:50%; float:center" />
+                            <figcaption style="font-size:x-small">By AAAndrey A - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10062999</figcaption>
+                        </figure>
+                    </div>
+                    <div style="float:left;width:25%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/engine.jpg" style="width:50%; float:center" />
+                            <figcaption style="font-size:x-small">By Florian Lindner (User:SuperFloh) - Own work, CC BY 2.5,
+                                https://commons.wikimedia.org/w/index.php?curid=184607</figcaption>
+                        </figure>
+                    </div>
+                    <div style="float:left;width:25%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/bridge.jpg" style="width:50%; float:center" />
+                            <figcaption style="font-size:x-small">Von Störfix - Eigenes Werk (selbst fotografiert), CC BY-SA
+                                3.0, https://commons.wikimedia.org/w/index.php?curid=250504</figcaption>
+                        </figure>
+                    </div>
+                    <div style="float:left;width:25%; vertical-align: top;">
+                        <figure>
+                            <img src="./images/ganttproject.png" style="width:50%; float:center" />
+                            <figcaption style="font-size:x-small">By Dbarashev - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59176852</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Software altert</h3>
+
+                <div style="float:left;width:50%">
+                    <img src="images/tractor.jpg" style="width:100%" class="plain" /> Software ist nicht das.
+                </div>
+                <div style="float:right;width:50%">
+                    <img src="images/cow.jpg" class="plain" /> Sondern das!
+                </div>
+                <blockquote style="display:inline-block" class="fragment">
+                    Wartungskosten sind wichtiger Teil vom Projekt
+                </blockquote>
+
+            </section>
+
+            <section>
+                <h3> Software altert</h3>
+
+                <img src="images/software-aging.png" class="plain" style="width:70%" />
+            </section>
+
+            <section>
+                <h3>Software engineering</h3>
+
+
+
+                <blockquote>
+                    The application of a systematic, disciplined, quantifiable approach to the development, operation, and maintanance of software.
+
+                    <p style="text-align:right">
+                        <small> IEEE Standard Glossary of Software Engineering Terminology </small>
+                    </p>
+
+                </blockquote>
+                <blockquote class="fragment">
+                    <p> The multi-person construction of multi-version software. </p>
+
+                    <p style="text-align:right">
+                        <small> David Parnas, 1978 </small>
+                    </p>
+                </blockquote>
+
+            </section>
+
+
+            <section>
+                <h3>Hinweise zur Pr&uuml;fung</h3>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Relevant</h5>
+                    <ul>
+                        <li>Was ist Software Engineering / Weshalb brauchen wir es</li>
+                        <li>Eigenschaften von Software</li>
+                        <ul>
+                            <li>Weshalb ist Softwareentwicklung schwierig</li>
+                        </ul>
+                        <li>Zusammenh&auml;nge</li>
+                        <li>Paper: Silver Bullet, Software Aging</li>
+                    </ul>
+                </div>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Weniger relevant</h5>
+                    <ul>
+                        <li>Exakte Definitionen</li>
+                        <li>Genaue geschichtliche Daten</li>
+                        <li>Vollständige Aufzählung aller Qualit&auml;tsmerkmale</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="center">
+                <h3>Softwareprozess</h3>
+            </section>
+
+
+            <section>
+                <h3>Softwareprozess</h3>
+                <img src="images/process-activities-cloud.png" class="plain" style="width:50%" />
+
+                <blockquote>
+                    Ein Softwareprozess organisiert die Aktivit&auml;ten.
+                </blockquote>
+                <ul>
+                    <li>Was sollen wir als n&auml;chstes tun?</li>
+                    <li>Wie lange sollen wir das tun?</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Softwareprozess als Whitebox</h3>
+                <img src="images/process-white-box.png" class="plain" style="width:70%" />
+                <ul>
+                    <li>Interaktion mit Benutzer in jeder Phase vom Projekt</li>
+                    <ul>
+                        <li>Eingehen auf Ver&auml;nderungen m&ouml;glich</li>
+                        <li>Viele Qualit&auml;tsmerkmale sind nur im Prozess ersichtlich</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Zwei Extreme</h3>
+                <div style="float:left; width:50%">
+                    <h5>Wasserfall</h5>
+                    <img src="images/waterfall-simple.png" class="plain" style="width:100%" />
+                    <ul>
+                        <li>Stark strukturierte</li>
+                        <li>Rigide</li>
+                        <li>Dokumentlastig </li>
+
+                    </ul>
+                </div>
+                <div style="float:right; width:50%">
+                    <h5>Agil</h5>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51l1X81fhiL._SX396_BO1,204,203,200_.jpg" style="width:40%" class="plain"
+                    />
+
+                    <ul>
+                        <li>Gegenreaktion</li>
+                        <li>Fokus:Flexibilit&auml;t</li>
+                        <li>Ziel: Weniger Regeln bei gleicher Qualit&auml;t</li>
+                        <ul>
+
+                </div>
+            </section>
+
+            <section>
+                <h3>Viele weitere M&ouml;glichkeiten</h3>
+                <div>
+                    <div style="float:left; width:33%">
+                        <img src="images/waterfall-simple-prototyping.png" style="width:100%" class="plain" />
+                    </div>
+                    <div style="float:left; width:33%">
+                        <img src="images/waterfall-simple-feedback.png" style="width:100%" class="plain" />
+                    </div>
+                    <div style="float:right; width:33%">
+                        <img src="images/v-model.png" style="width:100%" class="plain" />
+
+                    </div>
+                </div>
+                <div style="display:inline-block">
+                    <div style="float:left; width:33%">
+                        <img src="images/spiral-model.png" style="width:80%" class="plain" />
+                    </div>
+                    <div style="float:left; width:33%">
+                        <img src="images/incremental-model.png" style="width:100%" class="plain" />
+                    </div>
+                    <div style="float:right; width:33%">
+                        <img src="images/iterative-model.png" style="width:100%" class="plain" />
+
+                    </div>
+                </div>
+
+                <blockquote style="width:100%">
+                    Geeigneter Prozess je nach Team / Umfeld unterschiedlich.
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>A rational design process</h3>
+                <img src="images/rational-design-process.png" class="plain" style="width:80%" />
+            </section>
+
+            <section>
+                <h3>Hinweise zur Pr&uuml;fung</h3>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Relevant</h5>
+                    <ul>
+                        <li>Zweck von Prozessen und deren Wichtigkeit</li>
+                        <li>St&auml;rken / Probleme der unterschiedlichen Modelle</li>
+                        <li>Paper: A rational design process</li>
+                        <li>Grundidee Agile Prozesse / Scrum</li>
+                        <li>Einsicht, das Softwareentwicklung kein linearer Prozess ist</li>
+
+                    </ul>
+                </div>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Weniger relevant</h5>
+                    <ul>
+                        <li>Kennen aller agiler Prinzipien</li>
+                        <li>Details von Spiralmodellen</li>
+                        <li>Details von Scrum</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="center">
+                <h3>Spezifikation</h3>
+
+            </section>
+
+
+            <section class="center">
+                <h3>Anforderungsanalyse</h3>
+
+                <figure>
+                    <img src="https://cdn-images-1.medium.com/max/1146/1*ApoaIZicyU0b7Jgg9MMJhw.jpeg" class="plain" />
+                    <figcaption style="font-size:x-small">Quelle: medium.com</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Anforderungsanalyse ist wichtig!</h3>
+
+                <blockquote>
+                    Survey von 8000 Softwareprojekten bei 350 Firmen im Jahre 1994.
+                    <br/> 31 % der Projekte sind gescheitert!
+                    </p>
+                </blockquote>
+
+
+                <ul style="font-size:smaller">
+                    <li>In ca 80% der F&auml;lle waren schlechte Anforderungen mitschuldig!</li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h3>Anforderungsspezifikation</h3>
+                <figure>
+                    <img src="images/requirement-process-artifacts.png" class="plain" style="width:90%" />
+                    <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung
+                        14.0-3</figcaption>
+                </figure>
+
+            </section>
+
+            <section>
+                <h3>Anforderungen an Anforderungen</h3>
+                <ul>
+                    <li>Korrekt</li>
+                    <li>Eindeutig</li>
+                    <li>Vollst&auml;ndig</li>
+                    <li>Konsistent</li>
+                    <li>Klassifizierbar nach Wichtigkeit</li>
+                    <li>Klassifizierbar nach Stabilit&auml;t</li>
+                    <li>&Uuml;berp&uuml;fbar / testbar</li>
+                    <li>Verfolgbar</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Sprachliche Anforderungstemplates</h3>
+
+                <ul>
+                    Sprachtemplates helfen syntaktische und semantische Mehrdeutigkeiten zu reduzieren.
+                </ul>
+
+                <figure>
+                    <img src="images/language-template.png" class="plain" style="width:80%" />
+                    <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung
+                        19.0-1</figcaption>
+                </figure>
+                <ul>
+                    <li>muss (rechtlich bindend) </li>
+                    <li>soll (dringend empfohlen) </li>
+                    <li>sollte in Zukunft (zuk&uuml;ftige Anorderung)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Use-cases</h3>
+
+                <blockquote style="width:100%; margin-left:auto; margin-right:auto">
+                    Beschreibung einer Systeminteraktion aus Nutzersicht.
+                </blockquote>
+
+                <div style="float:left; width:50%">
+
+                    <figure>
+                        <img src="images/use-case.png" class="plain" style="width:70%" />
+                        <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering,
+                            Abbildung 5.9</figcaption>
+                </div>
+                <div style="float:left; width:50%">
+                    <ul>
+                        <li>Hilft Anforderungen zu identifizieren und zu kommunizieren</li>
+                        <li>Interaktion soll kurz sein (Kaffeepausentest)</li>
+                    </ul>
+            </section>
+
+
+            <section>
+                <h3>Klassifikation von Spezifikationsmethoden</h3>
+
+                <ul>
+                    <li>Informell, Semiformal, Formal</li>
+                    <li>Konstruktiv</li>
+                    <ul>
+                        <li>Verhalten wird anhand einer "abstrakten Maschine" definiert</li>
+                    </ul>
+                    <li>Deskriptiv</li>
+                    <ul>
+                        <li>Verhalten wird anhand von Eigenschaften definiert</li>
+                    </ul>
+                </ul>
+
+            </section>
+
+            <section>
+                <h3>Datenflussdiagramme</h3>
+                <img src="images/dataflow-library.png" class="plain" style="width:70%" />
+                <ul>
+                    <li>Semi-formale, konstruktive Spezifikationsmethode</li>
+                </ul>
+            </section>
+
+            <section class="center">
+                <h3>UML Sequenzdiagramme</h3>
+
+                <img src="images/sequence-diagram.png" class="plain" style="width:50%" />
+                <ul>
+                    <li>Konstruktive Spezifikationmethode</li>
+                    <li>Beschreibt Kommunikation zwischen Objekten</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Endliche Automaten (Finite State Machines)</h3>
+
+                <figure>
+                    <img src="images/fsm.png" class="plain" style="width:30%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering,
+                        Abbildung 5.12</figcaption>
+                </figure>
+
+                <ul>
+                    <li>Formal definierte, konstruktive Spezifikations&shy;methode</li>
+                    <li>Modelliert Zustands&uuml;berg&auml;nge</li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h3>Petri Netze</h3>
+                <figure>
+                    <img src="images/petri-net-simple-initial.png" class="plain" style="width:50%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Wikipedia - https://de.wikipedia.org/wiki/Petri-Netz</figcaption>
+                </figure>
+                <ul>
+                    <li>Konstruktive, formale Spezifikationsmethode</li>
+                    <li>Spezifiziert nichtdeterministische Prozesse</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>UML Klassendiagramme</h3>
+
+                <img src="images/ocl-example.png" class="plain" style="width:50%" />
+
+                <ul>
+                    <li>Deskriptive formal definierte Spezifikation</li>
+                    <li>Beschreibt Beziehungen zwischen Klassen/Entit&auml;ten</li>
+                    <li>Wichtigste Diagrammart in UML (und OO Entwicklung)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Logische Spezifikation</h3>
+
+                <blockquote style="width:100%">$\texttt{forall } x,y,z \; (x > y \texttt{ and } y > z \texttt{ implies }
+                    x > z)$
+                </blockquote>
+
+                <div style="width:50%; float:left">
+                    <figure>
+                        <img src="images/frege.jpg" class="plain" style="width:50%" />
+                        <figcaption style="font-size:small">Gottlob Frege: (Bild in Public Domain)</figcaption>
+                    </figure>
+                </div>
+                <div style="float:right; width:50%">
+                    <ul>
+                        <li> Deskriptive Spezifikation</li>
+                        <li>Beschreibt Eigenschaften mittels Formeln der Aussagenlogik</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Logische Spezifikation</h3>
+
+
+                Eigenschaft von Programm $P$ wird definiert als \[ \{\texttt{pre}(i_1, i_2, \ldots, i_n\} \\ P \\ \{\texttt{post}(o_1, o_2,
+                \ldots, o_m, i_1, i_2, \ldots, i_n\} \\ \]
+
+                <ul>
+
+                    <li>$\texttt{pre }$ ist eine
+                        <mark class="highlight">Vorbedingung</mark> (precondition)</li>
+                    <li>$\texttt{post }$ ist eine
+                        <mark class="highlight">Nachbedingung</mark> (postcondition)</li>
+                    <li>Bei Spezifikation von Klassen werden zus&auml;tzlich
+                        <mark class="highlight">Invarianten</mark> angegeben.</li>
+                </ul>
+
+
+            </section>
+            <section>
+                <h3>Umsetzung in UML: OCL</h3>
+
+                <div style="text-align:left">
+                    <img src="images/ocl-example.png" class="plain" style="width:80%; margin-left:auto; margin-right:auto" />
+                    <li style="font-size:x-small">Beispiel: Wikipedia (https://de.wikipedia.org/wiki/Object_Constraint_Language)</li>
+                </div>
+
+
+                <br/> Beispielformeln in OCL:
+                <ul style="font-size:smaller">
+                    <li>context Person inv: self.alter &ge; 0 </li>
+                    <li> context Person inv: self.eltern $\rightarrow$ forAll(e|e.alter>self.alter)</li>
+                </ul>
+            </section>
+
+
+
+            <section>
+                <h3>Hinweise zur Pr&uuml;fung</h3>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Relevant</h5>
+                    <ul>
+                        <li>Verstehen der Wichtigkeit / Zweck von Spezifikationen</li>
+                        <li>Kennen der wichtigen Dokumente und Spezifikationsmethoden </li>
+                        <ul>
+                            <li>Verstehen / Lesen der Spezifikationen / Diagrammen</li>
+                        </ul>
+                        <li>Einfache Klassendiagramme erstellen k&ouml;nnen</li>
+                    </ul>
+                </div>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Weniger relevant</h5>
+                    <ul>
+                        <li>Algebraische Spezifikationen</li>
+                        <li>Spezifikationen und Diagramme selber erstellen zu k&ouml;nnen (ausser Klassendiagramme) </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="center">
+                <h3>Design</h3>
+            </section>
+
+            <section>
+                <h3>Ziel eines Designs </h3>
+                <blockquote>
+                    Struktur so festzulegen, dass hohe Softwarequalit&auml;t erreicht werden kann.
+                    </li>
+                </blockquote>
+
+                <div style="text-align:left;width:80%;margin-left:auto;margin-right:auto">
+                    Wichtigstes Prinzip:
+                    <ul>
+                        <li> &Auml;nderungen erm&ouml;glichen</li>
+                        <ul>
+                            <li> Wahrscheinliche &Auml;nderungen sollten einfach zu implementieren sein. </li>
+                        </ul>
+                    </ul>
+                </div>
+
+            </section>
+
+
+            <section>
+                <h3>Modularit&auml;t</h3>
+
+                <div style="float:left;width:50%; vertical-align: top; ">
+
+                    <figure>
+                        <img src="./images/modules-low-coupling.svg" style="width:40%; float:center" />
+                    </figure>
+                    <p>Modular:</p>
+                    <ul style="clear:both">
+                        <li> Lose Kopplung</li>
+                        <li> Starke Bindung </li>
+                    </ul>
+                </div>
+                <div style="float:right;width:50%; vertical-align: top;">
+                    <figure>
+                        <img src="./images/modules-high-coupling.svg" style="width:40%; float:center" />
+                    </figure>
+                    <p>Nicht-modular</p>
+                    <ul style="clear:both">
+                        <li> Starke Kopplung</li>
+                        <li> Schwache Bindung </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section>
+                <h3>Uses Graph</h3>
+                <div style="float:left;width:50%">
+                    <img src="images/module-hierarchy.png" />
+                </div>
+                <div style="float:right;width:50%">
+                    <ul>
+                        <li>Uses Graph gibt &Uuml;berblick &uuml;ber die Beziehung zwischen Modulen</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section>
+                <h3> Uses Graph als Indikator der Designqualit&auml;t</h3>
+
+                <div style="float:left;width:50%;">
+                    <img src="images/module-high-fan-in.png" class="plain" />
+                    <br/>Gute Abstraktion
+                </div>
+                <div style="float:right;width:50%">
+                    <img src="images/module-high-fan-out.png" class="plain" /> Modul macht zu viel
+                </div>
+                <div style="display:inline-block">
+                    <div style="float:left;width:50%">
+                        <img src="images/module-simple-cycle.png" class="plain" />
+                        <br/>Zyklische Abh&auml;nigkeit
+                    </div>
+                    <div style="float:right;width:50%">
+                        <img src="images/module-simple-hierarchy.png" class="plain" /> Hierarchie
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <h3> Modulschnittstellen</h3>
+                <ul>
+                    <li> Schnittstelle beschreibt was Clients wissen m&uuml;ssen </li>
+                    <li>Abstrahiert Funktionalit&auml;t</li>
+                </ul>
+
+                <br/>
+                <div style="float:left;width:50%;margin-left:auto">
+                    <h5>Interface</h5>
+                    <figure>
+                        <img src="http://www.tractordata.com/photos/F000/107/107-td3t1.jpg" class="plain" />
+                        <figcaption style="font-size:x-small">source: tractordata.com</figcaption>
+                        <figure/>
+                </div>
+
+                <div style="float:right;width:50%;margin-right:auto">
+                    <h5>Implementation</h5>
+                    <figure>
+                        <img src="images/gearbox.jpg" class="plain" />
+                        <figcaption style="font-size:x-small">By
+                            <a href="//commons.wikimedia.org/wiki/User:Kozuch" title="User:Kozuch">Kozuch</a> -
+                            <span class="int-own-work" lang="en">Own work</span>,
+                            <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC
+                                BY-SA 3.0</a>,
+                            <a href="https://commons.wikimedia.org/w/index.php?curid=5575566">Link</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section>
+                <h3> Information Hiding</h3>
+
+                <blockquote>Komponenten die sich (wahrscheinlich)
+                    <mark class="highlight">&auml;ndern werden</mark> sollten immer hinter einem Interface vor dem Client
+                    versteckt werden.</blockquote>
+                <ul>
+                    <li>Wird in OO Sprachen durch Kapselung umgesetzt.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Wichtige Beispiele von Modulen</h3>
+                <ul>
+                    <li>Prozedur / Funktion / Methode</li>
+                    <li>Abstrakte Datentypen</li>
+                    <li>Klasse / Objekt</li>
+                    <li>Pakete / (Java 9) Module </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>OO Design</h3>
+                <blockquote>
+                    Umsetzung von Information Hiding via Abstrakter Datentypen / Objekte
+                </blockquote>
+
+                <div style="text-align:left">
+                    Wichtige Eigenschaften
+                    <ul>
+
+                        <li>Objekte sind zur Laufzeit eindeutig identifiziert</li>
+                        <ul>
+                            <li>K&ouml;nnen Nachrichten und Requests empfangen.</li>
+                        </ul>
+                        <li> Objekte k&ouml;nnen selbst wieder Objekte enthalten. </li>
+                        <li> Objektorientierter Code kann Polymorph sein.</li>
+                        <li>Implementation kann vererbt werden</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section>
+                <h3> Einige Wichtige OO Design Prinzipien (SOLID)</h3>
+
+                <ul>
+                    <li>
+                        <mark class="highlight">S</mark>ingle Responsibility Prinzip</li>
+                    <li>
+                        <mark class="highlight">O</mark>pen closed Prinzip</li>
+                    <li>
+                        <mark class="highlight">L</mark>iskovsches Substitutionsprinzip</li>
+                    <li>
+                        <mark class="highlight">I</mark>nterface Segregation</li>
+                    <li>
+                        <mark class="highlight">D</mark>ependency Inversion</li>
+                    <ul>&nbsp</ul>
+                    <li>Gesetz von Demeter (nicht teil von SOLID)</li>
+                </ul>
+
+
+                <blockquote>Designprinzipien die auf Entkopplung und Modularisierung abzielen um sp&auml;tere &Auml;nderungen
+                    zu erm&ouml;glichen.</blockquote>
+
+            </section>
+
+            <section>
+                <h3>Design Patterns</h3>
+                <blockquote style="width:100%">
+                    Design Pattern: Bew&auml;hrte L&ouml;sungsans&auml;tze f&uuml;r wiederkehrende Designprobleme.
+                </blockquote>
+
+                <div style="float:left;width:50%">
+                    <img src="https://www.pearsonhighered.com/assets/bigcovers/0/2/0/1/0201633612.jpg" style="width:50%" class="plain" />
+                </div>
+                <div style="float:right;width:50%">
+
+                    <ul>
+                        <li>Bauteil f&uuml;r den Designer</li>
+                        <li>Vereinfacht Kommunikation</li>
+                        <li>Vereinfacht Lesen/Verstehen von Code</li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Hinweise zur Pr&uuml;fung</h3>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Relevant</h5>
+                    <ul>
+                        <li>Uses Beziehungen</li>
+                        <li>Interfaces und Information Hiding</li>
+                        <li>Abstrakte Datentypen / Klassen und Objekte</li>
+                        <li>Eigenschaften von OO Systemen</li>
+                        <li>OO Designprinzipien</li>
+                        <li>Design Patterns</li>
+                </div>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Weniger relevant</h5>
+                    <ul>
+                        <li>Optionen / Exceptions</li>
+                        <li>Textuelle und Graphische Modulbeschreibung</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="center">
+                <h3>Verifikation</h3>
+            </section>
+
+
+
+            <section>
+                <h3>Validierung und Verifikation</h3>
+
+                <div style="float:left; width:50%; text-align:left">
+                    <h4>Validierung:</h4>
+                    <ul>
+                        <li>Bauen wir das richtige Produkt?</li>
+                        <li>K&ouml;nnen Nutzer die festgelegten Ziele erreichen?</li>
+                    </ul>
+                </div>
+                <div style="float:right; width:50%; text-align:left">
+                    <h4>Verifikation:</h4>
+                    <ul>
+                        <li>Bauen wir das Produkt richtig? </li>
+                        <li>Erf&uuml;llt Produkt spezifizierte Eigenschaften ?</li>
+                    </ul>
+                </div>
+                <blockquote style="display: inline-block">Wichtigste Technik: Testen</blockquote>
+            </section>
+
+
+            <section>
+                <h3> Testing in the small vs Testing in the large</h3>
+
+                <figure>
+                    <img src="images/test-progression-small-large.png" class="plain" />
+                    <figcaption style="font-size:x-small">Abbildung angelehnt an: Pfleeger & Atlee, Software Engineering,
+                        Abbildung 8.3</figcaption>
+                </figure>
+            </section>
+
+
+            </section>
+
+            <section>
+                <h3>2 Unit Tests, 0 Integrationstests</h3>
+                <figure>
+                    <iframe src='https://gfycat.com/ifr/HotOrangeCoypu' frameborder='0' scrolling='no' width='500' height='500'></iframe>
+                    <figcaption style="font-size:x-small">Quelle: https://gfycat.com/HotOrangeCoypu</figcaption>
+                </figure>
+            </section>
+
+
+            <section>
+                <h3>Black vs. White box testing</h3>
+                <div style="float:left; width:50%">
+                    <h5> White box Testing </h5>
+                    <blockquote style="width:100%">
+                        Tests werden von Programmstruktur bgeleitet
+                    </blockquote>
+
+                    <ul>
+                        <li>Kriterium: M&ouml;glichst vollst&auml;ndige &Uuml;berdeckung vom Code</li>
+                    </ul>
+                </div>
+                <div style="float:right; width:50%">
+                    <h5> Black box Testing</h5>
+                    <blockquote style="width:100%">
+                        Tests werden von Spezifikationen abgeleitet
+                    </blockquote>
+                    <ul>
+                        <li>Kriterium: M&ouml;glichst gute Abdeckung der spezifizierten Anforderungen</li>
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+            <section>
+                <h3>&Auml;quivalenzklasse und Grenzf&auml;lle</h3>
+                <blockquote style="width:100%">
+                    Teststrategie: 1 Test pro &Auml;quivlanzklasse. Grenzf&auml;lle Testen.
+                </blockquote>
+                <div style="text-align:left">
+                    <h4>Beispiel</h4>
+                    <div style="float:left;width:50%">
+                        <pre><code data-trim>
+                            if (x > y) then
+                                S1;
+                            else
+                                S2;
+                            end if
+                            </code></pre>
+                    </div>
+                    <div style="float:right;width:50%">
+                        <ul>
+                            <li>&Auml;quivalenzklassen</li>
+                            <ul>
+                                <li>x &gt; y</li>
+                                <li>x &lt;= y</li>
+                            </ul>
+                            <li>Grenzfall</li>
+                            <ul>
+                                <li> x = y</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <ul>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Integrationstest</h3>
+                <blockquote>
+                    Hilfkonstrukte "Stubs" und "Driver" ben&ouml;tigt
+                </blockquote>
+
+                <img src="images/stub-and-driver.png" class="plain" />
+                <ul>
+
+                    <li>Am einfachsten sind usees Hierarchien zu testen</li>
+                    <li>Bottom-up vs. Top Down Strategien m&ouml;glich.</li>
+
+                </ul>
+            </section>
+
+
+            <section>
+                <h3>Funktionstest / Systemtest</h3>
+
+                <div style="float:left; width:40%">
+                    <figure>
+                        <img src="images/radio-therapy.jpg" class="plain" />
+                        <figcaption style="font-size:x-small">By Michael Goodyear - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61844004</figcaption>
+                    </figure>
+                </div>
+                <div style="float:right; width:60%">
+                    <ul>
+                        <li>Testen des Ganzen Systems gegen die Funktionalen Anforderungen</li>
+                        <ul>
+                            <li>Testumgebung soll Kundenumgebung simulieren</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Hinweise zur Pr&uuml;fung</h3>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Relevant</h5>
+                    <ul>
+                        <li>Black box - White box tests</li>
+                        <li>&Uuml;berdeckungskriterien / Kontrollflussgraph</li>
+                        <li>Integrationstests / Stubs and Drivers</li>
+                        <ul>
+                            <li>Bottom up/ Top down</li>
+                        </ul>
+                        <li>&Auml;quivalenzklassen und Grenzf&auml;lle</li>
+                    </ul>
+                </div>
+                <div style="float:left; width:50%; font-size:smaller">
+                    <h5>Weniger relevant</h5>
+                    <ul>
+                        <li>Formale Definitionen von Testmenge, Fehler, etc.</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            </div>
+        </div>
+
+
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                center: false,
+
+                chalkboard: {
+                    src: "chalkboard.json",
+                    readOnly: undefined,
+                    transition: 800,
+                    theme: "whiteboard",
+                    //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                    //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                    // configuration options for notes canvas and chalkboard
+                    color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                    background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                    pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+                },
+                dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                { src: 'plugin/math/math.js', async: true },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/chalkboard/chalkboard.js'
+                },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+                ],
+                math: {
+                    // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'
+                },
+                keyboard: {
+                    67: function () {
+                        RevealChalkboard.toggleNotesCanvas()
+                    }, // toggle notes canvas when 'c' is pressed
+                    66: function () {
+                        RevealChalkboard.toggleChalkboard()
+                    }, // toggle chalkboard when 'b' is pressed
+                    46: function () {
+                        RevealChalkboard.clear()
+                    }, // clear chalkboard when 'DEL' is pressed
+                    8: function () {
+                        RevealChalkboard.reset()
+                    }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                    68: function () {
+                        RevealChalkboard.download()
+                    }, // downlad recorded chalkboard drawing when 'd' is pressed
+                },
+            });
+        </script>
+</body>
+
+</html>
