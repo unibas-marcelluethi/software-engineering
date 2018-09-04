@@ -7,6 +7,10 @@ Departement Mathematik und [Informatik](http://informatik.unibas.ch/), Universit
 
 Dozent: Marcel Lüthi (<marcel.luethi@unibas.ch>)
 
+Tutor: Michael Plüss (<m.pluess@unibas.ch>)
+
+Tutor: Jan Schönholz (<jan.schoenholz@unibas.ch>)
+
 ## Kursbeschreibung
 
 Die Vorlesung gibt eine erste Einführung in das Software Engineering. 
