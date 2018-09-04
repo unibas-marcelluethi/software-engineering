@@ -26,7 +26,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | 1  | Einführung / Administratives  | |
 |    | Was ist Software engineering  | |
 | 2  | Kurze Geschichte des Software Engineerings  | |
-|    | Eigenschaften von Software / Software Qualitätsmerkmale | [Zu Woche 2](./week2/index.html)|
+|    | Eigenschaften von Software / Software Qualitätsmerkmale | [Zu Woche 2](https://unibas-sweng.github.io/software-engineering-private/week2/index.html)|
 | 3  | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
 | 4  | Softwarearchitektur  | |

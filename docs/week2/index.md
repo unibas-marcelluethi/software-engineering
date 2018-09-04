@@ -2,9 +2,9 @@
 
 # Folien und Artikel
 
-* Eigenschaften von Software [Video](https://drive.switch.ch/index.php/s/8ZncsAs3acnZ45b) [Slides](../slides/software-nature.html)
+* Eigenschaften von Software [Video](https://drive.switch.ch/index.php/s/8ZncsAs3acnZ45b) [Slides](./slides/software-nature.html)
 * Einführung: Software Qualität [Artikel](articles/software-qualities-introduction.html)
-* Software Qualitätsmerkmale im Detail [Video](https://drive.switch.ch/index.php/s/S4dDqY5HAmTRKnw) [Slides](../slides/software-qualities.html)
+* Software Qualitätsmerkmale im Detail [Video](https://drive.switch.ch/index.php/s/S4dDqY5HAmTRKnw) [Slides](./slides/software-qualities.html)
 
 
 # Studium
