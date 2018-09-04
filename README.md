@@ -7,7 +7,7 @@ Departement Mathematik und [Informatik](http://informatik.unibas.ch/), Universit
 
 Dozent: Marcel Lüthi (<marcel.luethi@unibas.ch>)
 
-Tutor: Michael Plüss (<m.pluess@unibas.ch>, Github: <https://github.com/MrStranded>)
+Tutor: Michael Plüss (<m.pluess@unibas.ch>, Github: <https://github.com/MichaelPluess>)
 
 Tutor: Jan Schönholz (<jan.schoenholz@unibas.ch>, Github: <https://github.com/schoenja>)
 
