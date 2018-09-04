@@ -5,13 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Was ist Software-engineering</title>
+	<title>Software Engineering</title>
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/solarized.css">
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
 
 	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -20,7 +20,7 @@
 		var link = document.createElement('link');
 		link.rel = 'stylesheet';
 		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
 </head>
@@ -30,25 +30,30 @@
 		<div class="slides">
 
 			<section class="center">
-				<h2>
-					Was ist Software Engineering?
-				</h2>
-				<p>
-					<small> Marcel L&uuml;thi<br>
-							Departement Mathematik und Informatik </small>
-				</p>
-				<p>
-					<img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
-				</p>
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Was ist Software Engineering
+
+					</h1>
+					<h3>
+						<text style="text-decoration:underline">Marcel</text> L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+				</div>
 			</section>
 
-
 			<section>
-				<h3>Software engineering</h3>
+				<h1>Software engineering</h1>
 
 
 				<blockquote cite="https://google.com">
-					The application of a systematic, disciplined, quantifiable approach to the development, operation, and maintanance of software.
+					The application of a <mark class="highlight"> systematic</mark>, <mark class="highlight"> disciplined </mark> and <mark class="highlight"> quantifiable</mark> approach to the development, operation, and maintanance of software.
 
 					<p style="text-align:right"> <small> IEEE Standard Glossary of Software Engineering Terminology </small> </p>
 
@@ -57,10 +62,11 @@
 			</section>
 
 			<section>
-				<h3>Software engineering</h3>
+				<h1>Software engineering</h1>
+
 
 				<blockquote cite="https://google.com">
-					<p> The multi-person construction of multi-version software. </p>
+					<p> The <mark class="highlight"> multi-person</mark> construction of <mark class="highlight"> multi-version</mark> software. </p>
 
 					<p style="text-align:right"> <small> David Parnas, 1978 </small> </p>
 				</blockquote>
@@ -68,9 +74,9 @@
 			</section>
 
 			<section>
-				<h3>Programmieren vs. Software engineering </h3>
+				<h1>Programmieren vs. Software engineering </h1>
 				<div style="float:left;width:50%">
-					<img src="images/programmer.png" style="width:30%" />
+					<img src="../../slides/images/programmer.png" style="width:30%" class="plain"/>
 					<ul>
 						<li>Programmieren</li>
 						<ul>
@@ -79,7 +85,7 @@
 					</ul>
 				</div>
 				<div style="float:right;width:50%">
-					<img src="images/discussing.png" style="width:40%" />
+					<img src="../../slides/images/discussing.png" style="width:40%; " class="plain"/>
 					<ul>
 						<li>Software-engineering</li>
 						<ul>
@@ -87,11 +93,12 @@
 						</ul>
 					</ul>
 				</div>
-				<br/>
-				<blockquote cite="http://dl.acm.org/ft_gateway.cfm?id=808431&type=pdf&CFID=795406671&CFTOKEN=81824403" style="font-size:x-large;clear:both">
+
+
+				<div style="font-size:x-large; clear:both; display:inline-block; margin-top:1cm; width:100%" class="framebox">
 					DeRemer, Kron<br>"Programming-in-the large versus programming-in-the-small". <br/> Proc. of the international conference
 					on Reliable software. (1975)
-				</blockquote>
+				</div>
 			</section>
 
 			<!--
@@ -120,26 +127,27 @@
 		-->
 
 			<section>
-				<h3> Software engineering und System Design</h3>
+				<h1> Software Engineering und System Design</h1>
 
-				<div style="float:left; width: 60%">
+				<div style="float:left; width: 65%">
 
 					<ul>
-						<li> Software engineering immer Teil eines Systems</li>
+						<li> SE immer Teil eines Systems</li>
 
 						<ul>
 							<li>Sehr interdisziplin&auml;r</li>
 						</ul>
-						<li>Kompromisse von allen Seiten verlangt</li>
+						<li>Kompromisse nötig</li>
 						<ul>
-							<li>Was wird in Hardware und Software implementiert?</li>
-							<li>Was wird automatisiert, was manuell gemacht</li>
+							<li>Implementation in Hardware oder Software?</li>
+							<li>Wieviel wird automatisiert?</li>
+							<li> ... </li>
 						</ul>
 					</ul>
 				</div>
-				<div style="float:right; width: 40%; vertical-align:middle">
+				<div style="float:right; width: 35%; vertical-align:middle">
 					<figure>
-						<img src="images/radio-therapy.jpg" />
+						<img src="../../slides/images/radio-therapy.jpg" class="plain" />
 						<figcaption style="font-size:x-small">By Michael Goodyear - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61844004</figcaption>
 					</figure>
 				</div>
@@ -147,45 +155,45 @@
 			</section>
 
 			<section>
-				<h3>Anforderungen an Software-Ingenieure</h3>
+				<h1>Anforderungen an Software-Ingenieure</h1>
 
 				<div style="width:100%">
 					<ul>
 						<li> Gute Programmierkenntnisse </li>
 						<ul>
-							<li> Kenntnisse in Algorithmen und Datenstrukturen </li>
+							<li>inkl. Algorithmen und Datenstrukturen </li>
 						</ul>
-						<li> Kann "im grossen" programmieren</li>
+						<li> "Im grossen" programmieren können</li>
 						<ul>
-							<li> Kennt sich mit Design/Architektur aus</li>
+							<li> Kenntnisse Design/Architektur</li>
 						</ul>
-						<li> Kann vage Requirements in genaue Spezifikationen &uuml;bersetzen </li>
-						<li> Ist offen f&uuml;r Ver&auml;nderungen </li>
-						<li> Kann zwischen Abstraktionsebenen wechseln </li>
-						<li> Logisches (rationales) Denken </li>
+						<li> Fähigkeit, vage Requirements in genaue Spezifikationen zu &uuml;bersetzen </li>
+						<li> Offenheit gegenüber Veränderungen </li>
+						<li> Wechseln zwischen Abstraktionsebenen</li>
 						<li> Kommunikationsf&auml;higkeit </li>
 					</ul>
 				</div>
 			</section>
 
 			<section>
-				<h3> Software Lebenszyklus </h3>
+				<h1> Software Lebenszyklus </h1>
 
 				<blockquote> Softwareentwicklung ist nicht nur Programme schreiben </blockquote>
 
 				<div style="float:left; width: 100%">
-					<img src="images/waterfall.png" style="width:70%" class="plain" />
+					<img src="../../slides/images/waterfall.png" style="width:70%" class="plain" />
 				</div>
 
 			</section>
 
 			<section>
-				<h3> Beziehung zu anderen Bereichen der Informatik </h3>
-				<img src="images/connections.png" style="width:70%" class="plain" />
+				<h1> Beziehung zu anderen Bereichen der Informatik </h1>
+				<img src="../../slides/images/connections.png" style="width:70%" class="plain" />
 			</section>
 
+			<!--
 			<section>
-				<h3> Unit tests </h3>
+				<h1> Unit tests </h1>
 				<ul>
 					<li>
 						Was sind neben dem Programmieren die Hauptt&auml;tigkeiten eines Softwareentwicklers?
@@ -202,7 +210,7 @@
 					</li>
 				</ul>
 			</section>
-
+-->
 		</div>
 	</div>
 
@@ -211,8 +219,8 @@
 
 
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
+	<script src="../../slides/lib/js/head.min.js"></script>
+	<script src="../../slides/js/reveal.js"></script>
 
 	<script>
 		file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
@@ -230,24 +238,24 @@
 				//toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
 				// configuration options for notes canvas and chalkboard
 				color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
-				background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
-				pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+				background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+				pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
 			},
 			dependencies: [{
-				src: 'plugin/markdown/marked.js'
+				src: '../../slides/plugin/markdown/marked.js'
 			},
 			{
-				src: 'plugin/markdown/markdown.js'
+				src: '../../slides/plugin/markdown/markdown.js'
 			},
 			{
-				src: 'plugin/notes/notes.js',
+				src: '../../slides/plugin/notes/notes.js',
 				async: true
 			},
 			{
-				src: 'plugin/chalkboard/chalkboard.js'
+				src: '../../slides/plugin/chalkboard/chalkboard.js'
 			},
 			{
-				src: 'plugin/highlight/highlight.js',
+				src: '../../slides/plugin/highlight/highlight.js',
 				async: true,
 				callback: function () {
 					hljs.initHighlightingOnLoad();

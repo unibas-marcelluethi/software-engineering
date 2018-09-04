@@ -5,13 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Geschichte des Software-Engineerings</title>
+	<title>Software Engineering</title>
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/solarized.css">
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
 
 	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -20,7 +20,7 @@
 		var link = document.createElement('link');
 		link.rel = 'stylesheet';
 		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
 </head>
@@ -30,25 +30,29 @@
 		<div class="slides">
 
 			<section class="center">
-				<h3>
-					Kurze Geschichte des Software-Engineerings
-				</h3>
-				<p>
-					<small> Marcel L&uuml;thi<br>
-						Departement Mathematik und Informatik </small>
-				</p>
-				<p>
-					<img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
-				</p>
+				<div class="titleblock">
 
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Geschichte des Software Engineerings
+
+					</h1>
+					<h3>
+						<text style="text-decoration:underline">Marcel</text> L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+				</div>
 			</section>
-
-
+			
 			<section>
-				<h3>Weshalb braucht es historischen Kontext?</h3>
+				<h1>Weshalb braucht es historischen Kontext?</h1>
 
 				<ul>
-					<li> Wer die Geschichte nicht kennt wird sie wiederholen.
+					<li> Wer die Geschichte nicht kennt, wird sie wiederholen.
 					</li>
 					<li> Innovation l&ouml;st immer ein Problem</li>
 					<ul>
@@ -65,7 +69,7 @@
 
 
 			<section>
-				<h3>Vor 1950 </h3>
+				<h1>Vor 1950 </h1>
 
 				<div style="float:left; text-align:left;width:60%;">
 					<ul>
@@ -77,28 +81,29 @@
 							<li> Beispiel: L&ouml;sen einer Differentialgleichung </li>
 						</ul>
 						<li> Programmierer waren meistens Physiker </li>
-						<li>1:1 zwischen Programmierer und Computer </li>
 					</ul>
 				</div>
 
 				<div style="float:right; text-align:center;width:40%;">
 					<figure>
-						<img src="images/z3.jpg" class="plain" style="width:100%" />
+						<img src="../../slides/images/z3.jpg" class="plain" style="width:100%" />
 						<figcaption style="font-size:x-small">By Venusianer at the German language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3632073</figcaption>
 					</figure>
 				</div>
 
+				<blockquote style="display:inline-block">
+						1:1 zwischen Programmierer und Computer
+				</blockquote>
 			</section>
 
 			<section>
-				<h3>Vor 1950 </h3>
-				<ul>
-					<li>
-						Programmiersprachen:</li>
+				<h1>Vor 1950 </h1>
+				<div style="text-align:left; margin-left:5%">
+						Programmiersprachen:
 					<ul>
 						<li> Haupts&auml;chlich Assembler </li>
 					</ul>
-				</ul>
+			</div>
 
 				<pre><code data-trim data-noescape>
 					FACTO    CSECT
@@ -172,7 +177,7 @@
 
 
 			<section>
-				<h3>1950-1960 </h3>
+				<h1>1950-1960 </h1>
 
 				<div style="float:left; text-align:left;width:70%;">
 					<ul>
@@ -192,23 +197,29 @@
 
 				<div style="float:left; text-align:center;width:30%;">
 					<figure>
-						<img src="images/IBM704.jpg" class="plain" style="width:100%" />
+						<img src="../../slides/images/IBM704.jpg" class="plain" style="width:100%" />
 						<figcaption style="font-size:x-small">By NASA - Great Images in NASA Description, Public Domain, https://commons.wikimedia.org/w/index.php?curid=6455009</figcaption>
 					</figure>
 				</div>
 
+				<blockquote style="display:inline-block">
+						Anforderungen müssen kommuniziert werden. 
+				</blockquote>
+
+
 			</section>
 
 			<section>
-				<h3>1950 - 1960</h3>
-				<ul>
-					<li>
-						Programmiersprachen:</li>
+				<h1>1950 - 1960</h1>
+				
+				<div style="text-align:left; margin-left:5%">		
+				Programmiersprachen <br/>
+
 					<ul>
 						<li> Fortran, Lisp, Cobol </li>
 					</ul>
-				</ul>
-
+				
+			</div>
 				<pre><code data-trim data-noescape>
 							(defun fact (n)
 							(if (< n 2)
@@ -224,34 +235,33 @@
 						 10 FACT=FACT*I
 							END
 					   </code></pre>
-
+					   
 			</section>
 
 			<section>
-				<h3> 1960-1970</h3>
+				<h1> 1960-1970</h1>
 				<div style="float:left; text-align:left;width:70%;">
 					<ul>
 						<li> Erste grosse, kommerzielle Softwaresysteme</li>
-						<li> Einsicht:
-							<mark class="highlight">Grosse Systeme sind schwierig</mark> zu bauen </li>
-
+						<li> <mark class="highlight">Grenzen des Programmierens werden ersichtlich.</mark>
 						<ul>
-							<li> Schwierigkeiten Programmiertechniken zu skalieren </li>
-							<li> Begriff der Softwarekrise </li>
+							<li> Programmiertechniken skalieren nicht</li>							
 						</ul>
+						<li> Begriff der Softwarekrise </li>
 						<li> Software Engineering wird erfunden </li>
 					</ul>
 				</div>
 
 				<div style="float:left; text-align:center;width:30%;">
 					<figure>
-						<img src="images/IBM360.jpg" class="plain" style="width:100%" />
+						<img src="../../slides/images/IBM360.jpg" class="plain" style="width:100%" />
 						<figcaption style="font-size:x-small">By ArnoldReinhold - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=47096462</figcaption>
 					</figure>
 				</div>
+
 			</section>
 			<section>
-				<h3> 1960-1970</h3>
+				<h1> 1960-1970</h1>
 
 				<div style="float:left; text-align:left;width:100%;">
 					<ul>
@@ -264,10 +274,17 @@
 						</ul>
 					</ul>
 				</div>
+
+				<blockquote style="display:inline-block">
+						Kommunikation/Informationsfluss und Modularisierung werden wichtig. 
+
+				</blockquote>
+
+
 			</section>
 
 			<section>
-				<h3> 1960-1970</h3>
+				<h1> 1960-1970</h1>
 
 				<div style="float:left; text-align:left;width:100%;">
 					<ul>
@@ -282,14 +299,15 @@
 				</div>
 			</section>
 			<section>
-					<h3>1960 - 1970</h3>
-					<ul>
-						<li>
-							Programmiersprachen:</li>
+					<h1>1960 - 1970</h1>
+
+
+					<div style="text-align:left; margin-left:5%">		
+							Programmiersprachen <br/>
 						<ul>
 							<li> Simula, Basic, PL/I </li>
 						</ul>
-					</ul>
+			</div>
 	
 					<pre><code data-trim data-noescape>
 							factorial: procedure (N) returns (fixed decimal (30));
@@ -310,44 +328,43 @@
 	
 
 			<section>
-				<h3> 1970-1990</h3>
+				<h1> 1970-1990</h1>
 				<div style="float:left; text-align:left;width:70%;">
 					<ul>
 						<li>Stetiger Fortschritt</li>
 						<li> Bessere Sprachen / Tools </li>
+						<ul>
 						<li> Mainstream: Strukturierte Programmierung </li>
 						<li> Forschung: Objektorientierte Programmierung </li>
-						<li> Besseres Verst&auml;ndnis der Prozesse </li>
+					</ul>
+						<li> Besseres Verst&auml;ndnis der Prozesse </li>						
 					</ul>
 				</div>
 
 				<div style="float:left; text-align:center;width:30%;">
 					<figure>
-						<img src="images/ibm-xt.jpg" class="plain" style="width:100%" />
+						<img src="../../slides/images/ibm-xt.jpg" class="plain" style="width:100%" />
 						<figcaption style="font-size:x-small">By ArnoldReinhold - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=47096462</figcaption>
 					</figure>
 				</div>
 
-				<blockquote class="fragment" style="display:inline-block">
+				<blockquote style="display:inline-block">
 					<p>
-						Einsicht: Es ist schwierig!
+						Einsicht: Es ist schwierig! (no silver bullet!) <br/>						
 					</p>
-					<ul>
-						<li> Fred Brooks: No Silver Bullet </li>
-					</ul>
+					
 				</blockquote>
 
 
 			</section>
 			<section>
-					<h3>1970 - 1990</h3>
-					<ul>
-						<li>
-							Programmiersprachen:</li>
+					<h1>1970 - 1990</h1>
+					<div style="text-align:left; margin-left:5%">		
+							Programmiersprachen <br/>
 						<ul>
-							<li> C, Smalltalk, ML </li>
-						</ul>
+						<li> C, Smalltalk, ML </li>					
 					</ul>
+					</div>
 	
 					<pre><code data-trim data-noescape>
 							int factorial(int n) {
@@ -366,7 +383,7 @@
 				</section>
 
 			<section>
-				<h3> 1990 - Heute</h3>
+				<h1> 1990 - Heute</h1>
 
 				<div style="float:left; text-align:left;width:100%;">
 					<ul>
@@ -374,14 +391,19 @@
 						<ul>
 							<li>Computer sind g&uuml;nstig</li>
 							<li> Viele (Millionen) Benutzer </li>							
-							<li>Time to market wird wichtig</li>
-							<li> Konsequenz: Agile Methoden</li>
+							<li>Time to market wird wichtig</li>					
 						</ul>
 
 						<li> Open source Entwicklung </li>
 						<li> Programmiersprachen und Tooling verbessern sich enorm</li>
 					</ul>
 				</div>
+
+				<blockquote style="display:inline-block">
+						Agile Methoden statt schwerfälliger Prozesse.
+					</blockquote>
+	
+
 				<!--
 				<div style="float:left; text-align:center;width:100%;">
 					<figure>
@@ -393,13 +415,12 @@
 			</section>
 
 			<section>
-					<h3>1990 - Heute</h3>
-					<ul>
-						<li>
-							Programmiersprachen:</li>
+					<h1>1990 - Heute</h1>
+					<div style="text-align:left; margin-left:5%">		
+				
+							Programmiersprachen <br/>
 						<ul>
 							<li> Java, Python, Haskell </li>
-						</ul>
 					</ul>
 	
 					<pre><code data-trim data-noescape>
@@ -418,26 +439,32 @@
 				</section>
 
 			<section>
-				<h3>Heute - ???</h3>
+				<h1>Heute - ???</h1>
 
 				<div style="float:left; text-align:left;width:60%;">
 					<ul>
 						<li> Software is eating the world </li>
-						<li> Big Data (Distributed computing)</li>
-						<li> Machine Learning / Artificial intelligence</li>
-						<li> Internet of things (Security) </li>
+						<li> Big Data </li> 
+						<ul><li>Distributed computing</li></ul>
+						<li> Machine Learning / KI </li>
+						<ul>
+							<li>Probabilistisches und differentielles Programmieren</li>
+						</ul>
+						<li> Internet of Things</li>
+						<ul><li>Sicherheit?</li></ul>
 					</ul>
 				</div>
 
 				<div style="float:left; text-align:center;width:40%;">
 					<figure>
-						<img src="images/bigdata.jpg" class="plain" style="width:100%" />
-						<figcaption style="font-size:x-small">By Intel Free Press - Bus wrapped with SAP Big Data parked outside IDF13, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=29454745</figcaption>
+						<img src="../../slides/images/ai.png" class="plain" style="width:100%" />
+						<figcaption style="font-size:xx-small">Luckey_sun, use under CC BY-SA 2.0 <br/> available at https://www.flickr.com/photos/75279887@N05/6914441342</figcaption>
 					</figure>
 				</div>
 			</section>
 
 
+			<!--
 			<section>
 
 				<h3> Unit tests </h3>
@@ -449,14 +476,17 @@
 				</ul>
 
 			</section>
+			-->
 		</div>
 	</div>
 
 
 
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
+
+
+	<script src="../../slides/lib/js/head.min.js"></script>
+	<script src="../../slides/js/reveal.js"></script>
 
 	<script>
 		file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
@@ -474,24 +504,24 @@
 				//toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
 				// configuration options for notes canvas and chalkboard
 				color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
-				background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
-				pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+				background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+				pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
 			},
 			dependencies: [{
-				src: 'plugin/markdown/marked.js'
+				src: '../../slides/plugin/markdown/marked.js'
 			},
 			{
-				src: 'plugin/markdown/markdown.js'
+				src: '../../slides/plugin/markdown/markdown.js'
 			},
 			{
-				src: 'plugin/notes/notes.js',
+				src: '../../slides/plugin/notes/notes.js',
 				async: true
 			},
 			{
-				src: 'plugin/chalkboard/chalkboard.js'
+				src: '../../slides/plugin/chalkboard/chalkboard.js'
 			},
 			{
-				src: 'plugin/highlight/highlight.js',
+				src: '../../slides/plugin/highlight/highlight.js',
 				async: true,
 				callback: function () {
 					hljs.initHighlightingOnLoad();
