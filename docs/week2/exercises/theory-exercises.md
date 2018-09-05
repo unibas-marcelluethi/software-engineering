@@ -25,8 +25,8 @@ Literatur:
 * Was sind die Unterschiede zwischen Portabilität und Wiederverwendbarkeit?
 * Zeichnen Sie grafisch die Zusammenhänge zwischen den verschiedenen Qualitätsmerkmalen auf. Die Qualitätsmerkmale werden als 
 Knoten dargestellt, und wenn ein Qualitätsmerkmal ein anderes beeinflusst, wird dies durch einen Pfeil dargestellt. 
-Was können Sie aus dem resultierenden Graphen ableiten?
-Gibt es Zyklen im Graph? Was bedeuten diese?
+    * Was können Sie aus dem resultierenden Graphen ableiten?
+    * Gibt es Zyklen im Graph? Was bedeuten diese?
 
 
 ### 3.2 Messbarkeit
