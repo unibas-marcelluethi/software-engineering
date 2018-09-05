@@ -1,5 +1,10 @@
 # Woche 1: Einführung
 
+
+# Übungen
+
+* [Setup von Ganttproject](./exercises/ganttproject-setup.html)
+
 # Slides 
 
 * Einführung in den Kurs 
@@ -9,6 +14,7 @@
 * Was ist Software Engineering? 
     * Slides: [online](./slides/what-is-software-engineering.html), [Druckversion](./slides/what-is-software-engineering.html?print-pdf)
 
+*Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 
 # Weiterführende Literatur
 * Ghezzi C., Jazayeri M., Mandioli D. *Fundamentals of Software Engineering (2nd Edition)* (Kapitel 1)
