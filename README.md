@@ -15,54 +15,44 @@ Aktuelle Methoden und Tools werden im Rahmen eines vorlesungsbegleitenden Projek
 
 ### Projekt
 
-Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://github.com/unibas-sweng/ganttproject) dient als Grundlage für die praktischen 
+Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://github.com/unibas-sweng/ganttproject-hs18) dient als Grundlage für die praktischen 
 übungen. Die Studierenden implementieren in Gruppen kleine Änderungen am Projekt, studieren den Source Code und implementieren eigene Erweiterungen. 
 
 
 ## Programm (Änderungen vorbehalten)
- 
-| Woche | Thema | Bemerkung |
+
+*Klicken Sie auf eine Woche um zu den entsprechenden Ressourcen zu gelangen*. 
+
+|  | Themen | Bemerkungem |
 | ------| ----- | --------- |
-| 1  | Einführung / Administratives  | |
+| [Woche 1]((https://unibas-sweng.github.io/software-engineering-private/week1/index.html))  | Einführung / Administratives  | |
 |    | Was ist Software engineering  | |
-| 2  | Kurze Geschichte des Software Engineerings  | |
-|    | Eigenschaften von Software / Software Qualitätsmerkmale | [Zu Woche 2](https://unibas-sweng.github.io/software-engineering-private/week2/index.html)|
-| 3  | Prinzipien des Software engineerings   | |
+| [Woche 2](https://unibas-sweng.github.io/software-engineering-private/week2/index.html)  | Kurze Geschichte des Software Engineerings  | |
+|    | Eigenschaften von Software ||
+|    |  Software Qualitätsmerkmale | | 
+| Woche 3  | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
-| 4  | Softwarearchitektur  | |
+| Woche 4  | Softwarearchitektur  | |
 |    | Modulstruktur  | |
-| 5  | Moduldesign |
+| Woche 5  | Moduldesign |
 |    | OO Design  | |
 |    | UML (statische Diagramme)  | | 
-| 6  | OO Design Prinzipien (SOLID) | |
+| Woche 6  | OO Design Prinzipien (SOLID) | |
 |    | OO Design Heuristiken   | |
-| 7  | Requirement Engineering   | |
+| Woche 7  | Requirement Engineering   | |
 |    | Requirements |  |
-| 8  | Softwarespezifikation  |  |
+| Woche 8  | Softwarespezifikation  |  |
 |    | Konstruktive Softwarespezifikation  |  |
-| 9  | Deskriptive Softwarespezifikation | |
-| 10 | Verifikation (überblick)  | |
+| Woche 9  | Deskriptive Softwarespezifikation | |
+| Woche 10 | Verifikation (überblick)  | |
 |    | Testen (Einführung) | |
 |    | Testen im Kleinen   | |
-| 11 | Testen im Grossen   | | 
+| Woche 11 | Testen im Grossen   | | 
 |    | Softwareprozesse | |
-| 12 | Agile Softwareentwicklung   | |
+| Woche 12 | Agile Softwareentwicklung   | |
 |    | Scrum  | |
-| 13 | Entwurfsmuster | |
+| Woche 13 | Entwurfsmuster | |
 
-
-## Übungen 
-
-| Woche | Thema | Deadline | Kommentar |
-| ------| ----- | -------- | --------- |
-
-Details folgen.
-
-
-## Projekt
-| Woche | Thema | Kommentar |
-| ------| ----- | -------- | 
-Details folgen.
 
 
 ## Literatur / Weiterführende Links
@@ -81,6 +71,4 @@ Details folgen.
     * Sehr gute Einführung in Agile Methoden, die Agile Methoden auch in Kontext mit traditionellen Software Engineering Ansätzen setzt.
 * Seminal papers in Software Engineering, The Carnegie Mellon Canonical Collection [(pdf)](http://reports-archive.adm.cs.cmu.edu/anon/isr2015/CMU-ISR-15-107.pdf)
     * Annotierter Katalog von klassischen Software Engineering Paper
-* Peter Naur, Program as theory building [(pdf)](http://pages.cs.wisc.edu/~remzi/Naur.pdf)
-    * Klassisches Software Engineering Paper. Es vertritt die Sichtweise, dass Programme Theorien über die Welt sind, und diskutiert die daraus folgenden Auswirkungen für Design und Implementation. 
 
