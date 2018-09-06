@@ -77,11 +77,10 @@ git clone THE_URL_FOR_YOUR_PROJECT ganttproject
 
 Bevor wir das Projekt in der IDE bearbeiten, versuchen wir es zuerst von der Kommandozeile zu kompilieren und auszuführen. 
 
-Dazu wechseln Sie zuerst in das Verzeichnis ```ganttproject-builder```:
+Dazu wechseln Sie zuerst in das Verzeichnis ```ganttproject```:
 
 ```
 cd ganttproject
-cd ganttproject-builder
 ```
 
 Dann führen Sie folgende Kommandos aus (unter Windows muss ./ durch .\ ersetzt werden):
