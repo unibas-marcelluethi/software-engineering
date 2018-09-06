@@ -23,7 +23,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 
 *Klicken Sie auf eine Woche um zu den entsprechenden Ressourcen zu gelangen*. 
 
-|  | Themen | Bemerkungem |
+|  | Themen | Bemerkungen |
 | ------| ----- | --------- |
 | [Woche 1](https://unibas-sweng.github.io/software-engineering-private/week1/index.html)  | Einführung / Administratives  | |
 |    | Was ist Software engineering  | |
