@@ -16,7 +16,7 @@ In dieser ersten Übung werden Sie die Umgebung (Werkzeuge, Entwicklungsumgebung
 ## Vorbereitung
 
 Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Benutzernamen via Mail an 
-[jan.schoenholz@unibas.ch](mailto://jan.schoenholz@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository geben können.  
+[jan.schoenholz@unibas.ch](mailto:jan.schoenholz@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository geben können.  
 
 ## Installation der Werkzeuge
 
