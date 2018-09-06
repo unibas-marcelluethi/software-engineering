@@ -8,8 +8,8 @@
 
 ## Einführung
 
-Für die meisten übungen in diesem Kurs werden wir das Open Source Projekt [Ganttproject](http://www.ganttproject.biz/) verwenden. 
-In dieser ersten übung werden Sie die Umgebung (Werkzeuge, Entwicklungsumgebung) aufsetzten, damit sie im folgenden änderungen und Erweiterungen im Code vornehmen können. 
+Für die meisten Übungen in diesem Kurs werden wir das Open Source Projekt [Ganttproject](http://www.ganttproject.biz/) verwenden. 
+In dieser ersten übung werden Sie die Umgebung (Werkzeuge, Entwicklungsumgebung) aufsetzten, damit sie im folgenden Änderungen und Erweiterungen im Code vornehmen können. 
 
 *Bemerkung: Wir nutzen in diesem Kurs einen Fork vom offiziellen Ganttproject. Unser Code basiert auf der Version 2.8.5 von Ganttproject verfügt aber über ein stark vereinfachtes und verbessertes Buildsystem, welches von Teilnehmern vom letztjährigen Kurs entwickelt wurde.*
 
@@ -101,7 +101,7 @@ können wir das Projekt dann starten.
 
 ### Bearbeiten des Projekts in der IDE
 
-Wir werden in diesem Kurs hauptsächlich von der IDE arbeiten. Um das Projekt in Idea zu öffnen, müssen die gradle build Definition öffnen 
+Wir werden in diesem Kurs hauptsächlich von der IDE arbeiten. Um das Projekt in Idea zu öffnen, müssen sie die gradle build Definition öffnen 
 ```
 ganttproject\build.gradle
 ```
