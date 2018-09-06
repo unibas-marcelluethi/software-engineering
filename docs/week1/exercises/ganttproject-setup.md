@@ -86,11 +86,8 @@ cd ganttproject
 Dann führen Sie folgende Kommandos aus (unter Windows muss ./ durch .\ ersetzt werden):
 
 ```
-./gradlew updateLibs
 ./gradlew distBin
 ```
-
-Diese Befehle holen sich die benötigten Bibliotheken aus dem Internet und kompilieren das Projekt. 
 
 Mit dem Befehl
 ```
