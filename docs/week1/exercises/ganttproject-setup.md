@@ -8,9 +8,9 @@
 
 ## Einführung
 
+
 Für die meisten Übungen in diesem Kurs werden Sie das Open Source Projekt [Ganttproject](http://www.ganttproject.biz/) verwenden. 
 In dieser ersten Übung werden Sie die Umgebung (Werkzeuge, Entwicklungsumgebung) aufsetzten, damit Sie im folgenden Änderungen und Erweiterungen im Code vornehmen können. 
-
 *Bemerkung: Wir nutzen in diesem Kurs einen Fork vom offiziellen Ganttproject. Unser Code basiert auf der Version 2.8.5 von Ganttproject, verfügt aber über ein stark vereinfachtes und verbessertes Buildsystem, welches von Teilnehmern vom letztjährigen Kurs entwickelt wurde.*
 
 ## Vorbereitung
