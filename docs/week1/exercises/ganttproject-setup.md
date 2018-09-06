@@ -8,7 +8,7 @@
 
 ## Einführung
 
-Für die meisten Übungen in diesem Kurs werden wir das Open Source Projekt [Ganttproject](http://www.ganttproject.biz/) verwenden. 
+Für die meisten Übungen in diesem Kurs werden Sie das Open Source Projekt [Ganttproject](http://www.ganttproject.biz/) verwenden. 
 In dieser ersten Übung werden Sie die Umgebung (Werkzeuge, Entwicklungsumgebung) aufsetzten, damit Sie im folgenden Änderungen und Erweiterungen im Code vornehmen können. 
 
 *Bemerkung: Wir nutzen in diesem Kurs einen Fork vom offiziellen Ganttproject. Unser Code basiert auf der Version 2.8.5 von Ganttproject verfügt aber über ein stark vereinfachtes und verbessertes Buildsystem, welches von Teilnehmern vom letztjährigen Kurs entwickelt wurde.*
@@ -75,7 +75,7 @@ git clone THE_URL_FOR_YOUR_PROJECT ganttproject
 
 ### Kompilieren des Projekts von der Kommandozeile
 
-Bevor wir das Projekt in der IDE bearbeiten, versuchen wir es zuerst von der Kommandozeile zu kompilieren und auszuführen. 
+Bevor Sie das Projekt in der IDE bearbeiten, versuchen Sie es zuerst von der Kommandozeile zu kompilieren und auszuführen. 
 
 Dazu wechseln Sie zuerst in das Verzeichnis ```ganttproject```:
 
@@ -93,11 +93,11 @@ Mit dem Befehl
 ```
 ./gradlew runApp   
 ```
-können wir das Projekt dann starten. 
+können Sie das Projekt dann starten. 
 
 ### Bearbeiten des Projekts in der IDE
 
-Wir werden in diesem Kurs hauptsächlich von der IDE arbeiten. Um das Projekt in Idea zu öffnen, müssen die gradle build Definition öffnen 
+Sie werden in diesem Kurs hauptsächlich von der IDE arbeiten. Um das Projekt in Idea zu öffnen, müssen die gradle build Definition öffnen 
 ```
 ganttproject\build.gradle
 ```
