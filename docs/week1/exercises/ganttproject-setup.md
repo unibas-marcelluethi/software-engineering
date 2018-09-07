@@ -14,9 +14,7 @@ In dieser ersten Übung werden Sie die Umgebung (Werkzeuge, Entwicklungsumgebung
 *Bemerkung: Wir nutzen in diesem Kurs einen Fork vom offiziellen Ganttproject. Unser Code basiert auf der Version 2.8.5 von Ganttproject, verfügt aber über ein stark vereinfachtes und verbessertes Buildsystem, welches von Teilnehmern vom letztjährigen Kurs entwickelt wurde.*
 
 ## Vorbereitung
-
-Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Benutzernamen via Mail an 
-[jan.schoenholz@unibas.ch](mailto:jan.schoenholz@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository geben können.  
+Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Benutzernamen und Unimail Adresse via Mail an [jan.schoenholz@unibas.ch](mailto:jan.schoenholz@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository geben können.  
 
 ## Installation der Werkzeuge
 
@@ -54,12 +52,12 @@ Falls Sie bereits Zugriff haben, sollte die Seite wie folgt aussehen:
 ![image](../../exercises/images/github-ganttproject.png)
 
 
-Sie können das Projekt forken indem Sie oben rechts auf den "Fork" Button klicken. Nach erfolgreichem Fork landen Sie nun auf Ihrer persönlichen Kopie des Projekts, auf der Sie von nun an arbeiten werden. 
+Sie können das Projekt forken indem Sie oben rechts auf den "Fork" Button klicken. Nach erfolgreichem Fork landen Sie nun auf Ihrer persönlichen Kopie des Projekts auf Github, mit der Sie von nun an arbeiten werden. 
 
 ##### Setzen der Projektzugriffsrechte
 
-Wird ein Fork eines Projekts erstellt, wird nicht nur das ganze Coderepository, sondern auch alle Zugriffsrechte kopiert. Da alle Studierenden im Kurs auf das Original Repository zugreifen konnten, ist das also nun auch bei Ihrem Repository der Fall. Deshalb müssen Sie im nächsten Schritt noch die Zugriffsrechte anpassen. 
-Dazu gehen Sie auf ```Settings->Collaborators & Teams``` und entfernen das Team ```students-hs18``` durch Klicken auf das kleine Kreuz (siehe Screenshot).
+Das von ihnen geforkte Repository ist privat. Das bedeutet, dass niemand ausser Sie kann das Repository sehen kann. Damit wir Ihre Arbeiten betreuen und beurteilen können, müssen Sie den Tutoren noch die entsprechenden Zugriffsrechte geben. 
+Dazu gehen Sie auf ```Settings->Collaborators & Teams``` und fügen ```michaelpluess``` und ```schoenja```als Collaborator hinzu:
 
 ![image](../../exercises/images/github-collaborators.png)
 
