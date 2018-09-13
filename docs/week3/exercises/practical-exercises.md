@@ -68,6 +68,7 @@ wie Sie diese zu den populären Buildsystemen (wie Maven oder Gradle) hinzufüge
 
 Wenn das hinzufügen funktioniert hat sollten Sie folgenden Code zu Ganttproject hinzufügen können und das Projekt sollte entsprechend kompilieren. 
 ```
+import ch.unibas.informatik.sweng.HelloSweng;
 String greeting = HelloSweng.greeting();
 ```
 
