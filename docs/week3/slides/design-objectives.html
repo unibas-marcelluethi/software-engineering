@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Prinzipien des Software Engineerings</title>
+
+    <link rel="stylesheet" href="../../slides/css/reveal.css">
+    <link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+
+            <section class="center">
+                <div class="titleblock">
+
+                    <p>
+                        <img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+                    </p>
+
+
+                    <h1 style="clear:both;margin-top:20%">
+                        Einführung in das Software Design
+                    </h1>
+                    <h3>
+                        Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+                    </h3>
+
+                </div>
+            </section>
+
+
+            <section>
+                <h1> Was ist Design? </h1>
+                <blockquote>Formgebende und funktionale Gestaltgebung eines Produkts.</blockquote>
+                <ul>
+                    <li>Strukturiert ein Artefakt</li>
+                    <li>Zerlegen eines Systems in (einfachere) Komponenten</li>
+                    <ul>
+                        <li> Zuweisen von Verantwortlichkeiten </li>
+                        <li> Sicherstellen, dass Gesamtsystem Anforderungen erf&uuml;llt </li>
+                    </ul>
+                    
+                </ul>
+            </section>
+            <section>
+                <h1> Was ist Design?</h1>    
+
+                Ästhetik ist nicht primär erste Aufgabe!
+
+                <figure>
+                    <img src="../../slides/images/rex.jpg" style="width:50%" class="plain"/>
+                    <figcaption style="font-size:xx-small">By Original: Peter Wiegel Cropped by Philipp.b, CC BY-SA 3.0</figcaption> 
+                </figure>                
+
+            </section>
+            
+            
+            <section>
+                <h1> Designbeispiel Architektur</h1>
+                
+                Entwurf eines Einkaufszentrums
+                <p style="margin-top:1cm "></p>
+                <div style="float:left; width:50%">
+                <ul>
+                    
+                    <li> Teile: </li>
+                    <ul>
+                        <li> Verkaufsfläche</li>
+                        <li> Heizungs- und L&uuml;ftungssystem </li>
+                        <li> Verkabelung </li>
+                        <li> Parkplatz </li>
+                        <li> ... </li>
+                    </ul>
+                </ul>
+            </div>
+            <div style="float:right; width:50%">
+                <figure>
+                    <img src="../../slides/images/mall.jpg" style="width:100%" class="plain"/>   
+                <figcaption style="font-size:xx-small">By Citymalljo - Own work, CC BY-SA 4.0 <br/> https://commons.wikimedia.org/w/index.php?curid=38147686</figcaption>
+                </figure>
+            </div>
+            </section>
+
+            <section>
+                <h1> Designbeispiel Lehre</h1>
+
+                Entwurf einer Vorlesung
+                <p style="margin-top:1cm "></p>
+                <div style="float:left; width:50%">
+                <ul>
+                    
+                    <li> Teile: </li>
+                    <ul>
+                        <li> Vorlesungen</li>
+                        <li> Übungen </li>
+                        <li> Leistungsnachweise </li>
+                        <li> ... </li>
+                    </ul>
+                </ul>
+            </div>
+            <div style="float:right; width:50%">
+                <figure>
+                    <img src="../../slides/images/advance-organizer-1.png" style="width:100%" class="plain"/>   
+                </figure>
+            </div>
+            </section>
+
+
+            <!--
+            <section>
+                <h3> Design in Softwareengineering </h3>
+                <p> Zwei unterschiedliche aber verwandte Bedeutungen </p>
+                <ol>
+                    <li> Schritt zwischen Anforderungsanalyse und Implementation </li>
+                    <ul> Softwarearchitektur / design </ul>
+                    <li> Strukturierung eines Artefakts </li>
+                    <ul>
+                        <li> Beispiel: Design des Anforderungsdokuments </li>
+                    </ul>
+                </ol>
+                <blockquote> Jedes Artefakt muss strukturiert werden </blockquote>
+
+            </section>
+        -->
+            <section>
+                <h1> Softwaredesign </h1>
+
+                <blockquote> Softwaredesign: Aufteilung eines Systems in Module</blockquote>
+             
+
+                <img src="../../slides/images/modul-graph-1.png" style="width:50%" class="plain">
+
+                <ul>
+                    <li>Ouput: Designdokument </li>
+                    <ul>
+                        <li>Beschreibt einzelne Module </li>
+                        <li> Definiert und beschreibt Schnittstellen </li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h1>Module</h1>
+
+                <blockquote>
+                    Modul: Wohldefinierter Teil einer Software
+                </blockquote>
+
+                <ul>
+                    <li>Softwarearchitektur: Struktur der Module</li>                    
+                    <li>Moduldesign: Entwurf individueller Module </li>
+                </ul>
+                        
+                            
+                    <img src="../../slides/images/modul-graph-2.png" style="width:50%" class="plain">
+                    <div class="framebox">
+                        Strikte Trennung Design/Architektur nicht möglich. 
+                    </div>
+             
+            </section>
+
+
+
+
+            <section>
+                <h1>Ziel eines Designs </h1>
+
+                <ul>
+                        <li>Struktur so festzulegen, dass hohe Softwarequalit&auml;t erreicht werden kann.</li>
+                    </ul>
+    
+                <div style="text-align:left;margin-top:1cm" class="framebox">
+
+                    <p style="text-align:left">Wichtigster Grundsatz: <mark class="highlight"> Design for change </mark></p>
+    
+                                <ul><li> Wahrscheinliche &Auml;nderungen sollten einfach zu implementieren sein. </li></ul>
+                </div>
+    
+
+
+            </section>
+
+
+
+            <!--
+                <section>
+                        <h3> Softwarearchitektur </h3>
+                        <blockquote>
+                            Grobe Gliederung der Komponenten des Systems
+                        </blockquote>
+        
+                        <ul>
+                            <li>Beschreibt: </li>
+                            <ul>
+                                <li>Hauptkomponenten des Systems</li>
+                                <li>Beziehungen zwischen diesen Komponenten </li>
+                                <li>Gr&uuml;nde f&uuml;r die gew&auml;hlte Aufteilung </li>
+                                <li> Einschr&auml;nkungen / Rahmenbedingungen des Systems </li>
+                            </ul>
+                            <li> Gibt die Struktur f&uuml;r den Designschritt vor </li>
+                        </ul>
+                    </section>
+                -->
+
+            <!--
+            <section>
+                <h3>Anmerkung </h3>
+                <blockquote>
+                    Diese Prinzipien scheinen den Prinzipien moderner, agiler Enwicklungsprozesse zu wiedersprechen.
+                </blockquote>
+                <ul>
+                    <li> Grundprinzipien sind so elementar, dass sie in jeder Art von Softwareentwicklung beachtet werden.</li>
+                    <ul>
+                        <li> Jeder gute Programmierer muss diese Aspekte verstehen </li>
+                    </ul>
+                    <li> Die Frage ist nur, weit man dabei gehen soll</li>
+                    <li> Mehr dazu sp&auml;ter ...</li>
+                </ul>
+            </section>
+        -->
+            <section>
+                <blockquote>
+                    <p style="text-align:left">
+                        "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies,
+                        and the other way is to make it so complicated that there are no obvious deficiencies. The first
+                        method is far more difficult."</p>
+                    <footer> Tony Hoare - 1980</footer>
+                </blockquote>
+
+            </section>
+
+            <!--
+            <section>
+                <h3> Unit tests </h3>
+                <ul>
+                    <li>Was ist ein Software Design?</li>
+                    <li>Was ist das Ziel eines Software Designs?</li>
+                    <li>Was ist eine Softwarearchitektur?</li>
+                    <li>Weshalb l&auml;sst sich Architektur und Moduldesign nicht strikt trennen?</li>
+                    <li>Was sind typische Gr&uuml;nde f&uuml;r &Auml;nderungen?</li>
+                </ul>
+            </section>
+-->
+        </div>
+    </div>
+
+
+    <script src="../../slides/lib/js/head.min.js"></script>
+    <script src="../../slides/js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: '../../slides/plugin/markdown/marked.js'
+            },
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+            {
+                src: '../../slides/plugin/markdown/markdown.js'
+            },
+            {
+                src: '../../slides/plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: '../../slides/plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: '../../slides/plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Prinzipien des Software Engineerings</title>
+
+    <link rel="stylesheet" href="../../slides/css/reveal.css">
+    <link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+
+            <section class="center">
+                <div class="titleblock">
+
+                    <p>
+                        <img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+                    </p>
+
+
+                    <h1 style="clear:both;margin-top:20%">
+                        Prinzipien des Software Engineerings
+
+                    </h1>
+                    <h3>
+                        Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+                    </h3>
+
+                </div>
+            </section>
+
+            <section>
+                <h1>Prinzip</h1>
+
+                <blockquote>
+                    Allgemeingültige Regel, Grundlage, auf der etwas aufgebaut ist; Grundregel; Grundsatz
+                    <br/>
+                    <div style="text-align:right"> - Duden </div>
+                </blockquote>
+
+                <ul class="fragment">
+                    <li>Technolgien in der Informatik entwickelt sich rasant.</li>
+                    <li>Grundlegende Prinzipien sind seit vielen Jahrzehnten stabil.</li>
+                    <ul>
+                        <li> Gelten f&uuml;r Produkt und Prozess </li>
+                    </ul>
+                </ul>
+
+            </section>
+
+            <section>
+                <h1>Eigenschaften guter Prinzipien</h1>
+
+                <blockquote> Gute Prinzipien sollten 
+                    <mark class="highlight">abstrakt</mark> und <mark class="highlight">falsifizierbar</mark>
+                    sein. 
+                </blockquote>
+
+                <div style="text-align:left">
+                <text class="fragment">Beispiele:</text>
+                    <ul> 
+                        <li  class="fragment">Schlecht: Benutze JUnit um Tests zu schreiben </li>
+                        <li class="fragment">Schlecht: Schreibe qualitativ gute Software </li>
+                        <li class="fragment">Gut: Schreibe Tests immer zuerst </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h1>Prinzip - Methoden - Tools</h1>
+
+                <img src="../../slides/images/prinzipien.png" class="plain" style="width:100%" />
+
+            </section>
+
+            <section>
+                <h1>Wichtige Prinzipien</h1>
+
+                <ol>
+                    <li>Genauigkeit und formales Vorgehen</li>
+                    <li> Trennung der Verantwortlichkeiten</li>
+                    (Separations of concerns)
+                    <li> Modularit&auml;t </li>
+                    <li> Abstraktion</li>
+                    <li> Voraussehen von Ver&auml;nderungen </li>
+                    (Design for change)
+                    <li> Allgemeinheit </li>
+                    <li> Schrittweises Entwickeln </li>
+                    (Incrementality) 
+                </ol>
+            </section>
+
+            <section>
+                <h1>Wichtige Prinzipien</h1>
+
+                <ol>
+                    <li>Genauigkeit und formales Vorgehen</li>
+                    <li> <mark class="highlight">Trennung der Verantwortlichkeiten</mark></li>
+                    <mark class="highlight">(Separations of concerns)</mark>
+                    <li> <mark class="highlight">Modularit&auml;t </mark> </li>
+                    <li> <mark class="highlight">Abstraktion</mark></li>
+                    <li> Voraussehen von Ver&auml;nderungen </li>
+                    (Design for change)
+                    <li> Allgemeinheit </li>
+                    <li> Schrittweises Entwickeln </li>
+                    (Incrementality) 
+                </ol>
+            </section>
+            <section>
+                <h1> Separierung der Verantwortlichkeiten</h1>
+                <ul>
+                    <li>Verschiedene Probleme separat angehen </li>
+                    <ul>
+                        <li>Reduziert Komplexit&auml;t jeder Task </li>
+                        <li>Aufgaben und Verantwortlichkeiten k&ouml;nnen verteilt und parallelisiert werden </li>
+                    </ul>
+                    <ul>
+                        <li>Divide and Conquer</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h1> Beispiele </h1>
+                <div style="float:left;width:50%;text-align:left">
+                    <h2>Produkt:</h2>
+                    <ul>
+                        <li>Anforderungen separat betrachten</li>
+                        <ul>
+                            <li>Funktionalit&auml;t</li>
+                            <li>Performance </li>
+                            <li>Benutzeroberfl&auml;che </li>
+                            <li>...</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div style="float:right;width:50%; text-align:left">
+                    <h2>Prozess:</h2>
+
+                    <ul>
+                        <li>
+                            Separiere Software Testing und Entwicklung
+                            <ul> <li> Eigenes Team? </li> </ul>
+                        </li>
+                        <li>
+                            Phasen in Wasserfallmodell
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h1> Modularit&auml;t</h1>
+                <ul>
+                    <li>Wichtigstes Prinzip in der Softwareentwicklung </li>
+                    <li>Reduziert Komplexit&auml;t </li>
+                    <ul>
+                        <li>Komplexes System wird in kleine Teile zerlegt</li>
+                        <li>Erlaubt Trennung der Verantwortlichkeiten </li>
+                    </ul>
+
+                </ul>
+                <figure>
+                    <img src="../../slides/images/hubelino.jpg" style="width:50%" class="plain"/>
+                    <figure/>
+
+            </section>
+
+            <section>
+                <h1>Modularit&auml;t</h1>
+                <figure>
+                <img src="../../slides/images/hubelino-teile.jpg" class="plain"/>
+                </figure>
+            </section>
+
+            
+            <section>
+                    <h1>Kopplung und Bindung</h1>
+    
+                    <div style="float:left;width:50%; text-align:left">
+                            <h2>Kopplung</h2>                            
+                            Wie stark sind Module verkn&uuml;pft?
+                    </ul>
+    
+                    </div>
+                    
+                    <div style="float:right;width:50%;text-align:left">
+                        <h2>Bindung (Koh&auml;sion)</h2>
+                        Wie gut bildet Modul logische Einheit?
+                    </div>
+                    <figure >
+                            <img src="../../slides/images/coupling-cohesion.png" style="width:60%; float:center; margin-top:2cm" class="plain"/>
+                        </figure>
+    
+                </section>
+    
+            <section>
+                <h1> Modularit&auml;t</h1>
+
+                <div style="float:left;width:50%; vertical-align: top;">
+
+                    <figure>
+                        <img src="../../slides//images/modules-low-coupling.svg" style="width:60%; float:center" class="plain"/>
+                    </figure>
+                    <p>Modular:</p>
+                    <ul style="clear:both">
+                        <li> Lose Kopplung</li>
+                        <li> Starke Bindung </li>
+                    </ul>
+                </div>
+                <div style="float:right;width:50%; vertical-align: top;">
+                    <figure>
+                        <img src="../../slides//images/modules-high-coupling.svg" style="width:60%; float:center" class="plain"/>
+                    </figure>
+                    <p>Nicht-modular</p>
+                    <ul style="clear:both">
+                        <li> Starke Kopplung</li>
+                        <li> Schwache Bindung </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section>
+                    <h1>Kopplung und Bindung</h1>
+    
+                    <div style="float:left;width:50%; text-align:left">
+                            Lose Kopplung:
+                            <ul>
+                            <li> Wenig Abh&auml;ngigkeiten</li>
+                            <li>minimiert Auswirkung von &Auml;nderungen</li>
+                            <li>erleichtert Testen</li>
+                        </ul>
+                    </ul>
+    
+                    </div>
+                    
+                    <div style="float:right;width:50%;text-align:left">
+                            Starke Bindung:
+                            <ul>
+                                <li> Jedes Modul nur f&uuml;r eine Aufgabe verantwortlich</li>
+                                <li>erleichtert das Verstehen des Moduls</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </section>
+    
+
+            <section>
+                <h1> Abstraktion </h1>
+                <div style="float:left;width:60%; vertical-align: top;">
+                <ul>
+                    <li> Wichtige Aspekte eines Problems werden identifiziert</li>
+                    <li> Details werden ignoriert </li>
+                    <li> Spezialfall von "Trennung der Verantwortlichkeiten" </li>
+                    <ul>
+                        <li> wichtig (Funktion) </li>
+                        <li>unwichtig (Detail) </li>
+                    </ul>
+                </ul>
+            </div>
+                <div style="float:right;width:40%; vertical-align: top;">
+                        <figure>
+                            <img src="../../slides/images/gear-shift.jpg" style="width:100%; float:center" class="plain" />
+                            <figcaption style="font-size:xx-small"> By User Bobo is soft on en.wikipedia - Photo taken by Bobo_is_soft, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1038737</figcaption>
+                        </figure>
+                    </div>
+    
+            </section>
+            <!--
+            <section>
+                <h1> Beispiel</h1>
+
+                    <ul>
+                        <li>Fahrer muss Funktionsweise des Gebriebes nicht kennen </li>
+                        <li>Zahlen 1-5 sind zweckm&auml;ssige Abstraktionen </li>
+                        <li> Erm&ouml;glicht zwischen Fahrzeugtypen zu wechseln </li>
+                    </ul>
+                </div>
+            </section>
+-->
+            <section>
+                <h1> Abstraktion in der Informatik</h1>
+                <ul>
+                    <li>Hardware: </li>
+                    <ul>
+                        <li> Bl&ouml;cke und Addressen </li>
+                    </ul>
+                    <li> Betriebssystem </li>
+                    <ul>
+                        <li> Dateien </li>
+                        <li> Netzwerk Sockets </li>
+                    </ul>
+                    <li> Programmiersprache (Java) </li>
+                    <ul>
+                        <li> OutputStream</li>
+                    </ul>
+
+                </ul>
+            </section>
+
+            <!--
+            <section>
+                <h3> Unit tests </h3>
+                <ul>
+                    <li> Weshalb ist Falsifizierbarkeit eine wichtige Eigenschaft eines Prinzips?</li>
+                    <li> Was unterscheidet Prinzipen von Werkzeugen und Methoden?</li>
+                    <li> Wie hilft Modularit&auml;t Software zu verstehen? </li>
+                    <li> Weshalb sollte die Bindung innerhalb von Modulen gross sein</li>
+                    <li> Weshalb sollten Module lose gekoppelt sein?</li>
+                    <li> Nenne einen Vorteil des inkrementellen Entwickeln einer Software. </li> 
+                </ul>
+            </section>
+-->
+        </div>
+    </div>
+
+
+
+
+    <script src="../../slides/lib/js/head.min.js"></script>
+    <script src="../../slides/js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            dependencies: [{
+                src: '../../slides/plugin/markdown/marked.js'
+            },
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+            {
+                src: '../../slides/plugin/markdown/markdown.js'
+            },
+            {
+                src: '../../slides/plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: '../../slides/plugin/chalkboard/chalkboard.js'
+            },
+            {
+                src: '../../slides/plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },
+        });
+    </script>
+</body>
+
+</html>
