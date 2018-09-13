@@ -1,4 +1,4 @@
-# &Uuml;bung 3 Gradle und Code Reading
+# Übung 3 Gradle und Code Reading
 
 ## Administratives
 
@@ -6,7 +6,7 @@
 * Abgabe via Pull Request bis spätestens 9. Oktober, 23.59.
 
 
-## Einf&uuml;hrung
+## Einführung
 
 In dieser Übung werden Sie sich näher mit dem Buildsystem *Gradle* beschäftigen. Sie werden lernen, wie sie verschiedene Tasks mit Gradle ausführen, wie Sie Abhängigkeiten (Bibliotheken) zum Projekt hinzufügen, und wie sie ein neues Plugin hinzufügen können. 
 
@@ -21,7 +21,7 @@ Nach dieser Übung sollten Sie:
 
 #### Vorbereitung
 
-Da wir die &Auml;nderungen der letzten &Uuml;bung hier nicht ben&ouml;tigen, starten wir wieder vom Master branch. Wir wechseln auf den Masterbranch mit 
+Da wir die Änderungen der letzten Übung hier nicht benötigen, starten wir wieder vom Master branch. Wir wechseln auf den Masterbranch mit 
 ```
 git checkout master
 ```
@@ -34,7 +34,7 @@ Sie sollten nun alle ihre Branches sehen. Vor dem aktiven Branch (also master) s
 
 Synchronisieren Sie allfällige Änderungen im Upstream wie im letzten Übungsblatt beschrieben. 
 
-Erstellen Sie dann einen neuen Branch *uebung3" mit
+Erstellen Sie dann einen neuen Branch *uebung3* mit
 ```
 git branch uebung3
 git checkout uebung3
@@ -54,11 +54,17 @@ git checkout uebung3
 
 *Tip: Mit ```gradlew tasks --all``` erhalten Sie einen Überblick über alle Gradle tasks die in Ganttproject zur Verfügung stehen.*
 
+
+
 #### 1.2 Hinzufügen einer neuen Bibliothek
 
 Fügen Sie die Dependency *swenglib* (in der Version 1.0) zum Projekt hinzu. Das Paket liegt im Repository [JCenter](https://bintray.com/bintray/jcenter).
-Wenn Sie auf [JCenter](https://bintray.com/bintray/jcenter) nach dem Paket suchen, finden Sie auch direkt den Code der in Gradle hinzugefügt werden muss.
-.
+
+*Tip:* Sie können auf [JCenter](https://bintray.com/bintray/jcenter) nach dem Paket suchen und damit auf die entsprechende Seite für swenglib gelangen. Auf dieser Seite finden Sie Code-snippets, 
+wie Sie diese zu den populären Buildsystemen (wie Maven oder Gradle) hinzufügen. 
+
+*Tip:* Die Dependencies von Ganttproject werden nicht direkt in die Datei *build.gradle* hinzugefügt, sondern in einer Separaten Datei. In ```build.gradle``` steht aber, wo sie diese Datei finden.
+
 
 Wenn das hinzufügen funktioniert hat sollten Sie folgenden Code zu Ganttproject hinzufügen können und das Projekt sollte entsprechend kompilieren. 
 ```
@@ -68,9 +74,9 @@ String greeting = HelloSweng.greeting();
 Überprüfen Sie auch, dass sie mit ```CTRL + LeftMouseClick``` auf ```HelloSweng```, zum 
 Source Code der Bibliothek kommen. 
 
-
 #### 1.3 Hinzufügen eines Plugins
-Fügen Sie das Plugin [Stats Gradle Plugin](https://github.com/aalmiray/stats-gradle-plugin) zum Projekt hinzu.  
+Fügen Sie das Plugin [Stats Gradle Plugin](https://github.com/aalmiray/stats-gradle-plugin) durch anpassen der Datei ```build.gradle```zum Projekt hinzu. Die entsprechenden Instruktionen finden Sie auf
+der Github Seite vom [Stats Gradle Plugin](https://github.com/aalmiray/stats-gradle-plugin).
 Nachdem das Plugin korrekt hinzugefügt wurde, sollten Sie durch folgenden Befehl eine Statistik über die Anzahl Dateien und Codezeilen ausgeben können:
 ```
 gradlew stats
@@ -79,7 +85,7 @@ gradlew stats
 
 ## 2. Code lesen
 
-In diesem Teil der &Uuml;bung geht es darum, dass sie sich einen Grob&uuml;berblick &uuml;ber die Strukur des Ganttproject Codes erarbeiten sowie auch lernen, fremden Code zu lesen und zu verstehen.
+In diesem Teil der Übung geht es darum, dass sie sich einen Grobüberblick über die Struktur des Ganttproject Codes erarbeiten sowie auch lernen, fremden Code zu lesen und zu verstehen.
 
 #### Dokumentieren sie ein Package
 
@@ -96,18 +102,18 @@ Sie k&ouml;nnen diese mittels Javadoc dokumentieren, indem sie in jedes Verzeich
  */
 package biz.ganttproject.chart; // package name 
 ```
-Die Beschreibung sollte in max 2-3 S&auml;tzen den Zweck des Packages zusammenfassen.
-Vergessen sie nicht, diese Dateien mit dem ```git add``` command dem Repository hinzuzuf&uuml;gen.
+Die Beschreibung sollte in max 2-3 Sätzen den Zweck des Packages zusammenfassen.
+Vergessen sie nicht, diese Dateien mit dem ```git add``` command dem Repository hinzuzufügen.
 
 
 #### Dokumentieren einer Klasse
 
 Dokumentieren sie die Klasse 
-```biz.ganttproject.task.TaskMutator``` sowie alle Methoden mittels Javadoc. Beschreiben sie in jeweils 2-3 S&auml;tzen was die Klasse sowie jede Methode macht. 
+```biz.ganttproject.task.TaskMutator``` sowie alle Methoden mittels Javadoc. Beschreiben sie in jeweils 2-3 Sätzen was die Klasse sowie jede Methode macht. 
 
 
 ### Abgabe
-Die Abgabe der &Uuml;bung erfolgt durch push vom entsprechenden Branch: 
+Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch: 
 ```
 git push origin uebung3
 ``` 
