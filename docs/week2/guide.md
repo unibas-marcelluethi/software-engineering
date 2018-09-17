@@ -36,7 +36,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 
 * Schritt 1: Schauen Sie sich das Video "Eigenschaften von Software" an.  ([Video](https://drive.switch.ch/index.php/s/8ZncsAs3acnZ45b), [Slides](./slides/software-nature.html))
 * Schritt 2: Lesen Sie den Artikel "Qualitätsmerkmale von Software" ([Artikel](./articles/software-qualities-introduction))
-* Schritt 3: Schauen Sie sich das Video "Einige Qualitätsmerkmale im Detail" an. ([Video](https://drive.switch.ch/index.php/s/S4dDqY5HAmTRKnw), [Slides](./slides/02-software-qualities.html))
+* Schritt 3: Schauen Sie sich das Video "Einige Qualitätsmerkmale im Detail" an. ([Video](https://drive.switch.ch/index.php/s/S4dDqY5HAmTRKnw), [Slides](./slides/software-qualities.html))
 * Schritt 4: Lesen Sie das Paper von Fred Brooks: No Silver Bullet. ([Paper](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf))
 
 * Schritt 5: Bearbeiten Sie den Test. [Adam](https://adam.unibas.ch/goto_adam_tst_700846.html). 
