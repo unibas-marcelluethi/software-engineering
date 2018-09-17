@@ -6,5 +6,5 @@ zur Bearbeitung der Woche 2 benötigen.
 
 
 ## Lernmaterialien
-* Auf der [Ressourcenseite](ressources.html) finden Sie nochmals alle Lernmaterien sowie Links zu weiterführender Literatur. 
+* Auf der [Ressourcenseite](resources.html) finden Sie nochmals alle Lernmaterien sowie Links zu weiterführender Literatur. 
 
