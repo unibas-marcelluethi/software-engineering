@@ -259,9 +259,10 @@
         // More info about config & dependencies:
         // - https://github.com/hakimel/reveal.js#configuration
         // - https://github.com/hakimel/reveal.js#dependencies
+        
         Reveal.initialize({
             center: false,
-            chalkboard: {
+            /*chalkboard: {
                 src: "chalkboard.json",
                 readOnly: undefined,
                 transition: 800,
@@ -273,6 +274,7 @@
                 background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
                 pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
             },
+            */
             dependencies: [{
                 src: '../../slides/plugin/markdown/marked.js'
             },
@@ -284,9 +286,9 @@
                 src: '../../slides/plugin/notes/notes.js',
                 async: true
             },
-            {
+           /* {
                 src: '../../slides/plugin/chalkboard/chalkboard.js'
-            },
+            },*/
             {
                 src: '../../slides/plugin/highlight/highlight.js',
                 async: true,

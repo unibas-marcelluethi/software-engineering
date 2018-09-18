@@ -103,7 +103,7 @@
         
                     <p> Beispiele: </p>
                 <ul>
-                    <li> Hardware Ausfall </li>
+                    <li> Hardwareausfall </li>
                     <li> Falscher Input </li>
                 </ul>                    
                 <p> </p>
@@ -225,6 +225,7 @@
             </section>
 
 
+            <!--
             <section>
                 <h1>Wiederverwendbarkeit</h1>
                 
@@ -252,6 +253,7 @@
                 </ul>
                 </div>
             </section>
+-->
 
             <section>
                 <h1> Portabilit&auml;t </h1>
@@ -292,6 +294,25 @@
             </figure>
             </section>
 
+            <section>
+                <h1> Zusammenfassung </h1>
+
+                <ul>
+                    <li>Korrektheit von Software ist immer durch Anforderungen bestimmt. </li>                    
+                    <ul><li>Ohne Anforderungen gibt es keine Korrektheit, nur Robustheit</li></ul>
+
+                    <li>
+                        Gute Software muss wartbar sein.
+                    </li>
+                    <ul>
+                        <li>Ein Grossteil der Kosten wird durch Wartung verursacht</li>
+                        <li>Das Qualitätskriterium Wartbarkeit wird durch viele andere Qualitätskriterien beeinflusst.</li>
+                    </ul>
+
+                    
+                </ul>
+            </section>
+
             <!--
             <section>
                 <h3> Unit tests </h3>
@@ -328,6 +349,7 @@
             center: false,
             // Display the page number of the current slide
             slideNumber: false,
+            /*
             chalkboard: {
                 src: "chalkboard.json",
                 readOnly: undefined,
@@ -339,7 +361,7 @@
                 color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
                 background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
                 pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
-            },
+            },*/
             dependencies: [{
                 src: '../../slides/plugin/markdown/marked.js'
             },
@@ -351,9 +373,9 @@
                 src: '../../slides/plugin/notes/notes.js',
                 async: true
             },
-            {
+           /* {
                 src: '../../slides/plugin/chalkboard/chalkboard.js'
-            },
+            },*/
             {
                 src: '../../slides/plugin/highlight/highlight.js',
                 async: true,
@@ -361,7 +383,7 @@
                     hljs.initHighlightingOnLoad();
                 }
             }
-            ],
+            ],/*
             keyboard: {
                 67: function () {
                     RevealChalkboard.toggleNotesCanvas()
@@ -378,7 +400,7 @@
                 68: function () {
                     RevealChalkboard.download()
                 }, // downlad recorded chalkboard drawing when 'd' is pressed
-            },
+            },*/
         });
     </script>
 </body>

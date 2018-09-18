@@ -8,8 +8,8 @@ Beschrieben Sie kurz wie Fortschritte in einem Gebiet das Software Engineering b
 Wie ist ihre Einschätzung. Würden Sie die Fortschritte eher in Richtung Accidental Complexity oder Essential Complexity sehen.
 
 Literatur: 
-* Ghezzi et al., Kapitel 1.5 [Scan auf Adam workspace: ](TODO ADD Link)
-* Brooks, No silver bullet
+* Ghezzi et al., Kapitel 1.5 [Scan auf Adam workspace: ](https://adam.unibas.ch/goto_adam_fold_710087.html)
+* Fred Brooks: No Silver Bullet. ([Paper](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf))
 
 
 ## 2. Mensch als zentrale Komponente 
