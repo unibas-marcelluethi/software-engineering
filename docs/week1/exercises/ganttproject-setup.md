@@ -95,7 +95,7 @@ können Sie das Projekt dann starten.
 
 ### Bearbeiten des Projekts in der IDE
 
-Sie werden in diesem Kurs hauptsächlich von der IDE arbeiten. Um das Projekt in Idea zu öffnen, müssen die gradle build Definition öffnen 
+Sie werden in diesem Kurs hauptsächlich von der IDE arbeiten. Um das Projekt in Idea zu öffnen, müssen Sie die gradle build Definition öffnen 
 ```
 ganttproject\build.gradle
 ```
