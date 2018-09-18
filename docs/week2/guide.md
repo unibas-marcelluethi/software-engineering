@@ -30,7 +30,7 @@ Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 26. Septemb
 - erklären können, weshalb die Qualität von Software schwierig zu messen ist.
 
 
-### Vorbereitung für die Vorlesungsstunde vom Mittwoch:
+## Vorbereitung für die Vorlesungsstunde vom Mittwoch, 26. September:
 
 Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte folgende Schritte:
 
@@ -46,7 +46,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 
 ### Übungen
 Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](./exercises/theory-exercises.html). 
-Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam]((https://adam.unibas.ch/goto_adam_exc_700910.html)) ein .
+Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_700910.html) ein .
 
 Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten.
 
