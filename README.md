@@ -57,7 +57,12 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |    | Scrum  | |
 | Woche 13 | Entwurfsmuster | |
 
-
+## Nächste Übungen und Deadlines
+| Abgabetermin | Beschreibung | Abgabeart |
+| ------------ | ------------ | ---- |
+| 26. September, 08:00 | [Individueller Test](https://adam.unibas.ch/goto_adam_tst_700846.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_700846.html) |
+| 2. Oktober, 23.59 | [Übungsblatt Woche 2 (Theorie)](https://unibas-sweng.github.io/software-engineering/week2/exercises/theory-exercises.html) | [Adam](https://adam.unibas.ch/goto_adam_exc_700910.html) |
+| 2. Oktober, 23.59 | [Übungsblatt Woche 2 (Praxis)](https://unibas-sweng.github.io/software-engineering/week2/exercises/practical-exercises.html) | Github |
 
 ## Literatur / Weiterführende Links
 
