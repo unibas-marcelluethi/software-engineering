@@ -47,7 +47,7 @@ Sie können die Entwicklungsumgebung starten (eine grafische Oberfläche sollte 
 
 ### Fork von Ganttproject
 
-Dieser Schritt setzt voraus, dass wir Ihnen bereits Zugriff auf unser privates Repository von ganttproject gegeben haben. Sie können dies überprüfen indem Sie auf [https://github.com/unibas-sweng/ganttproject-hs18](https://github.com/unibas-sweng/ganttproject-18) gehen. 
+Dieser Schritt setzt voraus, dass wir Ihnen bereits Zugriff auf unser privates Repository von ganttproject gegeben haben. Sie können dies überprüfen indem Sie auf [https://github.com/unibas-sweng/ganttproject-hs18](https://github.com/unibas-sweng/ganttproject-hs18) gehen. 
 Falls Sie bereits Zugriff haben, sollte die Seite wie folgt aussehen:
 ![image](../../exercises/images/github-ganttproject.png)
 
