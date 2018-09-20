@@ -3,7 +3,7 @@
 ## Folien und Artikel
 
 * Geschichte des Software Engineerings
-    * Slides: [online](./slides/history.html), [Druckversion]([online](./slides/history.html?print-pdf))
+    * Slides: [online](./slides/history.html), [Druckversion](./slides/history.html?print-pdf)
 * Eigenschaften von Software
     *  Video:  [mp4](https://drive.switch.ch/index.php/s/8ZncsAs3acnZ45b),  
     *  Slides: [online](./slides/software-nature.html), [Druckversion](./slides/software-nature.html?print-pdf)
