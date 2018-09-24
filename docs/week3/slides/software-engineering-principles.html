@@ -69,6 +69,15 @@
             </section>
 
             <section>
+                    <h1>Prinzip - Methoden - Tools</h1>
+    
+                    <img src="../../slides/images/prinzipien.png" class="plain" style="width:100%" />
+    
+                </section>
+    
+
+
+            <section>
                 <h1>Eigenschaften guter Prinzipien</h1>
 
                 <blockquote> Gute Prinzipien sollten 
@@ -86,13 +95,7 @@
                 </div>
             </section>
 
-            <section>
-                <h1>Prinzip - Methoden - Tools</h1>
-
-                <img src="../../slides/images/prinzipien.png" class="plain" style="width:100%" />
-
-            </section>
-
+         
             <section>
                 <h1>Wichtige Prinzipien</h1>
 
@@ -127,15 +130,14 @@
                 </ol>
             </section>
             <section>
-                <h1> Separierung der Verantwortlichkeiten</h1>
+                <h1> Trennung der Verantwortlichkeiten</h1>
                 <ul>
                     <li>Verschiedene Probleme separat angehen </li>
+                    "Divide and Conquer"
+
                     <ul>
                         <li>Reduziert Komplexit&auml;t jeder Task </li>
                         <li>Aufgaben und Verantwortlichkeiten k&ouml;nnen verteilt und parallelisiert werden </li>
-                    </ul>
-                    <ul>
-                        <li>Divide and Conquer</li>
                     </ul>
                 </ul>
             </section>
@@ -172,10 +174,10 @@
             <section>
                 <h1> Modularit&auml;t</h1>
                 <ul>
+                    <li>Komplexes System wird in kleine Teile zerlegt</li>
                     <li>Wichtigstes Prinzip in der Softwareentwicklung </li>
                     <li>Reduziert Komplexit&auml;t </li>
                     <ul>
-                        <li>Komplexes System wird in kleine Teile zerlegt</li>
                         <li>Erlaubt Trennung der Verantwortlichkeiten </li>
                     </ul>
 
@@ -185,7 +187,7 @@
                     <figure/>
 
             </section>
-
+            
             <section>
                 <h1>Modularit&auml;t</h1>
                 <figure>
@@ -193,79 +195,7 @@
                 </figure>
             </section>
 
-            
-            <section>
-                    <h1>Kopplung und Bindung</h1>
-    
-                    <div style="float:left;width:50%; text-align:left">
-                            <h2>Kopplung</h2>                            
-                            Wie stark sind Module verkn&uuml;pft?
-                    </ul>
-    
-                    </div>
-                    
-                    <div style="float:right;width:50%;text-align:left">
-                        <h2>Bindung (Koh&auml;sion)</h2>
-                        Wie gut bildet Modul logische Einheit?
-                    </div>
-                    <figure >
-                            <img src="../../slides/images/coupling-cohesion.png" style="width:60%; float:center; margin-top:2cm" class="plain"/>
-                        </figure>
-    
-                </section>
-    
-            <section>
-                <h1> Modularit&auml;t</h1>
-
-                <div style="float:left;width:50%; vertical-align: top;">
-
-                    <figure>
-                        <img src="../../slides//images/modules-low-coupling.svg" style="width:60%; float:center" class="plain"/>
-                    </figure>
-                    <p>Modular:</p>
-                    <ul style="clear:both">
-                        <li> Lose Kopplung</li>
-                        <li> Starke Bindung </li>
-                    </ul>
-                </div>
-                <div style="float:right;width:50%; vertical-align: top;">
-                    <figure>
-                        <img src="../../slides//images/modules-high-coupling.svg" style="width:60%; float:center" class="plain"/>
-                    </figure>
-                    <p>Nicht-modular</p>
-                    <ul style="clear:both">
-                        <li> Starke Kopplung</li>
-                        <li> Schwache Bindung </li>
-                    </ul>
-                </div>
-            </section>
-
-
-            <section>
-                    <h1>Kopplung und Bindung</h1>
-    
-                    <div style="float:left;width:50%; text-align:left">
-                            Lose Kopplung:
-                            <ul>
-                            <li> Wenig Abh&auml;ngigkeiten</li>
-                            <li>minimiert Auswirkung von &Auml;nderungen</li>
-                            <li>erleichtert Testen</li>
-                        </ul>
-                    </ul>
-    
-                    </div>
-                    
-                    <div style="float:right;width:50%;text-align:left">
-                            Starke Bindung:
-                            <ul>
-                                <li> Jedes Modul nur f&uuml;r eine Aufgabe verantwortlich</li>
-                                <li>erleichtert das Verstehen des Moduls</li>
-                            </ul>
-                        </ul>
-                    </div>
-                </section>
-    
-
+        
             <section>
                 <h1> Abstraktion </h1>
                 <div style="float:left;width:60%; vertical-align: top;">
@@ -302,20 +232,22 @@
             <section>
                 <h1> Abstraktion in der Informatik</h1>
                 <ul>
-                    <li>Hardware: </li>
-                    <ul>
-                        <li> Bl&ouml;cke und Addressen </li>
-                    </ul>
-                    <li> Betriebssystem </li>
-                    <ul>
-                        <li> Dateien </li>
-                        <li> Netzwerk Sockets </li>
-                    </ul>
                     <li> Programmiersprache (Java) </li>
                     <ul>
                         <li> OutputStream</li>
                     </ul>
 
+                    <li> Betriebssystem </li>
+                    <ul>
+                        <li> Dateien </li>
+                        <li> Netzwerk Sockets </li>
+                    </ul>
+                    <li>Hardware: </li>
+                    <ul>
+                        <li> Bl&ouml;cke und Addressen </li>
+                    </ul>
+           
+           
                 </ul>
             </section>
 
@@ -348,6 +280,8 @@
         // - https://github.com/hakimel/reveal.js#dependencies
         Reveal.initialize({
             center: false,
+            transition: 'none',
+            /*
             chalkboard: {
                 src: "chalkboard.json",
                 readOnly: undefined,
@@ -359,7 +293,7 @@
                 color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
                 background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
                 pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
-            },
+            },*/
             dependencies: [{
                 src: '../../slides/plugin/markdown/marked.js'
             },
@@ -371,9 +305,9 @@
                 src: '../../slides/plugin/notes/notes.js',
                 async: true
             },
-            {
+            /*{
                 src: '../../slides/plugin/chalkboard/chalkboard.js'
-            },
+            },*/
             {
                 src: '../../slides/plugin/highlight/highlight.js',
                 async: true,
