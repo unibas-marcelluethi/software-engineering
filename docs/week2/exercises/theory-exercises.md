@@ -21,7 +21,7 @@ Literatur:
 ## 3. Qualitätsmerkmale: 
 
 ### 3.1 Zusammenhänge
-* Zeichnen Sie grafisch die Zusammenhänge zwischen den verschiedenen Qualitätsmerkmalen auf. Die Qualitätsmerkmale werden als 
+* Zeichnen Sie grafisch die Zusammenhänge zwischen den Qualitätsmerkmalen Korrektheit, Zuverlässigkeit, Verifizierbarkeit, Wartbarkeit, Wiederverwendbarkeit, Effizienz und Verständlichkeit auf. Die Qualitätsmerkmale werden als 
 Knoten dargestellt, und wenn ein Qualitätsmerkmal ein anderes beeinflusst, wird dies durch einen Pfeil dargestellt. 
     * Was können Sie aus dem resultierenden Graphen ableiten?
     * Gibt es Zyklen im Graph? Was bedeuten diese?
