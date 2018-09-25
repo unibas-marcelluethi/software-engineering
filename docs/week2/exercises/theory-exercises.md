@@ -14,15 +14,13 @@ Literatur:
 
 ## 2. Mensch als zentrale Komponente 
 * Nehmen Sie als Beispiel die Entwicklung einer neuen Software für die medizinische Bildanalyse. 
-    * Welche Leute sind involviert? Was machen die Leute?
-    * Welche Leute sind in der Produktion der Software involviert?
-    * Welche in der Wartung? Was sind die Rollen?
+    * Welche Leute sind involviert? 
+    * Welche Leute sind in der Produktion der Software involviert? Welche in der Wartung? 
+    * Was sind die Rollen?
 
 ## 3. Qualitätsmerkmale: 
 
 ### 3.1 Zusammenhänge
-* Diskutieren Sie wie Verfügbarkeit die Verlässlichkeit von Software beeinflusst
-* Was sind die Unterschiede zwischen Portabilität und Wiederverwendbarkeit?
 * Zeichnen Sie grafisch die Zusammenhänge zwischen den verschiedenen Qualitätsmerkmalen auf. Die Qualitätsmerkmale werden als 
 Knoten dargestellt, und wenn ein Qualitätsmerkmal ein anderes beeinflusst, wird dies durch einen Pfeil dargestellt. 
     * Was können Sie aus dem resultierenden Graphen ableiten?
@@ -30,8 +28,6 @@ Knoten dargestellt, und wenn ein Qualitätsmerkmal ein anderes beeinflusst, wird
 
 
 ### 3.2 Messbarkeit
-
-* Diskutieren Sie wie sich die verschiedenen Qualitätsmerkmale quantifizieren lassen. 
 * Was halten Sie von "Lines of Code" als Produktivitätsmass in der Softwareentwicklung? Was spricht dafür, was dagegen?
 * Stellen sie die Messbarkeit der Softwarequalität der Situation gegenüber, wie man die Qualität einer Brücke messen kann. 
 
