@@ -13,6 +13,12 @@ für eine auf Github gehostete Software entwickeln wollen. Das Ziel dieser Übun
 
 Sie werden zudem auch ihre ersten kleinen Änderungen im Ganttproject vornehmen. Dabei werden Sie lernen, relevante Konzepte im Code zu lokalisieren und bestehenden Code zu imitieren.  
 
+## Benutzername und Email
+Damit Sie mit git einen Commit erstellen können, müssen Sie zuerst Ihren Namen und Email konfigurieren. Dies können Sie mit den folgenden Befehlen machen.
+```
+git config user.name "Ihr Name"
+git config user.email "Ihre Universitäts-Email"
+```
 
 ## Upstream Repository hinzufügen
 In der ersten Übung haben Sie das Ganttproject Repository via Github "Fork" geklont. Das Repository, welches durch Ihren Fork auf github entstanden ist, nennen wir im folgenden *origin*. Das ursprüngliche Repository nennen wir *upstream*. Die Repositories *origin* und *upstream* sind völlig getrennt. Wenn im upstream Repository eine Änderungen vorgenommen wird, hat dies keine Auswirkungen auf das Repository *origin*. Das bedeutet, wenn Sie die Änderungen im *upstream* Repository bei Ihnen einbauen möchten, dann müssen Sie diese manuell einpflegen. 
