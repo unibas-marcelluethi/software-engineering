@@ -34,7 +34,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | [Woche 2](https://unibas-sweng.github.io/software-engineering-private/week2/index.html)  | Kurze Geschichte des Software Engineerings  | |
 |    | Eigenschaften von Software ||
 |    |  Software Qualitätsmerkmale | | 
-| Woche 3  | Prinzipien des Software engineerings   | |
+| [Woche 3](https://unibas-sweng.github.io/software-engineering-private/week3/index.html)  | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
 | Woche 4  | Softwarearchitektur  | |
 |    | Modulstruktur  | |
