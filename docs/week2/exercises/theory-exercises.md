@@ -13,8 +13,8 @@ Literatur:
 
 
 ## 2. Mensch als zentrale Komponente 
-* Nehmen Sie als Beispiel die Entwicklung einer neuen Software für die medizinische Bildanalyse. 
-    * Welche Leute sind involviert? 
+* Nehmen Sie als Beispiel die Entwicklung einer neuen Software für die automatische Diagnose von Gehirntumoren. 
+    * Welche Leute sind im Projekt involviert? 
     * Welche Leute sind in der Produktion der Software involviert? Welche in der Wartung? 
     * Was sind die Rollen?
 
