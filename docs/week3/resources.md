@@ -3,12 +3,12 @@
 # Folien und Artikel
 
 * Prinzipien des Software Engineerings
-    * Video:  [mp4](../slides/images/construction.jpg),  
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/SuSsUHhzkLkPrTw),  
     * Slides: [online](./slides/software-engineering-principles.html), [Druckversion]([online](./slides/software-engineering-principles?print-pdf))
 * Weitere wichtige Prinzipien
     * Artikel: [online](./articles/software-engineering-principles.html)
 * Software Design
-    * Video: [mp4](../slides/images/construction.jpg)
+    * Video: [mp4](https://drive.switch.ch/index.php/s/CpA58rgbXi8s9b2)
     * Slides: [online](./slides/design-objectives.html), [Druckversion](./slides/design-objectives.html?print-pdf)
 * Modularität
     * Artikel [online](./articles/modularity.md)
