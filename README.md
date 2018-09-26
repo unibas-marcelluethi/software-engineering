@@ -58,11 +58,11 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | Woche 13 | Entwurfsmuster | |
 
 ## Nächste Übungen und Deadlines
-| Abgabetermin | Beschreibung | Abgabeart |
-| ------------ | ------------ | ---- |
-| 26. September, 08:00 | [Individueller Test](https://adam.unibas.ch/goto_adam_tst_700846.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_700846.html) |
-| 2. Oktober, 23.59 | [Übungsblatt Woche 2 (Theorie)](https://unibas-sweng.github.io/software-engineering/week2/exercises/theory-exercises.html) | [Adam](https://adam.unibas.ch/goto_adam_exc_700910.html) |
-| 2. Oktober, 23.59 | [Übungsblatt Woche 2 (Praxis)](https://unibas-sweng.github.io/software-engineering/week2/exercises/practical-exercises.html) | Github |
+| Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
+| ------------ | ------------ | ---- | ------- |
+| 2. Oktober, 23.59 | [Übungsblatt Woche 2 (Theorie)](https://unibas-sweng.github.io/software-engineering/week2/exercises/theory-exercises.html) | [Adam](https://adam.unibas.ch/goto_adam_exc_700910.html) | Abgabe freiwillig, wenn die Vorlesung am 26.9 besucht wurde|
+| 2. Oktober, 23.59 | [Übungsblatt Woche 2 (Praxis)](https://unibas-sweng.github.io/software-engineering/week2/exercises/practical-exercises.html) | Github | |
+| 3. Oktober, 08:00 | [Individueller Test](https://adam.unibas.ch/goto_adam_tst_706003.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_706003.html) | |
 
 ## Literatur / Weiterführende Links
 
