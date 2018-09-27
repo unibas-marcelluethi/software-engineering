@@ -4,7 +4,7 @@
 
 * Prinzipien des Software Engineerings
     * Video:  [mp4](https://drive.switch.ch/index.php/s/SuSsUHhzkLkPrTw),  
-    * Slides: [online](./slides/software-engineering-principles.html), [Druckversion]([online](./slides/software-engineering-principles?print-pdf))
+    * Slides: [online](./slides/software-engineering-principles.html), [Druckversion](./slides/software-engineering-principles.html?print-pdf)
 * Weitere wichtige Prinzipien
     * Artikel: [online](./articles/software-engineering-principles.html)
 * Software Design
