@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Beziehung zwischen Modulen</title>
+
+    <link rel="stylesheet" href="../../slides/css/reveal.css">
+    <link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+
+            <section class="center">
+                <div class="titleblock">
+
+                    <p>
+                        <img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+                    </p>
+
+
+                    <h1 style="clear:both;margin-top:20%">
+                        Beziehungen von Modulen
+                    </h1>
+                    <h3>
+                        Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+                    </h3>
+
+                </div>
+
+                <!-- 
+                    Herzlich Willkommen zu diesem Screencast. Dieser wird uns in das Thema Softwaredesign einführen, welches uns 
+                    die nächsten Wochen beschäftigen wird.  
+                -->
+            </section>
+
+
+
+        
+            <section>
+                <h1> "Uses" Beziehung </h1>
+
+                <blockquote style="text-align:left;display:inline-block" class="box">
+                    <div style="float:left;width:80%; text-align:left">
+                    A "uses" B
+                    <ul>
+                        <li>A nutzt Funktionalität von B</li>
+                        <li>B stellt Funktionalität zur Verfügung</li>
+                    </ul> 
+                    </div>
+                    <div style="float:right;width:20%">
+                        <img src="../../slides/images/uses.png" class="plain" />
+                    </div>
+                </blockquote>
+                
+                <div style="text-align: left">
+                <ul>                            
+                    <li>Funktionalit&auml;t von A h&auml;ngt von B ab. </li>
+                    <li>A ist der "client", B der "server" </li>
+                    <li>Beziehung ist statisch
+                </ul>
+            </div>  
+            </section>
+
+            <section>
+                <h1>Uses: Beispiel</h1>
+
+                        <figure>
+                        <img class="plain", src="../../slides/images/dependency-graph.png"/>
+                        <figcaption>Uses Graph von Ganttproject (Package Task)</figcaption>
+                        </figure>
+    
+            </section>
+
+            <section>
+                <h1>Designkriterium 1 </h1>
+                Idealfall: Module sind in Hierarchien organisiert
+                <ul>
+                 <li> Einfach zu verstehen (Bottom up)</li>
+                    <li> Funktionalit&auml;t kann isoliert getestet werden </li>
+                </ul>
+                <div style="float:left;width:50%">
+                    <figure>
+                        <img src="../../slides/images/module-simple-hierarchy.png" class="plain" />
+                        <figcaption>Einfach</figcaption>
+                    </figure>
+                </div>
+                <div style="float:right;width:50%">
+                    <figure>
+                        <img src="../../slides/images/module-simple-cycle.png" class="plain" />
+                        <figcaption>Schwierig</figcaption>
+                    </figure>
+                </div>
+
+            </section>
+
+            <section>
+                <h1> Sandwiching</h1>
+
+                Technik zum Aufbrechen zyklischer Strukturen
+
+                <ul>
+                    <li>
+                        Idee: Modulfunktionalit&auml;t in 2 Module aufteilen.
+                        <ul>
+                            <li>Modul 1: Nur inkommenden Abh&auml;ngigkeiten</li>
+                            <li>Modul 2: Nur ausgehende Abh&auml;ngigkeiten</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div style="display:inline-block">
+                    <div style="float:left;width:30%">
+                        <img src="../../slides/images/module-sandwiching-1.png" class="plain" />
+                    </div>
+                    <div style="float:left;width:30%" class="fragment">
+                        <img src="../../slides/images/module-sandwiching-2.png" class="plain" />
+                    </div>
+                    <div style="float:left;width:30%" class="fragment">
+                        <img src="../../slides/images/module-sandwiching-3.png" class="plain" />
+                    </div>
+                </div>
+
+               
+
+
+            </section>
+
+            <section>
+                <h1> Designkriterium 2 </h1>
+                <ul>
+                    <li> <mark class="highlight">Fan-in:</mark> Anzahl einkommender Beziehungen</li>
+                    <li> <mark class="highlight">Fan-out:</mark> Anzahl ausgehender Beziehungen </li>
+                </ul>
+                <div style="float:left;width:50%">
+                    <img src="../../slides/images/module-high-fan-in.png" class="plain" />
+                </div>
+                <div style="float:right;width:50%">
+                    <img src="../../slides/images/module-high-fan-out.png" class="plain" />
+                </div>
+
+                <ul class="fragment">
+                    <li>Hoher fan-in: Indikator f&uuml;r gute Abstraktion.</li>
+                    <li>Hoher fan-out: Modul macht zu viel</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1> Die Beziehung "is_component_of"</h1>
+
+                
+                <blockquote style="text-align:left; display:inline-block">
+                    <div style="float:left; width:85%; text-align:left;">
+                        A "is_component_of" B                                    
+                        <ul>
+                            <li> Modul B enhält Modul A als Teilmodul </li>
+                        </ul>
+                        </div>
+                        <div style="float:left; width:15%">
+                                <img src="../../slides/images/module-simple_is_component_of.png" class="plain" />
+                            </div>
+            
+                </blockquote>
+                <div style="float:left; width:100%; ">
+                    <ul>
+                        <li>Modul ist aus einfachere Modulen zusammengesetzt </li>
+                        <li>Beschreibung eines Moduls auf h&ouml;herem Abstraktionsgrad.</li>
+                        <li>Auch
+                            <mark class="highlight">Aggregation</mark> oder
+                            <mark class="highlight">Komposition</mark> genannt. </li>
+
+                    </ul>
+                </div>
+                          </section>
+
+
+            <section>
+                <h1> Die Beziehung "is_component_of" </h1>
+                <div style="float:left; width:50%">
+                <img src="../../slides/images/module-is_component_of.png" style="width:100%" class="plain" />
+            </div>
+            <div style="float:right; width:50%" class="fragment">
+                <img src="../../slides/images/module-is_component_of-2.png" style="width:80%" class="plain" />
+            </div>
+            </section>
+
+            
+            <section>
+                <h1> "is_component_of": Beispiel</h1>
+
+                        <img class="plain   " src="../../slides/images/browser-architecture.png" />
+
+            </section>          
+
+        </div>
+    </div>
+
+
+    <script src="../../slides/lib/js/head.min.js"></script>
+    <script src="../../slides/js/reveal.js"></script>
+
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+            transition: 'none',            
+            // Display the page number of the current slide
+            slideNumber: false,
+            /*
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+            },*/
+            dependencies: [{
+                src: '../../slides/plugin/markdown/marked.js'
+            },
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+            {
+                src: '../../slides/plugin/markdown/markdown.js'
+            },
+            {
+                src: '../../slides/plugin/notes/notes.js',
+                async: true
+            },
+           /* {
+                src: '../../slides/plugin/chalkboard/chalkboard.js'
+            },*/
+            {
+                src: '../../slides/plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ],/*
+            keyboard: {
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+            },*/
+        });
+    </script>
+</body>
+
+</html>
