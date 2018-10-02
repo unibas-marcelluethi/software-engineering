@@ -25,7 +25,7 @@ Moderne Typensysteme lassen und hier auch immer komplexere Sachverhalte spezifiz
 einen Stream vom Typ ```Stream<T>``` angewendet, einen Stream vom Typ ```Stream<R>``` zurückgibt, wenn die Funktion ```mapper``` ein Argument von Typ ```T``` in einen Wert von Typ  ```R``` abbildet. 
 ```java 
 interface Stream<T> extends BaseStream<T, Stream<T> > {
-   <R> Stream<R> map(Function<?> super T, ? extends R>; mapper);
+   <R> Stream<R> map(Function<? super T, ? extends R> mapper);
 }
 ```
 
@@ -52,10 +52,10 @@ Das folgende, einfache Beispiel, veranschaulicht, wie man die obige ```map``` Fu
 Die spezifische Variante:
 ```java
     public interface IntList {
-        StringList map(Function<Int, String> mapper) { 
+        List<String> map(Function<Integer, String> mapper) { 
             List<String> l = new LinkedList<String>();
             for (int element : list) { 
-                l.add(mappler(element));
+                l.add(mapper(element));
             }
             return l;
         }
@@ -63,14 +63,13 @@ Die spezifische Variante:
 ```
 Die verallgemeinerte Variante:
 ```java
-    public interface Stream<T> extends BaseStream<T, Stream<T> > {
-        <R> Stream<R> map(Function<?> super T, ? extends R>; mapper) {
+    public interface List<T> {
+        <R> List<R> map(Function<? super T, ? extends R> mapper) {
             List<R> l = new LinkedList<R>();
             for (T element : list) { 
-                l.add(mappler(element));
+                l.add(mapper(element));
             }
             return l;
-
         }
     }    
 ```
