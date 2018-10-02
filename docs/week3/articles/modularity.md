@@ -42,7 +42,7 @@ Bei einem System mit starker Kopplung werden dabei die Funktionalitäten stark v
 Dem Gegenüber steht ein Design bei dem die Module schwach gekoppelt sind, jedoch die Module eine starke Bindung aufweisen. Hier wird die Funktionalität hauptsächlich innerhalb des Moduls verwendet.  
 ![Starke Kopplung, Schwache Bindung](../../slides//images/module-low-coupling.png)
 
-Der erste Fall ist offensichtlich besser. Durch die lose Kopplung gibt es weniger Abhängigkeiten zwischen den Modulen, wodurch eine Änderung an 
+Der zweite Fall ist offensichtlich besser. Durch die lose Kopplung gibt es weniger Abhängigkeiten zwischen den Modulen, wodurch eine Änderung an 
 einem einzelnen Modul viel weniger Auswirkungen auf die anderen Module hat. Auch erleichtert diese lose Kopplung das Testen der Module, da nicht viele 
 Abhängigkeiten simuliert werden müssen. 
 
