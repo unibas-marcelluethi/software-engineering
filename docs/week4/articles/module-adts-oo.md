@@ -1,72 +1,48 @@
-# Generische Module und Fehlerbehandlung
+# Abstrakte Datentypen und Objektorientierte Programmierung 
 
-<section >
-Generic modules
-</section>
-
-
+*Wir haben in unserer Abstrakten Textuellen Beschreibung bereits gesehen, dass 
+Abstrakte Datentypen sehr starke Ähnlichkeit mit den Konstrukten haben, die wie von der
+Objektorientierung kennen.*
 
 
-            <section>
-                <h2>Exceptions und erwartete Fehler</h2>
 
-                <ul><li>Erwartete Fehler sollten &uuml;ber R&uuml;ckgabewert angezeigt werden.</li></ul>
+In objektorientierten Programmiersprachen wie Java oder Python, wird das Konzept des Abstrakten Datentypen umgesetzt und durch 
+verschiedene Sprachkonstrukte unterstützt. 
+Die Klasse entspricht dabei einem Spezialfall vom ADT Modul, welches wir in vorigem Video gesehen haben. 
+Die Operationen die dem Benutzer angeboten werden, werden hier Methoden genannt. Gleichzeitig bieten Objektorientierte Sprachen auch eine standardisierte 
+Funktion an (die wir Konstruktor nennen), um Instanzen (also Objekte) von einem ADT zu kreieren. Um die Verwendung der Objekte angenehmer zu machen, müssen die 
+Objektinstanzen nicht jedesmal dem Objekt übergeben werden, sondern werden direkt mitgegeben. 
+Als Beispiel schauen wir uns folgende Python Klasse an:
+```python
+class A:
+    attribute = "bar"
 
-                Nicht ideal, da keine Ausnahme:
-                <pre><code  class="java" data-trim> 
-                        class List&lt;E&gt; {
-                            // return position of element in list 
-                            int findElement(E key) throws ElementNotFoundException;
-                        }
-                    </code></pre>
- 
-                Besser:
-                <pre><code class="java" data-trim> 
-                        class List&lt;E&gt; { 
-                            // return position of element or -1 if element is not found
-                            int findElement(E key);
-                        }
-                    </code></pre>           
-               
- 
-            </section>
+    def __init__():  # Konstruktor
+        ...
+    def foo(self): 
+        print(self.attribute)        
+```
 
-            <section>
-                <h2>Exceptions und erwartete Fehler</h2>
+Wie wir hier sehen, bekommt die methode ```A.foo``` ein Argument ```self```, welches der Objektinstanz entspricht. Dies ist genau 
+wie in unserem ADT Module. Jedoch bietet Python hier eine kurze Schreibweise um die Methode aufzurufen. Statt ```A.foo(a)``` kann ich schreiben
+```a.foo()```. Die Objektreferenz wird intern verwaltet. 
 
-                Am besten:
-                <pre><code class="java" data-trim data-no-escape> 
-                        class List&lt;E&gt; { 
-                                Optional&lt;int&gt; findElement(E key);
-                            }
-                        </code></pre>
+Bei Java geht die Umsetztung noch einen Schritt weiter. Die Referenz auf die Objektinstanz wird in der Methodendefinition nicht mehr explizit angegeben. 
+Wir definieren die Klasse wie folgt: 
+```java
+class A {
 
-                <ul>
-                    <li> Spezieller Typ markiert den Fehler </li>
-                    <li> Server zwingt Client zum behandeln des Fehlers</li>
-                </ul>
+    String attribute = new String("bar");
 
-
-                <pre class="fragment"><code class="java" data-trim data-no-escape> 
-                    Optional&lt;int&gt; element = list.findElement("abc");
-                    if (element.isPresent()) {
-                        int elementIndex = element.get(); 
-                    }
-                    else { 
-                        // handle case that element is not found 
-                    }
-                        </code></pre>
-
-            </section>
-
-
-            <section>
-                <h3>Unit tests</h3>
-                <ul>
-                    <li>Welche Vorteile bringt eine klar definierte Schnittstelle?</li>
-                    <li>Wie hilft Information Hiding Software wartbar zu halten?</li>
-                    <li>Was ist Kapselung und wie erreichen wir damit "Information Hiding"?</li>
-                    <li>Wie kann ein Modul auf unerwartete Ereignisse reagieren? </li>
-                  </ul>
-            </section>
-
+    public A() { // Konstruktor }
+    
+    void foo() { System.out.println(this.attribute); }
+}
+```
+Um die Klasse zu nutzen, können wir auch hier direkt auf dem Objekt arbeiten
+```java
+ A a = new A(); 
+ a.foo(); 
+```
+```
+Obwohl sich die Umsetzung in einigen Details unterscheidet, sehen wir hier also deutlich wie das ADT Modul, und entsprechend das Prinzip des *Information Hiding* hier umgesetzt wurde. 
