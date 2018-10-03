@@ -48,8 +48,8 @@
                 </div>
 
                 <!-- 
-                    Herzlich Willkommen zu diesem Screencast. Dieser wird uns in das Thema Softwaredesign einführen, welches uns 
-                    die nächsten Wochen beschäftigen wird.  
+                    Herzlich Willkommen zu diesem Screencast. Nachdem wir uns bereits angeschaut haben, wie wir beziehungen mathematisch formal darstellen, 
+                    kommen wir nun zu zwei konkreten Beziehungen zwischen Modulen.
                 -->
             </section>
 
@@ -74,21 +74,33 @@
                 
                 <div style="text-align: left">
                 <ul>                            
-                    <li>Funktionalit&auml;t von A h&auml;ngt von B ab. </li>
                     <li>A ist der "client", B der "server" </li>
+                    <li>Funktionalit&auml;t von A h&auml;ngt von B ab. </li>
                     <li>Beziehung ist statisch
                 </ul>
             </div>  
+
+            <!-- 
+                Die erste, und wichtigste Beziehung in der Softwareentwicklung ist die "uses" Beziehung. Diese Beziehung ist immer dann gegeben, 
+                wenn ein Modul, nennen wir es A, ein Funktionalität von einem anderen Modul, sagen wir Modul B, nutzt. 
+                Wir nennen B in dieser Beziehung den Server, und A den Client. 
+                Wir sehen direkt, dass die Funktionalität von A von B abhängt. Diese Beziehung ist statisch, d.h. wir können Sie direkt aus dem Programmcode
+                ablesen. 
+            -->
             </section>
 
             <section>
                 <h1>Uses: Beispiel</h1>
 
-                        <figure>
-                        <img class="plain", src="../../slides/images/dependency-graph.png"/>
-                        <figcaption>Uses Graph von Ganttproject (Package Task)</figcaption>
-                        </figure>
-    
+                    <figure>
+                    <img class="plain", src="../../slides/images/dependency-graph.png"/>
+                    <figcaption>Uses Graph von Ganttproject (Package Task)</figcaption>
+                    </figure>
+
+                    <!-- 
+                        In realistischen Softwareprojekten können die entsprechenden Uses Graphen sehr komplex werden. Wir sehen hier ein Beispiel 
+                        von nur einem Package von Ganttproject. Der Graph wurde mit Intellij IDEA direkt aus dem Source Code generiert. 
+                    -->
             </section>
 
             <section>
@@ -110,6 +122,16 @@
                         <figcaption>Schwierig</figcaption>
                     </figure>
                 </div>
+
+                <!-- 
+                    Obwohl wir uns hier nur die Beziehungen zwischen den Modulen anschauen, und noch gar nichts über die funktionsweise der Module
+                    wissen, können wir bereits einiges über ein Design aussagen. 
+                    Zum Beispiel, wollen wir wenn möglich Designs erstellen, bei denen die Uses Beziehung eine Hierarchie bildet. 
+                    Der Grund dafür ist, dass Sie Module in diesem Fall viel einfacher Testen lassen. Wir beginnen auf Ebenen 0, wo wir noch keine 
+                    Abhängigkeiten haben. Diese Modul können wir isoliert verstehen. Danach können wir die Module auf der nächsten Ebene anschauen, 
+                    und so weiter. Wenn wir Zyklen in der Relation haben, wie auf der rechten Seite dargestellt, dann können wir kein Modul isoliert verstehen. 
+                    Wir müssen alle Module im Zyklus gemeinsam anschauen um die angebotene Funktionalität zu verstehen. 
+                -->
 
             </section>
 
@@ -138,9 +160,14 @@
                         <img src="../../slides/images/module-sandwiching-3.png" class="plain" />
                     </div>
                 </div>
-
                
-
+                <!-- 
+                    Wenn wir trotzdem einen Zyklus im Uses Graphen haben, dann können wir versuchen diesen mit einer Methode, 
+                    die sich Sandwiching nennt, aufzubrechen. Wir identifizieren ein Modul, welches Sowohl eingehende als auch 
+                    ausgehende Beziehungen hat. Dieses trennen wir dann in zwei Separate Module auf. Das erste hat dabei nutzt dabei nur 
+                    Funktionalität von einem anderen Modul, während das zweite Funktionalität anbietet. Durch diese Aufteilung verschwindet
+                    der Zyklus im Graphen und das System wird einfacher verständlich und modularer. 
+                -->
 
             </section>
 
@@ -161,6 +188,16 @@
                     <li>Hoher fan-in: Indikator f&uuml;r gute Abstraktion.</li>
                     <li>Hoher fan-out: Modul macht zu viel</li>
                 </ul>
+
+                <!-- 
+                    Wir können anhand des Uses Graphen noch mehr ablesen. Wenn wir ein Modul betrachten, können wir uns anschauen, 
+                    wie viele Beziehungen eingehen, und wieviele von dem Modul ausgehen. Wir sprechen von Fan-in und Fan-out. 
+                    Ein hoher Fan in, ist ein Indikator dafür, dass das Modul die angebotene Funktionalität gut abstrahiert, da es ja von 
+                    vielen unterschiedlichen Modulen benutzt werden kann. 
+                    Ein Hoher Fan-out hingegen ist eher ein schlechtest Zeichen. Es ist ein Zeichen dafür, dass das Modul zu umfangreich ist, also nicht 
+                    nur eine einzelne Verantwortung übernimmt. Deshalb muss es die Funktionalität von ganz vielen anderen Modulen in Anspruch nehmen. 
+                -->
+
             </section>
 
             <section>
@@ -181,15 +218,28 @@
                 </blockquote>
                 <div style="float:left; width:100%; ">
                     <ul>
-                        <li>Modul ist aus einfachere Modulen zusammengesetzt </li>
-                        <li>Beschreibung eines Moduls auf h&ouml;herem Abstraktionsgrad.</li>
+                        <li>Modul ist aus einfacheren Modulen zusammengesetzt </li>
                         <li>Auch
-                            <mark class="highlight">Aggregation</mark> oder
-                            <mark class="highlight">Komposition</mark> genannt. </li>
+                                <mark class="highlight">Aggregation</mark> oder
+                                <mark class="highlight">Komposition</mark> genannt. </li>
+    
+                        <li>Beschreibung eines Moduls auf h&ouml;herem Abstraktionsgrad.</li>
 
                     </ul>
                 </div>
-                          </section>
+
+                <aside class="notes">
+                    Wir kommen nun zu einer weiteren wichtigen Beziehung: Diese nennen wir "is_component_of". 
+                    Ein Module A steht also in Beziehung zu Modul B, wenn Module B ein Teil von Module A ist. 
+                    Man spricht häufig bei dieser Beziehugn auch über Aggregation oder Komposition von Modulen.                     
+                    
+                    Wir werden in kürze sehen, dass wir hier häufig eine Beschreibung einer Funktionalität auf höherem Abstraktionsgrad 
+                    haben. 
+
+
+                </aside>
+
+                </section>
 
 
             <section>
@@ -200,6 +250,12 @@
             <div style="float:right; width:50%" class="fragment">
                 <img src="../../slides/images/module-is_component_of-2.png" style="width:80%" class="plain" />
             </div>
+            <aside class="notes">
+                Auch diese Beziehung können wir wieder als Graphen darstellen. Wir können direkt ablesen, das Module $M_1$ hier aus M2, M3 und M4 zusammengesetzt ist. 
+                $M_2$ selbst besteht wieder aus den Modulen M_7, M_8 und M_9. 
+
+                In etwas anderer Darstellung entspricht diese Beziehung der hier dargestellten Komposition von Modulen
+            </aside>
             </section>
 
             
@@ -208,6 +264,15 @@
 
                         <img class="plain   " src="../../slides/images/browser-architecture.png" />
 
+                    <aside class="notes">
+                        Wir haben vorhin erwähnt, dass diese Beziehung Häufig den Abstraktionsgrad erhöht. Das lässt sich am besten an einem 
+                        praktischen Beispiel illustrieren. Als Beispiel nehmen wir eine Browsersoftware. 
+                        Aus höchster Abstraktionsebenen haben wir den Browser selbst. Dieser besteht aus verschiedenen Modulen, zum Beisiel 
+                        den UI Komponenten, der Rendering Engine , der JavaScript Engine, ... Die JavaScript engine kann wieder Detailierter betrachtet werden. 
+                        Sie besteht aus den Modulen JIT Compiler, Parser und dem Interpreter. 
+                        Mit jeder Ebene nimmt also der Abstraktionsgrad zu.
+                        
+                    </aside>
             </section>          
 
         </div>

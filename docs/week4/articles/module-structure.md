@@ -6,7 +6,8 @@ diese Beziehung formalisieren können.*
 
 ## Modulbeziehung als Zweistellige (binäre) Relation 
 
-Gegeben sei eine Menge von Modulen $M = \{ M_1, \ldots, M_n \}$ 
+Gegeben sei eine Menge von Modulen $$M = \{ M_1, \ldots, M_n \}$$
+
 <!-- 
                 <div style="text-align: left">
                 <p>Module: \[ S = \{M_1, \ldots, M_n\} \] 

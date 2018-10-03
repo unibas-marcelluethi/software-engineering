@@ -2,3 +2,6 @@ theme: jekyll-theme-slate
 
 title: Software Engineering
 description: ' ' 
+
+includes_dir     : ./_includes
+layouts_dir:  ./_layouts

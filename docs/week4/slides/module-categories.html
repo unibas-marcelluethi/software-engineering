@@ -45,7 +45,13 @@
 						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
 					</h3>
 
-				</div>
+                </div>
+                
+                <aside class="notes">
+                    Willkommen zu diesem Screencast. In diese Screencast wollen wir uns typische Beispiele und Kategorien von Modulen anschauen, die sich in der Softwareentwicklung 
+                    verbreitet haben. 
+                </aside>
+
 			</section>
 			
     
@@ -69,6 +75,24 @@
                         <li> Syntax soll keiner realen Programmiersprache entsprechen </li>
                         <li> L&auml;sst uns idealisierte Konzepte ausdr&uuml;cken </li>                
                     </ul>
+
+                    <aside class="notes">
+                        Damit wir präzise formulieren können was wir meinen, müssen wir eine Sprache finden, in der wir die Module beschreiben. 
+                        Es wäre naheliegend, dafür direkt eine Programmiersprache zu verwenden. Wir wollen hier jedoch eine Formulierung wählen, die unabhängig von der Programmiersprache ist. 
+                        Eine Programmiersprache macht immer kompromisse, weil sie zum beispiel für eine bestimmte Zielgruppe bestimmt ist, weil die umsetzung technisch schwierig ist, oder einfach weil es dem 
+                        Zeitgeist entspricht. Unsere Textuelle Modulbeschreibung ist eine idealisierte Sprache, die uns auch Konzepte ausdrücken lässt, die in keiner Programmiersprache direkt so umgesetzt sind.                         
+
+                        Wir sehen hier eine Beispieldefinition von einem Modul X. Wir können via die uses Klausel direkt ausdrücken, dass es die Module Y und Z verwendet. 
+                        Das Modul exportiert auch Funktionalität und Symbole. Beispielsweise den Integer A, eine Typdefinition B, eine Prozedur C und eine Funktion F.
+
+                        In unserer Sprache unterscheiden wir übrigens zwischen Prozedur und Funktion. Eine Prozedur ist etwas, was einen Seiteneffekt hat, also entweder Argumente oder im Modul definierte Variablen 
+                        verändert. Eine Funktion entspricht einer mathematischen Funktion, die keine Seiteneffekte haben kann. Das heisst wenn ich zweimal dieselbe Funktion mit denselben Argumenten aufrufe, gibt mir 
+                        die Funktion immer dasselbe Resultat zurück. Die Prozedur hingegen, kann jedesmal zu einem anderen Ergebenis führen. 
+
+                        Diese Unterscheidung wurde früher in vielen Programmiersprachen gemacht und macht die definition klarer. Leider ist es heute aus den Mainstream sprachen wie Java oder Python verschwunden.
+
+                        Schlussendlich sehen wir noch, das das Modul X selbst aus zwei weiteren Modulen, nämlich R und T besteht. 
+                    </aside>
                 </section>
     
 
@@ -89,6 +113,12 @@
                     end X
                     </code></pre>
                  
+                    <aside class="notes">
+                        Wir sehen hier eine Graphische Darstellung von den Beziehungen zwischen 3 Modulen, zusammen mit der entsprechenden Textuellen beschreibung. Während die Graphische Beschreibung 
+                        uns eine gute Übersicht gibt, hat die Textuelle Darstellung den Vorteil von grösserer Präzision. Halten Sie das Video doch mal an und vergleichen Sie die Textuelle Spezifikation mit dem Bild. 
+                        Wir haben hier den Fall, dass ein Teil der exportierten Funktionalität von Modul X nicht durch Modul X selbst, sondern von den Modulen R und T zur Verfügung gestellt wird. Trotzdem erscheinen die 
+                        
+                    </aside>
                 </section>
                 <section>
                     <h1>Modul Spezifikation - Beispiel</h1>
@@ -105,6 +135,7 @@
                         end R
                     </code></pre>
     
+              
                   
                 </section>
  
@@ -124,6 +155,7 @@
                         end T
                     </code></pre>
         
+                  
             </section>
 
 
@@ -161,9 +193,14 @@
                 </ul>
 
                 <pre><code data-trim>
-                   function sort (a: in array of REAL) : array of REAL
+                   function sort (a: array of REAL) : array of REAL
                 </code></pre>
 
+                <aside class="notes">
+                        Nachdem wir nun die Textuelle Beschreibung verstehen, können wir uns einige konkrete Module anschauen. Die einfachste Art von einem Modul ist eine einzelne Funktion. 
+                        Die Schnittstelle bietet hier die Funktionasargumente, sowie der Rückgabewert. Wie die Funktion, hier Sortieren, implementiert ist bleibt dem Nutzer verborgen. 
+                        Der implementierte Algorithmus kann auch beliebig ausgetauscht werden. 
+                    </aside>
             </section>
             <section>
                 <h1> Beispielmodul: Funktionsbibliothek </h1>
@@ -175,15 +212,22 @@
                 <pre><code data-trim class="modula">
                         module MathLib
                         exports 
-                            function log(REAL in value) : REAL;
-                            function square(REAL in value) : REAL;
+                            function square(value : REAL) : REAL;
+                            function squareRoot(value : Real) : REAL;
                             ...
                            implementation
                             ...
+                            function newtonsMethod(value : REAL) : REAL                            
              
                         end MathLib
                             </code></pre>
 
+                            <aside class="notes">
+                                Häufig werden einzelne Funktionen zu Funktionsbibliotheken zusammengefasst. 
+                                In dieses Modul können natürlich auch hifsfunktionen definiert werden, die aber nur zur Implementation benutzt werden, und nicht in der 
+                                exportierten Schnittstelle erscheinen. 
+                            </aside>
+                                                              
             </section>
 
             <section>
@@ -215,6 +259,15 @@
                         <li> Datenzugriff muss gekapselt sein.</li>
                     </ul>
                 </blockquote>
+
+                <aside class="notes">
+                        Unser nächste Beispiel ist der sogenannte Datenpool. Hier werden verschiedene Variablen exportiert. 
+                        Ein typischer Anwendungsbereich ist zum Beispiel das Speichern von Konfigurationswerten. 
+                        In der modernen Programmierung ist man aber von dieser Art modul abgekommen. Man möchte eigentlich nie, 
+                        dass ein Nutzer direkt auf Variablen zugreifen kann. Man bietet stattdessen in der Schnittstellt entsprechenden
+                        Zugriffsfunktionen an. 
+                    </aside>
+
             </section>
 
             <section>
@@ -240,6 +293,14 @@
                     <mark class="highlight"> Achtung: </mark> Objekt != Klasse
                 </div>
 
+                <aside class="notes">
+                    Diese Betrachtungen führen uns nun zur Modulkategorie Objekt. Auch hier habe ich variablen, in diesem Beispiel ein Array mit Stakcpointer, um einen Stack zu repräsentieren. 
+                    Jedoch kann ich auf diese nicht direkt zugreifen, sondern manipuliere diese via den entsprechenden Prozeduren, push und pop.
+
+                    Diese Konstruktion entspricht einem singleton Objekt in Objektorientierten Programmiersprachen. Beachten Sie aber, dass hier wirklich Objekte und nicht klassen gemeint sind. Es gibt hier nur 
+                    1 Objekt Stack, und auch keinen Konstruktor um neue Objekte zu definieren.
+                </aside>
+
             </section>
 
             <section>
@@ -264,6 +325,12 @@
                                 <li> Datenstruktur wird gekapselt</li>
                             </ul>
                     </ul>
+
+                    <aside class="notes">
+                        Die nächste wichtige Kategorie von Modulen ist der abstrakte Datentyp. Hier wird die Datenrepräsentation abstrakt gehalten und vor dem Benutzer versteckt. Das ist hier durch das Fragezeichen symbolisiert.
+                        Im Interface werden die Funktionen und Prozeduren zur Verfügung gestellt, um mit dem Datentyp zu arbeiten. Die Eigenschaften vom Datentyp ist also nur über die Funktionen definiert. 
+                        Dies entspricht einer sehr starken Form von Information Hiding.
+                    </aside>
             </section>
 
             <section>
@@ -281,10 +348,19 @@
                         Liskov, B., &amp; Zilles, S. (1974, March).<br>
                         <a href="http://web.cs.iastate.edu/~hridesh/teaching/362/07/01/papers/p50-liskov.pdf">Programming with abstract data types.</a>                         
                 </blockquote>
-   
+
+                <aside class="notes">
+                    Die Abstrakten Datentypen wurden 1974 von Barbara Liskov eingeführt. Sie wurden unter anderem dazu entwickelt, damit der Benutzer die möglichkeit hat, 
+                    eigene Abstraktionen zur Programmiersprache hinzuzufügen. So muss Beispielsweise der Type Stack hier nicht von der Programmiersprache angeboten werden, 
+                    sondern kann als Modul hinzugefügt werden. Um Praktisch mit den Abstrakten Datentypen zu arbeiten, braucht es aber nicht nur die Definition, sondern auch eine Möglichkeit 
+                    einen solchen Datentypen überhaupt zu bauen. Man muss also noch einen Konstruktor, hier als Fukntion Create, definieren. Dieser Konstruktor kreiert dann ein Objekt, 
+                    aus dem abstrakten Datentyp. Wir sehen schon hier, den engen Zusammenhang zwischen Abstrakten Datentypen und Objektorientierter Programmierung. Wir werden diesen Zusammenhang
+                    im nächsten Artikel noch genauer anschauen. 
+                </aside>
+
             </section>
 
-
+    
             <section>
                     <h1> Generische Module </h1>
                     <pre><code data-trim>                              
@@ -308,6 +384,17 @@
                         <li> Beispiel des Prinzips <mark class="highlight">Abstraktion </mark> </li>
                         <ul> <li> Details vom Type T werden abstrahiert</li></ul>
                     </ul>
+
+                    <aside class="notes">
+                        Nun führen wir noch eine letzte Erweiterung ein. Im Vorigen Stack ADT konnten wir nur INTs speichern. Um einen Stack von Strings zu speichern 
+                        musste man einen neuen ADT definieren. Mit generischen Modulen können wir nur auch noch über diesen Datentypen abstrahieren. Wir sagen nicht mehr welche Typen von Werten gespeichert
+                        werden können, sondern sagen nur noch, dass der Step Werte vom Type T speichern kann. Wir erhalten erst ein Konkretes Modul, indem ich den generellen Typ T mit einem 
+                        konkreten Type, hier zum Beispiel Integer, identifiziere. 
+
+                        Wir haben gesehen, wie wir uns von sehr konkreten Beispiele von Modulen zu immeren Abstrakteren Modulkonzepten hinbewegt haben. 
+                        Durch die Abstraktion haben wir bei der Implementation immer weniger konkrete Details zur Verfügung. Dadurch, dass wir nicht auf implementationsdetails von den Modulen zugreifen können, 
+                        stellen wir sicher, dass die Module maximal entkoppelt sind, und dass wir ein wirklich modulares Design erreichen.                         
+                    </aside>
 
                 </section>
     

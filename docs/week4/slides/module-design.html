@@ -45,7 +45,13 @@
 						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
 					</h3>
 
-				</div>
+                </div>
+                
+                <aside class="notes">
+                    Herzlich willkommen zu diesem Screencast zum Thema Moduldesign. 
+                    Im folgenden werden wir uns dem Aufbau eines Moduls widmen. 
+                    Wir werden dabei insbesondere das Grundlegende Prinzip des Information Hidings kennenlernen.
+                </aside>
 			</section>
 			
 
@@ -65,11 +71,24 @@
                     <img class="plain" src="../../slides/images/uses.png" />
                 </div>
                 <blockquote class="fragment" style="display: inline-block">
-Interface beschreibt
+                        Interface beschreibt
                                 <mark class="highlight">Vertrag</mark>
                                 zwischen Client und Server
         
                 </blockquote>
+
+                <aside class="notes">
+                    Wir haben bereits die "Uses" Beziehung zwischen zwei Modulen angeschaut. Die Idee ist, dass ein Modul, der client, 
+                    die Funktionalität eines anderen Moduls, dem Server, nutzt. 
+                    Der Server implementiert also eine gewisse Funktionalität. Ein Grundprinzip des Moduldesigns ist nun, dass der 
+                    Server die Funktionalität die er anbietet über eine wohldefinierte Schnittstelle exportiert. 
+                    Der Client kann dann die von einem Modul angebotene, exportierte Funktionalität importieren.                 
+                
+                
+                    Wir können Sagen, dass die Schnittstelle einen Vertrag zwischen Client und Server darstellt, der regelt, was genau 
+                    exportiert und importiert wird. 
+                </aside>
+
 
             </section>
 
@@ -77,21 +96,38 @@ Interface beschreibt
             <section>
                     <h1> Interface und Implementation</h1>
                        
+                    <blockquote>
+                        Wichtig: Interface und Implementation sollen getrennt werden!
+                    </blockquote>
                     <ul>
                         <li>
-                            Erm&ouml;glicht Teilung der Verantwortlichkeiten
+                            Erm&ouml;glicht Trennung der Verantwortlichkeiten
                         </li>
                         <ul>
-                            <li> Client benutzt Resourcen </li>
+                            <li> Client benutzt Funktionalität </li>
                             <li> Server sorgt f&uuml;r richtige Implementation </li>
                         </ul>
                         <li> Implementation kann ausgetauscht werden</li>
                         <ul>
-                            <li> Erleichtert das Testen: Dummy Implementationen m&ouml;glich </li>
-                            <li> Ermöglicht rapid prototyping</li>
+                            <li> Erleichtert das Testen </li>
+                            <li> Ermöglicht Prototyping</li>
                         </ul>                    
                     </ul>
     
+                    <aside class="notes">
+                        Ein wichtiges Prinzip ist, dass das Interface und die Implementation immer getrennt werden sollen. 
+                        Auch hier ist wieder das Prinzip der "Trennung der Verantwortlichkeiten" am Werk. Der Server ist für die richtige 
+                        Implementation verantwortlich. Der Client dafür, die Funktionalität richtig zu nutzen. 
+
+                        Diese Trennung hat auch ganz praktische Vorteile. Die Implementation kann beliebig ausgetauscht werden. 
+                        Dies erleichtert das Testen ungemein. Statt einer richtigen Implementation eines Moduls, welches zum Beispiel auf eine Produktive 
+                        Steuerunsanlage zugreift, können wir das Modul einfach durch eine Mock implementation ersetzen, die diese Anlage simuliert.
+                        Auch das schnelle erstellen eines Prototypen wird dadurch ermöglicht. Wir können in einer ersten Fassung ein Modul 
+                        sehr einfach implementieren und details wie Fehlerbehandlung und ähnliches ignorieren.
+                         Wenn der Prototyp dann in ein richtiges Produkt umgesetzt, kann ein Modul dann einfach durch ein qualitativ besseres, 
+                         produktionsfähiges Modul ersetzt werden, ohne dass der Client angepasst werden muss. 
+
+                    </aside>
                 </section>
     
 
@@ -114,7 +150,18 @@ Interface beschreibt
                             </figure>
                 </div>
                 <blockquote style="display:inline-block">Interface
-                    <mark class="highlight">abstrahiert</mark> Funktionalit&auml;t</blockquote>
+                    <mark class="highlight">abstrahiert</mark> Funktionalit&auml;t
+                </blockquote>
+
+
+                <aside class="notes">
+                    Eine Schnittstelle hat auch die Aufgabe die Funktionalität zu abstrahieren. 
+                    Die Gänge 1 - 5 sind zweckmässige Abstraktionen für komplizierte konfigurationen von Zahnrädern im Getriebe eines Autos. 
+                    Dadurch, dass wir hier mit einer Abstraktion arbeiten, sind wir viel flexible das Getreibe (d.h. die Implementation) auszutauschen. 
+                    Die Zahlen 1 - 5 beinhalten keine Details der Implementation, die uns an die Implementation binden. Es wird zum Beispiel nicht verlangt, 
+                    dass das Getriebe mit Zahnrädern implementiert werden muss. Das sind für den Client unwichtige Implementationsdetails. 
+                    
+                </aside>
             </section>
 
 
@@ -191,6 +238,11 @@ Interface beschreibt
                     <li> Implementation sollte ge&auml;ndert werde k&ouml;nnen ohne dass Client ver&auml;ndert werden muss. </li>
                 </ul>
 
+                <aside class="notes">
+                    Das Interface eines Moduls ist also so etwas wie die Firewall zwischen Client und Server. 
+                    Sie stellt sicher, das wirklich nur das durchkommt, was der client wissen muss und darf. Je besser wir die 
+                    funktionalität vom Server abstrahieren können, desto flexibler sind wir später, die Implementation auszutauschen. 
+                </aside>
             </section>
 
 
@@ -228,8 +280,18 @@ Interface beschreibt
                 </blockquote>
                 <ul>
                     <li> Speziell wichtig wenn Daten als Teil des Moduls modelliert werden </li>
-                    <li> Grundlegendes Designprinzip von Objekt-orientierterten Programmiersprachen </li>
+                    <li> Grundlegendes Designprinzip von Objektorientierterten Programmiersprachen </li>
                 </ul>
+                <aside class="notes">
+                    Aus diesen Betrachtungen lässt sich das wichtige Konzept des Information Hiding ableiten. 
+                    Komponenten, die sich wahrscheinlich in Zukunft ändern werden, sollten immer durch ein Interface vor dem Client versteckt werden. 
+                    Dies gilt insbesondere auch für die Daten, die als Teil eines Moduls modelliert werden, da sich Datenrepräsentationen besonders
+                    schnell ändern, und typischerweise auch grosse Auswirkungen auf den Rest des Programms ahben. 
+
+                    Dieses Prinzip lässt sich komplett unabhängig von der spezifischen Programmiersprache implementieren. Es wurde aber zum Grundlegenden 
+                    Designprinzip von Objektorientierten Programmiersprachen, und lässt sich in diesen Sprachen also besonders einfach bewerkstelligen. 
+                    
+                </aside>
             </section>   
 
 
@@ -260,6 +322,14 @@ Interface beschreibt
                 </ul>
             </div>
             
+            <aside class="notes">
+                In den Objektorientierten Programmiersprachen wird das Information Hiding durch die Kapselung erreicht. 
+                In diesem Beispiel ist die Datenrepräsentationen nicht öffentlich zugänglich, sondern wird durch Methoden (der Schnittstelle)
+                gekapselt. 
+
+                An diesem Beispiel lässt sich auch nochmals schön der Unterschied zwischen Prinzip und Methode erklären. Information Hiding ist 
+                ein Prinzip. Die Kapselung ist eine Methode um das Prinzip durchzusetzen. 
+            </aside>
             </section>
 
 
@@ -272,24 +342,42 @@ Interface beschreibt
                         <li> Jedes Produkt, dass wir entwickeln kann fehlschlagen </li>
                         <ul>
                             <li> Fehlersituation m&uuml;ssen spezifiziert werden </li>
-                            <li> Ein Module muss in Fehlersituation diese als "Exception" anzeigen </li>
+                            <li> Ein Modul muss in Fehlersituation diese als "Exception" anzeigen </li>
                         </ul>
                     </ul>
     
+                    <aside class="notes">
+                        Als letzten Aspekt vom Moduldesign wollen wir noch die Fehlerbehandlung anschauen. 
+                        Wie bei jedem anderen Produkt kann es auch bei der Software zu Fehlern kommen. 
+                        Die möglichen Fehlersituationen sollen beim Moduldesign spezifiziert werden. Ein Modul muss diese
+                        entsprechend als Exceptions anzeigen. 
+                    </aside>
                 </section>
     
                 <section>
                     <h1>Fehlerursachen</h1>
     
-    
                     <ul>
                         <li>Ein Modul $M$ sollte in folgenden Situationen einen Fehler anzeigen:</li>
                         <ul>
                             <li>Ein Client verletzt das "Protokoll" bei Serviceaufruf von $M$</li>
-                            <li>$M$ selbst verletzt das Protokoll wenn es eigene Services aufruft und schl&auml;gt deshalb fehl </li>
+                            <li>$M$ selbst verletzt das Protokoll wenn es eigene Services aufruft </li>
                             <li> Hardware Fehler, Division durch 0, etc.</li>
                         </ul>
                     </ul>
+
+                    <aside class="notes">
+                        Es gibt verschiedene Gründe, weshalb ein Modul fehlschlagen kann. Eine Möglichkeit ist, dass der 
+                        Client das Protokolll verletzt, wenn er eine funktionalität eines Moduls aufruft. Ein Beispiel dafür ist,   
+                        wenn die Funktinalität Wurzelziehen, die von einem Modul angeboten wird, mit einer Negativen Zahl aufgerufen wird. 
+                        In diesem Fall kann die Wurzel nicht berechnet werden. 
+
+                        Es kann auch sein, dass ein Modul selbst einen Fehler verursacht, während der Ausführung der zur Verfügung gestellten 
+                        Funktionalität. Neben Protokollverletzungen, kann es aber auch zu Hardware Fehlern, Division durch 0, usw. kommen. 
+                        Auch in diesen Situationen muss ein Modul den Fehler anzeigen. 
+                        
+
+                    </aside>
                 </section>
     
                 <section>
@@ -302,14 +390,20 @@ Interface beschreibt
                         <ul>
                             <li> Fehler wird behoben.
                             </li>
-                            <li>Modul kann weiterarbeiten -> Kein Fehler </li>
+                            <li>Modul kann weiterarbeiten &rarr; Kein Fehler </li>
                         </ul>
     
                         <li> Keine L&ouml;sung m&ouml;glich</li>
                         <ul>
-                            <li> Cleanup und Fehler propagieren </li>
+                            <li> Fehler propagieren </li>
                         </ul>
                     </ul>
+
+                    <aside class="notes">
+                        Wenn ein Fehler vom Server signalisiert wurde, hat der Client verschiedene Möglichkeiten. 
+                        Im idealfall wird der Fehler behoben. Das Modul kann dann seine Funktionalität uneingeschränkt anbieten und 
+                        ohne Fehler weiterlaufen. Falls keine Lösung möglich ist, muss das Modul den seinerseits den Fehler weiterpropagieren. 
+                    </aside>
                 </section>
 
 
