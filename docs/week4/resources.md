@@ -21,7 +21,7 @@
     * Slides: [online](./slides/module-categories.html), [Druckversion](./slides/module-categories.html?print-pdf)
 
 * Abstrakte Datentypen und Objektorientierte Programmierung" 
-    * Artikel: [oneline](./articles/module-adts-oo.html)
+    * Artikel: [online](./articles/module-adts-oo.html)
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 
