@@ -23,20 +23,20 @@ def quicksort(x):
 ```
 
 2.2 Lesen sie im Internet über *Aspektorientierte Programmierung* und
-    Beschreiben Sie, wie damit das Prinzip der *Teilung der Verantwortlichkeiten* umgesetzt wird.
+    beschreiben Sie, wie damit das Prinzip der *Teilung der Verantwortlichkeiten* umgesetzt wird.
 
 
 
 ## 3. Modularisierung
 
-3.1 Angenommen, Sie entscheiden Sich ein Auto zu modularisieren, indem Sie dieses in kleine Würfel von 15 $cm^3$   schneiden. 
+3.1 Angenommen, Sie entscheiden Sich ein Auto zu modularisieren, indem Sie dieses in kleine Würfel von 15 cm3 schneiden. 
     
     * Was können Sie über Kopplung und Bindung sagen? 
     * Was wäre eine bessere Dekomposition in Module?
 
-3.2 Was können Gründe sein, dass ein Programm eine eine schwache Bindung und starke Kopplung aufweist?
+3.2 Was können Gründe sein, dass ein Programm eine eine schwache Bindung aufweist? Was können Sie dagegen tun? 
     
-3.3 Was können Gründe sein, dass eine Software eine hohe Kopplung zwischen zwei Modulen aufweist?
+3.3 Was können Gründe sein, dass ein Programm eine hohe Kopplung zwischen zwei Modulen aufweist? Was können Sie dagegen tun?
 
 
 
