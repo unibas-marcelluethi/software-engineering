@@ -53,3 +53,6 @@ direkt mit jedem anderen kommuniziert, gibt dies sehr viele
 Abhängigkeiten zwischen den Modulen. Einfacher ist es, wenn wir 
 eine Zentrale Stelle (ein Blackboard) einrichten, über die die Kommunikation läuft. Bei $$n$$ Modulen haben wir dann nicht mehr
 $$n^2$$ Abhängigkeiten zwischen den Modulen, sondern nur noch $$2n$$.	
+Typisches Beispiele für eine solche Architektur sind Börseninformationssysteme oder Auktionssysteme. 
+Alle Angebote werden hier an ein zentrales Modul gesendet, welches die Information verwaltet. Die Anfrage kann dann direkt 
+an das Zentrale Modul gesendet werden.
