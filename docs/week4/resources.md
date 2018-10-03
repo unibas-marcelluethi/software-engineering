@@ -2,18 +2,26 @@
 
 # Folien und Artikel
 
-* Prinzipien des Software Engineerings
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/SuSsUHhzkLkPrTw),  
-    * Slides: [online](./slides/software-engineering-principles.html), [Druckversion](./slides/software-engineering-principles.html?print-pdf)
-* Weitere wichtige Prinzipien
-    * Artikel: [online](./articles/software-engineering-principles.html)
-* Software Design
-    * Video: [mp4](https://drive.switch.ch/index.php/s/CpA58rgbXi8s9b2)
-    * Slides: [online](./slides/design-objectives.html), [Druckversion](./slides/design-objectives.html?print-pdf)
-* Modularität
-    * Artikel [online](./articles/modularity.md)
-* Parnas D. L. Software Aging: 
-    * Artikel: [pdf](http://www.inf.ed.ac.uk/teaching/courses/seoc/2004_2005/resources/bullet11.pdf)
+* Modulstruktur - Formale Aspekte 
+    * Artikel: [online](./articles/module-structure.html)
+
+* Beziehung zwischen Modulen
+    * Video:  [mp4](../slides/images/construction.jpg),  
+    * Slides: [online](./slides/module-relationships.html), [Druckversion](./slides/module-relationships.html?print-pdf)
+
+* Typische Architekturmuster
+    * Artikel: [online](./articles/module-architectural-patterns.html)
+
+* Modul Design
+    * Video:  [mp4](../slides/images/construction.jpg)
+    * Slides: [online](./slides/module-design.html), [Druckversion](./slides/module-design.html?print-pdf)
+
+* Kategorien von Modulen
+    * Video:  [mp4](../slides/images/construction.jpg)
+    * Slides: [online](./slides/module-categories.html), [Druckversion](./slides/module-categories.html?print-pdf)
+
+* Abstrakte Datentypen und Objektorientierte Programmierung" 
+    * Artikel: [oneline](./articles/module-adts-oo.html)
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 

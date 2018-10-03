@@ -7,9 +7,8 @@ Eines der Zentralen Prinzipien war die Modularität. Auch beim Design sind wir d
 Wir haben gesehen, dass ein Software Design eigentlich nur die Aufteilung eines Systems in Module ist. Wenn wir das richtig machen, 
 erhalten wir dabei ein System, welches das wichtigste Designziel erfüllt: Die Möglichkeit, dass künftige Änderungen leicht durchgeführt werden können. 
 
-In diese Woche wollen wir uns jetzt um Module kümmern. Module kommen in jeder modernen Programmiersprache vor. Wir wollen diese Woche
-aber abstrakt, d.h. sprachunabhängig bleiben.
-
+In diese Woche wollen wir besprechen, wie wir Modularität erreichen, Beziehungen zwischen Modulen besprechen und wie wir module Designen. 
+Wir schauen uns auch konkrete Beispiele von Modulen an. 
 
 
 ## Lernziele
@@ -22,7 +21,7 @@ Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* d
  - Die Modulstruktur formal hinschreiben können und anhand der Struktur Eigenschaften (Hierarchie, Ebenen) bestimmen können.
  - Die Beziehungen "uses" und "is_component_of" kennen 
  - Einige typische Architekturmuster mittels einem Modulgraphen beschreiben können
- - Die wichtigsten Kategorien von Modulen nennen können
+ - Die wichtigsten Kategorien von Modulen nennen können.
  
 
  
@@ -38,30 +37,29 @@ Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 10. Oktober
 
 
 
-
 ### Vorbereitung für die Vorlesungsstunde vom Mittwoch:
 
 Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte folgende Schritte:
 
-* Schritt 1: Lesen Sie den Artikel  "Modulstruktur - Formale Aspekte - ".  ([Artikel]())
-* Schritt 2: Schauen Sie das Video "Beziehungen zwischen Modulen" ([Artikel](./articles/module-relationships.html))
-* Schritt 3: Lesen Sie den Artikel "Typische Architekturmuster" an. ([Video](../slides/images/construction.jpg), [Slides](./slides/module-architectural-patterns.html))
-* Schritt 4: Schauen Sie sich das Viedeo "Modul Design an" ([Artikel](./articles/module-relationships.html))
-* Schritt 5: Schauen Sie sich das Video "Kategorien von Modulen" an. ([Video](../slides/images/construction.jpg), [Slides](./slides/module-categories.html))
-* Schritt 6: Lesen Sie den Artikel "Weitere Aspekte von Modulen" ([Artikel](./articles/module-various-aspects.html))
-
-* Schritt 7: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_721091.html). 
+* Schritt 1: Lesen Sie den Artikel  "Einführung Woche 4".  ([Artikel](./articles/introduction.html))
+* Schritt 2: Lesen Sie den Artikel  "Modulstruktur - Formale Aspekte - ".  ([Artikel](./articles/module-structure.html))
+* Schritt 3: Schauen Sie das Video "Beziehungen zwischen Modulen"  ([Video](../slides/images/construction.jpg), [Slides](./slides/module-relationships.html))
+* Schritt 4: Lesen Sie den Artikel "Typische Architekturmuster". ([Artikel](./articles/module-architectural-patterns.html))
+* Schritt 5: Schauen Sie sich das Video "Modul Design an" ([Video](../slides/images/construction.jpg), [Slides](./slides/module-design.html))
+* Schritt 6: Schauen Sie sich das Video "Kategorien von Modulen" an. ([Video](../slides/images/construction.jpg), [Slides](./slides/module-categories.html))
+* Schritt 7: Lesen Sie den Artikel "Abstrakte Datentypen und Objektorientierte Programmierung " ([Artikel](./articles/module-adts-oo.html))
+* Schritt 8: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_721091.html). 
 
 *Achtung: Der Test muss spätestens bis Mittwoch 10. Oktober, 08:00 bearbeitet sein.*
   
 
 ### Übungen
 Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](./exercises/theory-exercises.html). 
-Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam]((https://adam.unibas.ch/goto_adam_exc_706020.html)) ein .
+Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_724413.html) ein .
 
 Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten.
 
-*Abgabetermin ist Dienstag, 16. Oktober, 23.59*
+*Abgabetermin ist Dienstag, 16. Oktober, 23.55*
 
 ### Feedback
 
