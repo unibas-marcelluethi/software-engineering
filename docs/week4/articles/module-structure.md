@@ -1,3 +1,5 @@
+{% include head.html %}
+
 # Modulstruktur
 
 *Eine Software besteht aus Teilen - den Modulen -. Diese Teile stehen nicht alleine, 
@@ -6,91 +8,65 @@ diese Beziehung formalisieren können.*
 
 ## Modulbeziehung als Zweistellige (binäre) Relation 
 
-Gegeben sei eine Menge von Modulen $$M = \{ M_1, \ldots, M_n \}$$
+Wir betrachten im Folgenden eine Menge von Modulen $$S = \{ M_1, \ldots, M_n \}$$. Was genau diese Module sind, ist für uns im Moment nicht wichtig. Es geht nur um 
+deren Beziehung. Falls Sie sich aber etwas konkretes darunter vorstellen wollen, denken Sie an Klassen in Java. 
 
-<!-- 
-                <div style="text-align: left">
-                <p>Module: \[ S = \{M_1, \ldots, M_n\} \] 
-                </p>
-                <p>
-                Eine <mark class="highlight"> binäre Relation r</mark> ist        
-                eine Teilmenge \[ r \subset S \times S. \]
-                </p>    
-                <p>Wir schreiben
-                    <p>
-                        \[ M_i\, r\, M_j \text{ falls } (M_i, M_j) \in r \]
-                </div>
-            </section>
+Um die Beziehung zwischen Modulen auszudrücken, verwenden wir eine zweistellige (oder binäre) Relation. Eine binäre Relation $$r$$ ist definiert als 
+eine Teilmenge $$ r \subset S \times S $$ aller Paare von Modulen. Wir schreiben 
 
-            <section>
-                <h1> Transitive H&uuml;lle</h1>
-                
-                <div style="text-align: left">
-                Die <mark class="highlight">Transitive Hülle</mark> ist wie folgt definiert: 
-                \[ \begin{align} &M_i\, r^+\, M_j \text{ genau dann, wenn } \\ &M_i\, r \, M_j \\ &\text{ oder } \\ &\exists M_k \in S \;
-                \text{so dass} \; M_i r M_k \text{ und } M_k r^+ M_j \end{align} \]
-            </div>
-            </section>
+$$
+    M_i\, r\, M_j \text{ falls } (M_i, M_j) \in r
+$$
+
+falls $$M_i$$ und $$M_j$$ in Relation zueinander stehen. 
+
+Als Beispiel nehmen wir die Menge $$S = \{M_1, \ldots, M_6\}$$. Es gilt also, dass
+$$r \subset \{(M_1, M_1), (M_1, M_2), \ldots, (M_6, M_5), (M_6, M_6) \} $$. Beispielsweise können wir die Relation
+$$r = \{(M_1, M_2), (M_2, M_4), (M_3, M_4), (M_3, M_5), (M_4, M_5), (M_4, M_6), (M_5, M_6), (M_6, M_2), (M_6, M_1) \} $$ definieren. 
+Binäre Relationen lassen sich als gerichtete Graphen darstellen. Für die Relation $$r$$ sieht der Graph wie folgt aus. 
+
+
+<img src="../../slides/images/module-dag.png" class="plain"/>
+
+### Transitive Hülle
+
+In der Graphendarstellung sehen wir bereits, dass gemäss Relation $$r$$, $$M1$$ und $$M_4$$ nicht direkt in Relation (gemäss obiger Definition) stehen, 
+jedoch indirekt miteinander verbunden sind. Um dieses intuitive Konzept zu formalisieren, führen wir die Transitive Hülle ein. 
+Die Transitive Hülle ist definiert als
+
+$$
+    \begin{align} &M_i\, r^+\, M_j \text{ genau dann, wenn } \\ &M_i\, r \, M_j \\ &\text{ oder } \\ &\exists M_k \in S \;
+    \text{so dass} \; M_i r M_k \text{ und } M_k r^+ M_j \end{align} 
+$$
+
+Wir können uns das so merken, dass ein Module $$M_j$$ genau dann in der Transitiven Hülle von $$M_i$$ ist, wenn es einen (gerichteten) Pfad zwischen den zwei Modulen im 
+Graphen gibt. 
 
 ## Hierarchien und Ebenen
 
 Wie wir später sehen werden, gibt es gewisse Anordnungen von Modulen, die spezielle geeignet sind
-für Software Engineering. Insbesondere möchten wir häufig, das Module in Hierarchien angeordnet sind. Hierarchien sind anordnungen, wo wir jedem Modul eine Ebene zuweisen können. Wir definieren nun  die Begriffe Hierarchie und Ebene formal. 
+für Software Engineering. Insbesondere möchten wir häufig, das Module in Hierarchien angeordnet sind. Hierarchien sind Anordnungen, wo wir jedem Modul eine Ebene zuweisen können. Wir definieren nun  die Begriffe Hierarchie und Ebene formal. 
 
-            <section>
-                <h1> Hierarchien </h1>
-                Eine binäre Relation $r$ ist eine
-                <mark class="highlight">Hierarchie</mark> genau dann, wenn 
-                \[ \nexists (M_i, M_j)  \text{ so dass }  M_i \, r^+ \, M_j
-                \text{ und } M_j \, r^+ \, M_i \]
-            </section>
+Eine binäre Relation $$r$$ ist eine *Hierarchie* genau dann, wenn 
 
-            <section>
-                <h1> Quiz </h1>
-                <ul><li>
-                    Was ist die transitive H&uuml;lle von M2?</li>
-                    <li>Welche Graph beschreibt eine Hierarchie?</li>
-                </ul>
-                <div style="width:50%;float:left">
-                    <img src="../../slides/images/module-dag.png" class="plain"/>
-                </div>
-                <div style="width:50%;float:right">
-                    <img src="../../slides/images/module-hierarchy.png" class="plain"/>
-                </div>
+$$
+ \nexists (M_i, M_j)  \text{ so dass }  M_i \, r^+ \, M_j
+                \text{ und } M_j \, r^+ \, M_i 
+$$
 
-            </section>
+Wir können uns die Ebene eines Moduls in der Relation wie folgt definieren:
 
+* $$M_i$$ ist auf Ebene 0, falls $$ \nexists M_j, \text{ so dass } M_i r M_j $$
+* Sei $$k$$ die höchste Ebene aller Module $$M_j$$, so dass $$M_i r M_j$$. Dann ist $$M_i$$ auf Ebene $$k+1$$
 
-            <section>
-                <h1>Abstraktionsebenen </h1>
-                <div style="padding-bottom:5mm">
-                    <ul>
-                        <li> Hierarchien organisieren Module als "Abstraktionsebenen"</li>
-                        <li> Jede Ebene definiert "Abstrakte Maschine" </li>
-                    </ul>
-                </div>
-                <div class="fragment framebox" style="text-align:left">
-                    <h2>Formale Definition</h2>
-                    <ul>
-                        <li>
-                            $M_i$ ist auf Ebene 0, falls \[ \nexists M_j, \text{ so dass } M_i r M_j \]
-                        </li>
-                        <li>
-                            Sei $k$ die h&ouml;chste Ebene aller Module $M_j$, so dass $M_i r M_j$. Dann ist $M_i$ auf Ebene $k+1$
-                    </ul>
-                </div>
-            </section>
+## Übung:
+Schauen Sie sich folgenden Graph an und beantworten Sie die folgenden Fragen:
 
+![module dag](../../slides/images/module-dag.png)
+![module dag](../../slides/images/module-hierarchy.png)
 
-            <section>
-                <h1> Quiz </h1>
-                <ul>
-                    <li>Auf welcher Ebene ist Knoten $M_3$?</li>
-                </ul>
-                <div style="width:50%;float:none;margin-left:auto;margin-right:auto">
-                    <img src="../../slides/images/module-hierarchy.png" class="plain"/>
-                </div>
+1. Welcher dieser Graphen beschreibt eine Hierarchie?
+2. Was ist die transitive H&uuml;lle von M2 im zweiten Graphen
+3. Auf welcher Ebene ist Knoten $$M_{3,3}$$?
 
-            </section>
-
- -->
+Notieren Sie sich ihre Antworten, da Sie diese für den Adam Test noch brauchen werden.
