@@ -43,7 +43,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 
 * Schritt 1: Lesen Sie den Artikel  "Einführung Woche 4".  ([Artikel](./articles/introduction.html))
 * Schritt 2: Lesen Sie den Artikel  "Modulstruktur - Formale Aspekte - ".  ([Artikel](./articles/module-structure.html))
-* Schritt 3: Schauen Sie das Video "Beziehungen zwischen Modulen"  ([Video](../slides/images/construction.jpg), [Slides](./slides/module-relationships.html))
+* Schritt 3: Schauen Sie das Video "Beziehungen zwischen Modulen"  ([Video](https://drive.switch.ch/index.php/s/nWv3tZL5t73lFcS), [Slides](./slides/module-relationships.html))
 * Schritt 4: Lesen Sie den Artikel "Typische Architekturmuster". ([Artikel](./articles/module-architectural-patterns.html))
 * Schritt 5: Schauen Sie sich das Video "Modul Design an" ([Video](../slides/images/construction.jpg), [Slides](./slides/module-design.html))
 * Schritt 6: Schauen Sie sich das Video "Kategorien von Modulen" an. ([Video](../slides/images/construction.jpg), [Slides](./slides/module-categories.html))

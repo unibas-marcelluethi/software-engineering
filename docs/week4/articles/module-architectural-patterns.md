@@ -2,7 +2,12 @@
 
 # Einige wichtige Architekturmuster
 
-*Im folgenden werden wir einige wichtige Architekturmuster, also verbreitete Strukturierungen von "uses" Graphen anschauen.*
+*Im folgenden werden wir einige wichtige Architekturmuster, also verbreitete Strukturierungen von "uses" Graphen anschauen. Es gibt noch viele weitere verbreitete Architekturmuster.
+Das Ziel dieses Artikels ist nicht die Vollständigkeit, sondern Ihnen einen Eindruck zu geben was ein Architekturmuster ist, und wie wir bereits auf dieser Abstrakten Ebene Eigenschaften
+eines Systems diskutieren können. 
+
+Das Ziel dieses Artikels ist Ihnen einen Einblick zu geben, 
+wie man bereits auf dieser Abstrakten Ebene über Eigenschaften des Systems 
 
 ## Layering
 
@@ -12,9 +17,13 @@ Das klassische Beispiel ist die sogenannte 3-Tier Architektur. Hier gibt es die 
 
 1. Die Präsentationsschicht. Die Präsentationsschicht entspricht typischweise der Benutzerschnittstelle. Hier wird die Information für den Benutzer aufbearbeitet. Diese Schicht enthält keine Anwendungslogik.
 2. Die Anwendungslogik. Module auf dieser Ebene sind für die Anwendungslogik/Businesslogik zuständig. Diese Schicht ist komplett unabhängig von der Darstellung. 
-3. Die Datenhaltungschicht: Module auf dieser Ebene kümmern sich um die Repräsentation der Daten und deren Persistenz. Typischwerweise kümmert sich diese Schicht uuch um die Datenbankanbindung und kapselt technische Details Datenhaltung.
+3. Die Datenhaltungschicht: Module auf dieser Ebene kümmern sich um die Repräsentation der Daten und deren Persistenz. Typischwerweise kümmert sich diese Schicht auch um die Datenbankanbindung und kapselt technische Details der Datenhaltung.
 			
 <img src="../../slides/images/module-layering.png" class="plain" />
+
+
+Bei dieser Architektur werden Zyklen im Graphen komplett vermieden. Auch ist es relativ einfach eine der Schichten auszutauschen. Wenn Beispielsweise eine neue graphische Benutzeroberfläche entwickelt wird, müssen nur die Module in der Präsentationsschicht angepasst werden. 
+Auch die wiederverwendbarkeit von Komponenten ist hoch. So kann zum Beispiel ein Modul für die Datenhaltung aus verschiedenen Anwendungen angesprochen werden. 
 
 <!-- Ein weiteres klassisches Beispiel, diesmal aus dem Netzwerkbereich, ist das ISO/OSI Referenzmodell. 
 
@@ -26,7 +35,7 @@ das  -->
 ## Pipelines
 
 Die nächste wichtige Architekturvariante ist die Pipeline. Bei der Pipeline wird jedes Modul nur von jeweils einem Vorgängermodul benutzt. Das Modul selbst
-benutzt auch jeweils nur ein weiteres Modul. Diese Architektur ist sehr einfach zu verstehen und warten, da die Abhängigkeiten zwischen den Modulen minimal sind. 
+benutzt auch jeweils nur ein weiteres Modul. Diese Architektur ist sehr einfach zu verstehen und zu warten, da die Abhängigkeiten zwischen den Modulen minimal sind. 
 
 ![Pipeline](../../slides/images/module-pipeline.png)
 
@@ -51,8 +60,9 @@ Die Idee hier ist, dass wir mehrere Module haben, die alle
 miteinander kommunizieren müssen. Wenn wir nun jedes Modul 
 direkt mit jedem anderen kommuniziert, gibt dies sehr viele 
 Abhängigkeiten zwischen den Modulen. Einfacher ist es, wenn wir 
-eine Zentrale Stelle (ein Blackboard) einrichten, über die die Kommunikation läuft. Bei $$n$$ Modulen haben wir dann nicht mehr
+eine zentrale Stelle (ein Blackboard) einrichten, über die die Kommunikation läuft. Bei $$n$$ Modulen haben wir dann nicht mehr
 $$n^2$$ Abhängigkeiten zwischen den Modulen, sondern nur noch $$2n$$.	
 Typisches Beispiele für eine solche Architektur sind Börseninformationssysteme oder Auktionssysteme. 
 Alle Angebote werden hier an ein zentrales Modul gesendet, welches die Information verwaltet. Die Anfrage kann dann direkt 
-an das Zentrale Modul gesendet werden.
+an das zentrale Modul gesendet werden.
+

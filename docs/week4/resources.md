@@ -6,7 +6,7 @@
     * Artikel: [online](./articles/module-structure.html)
 
 * Beziehung zwischen Modulen
-    * Video:  [mp4](../slides/images/construction.jpg),  
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/nWv3tZL5t73lFcS),  
     * Slides: [online](./slides/module-relationships.html), [Druckversion](./slides/module-relationships.html?print-pdf)
 
 * Typische Architekturmuster
