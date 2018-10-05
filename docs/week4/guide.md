@@ -45,7 +45,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 2: Lesen Sie den Artikel  "Modulstruktur - Formale Aspekte - ".  ([Artikel](./articles/module-structure.html))
 * Schritt 3: Schauen Sie das Video "Beziehungen zwischen Modulen"  ([Video](https://drive.switch.ch/index.php/s/nWv3tZL5t73lFcS), [Slides](./slides/module-relationships.html))
 * Schritt 4: Lesen Sie den Artikel "Typische Architekturmuster". ([Artikel](./articles/module-architectural-patterns.html))
-* Schritt 5: Schauen Sie sich das Video "Modul Design an" ([Video](../slides/images/construction.jpg), [Slides](./slides/module-design.html))
+* Schritt 5: Schauen Sie sich das Video "Modul Design an" ([Video](https://drive.switch.ch/index.php/s/0ZmzYUc8t1ZRJ1d), [Slides](./slides/module-design.html))
 * Schritt 6: Schauen Sie sich das Video "Kategorien von Modulen" an. ([Video](../slides/images/construction.jpg), [Slides](./slides/module-categories.html))
 * Schritt 7: Lesen Sie den Artikel "Abstrakte Datentypen und Objektorientierte Programmierung " ([Artikel](./articles/module-adts-oo.html))
 * Schritt 8: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_721091.html). 

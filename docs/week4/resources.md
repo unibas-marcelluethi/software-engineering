@@ -13,7 +13,7 @@
     * Artikel: [online](./articles/module-architectural-patterns.html)
 
 * Modul Design
-    * Video:  [mp4](../slides/images/construction.jpg)
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/0ZmzYUc8t1ZRJ1d)
     * Slides: [online](./slides/module-design.html), [Druckversion](./slides/module-design.html?print-pdf)
 
 * Kategorien von Modulen
