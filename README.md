@@ -36,10 +36,9 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |    |  Software Qualitätsmerkmale | | 
 | [Woche 3](https://unibas-sweng.github.io/software-engineering/week3/index.html)  | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
-| Woche 4  | Softwarearchitektur  | |
-|    | Modulstruktur  | |
-| Woche 5  | Moduldesign |
-|    | OO Design  | |
+| [Woche 4](https://unibas-sweng.github.io/software-engineering/week4/index.html)  | Modulstruktur  | |
+|    | ModulDesign  | |
+| Woche 5  | OO Design |
 |    | UML (statische Diagramme)  | | 
 | Woche 6  | OO Design Prinzipien (SOLID) | |
 |    | OO Design Heuristiken   | |
