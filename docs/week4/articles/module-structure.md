@@ -67,6 +67,6 @@ Schauen Sie sich folgenden Graph an und beantworten Sie die folgenden Fragen:
 
 1. Welcher dieser Graphen beschreibt eine Hierarchie?
 2. Was ist die transitive H&uuml;lle von $$M_2$$ im zweiten Graphen
-3. Auf welcher Ebene ist Knoten $$M_{3,3}$$?
+3. Auf welcher Ebene ist Knoten $$M_{2}$$ im zweiten Graphen?
 
 Notieren Sie sich ihre Antworten, da Sie diese für den Adam Test noch brauchen werden.
