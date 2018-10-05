@@ -48,7 +48,8 @@
                 </div>
                 
                 <aside class="notes">
-                    Willkommen zu diesem Screencast. In diese Screencast wollen wir uns typische Beispiele und Kategorien von Modulen anschauen, die sich in der Softwareentwicklung 
+                    Willkommen zu diesem Screencast. In diese Screencast wollen wir uns typische Beispiele und Kategorien 
+                    von Modulen anschauen, die sich in der Softwareentwicklung 
                     verbreitet haben. 
                 </aside>
 
@@ -78,18 +79,24 @@
 
                     <aside class="notes">
                         Damit wir präzise formulieren können was wir meinen, müssen wir eine Sprache finden, in der wir die Module beschreiben. 
-                        Es wäre naheliegend, dafür direkt eine Programmiersprache zu verwenden. Wir wollen hier jedoch eine Formulierung wählen, die unabhängig von der Programmiersprache ist. 
-                        Eine Programmiersprache macht immer kompromisse, weil sie zum beispiel für eine bestimmte Zielgruppe bestimmt ist, weil die umsetzung technisch schwierig ist, oder einfach weil es dem 
-                        Zeitgeist entspricht. Unsere Textuelle Modulbeschreibung ist eine idealisierte Sprache, die uns auch Konzepte ausdrücken lässt, die in keiner Programmiersprache direkt so umgesetzt sind.                         
+                        Es wäre naheliegend, dafür direkt eine Programmiersprache zu verwenden. Wir wollen hier jedoch eine Formulierung wählen, 
+                        die unabhängig von der Programmiersprache ist. 
+                        Eine Programmiersprache macht immer kompromisse, weil sie zum beispiel für eine bestimmte Zielgruppe bestimmt ist, 
+                        weil die umsetzung technisch schwierig ist, oder einfach weil es dem 
+                        Zeitgeist entspricht. Unsere Textuelle Modulbeschreibung ist eine idealisierte Sprache, die uns auch Konzepte ausdrücken lässt, 
+                        die in keiner Programmiersprache direkt so umgesetzt sind.                         
 
                         Wir sehen hier eine Beispieldefinition von einem Modul X. Wir können via die uses Klausel direkt ausdrücken, dass es die Module Y und Z verwendet. 
                         Das Modul exportiert auch Funktionalität und Symbole. Beispielsweise den Integer A, eine Typdefinition B, eine Prozedur C und eine Funktion F.
 
-                        In unserer Sprache unterscheiden wir übrigens zwischen Prozedur und Funktion. Eine Prozedur ist etwas, was einen Seiteneffekt hat, also entweder Argumente oder im Modul definierte Variablen 
-                        verändert. Eine Funktion entspricht einer mathematischen Funktion, die keine Seiteneffekte haben kann. Das heisst wenn ich zweimal dieselbe Funktion mit denselben Argumenten aufrufe, gibt mir 
+                        In unserer Sprache unterscheiden wir übrigens zwischen Prozedur und Funktion. Eine Prozedur ist etwas, was einen Seiteneffekt hat,
+                         also entweder Argumente oder im Modul definierte Variablen 
+                        verändert. Eine Funktion entspricht einer mathematischen Funktion, die keine Seiteneffekte haben kann. Das heisst wenn ich 
+                        zweimal dieselbe Funktion mit denselben Argumenten aufrufe, gibt mir 
                         die Funktion immer dasselbe Resultat zurück. Die Prozedur hingegen, kann jedesmal zu einem anderen Ergebenis führen. 
 
-                        Diese Unterscheidung wurde früher in vielen Programmiersprachen gemacht und macht die definition klarer. Leider ist es heute aus den Mainstream sprachen wie Java oder Python verschwunden.
+                        Diese Unterscheidung wurde früher in vielen Programmiersprachen gemacht und macht die definition klarer. Leider ist es heute aus den 
+                        Mainstream sprachen wie Java oder Python verschwunden.
 
                         Schlussendlich sehen wir noch, das das Modul X selbst aus zwei weiteren Modulen, nämlich R und T besteht. 
                     </aside>
@@ -114,9 +121,12 @@
                     </code></pre>
                  
                     <aside class="notes">
-                        Wir sehen hier eine Graphische Darstellung von den Beziehungen zwischen 3 Modulen, zusammen mit der entsprechenden Textuellen beschreibung. Während die Graphische Beschreibung 
-                        uns eine gute Übersicht gibt, hat die Textuelle Darstellung den Vorteil von grösserer Präzision. Halten Sie das Video doch mal an und vergleichen Sie die Textuelle Spezifikation mit dem Bild. 
-                        Wir haben hier den Fall, dass ein Teil der exportierten Funktionalität von Modul X nicht durch Modul X selbst, sondern von den Modulen R und T zur Verfügung gestellt wird. Trotzdem erscheinen die 
+                        Wir sehen hier eine Graphische Darstellung von den Beziehungen zwischen 5 Modulen, 
+                        zusammen mit der entsprechenden Textuellen beschreibung. Während die Graphische Beschreibung 
+                        uns eine gute Übersicht gibt, hat die Textuelle Darstellung den Vorteil von grösserer Präzision. 
+                        Halten Sie das Video doch mal an und vergleichen Sie die Textuelle Spezifikation mit dem Bild. 
+                        Wir haben hier den Fall, dass ein Teil der exportierten Funktionalität von Modul X nicht durch Modul X selbst, 
+                        sondern von den Modulen R und T zur Verfügung gestellt wird. 
                         
                     </aside>
                 </section>
@@ -198,7 +208,7 @@
 
                 <aside class="notes">
                         Nachdem wir nun die Textuelle Beschreibung verstehen, können wir uns einige konkrete Module anschauen. Die einfachste Art von einem Modul ist eine einzelne Funktion. 
-                        Die Schnittstelle bietet hier die Funktionasargumente, sowie der Rückgabewert. Wie die Funktion, hier Sortieren, implementiert ist bleibt dem Nutzer verborgen. 
+                        Die Schnittstelle bilden  hier durch die Funktionasargumente, sowie den Rückgabewert. Wie die Funktion, hier Sortieren, implementiert ist bleibt dem Nutzer verborgen. 
                         Der implementierte Algorithmus kann auch beliebig ausgetauscht werden. 
                     </aside>
             </section>
@@ -286,7 +296,7 @@
                             </code></pre>
 
                 <ul>
-                    <li> Eintspricht einem (singleton) Objekt in objektorientierten Programmiersprachen</li>
+                    <li> Entspricht einem (singleton) Objekt in objektorientierten Programmiersprachen</li>
                 </ul>
 
                 <div class="framebox" style="width:100%;display:inline-block">
@@ -327,8 +337,10 @@
                     </ul>
 
                     <aside class="notes">
-                        Die nächste wichtige Kategorie von Modulen ist der abstrakte Datentyp. Hier wird die Datenrepräsentation abstrakt gehalten und vor dem Benutzer versteckt. Das ist hier durch das Fragezeichen symbolisiert.
-                        Im Interface werden die Funktionen und Prozeduren zur Verfügung gestellt, um mit dem Datentyp zu arbeiten. Die Eigenschaften vom Datentyp ist also nur über die Funktionen definiert. 
+                        Die nächste wichtige Kategorie von Modulen ist der abstrakte Datentyp. Hier wird die Datenrepräsentation abstrakt gehalten und vor dem Benutzer versteckt. 
+                        Das ist hier durch das Fragezeichen symbolisiert.
+                        Im Interface werden die Funktionen und Prozeduren zur Verfügung gestellt, um mit dem Datentyp zu arbeiten. 
+                        Die Eigenschaften vom Datentyp ist also nur über die Funktionen definiert. 
                         Dies entspricht einer sehr starken Form von Information Hiding.
                     </aside>
             </section>
@@ -381,12 +393,12 @@
                         </code></pre>
     
                     <ul>
-                        <li> Beispiel des Prinzips <mark class="highlight">Abstraktion </mark> </li>
-                        <ul> <li> Details vom Type T werden abstrahiert</li></ul>
+                        <li> Anwendung des Prinzips <mark class="highlight">Abstraktion </mark> </li>
+                        <ul> <li> Details vom Typ T werden abstrahiert</li></ul>
                     </ul>
 
                     <aside class="notes">
-                        Nun führen wir noch eine letzte Erweiterung ein. Im Vorigen Stack ADT konnten wir nur INTs speichern. Um einen Stack von Strings zu speichern 
+                        Nun führen wir noch eine letzte Erweiterung ein. Im Vorigen Stack ADT konnten wir nur INTs speichern. Um einen Stack von Strings zu reprasentieren 
                         musste man einen neuen ADT definieren. Mit generischen Modulen können wir nur auch noch über diesen Datentypen abstrahieren. Wir sagen nicht mehr welche Typen von Werten gespeichert
                         werden können, sondern sagen nur noch, dass der Step Werte vom Type T speichern kann. Wir erhalten erst ein Konkretes Modul, indem ich den generellen Typ T mit einem 
                         konkreten Type, hier zum Beispiel Integer, identifiziere. 
