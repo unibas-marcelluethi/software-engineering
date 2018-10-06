@@ -21,7 +21,7 @@ und meinen damit, dass das Module $$M_i$$ in Beziehung (gemäss Relation $$r$$) 
 
 Als Beispiel nehmen wir die Menge $$S = \{M_1, \ldots, M_6\}$$. Es gilt also, dass
 $$r \subset \{(M_1, M_1), (M_1, M_2), \ldots, (M_6, M_5), (M_6, M_6) \} $$. Beispielsweise können wir die Relation
-$$r = \{(M_1, M_2), (M_2, M_4), (M_3, M_4), (M_3, M_5), (M_4, M_5), (M_4, M_6), (M_5, M_6), (M_6, M_2), (M_6, M_1) \} $$ definieren. 
+$$r = \{(M_1, M_2), (M_1, M_3), (M_2, M_4), (M_3, M_4), (M_3, M_5), (M_4, M_5), (M_4, M_6), (M_5, M_6), (M_6, M_2), (M_6, M_1) \} $$ definieren. 
 Binäre Relationen lassen sich als gerichtete Graphen darstellen. Für die oben definierte Relation $$r$$ sieht der Graph wie folgt aus. 
 
 
