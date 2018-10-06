@@ -48,7 +48,7 @@ Pipelines ind auch im Betriebssystem Unix weit verbreitet.
 ```
 $ cat /etc/passwd | cut -d":" -f1 | grep bart | less 
 ```
-Bei obigem Kommando wird zuerst ein Text durch das Modul ```cat``` dargestellt. Das Modul ```cat``` nimmt diesen Input und schneidet die erste, durch : getrennte Spalte 
+Bei obigem Kommando wird zuerst ein Text durch das Modul ```cat``` dargestellt. Das Modul ```cut``` nimmt diesen Input und schneidet die erste, durch : getrennte Spalte 
 ab. Das Modul ```grep``` filtert alle Zeilen raus, die den Teilstring "bart" beinhalten. Schlussendlich zeigt das Modul ```less``` den Output Zeilenweise an. 
 
 
@@ -62,7 +62,7 @@ direkt mit jedem anderen kommuniziert, gibt dies sehr viele
 Abhängigkeiten zwischen den Modulen. Einfacher ist es, wenn wir 
 eine zentrale Stelle (ein Blackboard) einrichten, über die die Kommunikation läuft. Bei $$n$$ Modulen haben wir dann nicht mehr
 $$n^2$$ Abhängigkeiten zwischen den Modulen, sondern nur noch $$2n$$.	
-Typisches Beispiele für eine solche Architektur sind Börseninformationssysteme oder Auktionssysteme. 
+Typische Beispiele für eine solche Architektur sind Börseninformationssysteme oder Auktionssysteme. 
 Alle Angebote werden hier an ein zentrales Modul gesendet, welches die Information verwaltet. Die Anfrage kann dann direkt 
 an das zentrale Modul gesendet werden.
 
