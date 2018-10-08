@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Objektorientiertes Design</title>
+
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="center">
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Objektorientiertes Design und Programmierung
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">
+                </aside>
+
+			</section>
+
+            <section>
+                <h1>Objektorientierte Programmiersprachen</h1>
+
+                <img src="../../slides/images/oo-pls.png" class="plain"/>
+            </section>
+
+
+
+            <section>
+                <h1>Objektorientierte Design</h1>
+            
+                <blockquote>
+                        <p style="font-size:smaller">“Pertaining to a technique or a programming language that supports objects, classes, and inheritance.” </p>
+                        <p style="text-align:right;font-size: smaller;display:block"> ISO/IEC 2382-15</p>
+                </blockquote>
+
+                <blockquote class="fragment">
+                        <p style="font-size:smaller">“OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.”</p>
+                        <p style="text-align:right;font-size:smaller;display:block"> A. Kay</p>
+                    </blockquote>
+
+            </section>
+
+
+            <section>
+                <h1>Design und Programmiersprache</h1>
+                <blockquote>
+                    Wichtig beim OO Design sind Prinzipien (Information Hiding, Modularisierung, late binding), nicht die Programmiersprache.
+                </blockquote>
+                <div style="float:left;width:60%">
+                    <ul>
+                        <li>OO Sprachen helfen Design direkt abzubilden</li>
+                        <li>Nicht OO Sprachen verlangen Mehraufwand / Disziplin</li>
+                    </ul>
+                </div>
+                <div style="float:right;width:40%">
+                    <figure>
+                        <img src="../../slides/images/gtk3-widget.png" class = "plain"/>
+                        <figcaption style="font-size:x-small">By <a href="//commons.wikimedia.org/w/index.php?title=User:%D7%99%D7%95%D7%A1%D7%A3_%D7%90%D7%95%D7%A8&amp;action=edit&amp;redlink=1"
+                                class="new" title="User:יוסף אור (page does not exist)">יוסף אור</a> - <span class="int-own-work"
+                                lang="en">Own work</span>, <a href="http://www.gnu.org/licenses/lgpl.html" title="GNU Lesser General Public License">LGPL</a>,
+                            <a href="https://commons.wikimedia.org/w/index.php?curid=39205896">Link</a> </figcaption>
+                    </figure>
+                </div>
+                <div style="text-align:left;display:block">
+                <ul>                     
+                    <li>Gutes Beispiel für OO Design in C: <a href="https://en.wikipedia.org/wiki/GTK%2B">GTK+</a></li>
+                </ul>
+            </div>
+            </section>
+
+
+            <section>
+                <h1>Terminologie</h1>
+                <ul>
+                    <li>
+                        <mark class="highlight">Klasse</mark> implementiert Abstrakten Datentyp</li>                        
+                        <li> Daten heissen <mark class="highlight">Attribute </mark> </li>
+                        <li>Operationen heissen
+                                <mark class="highlight">Methoden</mark>
+                            </li>
+                        <li><mark class="highlight">Konstruktor</mark> kreiert neue Instanzen</li>
+                        <li><mark class="highlight">Instanzvariablen</mark> sind Referenzen auf Objekte</li>
+                        <li><mark class="highlight">Laufzeitstruktur</mark> die Menge der Objekte zur Laufzeit</li>
+                        <ul><li>Jedes Objekt ist zur Laufzeit eindeutig identifiziert</li></ul>
+                    </li>                        
+                </ul>
+
+            </section>
+
+            <section>
+                <h1>Schnittstellen</h1>
+
+                <blockquote>
+                    Nutzung der Funktionalität eines Objekts nur über wohldefinierte Schnittstellen.
+                </blockquote>
+                <ul>    
+                    <li> Mehrere Objekte können gleich Schnittstelle anbieten
+                    <li> Ein Objekt kann mehrere Schnittstellen anbieten</li>
+                </ul
+                >
+                <div style="text-align:left; display:block; margin-top:1cm">
+                Beispiel aus Java: 
+
+                <pre><code data-trim class="java"> 
+                    public class ArrayList&lt;E&gt; extends AbstractList&lt;E&gt;
+                            implements List&lt;E&gt;, 
+                            RandomAccess, 
+                            Cloneable, 
+                            java.io.Serializable {}
+                    </code></pre>
+                </div>                
+            </section>
+
+
+            <section>
+                    <h1> Polymorphismus und dynamische Bindung</h1>
+                    <ul>
+                        <li><mark class="highlight">Dynamische Bindung (late binding):</mark> Variablen k&ouml;nnen zur Laufzeit an verschiedene (verwandte) Typen gebunden werden</li>                                               
+                        <li><mark class="highlight">Polymorphismus:</mark> Zur Laufzeit wird Methode entsprechend dem Objekttyp verwendet. </li>
+                    </ul>
+                </section>            
+                <section> <h1>Beispiel: Polymorphismus </h1>
+                    <pre><code data-trim class="java" style="font-size:smaller;line-height:2ch"> 
+                        interface Foo {
+                            public void bar();
+                        }
+                        class FooImpl1 implements Foo { 
+                            public void bar() { System.out.println("in FooImpl1"); }
+                        }
+                        class FooImpl2 implements Foo { 
+                            public void bar() { System.out.println("in FooImpl2"); }
+                        }
+                        void doSomethingWithFoo(Foo foo) {
+                            foo.bar();
+                        }
+    
+                        var Foo foo = new FooImpl1();
+                        doSomethingWithFoo(foo);
+                    </code></pre>
+    
+                    <ul>
+                        <li>Unterschiedliche Ausgabe je nachdem ob 
+                            <text style="font-family:Courier New, Courier, monospace">foo</text> an
+                            <text style="font-family:Courier New, Courier, monospace">FooImpl1 </text> oder
+                            <text style="font-family:Courier New, Courier, monospace">FooImpl2</text> gebunden wird.</li>
+                    </ul>
+                </section>
+
+                <section>
+                        <h1>Objektorientierung als "Messaging"</h1>
+                        
+                        <ul>
+                            <li>Objekte verwalten Zustand der Daten (Attribute)</li>
+                            <li>Nehmen Nachrichten/Requests entgegen (Methoden)</li> 
+                            <li>Senden Antwort zur&uuml;ck und/oder ver&auml;ndern Zustand</li>
+                   </ul>
+                   <blockquote>
+                        Methodenaufruf = senden einer Nachricht       
+                </blockquote>                    
+                    </section>
+        
+
+            <section>
+                    <h1>Beispiel: Methodenaufruf als Nachricht</h1>
+                    <div style="float:left; width:60%; height:100%">
+                    <pre><code  data-trim class="java" style="font-size:smaller;line-height:2ch">
+                    class BankAccount { 
+                      private FxConverter fx = new FxConverter();
+                      private double balanceCHF;
+
+                      void depositEur(double amount) { 
+                        double asCHF = b.convertEurToCHF(amount))
+                          this.updateBalance(balanceCHF + asCHF)
+                        }
+                        void updateBalance(double newBalance) {
+                          balanceInCHF = newBalance;
+                        }
+                    }
+                        
+                    // somewhere in currentObject                         
+                    someAccount.depositEUR(500);                        
+                    </code></pre>
+                </div>
+                <div style="float:right; width:40%">
+                    <img src="../../slides/images/oocommunication.png" class="plain"/>
+                </div>
+                </section>
+    
+
+      
+
+            <section>
+                <h1>OO Design - &Uuml;bersicht</h1>
+                <ul>
+
+                    <li>Teilt ein System in Module auf
+                        <ul>
+                            <li>Module kapseln Daten und Funktionalit&auml;t</li>
+                        </ul>
+                        <ul><li> Objekte k&ouml;nnen selbst Objekte enthalten. </li>                        </ul>
+                        <li>Objekte sind zur Laufzeit eindeutig identifiziert</li>
+                        <ul>
+                            <li>K&ouml;nnen Nachrichten/Requests empfangen.</li>
+                        </ul>
+                        <li> Late binding: Es wird erst spät (zur Laufzeit) entschieden welches Objekt Nachricht bearbeitet</li>                  
+                </ul>
+            </section>
+
+
+            <!--
+            <section>
+                <h3>Unit Tests</h3>
+                <ul>
+                    <li>Nennen sie die wichtigsten Eigenschaften von OO Systemen?</li>
+                    <li>Was ist Polymorphismus und weshalb ist es wichtig?</li>
+                    <li>Erkl&auml;ren sie wie Objekte "kommunizieren"</li>
+                    <li>Was ist das Problem von Vererbung</li>
+                    <ul><li>Weshalb sollte Komposition bevorzugt werden?</li></ul>
+            </ul>
+            </section>
+-->
+
+        </div>
+    </div>
+
+
+
+ 
+	<script src="../../slides/lib/js/head.min.js"></script>
+	<script src="../../slides/js/reveal.js"></script>
+
+	<script>
+		file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			center: false,
+            transition: 'none',           
+            /* 
+			chalkboard: {
+				src: "chalkboard.json",
+				readOnly: undefined,
+				transition: 800,
+				theme: "whiteboard",
+				//toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				//toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				// configuration options for notes canvas and chalkboard
+				color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+				background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+				pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+			},
+            */
+            math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+			dependencies: [{
+				src: '../../slides/plugin/markdown/marked.js'
+			},
+			{
+				src: '../../slides/plugin/markdown/markdown.js'
+			},
+			{
+				src: '../../slides/plugin/notes/notes.js',
+				async: true
+			},
+            /*
+			{
+				src: '../../slides/plugin/chalkboard/chalkboard.js'
+			},
+            */
+			{
+				src: '../../slides/plugin/highlight/highlight.js',
+				async: true,
+				callback: function () {
+					hljs.initHighlightingOnLoad();
+				}
+			},
+            { src: '../../slides/plugin/math/math.js', async: true }
+            			],
+			keyboard: {
+                /*
+				67: function () {
+					RevealChalkboard.toggleNotesCanvas()
+				}, // toggle notes canvas when 'c' is pressed
+				66: function () {
+					RevealChalkboard.toggleChalkboard()
+				}, // toggle chalkboard when 'b' is pressed
+				46: function () {
+					RevealChalkboard.clear()
+				}, // clear chalkboard when 'DEL' is pressed
+				8: function () {
+					RevealChalkboard.reset()
+				}, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+				68: function () {
+					RevealChalkboard.download()
+				}, // downlad recorded chalkboard drawing when 'd' is pressed
+                */
+			},
+		});
+	</script>
+</body>
+
+</html>

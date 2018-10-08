@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>UML Klassendiagramme</title>
+
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="center">
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						UML - Einführung
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">
+                </aside>
+
+			</section>
+           
+            <section>
+                    <h1>Graphische Modellierungssprachen</h1>
+    
+                    <div class="framebox">
+                    <div style="float:left; width:50%">
+                    <ul>
+                            <li> Ziel: Software auf hoher Abstraktions-ebene verstehen</li>
+                    </ul>
+                </div>
+                <div style="float:right; width:50%">
+                <img src="../../slides/images/modul-graph-blackbox.png" class="plain" style="width:70%"/>
+                </div>
+            </div>
+                    <div style="text-align:left;">
+                            <ul>
+
+                            <li>Brauchen standardisierte Notationen um Artefakte und Entscheidungen zu </li>
+                            <ul>
+                                <li> Modellieren </li>
+                                <li> Dokumentieren </li>
+                                <li> Kommunizieren </li>
+                            </ul>                        
+                            </ul>
+                    </div>
+
+                </section>
+    
+  
+            <section>
+                <h1> UML </h1>
+
+                <blockquote>
+                    Grafische Modellierungssprache zur Spezifikation, Konstruktion und Dokumentation von Software-Teilen und anderen Systeme
+                </blockquote>
+                <ul>
+                    <li> Quasi standard zur graphischen Modellierung von OO-Systemen </li>
+                    <li> Entwickelt 1990 (G. Booch, I. Jacobson, J. Rumbaugh) </li>
+                    <li> Mittlerweise in der Version 2.5 </li>
+                </ul>
+            </section>
+
+            <section>
+                <h1> UML Hype </h1>
+                <figure>
+                    <img src="../../slides/images/hype-cycle.png" style="width:50%" class="plain">
+                    <figcaption style="font-size:x-small">Von Idotter - http://en.wikipedia.org/wiki/File:Gartner_Hype_Cycle.svg, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=7560534</figcaption>
+                </figure>
+                <ul>
+                    <li>UML ist kein Wundermittel wie anfang 2000 geglaubt wurde</li>
+                    <li>... aber trotzdem enorm n&uuml;tzlich </li>
+                </ul>
+            </section>
+
+            <section>
+                <h1> Diagrammarten (UML 2) </h1>
+
+                <div style="float:left; width:50%; font-size:smaller">
+                    <p> <mark class="highlight"> Strukturdiagramme <br/> (statisch) </mark>
+                        <ul>
+                            <li>Klassendiagramm</li>
+                            <li class="fragment fade-out" data-fragment-index="1"> Montagediagramm </li>
+                            <li  class="fragment fade-out" data-fragment-index="1"> Komponentendiagramm </li>
+                            <li class="fragment fade-out" data-fragment-index="1"> Verteilungsdiagramm </li>
+                            <li class="fragment fade-out" data-fragment-index="1"> Objektdiagramm </li>
+                            <li> Paketdiagramm </li>
+                            <li class="fragment fade-out" data-fragment-index="1"> Profildiagramm </li>
+                        </ul>
+                </div>
+
+                <div style="float:right; width:50%; font-size:smaller">
+                    <p><mark class="highlight"> Verhaltensdiagramme (dynamisch)</mark>
+                        <ul>
+                            <li>Aktivit&auml;tsdiagramm</li>
+                            <li> Use-case Diagramm </li>
+                            <li class="fragment fade-out" data-fragment-index="1"> Interaktionsdiagramm </li>
+                            <li class="fragment fade-out" data-fragment-index="1"> Kommunikationsdiagramm </li>
+                            <li> Sequenzdiagramm </li>
+                            <li class="fragment fade-out" data-fragment-index="1"> Zeitverlaufdiagramm </li>
+                            <li> Zustandsdiagramm </li>
+                        </ul>
+                </div>
+            </section>
+
+            <section>
+                <h1> UML Diagramme im Designprozess </h1>
+                <figure>
+                <img src="../../slides/images/uml-design-overview.png" style="width:80%" class="plain"/>
+                <figcaption style="font-size:x-small">Diagramm nach Pfleeger & Atlee, Software Engineering</figcaption>
+            </figure>
+            </section>
+
+
+            <section>
+                <h1> Klassendiagramm </h1>
+                <ul>
+                    <li> Wichtigste Diagrammart in UML </li>
+                    <li> H&auml;ufig nur als Designnotation verwendet</li>
+                    <li> Ist aber auch m&auml;chtiges Modellierungstool</li> 
+                        <ul>
+                            <li>Klassen entsprechen zu modellierenden Entit&auml;ten</li>
+                            <li>Klasse in UML muss nicht Klasse in Implementation entsprechen</li>
+                        </ul>
+                </ul>
+            </section>
+
+
+            <section>
+                    <h1> Beispiel: Bibliotheksanwendung</h1>
+                    <figure>
+                    <img src="../../slides/images/uml-class-library.png" class="plain" style="width:80%"/>
+                    <figcaption style="font-size:x-small">Diagramm nach Pfleeger & Atlee, Software Engineering</figcaption> 
+                </figure>
+                </section>
+                
+                <section>
+                        <h1> Assoziationen </h1>
+                        <img src="../../slides/images/uml-association-example.png" class="plain" style="width:80%"/>            
+                        <ul>
+                            <li>Beziehungen zwischen Klassen, die Implementation 
+                                unterst&uuml;tzen muss </li>
+                                <ul>Optional: Multiplizitäten</ul>
+
+                            <li> Definiert implizit eine "Uses" Beziehung </li>                            
+                        </ul>
+                    </section>
+
+                    <section>
+                            <h1>Aggregation</h1>
+                            <img src="../../slides/images/uml-aggregation.png" class="plain" style="width:80%"/>            
+                            <ul> 
+                                <li> Beschreibt Teile/Ganzes Beziehung</li>
+                                <li> Auch "has-a" Beziehung genannt</li>
+                            </ul>
+                            <img src="../../slides/images/uml-triangle.png" class="plain fragment" style="width:60%"/>            
+                        </section>
+            
+                        <section>
+                                <h1>Komposition</h1>
+                                <img src="../../slides/images/uml-composition.png" class="plain" style="width:80%"/>            
+                                <ul> 
+                                    <li> Beschreibt Teile/Ganzes Beziehung</li>
+                                    <li> Auch "has-a" Beziehung genannt</li>
+                                    <li class="fragment"> Aggregation: Teil <mark class="highlight">kann ohne Ganzes</mark> existieren</li>                              
+                                    <li class="fragment"> Komposition: Teil <mark class="highlight">kann nur als Teil vom Ganzen</mark> existieren</li>                                        
+                                </ul>
+                
+                            </section>
+
+                        <section>
+                                <h1>Aggregation</h1>
+                            <img src="../../slides/images/uml-triangle.png" class="plain" style="width:60%"/>            
+                         
+                            <ul>
+                                <li> Aggregation/Komposition entspricht nicht "IS_COMPONENT_OF" </li>                    
+                                <ul><li> Aggregat (Dreieck) hat eigene Methoden und Semantik </li> </ul>    
+                                </li>
+                            </ul>
+                        </section>
+                                    
+
+            <section>
+                    <h1> Paketdiagramm </h1>
+                    <img src="../../slides/images/uml-paket-diagram.png" class="plain" style="width:60%"/>
+                    <ul> 
+                            <li> Modelliert "IS_COMPONENT_OF" Beziehung </li>
+                        </ul>
+                    </section>
+
+            <section>
+                <h1>Toolunterst&uuml;tzung</h1>
+                <ul>
+                    <li>Durch die weite Verbreitung existieren eine Vielzahl von Tools zur Erstellung von Diagrammen</li>
+                    <li>Empfehlung: Modelio <a href="www.modelio.org">(www.modelio.org)</a></li>
+                    <ul><li>Modernes und m&auml;chtiges Open Source Tool </li></ul>
+                </ul>
+                <img src="../../slides/images/modelio.png"  style="width:80%;border-width:1pt;border-style:solid"/>
+
+            </section>
+
+            <!--
+            <section>
+                <h3>Unit tests</h3>
+                <ul>
+                    <li>Weshalb brauchen wir standardisierte graphische Notationen?</li>
+                    <li>Klassendiagramme k&ouml;nnen sowohl als Designtool als auch als Modellierungstool eingesetzt werden.</li>
+                    <ul><li>Erkl&auml;ren sie den Unterschied.</li></ul>
+                    <li>Was spezifizieren die Multiplizit&auml;ten von Assoziationen?</li>
+                    <li>Wie unterscheidet sich Aggregation von "Is_component_of" Beziehung</li>
+                    <li>Wozu brauchen wir Assoziationsklassen?</li>
+                </ul>
+            </section>
+            -->
+        </div>
+    </div>
+    
+            <script src="../../slides/lib/js/head.min.js"></script>
+            <script src="../../slides/js/reveal.js"></script>
+        
+            <script>
+                file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+                // More info about config & dependencies:
+                // - https://github.com/hakimel/reveal.js#configuration
+                // - https://github.com/hakimel/reveal.js#dependencies
+                Reveal.initialize({
+                    center: false,
+                    transition: 'none',           
+                    /* 
+                    chalkboard: {
+                        src: "chalkboard.json",
+                        readOnly: undefined,
+                        transition: 800,
+                        theme: "whiteboard",
+                        //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                        //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                        // configuration options for notes canvas and chalkboard
+                        color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                        background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+                        pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+                    },
+                    */
+                    math: {
+                            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                            config: 'TeX-AMS_HTML-full'
+                        },
+        
+                    dependencies: [{
+                        src: '../../slides/plugin/markdown/marked.js'
+                    },
+                    {
+                        src: '../../slides/plugin/markdown/markdown.js'
+                    },
+                    {
+                        src: '../../slides/plugin/notes/notes.js',
+                        async: true
+                    },
+                    /*
+                    {
+                        src: '../../slides/plugin/chalkboard/chalkboard.js'
+                    },
+                    */
+                    {
+                        src: '../../slides/plugin/highlight/highlight.js',
+                        async: true,
+                        callback: function () {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    },
+                    { src: '../../slides/plugin/math/math.js', async: true }
+                                ],
+                    keyboard: {
+                        /*
+                        67: function () {
+                            RevealChalkboard.toggleNotesCanvas()
+                        }, // toggle notes canvas when 'c' is pressed
+                        66: function () {
+                            RevealChalkboard.toggleChalkboard()
+                        }, // toggle chalkboard when 'b' is pressed
+                        46: function () {
+                            RevealChalkboard.clear()
+                        }, // clear chalkboard when 'DEL' is pressed
+                        8: function () {
+                            RevealChalkboard.reset()
+                        }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                        68: function () {
+                            RevealChalkboard.download()
+                        }, // downlad recorded chalkboard drawing when 'd' is pressed
+                        */
+                    },
+                });
+            </script>
+        </body>
+        
+        </html>

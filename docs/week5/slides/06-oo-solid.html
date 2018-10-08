@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>SOLID Prinzipien</title>
+
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="center">
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						SOLID Prinzipien
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">
+                </aside>
+
+			</section>
+
+            <section>
+                <h1> Einige Wichtige OO Design Prinzipien (SOLID)</h1>
+                
+                <ul>
+                    <li><mark class="highlight">S</mark>ingle Responsibility Prinzip</li>
+                    <li><mark class="highlight">O</mark>pen closed Prinzip</li>
+                    <li> <mark class="highlight">L</mark>iskovsches Substitutionsprinzip</li>                    
+                    <li><mark class="highlight">I</mark>nterface Segregation</li>
+                    <li><mark class="highlight">D</mark>ependency Inversion</li>   
+                </ul>                
+
+
+                <blockquote>Prinzipien zielen auf einfache &Auml;nderbarkeit durch Entkopplung und Modularisierung ab.</blockquote>
+
+            </section>
+
+            <section>
+                <h1>Single responsibility Prinzip </h1>
+
+                <blockquote>
+                    Es sollte nie mehr als einen Grund geben, eine Klasse zu &auml;ndern. <br/>
+                    <text style="font-size:medium"> – Robert C. Martin: Agile Software Development: Principles, Patterns, and Practices (2002)</text>
+                </blockquote>
+                <ul>
+                    <li>Objekte sollten hohe Koh&auml;sion aufweisen</li>
+                    <li>Jede Klasse sollte nur f&uuml;r eine Sache verantwortlich sein</li>
+                    <ul><li>Verwandtes Prinzip: Separations of Concern</li></ul>
+                </ul>
+            </section>
+
+            <section>
+                    <h1> Beispiel: Single-responsibililty Prinzip </h1>
+    
+                    <div style="float:left; width:50%">
+                            Verantwortlichkeiten: Nur Kontof&uuml;hrung.
+                             <br/>&nbsp;<br/>
+
+                        <pre><code data-trim class="java">
+                            class BankAccount { 
+                              private double balance;
+
+                              void deposit(double amount) { 
+                                   //implementation 
+                              }
+                              void withdraw(double amount) { 
+                                   // implementation
+                              }
+                              boolean checkHasMoney() { 
+                                  // implementation
+                              }
+                            }
+                            </code></pre>
+    
+                    </div>                    
+                    <div style="float:right; width:50%">
+                        Verantwortlichkeiten: Kontof&uuml;hrung und Berichterstellung.
+                            <pre><code data-trim class="java">
+                                    class BankAccount { 
+                                      private double balance;
+                                      private Format format;
+
+                                      void deposit(double amount) { 
+                                          //implementation 
+                                      }
+                         
+                                      void formatAccountStatement() { 
+                                          // implementation
+                                      }
+                                    }
+                                    </code></pre>
+                    </div>
+                </section>
+    
+
+            <section>
+                <h1> Open-closed Prinzip </h1>
+                <blockquote>
+                    Module sollten sowohl offen (für Erweiterungen), als auch geschlossen (für Modifikationen) sein.<br/>
+                    <text style="font-size:medium">- Bertrand Meyer: Object Oriented Software Construction (1988)</text>
+                </blockquote>
+                
+                <ul>                    
+                    <li>Erm&ouml;glicht System um neue Features zu erweitern, ohne urspr&uuml;nglichen Code zu &auml;ndern.</li>
+                    <ul><li> Minimiert Risiko, dass existierende Funktionalit&auml;t wegen &Auml;nderung nicht mehr funktioniert.</li></ul>
+                    <li>M&ouml;gliche Umsetzung: Vererbung</li>
+                </ul>
+            </section>
+
+            <section>
+                    <h1> Beispiel: Open-closed Prinzip </h1>
+    
+                    <div style="float:left; width:50%">
+                        Neuen Printer (Printer2) hinzuzufügen führt zu Änderung in Code
+                        <pre><code data-trim class="java">
+                        class Printer1 {
+                          void print(Document d);
+                        }
+                           
+                        class WordProcesser {
+                         ...
+
+                          void printDoc(Printer1 p) {
+                           p.print(document);
+                          }                        
+                        }
+                            </code></pre>
+    
+                    </div>                    
+                    <div style="float:right; width:50%">
+                            Printer2 kann hinzugefügt werden ohne Änderung in Code
+                            <pre><code data-trim class="java">
+                                abstract class Printer {
+                                    void print(Document d);
+                                }
+                                class Printer1 extends Printer {
+                                    void print(Document d) {}
+                                }
+                                class Printer2 extends Printer {
+                                    void print((Document d) {}
+                                }
+                                
+                                class WordProcesser {
+                                     void printDoc(Printer p) {
+                                      p.print(document);
+                                     }                        
+                                   }   
+
+                            </code></pre>
+                    </div>
+
+                    
+                </section>
+    
+
+            <section>
+                <h1> Liskovsches Substitutionsprinzip </h1>
+
+                <blockquote>
+                Sei $\phi(x)$ eine beweisbare Eigenschaft von Objekt $x$ von Typ $T$. 
+                    Dann soll $\phi(y)$ für Objekte $y$ des Typs $S$ wahr sein, wobei $S$ ein Untertyp von $T$ ist.<br/>
+                    <text style="font-size:medium">B. H. Liskov, J. M. Wing: Behavioral Subtyping Using Invariants and Constraints (1999)</text>
+                </blockquote>
+
+                <ul>
+                    <li>Jedes Objekt kann durch ein Objekt der Subklasse ersetzt werden, ohne 
+                        dass sich das Verhalten &auml;ndert.
+                    </li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h1> Beispiel: Substitutionsprinzip</h1>
+
+                
+            <pre><code data-trim class="java" style="font-size:smaller;line-height: 2ch">
+               class Stack { 
+                   private List data = new LinkedList();
+                   void push(Object o) {data.add(o);}                   
+                   int size() { return data.size(); }
+                }
+                class BoundedStack extends Stack { 
+                    private Object[] data = new Array[10];
+                    void push(Object o) {
+                        if (data.size() < 10) {  data.add(o) }
+                    }
+                }
+                void testSize(Stack s) {
+                    int stackSizeBeforePush = s.size();
+                    s.push(o);
+                    assert(stackSizeBeforePush + 1 == s.size())
+                }
+            </code></pre>
+            <ul>
+            <li><text class="code">testSize(boundedStack)</text> schl&auml;gt fehl.</li>
+            </ul>
+            </section>
+
+            <section>
+                <h1> Interface segregation </h1>
+
+                <blockquote>
+                    Clients sollten nicht dazu gezwungen werden, von Interfaces abzuhängen, die sie nicht verwenden<br/>
+                    <text style="font-size:medium"> – Robert C. Martin: The Interface Segregation Principle (1996)</text>
+                </blockquote>
+                <ul>
+                    <li>Kleine Interfaces mit wohldefinierter Funktionalit&auml;t sind zu bevorzugen</li>
+                    <ul><li>Anwendung von "Separations of Concerns"</li></ul>
+                    <li>Klassen werden entkoppelt </li>
+                    <ul><li>Vergleiche: Sandwiching</li></ul>
+                </ul>
+            </section>
+
+            <section>
+                <h1> Dependency inversion </h1>
+
+                <blockquote>
+                    <ul><li>Module hoher Ebenen sollten nicht von Modulen niedriger Ebenen abhängen. Beide sollten von Abstraktionen abhängen.</li>
+                       <li>Abstraktionen sollten nicht von Details abhängen. Details sollten von Abstraktionen abhängen.</li> 
+                    </ul>
+                    <text style="font-size:medium"> – Robert C. Martin: Agile Software Development: Principles, Patterns, and Practices (2002)</text>
+                    </blockquote>
+
+
+            </section>
+            
+            <section>
+                    <h1> Dependency inversion </h1>
+                    <img src="../../slides/images/dependency-inversion.png" class="plain"/>
+                    <ul>
+                        <li>Client und Server werden durch Interface entkoppelt</li>
+                        <li>Interface wird von Client nicht Server vorgegeben.</li>
+                    </ul>
+            </section>
+
+            <!--
+                <section>
+                    <h3>Unit tests</h3>
+                    <ul>
+                        <li>Weshalb sollte es nur einen Grund geben eine Klasse zu &auml;ndern</li>
+                        <li>Weshalb ist es wichtig, dass jede beweisbare Eigenschaft einer Klasse auch f&uuml;r die Subklasse gilt </li>
+                        <li>Was bedeutet das "Close" im Open Close Prinzip? Welches Risiko wird minimiert dadurch?</li>
+                        <li>Weshalb sollen Objekte besser nicht interne Objekte von anderen Objekten weiterverwenden?</li>
+                        <li>Welches Problem l&ouml;st Dependency Injection</li>
+                    </ul>
+                </section>
+  -->
+
+    </div>
+</div>
+
+        <script src="../../slides/lib/js/head.min.js"></script>
+        <script src="../../slides/js/reveal.js"></script>
+    
+        <script>
+            file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                center: false,
+                transition: 'none',           
+                /* 
+                chalkboard: {
+                    src: "chalkboard.json",
+                    readOnly: undefined,
+                    transition: 800,
+                    theme: "whiteboard",
+                    //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                    //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                    // configuration options for notes canvas and chalkboard
+                    color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                    background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+                    pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+                },
+                */
+                math: {
+                        // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                        config: 'TeX-AMS_HTML-full'
+                    },
+    
+                dependencies: [{
+                    src: '../../slides/plugin/markdown/marked.js'
+                },
+                {
+                    src: '../../slides/plugin/markdown/markdown.js'
+                },
+                {
+                    src: '../../slides/plugin/notes/notes.js',
+                    async: true
+                },
+                /*
+                {
+                    src: '../../slides/plugin/chalkboard/chalkboard.js'
+                },
+                */
+                {
+                    src: '../../slides/plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                },
+                { src: '../../slides/plugin/math/math.js', async: true }
+                            ],
+                keyboard: {
+                    /*
+                    67: function () {
+                        RevealChalkboard.toggleNotesCanvas()
+                    }, // toggle notes canvas when 'c' is pressed
+                    66: function () {
+                        RevealChalkboard.toggleChalkboard()
+                    }, // toggle chalkboard when 'b' is pressed
+                    46: function () {
+                        RevealChalkboard.clear()
+                    }, // clear chalkboard when 'DEL' is pressed
+                    8: function () {
+                        RevealChalkboard.reset()
+                    }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                    68: function () {
+                        RevealChalkboard.download()
+                    }, // downlad recorded chalkboard drawing when 'd' is pressed
+                    */
+                },
+            });
+        </script>
+    </body>
+    
+    </html>
