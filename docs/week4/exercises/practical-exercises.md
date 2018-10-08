@@ -24,28 +24,26 @@ Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository
 Wie immer erstellen wir zuerst f&uuml;r unsere &Auml;nderungen einen lokalen Featurebranch und wechseln in diesen:
 
 ```
-git branch uebung3     
-git checkout uebung3
+git branch uebung4     
+git checkout uebung4
 ```
 
 
 ## Unit Tests
 
-Im Folgenden werden Sie neue Unit Tests für die Klasse ```RoleSetImpl``` von Ganttproject implementieren. In der Testklasse ```RoleSetTest``` finden Sie bereits
-einige solche Tests. Nehmen Sie diese als Vorlage für Ihre eigenen Tests.
+Im Folgenden werden Sie neue Unit Tests  für die Klasse ```RoleManagerImpl``` von Ganttproject implementieren. Dazu kreieren Sie eine neue Klasse ```RoleManagerTest``` (src/test/java/biz/ganttproject/roles/RoleManagerTest.java). Als Vorlage können Sie die Klasse ```RoleSetTest``` nutzen, welche bereits ähnliche Tests implementiert.
 
-Wir möchten, dass die Methode ```getRoleSet``` robust ist gegenüber falschen Eingaben. Schreiben Sie Tests, welche die Methode mit jeweils mit folgenden Argumenten aufruft
-* einem existierenden Rollen namen (Spezifikation: hier sollte das richtige RoleSet für den angegebenen Namen zurückgegeben werden)
-* einem nicht existierenden namen (Spezifikation: hier sollte ein leeres Set zurückgegeben werden)
-* ```null``` (Spezifikation: hier sollte ein leeres Set zurückgegeben werden)
+Wir möchten, dass die Methode ```getRoleSet``` richtig auf verschiedene Klassen von Argumenten reagiert. Dafür testen wir folgende Fälle:
+* Aufruf mit einem existierenden Rollen namen (Spezifikation: hier sollte das richtige RoleSet für den angegebenen Namen zurückgegeben werden)
+* Aufruf mit einem nicht existierenden namen (Spezifikation: hier sollte null zurückgegeben werden)
+* Aufruf mit ```null``` (Spezifikation: hier sollte ```null``` zurückgegeben werden)
 
-Falls ein Test fehlschlägt korrigieren Sie die Implementation entsprechend. 
-
-Schreiben Sie jeweils mindestens zwei sinnvolle Unittest für die folgenden Methoden von RoleSetImpl 
+Implementieren Sie jeweils mindestens einen sinnvollen Unittest für jeder der folgenden Methoden von RoleSetImpl:
 
 * ```clear()```
 * ```createRoleSet(String name)```
 * ```importData(RoleManager original)```
+
 
 
 ## Travis CI
@@ -56,33 +54,39 @@ Schreiben Sie jeweils mindestens zwei sinnvolle Unittest für die folgenden Meth
 2. Was ist Travis?
 3. Was macht die Datei .travis.yml, die sie im Wurzelverzeichnis ihres Projekts finden?
 
-Schreiben sie ihre Antworten in eine Textdatei Datei die sie ```uebung3.md``` nennen. Die Datei k&ouml;nnen sie dem Projekt mit
+Schreiben sie ihre Antworten in eine Textdatei Datei die sie ```uebung4.md``` nennen. Die Datei können sie dem Projekt mit
 ```
-git add uebung3.md
+git add uebung4.md
 ```
-hinzuf&uuml;gen. 
+hinzufügen. 
 
 *Tip: Lösen sie parallel dazu auch die nächste Aufgabe. Dies sollte ihr Verständnis für diesen Service verbessern.*
 
-
 #### Travis aktivieren
 
-Damit sie Travis auch f&uuml;r ihr Projekt verwenden k&ouml;nnen, m&uuml;ssen sie dies erst einrichten. Dazu gehen sie auf die die [Webseite](https://www.travis-ci.com) von Travis und melden sich mit ihrem Github Account an. Nach einer Weile sollten sie nun ihre Github Repositories sehen. Sie aktivieren Travis, indem sie beim entsprechenden Repository den Switch aktivieren (siehe Bild)
+Damit sie Travis auch für ihr Projekt verwenden können, müssen sie dies erst einrichten. Dazu gehen sie auf die die [Webseite](https://www.travis-ci.com) von Travis und melden sich mit ihrem Github Account an. Sie erhalten die Option Travis für eines oder alle Ihrer Github Repositories zu aktivieren. Aktivieren Sie 
+```ganttproject-hs18``` und erlauben Sie auch, dass Travis die Github integration vornimmt. 
 
-
-![img](images/travis.png)
 
 *Anmerkung: Travis ist ein kommerzieller Service. Sie haben aber 99 Trial runs zur Verfügung. Dies sollte für diesen Kurs reichen. Für Open Source Projekte ist Travis aber gratis nutzbar. Deshalb ist Travis der Standard Service in der Open Source Entwicklung*.
 
 *Anmerkung 2: Wenn Sie sich für das [Github Educational Pack](https://education.github.com/pack) registriert haben, haben Sie gratis builds für private repositories. Falls Ihr Fork public ist, müssen sie auf www.travis-ci.org wechseln. Die beiden Seiten sind identisch und werden von derselben Firma betrieben.*.
 
-Probieren sie aus was passiert wenn sie einen Änderung machen (und auf Github pushen), die zu einem fehlschalgen eines Unittests führt. Korrigieren Sie ihren Fehler wieder (Commit und push nicht vergessen).
 
-#### Status batch ersetzen
-Auf der &Uuml;bersichtsseite von Travis sehen sie oben einen "Batch" (siehe Screenshot)
-![img](images/travis-batch.png)
+Nach erfolgreicher Einrichtung sollten Sie auf eine Seite gelangen die wie folgt aussieht. 
+
+![img](../../exercises/images/travis.png)
+
+* Probieren sie aus was passiert wenn sie einen Änderung machen (und auf Github pushen), die zu einem Fehlschlagen eines Unittests führt. Was passiert bei Travis? 
+* Gehen Sie auf Github und machen Sie einen Pull Request mit diesen fehlerhaften Unittest (Bitte Unit Test auf Ihr den Master branch ihres eigenen Repositories). Was fällt Ihnen auf?
+* Korrigieren Sie ihren Fehler wieder und pushen Sie nochmals.
+
+
+#### Status batch ersetzen (Freiwillig)
+Auf der Übersichtsseite von Travis sehen sie oben einen "Batch" (siehe Screenshot)
+![img](../../exercises/images/travis-batch.png)
 Wenn sie auf diesen Klicken sehen sie eine URL. Diese URL zeigt auf ein kleines Bild (genannt Batch) welches den aktuellen Buildstatus von Travis anzeigt. 
-Es ist &uuml;blich, dieses Bild in die Datei ```Readme.md``` des Projekts einzuf&uuml;gen. Im Falle von Ganttproject wurde dies schon gemacht - jedoch ist die URL falsch. 
+Es ist üblich, dieses Bild in die Datei ```Readme.md``` des Projekts einzufügen. Im Falle von Ganttproject wurde dies schon gemacht - jedoch ist die URL falsch. 
 
 * Ersetzen sie den Batch mit der richtigen URL. 
 
@@ -91,7 +95,7 @@ Es ist &uuml;blich, dieses Bild in die Datei ```Readme.md``` des Projekts einzuf
 ### Abgabe
 Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch: 
 ```
-git push origin uebung3
+git push origin uebung4
 ``` 
 und entsprechenden Pull Request, bei dem sie 
  ```michaelPluess``` und ```schoenja``` als Reviewer angeben.
