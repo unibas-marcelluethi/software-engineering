@@ -45,4 +45,4 @@ Um die Klasse zu nutzen, können wir auch hier direkt auf dem Objekt arbeiten
  a.foo(); 
 ```
 ```
-Obwohl sich die Umsetzung in einigen Details unterscheidet, sehen wir hier also deutlich wie das ADT Modul, und entsprechend das Prinzip des *Information Hiding* hier umgesetzt wurde. 
+Obwohl sich die Umsetzung in einigen Details unterscheidet, sehen wir hier also deutlich wie das ADT Modul, und entsprechend das Prinzip des *Information Hiding*, hier umgesetzt wurde. 
