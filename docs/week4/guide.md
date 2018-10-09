@@ -30,8 +30,8 @@ Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* d
 
 Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 10. Oktober erreicht werden. Nach dieser Woche sollten die Studierenden:
 
-- Unterschiede in der Abstraktion uses and is_component_of verstehen und erklären können
-- Designs anhand von kriterien wie Fan-In, Hierarchien, etc. beurteilen können
+- Unterschiede in der Abstraktion "uses" and "is_component_of" verstehen und erklären können
+- Designs anhand von Kriterien wie Fan-In, Hierarchien, etc. beurteilen können
 - Erklären können wie Information Hiding von den unterschiedlichen Modulkategorien umgesetzt wird. 
 - Modulkategorien auf Sprachkonstrukte in Java abbilden können.
 
