@@ -63,6 +63,11 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | 9. Oktober, 23.55 | [Übungsblatt Woche 3 (Praxis)](https://unibas-sweng.github.io/software-engineering/week3/exercises/practical-exercises.html) | Github | |
 | 10. Oktober, 08:00 | [Individueller Test Woche 4](https://adam.unibas.ch/goto_adam_tst_721091.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_706003.html) | |
 
+## Projekt
+| Woche | Thema | Resourcen | Kommentar |
+|-------|-------|-----------|-----------|
+| 4     | Einführung | [slides](https://unibas-sweng.github.io/software-engineering/project/slides/project-ideas.html)| |
+
 ## Literatur / Weiterführende Links
 
 #### Empfohlene Lehrbücher 
