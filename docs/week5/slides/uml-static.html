@@ -48,6 +48,11 @@
                 </div>
                 
                 <aside class="notes">
+                    Willkommen zu diesem Screencast zum Thema UML. UML ist eine Graphische Modellierungssprache, 
+                    die sich in der Objektorientierung als Quasi standard tabliert hat. 
+                    Obwohl die Sprache in der modernen Softwareentwicklung nicht mehr ganz die Bedeutung wie noch vor 10 Jahren hat, 
+                    ist es doch für jeden Softwareingenieur unerlässlich, 
+                    UML Diagramme lesen zu können und Designs mithlife der wichtigsten UML Diagramme dokumentieren zu können. 
                 </aside>
 
 			</section>
@@ -77,6 +82,15 @@
                             </ul>
                     </div>
 
+                    <aside class="notes">
+                        Wir haben in den letzten Wochen immer wieder informelle Graphische Notationen benutzt, um die Beziehung zwischen Modulen zu verdeutlichen. 
+                        Diese Graphischen Notationen machen es möglich, Details eines Softwaresystems zu ignorieren, und stattdessen die Grossen Zusammenhänge zu verstehen. 
+                        Während wir für unsere kleinen Beispiele einfach eine intuitiv verständliche Notation nutzen konnten, ist es in der professionellen 
+                        Softwareentwicklung unerlässlich, dass wir eine standardisierte Notation nutzen um unsere Software zu modellieren und zu Dokumentieren. 
+                        In der Zusammenarbeit mit unseren Kollegen, Kunden und Auftraggebern, bilden diese Diagramme eine wichtige Unterstützung um unsere Entscheidungen zu
+                        Kommunizieren. 
+
+                    </aside>
                 </section>
     
   
@@ -84,13 +98,18 @@
                 <h1> UML </h1>
 
                 <blockquote>
-                    Grafische Modellierungssprache zur Spezifikation, Konstruktion und Dokumentation von Software-Teilen und anderen Systeme
+                    Grafische Modellierungssprache zur Spezifikation, Konstruktion und Dokumentation von Software und anderen Systemen
                 </blockquote>
                 <ul>
                     <li> Quasi standard zur graphischen Modellierung von OO-Systemen </li>
                     <li> Entwickelt 1990 (G. Booch, I. Jacobson, J. Rumbaugh) </li>
                     <li> Mittlerweise in der Version 2.5 </li>
                 </ul>
+                <aside class="notes">
+                    Als Quasi Standard für die Dokumentation hat sich die Unified Modelling Language etabliert.
+                     Die Sprache wurde in den 90er Jahren von Grady Booch, Ivar Jacobsen und James Rumbaugh entwickeln. 
+                    Die Sprache wurde aber laufend weiterentwickelt. Mittlerweise sind wir in der Version 2.5 angelangt.
+                </aside>
             </section>
 
             <section>
@@ -103,6 +122,15 @@
                     <li>UML ist kein Wundermittel wie anfang 2000 geglaubt wurde</li>
                     <li>... aber trotzdem enorm n&uuml;tzlich </li>
                 </ul>
+                <aside class="notes">
+                    UML als Technologie hat einen enormen Hype hinter sich und den typsichen Hypezyklus durchlaufen. 
+                    Nachdem ende der 90er und anfangs 2000 UML fast als Allerweltsheilmittel in der Softwareentwicklung 
+                    propagiert wurde, hat man später verstanden, dass auch diese Technologie keine Silverbullet für die Softwareentwicklung ist.
+                     Entäuschung hat sich breit gemacht, und UML hat enorm an 
+                    Stellenwert verloren. Jedoch bleibt der Wert von UML als standardisierte Sprache, die die meisten Softwareentwickler lesen und 
+                    verstehen können für die Dokumentation und Kommunikation erhalten. Auch dank 
+                    diesem Hype haben wir heute eine Vielzahl von Werkzeugen für die Modellierung und Dokumentation mittels UML zur Verfügung. 
+                </aside>
             </section>
 
             <section>
@@ -133,8 +161,23 @@
                             <li> Zustandsdiagramm </li>
                         </ul>
                 </div>
+                <aside class="notes">
+                    Der UML Standard definiert viele Verschiedene Arten von Diagrammen. 
+                    Grob kann man diese in zwei Klassen unterscheiden. Strukturdiagramme, die die statische Struktur 
+                    eines Systems modellieren, und Verhaltensdiagramme, welche benutzt werden um die dynamischen Aspekte eines Systems zu definieren. 
+
+                    Wir werden uns in dieser Vorlesung auf die wichtigsten Struktur und verhaltensdiagramme beschränken. 
+                    Das sind das Klassendiagramm und das Paketdiagramm um 
+                    die Sturktur zu beschreiben, und Aktivitätsdiagram, Use-case diagramm, Sequenzdiagramm und Zustandsdiagramm um das 
+                    Verhalten eines Systems zu beschreiben.
+                
+                    In dieser Woche beginnen wir mit dem Klassendiagramm und dem Paketdiagramm. 
+                    Wir werden sehen, dass wir damit unter anderem  die bekannten "uses" und "is_component_of" Beziehungen 
+                    zwischen Modulen modellieren.
+                </aside>
             </section>
 
+            <!--
             <section>
                 <h1> UML Diagramme im Designprozess </h1>
                 <figure>
@@ -142,19 +185,31 @@
                 <figcaption style="font-size:x-small">Diagramm nach Pfleeger & Atlee, Software Engineering</figcaption>
             </figure>
             </section>
-
+            -->
 
             <section>
                 <h1> Klassendiagramm </h1>
                 <ul>
                     <li> Wichtigste Diagrammart in UML </li>
-                    <li> H&auml;ufig nur als Designnotation verwendet</li>
+                    <li> H&auml;ufig nur als Werkzeug für das Detaildesign verwendet</li>
                     <li> Ist aber auch m&auml;chtiges Modellierungstool</li> 
                         <ul>
                             <li>Klassen entsprechen zu modellierenden Entit&auml;ten</li>
                             <li>Klasse in UML muss nicht Klasse in Implementation entsprechen</li>
                         </ul>
                 </ul>
+                <aside class="notes">
+                    Das Klassendiagramm ist zweifellos das Kernstück von der UML. Es wird häufig als Werkzeug für das Detaildesign verwendet, 
+                    das heisst um wirklich 
+                    die Klassen, die dann auch direkt in der Programmiersprache umgesetzt werden, zu designen. 
+                    Es kann aber auch auf abstrakterem Level als Modellierungswerkzeug 
+                    eingesetzt werden, um einen Überblick über die wichtigsten Entitäten in einem System und deren Zusammenspiel zu erhalten. 
+
+                    Aus diesem Niveau eingesetzt, kann eine in UML modellierte Klassen vielen individuellen Klassen in der 
+                    Implementationssprache entsprechen. 
+
+                </aside>
+
             </section>
 
 
@@ -164,6 +219,20 @@
                     <img src="../../slides/images/uml-class-library.png" class="plain" style="width:80%"/>
                     <figcaption style="font-size:x-small">Diagramm nach Pfleeger & Atlee, Software Engineering</figcaption> 
                 </figure>
+
+                <aside class="notes">
+                    Hier sehen wir ein Beispiel von einem Klassendiagramm. Die Rechtecke entsprechen den modellierten Klassen. 
+                    Bei jeder Klasse sehen wir zuoberste den Klassennamen, gefolgt von den Attributen, und darunter die Methoden. 
+                    Die Linien entsprenden den Beziehungen zwischen Klassen und werden Assoziationen genannt. 
+                    Diese Assoziationen werden benannt, um die Art der Beziehung klar zu machen. 
+                    In diesem Beispiel einer Bibliotheksanwendung wird modelliert, dass ein Kunde Publikationen ausleihen kann. Die entsprechenden Daten 
+                    zum ausgeliehenen Objekt werden in der Klasse Loan verwaltet. Es gibt zwei Arten von Publikationen, nämlich Bücher und Zeitschriften. 
+                    Jede Zeitschrift besteht dabei aus mehreren Artikeln. 
+
+                    Im folgenden Artikeln werden die wichtigsten Elemente dieser Diagramme im Detail erklärt. 
+
+                </aside>
+
                 </section>
                 
                 <section>
@@ -176,8 +245,18 @@
 
                             <li> Definiert implizit eine "Uses" Beziehung </li>                            
                         </ul>
+                        <aside class="notes">
+                            Für uns ist an dieser Stelle nur wichtig zu wissen, dass eine Assozation immer eine Beziehung beschreibt, die die 
+                            Klasse in der Implementation unterstützen muss. In unserem Beispiel hier, muss das Kundenobjekt in der Implementation 
+                            eine Referenz auf das Objekt Publikation haben. Eine Assoziation repräsentiert also immer eine "uses" Beziehung. 
+                            In der UML lassen sich aber die Art der Beziehung noch viel detaillierter Beschreiben. Zum Beispiel können wir sagen, 
+                            wie viele Objekte jeweils in die Beziehung involviert sind. In diesem Beispiel symbolisiert das Sternchen, dass ein  Kunde mehrere Publikationen 
+                            ausleihen kann. Umgekehrt wird jede Publikation von einem oder keinem Kunden ausgeliehen. 
+                        </aside>
+
                     </section>
 
+                    <!--
                     <section>
                             <h1>Aggregation</h1>
                             <img src="../../slides/images/uml-aggregation.png" class="plain" style="width:80%"/>            
@@ -210,14 +289,25 @@
                                 </li>
                             </ul>
                         </section>
-                                    
+                    -->               
 
             <section>
                     <h1> Paketdiagramm </h1>
                     <img src="../../slides/images/uml-paket-diagram.png" class="plain" style="width:60%"/>
                     <ul> 
-                            <li> Modelliert "IS_COMPONENT_OF" Beziehung </li>
+                            <li> Zeigt die Struktur des Systems auf Paketebene. </li>                            
+                            <ul><li> Modelliert "is_component_of" Beziehung </li>        </ul>
+                            <li> Angabe von Beziehungen möglich</li>                    
                         </ul>
+                    <aside class="notes">
+                        Das   Paketdiagramm ist ein sehr einfaches Diagramm. Es zeigt die Struktur der Module auf Paketebene. 
+                        Das Paketdiagramm entspricht einer graphischen darstellung der "is_component_of" Beziehung zwischen Modulen
+                        Die Module die hier zusammengefasst werden, können individuelle Klassen, oder aber wiederum Pakete sein. 
+                        In UML Paketdiagrammen ist es ist auch hier möglich, die Beziehungen zwischen verschiedenen Paketen anzugeben.
+                        
+
+                    </aside>
+                    
                     </section>
 
             <section>
@@ -228,6 +318,11 @@
                     <ul><li>Modernes und m&auml;chtiges Open Source Tool </li></ul>
                 </ul>
                 <img src="../../slides/images/modelio.png"  style="width:80%;border-width:1pt;border-style:solid"/>
+                <aside class="notes">
+                    Danke der Standardisierung von UML existiert eine grosse Anzahl an kommerziellen aber auch freien UML Modellierungstools. 
+                    Besonders kann ich MOdelIO empfehlen. Es ist ein modernes, einfach zu bedienendes und sehr mächtiges tool zur Modellierung, 
+                    welches zudem als Open Source Projekt entwickelt wird. 
+                </aside>
 
             </section>
 
@@ -287,6 +382,7 @@
                         src: '../../slides/plugin/notes/notes.js',
                         async: true
                     },
+                    { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
                     /*
                     {
                         src: '../../slides/plugin/chalkboard/chalkboard.js'
