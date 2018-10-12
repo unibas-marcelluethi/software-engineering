@@ -10,7 +10,7 @@
     * Artikel: [online](./articles/oo-composition-vs-inheritance.html)
 
 * SOLID Prinzipien
-    * Video:  [mp4](./slides/images/construction.jpg),  
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/QSMeFeYbs7Hpfky),  
     * Slides: [online](./slides/solid.html), [Druckversion](./slides/solid.html?print-pdf)
 
 * Das Gesetz von Demeter
