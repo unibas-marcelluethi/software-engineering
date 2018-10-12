@@ -48,6 +48,13 @@
                 </div>
                 
                 <aside class="notes">
+                    Willkommen zu diesem Screencast zum Thema OO-Design. 
+                    Die Konzepte der Objektorientierung, und  bereits erste objektorientierte Programmiersprachen wurden bereits in den 
+                    70er Jahren entwickelt. 
+                    Es hat zwei Jahrzehnte gedauert, bis das Konzept in der Industrie angelangt ist. 
+                    Seit den 90er Jahren ist OO Programmierung 
+                    jedoch das dominierende Prinzip in der Softwareentwicklung. 
+                    Dieses Konzept wollen wir uns im folgenden etwas näher anschauen. 
                 </aside>
 
 			</section>
@@ -56,6 +63,12 @@
                 <h1>Objektorientierte Programmiersprachen</h1>
 
                 <img src="../../slides/images/oo-pls.png" class="plain"/>
+
+                <aside class="notes">
+                    Die meisten der populären Programmiersprachen, von c++ Über Java, C# bis hin zu Scriptsprachen wie Python, 
+                    unterstützen Objektorientierte Konzepte. In einigen Programmiersprachen wie zum Beispiel Smalltalk, oder Ruby, ist das 
+                    Konzept so zentral das wirklcih alles, was man in diesen Sprachen repreaesentiern kann einem Objekt entspricht.
+                </aside>
             </section>
 
 
@@ -72,6 +85,18 @@
                         <p style="font-size:smaller">“OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.”</p>
                         <p style="text-align:right;font-size:smaller;display:block"> A. Kay</p>
                     </blockquote>
+            <aside class="notes">
+                Entsprechend den Sprachen wird auch das Softwaredesign objektorientiert gedacht. Nur, was ist denn eigentlich objekt-orientiert?
+                Dier erste Definition ist eine etwas technische ISO definition. Die Definition sagt einfach, dass man Objketorientiert arbietet, wenn 
+                man eine Technik einsetzt, die Objekte, Klassen und Vererbung unterstützt. 
+                Eine etwas nützlichere Definition wird von Alan Kay, einem der Väter der Objektorientierung gebeben. 
+                Es sagt, dass es bei der Objektorientierte Programmierung vor allem um die Kommunikation zwischen Objekten geht. 
+                Objekte sollen nur via Nachrichten kommunizieren, und ihren Zustand nur lokal, also intern, halten  und 
+                nicht nach aussen preisgeben. Das entspricht wieder dem Information hiding. 
+                Ausserdem, soll erst so spät we möglich entschieden werden, welches Objekt den genau eine Anfrage bearbeitet. Wir kommen später 
+                nochmals genauer auf diese Definition zurück.
+            </aside>
+
 
             </section>
 
@@ -101,6 +126,15 @@
                     <li>Gutes Beispiel für OO Design in C: <a href="https://en.wikipedia.org/wiki/GTK%2B">GTK+</a></li>
                 </ul>
             </div>
+
+            <aside class="notes">
+                Als erstes wollen wir aber feststellen, dass Objektorientierung nicht unbedingt an eine Programmiersprache gebunden sein muss. 
+                Das wichtige sind auch hier die Konzepte wie Information Hiding, Modularisierung oder eben diese Late binding. Objektorientierte Programmiersprache helfen uns, diese 
+                Konzepte umzusetzen. Mit etwas Mehraufwand und Disziplin kann ich jedoch in jeder Programmiersprache Objektorientiert programmieren. 
+                Ein Gutes Beispiel hierfür ist GTK+. Dieses Windowing Toolkit ist in C geschrieben. Es ist aber komplett nach Objektorientierten Prinzipien designed. 
+                Das macht auch sinn, da die stärke von Objektorientierung genau das Modularisieren und Kapseln von Objektzuständen ist. Und genau solche hat man bei der GUI Entwicklung sehr viel. 
+            </aside>
+
             </section>
 
 
@@ -110,16 +144,28 @@
                     <li>
                         <mark class="highlight">Klasse</mark> implementiert Abstrakten Datentyp</li>                        
                         <li> Daten heissen <mark class="highlight">Attribute </mark> </li>
+                        <li><mark class="highlight">Konstruktor</mark> kreiert neue Instanzen</li>
+                
                         <li>Operationen heissen
                                 <mark class="highlight">Methoden</mark>
                             </li>
-                        <li><mark class="highlight">Konstruktor</mark> kreiert neue Instanzen</li>
                         <li><mark class="highlight">Instanzvariablen</mark> sind Referenzen auf Objekte</li>
                         <li><mark class="highlight">Laufzeitstruktur</mark> die Menge der Objekte zur Laufzeit</li>
                         <ul><li>Jedes Objekt ist zur Laufzeit eindeutig identifiziert</li></ul>
                     </li>                        
                 </ul>
-
+                
+                <aside class="notes">
+                    Bevor wir uns näher mit Objektorientiertem Design beschäftigen, müssen wir zuerst etwas Terminologie klären. 
+                    Das wichtigste Konzept ist eine Klasse. Im Prinzip ist eine Klasse einfach eine Implementation eines Abstrakten Datentyps. 
+                    Die Funktion, um neue Objekte, also Instanzen der Klasse zu generieren, wird Konstruktor genannt. 
+                    In der OO Terminologie werden die Daten eines Objekts als Attribute bezeichnet und die Operationen die auf diesen DAten arbeiten nennt 
+                    man Methoden. 
+                    Um überhaupt mit einem Objekt arbeiten zu können muss ich eine Referenz auf ein Objekt haben. Eine Variable die eine solche Referenz speichert wird
+                    Instanzvariable genannt. 
+                    Als Laufzeitstruktur bezeichnen wir die Menge aller Objekte, die zur Laufzeit existieren. 
+                    Jedes Objekt in dieser Laufzeitstruktur hat eine eigene ID, kann also eindeutig identifiziert werden. 
+                </aside>
             </section>
 
             <section>
@@ -129,7 +175,7 @@
                     Nutzung der Funktionalität eines Objekts nur über wohldefinierte Schnittstellen.
                 </blockquote>
                 <ul>    
-                    <li> Mehrere Objekte können gleich Schnittstelle anbieten
+                    <li> Mehrere Objekte können gleiche Schnittstelle anbieten
                     <li> Ein Objekt kann mehrere Schnittstellen anbieten</li>
                 </ul
                 >
@@ -139,20 +185,38 @@
                 <pre><code data-trim class="java"> 
                     public class ArrayList&lt;E&gt; extends AbstractList&lt;E&gt;
                             implements List&lt;E&gt;, 
-                            RandomAccess, 
-                            Cloneable, 
-                            java.io.Serializable {}
+                            RandomAccess
                     </code></pre>
                 </div>                
+
+                <aside class="notes">
+                    Wie wir bei den allgemeinen Prinzipien zum Modul design gesehen haben, sollen Module ihre Dienste immer via Schnittstellen anbieten. 
+                    Diesem Prinzip wird auch in der OO Programmierung gefolgt. Die Beziehung hier ist aber nicht eins zu eins. Eine Schnittstelle kann von 
+                    mehreren Objekten angeboten werden. Auch kann dasselbe Objekt mehrere Schnittstellen anbieten. 
+                    Zum beispiel gibt es in Java die Klasse ArrayList. Diese Klasse kann von einem Client sowohl als Liste verwendet werdne, 
+                    oder aber auch als Sequenz mit wahlfreiem Zugriff auf die Elemente, je nachdem welche Schnittstelle verwendet wird. Die Implementation 
+                    ist jedoch immer dieselbe.
+                    Es ist natürlich auch möglich, das eine Schnittstelle von verschiedenen Objekten Implementiert ist. So gibt es in Java nicht nur die Klasse
+                    ArrayList die das List interface implementiert, sondern auch die Klasse Linked List. 
+                    
+                </aside>
             </section>
 
 
             <section>
-                    <h1> Polymorphismus und dynamische Bindung</h1>
+                    <h1> Dynamische Bindung und Polymorphismus</h1>
                     <ul>
                         <li><mark class="highlight">Dynamische Bindung (late binding):</mark> Variablen k&ouml;nnen zur Laufzeit an verschiedene (verwandte) Typen gebunden werden</li>                                               
                         <li><mark class="highlight">Polymorphismus:</mark> Zur Laufzeit wird Methode entsprechend dem Objekttyp verwendet. </li>
                     </ul>
+                    <aside class="notes">
+                        Dies führt uns zur letzten wichtigen Eigenschaft von Objektorientierten Systemen, nämlich der Dynamische Bindung, 
+                        auf English Late Binding genannt. Die Idee dahinter ist, das wenn mehrere Objekte dieselbe Schnittstelle anbieten, 
+                        dass dann erst zur Laufeit entschieden wird, welches Objekt eine Anfrage bearbeitet. 
+                        Die ist möglich, da eine instanzvarible unterschiedliche Typen repräsentieren kann. 
+                        Diese Fähigkeit nennt Polymorphismus, und ist ein wichtiges Merkmal von Objektorientierten Sprachen. 
+                  
+                    </aside>
                 </section>            
                 <section> <h1>Beispiel: Polymorphismus </h1>
                     <pre><code data-trim class="java" style="font-size:smaller;line-height:2ch"> 
@@ -168,10 +232,12 @@
                         void doSomethingWithFoo(Foo foo) {
                             foo.bar();
                         }
-    
-                        var Foo foo = new FooImpl1();
-                        doSomethingWithFoo(foo);
-                    </code></pre>
+                                                 
+                        if (condition) 
+                            doSomethingWithFoo(new FooImpl1()) 
+                        else 
+                            doSomethingWithFoo(new FooImpl2())
+                    </code></pre> 
     
                     <ul>
                         <li>Unterschiedliche Ausgabe je nachdem ob 
@@ -179,19 +245,54 @@
                             <text style="font-family:Courier New, Courier, monospace">FooImpl1 </text> oder
                             <text style="font-family:Courier New, Courier, monospace">FooImpl2</text> gebunden wird.</li>
                     </ul>
+                    
+                    <aside class="notes">
+                        Wir wollen das an einem Beispiel illustrieren.
+                        In diesem Beispiel haben wir eine Schnittstelle Foo, die verlangt, dass die Methode bar implementiert wird. 
+                        Dazu haben wir zwei Klassen, FooImpl1 und FooImpl2, welche diese Schnittstelle implementieren. 
+                        Zusätzlich haben wir auch noch eine Methode doSomethingWithFoo, die ein Objekt vom Typ Foo als Argument nimmt,
+                         ohne jedoch zu sagen ob es FooImpl1 oder FooImpl2 sein soll. 
+                        Late binding macht es möglich, dass in der Methode erst zur Laufzeit entschieden wird,
+                         ob die bar Methode vom Objekt FooImpl2, oder FooImpl1 genutzt wird, je nachdem, welches Objekt übergeben wird. 
+                        
+
+                    </aside>
                 </section>
 
                 <section>
                         <h1>Objektorientierung als "Messaging"</h1>
                         
+                        <div style="float:left;width:60%">
                         <ul>
                             <li>Objekte verwalten Zustand der Daten (Attribute)</li>
                             <li>Nehmen Nachrichten/Requests entgegen (Methoden)</li> 
                             <li>Senden Antwort zur&uuml;ck und/oder ver&auml;ndern Zustand</li>
                    </ul>
-                   <blockquote>
+                   </div>
+
+                   <div style="float:right;width:40%">
+                    <img src="../../slides/images/island.png" style="width:100%" class="plain">
+                    <figcaption style="font-size:xx-small">Gabriel VanHelsing, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=7560534</figcaption>
+ 
+                    
+                    </div>
+                   <blockquote style="display:inline-block">
                         Methodenaufruf = senden einer Nachricht       
                 </blockquote>                    
+                <aside class="notes">
+                    Eine hilfreiche sicht auf die Objektorientierung ist, dass wir uns die Objekte als Inseln vorstellen mit 
+                    der wir nur via Nachrichten kommunizieren können. Alle Daten vom Objekt verlassen nie diese Insel.  
+                    Wenn wir nun eine Dienstleistung von dem Objekt in Anspruch nehmen wollen, 
+                    können wir eine Nachricht senden. Dieses Senden der Nachricht entspricht einem Methodenaufruf. 
+                    Daraufhin passiert etwas mit dem Objekt, es führt  zum Beispiel eine Berechnung durch, oder 
+                    verändert seinen internen Zustand (also die DAten). Das Objekt sendet als Antwort wieder ein 
+                    Nachricht an das Aufrufende Objekt zurück. Die Daten bleiben dabei aber immer auf der Insel und werden nur lokal verändert. 
+
+                    Das ist konsequentes Information hiding .
+                    
+
+                </aside>
+
                     </section>
         
 
@@ -206,10 +307,10 @@
                       void depositEur(double amount) { 
                         double asCHF = b.convertEurToCHF(amount))
                           this.updateBalance(balanceCHF + asCHF)
-                        }
-                        void updateBalance(double newBalance) {
-                          balanceInCHF = newBalance;
-                        }
+                      }
+                      void updateBalance(double newBalance) {
+                        balanceInCHF = newBalance;
+                      }
                     }
                         
                     // somewhere in currentObject                         
@@ -225,20 +326,31 @@
       
 
             <section>
-                <h1>OO Design - &Uuml;bersicht</h1>
+                <h1>OO Design - Zusammenfassung</h1>
                 <ul>
 
-                    <li>Teilt ein System in Module auf
+                    <li>Aufteilen eines Systems in Module
                         <ul>
-                            <li>Module kapseln Daten und Funktionalit&auml;t</li>
+                            <li>Objekte verwalten Daten </li>                            
+                            <li>Zugriff nur via Methoden</li>
                         </ul>
-                        <ul><li> Objekte k&ouml;nnen selbst Objekte enthalten. </li>                        </ul>
-                        <li>Objekte sind zur Laufzeit eindeutig identifiziert</li>
-                        <ul>
-                            <li>K&ouml;nnen Nachrichten/Requests empfangen.</li>
-                        </ul>
-                        <li> Late binding: Es wird erst spät (zur Laufzeit) entschieden welches Objekt Nachricht bearbeitet</li>                  
+                        <li>Interpretation: Kommunikation via messaging</li>
+                        <li> Late binding: Es wird erst zur Laufzeit entschieden welches Objekt Nachricht erhält/bearbeitet</li>                  
                 </ul>
+                <!--
+                <blockquote>
+                    Implementation der Prinzipien <mark class="highlight">Modularisierung</mark> und <mark class="highlight">Information Hiding</mark> 
+                </blockquote>
+            -->
+                <aside class="notes">
+                    Fassen wir zusammen: Im OO Design wird das System in Module aufgeteilt. Diese Module werden Klassen genannt. 
+                    In den Instanzen von diesen Klassen, den Objekten, werden die Daten verwaltet. Zugriff auf diese Daten ist Nur
+                    via Methoden möglich. Man kann das so interpretieren, dass ein Methodenaufrum dem Senden einer Nachricht an das
+                    Objekt entspricht. Welches Objekt die Nachricht empfängt und bearbeitet, wird aber erst zur Laufzeit definiert. 
+                    
+                    Die Konsequente Anwendung dieser Mechanismen erlaubt es uns  klare, gute zu wartende und modulare Designs zu entwerfen. 
+                </aside>
+
             </section>
 
 
@@ -297,6 +409,7 @@
 			{
 				src: '../../slides/plugin/markdown/markdown.js'
 			},
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
 			{
 				src: '../../slides/plugin/notes/notes.js',
 				async: true
