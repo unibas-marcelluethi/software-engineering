@@ -317,8 +317,9 @@
 
                     Wir haben letzte Woche die Sandwiching Methode gesehen um Zyklen in Uses Graphen aufzubrechen. 
                     Die Idee hinter der Sandwiching methode ist genau, ein Interface in mehrere Kleinere Interfaces
-                    zu teilen, und somit die Kopplung zu vermindern. Genau das ist die Idee hinter dieser Methode. 
-                    
+                    zu teilen, und somit die Kopplung zu vermindern. Es wird also das erreicht, was das Interface
+                    segregation Prinzip verlangt.  
+
 
                 </aside>
 
@@ -335,6 +336,18 @@
                     </blockquote>
 
 
+                <aside class="notes">
+                    Das letzte Prinzip ist unter dem Namen "Dependency inversion" bekannt. 
+                    Wir können in usneren Design häufig verschiedene Ebenen von Modulen unterscheiden. 
+                    Die Module auf höherer Ebene repräsentieren oft die Anwendungslogik, während die Module auf tiefer Ebene
+                    kleinen Hilfsklassen und Werkzeugen, wie zum Beispiel einem Logger entsprechen. 
+                    Diese Abhängikeit führt dazu, das wenn wir diese Hilfsklassen ändern, eine Änderung in den Modulen 
+                    für die Anwendungslogik nötig ist. Das Dependency inversion prinzip sagt jetzt, dass wir diese 
+                    Ebenen durch ein gemeinsames Interface entkoppeln sollen. 
+                    Von Robert Martin wurde das wie folgt formuliert. 
+                    
+
+                </aside>
             </section>
             
             <section>
