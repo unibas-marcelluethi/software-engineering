@@ -38,23 +38,21 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |    | Software design - Übersicht und Einführung |  |
 | [Woche 4](https://unibas-sweng.github.io/software-engineering/week4/index.html)  | Modulstruktur  | |
 |    | ModulDesign  | |
-| Woche 5  | OO Design |
+| [Woche 5](https://unibas-sweng.github.io/software-engineering/week5/index.html)  | OO Design |
 |    | UML (statische Diagramme)  | | 
-| Woche 6  | OO Design Prinzipien (SOLID) | |
-|    | OO Design Heuristiken   | |
-| Woche 7  | Requirement Engineering   | |
+| Woche 6  | Requirement Engineering   | |
 |    | Requirements |  |
-| Woche 8  | Softwarespezifikation  |  |
+| Woche 7  | Softwarespezifikation  |  |
 |    | Konstruktive Softwarespezifikation  |  |
-| Woche 9  | Deskriptive Softwarespezifikation | |
-| Woche 10 | Verifikation (überblick)  | |
+| Woche 8  | Deskriptive Softwarespezifikation | |
+| Woche 9 | Verifikation (überblick)  | |
 |    | Testen (Einführung) | |
 |    | Testen im Kleinen   | |
-| Woche 11 | Testen im Grossen   | | 
+| Woche 10 | Testen im Grossen   | | 
 |    | Softwareprozesse | |
-| Woche 12 | Agile Softwareentwicklung   | |
+| Woche 11 | Agile Softwareentwicklung   | |
 |    | Scrum  | |
-| Woche 13 | Entwurfsmuster | |
+| Woche 12 | Entwurfsmuster | |
 
 ## Nächste Übungen und Deadlines
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
