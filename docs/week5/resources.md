@@ -1,4 +1,4 @@
-# Woche 4: Modularität
+# Woche 5: Objektorientiertes Design
 
 # Folien und Artikel
 

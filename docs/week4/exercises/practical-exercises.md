@@ -38,7 +38,7 @@ Wir möchten, dass die Methode ```getRoleSet``` richtig auf verschiedene Klassen
 * Aufruf mit einem nicht existierenden namen (Spezifikation: hier sollte null zurückgegeben werden)
 * Aufruf mit ```null``` (Spezifikation: hier sollte ```null``` zurückgegeben werden)
 
-Implementieren Sie jeweils mindestens einen sinnvollen Unittest für jeder der folgenden Methoden von RoleSetImpl:
+Implementieren Sie jeweils mindestens einen sinnvollen Unittest für jeder der folgenden Methoden von RoleManagerImpl:
 
 * ```clear()```
 * ```createRoleSet(String name)```

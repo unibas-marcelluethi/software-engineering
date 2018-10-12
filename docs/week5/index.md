@@ -1,4 +1,4 @@
-# Woche 4: Modulstruktur und Moduldesign
+# Woche 5: Objektorientiertes Design
 
 # Studium
 
