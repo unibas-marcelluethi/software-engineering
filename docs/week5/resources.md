@@ -17,7 +17,7 @@
     * Artikel: [online](http://prinzipien-der-softwaretechnik.blogspot.com/2013/06/das-gesetz-von-demeter.html)
 
 * UML Einführung
-    * Video:  [mp4](../slides/images/construction.jpg),  
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/Was9xtou8E5cHvH),  
     * Slides: [online](./slides/uml-static.html), [Druckversion](./slides/uml-static?print-pdf)
 
 * UML Klassendiagramme
