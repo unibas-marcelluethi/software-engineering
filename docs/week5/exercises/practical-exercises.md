@@ -65,7 +65,7 @@ Lesen Sie sich die Diskussion in diesem [Issue](https://github.com/bardsoftware/
 
 Versuchen Sie das Problem zu reproduzieren und implementieren Sie den vorgeschlagenen Lösungsansatz. 
 
-*Tip: Der Bereich im Ganttproject, indem die Milestones angezeigt werden, nennt sich *timeline*.
+*Tip: Der Bereich im Ganttproject, indem die Milestones angezeigt werden, nennt sich *timeline**.
 
 ### Abgabe
 Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch: 
