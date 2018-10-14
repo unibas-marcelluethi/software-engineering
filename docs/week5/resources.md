@@ -23,6 +23,10 @@
 * UML Klassendiagramme
     * Artikel: [online](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/)
 
+* Design Heuristiken
+    * Slides: [online](./slides/oo-design-heuristics.html), [Druckversion](./slides/oo-design-heuristics?print-pdf)
+
+
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 
 
@@ -30,3 +34,4 @@
 * Ghezzi C., Jazayeri M., Mandioli D. *Fundamentals of Software Engineering (2nd Edition)*, Kapitel 4.6
 * Pfleeger S. L., Atlee, J. M. *Software Engineering* Kapitel 6.3
 * Robert C Martin (Uncle Bob): [PrinciplesOfOOD](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
+* Agilemodeling.com: [CRC Cards - An Agile Introduction](http://www.agilemodeling.com/artifacts/crcModel.htm)
