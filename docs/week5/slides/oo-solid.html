@@ -47,6 +47,12 @@
                 </div>
                 
                 <aside class="notes">
+                    Willkommen zu diesem Screencast. 
+                    Wie im vorigen Video besprochen, ist die Objektorientierte Programmierung
+                    seit den 90er Jahren das führende Paradigma. Es wurde entsprechend viele Designansätze
+                    ausprobiert. Über die Jahre haben sich verschieden Designprinzipien herausgebildet. 
+                    In diesem screencast wollen wir uns die fünf wichtigen Prinzipien anschauen, die unter dem 
+                    Namen SOLID Prinzipien bekannt sind. 
                 </aside>
 
 			</section>
@@ -63,8 +69,18 @@
                 </ul>                
 
 
-                <blockquote>Prinzipien zielen auf einfache &Auml;nderbarkeit durch Entkopplung und Modularisierung ab.</blockquote>
+                <blockquote>Prinzipien zielen auf einfache &Auml;nderbarkeit durch Entkopplung der Module ab.</blockquote>
 
+                <aside class="notes">
+                    Die Abkürzung SOLID ist aus den Anfangsbuchstaben der 5 Prinzipien gebildet. Es handelt
+                    sich dabei um das Single Responsibility Prinzip, dem Open Closed Prinzip, 
+                    dem Liskovschen Substitutionsprinzip, dem Interface Segregation Prinzip, 
+                    sowie dem Prinzip der Dependency inversion. 
+
+                    Alle diese Prinzipien führen zu hoher modularisierung und haben das Ziel eine schwache
+                    Kopplung von den Modulen zu erreichen, damit die Software möglichst einfach gewartet und 
+                    erweitert werden kann. 
+                </aside>
             </section>
 
             <section>
@@ -79,13 +95,23 @@
                     <li>Jede Klasse sollte nur f&uuml;r eine Sache verantwortlich sein</li>
                     <ul><li>Verwandtes Prinzip: Separations of Concern</li></ul>
                 </ul>
+                <aside class="notes">
+                        Das erste Prinzip welches von Robert Martin formuliert wurde, sagt aus, dass 
+                        es niemals mehr als einen Grund geben sollte, eine Klasse zu ändern. 
+                        Übersetzt heisst das, das jede Klasse nur ein Verantwortlichkeit haben sollte und 
+                        entsprechend eine hohe Kohäsion aufweisen sollte. 
+
+                        Sie können sich an dieser Stelle kurz überlegen, wie das mit unserem Grundprinzip  
+                        vom "Trennen der Verantwortlichkeiten" zusammenhängt. 
+                    </aside>
             </section>
 
             <section>
                     <h1> Beispiel: Single-responsibililty Prinzip </h1>
     
                     <div style="float:left; width:50%">
-                            Verantwortlichkeiten: Nur Kontof&uuml;hrung.
+                            Verantwortlichkeit: 
+                            <br/>Kontof&uuml;hrung.
                              <br/>&nbsp;<br/>
 
                         <pre><code data-trim class="java">
@@ -122,6 +148,19 @@
                                     }
                                     </code></pre>
                     </div>
+                
+                    <aside class="notes">
+                        Wir sehen hier ein Beispie. Die Klasse Bankaccount links hat drei Methoden. Einzahlen, 
+                        Auszahlen sowie überprüfen ob geld vorhanden ist. Die einzige Verantwortlichkeit ist 
+                        die Kontoführung. Nur wenn sich etwas an diesem Aspekt ändert, gibt es einen Grund
+                        die Klasse zu ändern. Im gegensatz dazu hat die Klasse rechts auch eine Methoden
+                        um den Kontoauszug zu formatieren. Jede änderung an der Kontoführung, aber auch Jede"
+                        änderung vom Druckformat Kontoauszugs führt hier also zu einer Änderung. Die Klasse
+                        muss also viel häufiger angepasst werden, was wiederum zu grösseren Fehlern führt. 
+                        Ausswerdem führt diese vermischung von Verantwortlichkeiten zu einer höheren Kopplung 
+                        der Module. 
+                    </aside>
+               
                 </section>
     
 
@@ -137,14 +176,27 @@
                     <ul><li> Minimiert Risiko, dass existierende Funktionalit&auml;t wegen &Auml;nderung nicht mehr funktioniert.</li></ul>
                     <li>M&ouml;gliche Umsetzung: Vererbung</li>
                 </ul>
+                
+                <aside class="notes">
+                    Das nächste Prinzip ist das Open-closed Prinzip. Es besagt, dass Module sowohl offen 
+                    für Erweiterungen, als auch geschlossen, für Modifikationen sein sollen. Es wurde bereits
+                    1988 von Bertrand Meier fomulaiert. 
+
+                    In anderen Worten wollen wir ein System so designen, dass wir es später erweitern können, 
+                    ohne den ursprünglichen Code ändern zu müssen. 
+                    Dies minimiert Risko, dass durch die Änderung bugs in die früher korrekten Module eingeführt werde. 
+                    In der Objektorientierten Programmierung lässt sich das Open Closed Prinzip am besten durhc 
+                    Vererbung umsetzen, wie wir im folgenden Beispiel sehen werden. 
+                </aside>
             </section>
 
             <section>
                     <h1> Beispiel: Open-closed Prinzip </h1>
     
                     <div style="float:left; width:50%">
-                        Neuen Printer (Printer2) hinzuzufügen führt zu Änderung in Code
-                        <pre><code data-trim class="java">
+                            Änderung an Klasse Wordprocessor nötig
+
+                        <pre><code data-trim class="java" style="line-height:2ch">
                         class Printer1 {
                           void print(Document d);
                         }
@@ -157,18 +209,20 @@
                           }                        
                         }
                             </code></pre>
-    
+                            &nbsp;<br/>&nbsp;
+                   
                     </div>                    
                     <div style="float:right; width:50%">
-                            Printer2 kann hinzugefügt werden ohne Änderung in Code
-                            <pre><code data-trim class="java">
-                                abstract class Printer {
+                            Ursprünglicher Code bleibt unverändert
+                            <pre><code data-trim class="java" style="line-height:2ch">
+
+                                interface Printer {
                                     void print(Document d);
                                 }
-                                class Printer1 extends Printer {
+                                class Printer1 implements Printer {
                                     void print(Document d) {}
                                 }
-                                class Printer2 extends Printer {
+                                class Printer2 implements Printer {
                                     void print((Document d) {}
                                 }
                                 
@@ -179,7 +233,8 @@
                                    }   
 
                             </code></pre>
-                    </div>
+                   
+                        </div>
 
                     
                 </section>
@@ -200,6 +255,15 @@
                     </li>
                 </ul>
 
+                <aside class="notes">
+                    Das nächste Prinzip, dass wir uns anschauen ist das Liskovsche Substitutionsprinzip. 
+                    Es wurde von Barbara Liskov Foruliert. Dies ist die selbe Barbara Liskov, die auch 
+                    die Abstrakten Datentypen eingeführt hat. 
+                    Die Anwendung des Prinzips verhindert unliebsame überraschung bei der Erweiterung 
+                    von Software durch neue Objekte. Es besgt nämlich, dass ich ein Objekt immer durch 
+                    ein Objket der Subklasse ersetzen kann, ohen dass sich das verhalten ändert. 
+                    Formal ausgedrückt ...
+                </aside>
             </section>
 
             <section>
@@ -242,6 +306,23 @@
                     <li>Klassen werden entkoppelt </li>
                     <ul><li>Vergleiche: Sandwiching</li></ul>
                 </ul>
+
+                <aside class="notes">
+                    Das nächste Prinzip ist wieder ein ganz einfaches. 
+                    Es besagt, dass ein Client nicht dazu gezwungen werden soll, von einem Interface abzuhängen
+                    das es nicht verwendet. 
+                    Das Prinzip sagt also, dass wir kleine, wohldefinierte Schnittstellen verwenden sollen, 
+                    die nur eine Funktionalität anbieten. Es ist also eine direkte Anwendung vom 
+                    Prinzip "Trennung der Verantwortlichkeiten."
+
+                    Wir haben letzte Woche die Sandwiching Methode gesehen um Zyklen in Uses Graphen aufzubrechen. 
+                    Die Idee hinter der Sandwiching methode ist genau, ein Interface in mehrere Kleinere Interfaces
+                    zu teilen, und somit die Kopplung zu vermindern. Es wird also das erreicht, was das Interface
+                    segregation Prinzip verlangt.  
+
+
+                </aside>
+
             </section>
 
             <section>
@@ -255,6 +336,18 @@
                     </blockquote>
 
 
+                <aside class="notes">
+                    Das letzte Prinzip ist unter dem Namen "Dependency inversion" bekannt. 
+                    Wir können in usneren Design häufig verschiedene Ebenen von Modulen unterscheiden. 
+                    Die Module auf höherer Ebene repräsentieren oft die Anwendungslogik, während die Module auf tiefer Ebene
+                    kleinen Hilfsklassen und Werkzeugen, wie zum Beispiel einem Logger entsprechen. 
+                    Diese Abhängikeit führt dazu, das wenn wir diese Hilfsklassen ändern, eine Änderung in den Modulen 
+                    für die Anwendungslogik nötig ist. Das Dependency inversion prinzip sagt jetzt, dass wir diese 
+                    Ebenen durch ein gemeinsames Interface entkoppeln sollen. 
+                    Von Robert Martin wurde das wie folgt formuliert. 
+                    
+
+                </aside>
             </section>
             
             <section>
@@ -322,6 +415,8 @@
                     src: '../../slides/plugin/notes/notes.js',
                     async: true
                 },
+                { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+
                 /*
                 {
                     src: '../../slides/plugin/chalkboard/chalkboard.js'

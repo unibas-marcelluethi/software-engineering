@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-10-23" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.5" locale="en_US">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="167" order="0"/>
+        <field id="tpd4" name="Begin date" width="65" order="1"/>
+        <field id="tpd5" name="End date" width="64" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="17" name="Pflichtenheft" meeting="false" start="2018-10-25" duration="8" complete="0" expand="true">
+            <task id="0" name="Pflichtenheft schreiben" color="#8cb6ce" meeting="false" start="2018-10-25" duration="4" complete="0" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" name="Besprechung Pflichtenheft" color="#8cb6ce" meeting="true" start="2018-10-31" duration="0" complete="0" thirdDate="2018-10-31" thirdDate-constraint="1" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" name="Pflichtenheft Finale Abgabe" color="#8cb6ce" meeting="true" start="2018-11-06" duration="0" complete="0" thirdDate="2018-11-06" thirdDate-constraint="1" expand="true"/>
+        </task>
+        <task id="21" name="Design" color="#8cb6ce" meeting="false" start="2018-10-31" duration="14" complete="0" expand="true">
+            <task id="29" name="Design-Dokument" meeting="false" start="2018-10-31" duration="9" complete="0" expand="true">
+                <task id="25" name="Use-cases" color="#8cb6ce" meeting="false" start="2018-10-31" duration="5" complete="0" expand="true"/>
+                <task id="31" name="Graphische Modelle" color="#8cb6ce" meeting="false" start="2018-11-07" duration="4" complete="0" expand="true">
+                    <depend id="46" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="34" name="Prototyp erstellen" color="#8cb6ce" meeting="false" start="2018-10-31" duration="10" complete="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="46" name="Besprechung Design / Prototyp" color="#8cb6ce" meeting="true" start="2018-11-14" duration="0" complete="0" thirdDate="2018-11-14" thirdDate-constraint="1" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="48" name="Finale Abgabe Designdokument" color="#8cb6ce" meeting="true" start="2018-11-20" duration="0" complete="0" thirdDate="2018-11-20" thirdDate-constraint="1" expand="true"/>
+        </task>
+        <task id="53" name="Implementation" meeting="false" start="2018-11-14" duration="20" complete="0" expand="true">
+            <task id="83" name="Coding" meeting="false" start="2018-11-14" duration="20" complete="0" expand="true"/>
+            <task id="82" name="Testen" color="#8cb6ce" meeting="false" start="2018-11-14" duration="20" complete="0" expand="true"/>
+            <task id="153" name="Testplan erstellen" meeting="false" start="2018-11-14" duration="9" complete="0" expand="true"/>
+            <task id="208" name="Besprechung Testplan" color="#8cb6ce" meeting="true" start="2018-11-28" duration="0" complete="0" thirdDate="2018-11-28" thirdDate-constraint="1" expand="true"/>
+            <task id="210" name="Finale Abgabe Testplan" color="#8cb6ce" meeting="true" start="2018-12-04" duration="0" complete="0" thirdDate="2018-12-04" thirdDate-constraint="1" expand="true"/>
+        </task>
+        <task id="213" name="Projektabschluss" meeting="false" start="2018-12-05" duration="5" complete="0" expand="true">
+            <task id="216" name="Präsentation erstellen" meeting="false" start="2018-12-05" duration="5" complete="0" expand="true"/>
+            <task id="214" name="Präsentation" color="#8cb6ce" meeting="true" start="2018-12-12" duration="0" complete="0" thirdDate="2018-12-12" thirdDate-constraint="1" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

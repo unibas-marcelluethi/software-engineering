@@ -2,51 +2,58 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Finden von Klassen</title>
+	<title>Design Heuristiken</title>
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/solarized.css">
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 </head>
+
 
 <body>
     <div class="reveal">
         <div class="slides">
             <section class="center">
-                <h2>
-                    Design Heuristiken
-                </h2>
-                <h4>
-                - Wie finde ich Klassen -
-                </h4>
-                <p>
-                    <small> Marcel L&uuml;thi<br>
-                                        Departement Mathematik und Informatik </small>
-                </p>
-                <p>
-                    <img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
-                </p>
-            </section>
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Design Heuristiken
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+            
+
+			</section>
+
 
     
                 <section>
-                    <h3>Design Prozess</h3>
+                    <h1>Design Prozess</h1>
                     <ul>
                         <li>Design ist ein kreativer Prozess</li>
                         <ul><li>Es gibt nur Guidelines, keine Rezepte</li></ul>
@@ -59,7 +66,7 @@
 
                 </section>
                 <section>
-                        <h3>Wie finde ich Klassen?</h3>
+                        <h1>Wie finde ich Klassen?</h1>
         
         
                         <ul>                   
@@ -78,7 +85,7 @@
                     </section>
         
                     <section>
-                        <h3>Einige Tips zum Design</h3>
+                        <h1>Einige Tips zum Design</h1>
                         <ul>
                              <li>Fokus sollte auf Konzepten liegen, nicht Softwareklassen oder Daten</li>
                             <li>Mit Teilmodell starten</li>
@@ -98,14 +105,14 @@
                     </section>
         
                     <section>
-                        <h3>CRC Karten</h3>
+                        <h1>CRC Karten</h1>
 
                         <ul>
                             <li>Hilfreiche Methode um Klassen zu definieren</li>
                             <li>Erlaubt Brainstorming in Gruppen</li>
                         </ul>
 
-                        <img src="images/crc.png" class="plain" style="width:60%"/>
+                        <img src="../../slides/images/crc.png" class="plain" style="width:60%"/>
 
                         <blockquote style="font-size:large">
                         K. Beck, W. Cunningham. 
@@ -117,7 +124,7 @@
                     </section>
    
                     <section>
-                        <h3>CRC Karten: Klassenname </h3>     
+                        <h1>CRC Karten: Klassenname </h1>     
                         <ul>
                             <li>Beschreibt die Klasse</li>
                             <li>Sollte einfach sein</li>
@@ -127,7 +134,7 @@
                         </ul>   
                     </section>   
                     <section>
-                        <h3>CRC Karten: Responsibility</h3>
+                        <h1>CRC Karten: Responsibility</h1>
                         <ul>
                             <li>Alles was eine Klasse weiss or tut</li>
                             <li>Student hat Attribute wie Namen, Adresse</li>
@@ -140,7 +147,7 @@
                     </section>
 
                     <section>
-                        <h3>CRC Karten: Collaborators</h3>
+                        <h1>CRC Karten: Collaborators</h1>
                         <ul>
                             <li>Beispiel: Klasse Student kann das Seminar nicht alleine buchen, sondern nur mithilfe von der Klasse Seminar</li>
             
@@ -153,7 +160,7 @@
                     </section>
 
                         <section>
-                            <h3>Arbeiten mit CRC Karten</h3>
+                            <h1>Arbeiten mit CRC Karten</h1>
                             <ul>
                                 <li>Start mit nur 3-5 Klassen</li>
                                 <li>Verantwortlichkeiten finden</li>
@@ -163,7 +170,7 @@
                         </section>
        
                     <section>
-                        <h3>CRC Karten und Designqualit&auml;t</h3>
+                        <h1>CRC Karten und Designqualit&auml;t</h1>
                         <ul>
                             <li>Zu viele Verantwortlichkeiten sind Anzeichen f&uuml;r schwache Koh&auml;sion</li>
                             <li>Jede Klasse sollte max 3-4 Verantwortlichkeiten haben</li>
@@ -172,84 +179,89 @@
                         </ul>
                     </section>
 
-                    <section class="center">
-                        <blockquote>Brainstorming in Gruppen: CRC Karten f&uuml;r 
-                            <a href="https://unibas-sweng.github.io/software-engineering/exercises/atm-scenario.html">Bankomaten Beispiel</a>
-                    </section>
-
-                        </div>
-    </div>
-
-
-
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
-
-    <script>
-        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
-        // More info about config & dependencies:
-        // - https://github.com/hakimel/reveal.js#configuration
-        // - https://github.com/hakimel/reveal.js#dependencies
-        Reveal.initialize({
-            center: false,
-
-            chalkboard: {
-                src: "chalkboard.json",
-                readOnly: undefined,
-                transition: 800,
-                theme: "whiteboard",
-                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
-                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
-                // configuration options for notes canvas and chalkboard
-                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
-                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
-                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
-            },
-            dependencies: [{
-                src: 'plugin/markdown/marked.js'
-            },
-            {
-                src: 'plugin/markdown/markdown.js'
-            },
-            { src: 'plugin/math/math.js', async: true },
-            {
-                src: 'plugin/notes/notes.js',
-                async: true
-            },
-            {
-                src: 'plugin/chalkboard/chalkboard.js'
-            },
-            {
-                src: 'plugin/highlight/highlight.js',
-                async: true,
-                callback: function () {
-                    hljs.initHighlightingOnLoad();
-                }
-            }
-            ],
-            math: {
-                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-                config: 'TeX-AMS_HTML-full'
-            },
-            keyboard: {
-                67: function () {
-                    RevealChalkboard.toggleNotesCanvas()
-                }, // toggle notes canvas when 'c' is pressed
-                66: function () {
-                    RevealChalkboard.toggleChalkboard()
-                }, // toggle chalkboard when 'b' is pressed
-                46: function () {
-                    RevealChalkboard.clear()
-                }, // clear chalkboard when 'DEL' is pressed
-                8: function () {
-                    RevealChalkboard.reset()
-                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
-                68: function () {
-                    RevealChalkboard.download()
-                }, // downlad recorded chalkboard drawing when 'd' is pressed
-            },
-        });
-    </script>
-</body>
-
-</html>
+ 
+                </div>
+            </div>
+        
+        
+        
+         
+            <script src="../../slides/lib/js/head.min.js"></script>
+            <script src="../../slides/js/reveal.js"></script>
+        
+            <script>
+                file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+                // More info about config & dependencies:
+                // - https://github.com/hakimel/reveal.js#configuration
+                // - https://github.com/hakimel/reveal.js#dependencies
+                Reveal.initialize({
+                    center: false,
+                    transition: 'none',           
+                    /* 
+                    chalkboard: {
+                        src: "chalkboard.json",
+                        readOnly: undefined,
+                        transition: 800,
+                        theme: "whiteboard",
+                        //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                        //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                        // configuration options for notes canvas and chalkboard
+                        color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                        background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+                        pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+                    },
+                    */
+                    math: {
+                            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                            config: 'TeX-AMS_HTML-full'
+                        },
+        
+                    dependencies: [{
+                        src: '../../slides/plugin/markdown/marked.js'
+                    },
+                    {
+                        src: '../../slides/plugin/markdown/markdown.js'
+                    },
+                    { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+                    {
+                        src: '../../slides/plugin/notes/notes.js',
+                        async: true
+                    },
+                    /*
+                    {
+                        src: '../../slides/plugin/chalkboard/chalkboard.js'
+                    },
+                    */
+                    {
+                        src: '../../slides/plugin/highlight/highlight.js',
+                        async: true,
+                        callback: function () {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    },
+                    { src: '../../slides/plugin/math/math.js', async: true }
+                                ],
+                    keyboard: {
+                        /*
+                        67: function () {
+                            RevealChalkboard.toggleNotesCanvas()
+                        }, // toggle notes canvas when 'c' is pressed
+                        66: function () {
+                            RevealChalkboard.toggleChalkboard()
+                        }, // toggle chalkboard when 'b' is pressed
+                        46: function () {
+                            RevealChalkboard.clear()
+                        }, // clear chalkboard when 'DEL' is pressed
+                        8: function () {
+                            RevealChalkboard.reset()
+                        }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                        68: function () {
+                            RevealChalkboard.download()
+                        }, // downlad recorded chalkboard drawing when 'd' is pressed
+                        */
+                    },
+                });
+            </script>
+        </body>
+        
+        </html>
