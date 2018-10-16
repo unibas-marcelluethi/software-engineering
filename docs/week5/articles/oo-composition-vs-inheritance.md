@@ -1,20 +1,20 @@
 # Vererbung und Objektkomposition
 
 *Neben der "uses" und der "is_composed_of" Beziehung, spielt in der 
-Objektorientierten Programmierung noch eine andere Beziehung eine vermeintlich wichtige Rolle,
+objektorientierten Programmierung noch eine andere Beziehung eine vermeintlich wichtige Rolle,
 nämlich die "inherits_from" Beziehung. In diesem Artikel schauen wir uns diese Beziehung näher an.*
 
 ## Die "inherits_from" Beziehung
 
 Gegeben zwei Module (Klassen) A und B. Objektorientierte Programmiersprachen geben uns 
-ein Sprachkonstrukt um die Beziehung A "inherits_from" B zu definieren. 
+ein Sprachkonstrukt um die Beziehung B "inherits_from" A zu definieren. 
 Wir sagen, *Klasse B spezialisiert Klasse A*, oder  *Klasse A generalisiert Klasse B*. 
 In diesem Kontext wird A auch als Superklasse und B als Subklasse bezeichnet. 
 Diese Beziehung bedeutet, dass das Modul B alle Eigenschaften von Modul A hat sowie alle Funktionalität auch anbietet, 
 zusätzlich aber Modul A auch noch um eigene Eigenschaften und Funktionalität erweitern kann.
 
 Wir schauen uns zuerst ein Beispiel in unserer Modulsprache an:
-Angenommen wir haben folgende Klasse ```Employee``` die relevante Aspekte von Mitarbeitern im Rahmen einer  Mitarbeiterverwaltungssoftware modelliert.
+Angenommen wir haben folgende Klasse ```Employee``` die relevante Aspekte von Mitarbeitern im Rahmen einer Mitarbeiterverwaltungssoftware modelliert.
 ```pascal
 class EMPLOYEE
     exports
@@ -29,10 +29,10 @@ class EMPLOYEE
         var age : INTEGER;
     end EMPLOYEE    
 ```
-Die hier modellierten Attribute gelten für alle Mitarbeiter. Nun gibt es jedoch verschieden
+Die hier modellierten Attribute gelten für alle Mitarbeiter. Nun gibt es jedoch verschiedene
 Arten von Mitarbeitern, die jeweils noch zusätzliche Eigenschaften haben. 
-Mittels Vererbung können wir nun diese zusätzlichen Eigenschaften modellieren, indem wir
-wir die allgemeinen Eigenschaften, die wir bereits in der Klasse ```EMPLOYEE``` definiert, erben.
+Mittels Vererbung können wir nun diese zusätzlichen Eigenschaften modellieren, indem 
+wir die allgemeinen Eigenschaften, die wir bereits in der Klasse ```EMPLOYEE``` definiert haben, erben.
 
 ```pascal
 class ADMINISTRATIVE_STAFF inherits EMPLOYEE
@@ -48,15 +48,15 @@ exports
 end TECHNICAL_STAFF   
 ```
 Dadurch, dass ```ADMINISTRATIVE_STAFF``` und ```TECHICAL_STAFF``` alle Eigenschaften von 
-```EMPLOYEE``` haben, können wir Instanzen von diesen Klassen auch überall dort verwenden, wo wir diese zwei speziellen Typen von Mitarbeitern nicht unterscheiden möchten; also überall da wo wir einfach nur Objekt vom typ ```EMPLOYEE``` brauchen. 
+```EMPLOYEE``` haben, können wir Instanzen von diesen Klassen auch überall dort verwenden, wo wir diese zwei speziellen Typen von Mitarbeitern nicht unterscheiden möchten; also überall da wo wir einfach nur ein Objekt vom typ ```EMPLOYEE``` brauchen. 
 
 ## Schnittstellenvererbung und Implementationsvererbung
-Die meisten Objektorientierten Programmiersprachen unterstützen zwei Varianten des
+Die meisten objektorientierten Programmiersprachen unterstützen zwei Varianten des
 Vererbungskonzepts. Die erste Variante ist die *Schnittstellenvererbung*. Dabei wird bei 
-der Vererbung einfach garantiert, dass die Subklasse alle Methoden und Attribute die in der 
-Schnittstelle definiert sind unterstützt. Es werden jedoch keine Implementationen von der
+der Vererbung einfach garantiert, dass die Subklasse alle Methoden und Attribute, die in der 
+Schnittstelle definiert sind, unterstützt. Es werden jedoch keine Implementationen von der
 Superklasse vererbt. In der Programmiersprache Java wird Schnittstellenvererbung durch das Konstrukt ```Interface``` unterstützt, dass dann
-von den Klassen implementiert wird. Es ist auch möglich,  *abstrakte Klasse* zu definieren, bei der die Methoden nicht implementiert sind, und dann von 
+von den Klassen implementiert wird. Es ist auch möglich, *abstrakte Klassen* zu definieren, bei der die Methoden nicht implementiert sind, und dann von 
 dieser zu erben.
 
 Bei der *Implementationsvererbung* wird zusätzlich auch die Implementation der Superklasse
@@ -73,7 +73,7 @@ wird häufig davon abgeraten, diese Art der Vererbung zu verwenden.
 
 
 ## Implementationsvererbung versus Komposition
-Im folgenden illustrieren wird das Problem der Implementationsvererbung anhand eines Konkreten Beispiels. Wir zeigen auch, wie man mit Komposition von Objekten, ein besseres Design erhalten, ohne dass wir Code duplizieren müssen. 
+Im Folgenden illustrieren wir das Problem der Implementationsvererbung anhand eines Konkreten Beispiels. Wir zeigen auch, wie wir mit Komposition von Objekten ein besseres Design erhalten, ohne dass wir Code duplizieren müssen. 
 
 Dazu schauen wir uns folgende Klassendefinition an
 ```java
