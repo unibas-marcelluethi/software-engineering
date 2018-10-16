@@ -36,7 +36,6 @@ biz.ganttproject.test.swengtests;
 
 Führen Sie die Unit Tests aus. Sie können diese entweder direkt in IDEA ausführen (Entsprechende Klasse öffnen und drücken des Run Buttons) oder von der Kommandozeile mittels
 ```
-cd ganttproject-builder
 gradlew test
 ```
 
