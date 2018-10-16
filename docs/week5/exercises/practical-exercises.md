@@ -10,7 +10,7 @@ Ausserdem werden Sie ihre erste Verbesserung vornehmen.
 
 #### 1. Vorbereitung
 
-Da wir die Änderungen der letzten Übung hier nicht benötigen, starten wir wieder vom Master branch. 
+Da wir die Änderungen der letzten Übung hier nicht benötigen, starten wir wieder vom Master Branch. 
 
 Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository, wie in [Übung 2](../../week2/exercises/practical-exercises.html) beschrieben.
 
@@ -21,9 +21,9 @@ git branch uebung5
 git checkout uebung5
 ```
 
-## Aufgabe 1. Erstellen sie programmatisch einen Projektplan
+## Aufgabe 1. Erstellen Sie programmatisch einen Projektplan
 
-Das Ziel dieser Übung ist es, dass sie programmatisch einen Projektplan in Ganttproject erstellen, der gewisse Eigenschaften erfüllt. Diese Eigenschaften haben wir bereits mit Unit Tests spezifiziert. Sie müssen unsere Unittest aber zuerst noch in Ihr Repository bringen. 
+Das Ziel dieser Übung ist es, dass Sie programmatisch einen Projektplan in Ganttproject erstellen, der gewisse Eigenschaften erfüllt. Diese Eigenschaften haben wir bereits mit Unit Tests spezifiziert. Sie müssen unsere Unittest aber zuerst noch in Ihr Repository bringen. 
 Die machen Sie mit
 ```
 git pull upstream exercise_5_unittests
@@ -39,22 +39,22 @@ Führen Sie die Unit Tests aus. Sie können diese entweder direkt in IDEA ausfü
 gradlew test
 ```
 
-In beiden Fällen sollten sie sehen, dass 5 Tests fehlschlagen. 
+In beiden Fällen sollten Sie sehen, dass 5 Tests fehlschlagen. 
 
 #### Ihre Aufgabe
 Ihre Aufgabe ist es, die Methode ```createPlan``` der Klasse ```ProjectplanCreationTests``` so zu implementieren, 
 dass alle Tests erfolgreich durchlaufen. 
 
 #### Tip 1: 
-Um zu sehen, wie sie in Ganttproject Tasks programmatisch erstellen, schauen sie sich am besten andere Unit Tests an. Viele Beispiele finden sie im Package
+Um zu sehen, wie Sie in Ganttproject Tasks programmatisch erstellen, schauen Sie sich am besten andere Unit Tests an. Viele Beispiele finden Sie im Package
 ```biz.ganttproject.test``` und insbesondere in der Klasse ```TestLocalCriticalPath```.
 
 #### Anmerkung 1: 
-Unser Vorgehen hier entspricht dem "Test First Ansatz" (auch bekannt als "Test driven development"). Dabei wird das gewünschte Verhalten zuerst mittels Unit tests spezifiziert, und danach die Implementation angepasst bis die Testfälle erfüllt sind.
+Unser Vorgehen hier entspricht dem "Test First Ansatz" (auch bekannt als "Test driven development"). Dabei wird das gewünschte Verhalten zuerst mittels Unit tests spezifiziert, und danach die Implementation angepasst, bis die Testfälle erfüllt sind.
 
 
 #### Anmerkung 2:
-Der Hauptzweck von Unit Tests ist, gewisse Programmeigenschaften automatisch zu testen. Wie sie in dieser Übung sehen, sind sie aber auch sehr hilfreich um zu verstehen, wie die Klassen eines Programms genutzt werden sollen. Gute geschriebene Unit Tests sind also eine Form von Dokumentation. Diese Art Dokumentation hat den Vorteil,
+Der Hauptzweck von Unit Tests ist, gewisse Programmeigenschaften automatisch zu testen. Wie sie in dieser Übung sehen, sind sie aber auch sehr hilfreich um zu verstehen, wie die Klassen eines Programms genutzt werden sollen. Gut geschriebene Unit Tests sind also eine Form von Dokumentation. Diese Art Dokumentation hat den Vorteil,
 dass sie immer mit den Klassen synchronisiert ist, da ansonsten das Projekt nicht kompilieren oder die Unit Tests fehlschlagen würden.
 
 
@@ -64,13 +64,13 @@ Lesen Sie sich die Diskussion in diesem [Issue](https://github.com/bardsoftware/
 
 Versuchen Sie das Problem zu reproduzieren und implementieren Sie den vorgeschlagenen Lösungsansatz. 
 
-*Tip: Der Bereich im Ganttproject, indem die Milestones angezeigt werden, nennt sich *timeline**.
+*Tip: Der Bereich im Ganttproject, in dem die Milestones angezeigt werden, nennt sich *timeline**.
 
 ### Abgabe
 Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch: 
 ```
 git push origin uebung5
 ``` 
-und entsprechenden Pull Request, bei dem sie 
+und entsprechenden Pull Request, bei dem Sie 
  ```michaelPluess``` und ```schoenja``` als Reviewer angeben.
-(Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
+(Details dazu finden Sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).

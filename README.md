@@ -67,6 +67,11 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 | 4     | Einführung | [slides](https://unibas-sweng.github.io/software-engineering/project/slides/project-ideas.html)| |
 
 
+## Projekt
+| Woche | Thema | Resourcen | Kommentar |
+|-------|-------|-----------|-----------|
+| 4     | Einführung | [slides](https://unibas-sweng.github.io/software-engineering/project/slides/project-ideas.html)| |
+
 ## Literatur / Weiterführende Links
 
 #### Empfohlene Lehrbücher 
