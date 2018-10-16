@@ -11,7 +11,7 @@ Wir diskutieren auch einige wichtige Objektorienterte Designprinzipien und stell
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 3. Oktober *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 17. Oktober *selbständig* zu erarbeiten.
 
  Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
  - die Merkmale nennen können, die Objektorientiertes Design ausmachen
@@ -23,7 +23,7 @@ Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* d
  
 ### Fortgeschrittene Lernziele
 
-Die folgenden Lernziele sollten während oder nach der Vorlesung vom 3 Oktober erreicht werden. Die Studierenden sollten
+Die folgenden Lernziele sollten während oder nach der Vorlesung vom 17 Oktober erreicht werden. Die Studierenden sollten
 - Anhand eines Szenarios Kandidaten für MOdule/Klassen identifizieren
 - Eigene OO-Designs erstellen können
 - Mit der Sofware Modelio UML Klassendiagramme erstellen können.
