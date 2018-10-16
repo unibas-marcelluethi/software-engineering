@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Anforderungsanalyse</title>
+
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="center">
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Anforderungsanalyse
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">
+                    Herzlich willkommen zu diesem Screencast zum Thema Anforderungsanalyse. 
+                    Anforderungsanalyse ist einer der wichtigsten Schritte in der Softwareentwicklung, und Fehler in diesem Schritt 
+                    haben verheerende Konsequenzen für das ganze Projekt. 
+
+                    Bevor wir uns detailliert mit den Anforderungen beschäftigen, wollen uns in diesem Video die Anforderungsanalyse im 
+                    Kontext des ganzen Softwareentwicklungsprozesses ansehen.                 
+                </aside>
+
+			</section>
+
+            <section>
+                <h1> Übersicht </h1>
+                <img src="../../slides/images/advance-organizer-1.png" class="plain"/>
+
+                <aside class="notes">
+                    Bisher haben wir uns Software Eigenschaften und Qualitätsmerkmale von Software angeschaut, und besprochen wie man mit Software Designen kann, 
+                    so dass wir eine möglichst hohe Softwarequalität erreichen. 
+                    
+                    Ein Softwareprojekt beginnt aber nie mit dem Design, sondern der erste Schritt im Softwareentwicklungsprozess ist immer die Anforderungsanalyse. 
+                    Bevor wir wissen wie wir etwas machen, müssen wir uns fragen, was wir überhaupt machen müssen. 
+
+                </aside>
+            </section>
+
+
+            <section>
+                    <h1>Problem vs. L&ouml;sung</h1>
+                    <figure>
+                        <img src="../../slides/images/problem-solution.png" class="plain" style="width:65%" />
+                        <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 12.0-1</figcaption>
+                    </figure>
+    <!--                    <div style="width:100%; margin-top:2ch; font-size:smaller" class="fragment">
+                        L&ouml;sung wird Problem f&uuml;r nächstes Abstraktionsniveau
+                    </div>-->
+
+                    <aside class="notes">
+                        Dieses Zusammenspiel zwischen Was/Wie oder anders gesagt zwischen Problem und Lösung ist in dieser Grafik illustriert. 
+                        Wir haben verschiedene Sichten auf das Problem der Softwareentwicklung. Der Kunde weiss, oder sollte wissen, was zu entwickeln ist. 
+                        Der Auftragnehmer, das heisst eine Softwareentwicklungsfirma oder Team, hat das Problem herauszufinden, wie man diese Anforderungen 
+                        in eine Fachliche Lösung umsetzt, also die Anforderungen so spezifiziert, dass sie umgesetzt werden können. 
+                        Auf der nächsten Stufe geht es wo weiter. Die Softwarearchitektin hat nun das Problem aus der fachlichen Lösung ein Design. 
+                        Die Fachliche Lösung ist was umgesetzt werden muss, und das Design ist wie es umgesetzt wird. 
+                        Schlussendlich muss vom Programmierer das Problem gelöst werden, wie denn das design in Code umgesetzt werden soll. 
+
+                        Die Lösung auf einer Ebene wird  also immer zum Problem auf der nächst tieferen Ebene. 
+                    </aside>
+                </section>
+    
+    
+                <section>
+                    <h1>L&ouml;sungsraum</h1>
+                    <figure>
+                        <img src="../../slides/images/solution-space.png" class="plain" style="width:80%" />
+                        <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 12.0-2</figcaption>
+                    </figure>
+                    <!--
+                    <ul class="fragment">
+                        <li>L&ouml;sungsraum auf tieferer Abstraktionebene besser definiert</li>
+                    </ul>
+                -->
+                <aside class="notes">
+                    Auf jeder Stufe von diesem Prozess wird das Problem besser eingeschränkt. Bei den Anforderungen ist noch kein Plan für die Umsetzung vorhanden. Entsprechend haben wir noch keine
+                    technischen Einschränkungen berücksichtigt. Mit jeder Stufe kommen neue Einschränkungen hinzu, da wir das Problem besser beschreiben und auch technische Restriktionen einbeziehen. 
+                    Der Lösungsraum wird also kleiner, und vielleicht merken wir sogar, dass eine Anforderung so nicht umgesetzt werden kann. Wir brauchen also auch Feedback zwischen den Stufen. 
+                     
+                </aside>
+                </section>
+    
+                
+                <section>
+                    <h1>Wechselwirkungen</h1>
+    
+                    <ul>
+                        <li>Wechselwirkung zwischen Problem/L&ouml;sungsraum</li>
+                        <li>Fehlender technische L&ouml;sung &rarr; Problem muss angepasst werden</li>
+                    </ul>
+                    <figure>
+                        <img src="../../slides/images/problem-vs-solutionspace.png" class="plain" style="width:80%" />
+                        <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 12.0-3</figcaption>
+                    </figure>
+                    <aside class="notes">
+                        Diese Wechselwirkung ist in dieser Abbildung dargestellt. 
+                        Wenn meine Anforderungen nur grob bekannt sind, kann auch meine technische Lösung nicht klar bestimmt sein. 
+                        Durch das Ausarbeiten der Anforderungen, wird die technische Umsetzung immer besser bestimmt, was wiederum wieder Klarheit über die 
+                        Anforderungen gibt. Während bei vagen Anforderungen dei technische Lösung noch fast unabhängig von den Anforderungen ist, 
+                        bestimmen also mit fortschreitendem Detaillierungsgrad nimmt die Abhängigkeiten immer stärker die technische Lösung und umgekehrt.
+                    </aside>
+
+                </section>
+                
+
+                <section>
+                        <h1>Softwareentwicklung (karikiert) </h1>
+        
+                        <figure>
+                            <img src="../../slides/images/requirements-cartoon.jpg" class="plain" />
+                            <figcaption style="font-size:xx-small">Quelle: https://www.lorienpratt.com/decision-models-are-the-requirements-language-for-di-apps/</figcaption>
+                        </figure>
+
+                        <aside class="notes">
+                            Was passiert, wenn diese Wechselwirkung fehlt, ist in diesem Cartoon dargestellt. Es ist eine Prozess der dem bekannten Kinderspiel der "stillen Post ähnelt". Auf jeder
+                            Stufe weicht das Resultat etwas von dem ab, was der Kunde überhaupt wollte. 
+                            Der Kunde kann  am Anfang eines Projekts seine Anforderungen häufig nur vage und unpräzise formulieren.  Der Projektmanager, der ja meistens nicht denselben 
+                            Background und viel weniger Ahnung vom Geschäftsfeld als der Kunde hat, wird häufig Aspekte von den formulierten Anforderungen falsch interpretieren. 
+                            Anhand von dieser Lösung wird dann die Software designed und am Ende von nochmals einer anderen Person mit eigenen Vorstellungen, implementiert.
+                            
+                            Durch die fehlende Wechselwirkung sind nicht nur Fehler durch den Prozess entstanden, der Auftraggeber hatte auch nie die Möglichkeit seine eigenen Anforderungen zu präzisieren.
+                            Auch hatte er nie die Gelegenheit durch Reflektion im Prozess herauszufinden, dass er in wirklichkeit etwas ganz anderes wollte. 
+
+                            Leider illustriert dieser lustige Cartoon ein ganz reales Problem.
+                        </aside>
+                            
+                    </section>
+        
+        
+                    <section>
+                            <h1>Warum scheitern Projekte</h1>
+            
+                            <blockquote>
+                                Survey von 8000 Softwareprojekten bei 350 Firmen im Jahre 1994.
+                                <br/> 31% der Projekte sind gescheitert!</p>
+                            </blockquote>
+            
+            
+                            <ul style="font-size:smaller" class="fragment">
+                                <li>Unvollst&auml;ndige Anforderungen (13.1%)</li>
+                                <li>Benutzer zuwenig involviert (12.4%) </li>
+                                <li>Zuwenig Resourcen (10.6%)</li>
+                                <li>Unrealistische Erwartungen (9.9%)</li>
+                                <li>Zuwenig Unterst&uuml;tzung vom Management (9.3%)</li>
+                                <li>Neue oder ver&auml;nderte Anforderungen (8.7%)</li>
+                                <li>Zuwenig Planung (8.1%)</li>
+                                <li>System wird nicht mehr gebraucht (7.5%)</li>
+                            </ul>
+        
+                            <aside class="notes">
+                                Im Jahre 1994 wurden 8000 Softwareprojekte die in 350 verschiednenen Firmen durchgeführt wurden, im Rahmen einer grossen Studie analysiert. Es hat sich herausgestellt, dass fast ein drittel der Softwareprojekte gescheitert sind. 
+                                Einige der wichtigsten Gründe für das Scheitern sind hier aufgeführt. 
+                                Wenn wir uns die Punkte genau anschauen, dann sehen wir das fast alle der Gründe irgendetwas mit schlechter Anforderungsanalyse zu tun haben. 
+                                
+                            </aside>
+
+
+                        </section>
+        
+        
+                <!--
+            <section>
+                    <blockquote style="font-size:smaller">
+                        <p>
+                            The hardest single part of building a software system is deciding precisely what to build. No other part of the conceptual
+                            work is as difficult as establishing the detailed technical requirements, including all the interfaces
+                            to people, to machines, and to other software systems. No other part of the work so cripples the
+                            resulting system if done wrong. No other part is more difficult to rectify later.
+                        </p>
+                        <p style="text-align:right;margin-left:auto">Brooks 1987</p>
+                    </blockquote>
+    
+                </section>
+            -->
+        
+            
+            <section>
+                <h1>Aufgabe von der Anforderungsanalyse</h1>
+
+                <div style="text-align:left;">
+                    <blockquote>
+                        Anforderungen an zu entwickelndes System
+                    <ul>
+                        <li>ermitteln</li>
+                        <li>spezifizieren</li>
+                        <li>analysieren</li>
+                        <li>validieren</li>
+                    </ul>
+
+                    <br/>und daraus L&ouml;sung ableiten.
+                    </blockquote>
+                    <p>Ergebnis: </p>
+                    <ul>
+                        <li>Anforderungsspezifikation</li>
+                    </ul>
+                </div>
+
+                <aside class="notes">
+                    Die Aufgabe von der Anforderungsanalyse ist es also, die Anforderungen an ein System möglichst genau zu ermitteln und klar zu spezifizieren, so dass diese von allen involvierten Personen verstanden werden können. 
+                    Auch müssen die Anforderungen analysiert und validiert werden. 
+                    Sind die Anforderungen konsistent oder wiedersprechen sie sich gegenseitig? Können Sie mit den gesetzlichen Grundlagen und dem Systemumfeld vereinbart werden? Entsprechen auch die vom Analysten spezifizierten Anforderungen noch den Anforderungen vom Kunden?
+
+                    Das Ergebnis von einer solchen Analyse ist ein Dokument, nämlich die Anforderungsspezifikation. Anhand diesem Dokument wir dann die Fachliche Lösung abgeleitet.
+                    
+                                    
+                </aside>
+
+
+            </section>
+
+            <!--
+            <section>
+                    <h1>Einige Best Practices</h1>
+                    <ul>
+                        <li> Kunden & Benutzer einbinden </li>
+                        <li> 15-30 % der Gesamtresourcen f&uuml;r RE aufwenden </li>
+                        <li>Templates / Beispieldokumente f&uuml;r Pflichten/Lastenheft</li>
+                        <li>Gute Beziehungen zu allen Beteiligten/Betroffenen</li>
+                        <li>Anforderungen priorisieren</li>
+                        <li>Peer review durch Benutzer</li>
+                        <ul>
+                            <li>Validieren & Verifizieren der Spezifikation</li>
+                        </ul>
+                    </ul>
+                </section>
+
+            <section>
+                <h1>Aktivit&auml;ten & Artefakte des RE</h1>
+
+                <figure>
+                    <img src="../../slides/images/requirements-activities-artefacts.png" class="plain" style="width:80%" />
+                    <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 14.0-2</figcaption>
+                </figure>
+
+
+            </section>
+-->
+
+
+        <!--
+            <section>
+                <h1>Artefakte des RE</h1>
+                <ul>
+                    <li>Anforderungsspezifikation / Glossar</li>
+                    <ul>
+                        <li>Auftraggebersicht.</li>
+                        <li>Beinhaltet Lasten/Pflichtenheft</li>
+                    </ul>
+                    <li>Fachliche L&ouml;sung (essential model)</li>
+                    <ul>
+                        <li>Auftragnehmersicht</li>
+                        <li>Beinhaltet z.B. OO Modelle, Prototypen, GUI Konzept, Benutzerhandbuch</li>
+                    </ul>
+                </ul>
+            </section>
+
+
+            <section>
+                <h1>Anforderungsspezifikation</h1>
+
+                <ul>
+                    <li>Anforderungsspezifikation kann zweigeteilt sein</li>
+                    <ul>
+                        <li>Immer dann n&ouml;tig wenn <br/>Auftraggeber != Auftragnehmer</li>
+                    </ul>
+                    <li>Auftraggebersicht: Lastenheft</li>
+                    <li>Auftragnehmersicht: Pflichtenheft</li>
+                </ul>
+
+            </section>
+
+-->
+            <section>
+                <h1>Anforderungsspezifikation</h1>
+                <figure>
+                    <img src="../../slides/images/requirement-process-artifacts.png" class="plain" style="width:80%" />
+                    <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 14.0-3</figcaption>
+                </figure>
+
+                <blockquote>Aufteilung Lastenheft/Pflichtenheft: <br/> Auftragnehmer != Auftraggeber</blockquote>
+
+                <aside class="notes">
+                    Wir sehen den Prozess hier nochmals grafisch dargestellt. Auf der linken Seite sehen wir den Prozess wie wir in bisher besprochen haben. 
+                    Dieser Ablauf gilt immer dann, wenn eine Software inhouse entwickelt wird, also der Auftraggeber auch dem Auftragnehmer entspricht. 
+                    Wenn eine Firma nun ein Projekt öffentlich ausschreibt, muss die Firma ja bereits spezifizieren, was die Anforderungen an ein System sind. 
+                    In diesem Fall werden zwei Anforderungsdokumente geschrieben: Das Lastenheft und das Pflichtenheft. Das Lastenheft 
+                    enthält die Anforderungen, wie sie der Auftraggeber sieht. Nach vergabe eines Auftrags, werden diese dann in einem Pflichtenheft so ausgearbeitet, 
+                    dass daraus     eine fachliche Lösung abgeleitet werden kann. 
+
+                </aside>
+            </section>
+
+            <section>
+                <h1>Lastenheft</h1>
+
+                <blockquote style="width:100%">
+                    <p>
+                        Vom Auftraggeber festgelegte Gesamtheit der Forderungen an die Lieferungen und Leistungen eines Auftragnehmers innerhalb
+                        eines Auftrags.
+                    </p>
+                </blockquote>
+                <ul>
+                    <li>Immer dann notwendig wenn Auftraggeber das Projekt ausschreibt </li>
+                    <li>Dient als Vertragsgrundlage</li>
+                </ul>
+                <aside class="notes">
+                    Das Lastenheft ist spezifiziert also, was ein auftragnehmer liefern muss. Wir können dies als Vertragsgrundlage für einen Projektauftrag sehen. 
+                </aside>
+            </section>
+
+            <section>
+                <h1>Pflichtenheft</h1>
+
+                <blockquote style="width:100%">
+                    <p>
+                        Vom Auftragnehmer erarbeite Realisierungsvorgaben
+                        aufgrund der Umsetzung des vom Auftraggeber vorgegebenen Lastenheftes
+                    </p>
+                </blockquote>
+                <ul>
+                    <li>Enth&auml;lt das Lastenheft</li>
+                    <li>Anwendervorgaben werden detailliert und Realisierungsforderungen beschrieben.</li>
+                    <li>Definiert <mark class="highlight">wie</mark> und <mark class="highlight">womit</mark> die Anforderungen zu realisieren sind.</li>
+                </ul>
+
+                <aside class="notes">
+                    Beim Pflichtenheft wird dann beretis spezifiziert wie und womit die Anforderungen umgesetzt werden. Als Basis für die Beschreibung dient 
+                    hier das Lastenheft.
+
+                    Im nächsten Schritt werden Sie sich ein Beispiel eines Pflichten und Lastenhefts anschauen.
+                </aside>
+
+
+
+            </section>
+
+
+            <!--
+    
+            <section>
+                <h3>Unit Tests</h3>
+                <ul>
+                <li>Weshalb beeinflusst die L&ouml;sung die Problemstellung</li>
+                <li>Weshalb wird der L&ouml;sungsraum mit fortschreitender Projektdauer immer kleiner</li>
+                <li>Was passiert wenn falsche Anforderungen nicht entdeckt werden?</li>
+                <li>Was ist der Unterschied zwischen einem Lasten und einem Pflichtenheft</li>
+            </ul>
+            </section>
+-->
+        </div>
+    </div>
+
+
+
+ 
+	<script src="../../slides/lib/js/head.min.js"></script>
+	<script src="../../slides/js/reveal.js"></script>
+
+	<script>
+		file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			center: false,
+            transition: 'none',           
+            /* 
+			chalkboard: {
+				src: "chalkboard.json",
+				readOnly: undefined,
+				transition: 800,
+				theme: "whiteboard",
+				//toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				//toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				// configuration options for notes canvas and chalkboard
+				color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+				background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+				pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+			},
+            */
+            math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+			dependencies: [{
+				src: '../../slides/plugin/markdown/marked.js'
+			},
+			{
+				src: '../../slides/plugin/markdown/markdown.js'
+			},
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+			{
+				src: '../../slides/plugin/notes/notes.js',
+				async: true
+			},
+            /*
+			{
+				src: '../../slides/plugin/chalkboard/chalkboard.js'
+			},
+            */
+			{
+				src: '../../slides/plugin/highlight/highlight.js',
+				async: true,
+				callback: function () {
+					hljs.initHighlightingOnLoad();
+				}
+			},
+            { src: '../../slides/plugin/math/math.js', async: true }
+            			],
+			keyboard: {
+                /*
+				67: function () {
+					RevealChalkboard.toggleNotesCanvas()
+				}, // toggle notes canvas when 'c' is pressed
+				66: function () {
+					RevealChalkboard.toggleChalkboard()
+				}, // toggle chalkboard when 'b' is pressed
+				46: function () {
+					RevealChalkboard.clear()
+				}, // clear chalkboard when 'DEL' is pressed
+				8: function () {
+					RevealChalkboard.reset()
+				}, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+				68: function () {
+					RevealChalkboard.download()
+				}, // downlad recorded chalkboard drawing when 'd' is pressed
+                */
+			},
+		});
+	</script>
+</body>
+
+</html>

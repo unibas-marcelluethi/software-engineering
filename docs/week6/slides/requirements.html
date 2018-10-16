@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Anforderungen</title>
+
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="center">
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Anforderungen
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">
+                
+                </aside>
+
+			</section>
+
+            <!--
+            <section class="center">
+                <blockquote>
+                    <p>
+                        "Anforderung:" &lt;meist Plural &gt; das, was man von jmdm. als [Arbeits]leistung erwartet, von ihm verlangt"</p>
+                    <p>Duden</p>
+                </blockquote>
+            </section>
+-->
+
+            <section>
+                <h1>Anforderungen</h1>
+
+                <div style="text-align:left; width:100%; margin-left:auto; margin-right:auto">
+                    
+                    <blockquote>
+                    Anforderungen (requirements) legen fest, was man von einem Softwaresystem als Eigenschaften erwartet.</li>
+                </blockquote>
+
+                    <div class="fragment">
+                        <p>Zwei Fragen:</p>
+                        <ol>
+                            <li>Wer ist "man"?</li>
+                            <li>Was sind "Eigenschaften"?</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h1>Stakeholders</h1>
+
+                <ul>
+                    <li>Stakeholder bezeichnet alle Partien die </li>
+                    <ul>
+                        <li>Ein Interesse an der Software haben</li>
+                        <li>Von der Entwicklung/Einsatz der Software betroffen sind</li>
+                    </ul>
+                    <li>Verallgemeinert den traditionellen Kundenbegriff</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>Eigenschaften</h1>
+
+                <ul>
+                <li>Welche Eigenschaften m&uuml;ssen f&uuml;r ein neues Softwaresystem 
+                festgelegt werden? </li>
+                <ul>
+                    <li>Funktionale Eigenschaften</li>
+                    <li>Nichtfunktionale Eigenschaften</li>
+                    <li>(Prozesseigenschaften)</li>
+                </ul>
+                </ul>
+
+            </section>
+
+
+            <section>
+                    <h1>Strukturieres Ermitteln der Anforderungen</h1>
+
+                    <ul>
+                        <li> Visionen und Ziele</li>
+                        <li> Rahmenbedingungen </li>
+                        <ul><li>Restriktionen f&uuml;r das System</li></ul>
+                        <li> Kontext und &Uuml;berblick</li>
+                        <ul><li>Umgebung in die das System eingebettet wird.</li></ul>
+                        <li>Funktionale Anforderungen</li>
+                        <li>Nichtfunktionale Anforderungen</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Visionen & Ziele</h1>
+
+                    <div style="float:left" class="framebox">
+                    <ul>
+                        <li> <mark class="highlight">Vision: </mark> Realit&auml;tsnahe
+                            Vorstellung der gew&uuml;nschten Zukunft. </li>
+                        <li> <mark class="highlight">Ziel: </mark> Verfeinert und operationalisiert die Vision.</li>
+                            
+                    </ul>
+                    </div>
+                 
+                        
+                    <div style="text-align:left" class="fragment">
+                    Kriterien f&uuml;r Anforderung:
+                    <ul>
+                        
+                        <ul><li>
+                            Hilft es meine Vision zu erf&uuml;llen?
+                            </li>
+                            <li>Tr&auml;gt es bei das Ziel zu erreichen?</li>
+                        </ul>
+                    </ul>
+                </div>
+                </section>
+
+
+                
+                    <section>
+                        
+                        <h1>Rahmenbedingungen</h1>
+
+                        <div style="text-align:left">
+                        <blockquote>
+                            Legt organisatorisch und technische Restriktionen f&uuml;r das 
+                            Softwareystem oder den Prozess fest.
+                        </blockquote>
+
+
+                        <ul>
+                            <li>Organisatiorisch</li>
+                            <ul>
+                                <li>Anwendungsbereich</li>
+                                <li>Zielgruppe</li>
+                                <li>Betriebsbedingungen</li>
+                            </ul>
+                            <li>Technisch</li>
+                            <ul>
+                                <li>Software (OS, DBMS,...)</li>
+                                <li>Hardware</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    </section>
+
+                    <section>
+                        <h1>Kontext und &Uuml;berblick</h1>
+                            <figure>
+                                    <img src="../../slides/images/system-umgebung.png" class="plain" style="width:80%" />
+                                    <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 14.0-3</figcaption>
+                                </figure>
+                    </section>
+
+                    
+                    <section>
+                            <h1>Kontext und &Uuml;berblick</h1>
+                            <div style="text-align:left"">
+                            <blockquote>
+                              Materielle und imaterielle Umgebung der Software.
+                            </blockquote>
+                            <ul>
+                                <li>Materielle Umgebung:</li>
+                                <ul>
+                                <li> Sensoren </li>
+                                <li>Geb&auml;ude</li>
+                                <li>Personen</li>
+                            </ul>
+                            <li>Immaterielle Umgebung</li>
+                            <ul>
+                                <li>Schnittstellen zu anderen Softwaresystemen</li>
+                                <li>Internet</li>
+                            </ul>
+                            </ul>
+                        </div>
+                        </section>
+    
+                    <section>
+                            <h1>Funktionale Anforderungen</h1>
+
+                            <blockquote>
+                                Legen eine vom System 
+                                bereitzustellende Funktion fest.
+                            </blockquote>
+                            <ul>
+                                <li>Was soll ein System tun?</li>
+                                <li>Beispiele: </li>
+                                <ul>
+                                    <li>Das System soll den Pin vom Kunden pr&uuml;fen.</li>
+                                    <li>Das System soll den Auszahlungsbetrag erfragen, und falls gen&uuml;gend Geld vorhanden ist Geld ausgeben und das Kundenkonto belasten.</li>
+                                </ul>
+                            </ul>
+                        </section>
+                        <section>
+                            <h1>Nichtfunktionale Anforderungen</h1>
+                            <blockquote>
+                                Alle Anforderungen die
+                                nicht funktional sind.
+                            </blockquote>
+                            <ul>
+                                <li>Betreffen meistens alle Funktionen des Systems</li>
+                                <li>Beispielkategorien:</li>
+                                <ul>
+                                <li>Qualit&auml;tsmerkmale (Performance, Wartbarkeit, ...)</li>
+                                <li>Ethische oder regulatorische Anforderungen</li>
+                                <li>Sicherheitsanforderungen</li>
+                            </ul>
+                            </ul>
+                        </section>
+
+                    <section>
+                            <h1>Anforderungen Ermitteln</h1>
+
+                            <figure>
+                            <img src="../../slides/images/requirement-elicitation.png" class="plain" style="width:60%"/>
+                            <figcaption style="font-size:x-small">Nach: Helmut Balzert, Lehrbuch der Softwaretechnik, Abb 21.0.1</figcaption>
+                            </figure>
+                        </section>
+
+                    <section>
+                            <h1>Anforderungen an Anforderungen</h1>
+                            <ul>
+                                <li>Korrekt</li>
+                                <li>Eindeutig</li>
+                                <li>Vollst&auml;ndig</li>
+                                <li>Konsistent</li>
+                                <li>Klassifizierbar nach Wichtigkeit</li>
+                                <li>Klassifizierbar nach Stabilit&auml;t</li>
+                                <li>&Uuml;berp&uuml;fbar / testbar</li>
+                                <li>Verfolgbar</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h1>Anforderungen an Anforderungen (2)</h1>
+
+                            <blockquote>Anforderungen sollten testbar</blockquote>
+                            <div style="text-align: left">
+                          
+                            <ul>
+                                <li>Verwendung in Regressionstest</li>
+                                <li>Mögliches Abnahmekriterium</li>                                                
+                            </ul>
+
+                            <div class="framebox" style="text-align:left" class="fragment">
+                            Beispiele:
+                            <ul>
+                                <li>Nicht testbar: Der Kunde soll nicht lange auf Systemantwort warten m&uuml;ssen.</li>
+                                <li>Testbar: Überpr&uuml;fung des PINs soll nicht l&auml;nger als 3 Sekunden dauern </li>
+                            </ul>
+                        </div>
+                    </div>
+                        </section>
+                        <!--
+                        <section>
+                            <h3>Unit Tests</h3>
+
+                            <ul>
+                                <li>Was sind Stakeholders: Weshalb ist es wichtig nicht nur von Kunden zu sprechen?</li>
+                                <li>Wie unterscheidet sich die Auswirkung von nichtfunktionalen Anforderung auf das zu bauende System von funktionalen Anforderungen</li>
+                                <li>Weshalb sollen immer zuerst eine Vision und Ziele definiert werden?</li>
+                                <li>Weshalb sollten Anforderungen immer testbar sein?</li>
+                                <li>Was ist das gr&ouml;sste Problem von nat&uuml;rlichsprachlichen Anforderungen?</li>
+                            </ul>
+
+                        </section>
+                    -->
+                    </div>
+                </div>
+            
+            
+            
+             
+                <script src="../../slides/lib/js/head.min.js"></script>
+                <script src="../../slides/js/reveal.js"></script>
+            
+                <script>
+                    file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+                    // More info about config & dependencies:
+                    // - https://github.com/hakimel/reveal.js#configuration
+                    // - https://github.com/hakimel/reveal.js#dependencies
+                    Reveal.initialize({
+                        center: false,
+                        transition: 'none',           
+                        /* 
+                        chalkboard: {
+                            src: "chalkboard.json",
+                            readOnly: undefined,
+                            transition: 800,
+                            theme: "whiteboard",
+                            //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                            //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                            // configuration options for notes canvas and chalkboard
+                            color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                            background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+                            pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+                        },
+                        */
+                        math: {
+                                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                                config: 'TeX-AMS_HTML-full'
+                            },
+            
+                        dependencies: [{
+                            src: '../../slides/plugin/markdown/marked.js'
+                        },
+                        {
+                            src: '../../slides/plugin/markdown/markdown.js'
+                        },
+                        { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+                        {
+                            src: '../../slides/plugin/notes/notes.js',
+                            async: true
+                        },
+                        /*
+                        {
+                            src: '../../slides/plugin/chalkboard/chalkboard.js'
+                        },
+                        */
+                        {
+                            src: '../../slides/plugin/highlight/highlight.js',
+                            async: true,
+                            callback: function () {
+                                hljs.initHighlightingOnLoad();
+                            }
+                        },
+                        { src: '../../slides/plugin/math/math.js', async: true }
+                                    ],
+                        keyboard: {
+                            /*
+                            67: function () {
+                                RevealChalkboard.toggleNotesCanvas()
+                            }, // toggle notes canvas when 'c' is pressed
+                            66: function () {
+                                RevealChalkboard.toggleChalkboard()
+                            }, // toggle chalkboard when 'b' is pressed
+                            46: function () {
+                                RevealChalkboard.clear()
+                            }, // clear chalkboard when 'DEL' is pressed
+                            8: function () {
+                                RevealChalkboard.reset()
+                            }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                            68: function () {
+                                RevealChalkboard.download()
+                            }, // downlad recorded chalkboard drawing when 'd' is pressed
+                            */
+                        },
+                    });
+                </script>
+            </body>
+            
+            </html>
