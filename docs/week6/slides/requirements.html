@@ -48,7 +48,10 @@
                 </div>
                 
                 <aside class="notes">
-                
+                    Herzlich Willkommen zu diesem Screencast. Nachdem wir uns nun wissen was eine Anforderungsanalyse ist, und weshalb diese eine besondere
+                    Bedeutung im Softwareprozess hat, wollen wir uns im Folgenden anschauen, wie man den überhaupt herausfindet, was denn die Anforderungen an ein System sind, 
+                    und wie diese spezifiziert.
+
                 </aside>
 
 			</section>
@@ -69,7 +72,7 @@
                 <div style="text-align:left; width:100%; margin-left:auto; margin-right:auto">
                     
                     <blockquote>
-                    Anforderungen (requirements) legen fest, was man von einem Softwaresystem als Eigenschaften erwartet.</li>
+                    Anforderungen legen fest, was man von einem Softwaresystem als Eigenschaften erwartet.</li>
                 </blockquote>
 
                     <div class="fragment">
@@ -80,6 +83,12 @@
                         </ol>
                     </div>
                 </div>
+                <aside class="notes">
+                    Als erstes schauen wir uns an, was denn eigentlich Anforderungen genau sind. 
+                    Anforderungen legen fest, was man von einem Softwaresystem als Eigenschaften erwartet. 
+                    In dieser Aussage müssen wir zwei Dinge klären: Wer ist "man", und was genau sind Eigenschaften  einer Software.
+                </aside>
+
             </section>
 
             <section>
@@ -93,6 +102,15 @@
                     </ul>
                     <li>Verallgemeinert den traditionellen Kundenbegriff</li>
                 </ul>
+                <aside class="notes">
+                    Mit dem pronomen "man" sind die Stakeholder gemeint. Stakeholder bezeichnen alle Parteien, die irgendein Interesse an der Software haben oder
+                    von der Entwicklung der Software betroffen sind. Der Begriff umfasst nicht nur den Kunden und Auftraggeber,    sondern auch die Endbenutzer der Software, 
+                    die Betreiber, das Projektmanagement, die Entwickler und viele weitere Personengruppen die 
+                    in irgendeiner Form von der Entwicklung betroffen sind. 
+
+                    Das Identifizieren aller relevanten Stakeholders erlaubt es uns, spezifische Anforderungen für diese Gruppen zu identifizieren. 
+                </aside>
+                    
             </section>
 
             <section>
@@ -104,11 +122,65 @@
                 <ul>
                     <li>Funktionale Eigenschaften</li>
                     <li>Nichtfunktionale Eigenschaften</li>
+                    <li>(Designeigenschaften)</li>
                     <li>(Prozesseigenschaften)</li>
                 </ul>
                 </ul>
 
+                <aside class="notes">
+                    Auch die Eigenschaften eines Systems können wir in Gruppen einteilen. Die wichtigsten zwei Gruppen sind die 
+                    Funktionalen, und nicht-funktionalien Eigenschaften. 
+                    In einigen Projekten gibt es auch bereits Einschränkungen bezüglich dem Softwaredesign oder dem zu verwendenden Softwareprozess. Wir werden aber in diesem 
+                    Kurs nicht näher auf diese Eigenschaften eingehen. 
+
+                </aside>
             </section>
+
+            <section>
+                    <h1>Funktionale Anforderungen</h1>
+
+                    <blockquote>
+                        Legen eine vom System 
+                        bereitzustellende Funktion fest.
+                    </blockquote>
+                    <ul>
+                        <li>Was soll ein System tun?</li>
+                        <li>Beispiele: </li>
+                        <ul>
+                            <li>Das System soll den PIN vom Kunden pr&uuml;fen.</li>
+                            <li>Das System soll den Rechnungsbetrag erfragen, und falls gen&uuml;gend Geld vorhanden ist, das Konto belasten.</li>
+                        </ul>
+                    </ul>
+                    <aside class="notes">
+                    Funktionale Eigenschaften sind alle Eigenschaften, die direkt mit der Funktion der  Software zu tun haben. Sie bestimmen also, was das 
+                    System tun muss. Anforderungen an eine Bezahlterminal könnte zum Beispiel sein, dass das System den PIN vom Kunden überprüfen muss, oder 
+                    dass das System den Rechnungsbetrag erfragen, und falls genügend Geld vorhanden ist, das Konto belasten soll
+                </aside>
+                </section>
+
+
+                <section>
+                    <h1>Nichtfunktionale Anforderungen</h1>
+                    <blockquote>
+                        Alle Anforderungen die
+                        nicht funktional sind.
+                    </blockquote>
+                    <ul>
+                        <li>Beispielkategorien:</li>
+                        <ul>
+                        <li>Qualit&auml;tsmerkmale (Performance, Wartbarkeit, ...)</li>
+                        <li>Sicherheitsanforderungen</li>
+                        <li>Ethische oder regulatorische Anforderungen</li>
+                    </ul>
+                    <li>Betreffen meistens alle Funktionen des Systems</li>
+                    </ul>
+                    <aside class="notes">
+                            Als nichtfunktionale Anforderungen bezeichnet man die Aspekte der Software, die nicht direkt mit der Funktionalität zu tun haben. 
+                            Das können zum Beispiel Qualitätsmerkmale wie performance oder Wartbarkeit sein, Anforderungen bezüglich der Sicherheit der Softwareoder aber auch
+                            auch ethische und regulatorische Anforderungen. Im Gegensatz zu funktionalen Anforderungen, die meist nur einen Teil der Software betreffen, 
+                            betreffen die Nichtfunktionalen anforderungen meist alle Funktionen des Systems. 
+                    </aside>
+                </section>
 
 
             <section>
@@ -118,11 +190,22 @@
                         <li> Visionen und Ziele</li>
                         <li> Rahmenbedingungen </li>
                         <ul><li>Restriktionen f&uuml;r das System</li></ul>
-                        <li> Kontext und &Uuml;berblick</li>
-                        <ul><li>Umgebung in die das System eingebettet wird.</li></ul>
+                        <li> Kontext </li>
+                        <ul><li>Umgebung des Systems</li></ul>
                         <li>Funktionale Anforderungen</li>
                         <li>Nichtfunktionale Anforderungen</li>
                     </ul>
+
+                    <aside class="notes">
+                        Um die Anforderungen strukturiert zu ermitteln, empfiehlt es sich nicht zuerst direkt nach Funktionalen und Nichtfunktionalen Anforderungen 
+                        zu suchen, sondern sich zuerst einmal Gedanken über das System im allgemeinen zu machen. 
+                        Insbesondere sollten wir klären, was denn die Vision und das Ziel des Systems sind. was die Rahmenbedinungen für das System oder den 
+                        Entwicklungsprozess sind. Ausserdem ist ein System immer auch in einen grösseren Kontext eingebettet. Wir sollten uns also auch diesen 
+                        Kontext anschauen.                        
+
+                        Wir schauen uns nun diese Punkte etwas genauer an. 
+                    </aside>
+
                 </section>
 
                 <section>
@@ -149,6 +232,23 @@
                         </ul>
                     </ul>
                 </div>
+
+                <aside class="notes">
+                    Bevor ich ein System entwickle sollten wir immer eine gute Vorstellung, was denn die Vision für das System ist und welche Ziele wir damit
+                    erreichen wollen. 
+
+                    Die Vision beschreibt, was wir in Zukunft erreichen wollen. Die Ziele operationalisieren die Vision und beschreiben wie wir das Ziel erreichen wollen. 
+                    Der Unterschied von Vision und Zielen wird klar, wenn wir uns dies an einem Konkreten Beispiel anschauen. 
+                    Die Vision der Firma Ikea ist zum Beispiel "Einen besseren Alltag für die vielen Menschen schaffen". Ein mögliches konkretes Ziel, dass sich daraus ableiten lässt, 
+                    ist möglichst vielen Menschen schöne Möbel zu tiefen Preisen zu verkaufen. 
+
+                    Wenn wir nun die Vision und die Ziele eines Systems kennen, können wir alle funktionalen und nichtfunktionalen Anforderungen eines Systems dagegen abgleichen. 
+
+                    
+
+
+                </aside>
+
                 </section>
 
 
@@ -159,13 +259,13 @@
 
                         <div style="text-align:left">
                         <blockquote>
-                            Legt organisatorisch und technische Restriktionen f&uuml;r das 
-                            Softwareystem oder den Prozess fest.
+                            Legt organisatorische und technische Restriktionen f&uuml;r das 
+                            Softwaresystem oder den Prozess fest.
                         </blockquote>
 
 
                         <ul>
-                            <li>Organisatiorisch</li>
+                            <li>Organisatorisch</li>
                             <ul>
                                 <li>Anwendungsbereich</li>
                                 <li>Zielgruppe</li>
@@ -178,6 +278,21 @@
                             </ul>
                         </ul>
                     </div>
+
+                    <aside class="notes">
+                        Als nächstes sollten wir uns überlegen, ob es organisatorische oder technische Restriktionen für das System oder den Entwicklungsprozess gibt. 
+
+                        Beispielsweise sollten wir uns überlegen, für welchen Anwendungsbereich das System ausgelegt ist und wer die Zielgruppe ist. 
+                        Wenn ich Beispielsweise eine Anwendung zur erstellung von Webseiten schreibe, werden die Anforderungen für die Zielgruppen Programmiere und Kaufmännische Angestellte, nicht dieselben sein.
+                        Weitere wichtige Hinweise können aus den Betriebsbedingungen hervorgehen. Bahnarbeiter die eine Software während der Gleisarbeiten bedienen müssen, brauchen sicher ein anderes Userinterface also
+                        Büroarbeiter.                         
+
+                        Auch das technische Umfeld spielt bei der Anforderungsanalyse eine wichtige Rolle. Gibt es bereits bestehende Software, wie ein betriebssystem oder ein Datenbanksystem, mit dem ein System zusammenarbeiten muss. 
+                        Auf welcher Hardwareplattform muss die Software laufen?
+
+                        Je mehr informationen wir über die Rahmenbedingungen haben, desto präziser können wir die Anforderungen formulieren. 
+
+                    </aside>
                     </section>
 
                     <section>
@@ -186,6 +301,14 @@
                                     <img src="../../slides/images/system-umgebung.png" class="plain" style="width:80%" />
                                     <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 14.0-3</figcaption>
                                 </figure>
+
+                            <aside class="notes">
+                                Eine Software wird nie im luftleeren Raum entwickelt, sondern läuft immer als Teil eines grösseren Systems in einem grösseren Kontext. 
+                                Es ist wichtig sich bewusst zu machen, was denn genau dieser Kontext ist.
+                                aber vor allem auch, welcher Kontext relevant für das zu entwickelnde System ist. Der relevante Kontext wird die Anforderungen an unser Sytem beeinflussen. 
+                                Daneben gibt es aber auch Systemkontext, der keinen Einfluss auf unsere Anforderungen hat, und deshalb für uns irrelvant ist. 
+                                Die Abgrenzung ist nie ganz scharf, und vor allem in der frühen Phase der Anforderungsanalyse ist die Systemgrenze, und was relevanter und irrelevanter Kontext ist meist noch vage. 
+                            </aside>
                     </section>
 
                     
@@ -193,7 +316,7 @@
                             <h1>Kontext und &Uuml;berblick</h1>
                             <div style="text-align:left"">
                             <blockquote>
-                              Materielle und imaterielle Umgebung der Software.
+                              Kontext bezeichnet <mark class="highlight">materielle</mark> und <mark class="highlight">imaterielle</mark> Umgebung der Software.
                             </blockquote>
                             <ul>
                                 <li>Materielle Umgebung:</li>
@@ -209,83 +332,89 @@
                             </ul>
                             </ul>
                         </div>
+
+                        <aside class="notes">
+                            Unter Kontext verstehen wir sowohl die materielle, als auch die imaterielle Umgebung einer Software. 
+                            Materielle Umgebung kann dinge wie sensoren die mit dem System verbunden sind, Gebäude aber auch Personen die mit dem System arbeiten beinhalten. 
+                            Die Imaterielle Umgebung beinhaltet zum Beispiel Schnittstellen zu anderen Softwaresystemen oder auch das Internet kann eine immaterielle Umgebung einer Software sein. 
+                            Ob es sich bei diesen Beispielen um relevanten oder irrelevanten Kontext handelt, hängt natürlich immer vom zu entwickelnden System ab. 
+                        </aside>
+
                         </section>
     
+             
                     <section>
-                            <h1>Funktionale Anforderungen</h1>
-
-                            <blockquote>
-                                Legen eine vom System 
-                                bereitzustellende Funktion fest.
-                            </blockquote>
-                            <ul>
-                                <li>Was soll ein System tun?</li>
-                                <li>Beispiele: </li>
-                                <ul>
-                                    <li>Das System soll den Pin vom Kunden pr&uuml;fen.</li>
-                                    <li>Das System soll den Auszahlungsbetrag erfragen, und falls gen&uuml;gend Geld vorhanden ist Geld ausgeben und das Kundenkonto belasten.</li>
-                                </ul>
-                            </ul>
-                        </section>
-                        <section>
-                            <h1>Nichtfunktionale Anforderungen</h1>
-                            <blockquote>
-                                Alle Anforderungen die
-                                nicht funktional sind.
-                            </blockquote>
-                            <ul>
-                                <li>Betreffen meistens alle Funktionen des Systems</li>
-                                <li>Beispielkategorien:</li>
-                                <ul>
-                                <li>Qualit&auml;tsmerkmale (Performance, Wartbarkeit, ...)</li>
-                                <li>Ethische oder regulatorische Anforderungen</li>
-                                <li>Sicherheitsanforderungen</li>
-                            </ul>
-                            </ul>
-                        </section>
-
-                    <section>
-                            <h1>Anforderungen Ermitteln</h1>
+                            <h1>Anforderungen ermitteln</h1>
 
                             <figure>
                             <img src="../../slides/images/requirement-elicitation.png" class="plain" style="width:60%"/>
                             <figcaption style="font-size:x-small">Nach: Helmut Balzert, Lehrbuch der Softwaretechnik, Abb 21.0.1</figcaption>
                             </figure>
+
+                            <aside class="notes">
+                                Auf dieser Grafik sind die Aktivitäten der Anforderungsanalyse nochmals illustriert. 
+                                Wir beginnen also damit die Stakeholder zu identifizieren. Parallel dazu muss das Projektumfeld bestimmt werden.
+                                Nach diesen Vorarbeituen können die Anfoderungen mit Hilfe verschiedener Ermittlungstechniken ermittelt werden. Dabei entstehen 
+                                Notizen, Protokolle, und so weiter. 
+                                Wir sehen auch, dass auch dieser Prozess inkrementell und iterativ ist und sich alle Aktivitäten gegenseitig beeinflussen. Eine Strikte, schrittweise
+                                Vorgehensweise ist also nicht möglich.
+                            </aside>
                         </section>
 
                     <section>
                             <h1>Anforderungen an Anforderungen</h1>
                             <ul>
                                 <li>Korrekt</li>
-                                <li>Eindeutig</li>
+                                <li>Eindeutig (unambiguous)</li>
                                 <li>Vollst&auml;ndig</li>
                                 <li>Konsistent</li>
                                 <li>Klassifizierbar nach Wichtigkeit</li>
                                 <li>Klassifizierbar nach Stabilit&auml;t</li>
                                 <li>&Uuml;berp&uuml;fbar / testbar</li>
-                                <li>Verfolgbar</li>
                             </ul>
+
+                            <aside class="notes">                                
+                                Nun wollen wir uns noch überlegen, was denn eigentlich die Anforderungen an die Anforderungen selbst sind. 
+                                Gute Anfoderungen sollten eine Reihe von Kriterien erfüllen. 
+                                Sie sollten natürlich korrekt sein. Es ist auch wichtig, dass wir die Anforderungen so schreiben, dass sie von 
+                                allen Stakeholdern gleich verstanden werden, also Eindeutig sind. 
+                                Natürlich möchten wir auch, dass die Anfoderungen vollständig sind, also all e geforderte funktionalität des Systems beschreiben, 
+                                und dass die Anofderungen konsistent sind, sich also nicht wiedersprechen. 
+                                Idealerweise kann ich die Anforderungen nach wichtigkeit und stabilität klassifizieren. Ich kann also jeder Anforderung dahingehend einteilen, 
+                                wie wichtig sie für das System ist, und wie wahrscheinlich es ist, dass sich die Anforderung ändert. 
+
+
+                            </aside>
+
+
                         </section>
 
                         <section>
-                            <h1>Anforderungen an Anforderungen (2)</h1>
+                            <h1>Testbare Anforderungen</h1>
 
-                            <blockquote>Anforderungen sollten testbar</blockquote>
+                            <div style="width:100%; display:block" class="framebox">Anforderungen sollten testbar sein.</div>
                             <div style="text-align: left">
                           
-                            <ul>
-                                <li>Verwendung in Regressionstest</li>
-                                <li>Mögliches Abnahmekriterium</li>                                                
-                            </ul>
-
-                            <div class="framebox" style="text-align:left" class="fragment">
-                            Beispiele:
-                            <ul>
-                                <li>Nicht testbar: Der Kunde soll nicht lange auf Systemantwort warten m&uuml;ssen.</li>
-                                <li>Testbar: Überpr&uuml;fung des PINs soll nicht l&auml;nger als 3 Sekunden dauern </li>
-                            </ul>
-                        </div>
+                                    <div style="text-align:left" >
+                                            Beispiel:
+                                            <ul>
+                                                <li><mark class="highlight">Nicht testbar: </mark>Der Kunde soll nicht lange auf Systemantwort warten m&uuml;ssen.</li>
+                                                <li><mark class="highlight">Testbar: </mark> Überpr&uuml;fung des PINs soll nicht l&auml;nger als 3 Sekunden dauern </li>
+                                            </ul>
+                                        </div>
+                                
+                            <blockquote>Geeignet für automatisierte Tests und als Abnahmekriterien.</blockquote>
+        
                     </div>
+
+                        <aside class="notes">
+                            Wenn immer möglich möchte ich eine Anforderung auch Testbar machen. Testbar heisst, ich kann klar entscheiden ob eine Anfoderung erfüllt ist. 
+                            Ein Beispiel einer nicht testbaren Anforderung ist: Der Kunde soll nicht lange auf eine Systemartwort warten müssen.
+                            Hier ist nicht klar, was nicht lange bedeutet. Eine bessere, und auch testbare Anfoderung wäre, die Überprüfung des Pins soll nicht länger als 3 Sekunden dauern. 
+                                                        
+                            Testbare Anforderungen lassen sich häufig direkt als automatisierte Softwaretests implementieren. Auch eigne sich diese  Anfoderungen gut als Abnahmekriterien für ein System. 
+                        </aside>
+
                         </section>
                         <!--
                         <section>
