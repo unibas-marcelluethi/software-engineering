@@ -31,7 +31,7 @@ git pull upstream exercise_5_unittests
 
 Die Spezifikation durch die Unit Tests finden sie in der Klasse
 ```
-biz.ganttproject.test.swengtests;
+biz.ganttproject.test.swengtests.ProjectplanCreationTests;
 ```
 
 Führen Sie die Unit Tests aus. Sie können diese entweder direkt in IDEA ausführen (Entsprechende Klasse öffnen und drücken des Run Buttons) oder von der Kommandozeile mittels
