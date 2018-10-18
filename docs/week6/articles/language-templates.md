@@ -1,83 +1,35 @@
+# Anforderungen mit Sprachschablonen definieren 
 
+*Anforderungen sollten so präzise wie möglich definiert werden. Idealerweise würden wir eine formale Sprache verwenden, die keine Mehrdeutigkeiten zulässt. In der Praxis ist 
+aber die natürliche Sprache die gängigste Art Anforderungen zu definieren. 
+Im Gegensatz zu formal definierten Anforderungen, die zum Beispiel mithilfe mathematischer Logik definiert sind, haben natürlichsprachliche Anforderungen  den Vorteil, dass auch Nichtinformatiker (zu denen ja die meisten Stakeholder gehören) diese ohne Probleme lesen können. Trotzdem möchten wir so präzise wie möglich sein. Zu diesem 
+Zweck können wir Sprachschablonen verwenden.*
 
-                        <section>
-                            <h3>Theorie vs. Praxis</h3>
-                            <blockquote>
-                                <p>In theory there is no difference between theory and practice. In practice there is.</p>
-                                <p>Yogi Berra</p>
-                            </blockquote>
+## Sprachschablonen
+Sprachliche Anforderungstemplates sind ein Schema, um Anforderungen zu definieren. Diese Schablonen geben vor, wie wir die Sätze aufbauen sollen. Auch schränken wir unser Vokabular etwas ein und benutzen wenn möglich Verben mit einer festen Definition. Das System ist in folgender Abbildung illustriert:
+![language template](../../slides/images/language-template.png)
 
-                            <ul>
-                                <li>In der Praxis werden Anforderungen nicht immer eingehalten</li>
-                                <li>Ziel des Requirement Engineers ist es zusammen mit dem Kunden m&ouml;glichst nahe an dieses Ideal zu kommen. </li>
-                            </ul>
-                        </section>
+Wir beginnen also unsere Sätze immer mit dem Wort *Das System* oder *Die Komponente X*. Danach verwenden wir eines der Verben *muss, soll* oder *sollte in Zukunft*. *Muss* bedeutet in diesem Fall, dass jede erfolgreiche Implementation diese Anforderung erfüllen muss. *Soll* bedeutet, dass es *dringend empfohlen* ist diese Anforderungen auch umzusetzen. Wir kann aber in Ausnahmefälle Gründe geben, die eine nichterfüllung dieser Anforderung rechtfertigen. *sollte in Zukunft* bedeutet, dass diese Anforderung erst in einer nächsten Version implementiert wird.
 
-                        <section>
-                            <h3>Nat&uuml;rlichsprachliche Anforderungen</h3>
+ Auch der Rest des Satzes wird wenn immer möglich nach der Dargestellten Struktur ergänzt. 
 
-                            <blockquote>
-                                Anforderungen werden meistens in nat&uuml;rlicher Sprache spezifiziert.
-                            </blockquote>
+ Beispiele von so definierten Anforderungen sind:
+* Das System muss dem Kunden die M&ouml;glichkeit bieten, Geld zu beziehen
+* Das System muss ein Aktivit&auml;tsjournal f&uuml;hren.
+* Die Konsole sollte dem Benutzer verst&auml;ndliche Fehlermeldungen ausgeben. Viele weitere Beispiele finden Sie im Beispiel Pflichtenheft auf dem [Adam workspace](https://adam.unibas.ch/goto_adam_file_732351_download.html).
+                        
+## Glossar
+Trotz der Nutzung von Sprachschablonen werden ihre Anforderungen nie ganz eindeutig werden. Natürliche Sprache ist von Natur aus mehrdeutig. 
+Das gleiche Wort kann, je nach Fachgebiet, eine ganz unterschiedliche Bedeutung haben. Deshalb empfiehlt es sich, für alle Wörter, die eventuell nicht ganz Eindeutig definiert sind, 
+einen Eintrag in einem Glossar zu erstellen, welcher dann zum Anforderungsdokument hinzugefügt wird. 
 
-                            <ul>
-                                <li>Was sind die Vor- und Nachteile?</li>
-                            </ul>
-                        </section>
+Ein gutes Glossar sollte für jeden Begriff zumindest die folgenden Punkte klären: 
 
-
-                        <section>
-                            <h3>Erstellen eines Glossars</h3>
-                            <blockquote style="width:80%; margin-left:auto; margin-right:auto">
-                                Glossar hilft mehrdeutigkeiten zu vermeiden.
-                            </blockquote>
-                            <div style="float:center; width:100%; text-align:left; margin-right:auto">
-                            Struktur eines Glossareintrags:
-                            <ul>
-                                <li>Begriff </li>
-                                <li>Definition</li>
-                                <li>Synonyme</li>
-                                <li>Plural (wenn ungew&ouml;hnlich)</li>
-                                <li>Kurzform (Falls vorhanden)</li>
-                                <li>Langform (Wenn Begriff in Kurzform angegeben ist)</li>
-                                <li>&Uuml;bersetzung (Wenn Projekt/Benutzeroberfl&ouml;che mehrsprachig ist)</li>
-                            </ul>
-                        </div>
-                        </section>
-
-                        <section>
-                            <h3>Sprachliche Anforderungstemplates</h3>
-
-                            <ul>
-                                Sprachtemplates helfen syntaktische und semantische Mehrdeutigkeiten zu reduzieren.
-                            </ul>
-
-                            <figure>
-                                    <img src="images/language-template.png" class="plain" style="width:80%" />
-                                    <figcaption style="font-size:x-small">Abbildung nach: Helmut Balzert. Lehrbuch der Softwaretechnik, Abbildung 19.0-1</figcaption>
-                                </figure>
-                            <ul class="fragment">
-                                <li>muss (rechtlich bindend) </li>
-                                <li>soll (dringend empfohlen) </li>
-                                <li>sollte in Zukunft (zuk&uuml;nftige Anorderung)</li>
-                        </ul>
-                        </section>
-
-                        <section>
-                            <h3>Beispiele</h3>
-                            <ul>
-                                <li>Das System muss dem Kunden die M&ouml;glichkeit bieten, Geld zu beziehen</li>
-                                <li>Das System muss ein Aktivit&auml;tsjournal f&uuml;hren.</li>
-                                <li>Die Konsole sollte dem Benutzer verst&auml;ndliche Fehlermeldungen ausgeben</li>
-                            </ul>
-                        </section>
-
-                        <section>
-                                <h3>Vermeidung & Pr&auml;zisierung nat&uuml;rlichsprachlicher Anforderungen</h3>
-                                <ul>
-                                    <li>Nat&uuml;rlichsprachliche Anforderungen sollten wenn m&ouml;glich durch formale und semi-formale Konzepte erg&auml;nzt oder ersetzt werden</li>
-                                    <li>Viele m&ouml;gliche Modelle zur <mark class="highlight">Softwarespezifikation </mark>wurden entwickelt</li>
-                                    <ul><li>Thema von n&auml;chster Vorlesung</li></ul>
-                                </ul>
-                            </section>
-
+* Begriff 
+* Definition
+* Synonyme
+* Plural (wenn ungew&ouml;hnlich)
+* Kurzform (Falls vorhanden)
+* Langform (Wenn Begriff in Kurzform angegeben ist)
+* &Uuml;bersetzung (Wenn Projekt/Benutzeroberfl&ouml;che mehrsprachig ist)
+                            
