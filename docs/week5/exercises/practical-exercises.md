@@ -31,7 +31,7 @@ git pull upstream exercise_5_unittests
 
 Die Spezifikation durch die Unit Tests finden sie in der Klasse
 ```
-biz.ganttproject.test.swengtests;
+biz.ganttproject.test.swengtests.ProjectplanCreationTests;
 ```
 
 Führen Sie die Unit Tests aus. Sie können diese entweder direkt in IDEA ausführen (Entsprechende Klasse öffnen und drücken des Run Buttons) oder von der Kommandozeile mittels
@@ -64,7 +64,7 @@ Lesen Sie sich die Diskussion in diesem [Issue](https://github.com/bardsoftware/
 
 Versuchen Sie das Problem zu reproduzieren und implementieren Sie den vorgeschlagenen Lösungsansatz. 
 
-*Tip: Der Bereich im Ganttproject, in dem die Milestones angezeigt werden, nennt sich *timeline**.
+*Tip: Der Bereich im Ganttproject, in dem die Milestones angezeigt werden, nennt sich "timeline"*.
 
 ### Abgabe
 Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch: 
