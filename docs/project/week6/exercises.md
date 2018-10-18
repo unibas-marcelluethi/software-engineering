@@ -1,0 +1,1 @@
+Code anschauen, was ist realistisch, was muss gemacht werden. Planen brainstormen
