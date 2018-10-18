@@ -31,7 +31,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 3: Schauen Sie sich das Video zu den "Anforderungen" an ([Video](https://drive.switch.ch/index.php/s/WJCwfDgIoE21poi), [Slides](./slides/requirements.html))
 * Schritt 4: Lesen Sie den Artikel "Anforderungen mit Sprachschablonen formulieren" ([Artikel](./articles/language-templates.html))
 * Schritt 5: Lesen Sie den Artikel "Anforderungen ermitteln und spezifizieren" von Helmut Balzert ([Artikel](./articles/balzert-requirements.pdf))
- * Schritt 6: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./articles/pflichtenheft2.html)
+ * Schritt 6: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./articles/pflichtenheft2.html))
 * Schritt 7: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_732307.html). 
 
 *Achtung: Der Test muss spätestens bis Mittwoch 24. Oktober, 08:00 bearbeitet sein.*

@@ -6,9 +6,6 @@
     * Video:  [mp4](https://drive.switch.ch/index.php/s/OrCDfsJiIwGeTkm),  
     * Slides: [online](./slides/requirements-engineering.html), [Druckversion](./slides/requirements-engineering.html?print-pdf)
 
-* Vererbung und Objektkomposition
-    * Artikel: [online](./articles/oo-composition-vs-inheritance.html)
-
 * Anforderungen
     * Video:  [mp4](https://drive.switch.ch/index.php/s/WJCwfDgIoE21poi),  
     * Slides: [online](./slides/requirements.html), [Druckversion](./slides/requirements.html?print-pdf)
@@ -17,13 +14,13 @@
     * Artikel [online](./articles/language-templates.html)
 
 * Anforderungen ermitteln und spezifizieren (Helmut Balzert, Lehrbuch der Softwaretechnik)
-    * Artikel [online](./articles/balzert-requirements.pdf)
+    * Artikel [adam](https://adam.unibas.ch/goto_adam_file_732353_download.html)
 
 * Aufwandschätzung  (Helmut Balzert, Lehrbuch der Softwaretechnik)
-    * Artikel [online](./project/week6/balzert-cost-estimation.pdf)
+    * Artikel [adam](https://adam.unibas.ch/goto_adam_file_732352_download.html)
 
 * Beispiel Lastenheft / Pflichtenheft
-    * Artikel [online](./project/week6/balzert-pflichtenheft.pdf)
+    * Artikel [adam](https://adam.unibas.ch/goto_adam_file_732351_download.html)
 
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
