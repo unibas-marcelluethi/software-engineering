@@ -1,37 +1,34 @@
-# Woche 5: Objektorientiertes Design
+# Woche 6: Anforderungsanalyse
 
 # Folien und Artikel
 
-* Objektorientiertes Design und Programmierung
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/eJBmEDAAkhwTUO1),  
-    * Slides: [online](./slides/oo-design.html), [Druckversion](./slides/oo-design.html?print-pdf)
+* Anforderungsanalyse
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/OrCDfsJiIwGeTkm),  
+    * Slides: [online](./slides/requirements-engineering.html), [Druckversion](./slides/requirements-engineering.html?print-pdf)
 
 * Vererbung und Objektkomposition
     * Artikel: [online](./articles/oo-composition-vs-inheritance.html)
 
-* SOLID Prinzipien
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/QSMeFeYbs7Hpfky),  
-    * Slides: [online](./slides/oo-solid.html), [Druckversion](./slides/oo-solid.html?print-pdf)
+* Anforderungen
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/WJCwfDgIoE21poi),  
+    * Slides: [online](./slides/requirements.html), [Druckversion](./slides/requirements.html?print-pdf)
 
-* Das Gesetz von Demeter
-    * Artikel: [online](http://prinzipien-der-softwaretechnik.blogspot.com/2013/06/das-gesetz-von-demeter.html)
+* Anforderungen mit Sprachschablonen formulieren
+    * Artikel [online](./articles/language-templates.html)
 
-* UML Einführung
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/Was9xtou8E5cHvH),  
-    * Slides: [online](./slides/uml-static.html), [Druckversion](./slides/uml-static?print-pdf)
+* Anforderungen ermitteln und spezifizieren (Helmut Balzert, Lehrbuch der Softwaretechnik)
+    * Artikel [online](./articles/balzert-requirements.pdf)
 
-* UML Klassendiagramme
-    * Artikel: [online](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/)
+* Aufwandschätzung  (Helmut Balzert, Lehrbuch der Softwaretechnik)
+    * Artikel [online](./project/week6/balzert-cost-estimation.pdf)
 
-* Design Heuristiken
-    * Slides: [online](./slides/oo-design-heuristics.html), [Druckversion](./slides/oo-design-heuristics?print-pdf)
+* Beispiel Lastenheft / Pflichtenheft
+    * Artikel [online](./project/week6/balzert-pflichtenheft.pdf)
 
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 
 
 # Weiterführende Literatur
-* Ghezzi C., Jazayeri M., Mandioli D. *Fundamentals of Software Engineering (2nd Edition)*, Kapitel 4.6
-* Pfleeger S. L., Atlee, J. M. *Software Engineering* Kapitel 6.3
-* Robert C Martin (Uncle Bob): [PrinciplesOfOOD](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
-* Agilemodeling.com: [CRC Cards - An Agile Introduction](http://www.agilemodeling.com/artifacts/crcModel.htm)
+* Ghezzi C., Jazayeri M., Mandioli D. *Fundamentals of Software Engineering (2nd Edition)*, Kapitel 7.1-7.3
+* Pfleeger S. L., Atlee, J. M. *Software Engineering* Kapitel 4
