@@ -40,7 +40,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |    | ModulDesign  | |
 | [Woche 5](https://unibas-sweng.github.io/software-engineering/week5/index.html)  | OO Design |
 |    | UML (statische Diagramme)  | | 
-| Woche 6  | Requirement Engineering   | |
+| [Woche 6](https://unibas-sweng.github.io/software-engineering/week6/index.html)    | Requirement Engineering   | |
 |    | Requirements |  |
 | Woche 7  | Softwarespezifikation  |  |
 |    | Konstruktive Softwarespezifikation  |  |
