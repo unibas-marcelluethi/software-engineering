@@ -48,7 +48,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 
 ### Übungen
 Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](./exercises/theory-exercises.html). 
-Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam]((https://adam.unibas.ch/goto_adam_exc_706020.html)) ein .
+Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam]((https://adam.unibas.ch/goto_adam_exc_732787.html)) ein .
 
 Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten.
 
