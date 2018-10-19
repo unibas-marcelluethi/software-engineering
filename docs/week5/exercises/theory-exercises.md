@@ -1,4 +1,4 @@
-# Übungsblatt 4: OO-Design
+# Übungsblatt 5: OO-Design
 
 In dieser Übung entwickeln Sie ein Design für eine Software, die 
 Bankomaten simuliert. Die genaue Beschreibung finden Sie [hier](atm-scenario.html).
