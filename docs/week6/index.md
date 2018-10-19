@@ -1,4 +1,4 @@
-# Woche 5: Objektorientiertes Design
+# Woche 6: Anforderungsanalyse
 
 # Studium
 
