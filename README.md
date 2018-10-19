@@ -40,8 +40,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |    | ModulDesign  | |
 | [Woche 5](https://unibas-sweng.github.io/software-engineering/week5/index.html)  | OO Design |
 |    | UML (statische Diagramme)  | | 
-| [Woche 6](https://unibas-sweng.github.io/software-engineering/week6/index.html)    | Requirement Engineering   | |
-|    | Requirements |  |
+| [Woche 6](https://unibas-sweng.github.io/software-engineering/week6/index.html)    | Anforderungsanalyse   | |
 | Woche 7  | Softwarespezifikation  |  |
 |    | Konstruktive Softwarespezifikation  |  |
 | Woche 8  | Deskriptive Softwarespezifikation | |
@@ -57,20 +56,15 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 ## Nächste Übungen und Deadlines
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 16. Oktober, 23.55 | [Übungsblatt Woche 4 (Theorie)](https://unibas-sweng.github.io/software-engineering/week4/exercises/theory-exercises.html) | [Adam](https://adam.unibas.ch/goto_adam_exc_728128.html) | Abgabe freiwillig, wenn die Vorlesung am 10.10 besucht wurde|
-| 16. Oktober, 23.55 | [Übungsblatt Woche 4 (Praxis)](https://unibas-sweng.github.io/software-engineering/week4/exercises/practical-exercises.html) | Github | |
-| 17. Oktober, 08:00 | [Individueller Test Woche 5](https://adam.unibas.ch/goto_adam_tst_728123.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_728123.html) | 
+| 23. Oktober, 23.55 | [Übungsblatt Woche 5 (Theorie)](https://unibas-sweng.github.io/software-engineering/week5/exercises/theory-exercises.html) | [Adam](https://adam.unibas.ch/goto_adam_exc_732787.html) | Abgabe freiwillig, wenn die Vorlesung am 17.10 besucht wurde|
+| 23. Oktober, 23.55 | [Übungsblatt Woche 5 (Praxis)](https://unibas-sweng.github.io/software-engineering/week5/exercises/practical-exercises.html) | Github | |
+| 24. Oktober, 08:00 | [Individueller Test Woche 6](https://adam.unibas.ch/goto_adam_tst_732307.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_732307.html) | 
 
 ## Projekt
 | Woche | Thema | Resourcen | Kommentar |
 |-------|-------|-----------|-----------|
 | 4     | Einführung | [slides](https://unibas-sweng.github.io/software-engineering/project/slides/project-ideas.html)| |
 
-
-## Projekt
-| Woche | Thema | Resourcen | Kommentar |
-|-------|-------|-----------|-----------|
-| 4     | Einführung | [slides](https://unibas-sweng.github.io/software-engineering/project/slides/project-ideas.html)| |
 
 ## Literatur / Weiterführende Links
 
