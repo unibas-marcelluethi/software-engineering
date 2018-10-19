@@ -15,11 +15,14 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 - Die Wichtigkeit der Anforderungsanalyse einschätzen können
 - Gründe nennen können, die die Anforderungsanalyse schwierig machen
 - Den unterschied zwischen funktionalen und nichtfunktionalen Anforderungen kennen
+- Wege kennen, um die Anforderungen strukturiert zu ermitteln. 
  
-### Fortgeschrittene Lernziele
+### Fortgeschrittene Lernziele 
 
 Die folgenden Lernziele sollten während oder nach der Vorlesung vom 24. Oktober erreicht werden. Die Studierenden sollten
-- Selbständig 
+- Anforderungen mittels Sprachschablonen formulieren können
+- Selbständig für ein kleines Projekt die Anforderungen erfassen, und ein Pflichtenheft erstellen können. 
+- Verschiedene Techniken zur Aufwandschätzung kennen und anwenden können.
 
 
 ### Vorbereitung für die Vorlesungsstunde vom Mittwoch:
