@@ -41,15 +41,17 @@ Festlegung der relevanten Systemumgebung (Kontext) und &Uuml;berblick &uuml;ber 
 * /K10/ Kontext 1
 
 
-## 4. funktionale Anforderungen
+## 4. Funktionale Anforderungen
 Die Kernfunktionailt&auml;t des Systems ist aus Auftraggebersicht auf oberster Abstraktionsebene zu beschreiben. 
 Auf Detailbeschreibung ist zu verzichten. 
 
 * /F10/ Funktion 1 des Systems
 * /F20/ Funktion 2 des Systems
 
-Wenn bereits m&ouml;glich,sind die funktionalen Anforderungen anch Statik, Dynamik und Logik zu gruppieren. 
 Erfolgt die spezifikation nat&ujml;rlichsprachlich, dann sollten Sprachtemplates verwendet werden. 
+
+Die Funktionalen Anforderungen können mithilfe von Use-cases erhoben werden. Die Use-cases sollen in Anhang A detailliert beschrieben werden. 
+
 
 ## 5. Qualit&auml;tsanforderungen 
 Es sollte anhand einer Tabelle eine Qualit&auml;tszielbestimmung f&uuml;r das Systems vorgenommen werden. 
@@ -79,3 +81,34 @@ Abnahmekriterien legen fest, wie Anforderungen bei der Abnahme auf ihre Realisie
 ## 7. Subsystemstruktur (optional)
 
 Hier wird eine Aufgliederung des zu entwickelnden Systems beschreiben, wenn die Entwicklung inkrementell (Kernsystem, Ausbaustufe 1, Ausbaustufe2 usw. ) erfolgen soll.
+
+# Anhang
+
+## Anhang A. Use-cases
+
+An dieser Stelle können detaillierte Use-cases angegeben werden
+![Diagram](../../slides/images/use-case.png)
+
+### Use Case 1:
+* Name: *Name des Use-cases*
+* Akteure: *Akteur1, Akteur2, ...*
+* Vorbedingungen: *Was muss vor Beginn des Ablaufs gelten*
+* Standardablauf 
+    * Schritt 1
+    * Schritt 2
+* Nachbedingungen Erfolg: *Was muss nach dem Ende des erfolgreichen Ablaufs gelten*
+* Nachbedingung Fehlschlag: *Was gilt nach dem Ende, wenn der Ablauf fehlgeschlagen ist*
+
+
+### Use Case 2:
+* Name: *Name des Use-cases*
+* Akteure: *Akteur1, Akteur2, ...*
+* Vorbedingungen: *Was muss vor Beginn des Ablaufs gelten*
+* Standardablauf 
+    * Schritt 1
+    * Schritt 2
+* Nachbedingungen Erfolg: *Was muss nach dem Ende des erfolgreichen Ablaufs gelten*
+* Nachbedingung Fehlschlag: *Was gilt nach dem Ende, wenn der Ablauf fehlgeschlagen ist*
+
+
+
