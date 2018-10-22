@@ -22,6 +22,9 @@
 * Beispiel Lastenheft / Pflichtenheft
     * Artikel [adam](https://adam.unibas.ch/goto_adam_file_732351_download.html)
 
+* Use-cases:
+    * Slides: [online](./slides/use-cases.html), [Druckversion](./slides/use-cases.html?print-pdf)
+
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 
