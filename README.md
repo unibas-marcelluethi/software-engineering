@@ -53,17 +53,27 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 |    | Scrum  | |
 | Woche 12 | Entwurfsmuster | |
 
-## Nächste Übungen und Deadlines
+## Nächste Deadlines
+
+#### Übungen
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
 | 23. Oktober, 23.55 | [Übungsblatt Woche 5 (Theorie)](https://unibas-sweng.github.io/software-engineering/week5/exercises/theory-exercises.html) | [Adam](https://adam.unibas.ch/goto_adam_exc_732787.html) | Abgabe freiwillig, wenn die Vorlesung am 17.10 besucht wurde|
 | 23. Oktober, 23.55 | [Übungsblatt Woche 5 (Praxis)](https://unibas-sweng.github.io/software-engineering/week5/exercises/practical-exercises.html) | Github | |
 | 24. Oktober, 08:00 | [Individueller Test Woche 6](https://adam.unibas.ch/goto_adam_tst_732307.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_732307.html) | 
 
-## Projekt
-| Woche | Thema | Resourcen | Kommentar |
-|-------|-------|-----------|-----------|
-| 4     | Einführung | [slides](https://unibas-sweng.github.io/software-engineering/project/slides/project-ideas.html)| |
+#### Projekt
+
+| Aufgabe |  Abgabe | Bemerkung |
+|---------|--------|---------------------|
+| [Pflichtenheft/Projektplan erstellen](./week6/exercises.html) | Erste Version: 30. Oktober | Besprechung: 31. Oktober |
+|                                     | Endversion: 6. November | |
+| [Design und Prototyp erstellen](./week8/exercises.html) | Erste Version: 13. November | Besprechung: 14. November |
+|                               | Abgabe Designdokument: 20. November | |
+| [Testplan erstellen](./week10/exercises.html)            | Erste Version: 27. November  | Besprechung: 28. November |
+| | Endversion: 4. Dezember ||
+| [Abgabe Projekt](./week12/exercises.html) / Abschlusspräsentation | 12. Dezember | |
+
 
 
 ## Literatur / Weiterführende Links
