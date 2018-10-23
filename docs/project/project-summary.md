@@ -5,18 +5,18 @@ Sie haben nun als Gruppe sich ein Projekt ausgesucht. Als n&auml;chstes geht es 
 Dabei sollen sie folgende Teilaufgaben, welche unten genauer beschrieben sind, bearbeiten. 
 
 
-## Projekt&uuml;bersicht und Punkte:
+## Projekt&uuml;bersicht:
 
-| Aufgabe | Punkte |  Abgabe |
+| Aufgabe |  Abgabe | Bemerkung |
 |---------|--------|---------------------|--------|
-| Lastenheft schreiben |  | Entwurf zur Besprechung: 7. November
-|         |      1  |   Endversion: 14. November |
-| Pflichtenheft schreiben |  | Entwurf zur Besprechung: 21. November |
-|         |     1   | Endversion: 29. November |
-| Prototyp erstellen | 1 | Demo: 29. November |
-| Testplan erstellen | 1 |  Endversion: 10. Dezember | 
-| Finale Implementation | 2 | Demo: 19. Dezember |
-| Technische Dokumentation | 1 | Endversion: 19. Dezember |
+| Pflichtenheft/Projektplan erstellen | Erste Version: 30. Oktober | Besprechung: 31. Oktober |
+|                                     | Endversion: 6. November | |
+| Design und Prototyp erstellen | Erste Version: 13. November | Besprechung: 14. November |
+|                               | Abgabe Designdokument: 20. November | |
+| Testplan erstellen            | Erste Version: 27. November  | Besprechung: 28. November |
+| | Endversion: 4. Dezember ||
+| Abgabe Projekt / Abschlusspräsentation | 12. Dezember | |
+
 
 
 ## Form der Dokumentation
