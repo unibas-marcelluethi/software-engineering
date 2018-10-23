@@ -66,13 +66,13 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 
 | Aufgabe |  Abgabe | Bemerkung |
 |---------|--------|---------------------|
-| [Pflichtenheft/Projektplan erstellen](./week6/exercises.html) | Erste Version: 30. Oktober | Besprechung: 31. Oktober |
+| [Pflichtenheft/Projektplan erstellen](https://unibas-sweng.github.io/software-engineering/project/week6/exercises.html) | Erste Version: 30. Oktober | Besprechung: 31. Oktober |
 |                                     | Endversion: 6. November | |
-| [Design und Prototyp erstellen](./week8/exercises.html) | Erste Version: 13. November | Besprechung: 14. November |
+| [Design und Prototyp erstellen](https://unibas-sweng.github.io/software-engineering/project/week8/exercises.html) | Erste Version: 13. November | Besprechung: 14. November |
 |                               | Abgabe Designdokument: 20. November | |
-| [Testplan erstellen](./week10/exercises.html)            | Erste Version: 27. November  | Besprechung: 28. November |
+| [Testplan erstellen](https://unibas-sweng.github.io/software-engineering/project/week10/exercises.html)            | Erste Version: 27. November  | Besprechung: 28. November |
 | | Endversion: 4. Dezember ||
-| [Abgabe Projekt](./week12/exercises.html) / Abschlusspräsentation | 12. Dezember | |
+| [Abgabe Projekt](https://unibas-sweng.github.io/software-engineering/project/week12/exercises.html) / Abschlusspräsentation | 12. Dezember | |
 
 
 
