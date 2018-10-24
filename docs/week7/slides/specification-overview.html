@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Spezifikation</title>
+
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="center">
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Spezifikation von Softwareprojekten
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">
+                    Herzliche Willkommen zu diesem Screencast zum Thema Spezifikation. 
+                    Jedes nichttriviale System muss spezifiziert werden. Bevor wir eine Brücke bauen, müssen wir zuerst spezifizieren, welche Anforderungen denn die Brücke erfüllen muss. 
+                    Soll sie nur für Fussgänger oder auch für Lastwagen ausgelegt sein? Soll die Brücke für die Ewigkeit gebaut werden, oder reicht es, wenn Sie 2 Jahre lang ihren Dienst tut? Muss sie einem Tsunami standhalten?
+                    Wir können aber nicht nur die Anorderung an die Brücke selbst, sondern auch für die Teile spezifizieren. Wie müssen die Brückenpfeiler beschaffen sein? Wie reissfest sollen die Seile und Kabel sein?
+                                        
+                    Wir haben also nicht nur Spezifikationen für das gesamtsystem, sondern auch für die einzelnen Komponenten. Spezifikationen werden auf verschiedenen Ebenen eingesetzt. 
+                                
+                    
+                </aside>
+
+			</section>
+            
+            <section>
+                    <h1>Arten von Spezifikationen</h1>
+    
+                    <div style="text-align:left; width:80%; margin-left:auto; margin-right:auto">
+                    Spezifikationen beschreiben:
+                    <ul style="font-size:smaller">
+                            <li>was der Benutzer erwartet (Lastenheft) </li>
+                            <li> die Funktionen die ein System zur Verf&uuml;gung stellt (Pflichtenheft)</li>
+                            <li> das externes Verhalten eines Programms/Moduls (Schnittstellenspezifikation) </li>                            
+                            <li> das Design  (Design/Architekturspezifikation)</li> 
+                            <li> die interne Struktur eines Moduls </li>
+                            <li> das Laufzeitverhalten / Performance  </li>                
+                    </ul>
+                </div>
+
+                <aside class="notes">
+                    Auch in der Softwareentwicklung verwenden wir den Begriff Spezifikation für verschiedenen Aspekte.  
+                    Wir Spezifizieren zum Beispiel
+                </aside>
+                </section>
+            
+                <section>
+                <h1>Spezifikation</h1>
+
+                <blockquote>
+                    Allgemein: Vereinbarung zwischen Produzent/Konsument eines Services
+                </blockquote>
+                <div style="float:left;width:50%">
+                    <img src="../../slides/images/problem-solution.png" style="width:100%" class="plain"/>
+                </div>
+                
+                <div style="float:right;width:50%">
+                        <ul>
+                                Spezifikation:
+                                <ul><li><mark class="highlight">Was</mark> soll gemacht werden?</li></ul>
+                                Implementation:
+                                <ul><li><mark class="highlight">Wie</mark> soll es gemacht werden?</li></ul>
+            
+                        </ul>                
+                </div>
+
+                <aside class="notes">
+                    Ganz allgemein kann man sagen, dass Spezifikationen immer eine Vereinbarung zwischen einem Produzenten und einem Konsumenten eines Services ist. 
+                    Der Konsument ist nur interessiert in was gemacht der service liefert, also in die Spezifizierten Eigenschaften und Funktionalitäten. Wie diese Umgesetzt werden ist die Sache des Produzenten. 
+                    Wir haben auf jeder Ebene diese Dichotomie von Was und wie, die wir schon letzt Woche gesehen haben. Die Spezifikation beschreibt das was, während das Wie durch die Implementation vom jeweiligen Schritt gegeben ist. 
+                    
+                    Es ist auch interessant zu sehen, dass dies eigentlich einer Modularisierung innerhalb des Software prozesses entspricht. Unsere Module sind hier einfach Arbeitsschritte im Entwicklungsprozess, während unsere Schnittstellen durch 
+                    entsprechende Spezifikationen (d.h. Dokumente), repräsentiert sind. 
+                </aside>
+            </section>
+          
+             
+
+            <section>
+                <h1>Zweck von Spezifikationen</h1>
+                <ul>
+                    <li>Anforderungen festhalten</li>
+                    <ul>
+                    </ul>
+                    <li>Schnittstellen definieren</li>
+                    <ul><li>Klare Definition/Abgrenzung des Systems</li>
+                        <li>Spezifikation von Benutzer- und Sensorinputs</li>
+                    </ul>                    
+                    <li>Mehrdeutigkeiten und Inkonsistenzen eliminieren </li>
+                </ul>
+                <blockquote>
+                    Spezifikationen sind  wichtiger Referenzpunkt während Entwicklung und Wartung
+                </blockquote>
+
+                <aside class="notes">
+                    Spezifikationen werden in der Softwareentwicklung in vielerlei Hinsicht wichtig. 
+                    Neben dem festhalten der Anforderungen, werden SPezifikationen benutzt 
+                    um die Schnittstellen zu definieren". Mit der Schnittstellendefinition wird einerseits die 
+                    Systemgrenze klar definiert, andererseits aber auch geklärt, wie das System mit der Umwelt kommuniziert.
+
+                    Eine wichtige Aufgabe von Spezifikationen ist es auch, Mehrdeutigkeiten und Inkonsistenzen zu 
+                    eliminieren, die häufig unbemerkt bleiben, wenn ein System nicht präzise spezifiziert wird. 
+                </aside>
+            </section>
+
+
+          
+
+                <section>
+                        <h1>Spezifikationsmethoden und Sprachen</h1>
+        
+                        <ul>
+                            <li>Vielzahl von Methoden/Sprachen und Notationen</li>
+                            <ul><li>Keine kann alle Anforderungen abdecken</li></ul>
+                            <li>Kombination verschiedener Methoden</li>
+                            <ul>
+                                <li>Mehrere Sichten auf das Problem</li>
+                            </ul>
+                        </ul>
+
+                        <blockquote>
+                            Ziel: maximale Klarheit und Verst&auml;ndlichkeit
+                        </blockquote>
+
+                        <aside class="notes">
+                            In der 50 Jährigen Geschichte des Software Engineerings wurden viele verschiedene
+                            Spezifikationsmethoden und Spezifikationssprachen entwickelt. 
+                            Keine Methode kann aber allen Anforderungen gerecht werden. In der Praxis nutzt man deshalb immer
+                            eine Kombination von verschiedenen Spezifikationsmethoden. Verschiedene Methoden 
+                            können verschiedene Aspekte vom System hervorheben. So beschreibt zum Beispiel das bekannte UML Klassendiagramm eine 
+                            Statische sicht eines Systems. Dieses kann ich zum Beispiel über Objekt- oder Sequenzdiagramme um eine dynamische Sicht erweitern. 
+
+                            Das Ziel jeder Spezifikation ist jedoch immer das gleiche, nämlich die maximale Klarheit und 
+                            Verständlichkeit zu erreichen. Deshalb muss auch immer klar sein, wer denn die Zielgruppe einer Spezifikation ist. 
+                            Für einen Endbenutzer eines Systems führt eine Spezifikation in mathematischer logik nicht zu grösserer Klarheit, 
+                            während dieselebe Spezifikation für in logik Ausgebildete Informatiker sehr hilfreich sein kann. 
+                            
+                            
+                        </aside>
+
+                    </section>
+
+                <section>
+                    <h1>UML</h1>
+
+                            <figure>
+                            <img src="../../slides/images/uml-design-overview.png" style="width:80%" class="plain"/>
+                            <figcaption style="font-size:xx-small">Diagramm nach Pfleeger & Atlee, Software Engineering</figcaption>
+                        </figure>
+            
+                        <aside class="notes">
+                            Die populärste  Familie von Spezifikationsmethoden ist die Unified Modelling Language. 
+                            Neben dem Klassendiagramm, welches wir uns ja bereits angeschaut haben, vereint die 
+                            UML eine vielzahl von Modellierungsmethoden für die Spezifikation. In der Anforderungsanalyse 
+                            können wir use-case Diagramme eingesetzt werden um typische Funktionale Anforderungen zu spezifizieren. 
+                            Mittels Aktivitätsdiagramme können in dieser Phase auch der Ablauf in Businessprozessen verdeutlicht werden. 
+                            In sehr grossen Systemen wird dann die Architektur zuerst mithilfe von Komponenten und Verteilungsdiagrammen 
+                            modelliert.
+                            Das Design beginnt eignetlich immer mit dem Klassendiagramm, in dem die wichtigsten MOdule und 
+                            deren zusammenhang spezifiziert werden. Danach werden die Dynamischen Aspekte werden dann via sequenz, 
+                            kommunikationsdiagramme  spezifiziert. Die Aktivitätsdiagramme bieten in dieser Phase eine einfach
+                            Methode um einen Ablauf im System darzustellen. Und mittels den Zusantsdiagrammen können 
+                            wir modellieren, welche Zustände ein Objekt annehmen kann, und unter welchen Umständen diese 
+                            Zustände erreicht werden. Und Schlussendlich können wir mithilfe der Paketdiagramme wieder die 
+                            einzelnen Module zusammenfassen und damit das System auf einer höheren Abstraktionsebene zeigen.                             
+
+                        </aside>
+
+
+                </section>
+
+                
+            <section>
+                <h1>Qualitätsanforderungen von Spezifikationen</h1>
+
+                <ul>
+                    <li>Pr&auml;zise, korrekt, eindeutig</li>
+                    <li>Konsistent</li>
+                    <li>Vollst&auml;ndig</li>
+                    
+                    <li><mark class="highlight">Inkrementell</mark></li>                    
+                    <ul>
+                            <li><mark class="highlight">Prozess: Von grob zu fein.</mark></li>
+                            <li><mark class="highlight">Spezifikation kann auf verschiedenen Detailebenen verstanden werden.</mark></li>
+                        </ul>
+                    
+                </ul>
+
+                
+
+                <aside class="notes">
+                    Dies bringt uns zu einem wichtigen Qualitätsanforderungen von Spezifikationen. 
+                    Neben den bereits letzte Woche besprochenen Anforderungen an Spezifikationen wie Präzision, korrektheit, eindeutigkeit
+                    konsistents und vollständigkeit, sollte eine Spezifikation auch Inkrementell verstanden werden können. 
+                    Das heisst, die Spezifikation sollte das System auf verschiedenen Detailebenen beschreiben können, so 
+                    dass ich als leser der Spezifikation nicht alle Details auf einmal erfassen muss. 
+                    
+                </aside>
+
+            </section>
+
+            <section>
+                <h1>Beispielspezifikation 1</h1>
+
+                <div style="text-align:left; width:100%; margin-left:auto; margin-right:auto">
+                
+                <div style="width:100%; margin-left:auto; margin-right:auto;text-align:left" class="framebox">
+                    <p>Beispiel: Textverarbeitung <p>
+                    <p style="font-style:italic">
+                    Markieren bezeichnet den Prozess Teile eines Dokuments zu 
+                    selektieren. Viele Editierfunktionen werden in 
+                    zwei Schritten durchgef&uuml;hrt: <br/>
+                    1. Markieren des Texts <br/>
+                        2. Anwenden der entsprechenden Funktion
+                    </p>
+                </div>
+                <ul class="fragment">
+                    <li>Ist es m&ouml;glich unzusammenh&auml;ngende Bereiche zu markieren?</li>
+                </ul>
+            </div>
+
+            <aside class="notes">
+                Dass es nicht einfach ist gute Spezifikationen zu schreiben, wollen wir nun anhand von einigen 
+                Beispieln Illustrieren. 
+                ....
+                Die Spezifikation ist nicht präzise genug. Es geht nicht hervor, ob es nun möglich ist unzusammenhängende
+                bereiche zu markieren. Je nachdem mit was für einem System jemand bisher gearbeitet hat, würde er oder sie
+                diese Spezifikation anders implementieren. 
+            </aside>
+
+            </section>
+
+            <section>
+                    <h1>Beispielspezifikation 2</h1>
+                    <div style="text-align:left; width:100%; margin-left:auto; margin-right:auto">
+                            <div style="width:100%; margin-left:auto; margin-right:auto;text-align:left" class="framebox">
+                                <p>Beispiel: Textverarbeitung</p>
+                                <p style="font-style: italic">
+                                        The gesamte Text muss in Zeilen von gleicher L&auml;nge 
+                                        aufgeteilt werden. Die L&auml;nge wir durch den Benutzer
+                                        spezifiziert. Wenn der Benutzer keine explizite Trennzeichen
+                                        angibt, darf die Zeile nur am Wortende umgebrochen werden. 
+                                            </p>
+                        </div>
+                            <ul class="fragment">
+                                    <li>Was passiert wenn ein Wort l&auml;nger als eine Zeile ist?</li>
+                            </ul>
+                            </div>
+        
+    
+                
+                    
+                </section>
+
+            <section>
+                <h1>Beispielspezifikation 3</h1>
+                <div style="text-align:left; width:100%; margin-left:auto; margin-right:auto">
+                    <div style="width:100%; margin-left:auto; margin-right:auto;text-align:left" class="framebox">
+                        <p>Beispiel: Sicherheitskritische Anwendung</p>
+                        <p style="font-style: italic">
+                        Jede Nachricht muss verdreifacht werden. 
+                        Die Kopien m&uuml;ssen durch drei unterschiedliche
+                        physische Kan&auml;le verschickt werden. Der Empf&auml;nger
+                        akzeptiert die Nachricht durch eine 2 zu 3 Mehrheitentscheidung. 
+                    </p>
+                </div>
+                    <ul class="fragment">
+                        <li>Muss der Empf&auml;nger auf alle Nachrichten warten?</li>
+                    </ul>
+                    </div>
+
+                    <aside class="notes">
+                        Wir sehen also, dass Präzise Spezifikationen zu schreiben sehr schwierig sein kann. 
+                    </aside>
+
+            </section>
+
+          
+
+
+                    <section>
+                            <h1>Verifizieren von Spezifikationen</h1>
+
+                            <blockquote> Software ist korrekt, when sie die spezifizierten funktionalen Anforderungen erf&uuml;llt
+                            </blockquote>
+            
+                            <ul>
+                                <li>Garantiert nicht, dass Software tut was man will. </li>
+                                <li>Spezifikationen m&uuml;ssen verifiziert werden. 
+                                </li>
+                            </ul>
+                            
+                            <aside class="notes">
+                                Aber nehmen wir mal an, dass wir nun eine perfekte Spezifikation geschrieben haben. 
+                                Nachdem wir das System gemäss Spezifikation implementiert haben, können wir nun entscheiden, 
+                                ob unser System korrekt ist. Dies ist möglich, da wir korrektheit so definiert haben, dass eine 
+                                Software korrekt ist, wenn Sie die spezifiziert funktionalen Anforderungen erfüllt. 
+
+                                Dies garantiert jedoch immer noch nicht, dass die Software auch das tut was man will. Deshalb 
+                                müssen wir auch die Spezifikationen selbst verifizieren. 
+
+                            </aside>
+
+                        </section>
+
+                    <section>
+                            <h1>Möglichkeiten der Verifikation</h1>
+
+
+                                <div style="float:left;width:49%;text-align:left">                                   
+                                        Konstruktiv:
+                                    <ul>
+                                            <li>Beobachten des Verhaltens</li>
+                                            <li> Simulation/Prototypen</li>
+                                        
+                                    </ul>
+                                    <figure>
+                                            <img src="../../slides/images/bridge-model.jpg" class="plain">
+                                            <figcaption style="font-size:xx-small">By BrickArt!san from Canada (Balsa-Bridge) [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons</figcaption>
+                                        </figure>
+                                    
+
+                                    </div>
+                                    <div style="float:right;width:50%;text-align:left">                                            
+                                            Deskriptiv
+                                            <ul>
+                                            <li>Analysieren/ableiten von Eigenschaften</li>
+                                        </ul>
+                                        <figure>
+                                                <img src="../../slides/images/bending.png" class="plain" style="width:75%">                                            
+                                                <figcaption style="font-size:xx-small">By AndrewRDawson - Own work, Public Domain, <br/> https://commons.wikimedia.org/w/index.php?curid=34910928</figcaption>                                                
+                                            </figure>
+
+                                </div>
+                                
+                                
+                                <blockquote style="display:inline-block">
+                                M&ouml;glich nur bei formalen Spezifikationen 
+                            </blockquote>
+
+                            <aside class="notes">
+                                Auch hier ist die Analogie zum Bau einer Brücke wieder hilfreich. Um die 
+                                Spezifikationen einer Brücke zu verifizieren, ohne dass wir die Brücke bauen, gibt es 
+                                zwei mögliche Wege. Einerseits können wir ein Modell der Brücke bauen und mit diesem 
+                                Miniaturmodell dann verschiedene Szenarion simulieren. Dabei beobachten wir das Verhalten 
+                                des System. Die zweite Möglichkeit ist das
+                                wir Eigenschaften mittels mathematischer Analyse der Physikalischen Gegebenheiten ableiten. 
+                                Wir können dann schauen ob die abgeleiteten Eigenschaften auch unseren Erwartungen entsprechen, 
+                                oder ob sich dabei ein Widerspruch ergibt. 
+
+                                In der Softwareentwicklung haben wir auch genau diese zwei Möglichkeiten. Entweder ich Simuliere die Spezifikationen, 
+                                oder ich analzsiere. Simulieren ist nur dann möglich, wenn die Spezifikation eine konstruktive Spezifikation ist, 
+                                also eine, die vorgibt wie etwas ausgeführt werden kann. Damit ich eigenschaften ableiten kann, benötigen wir 
+                                hingegen deskriptive Spezifikationen. 
+
+                                    Wir werden uns diese beiden arten von Spezifikationen nächste Woche genauer anschauen und konkrete Beispiel in UML sehen. 
+                                    Diese Woche wollen wir uns jedoch zuerst anschauen, wie wir zumindest in der Theorie 
+                                    zu stringenten Spezifikation kommen. 
+                                </aside>
+        
+                        </section>
+            
+                    
+
+                        <!--
+                <section>
+                    <h3>Unit Tests</h3>
+                    <ul>
+                        <li>Inwiefern stellen Spezifikationen einen Referenzpunkt in der Entwicklung dar?</li>
+                        <li>An welchen Stellen im Entwicklungsprozess sind Spezifikationen sinnvoll?</li>
+                        <li>Was ist der Unterschied zwischen einer deskriptiven und einer konstruktiven Spezifikationsmethode</li>
+                        <li>Weshalb m&uuml;ssen Spezifikationen verifiziert werden?</li>
+                        <li>Was sind M&ouml;glichkeiten um Spezifikationen zu verifizieren?</li>
+                    </ul>
+                </section>
+
+
+               
+                    
+                    -->
+
+
+        </div>
+    </div>
+
+
+
+
+ 
+	<script src="../../slides/lib/js/head.min.js"></script>
+	<script src="../../slides/js/reveal.js"></script>
+
+	<script>
+		file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			center: false,
+            transition: 'none',           
+            /* 
+			chalkboard: {
+				src: "chalkboard.json",
+				readOnly: undefined,
+				transition: 800,
+				theme: "whiteboard",
+				//toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				//toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				// configuration options for notes canvas and chalkboard
+				color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+				background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+				pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+			},
+            */
+            math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+			dependencies: [{
+				src: '../../slides/plugin/markdown/marked.js'
+			},
+			{
+				src: '../../slides/plugin/markdown/markdown.js'
+			},
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+			{
+				src: '../../slides/plugin/notes/notes.js',
+				async: true
+			},
+            /*
+			{
+				src: '../../slides/plugin/chalkboard/chalkboard.js'
+			},
+            */
+			{
+				src: '../../slides/plugin/highlight/highlight.js',
+				async: true,
+				callback: function () {
+					hljs.initHighlightingOnLoad();
+				}
+			},
+            { src: '../../slides/plugin/math/math.js', async: true }
+            			],
+			keyboard: {
+                /*
+				67: function () {
+					RevealChalkboard.toggleNotesCanvas()
+				}, // toggle notes canvas when 'c' is pressed
+				66: function () {
+					RevealChalkboard.toggleChalkboard()
+				}, // toggle chalkboard when 'b' is pressed
+				46: function () {
+					RevealChalkboard.clear()
+				}, // clear chalkboard when 'DEL' is pressed
+				8: function () {
+					RevealChalkboard.reset()
+				}, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+				68: function () {
+					RevealChalkboard.download()
+				}, // downlad recorded chalkboard drawing when 'd' is pressed
+                */
+			},
+		});
+	</script>
+</body>
+
+</html>
