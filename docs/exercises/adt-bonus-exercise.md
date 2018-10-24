@@ -5,7 +5,7 @@
 Bei diesem Übungsblatt handelt es sich um ein Bonusblatt. Die Bearbeitung und Abgabe ist freiwillig. Falls Sie das Übungsblatt bearbeiten möchten, 
 senden Sie bitte eine E-Mail an marcel.luethi@unibas.ch, damit wir Ihnen Zugriff auf das Repository geben können. 
 
-*Abgabe:* Individuelle Abgabe (als Textfile oder PDF) bis sp&auml;testens 30.10.2018 (23:55) auf [Adam](https://adam.unibas.ch/goto_adam_exc_734775.html). 
+*Abgabe:* Individuelle Abgabe (als Textfile oder PDF) bis sp&auml;testens 6.11.2018 (23:55) auf [Adam](https://adam.unibas.ch/goto_adam_exc_734775.html). 
 Zus&auml;tzlich sollen Sie f&uuml;r die &Auml;nderungen am Code einen Pull Request erstellen. 
 
 
@@ -16,14 +16,21 @@ Das Ziel dieser &Uuml;bung ist das wichtige Konzept der [Abstrakten Datentypen (
 
 ## Vorbereitung
 
-Erstellen Sie auf Github einen Fork des Projekts [bonuxexercise](https://github.com/unibas-sweng/bonusexercise). Klonen Sie *Ihren fork* mittels git 
+Erstellen Sie auf Github einen Fork des Projekts [bonusexercise](https://github.com/unibas-sweng/bonusexercise). Klonen Sie *Ihren fork* mittels git 
 ```
 git clone https://github.com/YOUR_USERNAME/bonusexercise
 ```
+Erstellen Sie mit 
+```
+git branch bonusexercise
+git checkout bonusexercise
+```
+einen Feature Branch.
 
 Importieren Sie das Projekt in Intellij Idea, indem Sie die Datei ```build.gradle``` &ouml;ffnen. 
 
 ## Aufgabe 1: Abstrakte Datentypen
+&Ouml;ffnen Sie nun das Projekt ```bonusexercise``` in Idea. 
 
 Im Package ```adts``` finden Sie 3 verschiedene Implementationen eines Stack als Abstrakten Datentyp. Eine Implementation ist wie man einen ADT in einer Imperativen Programmiersprache (wie z.B. C) implementieren w&uuml;rde, eine zweite zeigt eine typische Implementation in einer Funktionalen Programmiersprache und die dritte Implementation eine Typische Java Implementation. 
 
@@ -41,13 +48,13 @@ Im Package ```adts``` finden Sie 3 verschiedene Implementationen eines Stack als
 
 ## Aufgabe 2: Errorhandling 
 
-&Ouml;ffnen Sie nun das Projekt ```bonusexercise``` in Idea. Sie finden im package ```errorhandling``` die Datei
+Sie finden im package ```errorhandling``` die Datei
 ```TextFileReader```. Die Methode ```readTextFile``` liest eine Textdatei und gibt den Inhalt als String zur&uuml;ck. Falls die Datei nicht gefunden wird, wird einen Exception geworfen. 
 
 Seit Java 8 gibt es den Typ ```Optional```, der verwendet werden kann um anzuzeigen, dass eine Methode nicht immer einen validen R&uuml;ckgabewert hat. 
 Eige gute Einführung finden Sie in diesem [Artikel](https://www.javadevjournal.com/java/java-8-optional/).
 
-* Schreiben Sie die Methode ```readTextFile``` so um, dass der Typ ```Optional``` verwendet wird. Passen Sie auch die ```main``` Methode entsprechend an. (Vergessen Sie nicht zuerst mit git einen branch ```bonusexercise``` zu erstellen)
+* Schreiben Sie die Methode ```readTextFile``` so um, dass der Typ ```Optional``` verwendet wird. Passen Sie auch die ```main``` Methode entsprechend an. 
     * Committen Sie Ihre &Auml;nderung.
 * Diskutieren Sie was die Vorteile und Nachteile der jeweiligen Art von Errorhandling (also mit Optional oder Exception) sind. 
 * Wann w&uuml;rden Sie welche Methode einsetzen?
