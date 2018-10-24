@@ -48,7 +48,7 @@ Auf Detailbeschreibung ist zu verzichten.
 * /F10/ Funktion 1 des Systems
 * /F20/ Funktion 2 des Systems
 
-Erfolgt die spezifikation nat&ujml;rlichsprachlich, dann sollten Sprachtemplates verwendet werden. 
+Erfolgt die spezifikation natürlichsprachlich, dann sollten Sprachtemplates verwendet werden. 
 
 Die Funktionalen Anforderungen können mithilfe von Use-cases erhoben werden. Die Use-cases sollen in Anhang A detailliert beschrieben werden. 
 
