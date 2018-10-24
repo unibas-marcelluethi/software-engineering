@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-Nachdem wir uns die letzten Woche Softwaredesign, also *wie* entwerfe ich das Produkt Software, angesehen haben, kommen wir jetzt zur 
+Nachdem wir uns die letzte Woche Softwaredesign, also *wie* entwerfe ich das Produkt Software, angesehen haben, kommen wir jetzt zur 
 wichtigen Frage *wie weiss ich, was ich entwerfen muss*. Dies herauszufinden ist das Ziel der Anforderungsanalyse.
 
 ## Lernziele
@@ -35,7 +35,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 4: Lesen Sie den Artikel "Anforderungen mit Sprachschablonen formulieren" ([Artikel](./articles/language-templates.html))
 * Schritt 5: Lesen Sie den Artikel "Anforderungen ermitteln und spezifizieren" von Helmut Balzert ([Artikel](https://adam.unibas.ch/goto_adam_file_732353_download.html))
  * Schritt 6: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./articles/pflichtenheft2.html))
-* Schritt 7: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_732307.html). 
+* Schritt 7: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_732307.html)). 
 
 *Achtung: Der Test muss spätestens bis Mittwoch 24. Oktober, 08:00 bearbeitet sein.*
   
