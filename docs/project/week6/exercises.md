@@ -15,8 +15,8 @@ Nachdem Sie das Pflichtenheft erstellt haben, erstellen Sie mit Ganttproject ein
 
 
 ## Abgabe: 
-Speichern Sie die Dokumente im (neu zu erstellenden)```docs``` Ordner von ganttproject.
+Speichern Sie die Dokumente im (neu zu erstellenden)```docs``` Ordner von Ganttproject.
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie ```marcelluethi``` ```schonja``` und ```michaelPluess``` als Reviewer an. Abgabetermin ist Dienstag, 30. Oktober, 23:55. 
-Die Besprechung mit den Betreuern findet am 31. Oktober, gemäss diesem [Plan](https://adam.unibas.ch/goto_adam_file_734506_download.html) statt. 
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie ```marcelluethi``` ```schoenja``` und ```MichaelPluess``` als Reviewer an. Abgabetermin ist Dienstag, 30. Oktober, 23:55. 
+Die Besprechung mit den Betreuern findet am 31. Oktober, gemäss diesem [Plan](https://adam.unibas.ch/goto_adam_fold_702724.html) statt. 
 Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 6. November, 23.55.  
