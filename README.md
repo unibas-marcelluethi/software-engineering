@@ -42,9 +42,9 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 | [Woche 5](https://unibas-sweng.github.io/software-engineering/week5/index.html)  | OO Design |
 |    | UML (statische Diagramme)  | | 
 | [Woche 6](https://unibas-sweng.github.io/software-engineering/week6/index.html)    | Anforderungsanalyse   | |
-| Woche 7  | Softwarespezifikation  |  |
-|    | Konstruktive Softwarespezifikation  |  |
-| Woche 8  | Deskriptive Softwarespezifikation | |
+| [Woche 7](https://unibas-sweng.github.io/software-engineering/week7/index.html)  | Softwarespezifikation  |  |
+| Woche 8  | Konstruktive Softwarespezifikation  |  |
+|  | Deskriptive Softwarespezifikation | |
 | Woche 9 | Verifikation (überblick)  | |
 |    | Testen (Einführung) | |
 |    | Testen im Kleinen   | |
