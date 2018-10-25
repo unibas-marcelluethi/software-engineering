@@ -21,7 +21,7 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 
 * Schritt 1: Schauen Sie sich das Video "Spezifikation von Softwareprojekten" an.  ([Video](https://drive.switch.ch/index.php/s/kNHnLQQMO14p0sM), [Slides](./slides/specification-overview.html))
 * Schritt 2: Lesen Sie den Artikel "A Rational Design Process - and how to fake it" von David Parnas ([Artikel](https://users.ece.utexas.edu/~perry/education/SE-Intro/fakeit.pdf))
-* Schritt 3: Bearbeiten Sie den Test auf Adam ([Adam]((https://adam.unibas.ch/goto_adam_tst_735167.html)))
+* Schritt 3: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_735167.html))
 
 *Achtung: Der Test muss spätestens bis Mittwoch 31. Oktober, 08:00 bearbeitet sein.*
   
