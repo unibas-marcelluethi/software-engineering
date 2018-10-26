@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Spezifikationsmöglichkeiten mit der UML</title>
+
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="center">
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Weitere Spezifikationsmöglichkeiten mit der UML
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">
+                    Herzliche Willkommen zu diesem Screencast zum Thema Spezifikation. 
+                    Jedes nichttriviale System muss spezifiziert werden. Bevor wir eine Brücke bauen, müssen wir zuerst spezifizieren, welche Anforderungen denn die Brücke erfüllen muss. 
+                    Soll sie nur für Fussgänger oder auch für Lastwagen ausgelegt sein? Soll die Brücke für die Ewigkeit gebaut werden, oder reicht es, wenn Sie 2 Jahre lang ihren Dienst tut? Muss sie einem Tsunami standhalten?
+                    Wir können aber nicht nur die Anorderung an die Brücke selbst, sondern auch für die Teile spezifizieren. Wie müssen die Brückenpfeiler beschaffen sein? Wie reissfest sollen die Seile und Kabel sein?
+                                        
+                    Wir haben also nicht nur Spezifikationen für das gesamtsystem, sondern auch für die einzelnen Komponenten. Spezifikationen werden auf verschiedenen Ebenen eingesetzt. 
+                                
+                    
+                </aside>
+
+			</section>
+            
+            <section>
+                <h3>Use-cases</h3>
+
+                <blockquote style="width:80%; margin-left:auto; margin-right:auto">
+                    Textuelle Beschreibung einer Systeminteraktion eines Akteur um fachliches Ziel zu erreichen.        
+                </blockquote>
+                <ul>
+                    <li>Was muss gemacht werden um Ziel des Nutzers zu verwirklichen?</li>
+                    <ul>
+                        <li>Einnahme von Nutzersicht hilft Anforderungen zu finden</li>
+                    </ul>
+                    <li>Use-cases sollen nicht zu komplex sein</li>
+                    <ul><li>Kaffeepausentest: Anwendungsfall ist zu komplex, wenn Nutzer w&auml;hrend Interaktion Kaffeepause braucht</li></ul>
+                    
+                </ul>
+            </section>
+
+            <section>
+                <h3>Use-cases: Beispiel</h3>
+              
+
+                <div style="font-size:smaller;width:100%;margin-left:auto;margin-right:auto; text-align:left;border:1pt solid black">
+                    Name: Buch ausleihen
+                    <br/> Akteure: Bibliothekar, Kunde
+                    <br/> Standardablauf:
+                    <br/>
+                    <ol>
+                        <li>Kunde gibt Bibliothekar seine Karte</li>
+                        <li>Bibliothekar pr&uuml;ft Karte und schaut sich get&auml;tige Vorbestellung an</li>
+                        <li>Bibliothekar holt alle bestellten B&uuml;cher</li>
+                        <li>Bibliothekar vermerkt im System das B&uuml;cher vom Kunden ausgeliehen sind.</li>
+                    </ol>
+                </div>
+
+            </section>
+
+            
+            <section>
+                <h3>UML Use-case Diagramme</h3>
+                <ul>
+                    <li>Grafische Illustration eines Use-Cases </li>
+                </ul>
+                <figure>
+                    <img src="images/use-case.png" class="plain" style="width:70%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.9</figcaption>
+            </section>
+
+
+
+
+            <section>
+                <h3>UML Sequenzdiagramme</h3>
+                <ul>
+                    <li>Beschreibt wie Objekte interagieren durch Senden von Nachrichten</li>
+                    <li>Erg&auml;nzt Klassendiagramme um dynamische Sicht</li>
+                </ul>
+                <figure>
+                    <img src="images/sequence-diagram.png" class="plain" style="width:60%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.10</figcaption>
+            </section>
+
+            <section>
+                <h3>UML Kommunikationsdiagram </h3>
+
+                <ul>
+                    <li>Semantisch &Auml;quivalent zu Sequenzdiagram</li>
+                    <ul>
+                        <li>Sequenzdiagram: Fokus auf zeitliche Abfolge</li>
+                        <li>Kommunikationsdiagram: Fokus auf Struktur</li>
+                    </ul>
+                </ul>
+
+                <figure>
+                    <img src="images/collaboration-diagram.png" class="plain" style="width:100%" />
+                    <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.11</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3>Endliche Automaten (Finite State Machines)</h3>
+
+                <div style="float:left; width:50%">
+                    <ul>
+                        <li>Eine Menge von Zust&auml;nden $Q$</li>
+                        <li>Eine endliche Menge von inputs $I$</li>
+                        <li>Transitionsfunktion $\phi : Q \times I \to Q$ </li>
+                        <ul>
+                            <li>$\phi$ kann partielle Funktion sein</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div style="float:right; width:50%">
+                    <figure>
+                        <img src="images/fsm.png" class="plain" style="width:100%" />
+                        <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.12</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+
+            <section>
+                <h3>UML Zustandsdiagramme</h3>
+                <ul>
+                    <li>Vielfältige Modellierungsmöglichkeiten</li>
+                    <li>Unterstützt verschachtelte Zustände und viele weitere Erweiterungen</li>
+                </ul>
+                <figure>
+                    <img src="images/uml-statemachine.png" class="plain" style="width:100%" />
+                    <figcaption style="font-size:x-small"></figcaption>
+                </figure>
+
+            </section>
+
+
+
+            <section>
+                <h3>UML Aktivit&auml;tsdiagramme</h3>
+                
+                <ul>
+                    <li>Modelliert den Ablauf eines Anwendungsfall</li>
+                    <ul><li>Wie werden Aktivit&auml;ten kombiniert</li></ul>
+                    <li>Erlaubt Modellierung von sequentiellen und  parallelen Aktivit&auml;ten </li>
+                    <ul>
+                        <li>Semantik basierend auf Petri Netzen</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3>UML Aktivit&auml;tsdiagramme</h3>
+
+                <img src="images/activity-diagram-elements.png" class="plain"/>
+            </section>
+
+            <section>
+                <h3>Beispiel: UML Aktivit&auml;tsdiagramme</h3>
+                <figure>
+                        <img src="images/activity-diagram.png" class="plain" style="width:50%" />                    </figure>
+            </section>
+
+
+
+            
+            <section>
+                <h3>Umsetzung in UML: OCL</h3>
+                <ul>
+                    <li>OCL: Object Constraint Language (
+                        <a href="http://www.omg.org/spec/OCL/About-OCL/">www.omg.org</a>)</li>
+                    <li>Designed um Eigenschaften/Einschr&auml;nkungen in OO Systemen zu spezifizieren</li>
+                </ul>
+
+                <div style="text-align:left">
+                    <p>Beispiel OO Design:</p>
+                    <img src="images/ocl-example.png" class="plain" style="width:80%; margin-left:auto; margin-right:auto" />
+                    <li style="font-size:x-small">Beispiel: Wikipedia (https://de.wikipedia.org/wiki/Object_Constraint_Language)</li>
+                </div>
+            </section>
+
+
+
+            <section>
+                <h3>Umsetzung in UML: OCL</h3>
+
+                <div style="text-align:left">
+                    Beispiele von Constraints in OCL:
+                    <ul style="font-size:smaller">
+                        <li class="fragment">context Person inv: self.alter &ge; 0 </li>
+                        <li class="fragment"> context Person inv: self.eltern $\rightarrow$ forAll(e|e.alter>self.alter)</li>
+                        <li class="fragment">context Person inv: self.eltern->size() &le; 2</li>
+                        <li class="fragment">context Person::bekommtKind()
+                            <br/>post: self.kinder->notEmpty()
+                            <br/> &nbsp;&nbsp;&nbsp; and self.kinder->size() > self.kinder@pre->size()</li>
+                        <li class="fragment">context Person inv: self.alter &le; 18 implies self.autos->isEmpty()</li>
+                        <li class="fragment">context Auto inv: self.erstzulassung &ge; self.baujahr</li>
+                        <li class="fragment">context Person inv: Person.allInstances()->exists(p | p.autos->size() > 0)</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section>
+                <h3>UML f&uuml;r Spezifikation</h3>
+                <table style="font-size:x-large">
+                    <tr>
+                        <td>Use-case Diagramm</td>
+                        <td>Start vom Projekt, zum Finden von top-level Funktionen</td>
+                    </tr>
+                    <tr>
+                        <td>Klassendiagramm</td>
+                        <td>Anfangen mit wichtigsten Entit&auml;ten. Detailieren w&auml;hrend ganzem Projekt</td>
+                    </tr>
+                    <tr>
+                        <td>Sequenzdiagramm</td>
+                        <td>Dokumentieren wichtige Szenarien die mehrere Objekte betreffen.
+                            Fokus auf zeitlicher Abfolge.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kommunikationsdiagramm</td>
+                        <td>Wie Sequenzdiagramm aber Fokus auf Beziehung der Klassen.</td>
+                    </tr>
+                    <tr>
+                        <td>Zustandsdiagramm</td>
+                        <td>Spezifiziert Verhalten von Instanzen einer Klasse. Erst sp&auml;t im Projekt einsetzen.</td>
+                    </tr>
+                    <tr>
+                        <td>OCL</td>
+                        <td>Kann zusammen mit jedem UML Modell verwendet werden um Einschr&auml;nkungen zu spezifizieren.</td>
+                    </tr>
+
+                </table>
+
+            </section>
+
+
+        </div>
+    </div>
+
+
+
+
+ 
+	<script src="../../slides/lib/js/head.min.js"></script>
+	<script src="../../slides/js/reveal.js"></script>
+
+	<script>
+		file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			center: false,
+            transition: 'none',           
+            /* 
+			chalkboard: {
+				src: "chalkboard.json",
+				readOnly: undefined,
+				transition: 800,
+				theme: "whiteboard",
+				//toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				//toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+				// configuration options for notes canvas and chalkboard
+				color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+				background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+				pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+			},
+            */
+            math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+			dependencies: [{
+				src: '../../slides/plugin/markdown/marked.js'
+			},
+			{
+				src: '../../slides/plugin/markdown/markdown.js'
+			},
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+			{
+				src: '../../slides/plugin/notes/notes.js',
+				async: true
+			},
+            /*
+			{
+				src: '../../slides/plugin/chalkboard/chalkboard.js'
+			},
+            */
+			{
+				src: '../../slides/plugin/highlight/highlight.js',
+				async: true,
+				callback: function () {
+					hljs.initHighlightingOnLoad();
+				}
+			},
+            { src: '../../slides/plugin/math/math.js', async: true }
+            			],
+			keyboard: {
+                /*
+				67: function () {
+					RevealChalkboard.toggleNotesCanvas()
+				}, // toggle notes canvas when 'c' is pressed
+				66: function () {
+					RevealChalkboard.toggleChalkboard()
+				}, // toggle chalkboard when 'b' is pressed
+				46: function () {
+					RevealChalkboard.clear()
+				}, // clear chalkboard when 'DEL' is pressed
+				8: function () {
+					RevealChalkboard.reset()
+				}, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+				68: function () {
+					RevealChalkboard.download()
+				}, // downlad recorded chalkboard drawing when 'd' is pressed
+                */
+			},
+		});
+	</script>
+</body>
+
+</html>
