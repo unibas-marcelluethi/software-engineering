@@ -50,20 +50,12 @@ $$
 $$
 In Worten: Die Transition ist aktiviert wenn für alle Input Stellen einer Transition, mehr Markierungen als vom entsprechenden Gewicht auf der Flussreaktion gefordert, vorhanden sind. 
 In unserem einfachen Beispiel ist Transition $$t_1$$ also aktiviert und kann schalten.
-![petri-netz](../../slides/images/petri-net-simple-initial.png)
+![petri-netz] (../../slides/images/petri-net-simple-initial.png)
                   
 Nun schauen wir uns die Dynamik noch an einem etwas komplexeren Beispiel an:
 ![petri-netz](../../slides/images/petri-net-evolution-0.png)
 In diesem Beispiel sind die Gewichte nicht explizit angegeben, alle Gewichte sind also 1 gemäss Definition. Wir sehen, dass sowohl Transition $$t_1$$ als auch Transition $$t_2$$ aktiviert sind. Wir haben nun drei mögliche Zustände im nächsten Zeitschritt. 
-<div style="float:left;width:33%">
-    <img src="../../slides/images/petri-net-evolution-1.png"/>
-</div>
-<div style="display:inline-block;margin:0 auto">
-    <img src="../../slides/images/petri-net-evolution-2.png"/>
-</div>
-<div style="float:right;width:33%">
-    <img src="../../slides/images/petri-net-evolution-3.png"/>
-</div>
+![images](../../slides/images/petri-net-evolutions.png)
 
 ## Analyse
 
