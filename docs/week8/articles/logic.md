@@ -21,21 +21,26 @@ $$x > y \texttt{ and } y > z \texttt{ implies } x > z $$
 Diese Aussage besagt, dass wenn $$x > y$$ und $$y > z$$ ist, dann ist auch $$x > z$$. Dies ist offensichtlich eine wahre Aussage, unabhängig davon, wie ich die Werte der Variablen $$x,y$$ und $$z$$ wähle. 
 
 $$x = y \texttt{ iff } y = x$$
+
 Diese Aussage besagt, dass $$x=y$$ äquivalent ist zu $$y=x$$. Auch dies ist eine wahre Aussage. 
 
 
 $$ x + 1 < x - 1$$
+
 In diesem Beispiel haben wir eine Aussage, die immer falsch ist. Auch hier ist der Wahrheitswert unabhängig vom Wert der Variablen $$x$$.
 
 $$x > 3 \texttt{ or } x  < -6$$
+
 Im Gegensatz dazu können wir den Wahrheitswert dieser Formel nur für konkrte Werte von $$x$$ bestimmen, nicht aber im allgemeinen.
 
 $$\texttt{forall } x,y,z \; (x > y \texttt{ and } y > z \texttt{ implies } x > z)$$
+
 Diese Aussage besagt, dass für alle Werte $$x,y,z$$ gilt, dass immer
 wenn $$x > y$$ ist, und $$y > z$$ gilt, dass dann $$x > z$$ gilt. 
 Die Aussage ist dieselbe wie im ersten Beispiel. Jedoch haben wir hier den Quantoren $$\texttt{forall}$$ verwendet, d.h. die Aussage muss für alle Werte von $$x,y,z$$ gelten, damit die Aussage wahr ist. Wir haben hier also keine freien Variablen in der Formel, welche den Wert des Ausdrucks bestimmen. 
 
 $$ \texttt{forall } x \; (\texttt{ exists } \; y \; (y=x + z))$$ 
+
 In dieser Aussage haben wir eine freie Variable, nämlich $$z$$. 
 Die Aussage besagt, dass wir, egal wie wir $x$ wählen, immer einen Wert für $y$ finden, für den gilt dass $$y=x+z$$. Dies ist
 offensichtlich wahr, nämlich dann, wenn wir $$z=y-x$$ setzen.
@@ -43,11 +48,13 @@ offensichtlich wahr, nämlich dann, wenn wir $$z=y-x$$ setzen.
 ## Spezifizieren von Programmen
 Wir können nun logische Aussagen nutzen um Eigenschaften eines Programms $$P$$ 
 zu spezifizieren. Wir nutzen folgende Notation:
+
 $$
  \{\texttt{pre}(i_1, i_2, \ldots, i_n\} \\ P \\ \{\texttt{post}(o_1, o_2, \ldots, o_m,
                 i_1, i_2, \ldots, i_n\} \\ 
 \},
 $$
+
 wobei $$i_1, \ldots, i_n$$ die Eingaben und $$o_1, \ldots, o_m$$ die Ausgaben bezeichnen, $$\texttt{pre}$$ die *Vorbedingung* (precondition) und
 $$\texttt{post}$$ (postcondition) die Nachbedingung bezeichnet. Die VorBedingungen sind die Bedingungen, die für das Programm vor dem Aufruf gelten müssen. Die Nachbedingungen spezifizieren, was nach erfolgreichem Aufruf des Programms gilt.
 
@@ -56,17 +63,21 @@ $$\texttt{post}$$ (postcondition) die Nachbedingung bezeichnet. Die VorBedingung
 $$
 \{ \texttt{ exists } z \; (i_1 = z \cdot i_2) \} \\ P \\ \{ o_1 = i_1 / i_2\} 
 $$
+
 In diesem Beispiel wird als Vorbedinung verlangt, dass die Zahl Teilbar ist. Als Nachbedinung wird angegeben, dass die Ausgabe $$o_1$ genau der Quotient vom ersten und zweiten Eingabeargument $$i_1, i_2$$ ist. 
 
 Wir können die Anforderung an das Programm auch erhöhen. Die Anforderungen an ein Programm werden höher, wenn  wir die Vorbedingungen abschwächen, aber die Nachbedinungen verstärken. Das Programm muss also mehr leisten:
+
 $$ 
 \{ i_1 > i_2 \} \\ P \\ \{ i_1 = i_2 \cdot o_1 + o_2 \texttt{ and } o_2 \ge 0 \wedge o_2 \le i_2\} 
 $$
+
 In diesem Beispiel hier erlauben wir also nun auch ganzzahlige Division für zwei Zahlen, die nicht ganzzahlig Teilbar sind. Das Programm muss also für eine grössere Klasse von Eingabewerten die spezifizierten Resultate liefern. 
                 
 ### Beispiel 3: Grösster gemeinsamer Teiler
 Das folgende, etwas kompliziertere Beispiel zeigt ein Programm, 
 das den grössten gemeinsamen Teiler zweier Zahlen berechnet. 
+
 $$
     \begin{split} \{ & i_1 > 0 \texttt { and } i_2 > 0 \} \\ &P \\ \{ & \\ & (\texttt{ exists } z_1, z_2 \; (i_1 = o \cdot z_1 \texttt{ and } i_2 = o \cdot
                     z_2) \\ & \texttt{ and } \texttt{ not } \\
@@ -96,7 +107,7 @@ also sicherstellen, dass kein Element mehrmals vorkommen kann.
 
 $$
     \begin{split} &\text{// Invariante in Klasse Set} \\ &\text{ // Set wird mit Array impl definiert } \\ &\forall i, j \; (1
-    \le i \le \text{ length } \texttt{ and } 1 \le j \le \text{ length } \texttt{ and } i \neq j) \\ &\implies \text{impl}[i]
+    \le i \le \text{ length } \texttt{ and } 1 \le j \le \text{ length } \texttt{ and } i \neq j) \\ &\texttt{implies} \text{impl}[i]
     \neq \text{impl}[j] \end{split}
 $$
      
