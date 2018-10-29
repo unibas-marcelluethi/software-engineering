@@ -47,7 +47,13 @@
 
                 </div>
                 
-                <aside class="notes">                                     
+                <aside class="notes">               
+                    Herzlich willkommen zu diesem Screencast. 
+                    In diesem Screencast wollen wir uns zwei Klassen von Spezifikationen näher anschauen, 
+                    nämlich konstruktive und deskriptive Spezifikationen. Wir werden von jeder klasse wichtige 
+                    Beispiel sehen. Wir werden uns zuerst die unterschiede anhand eines kleinen Beispiels
+                    aus der Mathematik anschauen, bevor wir klassische Beispielspezifikationsmethoden aus dem 
+                    Software Engineering anschauen. 
                 </aside>
 
 			</section>
@@ -64,6 +70,21 @@
                     <li>Informell, Semiformal, Formal</li>
                 </ul>
 
+                <aside class="notes">
+                    Wie gesagt können wir zwei Klassen von Methoden für die Spezifikation von Softwaresystemen unterscheiden. 
+                    Die erste Klasse sind die Konstruktiven Spezifikationsmethoden. Bei diesen Methoden wird das Verhalten
+                    der Software anhand einer Ausführungsanweisung spezifiziert. Wir können uns vorstellen, dass wir zumindest
+                    theoretisch, eine abstrakte Machine konstruieren könnten, die unsere Spezifikation ausführt.
+                    Die zweite Klasse sind die Deskriptiven Spezifikationen. Hier wird nur beschrieben was die Software macht, also 
+                    was die Eigenschaften sind. Im Gegensatz zu konstruktiven Spezifikationen, wird hier kein Ablauf spezifiziert - es wird
+                    nur beschrieben, was gelten muss.                    
+                    
+                    Sowohl konstruktive als auch deskriptive Spezifikationen können wir auf unterschiedlichen Formalitätsstufen
+                    erstellen. Wir unterscheiden grob zwischen informellen, semiformalen und formalen spezifikationen. 
+                    Informelle spezifikationen sind meistens spezifikationen in natürlicher Sprache, während formale spezifikationen 
+                    häufig eine mathematisch wohldefinierte Basis haben.
+                    
+                </aside>
             </section>
 
             <section>
@@ -83,9 +104,26 @@
                             <li>Schnur muss immer gespannt sein</li>
                         </ul>                                        
                     </ol>
-
                 </div>
             </div>
+
+            <aside class="notes">
+                Um den unterschied zwischen konstruktiver und deskriptiver Spezifikation zu verdeutlichen, 
+                schauen wir uns ein ganz einfaches Beispiel an. Wir wollen eine geometrische Figur beschreiben. 
+
+                Die Konstruktive Spezifikation könnte wie folgt aussehen:
+                1.
+                2.
+                3.
+                4.
+
+                Wir sehen, dass wir diesen Schritten folgen können und den ganzen Prozess simulieren können. Wir können 
+                dann beobachten, was für eine Figur wir erhalten. 
+
+                Sie könenn ja das Video kurz anhalten und das für sich selbst probieren. Was erhalten Sie für eine geometrische Figure?
+            </aside>
+
+
             </section>
 
         
@@ -102,8 +140,17 @@
                                         \[ \frac{x^2}{a^2} + \frac{y^2}{b^2} = c \]
                                     wobei $a, b, c > 0$ zu w&auml;hlende Konstanten sind</li>
                             </ol>
-                    </div>
+                    </div>                    
                 </div>
+
+                <aside class="notes">
+                    Die deskriptive Spezifikation von der selben geometrischen Figur sieht hingegen ganz anders aus. 
+                    Sie ist durch die gleichung x^2/a^2 + y^2/b^2 = c beschrieben. 
+
+                    Wir können daraus keinen Prozess herleiten, wie wir diese Spezifikation umsetzten. Jedoch bietet uns 
+                    die Spezifikation einen einfachen TEst, um zu entscheiden ob eine gegebene Figur die Eigenschaften erfüllt.
+                </aside>
+
                 </section>
     
         <section>
@@ -111,6 +158,11 @@
         
                 <h1 style="margin-top:20%"> Beispiele wichtiger Spezifikationsmethoden </h1>
     
+                <aside class="notes">
+                    Im folgenden wollen wir uns nun einige klassische Spezifikationsmethoden in der Softwareentwicklung 
+                    anschauen. Diese wurden bereits in den 70er Jahren entwickelt, sind jedoch auch in der
+                    modernen Softwareentwicklung noch wichtig. 
+                </aside>
             </section>
         
             <section>
@@ -128,6 +180,16 @@
                             </ul>
                         </ul>
         
+
+                    <aside class="notes">
+                        Wir beginnen mit dem Datenflussdiagramm. 
+                        Datenflussdiagramme gehören zur klasse der semi-formalen, konstruktiven Spezifikationsmethoden. 
+
+                        Jede Spezifikationart bietet eine bestimmt Sichtweise auf das System. In diesem Fall wird das
+                        System als Kollektion von Daten angeschaut, die durch funktionen Transformiert werden. 
+                        Das heisst, der Daten und Informationsfluss steht im Zentrum. 
+                        Datenflussdiagramme erlauben usn auch zu spezifizieren, welche Daten persistent gespeichert werden.                        
+                    </aside>
                     </section>
         
 
@@ -137,12 +199,24 @@
                                 <img src="../../slides/images/dataflow-arithmetic.png" style="width:40%" class="plain" />
                                 <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Abbildung 5.3</figcaption>
                             </figure>
+
+                            <aside class="notes">
+                                Wir beginnen mit einem einfachen Beispiel. ....
+
+                                Stoppen sie das video kurz, und überlegen Sie sich genau, welche Rechnung hier denn durchgeführt wird.                                 
+                            </aside>
+
                         </section>
 
                     <section>
                         <h1>Datenflussdiagramme</h1>
         
                         <img src="../../slides/images/dataflow-elements.png" class="plain" />
+                        <aside class="notes">
+                            Auf dieser Folie sind alle Diagrammelemente nochmals zusammengefasst. 
+                            Der Kreis ...
+
+                        </aside>
                     </section>
         
     
@@ -152,12 +226,31 @@
                                 <img src="../../slides/images/dataflow-library.png" class="plain" width="80%" />
                                 <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Abbildung 5.4</figcaption>
                             </figure>
+
+                            <aside class="notes">
+                                Hier sehen wir ales etwas umfangreiches Datenflussdiagramm, welches ein Bibliothekszenario
+                                illustriert.
+                                ...
+                            </aside>
+        
+
                         </section>
 
                     <section>
                         <h1>Pr&auml;zisierung</h1>
                         <figure>
                             <img src="../../slides/images/dataflow-ex-refinement-1.png" class="plain" width="60%" />
+
+                            <aside class="notes">
+                                Wir haben letzte Woche gesehen, dass wir spezifikationen auf  verschiedenen 
+                                Detailierungsgraden verstehen kann. Dies ist mit
+                                Datenflussdiagrammen einfach möglich. 
+                                Auf dem ersten Abstraktionsgrad sehen wir vielleicht nur 1 Funktion, die eine Eingabe nimmt 
+                                und einen entsprechende Ausgabe produziert. Auf dem nächsten Detaillevel kann ich spezifizieren, 
+                                dass diese Funktion aus 4 Teilfunktionen A1 bis A4 zusammengesetzt ist. 
+                                Einen weiteren Detaillevel tiefer, sehe ich, dass auch dir Funktion A2 wieder aus einzelnen 
+                                Funktionen zusammengesetzt ist.  
+                            </aside>
                     </section>
         
                     <section>
@@ -175,9 +268,14 @@
                     <section>
                         <h1>Datenflussdiagramm Beispiel</h1>
                         <figure>
-                            <img src="../../slides/images/dataflow-library.png" class="plain" width="80%" />
+                            <img src="../../slides/images/dataflow-library-2.png" class="plain" width="80%" />
                             <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Abbildung 5.4</figcaption>
                         </figure>
+                        <aside class="notes">
+                                In unserem Bibliothekszenario können wir zum Beispiel die Funktion Buch Ausgeben 
+                                näher spezifizieren. 
+                            </aside>
+    
                     </section>
         
                     <section>
@@ -186,7 +284,12 @@
                             <img src="../../slides/images/dataflow-library-refinement.png" class="plain" width="80%" />
                             <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al. Abbildung 5.5</figcaption>
                         </figure>
-               
+
+                        <aside class="notes">
+                            Wir können disen Prozess zum Beispiel in die zwei Funktionen FindeBuch und HoleBuch runterbrechen, 
+                            die hier dargestellt sind. 
+                        </aside>
+
                     </section>
         
         
@@ -194,9 +297,31 @@
                     <section>
                         <h1>Vor / Nachteile von Datenflussdiagrammen</h1>
                         <ul>
-                            <li>Vorteil: Einfach zu lesen</li>
-                            <li>Nachteil: Keine Formale Definition der Semantik</li>            
+                            <li>Vorteile</li>
+                            <ul>
+                                <li>Intuitive Semantik, Einfach zu lesen</li>
+                                <li>Kann auch von Kunden verstanden werden</li>
+                                <li>Natürliche Aufteilung in verschiedene Detaillevel</li>
+
+                            </ul>
+                            &nbsp;
+                            <li>Nachteil
+                                <ul>
+                                    <li> Keine formale Definition der Semantik</li>            
+                                    </ul>
                         </ul>
+
+                        <aside class="notes">
+                            Zusammenfassend kann man sagen, dass Datenflussdiagramme eine sehr einfache und intuitive 
+                            Art sind, den Datenfluss in einem System zu spezifizieren. Durch die Einfachheit lassen Sie sich 
+                            auch einfach in der Kommunikation mit einem Kunden einsetzten. 
+                            Zudem, können wir die Funktionalität auf verschiedenen Detailierungsebenen spezifizieren und somit
+                            das System je nach Bedarf sehr abstrakt oder sehr detailliert beschreiben. 
+
+                            Ein Nachteil von Datenflussdiagrammen ist aber sicherlich, dass die Semantik nicht genau spezifizieren
+                            ist. Während die Notation weitgehend standardisiert ist, fehlen doch viele Details um diese Diagramme 
+                            präzise interpretieren zu können. Es handelt sich hier eben nur um eine eine Semi-formale spezifikationsmethode.
+                        </aside>
                         </section>
 
                         <section>
@@ -210,6 +335,11 @@
                                     <li>Gibt D dieselben Daten an E und F?</li>
                                 </ul>
                           
+                                <aside class="notes">
+                                    Ein erstes Beispiel von möglichen Unklarheiten sehen wir hier illsutriert. Es ist nämlich nicht ganz klar, 
+                                    was dieses Diagramm über den Datenfluss aussagt. Braucht nurn die Funktion D alle Informationen von A B und C?
+                                    Auch wissen wir nicht, ob D als Output dieselben dAten an E und F weitergibt oder nicht. 
+                                </aside>
                         </section>
                   
                     <section>
@@ -228,12 +358,17 @@
                             </ul>
                             <li>A und B sind autonome Prozesse</li>
                             <ul>
+                                <li>A produziert kontinuierlich </li>
                                 <li>B kann Datum mehrmals lesen </li>
-                                <li>Pipe Semantik</li>
                             </ul>
                             </ul>
                         </ul>
         
+                        <aside class="notes">
+                            Auch der Kontrollfluss ist nicht bestimmt durch das Diagramm. Sind A und B hier sequentielle funktionen oder
+                            autonome Prozesse? Anders gesagt, kann A kontinuierlich Daten produzieren und B lesen, oder muss
+                            A immer warten, bis B ein Datum konsumiert hat?
+                        </aside>
         
                     </section>
         
@@ -263,6 +398,23 @@
                             <img src="../../slides/images/erm-diagram.png" class="plain" />
                         </div>
         
+
+                        <aside class="notes">
+                            Wir kommen nun zu einer zweiten Spezifikationsmethode, nämlich den Entity Relationship
+                            Diagrammen. Diese wurden fast zur selben Zeit wie die DAtenflussdiagramme entwickelt. 
+                            Bei ER Diagrammen handelt es sich aber um eine deskriptive Spezifikationsmethode. 
+                            ER Diagramm können als Vorläufer der UML Klassendiagramme gesehen werden. Sie zeigen 
+                            die Beziehung zwischen Etnitäten. 
+                             Wikipedia definiert den Begriff Entitat als ein individuell identifizierbares Objet der Wirklichkeit.                              
+                             Unter Entitäten verstehen wir im wesentlichen Objekte, die wir in UML als Klassen definieren würden. 
+                             Jeder Entiät hat verschiedene
+                             Attribute die die individuellen Instanzen charakterisieren. 
+                             Wir sehen hier bereits ein kleines Beispiel eines ER Diagramms. 
+                             Wir haben zwei Entitäten, nämlich Student und Vorlesung. Als Attribute von Student haben wir 
+                             Merkmale wie Name Alter oder Geschlecht.
+                             Wir sehen auch, dass wir eine Relation zwischen Student und Vorlesung haben. 
+                        </aside>
+
                     </section>
                     <section>
                         <h1>ERM: Kardinalit&auml;ten</h1>
@@ -275,37 +427,64 @@
                             </ul>
                         </ul>
         
+                        <aside class="notes">
+                            Die Beziehung kann weiter über die Kardinalitäten detailiert werden. 
+                            Dies ist hier durch Pfeile codiert. Die Notation erinnert an die Funktionsschreibweise von Funktionen
+                            in der Mathematik. Genau wie bei funktionen, bedeutet ein Pfeil, dass zu jedem Element von der 
+                            Ursprungsentität genau ein Element zugeordnet ist. Umgekehrt können aber zu jeder Zielentität 
+                            mehrere Instanzen der Ursprungsidentität gehören. 
+                            Die Notation ist aber nicht standardisiert, und viele andere Varianten existieren um die 
+                            Kardinalitäten zu spezifizieren. 
+                        </aside>
+
                     </section>
                     <section>
                         <h1>ERM: Beispiel</h1>
         
-                        <img src="../../slides/images/erm-diagram-cardinalities.png" style="width:80%" class="plain" />
-                        <ul>
-                            <li>Beziehungen k&ouml;nnen partiell sein:</li>
-                            <ul>
-                                <li>Nicht alle Elemente sind Teil der Beziehung</li>
-                                <li>Beispiel: Nicht jeder Mitarbeiter leitet ein Projekt</li>
+                        <img src="../../slides/images/erm-diagram-cardinalities.png" style="width:100%" class="plain" />                    
+                    
         
-                            </ul>
-                        </ul>
-        
+                        <aside class="notes">
+                            Wir schauen uns nun nochmals ein konkretes Beispiel an. Aus diesem Diagramm können wir 
+                            ablesen, dass jeder Mitarbeiter genau von einer Abteilung angestellt ist. Eine Abteilung kann 
+                            aber natürlich mehrere Mitarbeiter haben. Ausserdem kann jeder Mitarbeiter für verschiedene 
+                            Projekte arbeiten, und jedes Projekt besteht aus mehreren Mitarbeitern. Jedoch wird jedes
+                            Projekt genau von einem Mitarbeiter geleitet, und ein Mitarbeiter kann auch nicht mehrere
+                            Projekte leiten. 
+                        </aside>
                     </section>
         
                     <section>
                         <h1>Entity Relationship Model</h1>
                         <ul>
-                            <li>Komplementieren Datenflussdiagramme</li>
-                            <ul>
-                                <li>Vergl. OO: Daten und Operationen sind zusammengefasst</li>
-                            </ul>
-                            <li>Noch immer sehr popul&auml;r f&uuml;r Datenmodellierung</li>
+                            <li>Trotz alter noch sehr popul&auml;r f&uuml;r Datenmodellierung</li>
                             <li>Einfach - daher auch f&uuml;r nicht Experten verst&auml;ndlich</li>
                             <li>Nur Semi-formal</li>
+                            &nbsp;
+                            <li>Komplementieren Datenflussdiagramme</li>
                             <ul>
-                                <li>Keine Einheitliche Notation oder Semantik</li>
+                                <li>Datenflussdiagramm: Operationen auf Daten</li>
+                                <li>Entity Relationship Modelle: Beziehung zwischen Daten</li>
                             </ul>
+
                         </ul>
         
+                    <aside class="notes">
+                        Wie zuvor erwähnt, sind Entity relationship Modelle bereits sehr alte MOdelle. 
+                        Vor allem in der Datenmodellierung, also zum Beispiel für Datenbankdesign, sind diese Modelle jedoch
+                        auch heute noch immer sehr popular, um die Zusammenhänge zwischen den verschiedenen Entitäten zu 
+                        zeigen. 
+                        
+                        Genau wie Datenflussdiagramme, sind auch diese Diagramme sehr einfach zu verstehen und auch für nicht
+                        Experten Verständlich. Jedoch sind auch diese Diagramme nur Semi-formal definiert. 
+
+                        Entity Relationship Diagramme sind  quasi das Gegenstück zu Datenflussdiagramme. 
+                        Bei Datenflussidagrammen stehen die Operatinen auf den Daten im Vordergrund, also der Datenfluss und wie die 
+                        Daten durch  das System transformiert werden. ER-Diagrammen hingegen beschreiben welche Entitäten, und somit
+                        welche Daten, zusammen in Beziehung stehen.
+                        
+                    </aside>
+
                     </section>
 
 
@@ -317,12 +496,9 @@
                                 <li>Formale, konstruktive Methode</li>
                                 <ul>
                                 <li>Menge von Zust&auml;nden $Q$</li>
-                                <li>Menge von Inputs $I$</li>
-                                <li>Startzustand $s \in Q$ </li>
+                                <li>Menge von Inputs $I$</li>                                
                                 <li>Transitionsfunktion: $\phi : Q \times I \to Q$ </li>
-                                <ul>
-                                    <li>$\phi$ kann partielle Funktion sein</li>
-                                </ul>
+                                <li>Startzustand $s \in Q$ </li>
                             </ul>
                             </ul>
                         </div>
@@ -332,11 +508,35 @@
                                 <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.12</figcaption>
                             </figure>
                         </div>
+
+                        <aside class="notes">
+                            Als letztes schauen wir uns noch kurz eine sehr wichtige, konstruktive Methode an, nämlich die 
+                            Endlichen Automaten. Mit endlichen Automaten modellieren wir zustände in einem System. 
+                            Es handelt sich hier um eine konstruktive, formale methode. Die Beschreibung ist präzise genug, 
+                            dass wir direkt eine entsprechende Implementation schreiben könnten, um die Spezifikation zu simulieren . 
+
+                            Um einen endlichen Automaten zu spezifizieren, definieren wir die Menge von möglichen Zuständen Q, 
+                            eine Menge on möglichen Inputs I, sowie eine Transitionsfunktion. 
+                            Die Transitionsfuktion definiert für jeden möglichen Zustand und jeden möglichen Input im System, 
+                            in welchen Zustand das System wechseln wird. 
+                            Damit wir das System starten können, müssen wir auch noch einen Anfangszustand definieren. 
+                            Auch endliche Automaten haben eine graphische Darstellung. In diesem Beispiel hier sehen wir 
+                            4 mögliche Zustände, q_0 bis q_4 und3 Mögliche Inputs, a b und z. Die Kanten im Graphen 
+                            repräsentieren die Transistionsfunktion. Wenn wri beispielsweise in Zustand q_1 sind und den Input a sehen, 
+                            wechseln wir in Zsutand q_2. Bei input b wechseln wir in zustand q_4.                         
+                        </aside>
                     </section>
         
                     <section>
                         <h1>Beispiel: Endliche Automaten</h1>
                         <img src="../../slides/images/fsm-lightswitch.png" class="plain"/>
+                        <aside class="notes">
+                            Das vielleicht einfachste praktische Beispie eines endlichen Automaten ist ein einfacher Schalter. 
+                            Wenn das Licht aus ist, und wir den Schalter drücken, dann geht das licht an. Wenn das Licht an ist
+                            und wir den schalter drücken, geht das Licht wieder aus. Wir haben hier also nur Zwei Zustände, an und aus, 
+                            und einen möglichen Input, nämlich schalter gedrückt. Wir werden spáter noch sehen, dass dieses
+                            Modell in etwas erweiterter Form auch ein wichtiger Bestandteil von UML ist. 
+                        </aside>
                     </section>
 
                 </div>
