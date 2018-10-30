@@ -19,7 +19,7 @@ und implementieren diese in der einfachst möglichen Form. Die Funktionalität m
 Das Ziel hier ist, dass sie sich langsam an das Problem herantasten und ein Gefühl für die Komplexität der Aufgabe bekommen.  Ausserdem sollten Sie das Problem so weit technisch Überblicken, dass Sie allenfalls die Anforderungen korrigieren können und ein Softwaredesign erstellen können. 
 
 ## Technische Dokumentation erstellen
-Erstellen Sie die Technische Dokumentation. Nutzen Sie dazu [dieses Template](./project/technical-doc.html). 
+Erstellen Sie die Technische Dokumentation. Nutzen Sie dazu [dieses Template](../templates/technical-doc.html). 
 
 Neben den im Template vorgegebenen Aspekten, muss das Dokument  mindestens die folgenden Komponenten enthalten:
 * ein UML Klassendiagramm, welches die Beziehungen zwischen den relevanten Klassen von Ihrer Erweiterung zeigt. 
@@ -33,5 +33,5 @@ Sie finden auf [Adam](https://adam.unibas.ch/goto_adam_file_737986_download.html
 Speichern Sie die Dokumente im ```docs``` Ordner von Ganttproject ab. 
 
 Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie ```marcelluethi```, ```schoenja``` und ```MichaelPluess``` als Reviewer an. Abgabetermin ist Dienstag, 13. November, 23:55. 
-Die Besprechung mit den Betreuern findet am 14. Oktober, gemäss diesem [Plan](https://adam.unibas.ch/goto_adam_fold_702724.html) statt. 
+Die Besprechung mit den Betreuern findet am 14. Oktober, gemäss diesem [Plan](https://adam.unibas.ch/goto_adam_file_734506_download.html) statt. 
 Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 20. November, 23.55.  
