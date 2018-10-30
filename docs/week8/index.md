@@ -1,4 +1,4 @@
-# Woche 7: Spezifikation von Software
+# Woche 8: Konstruktive und Deskriptive Spezifikationen
 
 # Studium
 

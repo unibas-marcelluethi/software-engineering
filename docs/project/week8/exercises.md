@@ -27,7 +27,9 @@ Neben den im Template vorgegebenen Aspekten, muss das Dokument  mindestens die f
 * pro Gruppenmitglied sollen mindestens 2 OCL Constraints formuliert werden. (In einer 4er Gruppe sollen also mindestens 8 Constraints formuliert werden.)
 
 Sie finden auf [Adam](https://adam.unibas.ch/goto_adam_file_737986_download.html) zwei Beispielspezifikationen für die SemOrg und Fensterheber Fallstudie, die sie als Inspiration nehmen können. 
-*Bemerkung: In diesen Dokumenten finden Sie auch Use-Cases. Wir haben diese bereits als Teil vom Pflichtenheft beschrieben.*
+*Bemerkung 1: In diesen Dokumenten finden Sie auch Use-Cases. Wir haben diese bereits als Teil vom Pflichtenheft beschrieben.*
+
+*Bemerkung 2: Wir empfehlen die verwendung der Open Source Software [Modelio](https://www.modelio.org/).
 
 ## Abgabe:
 Speichern Sie die Dokumente im ```docs``` Ordner von Ganttproject ab. 
