@@ -23,7 +23,7 @@ Erstellen Sie die Technische Dokumentation. Nutzen Sie dazu [dieses Template](..
 
 Neben den im Template vorgegebenen Aspekten, muss das Dokument  mindestens die folgenden Komponenten enthalten:
 * ein UML Klassendiagramm, welches die Beziehungen zwischen den relevanten Klassen von Ihrer Erweiterung zeigt. 
-* pro Gruppenmitglied soll jeweils die Dynamik für einen Teilaspekt mithilfe eines Sequenz/Kollaborations oder Aktivitätsdiagramms spezifiziert werden. (In einer 4er Gruppe, sollen also 4 dynamische Diagramme erstellt werden.)
+* pro Gruppenmitglied soll jeweils die Dynamik für einen Teilaspekt mithilfe von Sequenz/Kollaborationsdiagrammen, Aktivitätsdiagrammen oder Zustandsdiagrammen spezifiziert werden. (In einer 4er Gruppe, sollen also 4 dynamische Diagramme erstellt werden. Wählen Sie die jeweils passendste Diagrammart für jeden zu spezifizierenden Teilaspekt ihres Systems).
 * pro Gruppenmitglied sollen mindestens 2 OCL Constraints formuliert werden. (In einer 4er Gruppe sollen also mindestens 8 Constraints formuliert werden.)
 
 Sie finden auf [Adam](https://adam.unibas.ch/goto_adam_file_737986_download.html) zwei Beispielspezifikationen für die SemOrg und Fensterheber Fallstudie, die sie als Inspiration nehmen können. 
