@@ -1,6 +1,6 @@
 # Prototyp und Design
 
-*Bevor Sie die folgenden Aufgaben bearbeiten, vergewissern Sie sich bitte, dass Sie das [Dokument Projektübersicht](../project-summary.html) gelesen haben, und die entsprechenden Schritte und deadlines kennen. 
+*Bevor Sie die folgenden Aufgaben bearbeiten, vergewissern Sie sich bitte, dass Sie das [Dokument Projektübersicht](../project-summary.html) gelesen haben, und die entsprechenden Schritte und Deadlines kennen. 
 Sie sollten auch alle Unterrichtsmaterialen (also Video und Artikel) bis und mit [Woche 8](../week8/guide.html) durchgearbeitet haben*
 
 Erstellen Sie, ausgehend von ```develop``` branch in Ihrem Ganttproject repository, einen neuen Featurebranch ```designdoc```.
@@ -23,13 +23,14 @@ Erstellen Sie die Technische Dokumentation. Nutzen Sie dazu [dieses Template](..
 
 Neben den im Template vorgegebenen Aspekten, muss das Dokument  mindestens die folgenden Komponenten enthalten:
 * ein UML Klassendiagramm, welches die Beziehungen zwischen den relevanten Klassen von Ihrer Erweiterung zeigt. 
-* pro Gruppenmitglied soll jeweils die dynamik für einen Teilaspekt mithilfe eines Sequenz/Kollaborations oder Aktivitätsdiagramms spezifiziert werden. (In einer 4er Gruppe, sollen also 4 dynamische Diagramme erstellt werden.)
+* pro Gruppenmitglied soll jeweils die Dynamik für einen Teilaspekt mithilfe eines Sequenz/Kollaborations oder Aktivitätsdiagramms spezifiziert werden. (In einer 4er Gruppe, sollen also 4 dynamische Diagramme erstellt werden.)
 * pro Gruppenmitglied sollen mindestens 2 OCL Constraints formuliert werden. (In einer 4er Gruppe sollen also mindestens 8 Constraints formuliert werden.)
 
 Sie finden auf [Adam](https://adam.unibas.ch/goto_adam_file_737986_download.html) zwei Beispielspezifikationen für die SemOrg und Fensterheber Fallstudie, die sie als Inspiration nehmen können. 
+
 *Bemerkung 1: In diesen Dokumenten finden Sie auch Use-Cases. Wir haben diese bereits als Teil vom Pflichtenheft beschrieben.*
 
-*Bemerkung 2: Wir empfehlen die verwendung der Open Source Software [Modelio](https://www.modelio.org/).
+*Bemerkung 2: Wir empfehlen die Verwendung der Open Source Software [Modelio](https://www.modelio.org/).
 
 ## Abgabe:
 Speichern Sie die Dokumente im ```docs``` Ordner von Ganttproject ab. 

@@ -10,7 +10,7 @@ Eigenschaften durch logisches schliessen herleiten.*
 Genau wie ein arithemtischer Ausdruck, besteht ein logischer Ausdruck aus Variablen, Funktionen, Konstanten und Klammern. 
 Das Resultat ist aber nicht eine Zahl, sondern immer ein boolscher Wert (also Wahr oder Falsch).
 
-Einzelne Ausdrücke können wir mit den logischen Konnektoren $$\texttt{und}$$, $$\textt{oder}$$, $$\texttt{impliziert}$$ und $$\texttt{genau dann, wenn}$$ verbunden werden. Der Wahrheitswert jedes Ausdrucks kann mittels der Negation \texttt{nicht} negiert werden. 
+Einzelne Ausdrücke können wir mit den logischen Konnektoren $$\texttt{und}$$, $$\texttt{oder}$$, $$\texttt{impliziert}$$ und $$\texttt{genau dann, wenn}$$ verbunden werden. Der Wahrheitswert jedes Ausdrucks kann mittels der Negation \texttt{nicht} negiert werden. 
 Mittels den *Quantoren* $$\texttt{exists}$$ und $$\texttt{forall}$$ können wir audrücken, dass eine logische Aussage für mindestens 1 oder für alle möglichen Zuweisungen an die entsprechende Variable gelten muss. 
 
 Wir veranschaulichen dies an ein einigen Beispielsätzen:
