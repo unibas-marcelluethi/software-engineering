@@ -13,8 +13,8 @@
     * Artikel: [online](./articles/logic.html)
 
 * Konstruktive und Deskriptive Spezifikationen
-    * Video:  [mp4](../../slides/images/construction.jpg),  
-    * Slides: [online](./slides/uml.htmll), [Druckversion](./slides/uml?print-pdf)
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/TnuF2C8R4Keqd6F),  
+    * Slides: [online](./slides/uml.html), [Druckversion](./slides/uml.html?print-pdf)
 
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
