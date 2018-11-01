@@ -60,7 +60,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
 | 31. Oktober, 08:00 | [Individueller Test Woche 7](https://adam.unibas.ch/goto_adam_tst_735167.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_735167.html) | 
-| 6. Oktober, 23.55 | [Bonusblatt](https://unibas-sweng.github.io/software-engineering/exercises/adt-bonus-exercise.html) | [Adam](https://adam.unibas.ch/goto_adam_exc_734775.html) / Github | (freiwillig) |
+| 6. November, 23.55 | [Bonusblatt](https://unibas-sweng.github.io/software-engineering/exercises/adt-bonus-exercise.html) | [Adam](https://adam.unibas.ch/goto_adam_exc_734775.html) / Github | (freiwillig) |
 
 #### Projekt
 
