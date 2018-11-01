@@ -25,7 +25,7 @@ Die folgenden Lernziele sollten während oder nach der Vorlesung vom 7. November
 
 ### Vorbereitung für die Vorlesungsstunde vom Mittwoch:
 
-* Schritt 1: Schauen Sie sich das Video "Konstruktive und Deskriptive Spezifikationen" an  ([Video](../../slides/images/construction.jpg), [Slides](./slides/constructive-descriptive-specs.html))
+* Schritt 1: Schauen Sie sich das Video "Konstruktive und Deskriptive Spezifikationen" an  ([Video](https://drive.switch.ch/index.php/s/gGMih5zZc7V9gzA), [Slides](./slides/constructive-descriptive-specs.html))
 * Schritt 2: Lesen Sie den Artikel "Petrinetze"  ([Artikel](./articles/petrinets.html))
 * Schritt 3: Lesen Sie den Artikel "Logische Spezifikationen" ([Artikel](./articles/logic.html))
 * Schritt 4: Schauen Sie sich das Video "Spezifikationsmöglichkeiten mit der UML" an ([Video](../../slides/images/construction.jpg), [Slides](./slides/uml.html)) 

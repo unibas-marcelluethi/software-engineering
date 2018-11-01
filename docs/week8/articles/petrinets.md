@@ -66,11 +66,11 @@ In diesem Beispiel sind die Gewichte nicht explizit angegeben, alle Gewichte sin
 ## Analyse
 
 Um Spezifikation mit Petri-Netzen zu verifizieren können wir diese nun einfach Simulieren. Wir können dann beobachten, wie die Dynamik ist, und ob es zu Problemen kommen kann. 
-Ein typisches Problem in Nebenläufigen Systemen sind Deadlocks, also zustände, wo jeder unabhängige Teil durch die jeweils anderen Blockiert ist. Ein Petri-Netz, bei dem es zu einem deadlock kommen kann ist in folgender Abbildung dargestellt:
+Ein typisches Problem in Nebenläufigen Systemen sind Deadlocks, also Zustände, wo jeder unabhängige Teil durch die jeweils anderen blockiert ist. Ein Petri-Netz, bei dem es zu einem Deadlock kommen kann ist in folgender Abbildung dargestellt:
 
 <img src="../../slides/images/petri-net-with-deadlock.png" alt="dynamik" width="30%"/>
 
-*Übung: Wie kann es hier zum deadlock kommen?*
+*Übung: Wie kann es hier zum Deadlock kommen?*
 
 ### Komplexeres Beispiel
 

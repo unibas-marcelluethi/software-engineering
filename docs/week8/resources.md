@@ -3,8 +3,8 @@
 # Folien und Artikel
 
 * Konstruktive und Deskriptive Spezifikationen
-    * Video:  [mp4](../../slides/images/construction.jpg),  
-    * Slides: [online](./slides/constructive-descriptive-specs.htmll), [Druckversion](./slides/specification-overview.html?print-pdf)
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/gGMih5zZc7V9gzA),  
+    * Slides: [online](./slides/constructive-descriptive-specs.html), [Druckversion](./slides/constructive-descriptive-specs.html?print-pdf)
 
 * Petrinetze
     * Artikel: [online](./articles/petrinets.html)
