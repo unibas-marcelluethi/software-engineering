@@ -19,7 +19,7 @@ Die Gewichtsfunktion $$W$$ ist eine partielle Funktion. Wenn $$W(f)$$ für einen
 ## Graphische Darstellung
 <img src="../../slides/images/petri-net-simple-initial.png" alt="petri-nets" width="30%"/>
 
-Wir sehen hier die graphische Darstellung für ein Petri-Netz, das wie folgt definiert ist. Im Netz sind vier Stellen $$P_1, \ldots, P_4$$ und eine Transition $$t_1$$ definiert. Die Flussrelation ist $$F = \{(P_1, t_1), (P_2, t_1), (t_1, P_3, (t_1, P_4))\}$$. 
+Wir sehen hier die graphische Darstellung für ein Petri-Netz, das wie folgt definiert ist. Im Netz sind vier Stellen $$P_1, \ldots, P_4$$ und eine Transition $$t_1$$ definiert. Die Flussrelation ist $$F = \{(P_1, t_1), (P_2, t_1), (t_1, P_3), (t_1, P_4)\}$$. 
 Die Gewichtsfunktion ist entsprechend definiert als
 $$W((P_1, t_1))=2, W((P_2,t_1)=1), W((t_1, P_3))=1, W((t_1, P_4))=3$$. Schlussendlich haben wir hier die Anfangsmarkierung 
 $$M$$ definiert als $$M(P_1)=3, M(P_2)=1, M(P_3)=M(P_4)=0$$.  
@@ -54,7 +54,7 @@ $$
 $$
 In Worten: Die Transition ist aktiviert wenn für alle Input Stellen einer Transition, mehr Markierungen als vom entsprechenden Gewicht auf der Flussreaktion gefordert, vorhanden sind. 
 In unserem einfachen Beispiel ist Transition $$t_1$$ also aktiviert und kann schalten.
-![petri-netz] (../../slides/images/petri-net-simple-initial.png)
+![petri-netz](../../slides/images/petri-net-simple-initial.png)
                   
 Nun schauen wir uns die Dynamik noch an einem etwas komplexeren Beispiel an:
 
