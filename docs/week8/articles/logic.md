@@ -3,14 +3,14 @@
 # Logische Spezifikation
 
 *In diesem Artikel sehen wir uns eine wichtige Klasse von deskriptiven Spezifikationen an, nämlich Spezifikationen, die auf Mathematischer Logik (erster Stufe) basieren. Spezifikationen in Logik lassen uns nicht nur Eigenschaften von Systemen formal ausdrücken, sondern auch neue, nicht spezifizierte
-Eigenschaften durch logisches schliessen herleiten.*
+Eigenschaften durch logisches Schliessen herleiten.*
 
 ## Aufbau eines logischen Ausdrucks
 
 Genau wie ein arithemtischer Ausdruck, besteht ein logischer Ausdruck aus Variablen, Funktionen, Konstanten und Klammern. 
 Das Resultat ist aber nicht eine Zahl, sondern immer ein boolscher Wert (also Wahr oder Falsch).
 
-Einzelne Ausdrücke können wir mit den logischen Konnektoren $$\texttt{und}$$, $$\texttt{oder}$$, $$\texttt{impliziert}$$ und $$\texttt{genau dann, wenn}$$ verbunden werden. Der Wahrheitswert jedes Ausdrucks kann mittels der Negation \texttt{nicht} negiert werden. 
+Einzelne Ausdrücke können wir mit den logischen Konnektoren $$\texttt{und}$$, $$\texttt{oder}$$, $$\texttt{impliziert}$$ und $$\texttt{genau dann, wenn}$$ verbunden werden. Der Wahrheitswert jedes Ausdrucks kann mittels der Negation $$\texttt{nicht}$$ negiert werden. 
 Mittels den *Quantoren* $$\texttt{exists}$$ und $$\texttt{forall}$$ können wir audrücken, dass eine logische Aussage für mindestens 1 oder für alle möglichen Zuweisungen an die entsprechende Variable gelten muss. 
 
 Wir veranschaulichen dies an ein einigen Beispielsätzen:
@@ -62,7 +62,7 @@ $$
 \{ \texttt{ exists } z \; (i_1 = z \cdot i_2) \} \\ P \\ \{ o_1 = i_1 / i_2\} 
 $$
 
-In diesem Beispiel wird als Vorbedingung verlangt, dass die Zahl Teilbar ist. Als Nachbedingung wird angegeben, dass die Ausgabe $$o_1$$ genau der Quotient vom ersten und zweiten Eingabeargument $$i_1, i_2$$ ist. 
+In diesem Beispiel wird als Vorbedingung verlangt, dass die Zahl teilbar ist. Als Nachbedingung wird angegeben, dass die Ausgabe $$o_1$$ genau der Quotient vom ersten und zweiten Eingabeargument $$i_1, i_2$$ ist. 
 
 #### Beispiel 2: Ganzzahldivision mit stärkeren Anforderungen an das Programm
 Wir können die Anforderung an das Programm auch erhöhen. Die Anforderungen an ein Programm werden höher, wenn  wir die Vorbedingungen abschwächen, aber die Nachbedingungen verstärken. Das Programm muss also mehr leisten:

@@ -22,9 +22,9 @@ Die Gewichtsfunktion $$W$$ ist eine partielle Funktion. Wenn $$W(f)$$ für einen
 Wir sehen hier die graphische Darstellung für ein Petri-Netz, das wie folgt definiert ist. Im Netz sind vier Stellen $$P_1, \ldots, P_4$$ und eine Transition $$t_1$$ definiert. Die Flussrelation ist $$F = \{(P_1, t_1), (P_2, t_1), (t_1, P_3), (t_1, P_4)\}$$. 
 Die Gewichtsfunktion ist entsprechend definiert als
 $$W((P_1, t_1))=2, W((P_2,t_1)=1), W((t_1, P_3))=1, W((t_1, P_4))=3$$. Schlussendlich haben wir hier die Anfangsmarkierung 
-$$M$$ definiert als $$M(P_1)=3, M(P_2)=1, M(P_3)=M(P_4)=0$$.  
+$$M$$ definiert als $$M(P_1)=3, M(P_2)=1, M(P_3)= 0, M(P_4)=0$$.  
 
-Damit wir verstehen, wie das Netz funktioniert, und was die einzelnen Werte bedeuten, müssen wir uns aber die dynamik, also die Schaltregeln vom Petri-Netz anschauen. 
+Damit wir verstehen, wie das Netz funktioniert, und was die einzelnen Werte bedeuten, müssen wir uns aber die Dynamik, also die Schaltregeln vom Petri-Netz anschauen. 
 
 ## Schaltregeln
 Jede Transition kann *schalten*. Bevor wir uns anschauen, unter welchen Umständen eine Transition schaltet, schauen wir uns hier erst einmal an, wie sich das Netz nach dem Schalten von Transition $$t$$ verändert. Dies ist in folgendem Bild dargestellt. 
@@ -48,11 +48,15 @@ $$
 
 ## Dynamik
 
-Wir müssen nun noch klären, wann denn eine Transition schaltet. Vielleicht etwas überraschend, wird dies nicht durch das Netz vorgegeben. Petri-Netze sind nicht deterministisch und wann eine Transition schaltet ist zufällig. Jedoch schaltet eine Transition nur, wenn sie *aktiviert* ist. Eine Transition ist aktiviert wenn:
+Wir müssen nun noch klären, wann denn eine Transition schaltet. Vielleicht etwas überraschend, wird dies nicht durch das Netz vorgegeben. Petri-Netze sind nicht deterministisch und wann eine Transition schaltet ist zufällig. Jedoch schaltet eine Transition nur, wenn sie *aktiviert* ist. 
+
+Eine Transition ist aktiviert wenn:
+
 $$
                     \forall p \in \text{Input Stellen}(t) : M(p) \ge  W((p,t)) 
 $$
-In Worten: Die Transition ist aktiviert wenn für alle Input Stellen einer Transition, mehr Markierungen als vom entsprechenden Gewicht auf der Flussreaktion gefordert, vorhanden sind. 
+
+In Worten: Die Transition ist aktiviert wenn für alle Input Stellen einer Transition mindestens soviele Markierungen vorhanden sind, wie durch die entsprechende Gewichten auf der Flussreaktion vorgegeben.
 In unserem einfachen Beispiel ist Transition $$t_1$$ also aktiviert und kann schalten.
 ![petri-netz](../../slides/images/petri-net-simple-initial.png)
                   
@@ -65,12 +69,12 @@ In diesem Beispiel sind die Gewichte nicht explizit angegeben, alle Gewichte sin
 
 ## Analyse
 
-Um Spezifikation mit Petri-Netzen zu verifizieren können wir diese nun einfach Simulieren. Wir können dann beobachten, wie die Dynamik ist, und ob es zu Problemen kommen kann. 
-Ein typisches Problem in Nebenläufigen Systemen sind Deadlocks, also zustände, wo jeder unabhängige Teil durch die jeweils anderen Blockiert ist. Ein Petri-Netz, bei dem es zu einem deadlock kommen kann ist in folgender Abbildung dargestellt:
+Um Spezifikation mit Petri-Netzen zu verifizieren können wir diese nun einfach simulieren. Wir können dann beobachten, wie die Dynamik ist, und ob es zu Problemen kommen kann. 
+Ein typisches Problem in Nebenläufigen Systemen sind Deadlocks, also Zustände, wo jeder unabhängige Teil durch die jeweils anderen blockiert ist. Ein Petri-Netz, bei dem es zu einem Deadlock kommen kann ist in folgender Abbildung dargestellt:
 
 <img src="../../slides/images/petri-net-with-deadlock.png" alt="dynamik" width="30%"/>
 
-*Übung: Wie kann es hier zum deadlock kommen?*
+*Übung: Wie kann es hier zum Deadlock kommen?*
 
 ### Komplexeres Beispiel
 
@@ -79,4 +83,5 @@ Als letztes wollen wir uns noch ein konkretes Beispiel anschauen. Wir nehmen daz
 ![petri-netz Bibliothek](../../slides/images/petri-net-book.png)
 
 Dieses System modelliert den Prozess von der Ausleihe und Rückgabe eines Buchs in ein System. Die Spezifikation stellt sicher, dass jedes Buch nur einmal ausgeliehen wird. 
-Schauen Sie sich das Beispiel genau an, und stellen Sie sicher, dass Sie verstehen, weshalb jedes Buch nur genau einmal ausgeliehen werden kann. Solche Situation sind nämlich in vielen Softaressytemen, wo wir nur eine endliche Anzahl Ressourcen haben, die aufgeteilt werden müssen wichtig.
+Schauen Sie sich das Beispiel genau an, und stellen Sie sicher, dass Sie verstehen, weshalb jedes Buch nur genau einmal ausgeliehen werden kann.
+Mit solchen Situationen sind wir in der Softwareentwicklung immer konfrontiert, wenn ein  Softwaressytem nur eine endliche Anzahl Ressourcen zur Verfügung hat, aber mehrere Prozesse darauf zugreifen müssen.

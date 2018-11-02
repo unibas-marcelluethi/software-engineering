@@ -48,6 +48,16 @@
                 </div>
                 
                 <aside class="notes">                 
+                    Herzlich willkommen zu diesem Screencast. 
+                    Wir haben uns ja bereits vor einigen Wochen einige Aspekte der 
+                    Unified Modelling language angeschaut. Damals standen die statischen 
+                    Spezifikationsmethode, nämlich Klassen und Paketdiagramme im Vordergrund. 
+                    In diesem screencast werden wir uns nun einige weitere 
+                    Spezifikationsmethoden der UML anschauen, die dazu benutzt werden, 
+                    die dynamischen und logischen Aspekte eines Systems zu modellieren. 
+                    Wie wir sehen werden, sind viele der Methoden stark von den 
+                    klassischen Modellen, die wir diese Woche beretets kennengelernt haben, 
+                    inspiriert.
                 </aside>
 
 			</section>
@@ -62,8 +72,23 @@
                 </ul>
                 <figure>
                         <img src="../../slides/images/use-case.png" class="plain" style="width:70%" />
-                        <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.9</figcaption>
-    
+                        <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.9
+                        </figcaption>
+                        </figure>
+
+                        <aside class="notes">
+                            Als erstes kommen wir nochmals zu den Use-Case diagrammen zurück, welche
+                            ja benutzt werden um Funktionale Anforderungen zu beschreiben. 
+                            Nachdem wir nun die Datenflussdiagramme kennengelernt haben, erkennen 
+                            wir hier eine gewisse Ähnlichkeit. In der Tat können wir UML Use-case 
+                            diagramme als eine Variante von Datenflussdiagrammen sehen.
+                            Genau wie in Datenflussdiagrammen  
+                            stehen die Funktionen des Systems im Zentrum der Darstellung. Nur wird hier
+                            im Diagramm nicht explizit der Datenfluss annotiert, sondern es wird nur 
+                            spezifiziert, welche Aktoren in die Ausführung der Funktionalität involviert sind. 
+                            Der Datenfluss wir dann gegebenenfalls in der Textuellen Beschreibung spezifiziert.
+                                                        
+                        </aside>
             </section>
                 <section>
                     <h1>UML Zustandsdiagramme</h1>
@@ -76,6 +101,31 @@
                         <figcaption style="font-size:x-small"></figcaption>
                     </figure>
     
+                    <aside class="notes">
+                        Eine weiteres wichtiges Modell der Unified Modelling Language sind 
+                        die Zustandsdiagramme. Dabei handelt es sich im Prinzip einfach nur
+                        um endliche Zustandsautomaten. Wir spezifizieren also, welche 
+                        Zustände ein Objekt annehmen kann. Hier sehen wir wieder das
+                        Beispiel von einer Lampe, die wir mit einem Lichtschalter an und 
+                        Ausstellen können. Wir haben also zwei Zustände, An und Aus. 
+                        Zusätzlich können wir aber in der UML auch verschachtelte Zustände
+                        darstellen. Beispielsweise können wir uns eine Lampe vorstellen, 
+                        bei der wir noch die Möglichkeit haben die Farbe zu wechseln, wenn 
+                        Sie eingeschaltet ist. Wir sehen hier also, dass das Objekt im Zustand ein 
+                        drei Subzustände, Rot, Gelb und Weiss annehmen kann.
+                        Der Zustandswechsel wird 
+                        wieder durch das drücken eines Schalters ausgelöst. 
+                        Der ausgefüllte kreis symbolisiert den Startzustand. Wenn wir also die 
+                        Lampe einschalten, wird diese immer im Zustand weiss sein. 
+                        
+                        Egal in welchem Subzustand wir sind, wechseln wir durch das
+                        Drücken des Lichtschalters wieder in den Zustand "aus".
+                    
+
+                        UML Zustandsdiagramme sind sehr mächtig und bieten eine vielzahl von 
+                        weiteren Möglichkeiten, die möglichen Zustände eines Objekts zu modellieren. 
+                                                
+                    </aside>
                 </section>
     
 
@@ -94,6 +144,21 @@
                     <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.10</figcaption>
                     </figure>
                 </div>
+
+                <aside class="notes">
+                    Die nächste wichtige Art von Diagrammen in der UML sind die Sequenzdiagramme.
+                    Sequenzdiagramme gehören, wie die Zustandsdiagramme, zu den konstruktiven 
+                    Spezifikationsmethoden. 
+                    Sequenzdiagramme erlauben uns die Interaktion von Objekten genauer zu spezifizieren. 
+                    Dabei steht die zeitliche Abfolge der Interaktion im Vordergrund. 
+                    In diesem Beispiel sind 3 Objekte involviert. Ein Objekt der Klasse Kunde, 
+                    ein Objekt der Klasse Bibliothekar und ein Objket der Klasse Katalog, 
+                    Die Linie die von jedem Objekt nach unten geht nennt sich Lebenslinie. 
+                    Die Balken sind sogenannte Aktivierungsbalken. Diese zeigen den Kontrollfluss an, also wenn ein 
+                    Objekt aktiv an der Interaktion beteiligt ist. 
+
+                    In diesem Beispiel 
+                </aside>
             </section>
 
             <section>
@@ -110,6 +175,19 @@
                     <img src="../../slides/images/collaboration-diagram.png" class="plain" style="width:100%" />
                     <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.11</figcaption>
                 </figure>
+
+                <aside class="notes">
+                    Eng verwandt mit dem Sequenzdiagramm ist das Kommunikationsdiagramm. Genau genommen sind die zwei Diagramme
+                    Äquivalent. Wir könnten also eines aus dem anderen automatisch generieren. Jedoch ist die Sichtweise eine 
+                    etwas andere. Beim Sequenzdiagramm steht die Sequenz, also die zeitliche Abfolge der Nachrichten im Vordergrund.
+                    Beim Kommunikationsdiagramm steht jedoch eher im Vordergrund, welche Objekte miteinander kommunizieren. Deshalb
+                    wird hier auch keine Zeitachse mehr angegeben. Dies erlaubt uns die Objekte frei anzuordnen, und so Objekte
+                    die eng miteinander zusammenarbeiten Nahe beieinander zu platzieren.
+                    Die Reihenfolge der  Nachrichten ist aber immer noch bestimmt, nämlich indem einfach die einzelnen 
+                    Nachrichten durchnummeriert werden. 
+
+                    
+                </aside>
             </section>
 
 
@@ -134,6 +212,23 @@
               </figure>
 
                 </div>
+
+                <aside class="notes">
+                    Eine weitere wichtige Spezifikationsmethode die die UML Bietet sind Aktivitätsdiagramme. 
+                    Auch Aktivitätsdiagramme gehören zur Klasse der konstruktiven Spezifikationsmethoden. In diesen 
+                    Diagrammen wir ein ablauf eines Andwendungsfalles grafisch dargestellt. 
+                    Aktivitätsdiagramme erlauben uns nicht nur Sequentielle Abläufe darzustellen, sondern auch 
+                    zu spezifizieren, welche Aktivitäten parallel ausgeführt werden sollen. 
+                    Die Semantik von Aktivitätsdiagrammen ist im UML Standard formal definiert, und basiert auf Petri-Netzen. 
+
+                    Trotzdem sind Aktivitätsdiagramme sehr einfach zu lesen und können auch gut zur Kommunikation mit dem 
+                    Kunden eingesetzt werden. 
+                    
+                    Das Beispiel hier illustriert wieder unser Bibliothekszenario. 
+
+                    
+                </aside>
+
             </section>
 
             <!--
@@ -154,35 +249,101 @@
             <section>
                 <h1>OCL: Object Constraint Language</h1>
                 <ul>
-                    <li>Erlaubt Eigenschaften/Einschr&auml;nkungen in OO Systemen zu spezifizieren</li>
+                    <li>Zweck: Spezifizieren von Eigenschaften und Einschr&auml;nkungen</li>
                 </ul>
 
-                <div style="text-align:left">
-                    <p>Beispiel OO Design:</p>
-                    <img src="../../slides/images/ocl-example.png" class="plain" style="width:80%; margin-left:auto; margin-right:auto" />
-                    <li style="font-size:x-small">Beispiel: Wikipedia (https://de.wikipedia.org/wiki/Object_Constraint_Language)</li>
+                <div style="text-align:center">
+                    <img src="../../slides/images/ocl-example.png" class="plain" style="width:50%; margin-left:auto; margin-right:auto" />
+                    <text style="font-size:x-small;margin-top:-2ch;display:block">Beispiel: Wikipedia (https://de.wikipedia.org/wiki/Object_Constraint_Language)</text>
                 </div>
+
+                <div style="text-align:left" class="fragment">
+                    Beispiele:
+                    <ul style="font-size:smaller">
+                        <li class="fragment">context Person inv: self.alter &ge; 0 </li>
+                        <li class="fragment">context Person inv: self.eltern->size() &le; 2</li>
+                        <li class="fragment"> context Person inv: self.eltern $\rightarrow$ forAll(e|e.alter>self.alter)</li>
+
+                </ul>
+                </div>
+
+                <aside class="notes">
+                        Zuletzt schauen wir uns noch OCL, die Object Constraint Language an. OCL ist eine deklarative Sprache um
+                        Eigenschaften und Einschränkungen in Objektorientierten Systemen zu definieren. Die Sprache basiert
+                        auf Aussagenlogik, ist aber eher an der Syntax von Programmiersprachen orientiert. 
+    
+                        
+                        Unser Ziel ist hier nicht die Details von OCL zu besprechen, sondern nur einen Eindruck zu geben, 
+                        wie man OCL einsetzten kann. Wir schauen uns dazu ein einfaches Klassendiagramm an. Das Diagramm 
+                        modelliert die Beziehung zwischen Personen sowie Personen und Autos. 
+    
+                        In der Beziehung zwischen Personen, kann eine Person verschiedene Rollen einnehmen. Eine Person kann ein 
+                        Elternteil von einem oder mehreren Kindern sein. Dieselbe Person kann aber auch selbst ein Kind sein. 
+                        Eine Person hat ein bestimmtest alter, und in unserem Modell hier, kann ein Kind bekommen, und geburtstag haben. 
+                        Eine Person kann auch 0 - n Autos besitzen. 
+    
+                        Wenn wir etwas über dieses Szenario nachdenken, merken wir schnell, dass es einige Dinge gibt, die noch nicht
+                        genau spezifiziert ist. OCL hilft uns diese Lücken zu füllen, und dieses Szenario weiter zu spezifizieren.
+                        Schauen wir uns also einen ersten Constraint an. Dieser sagt, das im Kontext der Klasse Person, für das Attribute alter 
+                        die Invariante gilt, dass das alter grösser oder gleich 0 sein muss. Der Bezeichner self bezeichnet hier eine
+                        spezifische Instanz der Klasse Person. Inv ist das Schlüsselwort für Invariante.
+                        
+                        In OCL arbeiten wir häufig mit Kollektionen von Objekten. Ausgehend von einem Objekt, können wir über den Rollennamen 
+                        eine Kollektion von allen Objekten bekommen, die diese Beziehung erfüllen. Dies sehen wir im nächsten Constraint. 
+                        Über self.eltern erhalten wir eine Kollektion von Peronenobjekten, nämlich die Eltern der Person.
+                        Der Constraint sagt auch, dass diese Kollektion nicht mehr als 2 Elemente enthalten soll. 
+                        Jede Person hat also nicht mehr als 2 Eltern.     
+
+                        Wir können auch Bedinungen formulieren, die für alle Objekte in der Kollektion gelten müssen. Dies
+                        ist im nächsten Constraint illustriert.  Nämlich haben wir folgende Invariante:
+                         Für alle elemente der Kollektion Eltern, haben wir nun die Einschränkung, dass das alter dieser Elemente grösser sein muss, als das
+                        Alter der Person, von der wir ausgegangen sind. Die Eltern einer Person sollten als älter sein als die Person selbst.                                  
+    
+                    </aside>
+
             </section>
-
-
 
             <section>
                 <h1>Umsetzung in UML: OCL</h1>
 
+                <div style="text-align:center">
+                    <img src="../../slides/images/ocl-example.png" class="plain" style="width:50%; margin-left:auto; margin-right:auto" />
+                    <text style="font-size:x-small;margin-top:-2ch;display:block">Beispiel: Wikipedia (https://de.wikipedia.org/wiki/Object_Constraint_Language)</text>
+                </div>
+
                 <div style="text-align:left">
-                    Beispiele von Constraints in OCL:
                     <ul style="font-size:smaller">
-                        <li class="fragment">context Person inv: self.alter &ge; 0 </li>
-                        <li class="fragment"> context Person inv: self.eltern $\rightarrow$ forAll(e|e.alter>self.alter)</li>
-                        <li class="fragment">context Person inv: self.eltern->size() &le; 2</li>
                         <li class="fragment">context Person::bekommtKind()
                             <br/>post: self.kinder->notEmpty()
                             <br/> &nbsp;&nbsp;&nbsp; and self.kinder->size() > self.kinder@pre->size()</li>
-                        <li class="fragment">context Person inv: self.alter &le; 18 implies self.autos->isEmpty()</li>
-                        <li class="fragment">context Auto inv: self.erstzulassung &ge; self.baujahr</li>
-                        <li class="fragment">context Person inv: Person.allInstances()->exists(p | p.autos->size() > 0)</li>
+                        <li class="fragment">context Person inv: self.alter &le; 18 implies self.autos->isEmpty()</li>                        
+                        <li class="fragment">context Person inv: <br/> Person.allInstances()->exists(p | p.autos->size() > 0)</li>
                     </ul>
                 </div>
+
+                <aside class="notes">
+                    In den vorigen Beispielen haben wir uns immer invarianten von Klassen angeschaut. Im nächsten Beispiel
+                    sehen wir, wie wir Anforderung an eine Methode dokumentieren können. 
+                    In diesem Fall spezifizieren wir eine postcondition für die Methode bekommtKind der Klasse Person. 
+                    Der constraint besagt, dass nachdem eine Person ein Kind bekommen hat, die Menge der Kinder grösser sein 
+                    muss, als die Menge der Kinder bevor die Methode ausgeführt wurde.
+
+                    Im nächsten Constraint formulieren wir die Invariante, dass wenn eine person jünger als 18 Jahre ist, 
+                    dass die Menge der Autos die Menge der Autos, die der entsprechenden Person zugeordnet ist leer ist.                 
+
+                    Im letzten constraint sehen wir noch wie wir eine Eigenschaft formulieren, die nicht nur ein Objekt charakterisiert, 
+                    sondern alle Instanzen einer Klasse. Der Constraint sagt nämlich aus, dass wenn ich die Kollektion aller Instanzen
+                    der Klasse Person anschaue, dann gibt es in dieser Kollektion mindestens ein objekt, zu welchem ein Auto zugeordnet ist.
+                    Also hat mindestens eine Person ein Auto. 
+                    
+                    OCL ist eine vollwertige deklarative Programmiersprache. Diese im Detail zu lernen bedeutet einen gewissen aufwand, 
+                    und ist nicht das Ziel dieser Vorlesung. Ich hoffe aber, dass Sie durch diese Beispiele zumindest einen Eindruck 
+                    gewonnen haben, was man alles spezifizieren kann, und dass sie durch anpassen dieser Beispiele auch selbst einfache
+                    Constraints ausdrücken können. 
+
+                </aside>
+               
+
             </section>
             
             <section>
@@ -194,17 +355,17 @@
                     </tr>
                     <tr>
                         <td>Klassendiagramm</td>
-                        <td>Anfangen mit wichtigsten Entit&auml;ten. Detailieren w&auml;hrend ganzem Projekt</td>
+                        <td>Anfangen mit wichtigsten Entit&auml;ten. Detailieren w&auml;hrend ganzem Projekt.</td>
                     </tr>
                     <tr>
                         <td>Sequenzdiagramm</td>
                         <td>Wichtige Szenarien dokumentieren.<br/>
-                            (Fokus auf zeitlicher Abfolge.)
+                            (Fokus auf zeitlicher Abfolge).
                         </td>
                     </tr>
                     <tr>
                         <td>Kommunikations-<br/>diagramm</td>
-                        <td>Wichtige Szenarien dokumentieren. <br/> (Fokus auf Beziehung der Klassen.)</td>
+                        <td>Wichtige Szenarien dokumentieren. <br/> (Fokus auf Beziehung der Objekte).</td>
                     </tr>
                     <tr>
                         <td>Zustandsdiagramm</td>
@@ -216,6 +377,10 @@
                     </tr>
 
                 </table>
+
+                <aside class="notes">
+                    Fassen wir zusammen, wie wir die UML für die Spezifikation einsetzten können. 
+                </aside>
 
             </section>
 
