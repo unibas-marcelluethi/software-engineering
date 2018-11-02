@@ -84,4 +84,4 @@ Als letztes wollen wir uns noch ein konkretes Beispiel anschauen. Wir nehmen daz
 
 Dieses System modelliert den Prozess von der Ausleihe und Rückgabe eines Buchs in ein System. Die Spezifikation stellt sicher, dass jedes Buch nur einmal ausgeliehen wird. 
 Schauen Sie sich das Beispiel genau an, und stellen Sie sicher, dass Sie verstehen, weshalb jedes Buch nur genau einmal ausgeliehen werden kann.
-Mit solchen Situationen sind wir in der Softwareentwicklung immer konfrontiert, wenn ein  Softwaressytem nur eine endliche Anzahl Ressourcen zur Verfügung hat, aber mehrere Prozesse drauf zugreifen können. 
+Mit solchen Situationen sind wir in der Softwareentwicklung immer konfrontiert, wenn ein  Softwaressytem nur eine endliche Anzahl Ressourcen zur Verfügung hat, aber mehrere Prozesse darauf zugreifen müssen. 
