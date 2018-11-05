@@ -48,6 +48,12 @@
                 </div>
                 
                 <aside class="notes">               
+                   Herzlich willkommen zu diesem Screencast zum Thema Verifikation von Software. 
+                   Inzwischen sind wir in der Vorlesung Softweit, dass wir wissen wie wir Anforderungen 
+                   identifizieren, diese Spezifizieren, die Software entwerfen und schliesslich implementieren. 
+                   In einer perfekten Welt wären wir nun fertig. 
+                   Da wir jedoch nicht in einer perfekten Welt leben, müssen wir uns nun anschauen, wie wir verifizieren können ob 
+                   das, was wir gemacht haben auch sinnvoll war. 
                    
                 </aside>
 
@@ -81,7 +87,17 @@
             </blockquote>
 
             <aside class="notes">
-                Im folgenden sprechen wir noch von Verifikation und meinen damit Beides.
+                Als erstes etwas Terminologie. In der Softwareengineering Literatur wird machmal explizit zwischen Validierung und Verifikation unterschieden. 
+                Bei der Validiereung steht die Frage im Vordergrund, ob wir das richtige Produkt bauen, also das Produkt, 
+                mit dem die Benutzer die festgelegten Ziele erreichen können. 
+                Bei der Verifikation überprüfen wir hingegen, ob das Produkt richtig gebaut ist, also ob es wirklich die spezifizierten Eigenschaften hat. 
+
+                Wir illustrieren diesen Unterschied anhand von einem Beispiel aus der Medizin. Wenn es um die Markzulassung für ein neues Medikament geht, 
+                hat muss die Zulassungsbehörde zwei dinge Entscheiden: Erstens, dass das Produkt wirklich einen Medizinischen Nutzen erfüllt. Und zweitens, 
+                dass das Produkt sich genau so verhält, wie es beschreiben ist, dass es also zum Beispiel keine nicht dokumentierten Nebenwirkungen hat. 
+                
+                Die Unterscheidung wird in der Literatur aber nicht immer konsequent verwendet. Auch wir sprechen im folgenden nur noch von Verifikation 
+                von Software, meinen aber damit immer implizit beides.
             </aside>
             </section>
 
@@ -90,7 +106,7 @@
                 <blockquote>
                     Nicht n&ouml;tig in perfekter Welt!
                 </blockquote>
-                <ul class="fragment">
+                <ul >
                     <li>Fehler in jedem Prozessschritt möglich</li>
                     <ul>
                         <li>No silver bullet: Fehler nicht ganz zu verhindern</li>
@@ -104,10 +120,18 @@
                     </ul>
                 </ul>
                 <aside class="notes">
-                    Wir haben keine Methode, Fehler ganz zu verhindern
+                    Wie gesagt, bräuchten wir in einer Perfekten Welt keine Verifikation. Wir würden Anhand der Identifizierten Anforderungen logisch 
+                    die Spezifikation und das Design herleiten, und dann die Software perfekt implementieren. Leider funktioniert dies in der praxis aber nicht 
+                    so. Es ist unvermeidlich, dass sich in jeden Schritt fehler einschleichen. Softwareentwicklung ist inhärent komplex, und es gibt
+                    keine Silver bullet, also keine Methode die die Komplexität soweit reduziert, dass wir keine Fehler mehr machen. 
+                    Probleme hingegen gibt es viele. Unsere Spezifikationen sind unklar und nicht eindeuttig. Wir machen falsche annnahme oder ziehen 
+                    falsche Schlussfolgerungen. Und nicht zuletzt bauen wir ein Programm auch auf einer Systemumgebugn auf, die auch häufig nicht perfekt. ist. 
+
+                    Der Verifikationsschritt ist also essentieller Bestandteil jedes Softwareprojekts.
                 </aside>
             </section>
 
+            <!--
             <section>
                 <h1>Eigenschaften von Verifikationen </h1>
                 <ul>
@@ -122,7 +146,13 @@
                     </ul>
                 
                 </ul>
+
+                <aside class="notes">
+
+                </aside>
+
             </section>
+-->
 
             <section>
                 <h1>Hauptans&auml;tze</h3>
@@ -146,6 +176,20 @@
                     </ul>
                 </div>
                 
+                <aside class="notes">
+                    Wir unterscheiden zwei Hauptansätze der Verifikation. Die erste Möglichkeit ist die statische analyse vom Code. 
+                    Verifikations wird dadurch erreicht, dass wir das Design oder den Code anschauen und analysieren, ohne ihn auszuführen. 
+                    Wir haben hier verschiedene Möglichkeiten zur Verfügen. Code reviews von Projektpartnern, automatisierte Codeanalyse unterstützt
+                    durch moderene Entwicklungstools, oder sogar komplett formale Korrektheitsbeweise.
+
+                    Die zweite Möglichkeit zur Verifikation ist das Experimentieren mit der Software. Das heisst wir führen das Programm aus und 
+                    testen das Verhalten. Dies kann Manuell oder automatisiert, zum Beispiel mittels Unit Tests, passieren. 
+
+                    Wir werden uns in diesem Kurs vor allem auf das Testen konzentrieren. Wir wollten uns aber trotzdem im folgenden die 
+                    anderen Möglichkeiten noch etwas näher anschauen. 
+                </aside>
+
+
             </section>
 
             <section>
@@ -164,6 +208,19 @@
                     <li>Wissen verbreiten</li>
                 </ul>
             </div>
+
+            <aside class="notes">
+                Eien sehr einfache aber auch sehr effektive Methode der Verifikation die das Code review. 
+                Bei Code Reviews treffen sich mehrere Entwickler, und analysieren gemeinsam ein Stück code auf 
+                Fehler, verletzungen der Spezifikationen oder Programmierrichtlinien und andere Probleme. 
+                Regelmässige Code-Reviews bringen auch neben dem Aufdecken von Fehlern grosse Vorteile. Typischweise helfen die 
+                Reviews, die Codequalität zu verbessern. Dies passiert aus zwei Gründen: Erstens gibt sich der Etnwickler mehr mühe, wenn er
+                weiss dass sein Code begutachtet wird. Zweitens können die Verbesserungsvorschläge vom Reviewer miteinbezogen werden. 
+                Weitere wichtige Vorteil von Code reviews sind, dass dadurch die Zusammenarbeit im Team gestärkt wird, und das Wissen 
+                über die Funktionsweise eines Stück codes, auf mehrere Mitarbeiter verteilt wird. 
+
+            </aside>
+
                 </section>
     
 
@@ -174,13 +231,18 @@
                     <ul>
                         <li>Uninitialisierte Variablen</li>
                         <li>Index out of bounds</li>
-                        <li>M&ouml;glicher Zugriff auf null Werte</li>
+                        <li>M&ouml;glicher Zugriff auf Null-Werte</li>
                         <li>...</li>
                     </ul>
                     <li>Wird heute durch Tools unterst&uuml;tzt</li>                    
                 </ul>                
                 <aside class="notes">
-                        <li>Typische Probleme variieren je nach Programmiersprache</li>
+                    Eine weitere Technik zum Verifizieren ist die statische Codeanalyse. Diese kann zum Beispiel auch als Teil von einem 
+                    Code review durchgeführt werden. Die Idee ist, dass man durch eine Checkliste von üblichen Problemen geht, und den Code auf 
+                    das Vorkommen von diesen Problemen unterstucht. Was Typische Probleme sind variiert je nach Programmiersprache. In vielen Programmiersprachen
+                    treten aber dinge wie uninitialisierte Variablen, Grenzüberschreitungen in arrays, oder Zugriff auf null WErte auf. 
+
+                    Statische Codeanalyse wird in modernen Programmiersprachen durch automatisierte Werkzeuge unterstützt. 
                 </aside>
             </section> 
 
@@ -189,13 +251,17 @@
                 <h1> Statische Analyse - Toolbeispiel</h1>
 
                 <img src="../../slides/images/intellij.png" class="plain" style="width:70%"/>
+
+                <aside class="notes">
+                    In Intellij Idea können wir zum Beispiel den Code durch ....
+                </aside>
             </section>
 
 
            <section>
                 <h1>Formale Korrektheitsbeweise</h1>
 
-                <pre><code data-trim class="pl1">
+                <pre><code data-trim class="pascal">
                     {true}
                     begin
                         read(a); read(b);
@@ -211,7 +277,22 @@
                     </ul>
                 
                 <aside class="notes">
-                    Werkzeuge zum maschinengestützten Beweisens 
+                    Eine weitere Möglichkeit zur Verifikation, die vor allem für sicherheitskritische Anwendungen eingesetzt wird, sind
+                    formale Korrektheitsbeweise. Als Voraussetzung haben wir hier, dass die Programme formal korrekt spezifiziert wurden. 
+                    Das Ziel ist es dann zu beweisen, dsas die Implementation die Spezifikationen erfüllt. 
+                    
+                    Wir schauen uns das an einem Beispiel an, bei dem die Spezifikationen in den Klammern angegeben sind. 
+                    Das Programm macht keine Vorbedingungen an die Eingabe, was hier durch true dargestellt ist, also die Vorbedingungen sind immer erfüllt. 
+                    Jedoch verlangt das Programm, dass der output genau der Summe von zweier eingelesener Zahlen entspricht. 
+                    
+                    Um zu beweisen, dass die Implementation wirklich das leistet, gehen wir jetzt schritt für schritt durch das Programm. 
+                    Wri sehen, dass am Ende write(x) aufgerufen ist. WEnn x also genau der summer der beiden iNputs eintspricht, wäre das
+                    Programm korrekt. Wir sehen, dass x die summe zweier Variablen a und b ist. Also müssen wir nun noch überprüfen, 
+                    dass a und b den eingaben entsprechen. Das sehen wir aber in der ersten Zeiel vom Programm. Das Programm ist also korrekt. 
+                    
+                    Für grössere Programme sind solche Korrektheitsbeweise sehr aufwändig und können nicht mehr von Hand gemacht werden. 
+                    In der Praxis werden dafür automatische Theorembeweiser eingesetzt. 
+                    
                 </aside>
             </section>
          
@@ -221,18 +302,26 @@
                 <ul>
                     <li>Verhalten eines Programms durch Stichproben von Eingaben &uuml;berpr&uuml;fen.</li>
                     <li>Ziel: Beispiele von inkorrektem Verhalten finden</li>
-
                 </ul>
 
                 
-                <blockquote class="fragment">
+                <blockquote>
                     <p>
                         Program testing can be used to show the presence of bugs, but never to show their absence!
                     </p>
                     <p style="text-align:right">Edgar Dijkstra (1970)</p>
                 </blockquote>
                 <aside class="notes">
-                    Wichtigstes Verifikationsverfahren
+                    Da formale Korrektheitsbeweise in der Praxis sehr umständlich sind, und die anderen statischen Verfahren alleine nicht mächtig 
+                    genug sind um ein Programm zu verifizieren, ist das in der praxis wichtigste Verfahren das Testen des Programms. 
+                
+                    Dabei überprüfen wir auf einer Menge von Möglichen Eingaben, ob das Programm das richtige Verhalten aufweist. 
+                    Das Ziel ist hier nicht die Korrektheit zu beweisen, sondern möglichst einen Fehler zu finden.                     
+                    
+                    Wie Edgar Dijkstra schön gesagt hat, kiönnen wir nämlich nur immer nachweisen, dass das Program Fehler hat, aber nie, 
+                    dass das Programm fehlerfrei ist.  
+
+                    Wenn wir keinen Fehler finden, nehmen wir das als Hinweis, dass das Programm sich in den meisten Fällen richtig verhält. 
                 </aside>
             </section>
 
@@ -269,6 +358,21 @@
                         </figure>
                     </section>
         
+                <aside class="notes">
+                    Wir haben in der Einführung gesehen, dass wir "Programmieren im Kleinen und Programmieren im Grossen unterscheiden können.
+                    Programmieren im kleinen machen wir immer dann, wenn eine Person die Funktionalität des Programms noch komplett überschauen kann. 
+                    Beim Programmieren im Grossen, dem Software Engineering, haben wir es dann mit grösseren Systemen zu tun. 
+
+                    Beim Testen machen wir eine Ähnliche unterscheidung. Beim Testen im Kleinen testet ein Entwickler die Module die er oder Sie entwickelt 
+                    hat. Dies passiert häufig mittels automatisierten Unit Tests. Die einzelnen Module zu testen ist jedoch natürlich nicht ausreichend, 
+                    um das gesamtsystem zu testen. Es muss auch im grossen getestet werden. Dies wird häufig von einem Separaten Testteam gemacht.
+                    In einem ersten schritt werden im einem Integrationstest Module schrittweise zusammengefügt. 
+                    Das ganze Programm wird dann in einem Funktionstest auf die korrekte Funktionalität überprüft. Eventuell wird dann auch ein 
+                    Performancetest durchgeführt. Bevor das funktionierende System an den Kunden ausgeliefert wird, wird mit dem Kunden zusammen ein Akzeptanztest durchgefürht. 
+                    Zum Schluss muss auch das fertig installierte System auf der Kundenseite getestet werden. 
+
+                </aside>
+
 
             </section>
 
@@ -333,10 +437,20 @@
                         </ul>
                     </div>
                     <aside class="notes">
-                        Wir brauchen spezifikation für black box testing
 
-                        Schauen uns die unterschiede aber nächste Wche an. 
-                        Diese Woche wollen wir uns nun erst um ein paar Grundlagen kümmern.
+                        Neben der Unterscheiden zwischen "Testen im Grossen " und "Testen im kleinen " 
+                        unterscheiden wir zusätzlich auch immer zwei ARten von Tests: Die White Box tests, 
+                        sowie die Black box Tests. 
+                        Bei den White Box tests wählen wir unsere Testfälle anhand der Struktur vom Programm aus. 
+                        Wir nehmen also an, dass wir genau Wissen, wie das Programm aufgebaut ist. 
+                        Wir testen also ob das Programm das macht, was wir mit unserere Implementation erreichen wollten. 
+                        
+                        Beim Black box testing hingegen betrachten wir das Programm als Black box, und testen nur, ob 
+                        für die Testfälle der Output des Programms dem spezifizierten Verhalten entspricht. Wir testen alss, 
+                        was das Programm machen sollte. 
+                                            
+                        Wir werden uns diese unterschiede nächste Woche genauer anschauen.
+                        Diese Woche wollen wir uns nun erstmals noch die theoretischen Grundlagen des Testens anschauen.
                     </aside>
 
                 </section>
