@@ -2,7 +2,7 @@
 
 # Folien und Artikel
 
-* Konstruktive und Deskriptive Spezifikationen
+* Verifikation von Software
     * Video:  [mp4](https://drive.switch.ch/index.php/s/TFf0xTrCmO6jKQO),  
     * Slides: [online](./slides/verification-overview.html), [Druckversion](./slides/verification-overview.html?print-pdf)
 
