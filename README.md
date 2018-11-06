@@ -24,7 +24,7 @@ Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://gi
 
 Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://unibas-sweng.github.io/software-engineering/project/project-summary.html).
 
-## Programm (Änderungen vorbehalten)
+## Programm 
 
 *Klicken Sie auf eine Woche um zu den entsprechenden Ressourcen zu gelangen*. 
 
@@ -44,14 +44,15 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 | [Woche 6](https://unibas-sweng.github.io/software-engineering/week6/index.html)    | Anforderungsanalyse   | |
 | [Woche 7](https://unibas-sweng.github.io/software-engineering/week7/index.html)  | Softwarespezifikation  |  |
 | [Woche 8](https://unibas-sweng.github.io/software-engineering/week8/index.html)  | Konstruktive und Deskriptive Softwarespezifikation  |  |
-| Woche 9 | Verifikation (überblick)  | |
-|    | Testen (Einführung) | |
-|    | Testen im Kleinen   | |
-| Woche 10 | Testen im Grossen   | | 
-|    | Softwareprozesse | |
-| Woche 11 | Agile Softwareentwicklung   | |
-|    | Scrum  | |
-| Woche 12 | Entwurfsmuster | |
+| [Woche 9](https://unibas-sweng.github.io/software-engineering/week9/index.html) | Verifikation (überblick)  | |
+|    | Theoretische Grundlagen des Testens| |
+| Woche 10 | Testen im Kleinen   | | 
+|| Testen im Grossen ||
+| Woche 11    | Softwareprozesse | |
+|             | Agile Softwareentwicklung   | |
+| Woche 12   | Scrum  | |
+| Woche 13 | Präsentationen der Projekte | |
+| Woche 14 | Zusammenfassung und Prüfungsvorbesprechung ||
 
 ## Nächste Deadlines
 
