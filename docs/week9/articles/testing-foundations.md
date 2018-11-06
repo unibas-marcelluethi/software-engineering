@@ -2,7 +2,7 @@
 # Theoretische Grundlagen des Testens
 
 *In diesem Artikel beschreiben wir kurz die wichtigsten theoretischen Grundlagen des Testens. Das Ziel ist, 
-klar zu definieren was wir idealerweise erreichen wollen, aber auch zu realisieren, dass wir dieses Ziel nie
+klar zu definieren, was wir idealerweise erreichen wollen, aber auch zu realisieren, dass wir dieses Ziel nie
 ganz erreichen, sondern nur annähern können.*
 
 ## Einführung: Warum ist testen schwierig
@@ -10,35 +10,35 @@ ganz erreichen, sondern nur annähern können.*
 In jeder Ingenieursdisziplin muss das Produkt nach der Herstellung verifiziert werden, um zu überprüfen, dass es die gewünschten Eigenschaften hat. 
 Eine wichtige Methode für die Verifikation ist das Testen. Testen bedeutet, dass wir uns einige typische Szenarien anschauen, und schauen, ob sich 
 das System in diesen Situation entsprechend unseren Erwartungen verhält. Wir haben am Anfang dieser Vorlesung gesehen, dass ein grosser Unterschied 
-zwischen Software und anderen Produkten ist, dass wir in der Software keine physikalischen Gesetze haben, auf die wir uns verlassen können. 
+zwischen Software und anderen Produkten besteht, dass wir in der Software keine physikalischen Gesetze haben, auf die wir uns verlassen können. 
 Dies macht nicht nur die Entwicklung schwieriger, sondern macht uns auch beim Testen das Leben schwer. Um das zu sehen, vergleichen wir 
 einen typischen Testfall für eine Brücke, mit dem einer Software:. 
 Ein typisches Szenario beim Testen einer Brücke könnte sein, dass wir testen wollen, ob die Brücke die spezifizierte Last von $$1000t$$ tragen kann.
-Dazu belasten wir die Brücke mit dem entsprechenden Gewicht. Wenn die Brücke unter der Last nicht zusammenbricht haben wir einiges gelernt. Wir wissen 
+Dazu belasten wir die Brücke mit dem entsprechenden Gewicht. Wenn die Brücke unter der Last nicht zusammenbricht, haben wir einiges gelernt. Wir wissen 
 nicht nur, dass die Brücke $$1000t$$ Belastung tragen kann, sondern auch jede Belastung die kleiner als $1000t$ ist. Dies können wir unmittelbar aus
 den physikalischen Gegebenheiten schliessen, da alle relevanten physikalischen Gesetzte eine entsprechende Kontinuität aufweisen.
 
 Im Gegensatz dazu können wir bei der Software nicht von Kontinuität ausgehen. Dazu schauen wir uns ein Codebeispiel an:
 ```java
-    int binarySearch(T key, List<Double> list) {
-        int bottom = 0; int top = list.length(); int middle = 0;
+    Double binarySearch(Double key, List<Double> list) {
+        int bottom = 0; int top = list.size(); int middle = 0;
         while (bottom < top) {
             if ((bottom + top) % 2 == 0) {
                 middle = (bottom + top) / 2;
             } else {
-                middle = ??? /* fehlerhafte Berechnung */
+                middle = middle-1; /* fehlerhafte Berechnung */
             }
-            if (key &le; list.get(middle)) {
+            if (key <= list.get(middle)) {
                 top = middle;
             } else {
                 bottom = middle + 1;
             }
         }
-                    
+        return key;
     }
 ```
-In diesem Beispiel tritt die Fehlerhafte Berechnung nur dann auf, wenn wir eine Liste sortieren, bei der die Anzahl Elemente genau einer Zweierpotenz entspricht. 
-Wenn wir also etablieren, dass das korrekte Element  für eine Liste mit 1025 Elementen gefunden wird, können wir daraus nicht schliessen, dass dies auch für eine Liste mit 1024 Elementen gilt.
+In diesem Beispiel tritt die Fehlerhafte Berechnung nur dann auf, wenn wir eine Liste sortieren, bei der die Anzahl Elemente nicht einer Zweierpotenz entspricht. 
+Wenn wir also etablieren, dass das korrekte Element für eine Liste mit 1024 Elementen gefunden wird, können wir daraus nicht schliessen, dass dies auch für eine Liste mit 1025 Elementen gilt.
 
 
 #### Weitere praktische Schwierigkeiten
