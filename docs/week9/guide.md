@@ -18,9 +18,9 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 
 ### Vorbereitung für die Vorlesungsstunde vom Mittwoch:
 
-* Schritt 1: Schauen Sie sich das Video "Software Verifikation" an  ([Video](https://drive.switch.ch/index.php/s/gGMih5zZc7V9gzA), [Slides](./slides/verification-overview.html))
-* Schritt 2: Lesen Sie den Artikel "Effizient im Team mit Architektur und Code-Reviews"  ([Artikel](https://www.heise.de/developer/artikel/Effizient-im-Team-mit-Architektur-und-Code-Reviews-1855640.html?seite=all))
-* Schritt 3: Lesen Sie den Artikel "Theoretische Grundlagen des Testens" ([Artikel](./articles/testing-foundations.html))
+* Schritt 1: Schauen Sie sich das Video "Software Verifikation" an  ([Video](https://drive.switch.ch/index.php/s/TFf0xTrCmO6jKQO), [Slides](./slides/verification-overview.html))
+* Schritt 2: Lesen Sie den Artikel "Theoretische Grundlagen des Testens" ([Artikel](./articles/testing-foundations.html))
+* Schritt 3: Lesen Sie den Artikel "Effizient im Team mit Architektur und Code-Reviews"  ([Artikel](https://www.heise.de/developer/artikel/Effizient-im-Team-mit-Architektur-und-Code-Reviews-1855640.html?seite=all))
 * Schritt 4: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_740063.html))
 
 *Achtung: Der Test muss spätestens bis Mittwoch 14. November, 08:00 bearbeitet sein.*

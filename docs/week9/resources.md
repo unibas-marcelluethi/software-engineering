@@ -3,23 +3,19 @@
 # Folien und Artikel
 
 * Konstruktive und Deskriptive Spezifikationen
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/gGMih5zZc7V9gzA),  
-    * Slides: [online](./slides/constructive-descriptive-specs.html), [Druckversion](./slides/constructive-descriptive-specs.html?print-pdf)
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/TFf0xTrCmO6jKQO),  
+    * Slides: [online](./slides/verification-overview.html), [Druckversion](./slides/verification-overview.html?print-pdf)
 
-* Petrinetze
-    * Artikel: [online](./articles/petrinets.html)
+* Theoretische Grundlagen des Testens
+    * Artikel: [online](./articles/testing-foundations.html)
 
-* Logische Spezifikationen
-    * Artikel: [online](./articles/logic.html)
-
-* Konstruktive und Deskriptive Spezifikationen
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/TnuF2C8R4Keqd6F),  
-    * Slides: [online](./slides/uml.html), [Druckversion](./slides/uml.html?print-pdf)
+* "Effizient im Team mit Architektur und Code-Reviews
+    * Artikel: [online](https://www.heise.de/developer/artikel/Effizient-im-Team-mit-Architektur-und-Code-Reviews-1855640.html?seite=all)
 
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 
 
 # Weiterführende Literatur
-* Ghezzi C., Jazayeri M., Mandioli D. *Fundamentals of Software Engineering (2nd Edition)*, Kapitel 5.5
-* Pfleeger S. L., Atlee, J. M. *Software Engineering* Kapitel 6
+* Ghezzi C., Jazayeri M., Mandioli D. *Fundamentals of Software Engineering (2nd Edition)*, Kapitel 6.1 - 6.3
+* Pfleeger S. L., Atlee, J. M. *Software Engineering* Kapitel 8.1 - 8.3
