@@ -20,7 +20,7 @@ den physikalischen Gegebenheiten schliessen, da alle relevanten physikalischen G
 
 Im Gegensatz dazu können wir bei der Software nicht von Kontinuität ausgehen. Dazu schauen wir uns ein Codebeispiel an:
 ```java
-    Double binarySearch(Double key, List<Double> list) {
+    int binarySearch(Double key, List<Double> list) {
         int bottom = 0; int top = list.size(); int middle = 0;
         while (bottom < top) {
             if ((bottom + top) % 2 == 0) {
@@ -34,11 +34,11 @@ Im Gegensatz dazu können wir bei der Software nicht von Kontinuität ausgehen. 
                 bottom = middle + 1;
             }
         }
-        return key;
+        return bottom;
     }
 ```
-In diesem Beispiel tritt die Fehlerhafte Berechnung nur dann auf, wenn wir eine Liste sortieren, bei der die Anzahl Elemente nicht einer Zweierpotenz entspricht. 
-Wenn wir also etablieren, dass das korrekte Element für eine Liste mit 1024 Elementen gefunden wird, können wir daraus nicht schliessen, dass dies auch für eine Liste mit 1025 Elementen gilt.
+In diesem Beispiel tritt die fehlerhafte Berechnung nur dann auf, wenn wir eine Liste durchsuchen, bei der die Anzahl Elemente ungerade ist.
+Wenn wir also etablieren, dass das korrekte Element in einer Liste mit 1024 Elementen gefunden wird, können wir daraus nicht schliessen, dass dies auch für eine Liste mit 1025 Elementen gilt.
 
 
 #### Weitere praktische Schwierigkeiten
