@@ -66,7 +66,7 @@ Um zu definieren, wann ein Programm korrekt ist, definieren wir uns die Relation
 $$OR \subseteq D \times R$$, 
 also die Menge aller möglichen Input/Output Paare. 
 * Ein Programm $$P$$ ist korrekt für Input $$d$$, wenn gilt, dass $P(d) \in OR$
-* Ein Programm $$P$$ ist korrekt, wenn für alle $$d \in D$$, das Programm $$P(d)$$ für Eingabe $d$ korrekt ist .
+* Ein Programm $$P$$ ist korrekt, wenn für alle $$d \in D$$, das Programm $$P(d)$$ für Eingabe $d$ korrekt ist.
 In Worten formuliert ist ein Programm also korrekt, wenn es für alle möglichen Eingaben die richtige Ausgabe produziert.
 Umgekehrt ist ein fehlerhaft wenn es nicht korrekt ist. Das heisst, 
 wir können ein Paar $$(d, P(d))$$ finden, so dass 
@@ -128,11 +128,11 @@ Schauen wir uns dazu ein Beispiel an:
 ```
 Zwei mögliche Testmengen wären nun 
 
-$$\{x = 3, y =2; x=2, y=3 \}$$ 
+$$\{x = 3, y =2; x=2, y=3 \}$$
 
 und
 
-$$\{x=3, y=2; x=4,y = 3; x=5, y = 1\}$$.
+$$\{x=3, y=2; x=4,y = 3; x=5, y = 1\}.$$
 
 Die erste Testmenge ist hier eindeutig zu bevorzugen, da diese nicht nur den ersten Pfad der Bedingung testet, sondern auch den zweiten. Wir sehen hier, dass es also nicht die Anzahl der Testfälle ausschlaggebend für die Güte von der Testmenge ist. 
 Stattdessen versuchen wir usere ideale Testmenge approximieren ist, indem wir Testfälle definieren, die repräsentativ für eine ganze Klasse von Testfällen stehen. In diesem Beispiel repräsentiert $$x=3,y=2$$ alle Testfälle, bei der die Bedingung $$\texttt{true}$$ ist, 
