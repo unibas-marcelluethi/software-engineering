@@ -2,52 +2,57 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Testing in the small</title>
+	<title>Konstruktive und Deskriptive Spezifikationen</title>
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/solarized.css">
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 </head>
 
 <body>
-    <div class="reveal">
-        <div class="slides">
+	<div class="reveal">
+		<div class="slides">
 
-            <div class="slides">
-                <section class="center">
-                    <h3>
-                        Testing in the small
-                    </h3>
-                    <h4>
-                        Black box testing, Weitere Aspekte
-                    </h4>
+			<section class="center">
+				<div class="titleblock">
 
-                    <p>
-                        <small> Marcel L&uuml;thi <br>
-                            Departement Mathematik und Informatik </small>
-                    </p>
-                    <p>
-                        <img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
-                    </p>
-                </section>
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
 
 
+					<h1 style="clear:both;margin-top:20%">
+						Verifikation von Software
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">               
+
+                </aside>
+
+			</section>
+    
                 <section>
                     <h3>Black box testing</h3>
 
@@ -324,75 +329,82 @@
         </div>
 
 
+    <script src="../../slides/lib/js/head.min.js"></script>
+    <script src="../../slides/js/reveal.js"></script>
 
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.js"></script>
-
-        <script>
-            file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
-            // More info about config & dependencies:
-            // - https://github.com/hakimel/reveal.js#configuration
-            // - https://github.com/hakimel/reveal.js#dependencies
-            Reveal.initialize({
-                center: false,
-
-                chalkboard: {
-                    src: "chalkboard.json",
-                    readOnly: undefined,
-                    transition: 800,
-                    theme: "whiteboard",
-                    //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
-                    //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
-                    // configuration options for notes canvas and chalkboard
-                    color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
-                    background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
-                    pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
-                },
-                dependencies: [{
-                    src: 'plugin/markdown/marked.js'
-                },
-                {
-                    src: 'plugin/markdown/markdown.js'
-                },
-                { src: 'plugin/math/math.js', async: true },
-                {
-                    src: 'plugin/notes/notes.js',
-                    async: true
-                },
-                {
-                    src: 'plugin/chalkboard/chalkboard.js'
-                },
-                {
-                    src: 'plugin/highlight/highlight.js',
-                    async: true,
-                    callback: function () {
-                        hljs.initHighlightingOnLoad();
-                    }
-                }
-                ],
-                math: {
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+            transition: 'none',           
+            /* 
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            */
+            math: {
                     // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
                     config: 'TeX-AMS_HTML-full'
                 },
-                keyboard: {
-                    67: function () {
-                        RevealChalkboard.toggleNotesCanvas()
-                    }, // toggle notes canvas when 'c' is pressed
-                    66: function () {
-                        RevealChalkboard.toggleChalkboard()
-                    }, // toggle chalkboard when 'b' is pressed
-                    46: function () {
-                        RevealChalkboard.clear()
-                    }, // clear chalkboard when 'DEL' is pressed
-                    8: function () {
-                        RevealChalkboard.reset()
-                    }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
-                    68: function () {
-                        RevealChalkboard.download()
-                    }, // downlad recorded chalkboard drawing when 'd' is pressed
-                },
-            });
-        </script>
+
+            dependencies: [{
+                src: '../../slides/plugin/markdown/marked.js'
+            },
+            {
+                src: '../../slides/plugin/markdown/markdown.js'
+            },
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+            {
+                src: '../../slides/plugin/notes/notes.js',
+                async: true
+            },
+            /*
+            {
+                src: '../../slides/plugin/chalkboard/chalkboard.js'
+            },
+            */
+            {
+                src: '../../slides/plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            { src: '../../slides/plugin/math/math.js', async: true }
+                        ],
+            keyboard: {
+                /*
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+                */
+            },
+        });
+    </script>
 </body>
 
 </html>
