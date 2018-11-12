@@ -1,320 +1,119 @@
-<!doctype html>
-<html>
+# Blackbox Testing
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+*In diesem Artikel schauen wir uns eine zweite Teststrategie an - das Blackbox Testing.
+Im Gegensatz zum Whitebox Testing, werden die Testfälle hier aus den Spezifikationen 
+hergeleitet.*
 
-	<title>Konstruktive und Deskriptive Spezifikationen</title>
+## Einführung
+Wir haben im vorherigen Artikel zum Whitebox Testing gesehen, wie wir anhand Überlegungen zur
+Codestruktur, Testfälle ableiten können. Mit Whitebox Testing testen wir hauptsächlich, ob 
+unsere Implementation das macht, was wir als Programmierer ausdrücken wollten. Die Spezifikationen sind 
+dabei unwichtig. Bei den Blackbox Tests hingegen, leiten wir die Testfälle aus den Spezifikationen ab. 
+Der Vorteil dieser Art von Test ist klar: Während wir bei Whitebox tests bei jeder Implementationsänderung die Testfälle anpassen müssen, ist dies bei dieser Strategie nicht nötig. Wir testen ja nur den spezifizierten "Vertrag" eines Moduls, und nicht die Implementation. Wenn wir automatisierte Unittests für ein Programm schreiben, nutzen 
+wir deshalb vorzugsweise Blackbox Tests.
 
-	<link rel="stylesheet" href="../../slides/css/reveal.css">
-	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+## Herleiten von Testfällen aus Spezifikation
+            
+Um den Ansatz zu verdeutlichen, schauen wir uns an einem Beispiel an, wie wir aus einer gegebenen Spezifikation 
+Testfälle herleiten können (Beispiel nach Ghezzi et al.):
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
-	</script>
-</head>
-
-<body>
-	<div class="reveal">
-		<div class="slides">
-
-			<section class="center">
-				<div class="titleblock">
-
-					<p>
-						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
-					</p>
+> Das Programm bekommt als Input eine Repr&auml;sentation (Datenstruktur) einer Einzahlung. 
+> Diese Einzahlung muss in eine Tabelle
+> von Einzahlungen eingeordnet werden, welche nach Datum sortiert ist. Falls andere Einzahlungen mit
+> demselben Datum existieren, wird die neue Einzahlung nach dem letzten Eintrag dieses Datums einsortiert.
+> Es sollen auch verschiedene Konsistenzchecks durchgef&uuml;hrt werden:
+> * Ist der Kunde bereits im Kundenverzeichnis
+> * Stimmt der Name in den Verzeichnissen &uuml;berein
+> * ...
 
 
-					<h1 style="clear:both;margin-top:20%">
-						Verifikation von Software
+Wir können aus dieser Spezifikation direkt zwei Gruppen von Tests herleiten. Einerseits müssen wir Testen, 
+dass das Datum der Einzahlung richtig berücksichtigt wird. Andererseits müssen wir die Konsistenz testen. 
+Beim formulieren der Testfälle versuchen wir auch hier zuerst Äquivalenzklassen zu finden, und dann 
+für jede Äquivalenzklasse möglichst gute Repräsentanten zu finden. 
 
-					</h1>
-					<h3>
-						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
-					</h3>
-
-                </div>
-                
-                <aside class="notes">               
-
-                </aside>
-
-			</section>
-    
-                <section>
-                    <h3>Black box testing</h3>
-
-                    <blockquote>
-                        Testf&auml;lle werden aus Spezifikation abgeleiten.
-                    </blockquote>
-                    <ul>
-                        <li>Interne Struktur des Moduls wird nicht ber&uuml;cksichtigt.</li>
-                        <li>Testen des Vertrags und nicht der Internas</li>
-                        <ul>
-                            <li>Vorteil: Internas k&ouml;nnen sich &auml;ndern ohne das Test sich &auml;ndert</li>
-                            <li>Empfohlene Praxis f&uuml;r automatisierte Unit Tests</li>
-                        </ul>
-                    </ul>
-                </section>
+Als mögliche Äquivalenzklassen haben wir:
+* Das aktuelles Datum liegt in der Vergangenheit/Zukunft
+* Es gibt keine/mehrere Zahlungen an diesem Tag
+* Name ist/ist nicht im Kundenverzeichnis
+* Zahlung ist mit Datenbank konsistent/inkonsistent
 
 
-                <section>
-                    <h3>Beispiel Spezifikation</h3>
+#### Grenzfälle testen
+Die Erfahrung hat gezeigt, dass Fehler in Programmen häufig an der Grenze zwischen den Äquivalenzklassen auftreten.
+Deshalb definiert man wenn möglich nicht nur  Testfälle für de Äquivalenzklassen, sondern immer auch 
+einen Testfall an dieser Grenze. In unserem Beispiel würden wir also noch separat testen was passiert, 
+wenn das Datum der Einzahlung heute ist, und wenn es genau *eine* Zahlung gibt.
 
-                    <blockquote style="width:100%; font-size:smaller; text-align:left">
-                        Das Programm bekommt als Input eine Repr&auml;sentation (Datenstruktur) einer Einzahlung. Diese Einzahlung muss in eine Tabelle
-                        von Einzahlungen eingeordnet werden, welche nach Datum sortiert ist. Falls andere Einzahlungen mit
-                        demselben Datum existieren, wird die neue Einzahlung nach dem letzten Eintrag dieses Datums einsortiert.
-                        Es sollen auch verschiedene Konsistenzchecks durchgef&uuml;hrt werden:
-                        <ul>
-                            <li>Ist der Kunde bereits im Kundenverzeichnis</li>
-                            <li>Stimmt der Name in den Verzeichnissen &uuml;berein</li>
-                            <li>...</li>
-                        </ul>
-                    </blockquote>
-                </section>
+*Anmerkung: Diese Beobachtung gilt nicht nur für Blackbox Tests. Auch bei Whitebox Tests sollten wir immer
+einen Testfall an der Grenze zwischen zwei Äquivalenzklassen definieren.*
 
 
-                <section>
-                    <h3>Testen von &Auml;quivlanzklassen</h3>
+## Ursache Wirkungsgraphen
 
-                    <p style="text-align:left">
-                        Auch hier k&ouml;nnen (intuitive) &Auml;quivalenzklassen definiert werden.
-                    </p>
+Eine weitere hilfreiche Technik zum finden von Testfällen aus der Spezifikation sind Ursache-Wirkungsgraphen.
+Die Idee dahinter ist, dass wir aus der Spezifikation die Bedingungen identifizieren, welche zu bestimmten Aktionen führen. Für jede Kombination von Bedingungen/Aktionen erhalten wir dann einen Testfall. 
 
-                    <ul>
-                        <li>
-                            Aktuelles Datum der Einzahlung
-                        </li>
-                        <li>
-                            Datum in der Vergangenheit
-                        </li>
-                        <ul>
-                            <li>Es gibt bereits Zahlungen an diesem Tag</li>
-                            <li>Es gibt keine andere Zahlung an diesem Tag</li>
-                        </ul>
-                        <li>Inkorrekte Einzahlungen um Inkonsistenzen zu testen</li>
+Wir schauen uns zuerst wieder ein Beispielszenario an:
+> Ein Kunde kommt in die Bibliothek und will sich ein Buch ausleihen. 
+> Die Bibliothekarin prüft als erstes seinen Ausweis und ob das Benutzerkonto aktiv ist. 
+> Falls der Ausweis nicht gültig ist und oder falls der Kunde fällige Mahngebühren nicht bezahlt hat, 
+> wird das Konto gesperrt. Falls das Konto aktiv ist, wird zusätzlich überprüft ob der Kunde bereits 
+> die maximal mögliche Anzahl von Büchern ausgeliehen hat. 
+> Falls dies der Fall ist wird der Ausleihwunsch zurückgewiesen. 
+> Ansonsten wird dem Kunden das gewünschte Buch ausgeliehen.
 
-                    </ul>
+Wir können daraus folgenden Ursache-Wirkungsgraph erstellen. 
+![Ursache-Wirkungsgraph](../../slides/images/cause-effect-graph.png)
+Auf der linken Seite sehen wir die verschiedenen möglichen Ursachen, auf der rechten Seite die möglichen Aktionen.
+Ein Pfeil zwischen einer Ursache und einer Aktion bedeutet, dass wenn die entsprechende Bedingung erfüllt ist, dass dann daraus die entsprechende Aktion folgt. Für bestimmte Aktionen müssen mehrere Bedingungen erfüllt sein, oder es reicht, wenn eine von mehreren Bedingungen erfüllt ist. Dies modellieren wir mit den logischen Konjunktoren, ```and```und ```or```.  Es kann auch sein, dass für eine Aktion eine bestimmte Ursache nicht gelten kann, also die entsprchende Bedingung nicht erfüllt ist. Um dies auszudrücken, können wir die Negation ```not``` verwenden. 
+Wir können aus diesem Uses Graphen unter anderem folgende Zusammenhänge ablesen:
 
-                </section>
+* Wenn der Ausweis gültig ist, werden die Benutzerdaten abgerufen  
+* Wenn der Ausweis nicht gültig ist, oder Mahngebühren fällig sind, dann wird das Konto gesperrt.
+* Wenn der Ausweis gültig ist, das Konto aktiv ist, keine Mahngebühren fällig sind, und die maximale Anzahl Bücher noch nicht ausgeliehen sind, dann kann der Kunde das Buch ausleihen. 
 
+Um aus einem Ursache Wirkungsgraph Testfälle abzuleiten, können wir diesen in eine Entscheidungstabelle umformulieren.
+Wir sehen hier die dem obigen Graphen entsprechende Tabelle.
 
-                <section>
-                    <h3>Beispiel Spezifikation</h3>
+|Bedingungen|||||||
+|----------|---|---|---|---|---|---|
+| Ausweis gültig?      | N | J | J | J | J | J |
+| Konto aktiv?         | - | N | N | J | J | J | 
+| Fällige Mahngebüren? | - | J | N | J | N | N |
+| Max Anzahl Bücher?   | - | - | - | - | N | J |
 
-                    <blockquote style="width:100%; font-size:smaller">
-                        Ein Kunde kommt in die Bibliothek und will sich ein Buch ausleihen. Die Bibliothekarin pr&uuml;ft als erstes seinen Ausweis
-                        und ob das Benutzerkonto aktiv ist. Falls der Ausweis nicht g&uuml;ltig ist und oder falls der Kunde
-                        fällige Mahngebühren nicht bezahlt hat, wird das Konto gesperrt. Falls das Konto aktiv ist, wird
-                        zus&auml;tzlich &uuml;berpr&uuml;ft ob der Kunde bereits die maximal m&ouml;gliche Anzahl von B&uuml;chern
-                        ausgeliehen hat. Falls dies der Fall ist wird der Ausleihwunsch zur&uuml;ckgewiesen. Ansonsten wird
-                        dem Kunden das gewünschte Buch ausgeliehen.
-                    </blockquote>
-                </section>
+| Aktionen |||||||
+|----------|---|---|---|---|---|---|
+| Benutzerdaten abrufen | N | J | J | J | J| J |
+| Konto Sperren | J | J | N | J | N | N | 
+| Buch ausleihen | N | N | N | N | J | N | 
 
-                <section>
-                    <h3>Ursache-Wirkungs-Graph</h3>
-
-                    <img src="images/cause-effect-graph.png" class="plain" />
-
-                    <ul class="fragment">
-                        <li>Kann benutzt werden um Entscheidungstabelle zu generieren</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>Entscheidungstabellen</h3>
-                    <table style="font-size:smaller">
-                        <tr>
-                            <td>Ausweis g&uuml;ltig?</td>
-                            <td>N</td>
-                            <td>J</td>
-                            <td>J</td>
-                            <td>J</td>
-                            <td>J</td>
-                            <td>J</td>
-                        </tr>
-                        <tr>
-                            <td>Konto Aktiv?</td>
-                            <td>-</td>
-                            <td>N</td>
-                            <td>N</td>
-                            <td>J</td>
-                            <td>J</td>
-                            <td>J</td>
-                        </tr>
-                        <tr>
-                            <td>F&auml;llige Mahngeb&uuml;hren?</td>
-                            <td>-</td>
-                            <td>J</td>
-                            <td>N</td>
-                            <td>J</td>
-                            <td>N</td>
-                            <td>N</td>
-                        </tr>
-                        <tr>
-                            <td>Max. Anzahl B&uuml;cher?</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>N</td>
-                            <td>J</td>
-                        </tr>
-                        <tr style="background-color:lightgray">
-                            <td>Aktionen</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Benutzerdaten abrufen</td>
-                            <td>N</td>
-                            <td>J</td>
-                            <td>J</td>
-                            <td>J</td>
-                            <td>J</td>
-                            <td>J</td>
-                        </tr>
-                        <tr>
-                            <td>Konto Sperren</td>
-                            <td>J</td>
-                            <td>J</td>
-                            <td>N</td>
-                            <td>J</td>
-                            <td>N</td>
-                            <td>N</td>
-                        </tr>
-                        <tr>
-                            <td>Buch ausleihen</td>
-                            <td>N</td>
-                            <td>N</td>
-                            <td>N</td>
-                            <td>N</td>
-                            <td>J</td>
-                            <td>N</td>
-                        </tr>
-
-                    </table>
-                    <blockquote style="width:100%">
-                        &Uuml;berdeckungskriterium: Einen Testfall pro Spalte
-                    </blockquote>
-                </section>
+In jeder Spalte haben wir eine mögliche Kombination von Bedingungen. Wenn der Wert einer Bedingung für eine Aktion nicht relevant ist, haben wir dies mit - angegeben.  Im unteren Teil der Tabelle sehen wir die Aktionen, die für die 
+entsprechende Konfiguration von Bedingungen gelten muss. Wir erhalten aus dieser Tabelle wieder ein *Überdeckungskriterium*. Um für dieses Kriterium vollständige Überdeckung zu erreichen, sollten wir für jede Spalte einen Testfall definieren. Für jeden Testfall spezifiziert die Tabelle genau die Bedingungen die erfüllt sein müssen, und was die gewünschte Aktion ist. 
 
 
+## Testorakel 
 
-                <section>
-                        <h3>Grenzf&auml;lle Testen</h3>
-                        <blockquote style="width:100%">
-                            <p>Viele Fehler treten an den Grenzen von 
-                            &Auml;quivalenzklassen auf.
-                        </p>
-                            <ul>
-                                <li>Gilt sowohl f&uuml;r Black-box als auch White-box testing</li>
-                            </ul>
-                        </blockquote>
-                        <div style="text-align:left" class="fragment">
-                            <h4>Beispiel</h4>
-                        <div style="float:left;width:50%">
-                            <pre><code data-trim>
-                            if (x > y) then
-                                S1;
-                            else
-                                S2;
-                            end if
-                            </code></pre>
-                        </div>
-                        <div style="float:right;width:50%">
-                            <ul>
-                                <li>&Auml;quivalenzklassen</li>
-                                <ul>
-                                    <li>x &gt; y</li>
-                                    <li>x &lt;= y</li>
-                                </ul>
-                            </ul>
-                        </div>
-                        <ul>               
-                            <li>Weiterer wichtiger Testfall: x = y</li>             
-                        </ul>
-                        </div>
-                    </section>
-    
-    
-                    <section>
-                        <h3>Test Orakel</h3>
-                        <blockquote>
-                            Ein Test Orakel gibt uns den korrekten Output zu einem 
-                            gegebenen Testfall.
-                        </blockquote>
-                        <ul>
-                            <li>Automatisierte Orakel n&ouml;tig bei automatisierten Tests und wenn viele Tests durchgef&uuml;hrt werden sollen.</li>
-                            <li>Design von Orakel insbesondere f&uuml;r white box Tests oft schwierig</li>
-                            <ul><li>
-                                Programmstruktur gibt keine Anhaltspunkte, was Output sein sollte.
-                            </li></ul>
-                        </ul>
+Wir habe nun verschiedene Möglichkeiten gesehen, wie wir Testfälle definieren. Die Testfälle definieren die 
+Menge der Eingaben, für die wir das Programm testen müssen. Um zu entscheiden, ob der Test erfolgreich war, 
+müssen wir aber zusätzlich wissen, was denn die richtige Ausgabe für diesen Testfall ist. Wir brauchen ein 
+sogenanntes *Testorakel*, welches uns zu jedem Testfall den richtigen Output gibt. Ein Testorakel ist besonders
+bei automatisierten Tests wichtig, da hier ja kein Mensch involviert ist, der die Korrektheit beurteilen könnte. 
+Das Design von einem Testorakel ist häufig kein triviales Unterfangen.
 
-                        
-                    </section>
+Im idealfall haben wir formale Spezifikationen, die uns für jeden Testfall genau die richtige Antwort (die Postcondition) vorgeben. In diesem Fall können wir die Spezifikation einfach in die Programmiersprache übersetzen und somit unser Testorakel
+implementieren. Falls dies nicht der Fall ist, und die Anzahl der Testfälle eher klein ist, können wir die richtige 
+Antwort durch einen "Experten" (den Entwickler/Kunde) bestimmen lassen. In manchen Fällen haben wir bereits ein anderes Programm zur Verfügung, welches wir benutzen können um den gleichen Testfall zu implementieren. 
+Bei diesem Programm kann es sich beispielsweise um eine ältere Version unserer Software handeln, oder um ein Konkurrenzprodukt. Vor allem in 
+wissenschaftlicher Software können wir versuchen durch heuristiken eine zweite, approximative Lösung zu entwickeln und
+die Lösung unsere Software mit dieser zu vergleichen. Eine weitere Möglichkeit ist, dass wir gewisse statistische Eigenschaften der Lösung testen. Wir wissen vielleicht, dass der Mittelwert oder die Varianz einer Berechnung um einen 
+bestimmten Wert liegt oder diese gewisse Konvergenzeigenschaften erfüllen. 
 
-                    <section>
-                        <h3>Beispiele von Test Orakeln</h3>
-                        
-                        <ul>
-                            <li>Menschlicher Tester</li>
-                            <li>Spezifikation</li>
-                            <ul>
-                                <li>Idealfall: Postcondition ist formal definiert</li>
-                            </ul>
-                            <li>Andere Programme</li>
-                            <li>Modell des Systems</li>
-                            <li>Statistische Methoden</li>
-                        </ul>
-                    </section>
+Wir sehen also, dass sich spätestens beim Testen zeigt, ob wir das Softwaresystem ausreichend spezifiziert haben, 
+so dass wir es auch verifizieren können. Falls dies nicht der Fall ist, liefern wir dem Kunden nicht nur ein schlecht spezifiziertes, sondern auch weitgehend ungetestetes Produkt aus. 
 
-     
-                <section>
-                        <h3>Interessanter Ansatz: Property based testing</h3>
-                        <blockquote>
-                            Idee: Spezifizierte Eigenschaften werden auf vielen automatisch 
-                            generierten Testf&auml;llen &uuml;berpr&uuml;ft.
-                        </blockquote>
-
-                        
-                        <figure>
-                        <pre><code data-trim>                               
-                                public int plus(int a, int b) { return a + b; }
-
-                                @Test                                
-                                public void addingTwoPositiveIntegersAlwaysGivesAPositiveInteger(){
-                                  qt()
-                                  .forAll(integers().allPositive()
-                                        , integers().allPositive())
-                                  .check((i,j) -> plus(a, b) > 0); 
-                                }
-                        </code></pre>
-                        <figcaption style="font-size:smaller">Beispiel in QuickTheories (https://github.com/ncredinburgh/QuickTheories)</figcaption>
-                    </figure>
-                    </section>
-    
-    
-
+<!-- 
                 <section>
                     <h3>Unit Tests</h3>
                     <ul>
@@ -325,86 +124,4 @@
                         <li>Weshalb sollte man immer Elemente an der Grenze von &Auml;quivalenzklassen testen?</li>
                     </ul>
                 </section>
-            </div>
-        </div>
-
-
-    <script src="../../slides/lib/js/head.min.js"></script>
-    <script src="../../slides/js/reveal.js"></script>
-
-    <script>
-        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
-        // More info about config & dependencies:
-        // - https://github.com/hakimel/reveal.js#configuration
-        // - https://github.com/hakimel/reveal.js#dependencies
-        Reveal.initialize({
-            center: false,
-            transition: 'none',           
-            /* 
-            chalkboard: {
-                src: "chalkboard.json",
-                readOnly: undefined,
-                transition: 800,
-                theme: "whiteboard",
-                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
-                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
-                // configuration options for notes canvas and chalkboard
-                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
-                background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
-                pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
-            },
-            */
-            math: {
-                    // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-                    config: 'TeX-AMS_HTML-full'
-                },
-
-            dependencies: [{
-                src: '../../slides/plugin/markdown/marked.js'
-            },
-            {
-                src: '../../slides/plugin/markdown/markdown.js'
-            },
-            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
-            {
-                src: '../../slides/plugin/notes/notes.js',
-                async: true
-            },
-            /*
-            {
-                src: '../../slides/plugin/chalkboard/chalkboard.js'
-            },
-            */
-            {
-                src: '../../slides/plugin/highlight/highlight.js',
-                async: true,
-                callback: function () {
-                    hljs.initHighlightingOnLoad();
-                }
-            },
-            { src: '../../slides/plugin/math/math.js', async: true }
-                        ],
-            keyboard: {
-                /*
-                67: function () {
-                    RevealChalkboard.toggleNotesCanvas()
-                }, // toggle notes canvas when 'c' is pressed
-                66: function () {
-                    RevealChalkboard.toggleChalkboard()
-                }, // toggle chalkboard when 'b' is pressed
-                46: function () {
-                    RevealChalkboard.clear()
-                }, // clear chalkboard when 'DEL' is pressed
-                8: function () {
-                    RevealChalkboard.reset()
-                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
-                68: function () {
-                    RevealChalkboard.download()
-                }, // downlad recorded chalkboard drawing when 'd' is pressed
-                */
-            },
-        });
-    </script>
-</body>
-
-</html>
+                -->

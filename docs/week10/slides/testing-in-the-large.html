@@ -2,76 +2,113 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Testing in the large</title>
+	<title>	Testen im Grossen </title>
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/solarized.css">
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 </head>
 
 <body>
-    <div class="reveal">
-        <div class="slides">
+	<div class="reveal">
+		<div class="slides">
 
-            <section class="center">
-                <h3>
-                    Testing in the large
-                </h3>
-                <p>
-                    <small> Marcel L&uuml;thi <br>
-                        Departement Mathematik und Informatik </small>
-                </p>
-                <p>
-                    <img class="plain" src="images/uni-basel-logo.png" style="width:6cm" />
-                </p>
-            </section>
+			<section class="center">
+				<div class="titleblock">
 
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Testen im Grossen
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">               
+
+                   
+                </aside>
+
+			</section>
+    
 
             <section>
-                <h3>&Uuml;bersicht</h3>
+                <h1>Testen im Grossen</h1>
 
                 <figure>
-                    <img src="images/test-progression.png" class="plain" />
+                    <img src="../../slides/images/test-progression-small-large-2.png" class="plain"  />
                     <figcaption style="font-size:x-small">Abbildung nach: Pfleeger & Atlee, Software Engineering, Abbildung 8.3</figcaption>
                 </figure>
+
+                <aside class="notes">
+                    
+                </aside>
             </section>
 
             <section>
-                <h3>Modultest (Unit Test)</h3>
+                <h1>Testen im Grossen</h1>
 
+                <figure>
+                    <img src="../../slides/images/test-progression-small-large-3.png" class="plain"  />
+                    <figcaption style="font-size:x-small">Abbildung nach: Pfleeger & Atlee, Software Engineering, Abbildung 8.3</figcaption>
+                </figure>
+
+                <aside class="notes">
+                    Der wichtigste Schreib
+                </aside>
+            </section>
+
+
+            <section>
+                <h1>Modultest (Unit Test)</h1>
+
+                <img src="../../slides/images/dependency-graph.png" class="plain" style="width:60%"  />
                 <ul>
-                    <li>Module sind &uuml;blicherweise Teil eines gr&ouml;sseren Systems</li>
-                    <li>Wir brauchen Hilfskonstrukte um Module zu testen</li>
+                    <li>Module sind Teil von grossem System</li>
+                    <li>Hilfskonstrukte nötig:</li>
                     <ul>
-                        <li>Andere Module sind noch in Entwicklung</li>
-                        <li>Zugriff auf richtige Ressourcen zu teuer</li>
-                        <li>Modul soll m&ouml;glichst isoliert getestet werden</li>
+                        <li>Andere Module noch in Entwicklung</li>
+                        <li>Zugriff auf richtige Ressourcen  teuer</li>
                     </ul>
                 </ul>
+
+
+
+                
+                <aside class="notes">
+
+                </aside>
             </section>
 
             <section>
-                <h3>Stubs & Drivers</h3>
+                <h1>Stubs & Drivers</h1>
 
                 <div style="margin: auto; position:relative">
-                    <img class="plain" data-fragment-index="0" src="images/stub-and-driver.png" />
-                    <img class="fragment fade-in plain " data-fragment-index="0" src="images/stub-and-driver-2.png" />
+                    <img class="plain" data-fragment-index="0" src="../../slides/images/stub-and-driver.png" />
+                    <img class="fragment fade-in plain " data-fragment-index="0" src="../../slides/images/stub-and-driver-2.png" />
                 </div>
                 <ul class="fragment">
                     <li>Formale Spezifikationen helfen die Stubs und Drivers zu schreiben</li>
@@ -80,7 +117,7 @@
 
 
             <section>
-                <h3>Integrationstests</h3>
+                <h1>Integrationstests</h1>
 
                 <div style="float:left;width:50%">
                     <h4>Big-bang</h4>
@@ -107,10 +144,10 @@
             </section>
 
             <section>
-                <h3>"Top down" vs "bottom up"</h3>
+                <h1>"Top down" vs "bottom up"</h1>
 
                 <div style="float:left; width:50%">
-                    <img src="images/module-hierarchy.png" class="plain" />
+                    <img src="../../slides/images/module-hierarchy.png" class="plain" />
                 </div>
 
                 <div style="float:right; width:50%">
@@ -133,15 +170,15 @@
             </section>
 
             <section>
-                <h3>Beispiel</h3>
+                <h1>Beispiel</h1>
 
                 <div style="text-align:left">
-                    <img src="images/stub-driver-composed.png" class="plain">
+                    <img src="../../slides/images/stub-driver-composed.png" class="plain">
 
                     <ul>
                         <li>Strategie 1</li>
                         <ul>
-                            <li>$M_1$ testen, driver f&uuml;r $M_1$, stub f&uuml;r $M_2$</li>
+                            <li>$M_1$ testen, stub f&uuml;r $M_2$</li>
                         </ul>
                         <li>Strategie 2</li>
                         <ul>
@@ -152,74 +189,92 @@
                 </div>
             </section>
 
-            <section>
-                <h3>Testen objektorientierter Programme</h3>
-                <ul>
-                    <li>Eigenschaften von OO-Systemen beeinflusst Testing</li>
-                    <ul>
-                        <li>Kapselung macht Unit Tests einfach, aber Integrationstest schwierig!</li>
-                    </ul>
-                </ul>
-                <figure>
-                    <img src="images/oo-testing.png" class="plain" style="width:60%" />
-                    <figcaption style="font-size:x-small">Abbildung nach Pfleeger & Atlee, Software Engineering, Abbildung 8.16</figcaption>
-                </figure>
 
-            </section>
+      
+
 
 
 
             <section>
-                <h3>Regressionstest</h3>
-
+                <h1>Systemtest</h1>
                 <blockquote>
-                    Wiederholung der Testf&auml;lle wenn Software ver&auml;ndert wird.
+                        Testen des Ganzen Systems gegen die Funktionalen Anforderungen
                 </blockquote>
-
-                <ul>
-                    <li>Automatisierung der Tests enorm hilfreich</li>
-                    <li>Continuous Integration Systeme (wie z.B. Jenkins oder Travis) erlauben Tests bei jedem Commit durchzuf&uuml;hren</li>
-                    <li>Korrektheit kann durch Spezifikation, Testorakel, oder durch Vergleich mit fr&uuml;heren Testruns gepr&uuml;ft
-                        werden. </li>
-                </ul>
-            </section>
-
-
-            <section>
-                <h3>Systemtest</h3>
-                <div style="float:left; width:40%">
-                    <figure>
-                        <img src="images/radio-therapy.jpg" class="plain" />
-                        <figcaption style="font-size:x-small">By Michael Goodyear - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61844004</figcaption>
-                    </figure>
-                </div>
-                <div style="float:right; width:60%">
+                <div style="float:left; width:60%">
                     <ul>                        
-                        <li>Testen des Ganzen Systems gegen die Funktionalen Anforderungen</li>
                         <li>Wird h&auml;ufig auf separater Testumgebung durchgef&uuml;hrt</li>
                         <ul><li>Testumgebung soll Kundenumgebung simulieren</li></ul>
                     </ul>
                 </div>
+                <div style="float:right; width:40%">
+                        <figure>
+                            <img src="../../slides/images/radio-therapy.jpg" class="plain" />
+                            <figcaption style="font-size:x-small">By Michael Goodyear - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61844004</figcaption>
+                        </figure>
+                    </div>
+    
             </section>
+
 
             <section>
-                <h3>Testplan </h3>
+                    <h1>Regressionstest</h1>
+    
+                    <blockquote>
+                        Wiederholung der Testf&auml;lle wenn Software ver&auml;ndert wird.
+                    </blockquote>
+    
+                    <ul>
+                        <li>Automatisierung der Tests enorm hilfreich</li>
+                        <li>Continuous Integration Systeme (wie z.B. Jenkins oder Travis) erlauben Tests bei jedem Commit durchzuf&uuml;hren</li>
+                        <li>Korrektheit kann durch Spezifikation, Testorakel, oder durch Vergleich mit fr&uuml;heren Testruns gepr&uuml;ft
+                            werden. </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Akzeptanztest</h1>
+                    <blockquote>
+                        Test aus Kundensicht - von Kunden durchgeführt
+                    </blockquote>
+                    <ul>
+                            <li><mark class="highlight">Benchmark Test:</mark> Kunde hat eigene Testfälle</li>
+                            <li><mark class="highlight"> Pilottest: </mark> System wird auf Kundensystem installiert (Beta Test)</li>
+                            &nbsp;
+                        <li>Resultat: Entscheid ob und was nachgebessert werden muss</li>
+                    </ul>
+                </section>
+
+
+            <section>
+                <h1>Testplan </h1>
 
                 <blockquote>
-                    Testen eines Systems ist komplexes Unterfangen.
+                    Hilft Aktivit&auml;ten zu planen und koordinieren
                 </blockquote>
-               <ul>                
-                <li>Testplan hilft, die Aktivit&auml;ten zu planen und koordinieren</li>
-                <ul>
-                    <li> Was muss getestet werden?</li>
-                    <li> Warum werden die Tests gemacht?</li>
-                    <li> Wie werden die Tests ausgef&uuml;hrt?</li>
-                    <li> Wann m&uuml;ssen die Tests ausgef&uuml;hrt werden</li>
+               <ul> 
+                   <li>Dokumentiert</li>
+                   <ul>
+                    <li> was getestet wird</li>
+                    <li> warum die Tests gemacht werden</li>
+                    <li> wie Tests ausgef&uuml;hrt werden</li>
+                    <li> wann Tests ausgef&uuml;hrt werden müssen</li>
                 </ul>
-                <li>Testplan sollte von separatem Team (oder anderem Entwickler) geschrieben werden.</li>
+                    <li>Testplan sollte von separatem Team (oder anderem Entwickler) geschrieben werden.</li>
                 </ul> 
+
+                <aside class="notes">
+                    Testen ist ein komplexes unterfangen.
+
+
+                    Der Testplan sollte idealerweise von einem separatem Team oder anderem Entwickler geschrieben werden. 
+                    Der Grund dafür ist, dass ....
+
+                    Auch hier sind deshalb gute Spezifikationen wieder sehr wichtig, damit dies überhaupt gemacht werden kann.
+                </aside>
             </section>
 
+
+            <!--
             <section>
                 <h3>Unit Tests</h3>
                 <ul>
@@ -232,14 +287,14 @@
                     <li>Wieso sind Hierarchien (von Modulen) einfach zu testen?</li>
                 </ul>
             </section>
+            -->
 
         </div>
     </div>
 
 
-
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+    <script src="../../slides/lib/js/head.min.js"></script>
+    <script src="../../slides/js/reveal.js"></script>
 
     <script>
         file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
@@ -248,7 +303,8 @@
         // - https://github.com/hakimel/reveal.js#dependencies
         Reveal.initialize({
             center: false,
-
+            transition: 'none',           
+            /* 
             chalkboard: {
                 src: "chalkboard.json",
                 readOnly: undefined,
@@ -258,36 +314,42 @@
                 //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
                 // configuration options for notes canvas and chalkboard
                 color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
-                background: ['rgba(127,127,127,.1)', 'plugin/chalkboard/img/whiteboard.png'],
-                pen: ['url(plugin/chalkboard/img/boardmarker.png), auto', 'url(plugin/chalkboard/img/boardmarker.png), auto'],
+                background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
             },
+            */
+            math: {
+                    // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'
+                },
+
             dependencies: [{
-                src: 'plugin/markdown/marked.js'
+                src: '../../slides/plugin/markdown/marked.js'
             },
             {
-                src: 'plugin/markdown/markdown.js'
+                src: '../../slides/plugin/markdown/markdown.js'
             },
-            { src: 'plugin/math/math.js', async: true },
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
             {
-                src: 'plugin/notes/notes.js',
+                src: '../../slides/plugin/notes/notes.js',
                 async: true
             },
+            /*
             {
-                src: 'plugin/chalkboard/chalkboard.js'
+                src: '../../slides/plugin/chalkboard/chalkboard.js'
             },
+            */
             {
-                src: 'plugin/highlight/highlight.js',
+                src: '../../slides/plugin/highlight/highlight.js',
                 async: true,
                 callback: function () {
                     hljs.initHighlightingOnLoad();
                 }
-            }
-            ],
-            math: {
-                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-                config: 'TeX-AMS_HTML-full'
             },
+            { src: '../../slides/plugin/math/math.js', async: true }
+                        ],
             keyboard: {
+                /*
                 67: function () {
                     RevealChalkboard.toggleNotesCanvas()
                 }, // toggle notes canvas when 'c' is pressed
@@ -303,6 +365,7 @@
                 68: function () {
                     RevealChalkboard.download()
                 }, // downlad recorded chalkboard drawing when 'd' is pressed
+                */
             },
         });
     </script>
