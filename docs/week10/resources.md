@@ -3,7 +3,7 @@
 # Folien und Artikel
 
 * White-box Testing
-    * Video:  [mp4](TODO),  
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/cSd92EOLPy4ccuR),  
     * Slides: [online](./slides/white-box-testing.html), [Druckversion](./slides/white-box-testing.html?print-pdf)
 
 * Black-box Testing
@@ -11,7 +11,7 @@
 
 
 * Testen im Grossen
-    * Video:  [mp4](TODO),  
+    * Video:  [mp4](https://drive.switch.ch/index.php/s/HrTEu6p0U8PZ9z6),  
     * Slides: [online](./slides/testing-in-the-large.html), [Druckversion](./slides/testing-in-the-large.html?print-pdf)
 
 

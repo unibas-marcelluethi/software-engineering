@@ -12,7 +12,11 @@ Erstellen Sie einen Testplan für Ihre Erweiterung. Nutzen Sie das vorgegebene [
 Der Testplan sollte so geschrieben sein, dass dieser für ein externes Testteam nutzbar ist. 
 
 Pro Gruppenmitglied müssen Sie mindestens 3 Modultests (Abschnitt 6.1) und 3 Funktionstests (Abschnitt 6.2) beschreiben. Falls Sie die Modultests als automatisierte Unit Tests implementiert haben, können Sie einfach die Namen der Unittest in die Tabelle einfügen. Ansonsten müssen Sie diese detailliert beschreiben.
-Überlegen Sie beim Erstellen der Testfälle, was die Äquivalenzklassen und Grenzfälle sind. 
+
+Überlegen Sie beim Erstellen der Modultests was die Äquivalenzklassen und Grenzfälle sind. Nutzen Sie auch Ursache-Wirkungsdiagramme um Testfälle zu identifizieren.
+
+Die Funktionstest sollten anhand der Funktionalen Anforderungen im Pflichtenheft hergeleitet werden. 
+
 
 
 

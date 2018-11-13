@@ -29,7 +29,7 @@ Testfälle herleiten können (Beispiel nach Ghezzi et al.):
 
 Wir können aus dieser Spezifikation direkt zwei Gruppen von Tests herleiten. Einerseits müssen wir Testen, 
 dass das Datum der Einzahlung richtig berücksichtigt wird. Andererseits müssen wir die Konsistenz testen. 
-Beim formulieren der Testfälle versuchen wir auch hier zuerst Äquivalenzklassen zu finden, und dann 
+Beim Formulieren der Testfälle versuchen wir auch hier zuerst Äquivalenzklassen zu finden, und dann 
 für jede Äquivalenzklasse möglichst gute Repräsentanten zu finden. 
 
 Als mögliche Äquivalenzklassen haben wir:
@@ -41,7 +41,7 @@ Als mögliche Äquivalenzklassen haben wir:
 
 #### Grenzfälle testen
 Die Erfahrung hat gezeigt, dass Fehler in Programmen häufig an der Grenze zwischen den Äquivalenzklassen auftreten.
-Deshalb definiert man wenn möglich nicht nur  Testfälle für de Äquivalenzklassen, sondern immer auch 
+Deshalb definiert man wenn möglich nicht nur  Testfälle für die Äquivalenzklassen, sondern immer auch 
 einen Testfall an dieser Grenze. In unserem Beispiel würden wir also noch separat testen was passiert, 
 wenn das Datum der Einzahlung heute ist, und wenn es genau *eine* Zahlung gibt.
 
@@ -67,7 +67,7 @@ Wir können daraus folgenden Ursache-Wirkungsgraph erstellen.
 ![Ursache-Wirkungsgraph](../../slides/images/cause-effect-graph.png)
 Auf der linken Seite sehen wir die verschiedenen möglichen Ursachen, auf der rechten Seite die möglichen Aktionen.
 Ein Pfeil zwischen einer Ursache und einer Aktion bedeutet, dass wenn die entsprechende Bedingung erfüllt ist, dass dann daraus die entsprechende Aktion folgt. Für bestimmte Aktionen müssen mehrere Bedingungen erfüllt sein, oder es reicht, wenn eine von mehreren Bedingungen erfüllt ist. Dies modellieren wir mit den logischen Konjunktoren, ```and```und ```or```.  Es kann auch sein, dass für eine Aktion eine bestimmte Ursache nicht gelten kann, also die entsprchende Bedingung nicht erfüllt ist. Um dies auszudrücken, können wir die Negation ```not``` verwenden. 
-Wir können aus diesem Uses Graphen unter anderem folgende Zusammenhänge ablesen:
+Wir können aus diesem Usrsache-Wirkungsgraphen unter anderem folgende Zusammenhänge ablesen:
 
 * Wenn der Ausweis gültig ist, werden die Benutzerdaten abgerufen  
 * Wenn der Ausweis nicht gültig ist, oder Mahngebühren fällig sind, dann wird das Konto gesperrt.

@@ -28,9 +28,9 @@ Die folgenden Lernziele sollten *während oder nach* der Vorlesung vom 21. Novem
 
 ### Vorbereitung für die Vorlesungsstunde vom Mittwoch:
 
-* Schritt 1: Schauen Sie sich das Video "White-box Testing" an  ([Video](TODO), [Slides](./slides/white-box-testing.html))
+* Schritt 1: Schauen Sie sich das Video "White-box Testing" an  ([Video](https://drive.switch.ch/index.php/s/cSd92EOLPy4ccuR), [Slides](./slides/white-box-testing.html))
 * Schritt 2: Lesen Sie den Artikel zum Thema "Black-box Testing"  ([Artikel](./articles/black-box-testing.html))
-* Schritt 3: Schauen Sie sich das Video "Testen im Grossen an  ([Video](TODO), [Slides](./slides/testing-in-the-large.html))
+* Schritt 3: Schauen Sie sich das Video "Testen im Grossen an  ([Video](https://drive.switch.ch/index.php/s/HrTEu6p0U8PZ9z6), [Slides](./slides/testing-in-the-large.html))
 * Schritt 4: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_742921.html))
 
 *Achtung: Der Test muss spätestens bis Mittwoch 21. November, 08:00 bearbeitet sein.*

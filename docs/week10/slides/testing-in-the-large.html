@@ -48,7 +48,7 @@
                 </div>
                 
                 <aside class="notes">               
-
+                    Herzlich Willkommen zu diesem Screencast, zum Thema Testen im Grossen.
                    
                 </aside>
 
@@ -64,7 +64,13 @@
                 </figure>
 
                 <aside class="notes">
-                    
+                    Nachdem wir uns angeschaut haben, wie wir die individuellen Module testen, müssen wir als nächstes Besprechen, wie das Gesamtsystem
+                    getestet werden kann. Dies geschieht in verschiedenen Schritten. In einem ersten Schritt werden die individuell getesteten Module in einem 
+                    Integrationstest zu einem gesamtsystem zusammengebaut. Danach wird ein Systemtest durchgeführt. Ein Systemtest soll sicherstellen, dass 
+                    das GEsamtsystem den Anforderungen entspricht. Dabei müssen einerseits die Funktionalen Anforderungen getestet werden, andererseits aber
+                    auch die spezifizierten Qualitätsanforderungen, wie zum Beispiel die Performance vom System. Im nächsten Schritt wird dann vom Kunden ein 
+                    Akzeptanstest durchgeführt. Falls der Akzeptanztest noch nicht auf dem Kudnensystem stattgefunden hat, muss auch noch ein Installationstest
+                    auf dem Endsystem des Kunden ausgeführt werden. 
                 </aside>
             </section>
 
@@ -77,7 +83,11 @@
                 </figure>
 
                 <aside class="notes">
-                    Der wichtigste Schreib
+                    Der Integrtions und Systemtest müssen nicht nur einmal nach Entwicklung des Systems durchgeführt werden, sondern wenn immer das
+                    System verändert wird, also zum Beispiel nachdem eine neue Version der Software Entwickelt wurde, oder auch nachdem Bugs behoben wurden. 
+                    Dieses wiederholte Ausführen der einmal definierten  Testfälle nennt sich Regressionstest. 
+
+                    Zuerst wollen wir jedoch nochmals auf die Modultests zurückkommen, diesmal aber im Kontext des Gesamtsystems.
                 </aside>
             </section>
 
@@ -91,7 +101,7 @@
                     <li>Hilfskonstrukte nötig:</li>
                     <ul>
                         <li>Andere Module noch in Entwicklung</li>
-                        <li>Zugriff auf richtige Ressourcen  teuer</li>
+                        <!-- <li>Zugriff auf richtige Ressourcen  teuer</li> --> 
                     </ul>
                 </ul>
 
@@ -99,7 +109,10 @@
 
                 
                 <aside class="notes">
-
+                    Wir sind bisher immer davon ausgegangen, dass ein Entwickler ein Modul selbständig testen kann. Dies ist jedoch nicht immer ganz einfach. 
+                    Ein Modul ist ja Teil von einem Gesamtsystem, was ziemlich komplizierte Abhängigkeiten haben kann. Da während der Entwicklung des Systems
+                    vielleicht noch gar nicht alle zum testen benötigten Module entwickelt sind, müssen wir uns zum mit Hilfsfunktionen behelfen. 
+                    Wir müssen Stubs und Drivers entwicklen.
                 </aside>
             </section>
 
@@ -113,6 +126,20 @@
                 <ul class="fragment">
                     <li>Formale Spezifikationen helfen die Stubs und Drivers zu schreiben</li>
                 </ul>
+
+                <aside class="notes">
+                    Die Situation ist hier graphisch dargestellt. Wir möchten ein Modul B testen, welches von Modul A benutzt wird, und selbst
+                    Module C als Service nutzt. Um die Funktionalit"t von B zu testen müssen wir, als Ersatz für das noch nicht entwickelte Module A, 
+                    einen Driver implementieren. Dieser Driver simuliert die Funktionalität von Module A. Da auch das Modul C noch nicht vorhanden ist, 
+                    müssen wir auch dieses Ersetzten, damit wir dessen funktionalität nutzen können. Wir nennen diese Implementation Stub. 
+                    Der Name Stub deutet schon darauf hin, dass die Funktionalität nicht komplett nachimplementiert werden muss, sondern nur soweit, dass wir
+                    das Modul B testen können.
+
+                    Auch hier wird unsere Situation viel einfacher, wenn bereits klar spezifiziert ist, was denn der Vertrag zwischen den Modulen A und B und B und C ist, 
+                    also wie die Schnittstellen aussehen und was genau von den Modulen als Service garantiert wird. 
+
+                </aside>
+
             </section>
 
 
@@ -141,15 +168,28 @@
                         </ul>
                     </ul>
                 </div>
+
+                <aside class= "notes">
+                    Die so getesteten Module können dann, als Teil vom Integrationstest, zu einem Gesamtsystem zusammengefühgt werden. 
+                    Hier gibt es zwei Möglichkeiten. Entweder, wir warten mit der Integration, bis alle benötigten Module entwickelt sind. 
+                    In einer Big Bang aktion, wird dann das gesamte System auf einmal getestet. 
+                    Eine andere Möglichkeit ist, dass wir jedes Modul immer im grösst möglichen Kontext testen. Wir beginnen mit einem einzelnen Module und den 
+                    dazugehörigen Stubs und Driver, und eretzten dann sukkzesive die Stubs und Driver mit den entwickelten Modulen. Dabei können wir Top Down oder
+                    Bottom Up vorgehen. Beim Top Down Ansatz beginnen wir mit dem Modul auf höchster Ebene und ersetzen sukkzesive die Stubs durch die 
+                    richtige Implementation. Beim Bottom up Ansatz beginnen wir auf der tiefsten Ebene und ersetzen sukkzesive die Driver mit den entsprechenden realen 
+                    Modulen. 
+                </aside>
+
             </section>
 
             <section>
                 <h1>"Top down" vs "bottom up"</h1>
 
-                <div style="float:left; width:50%">
+                <div style="float:center; width:50%; margin-left:auto; margin-right:auto; display:block">
                     <img src="../../slides/images/module-hierarchy.png" class="plain" />
                 </div>
 
+                <!--
                 <div style="float:right; width:50%">
                     <ul>
                         <li>In Hierarchien wird Testen einfacher</li>
@@ -163,12 +203,23 @@
                         </ul>
                     </ul>
                 </div>
-
+-->
+                <!--
                 <div style="display:inline-block" class="fragment">
                     Was sind die Vorteile von Bottom Up / Top Down?
                 </div>
+                -->
+
+                <aside class="notes">
+                    Bei diesem Punkt können wir nun wieder an unsere  Designziele erinnern. Wir wollten wenn möglich die Software  so Entwerfen, dass 
+                    der Uses Graph einen Hierarchie bildet. Ein weiteres Ziel war, dass eine schwache Kopplung zwischen den Modulen haben. 
+                    Es ist einfach zu sehen, dass uns diese Eigenschaften das Testen der Module und den Integrationstest stark vereinfachen. 
+                    Im Falle einer Hierarchischen Anordnung, können wir den Integrationstest wirklich als reinen Bottom up oder reinen Top Down ansatz 
+                    durchführen.
+                </aside>
             </section>
 
+            <!--
             <section>
                 <h1>Beispiel</h1>
 
@@ -189,7 +240,7 @@
                 </div>
             </section>
 
-
+-->
       
 
 
@@ -213,24 +264,20 @@
                         </figure>
                     </div>
     
+                <aside class="notes">
+                    Nachdem wir das System integriert haben, und alle Module auch im Gesamtverbund funktionieren, müssen wir das gesamte System gegen 
+                    die spezifizierten Funktionalen Anforderungen testen. 
+                    Wenn möglich sollte dieser Systemtest auf einem für genau diesem Zweck vorgesehene TEstumgebung stattfinden. 
+                    Die TEstumgebugn sollte zudem so konzipiert sein, dass dies möglichst genau die Kundenumgebung simuliert. 
+                    Im einfachsten Fall stellen wir einfach sicher, dass unsere Systemtestumgebugn auf ungefähr dieselbe Hardwarespezifikation und dasselbe
+                    Betriebssystem wie die Kundenumgebugn aufweist. Wenn der Kunde eine sehr spezielle Umgebung hat, wie in dem dargestellten Beispiel eines 
+                    Strahlenterapiegeräts, müssen wir unter umständen einiges Investieren um unsere Testumgebugn möglichst realistisch zu gestalten. 
+                    
+                </aside>
             </section>
 
 
-            <section>
-                    <h1>Regressionstest</h1>
-    
-                    <blockquote>
-                        Wiederholung der Testf&auml;lle wenn Software ver&auml;ndert wird.
-                    </blockquote>
-    
-                    <ul>
-                        <li>Automatisierung der Tests enorm hilfreich</li>
-                        <li>Continuous Integration Systeme (wie z.B. Jenkins oder Travis) erlauben Tests bei jedem Commit durchzuf&uuml;hren</li>
-                        <li>Korrektheit kann durch Spezifikation, Testorakel, oder durch Vergleich mit fr&uuml;heren Testruns gepr&uuml;ft
-                            werden. </li>
-                    </ul>
-                </section>
-
+       
                 <section>
                     <h1>Akzeptanztest</h1>
                     <blockquote>
@@ -242,6 +289,16 @@
                             &nbsp;
                         <li>Resultat: Entscheid ob und was nachgebessert werden muss</li>
                     </ul>
+
+                    <aside class="notes">
+                        Wenn auch unsere Systemtests erfolgreich verlaufen sind, können wir das System, im Akzeptanztest, durch den 
+                        Kunden testen lassen. Es gibt hier zwei weit verbreitete Möglichkeiten. Einerseits bereitet der Kunde einen Benchmark test vor. 
+                        Das heisst, er definiert eigene, für ihn wichtige Testfälle, mit dem er das System testet. 
+                        Eine weitere möglichkeit ist, dass nach dem systemtest ein Pilottest durchgeführt wird. Das System wir d auf dem Kundensystem installiert, 
+                        und wird während einer Pilotphase vom Kunden getestet. Dier Test wird häufig auch als Beta test bezeichnet. In dieser Phase ist es 
+                        nicht auszuschliessen, dass das System nochmals nachgebessert werden muss. 
+                        Falls der Kunde mit der Funktionalität zufrieden ist, kann das System ausgeliefert werden und der Auftrag ist abgeschlossen.
+                    </aside>
                 </section>
 
 
@@ -252,27 +309,67 @@
                     Hilft Aktivit&auml;ten zu planen und koordinieren
                 </blockquote>
                <ul> 
-                   <li>Dokumentiert</li>
-                   <ul>
-                    <li> was getestet wird</li>
-                    <li> warum die Tests gemacht werden</li>
-                    <li> wie Tests ausgef&uuml;hrt werden</li>
-                    <li> wann Tests ausgef&uuml;hrt werden müssen</li>
-                </ul>
+                    <li>Dokumentiert</li>
+                    <ul>
+                     <li> was getestet wird</li>
+                     <li> warum die Tests gemacht werden</li>
+                     <li> wie Tests ausgef&uuml;hrt werden</li>
+                     <li> wann Tests ausgef&uuml;hrt werden müssen</li>
+                 </ul>
                     <li>Testplan sollte von separatem Team (oder anderem Entwickler) geschrieben werden.</li>
                 </ul> 
 
                 <aside class="notes">
-                    Testen ist ein komplexes unterfangen.
+                    Das Testen von einem grossen System ist ein sehr komplexes unterfangen. Wie jeder Schritt im Softwareentwicklungsprozess, sollte 
+                    auch dieser Schritt gut geplant und dokumentiert werden. 
+                    Dazu wird typischerweise ein Testplan erstellt. Im Testplan wird dokumentiert, was getestet wird, 
+                    warum diese Tests gemacht werden, und wie und wann die Tests ausgeführt werden. 
 
+                    Idealerweise wird der Testplan von einem speziellen Team, eventuell in Absprache mit den Entwicklern erarbeitet. 
+                    Dies vermindert das Risiko, dass die Denkfehler, die den Entwicklern während der Entwicklungsphase unterlaufen sind, sich auch 
+                    im Test wiederspiegeln, und somit unentdeckt bleiben.
 
-                    Der Testplan sollte idealerweise von einem separatem Team oder anderem Entwickler geschrieben werden. 
-                    Der Grund dafür ist, dass ....
-
-                    Auch hier sind deshalb gute Spezifikationen wieder sehr wichtig, damit dies überhaupt gemacht werden kann.
+                    Das ein Separates Team den Testplan entwicklen kann bedingt natürlich, dass die Anforderungen entsprechend gut Dokumentiert sind.
                 </aside>
             </section>
 
+            <section>
+                    <h1>Regressionstest</h1>
+    
+                    <blockquote>
+                        Wiederholung der Testf&auml;lle wenn Software ver&auml;ndert wird.
+                    </blockquote>
+    
+                    <ul>
+                        <!--<li>Korrektheit kann durch Spezifikation, Testorakel, oder durch Vergleich mit fr&uuml;heren Testruns gepr&uuml;ft
+                            werden </li>-->
+                        <!-- <li>Spezifikation garantiert, dass wir noch wissen, was gelten muss.</li> -->
+                        <li>Automatisierung der Tests enorm hilfreich</li>
+                        <ul>
+                            <li>Continuous Integration</li>                            
+                        </ul>
+                        &nbsp;
+                        <li><mark class="highlight">Dank Testplan können auch manuelle Testfälle mit wenig Aufwand wiederholt werden!</mark>
+                         </ul>
+
+
+
+                    <aside class="notes">
+                        Wie immer im Software engineering, müssen wir uns bewusst sein, dass die Software in der Zukunft
+                        von Veränderungen betroffen ist und angepasst werden muss. Das heisst, es muss ein Regressionstest durchgefürht werden, 
+                        um zu überprüfen, ob auch das veränderte System noch die Anforderungen erfüllt. 
+                        
+                        Alle Testfälle, die bereits als automatisierte Test vorliegen, können ohne grossen Aufwand wieder durchgeführt werden. 
+                        Enorm hilfreich sind auch Systeme für die Kontinuierliche Integration, die bei jeder Änderung vom Code automatisch alle
+                        Modultest im Zusammenhang durchlaufen lassen. 
+                        
+                        Wenn wir bei der Erstentwicklung einen guten TEstplan entwickelt haben, können wir diesen bei jedem Regressionstest wiederverwenden.
+                        Wir müssen uns also nicht jedesmal neue Testfälle für den Systemtest ausdenken, sondern können von der bereits investierten Arbeit
+                        profitieren. Damit stellen wir sicher, dass auch die angepasste Software genaus zuverlässig funktioniert wie die Ursprungsversion.
+                        
+                    </aside>
+
+                </section>
 
             <!--
             <section>

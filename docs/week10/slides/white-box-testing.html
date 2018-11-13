@@ -48,7 +48,7 @@
                 </div>
                 
                 <aside class="notes">               
-
+                    Herzlich willkommen zu diesem Screencast zum Thema whitebox testing.
                    
                 </aside>
 
@@ -61,6 +61,17 @@
                                 <img src="../../slides/images/test-progression-small-large.png" class="plain" />
                                 <figcaption style="font-size:x-small">Abbildung angelehnt an: Pfleeger & Atlee, Software Engineering, Abbildung 8.3</figcaption>
                             </figure>
+
+                        <aside class="notes">
+                            Wir haben das letzte mal bereits besprochen, dass wir zwischen Testen im kleinen und Testen im grossen unterscheiden können. 
+                            Beim Testen im kleinen führt der Entwickler selbst Modultests für die von ihm Programmierten Module durch. Diese Modultests werden
+                            häufig auch als Unit tests bezeichnet. Das bedeutet aber nicht zwingend, dass diese automatisch durchgeführt werden müssen. 
+                            Beim Testen im Grossen werden dann die verschiedenen, bereits individuell getesteten Module zu einem gesamtsystem zusammengefügt und 
+                            das System wird als ganzes geteste. 
+                            
+                            Die Teststrategie vom White box testing wird nur für das Testen der Module angewendet.
+                        </aside>
+
                 </section>
 
 
@@ -98,9 +109,18 @@
                         Struktur definiert &Auml;quivalenzklassen.
                     </blockquote>
                     <aside class="notes">
-                        Wir erinnern uns nochmals daran was Whitebox Testing ist:
-                        Es wird die interne Struktur benutzt um die Testfälle zu finden.
-                        <li>Beobachtung: Testf&auml;lle für die  x = y lassen grosse Teile des Programms ungetest.</li>                       
+                        Wir erinnern uns nochmals daran um was es beim White box testing geht:
+                        Die Idee ist, dass wir die interne Struktur eines Moduls anschauen, und anhand dieser Struktur versuchen TEstfälle abzuleiten.
+                        Nehmen wir an, dass wir den berühmten Algorithmus von Euklid zum finden des Grössten Gemeinsamen Teilers implementiert hätten und die 
+                        Implementation testen wollten. Anhand der Struktur können wir direkt ablesen, dass es keine Sinnvolle strategie ist, nur 
+                        Testfälle zu testen, für die x = y ist. Diese lassen einen Grossteil des Codes ungetestet. Wir sollten zumindest auch einen TEstfall haben, 
+                        bei dem x > y ist, also bei dem wir die erste Bedingung testen, und ein Testfall bei dem x < y ist.
+                        
+                        Alle diese Überlegung folgen direkt aus der Struktur vom Code. Es wird keine Spezifikation benötigt. Beim White box testing testen 
+                        wir also nur, ob die Implementation auch das macht, was wir erreichen wollen, aber nicht, ob es die spezifizierte Funktionalität erfüllt.
+
+                        Wir habe letzte Woche bereits gesehen, dass wir wenn immer möglich versuchen Äquivalenzklassen von Testfällen zu definieren und mindestens
+                        für jede Äquivalenzklasse einen TEstfall zu finden. Beim Whitebox testing werden diese Äquivalenzklassen anhand der Codestruktur definiert.
                     </aside>
 
 
@@ -124,55 +144,94 @@
                     </ul>
                 </div>
                 <aside class="notes">
-                    Wir müssen natürlich definieren, was wir als inadäquat betrachten.
-                    
-                    Wir werden uns nun alle Kriterien anschauen.
+                    Dies bringt uns zum Überdeckungskriterium. Wir möchten, dass die Überdeckung (oder auf English coverage) von den getesteten
+                    Äquivalenzklassen möglichst den vollständigen Programmcode entspricht. Die Idee dahinter ist, dass wenn signifikante Teile vom 
+                    Code nicht getestet sind, dass wir dann nur inadäquat getestet haben, und somit viele Fehler unentdeckt bleiben.
+
+                    Diese Aussage müssen wir natürlich noch präzisieren, damit wir ein Messbares Kriterium für die Güte unserer Tests bekommen. 
+                    Im folgenden werden wir 4 verschiedene konkrete Kriterien betrachten: 
+                    Anweisungs...
+                    Zweig ...
+                    Dabei ist die Anweisungsüberdeckung das schwächste und die Pfadüberdeckung das Stärkste Kriterum.
+
                 </aside>
                 </section>
 
                 <section>
                     <h1>Anweisungs&uuml;berdeckung</h1>
                     <blockquote style="width:100%">
-                        W&auml;hle Testmenge $T$ so, dass jedes Statement in Programm $P$ mindestens einmal ausgef&uuml;hrt wird (f&uuml;r beliebiges
-                        $d \in T$)
+                        W&auml;hle Testmenge $T$ so, dass jedes Statement in Programm $P$ mindestens einmal ausgef&uuml;hrt wird
+                        (für beliebiges $d \in T$)
                     </blockquote>
+
+                    <pre><code data-trim>
+                            read (x); read (y);
+                            if x > 0 then 
+                                write ("1");
+                            else 
+                                write ("2");
+                            end if;
+                            if y > 0 then 
+                                write ("3");
+                            else 
+                                write ("4");
+                            end if;
+                    </code></pre>
+                    <!--
                     <ul>
                         <li>F&uuml;r jedes $d$ werden mehrere Statements ausgef&uuml;hrt</li>
                         <ul>
                             <li>Ziel: minimieren der Anzahl Testcases f&uuml;r gew&uuml;nschte Abdeckung.</li>
                         </ul>
                     </ul>
+                -->
+                    <aside class="notes">
+                        Bei der Anweisungsüberdeckung möchten wir die TEstmenge so wählen, dass jedes Statement im Programm mindestens einmal ausgeführt wird. 
+                        Bei diesem Beispiel sehen wir sofort, dass wir mindestens 2  Testfälle brauchen. X sollten jeweils in einem fall > 0 udn einem < 0 sein.
+                                                
+                        Wir möchten natürlich unsere Testfälle so wählen, dass wir eine möglichst kleine Menge an Tests durchführne müssen, um das alle 
+                        Anweisungen zu überdecken.
+                    </aside>
+
                 </section>
 
                 <section>
-                    <h1>Beispiel: Anweisungs&uuml;berdeckung</h1>
-
+                    <h1>Anweisungs&uuml;berdeckung</h1>
                     <pre><code data-trim>
-                        read (x); read (y);
-                        if x > 0 then 
-                            write ("1");
-                        else 
-                            write ("2");
-                        end if;
-                        if y > 0 then 
-                            write ("3");
-                        else 
-                            write ("4");
-                        end if;
-                </code></pre>
-                    <div style="font-size:smaller; text-align:left">
-                        Vollständige Abdeckung:
-                        \[
-                        \begin{split}
-                        \{ &x = 2, y = 3; x = - 13, y = 51; \\
-                            &x = 97, y = 17; x = - 1, y = - 1\}
-                        \end{split}
-                        \]
-                        <div class="fragment">
-                        Minimale Testmenge mit vollständiger Abdeckung
-                        \[ \{x = - 13, y = 51; x = 2, y = - 3 \} \]
-                    </div>
-                    </div>
+                            read (x); read (y);
+                            if x > 0 then 
+                                write ("1");
+                            else 
+                                write ("2");
+                            end if;
+                            if y > 0 then 
+                                write ("3");
+                            else 
+                                write ("4");
+                            end if;
+                    </code></pre>
+                        <div style="font-size:smaller; text-align:left">
+                            Vollständige Abdeckung:
+                            \[
+                            \begin{split}
+                            \{ &x = 2, y = 3; x = - 13, y = 51; \\
+                                &x = 97, y = 17; x = - 1, y = - 1\}
+                            \end{split}
+                            \]
+                            <div class="fragment">
+                            Minimale Testmenge mit vollständiger Abdeckung
+                            \[ \{x = - 13, y = 51; x = 2, y = - 3 \} \]
+                        </div>
+                        </div>
+
+                        <aside class="notes">
+                            Wir sehen hier eine mögliche Lösungen die zu einer vollständigen Abdeckung führen. 
+                            Stoppen Sie doch das Video kurz und vergewissern Sie sich, dass diese wirklich zu vollständiger Abdeckung führen. 
+
+
+                            Die mögliche Minimale Testmenge mit vollständiger Abdeckung wäre diese:
+                        </aside>
+
                 </section>
 
                 <section>
@@ -187,6 +246,15 @@
                         <li>$x = -3$ deckt alle Statements ab</li>
                         <li>Problem: Kein Test f&uuml;r $x$ positiv. </li>
                     </ul>
+
+                    <aside class="notes">
+                        Die Anweisungsüberdeckung gibt uns ein einfaches Kriterium um abzuschätzen, ob unsere Testfälle das Programm gut testen. 
+                        Leider hat es aber auch grosse Schwächen. 
+                        Wir sehen hier ein Beispiel, wo wir vollständige Anweisungsabdeckung haben, bei dem wir jedoch das GEführl haben, 
+                        das die TEsts noch immer inadäquat sind. Wir sollten doch zumindest auch für positive x Testen müssen. 
+                    </aside>
+
+
                 </section>
 
                 <section>
@@ -206,6 +274,18 @@
                     <div style="float:right; width:50%">
                             <img src="../../slides/images/cfg-euclid.png" style="width:50%" class="plain" />
                     </div>
+
+                    <aside class="notes">
+                        Dieses Manko wird durch unser nächstes Überdeckungskriterium, der Zweigüberdeckung, oder auf English (Edge coverage)
+                        gelöst. Dieses Kriterium verlangt, dass jedes Zweig vom Kontrollfluss mindestens einemal durchlaufen wird. 
+
+                        Damit wir dieses Kriterium verstehen können, müssen wir uns aber zuerst das Konzept vom Kontrollflussgraphen anschauen. 
+                        Für jedes Programm können wir die Struktur, also die Anweisungen, Bedingungen und Loops, in form eines Graphen darstellen. 
+                        Hier sehen Sie ein Beispiel eines Kontrollflussgraphen für den Euklidschen Algorithmus von vorher. 
+                        Das Kriterium verlangt nun, dass wir die TEstmenge so wählen, dass jeder Zweig dieses Graphen einmal durchlaufen wird.
+
+                    </aside>
+
                 </section>
 
                 <section>
@@ -218,6 +298,21 @@
                             <li>Graph $G$: <br/> Anweisung, Sequenz, Verzweigung oder Loop</li>
                             <li>Induktion: <br/> Graph enhält Subgraphen (Codebl&ouml;cke)</li>
                         </ul>
+
+                    <aside class="notes">
+                        Den Kontrollflussgraphen können induktiv definieren.
+                        Der einfachste Kontrollflussgraph ist der, der eine Einzelne Anweisung darstellt. Dieser wird durch zwei Kreise, die mit einem Pfeil verbunden 
+                        sind dargestellt. 
+                        Um eine Sequenz darzustellen, werden einfach zwei Kontrollflussgraphen, hier mit g1 und g2 bezeichnet, mit einem Pfeil verbunden. Die Notation 
+                        ist wie folgt zu lesen. Die Zwei Kreise in G1 respektive G2 stehen für den Initial/respektive Endknoten für einen Gültigen 
+                        Kontrollflussgraphen. Ich kann also hier G1 und G2 durch einen beliebigen Kontrollflussgraphen ersetzen. 
+                        Eine Verzweigung kann auf 
+                        zwei Arten dargestellt werden, einmal ohne else zweig, und einmal mit else zweig. Hier enthält jeder Zweig wieder einen Kontrollflussgraphen
+                        als Subgraphen. Schlussendlich haben wir noch die Darstellung für den While loop, bei dem wir auch wieder einen beliebeigen
+                        Kontrollflussgraphen einsetzen können. Auf diese Art können wir uns beliebig komplizierte Kontrollflussgraphen definieren.
+
+
+                    </aside>
                 </section>
 
                 <section>
@@ -227,6 +322,11 @@
                         <figcaption style="font-size:x-small">Abbildung nach Ghezzi et al. Fundamentals of Software Engineering, Abbildung 6.2</figcaption>
                     </figure>
 
+                    <aside class="notes">
+                        Um die Notation zu vereinfachen, können lange sequenzen von Kanten zusammengezogen werden. Mehrere einzelne Anweisungen werden Damit
+                        kompakter dargestellt. Am Kriterium ändert sich hierbei aber nichts, da in einer Sequenz ja immer gilt, dass wenn eine Anweisung von einem Test überdeckt
+                        wird, auch die nachfolgende überdeckt wird.
+                    </aside>
                 </section>
 
 
@@ -251,13 +351,19 @@
                     </div>
 
                     <div style="float:right; width:30%">
-                        <img src="../../slides/images/cfg-euclid.png" class="plain" />
+                        <img src="../../slides/images/cfg-euclid-2.png" class="plain" />
                     </div>
+                    <aside class="notes">
+                        Wir sehen hier den Kontrollflussgraphen für Euklid-s Algorithmus. Stoppen Sie doch das Video kurz und schauen sie sich 
+                        in Ruhe an, wie der Code auf den Kontrollflussgraphen abgebildet wird..
+                    </aside>
+
                 </section>
 
 
                 <section>
                     <h1>Schw&auml;chen vom Kriterium</h1>
+                    <!--
                     <pre><code data-trim>
                     found := false; counter :=1;
                     while (not found) and (counter < number_of_items) loop
@@ -267,16 +373,37 @@
                         counter := counter + 1;
                     end loop
                     </code></pre>
-
+-->
+                    <pre><code data-trim>
+                    found := false; 
+                    counter := 1;
+                    while (not found) and (counter < size(hackstack)) loop
+                        if haystack(counter) = needle then
+                            found := true;
+                        end if
+                        counter := counter + 1;
+                    end loop
+                    </code></pre>
                     <ul>
                         <li>Testf&auml;lle:
                             <ol>
-                                <li> table =(), desired_element = beliebig </li>
-                                <li>table = (7, 3, 1), desired_element = 3</li>
+                                <li> haystack = [], needle = 1 </li>
+                                <li> haystack = [7, 3, 1], needle = 3</li>
                             </ol>
-                            <li class="fragment">Off by 1 error ($
-                                <$ statt $<=$) in loop</li>
+                            <li class="fragment">Problem: Off by 1 error ($
+                                <$ statt $<=$)</li>
                     </ul>
+
+                    <aside class="notes">
+                        Aber auch dieses Kriterium hat noch Schwächen. In diesem Beispiel suchen wir nach einem Element, dass wir hier needle nennen, in einem Array
+                        haystack. Der Code ist sehr einfach, und mit zwei einfachen Testfällen erreichen wir vollständige Zweigüberdeckung, wie sie leicht
+                        nachprüfen können. 
+                        Jedoch ist in diesem Code noch immer ein Fehler versteckt: Das Programm enthält nämlich einen typischen Off by 1 error. 
+                        Wenn wir annehmen, dass das erste Element im Array mit 1 indiziert ist, dann müsste die zweite Bedingung <= und nicht kleiner als sein.
+                        
+                        
+                    </aside>
+
                 </section>
 
                 <section>
@@ -286,24 +413,41 @@
                         Die Testmenge $T$ wird so gew&auml;hlt, dass jeder Zweig des Kontrollflusses mindestens einmal durchlaufen wird und alle
                         m&ouml;glichen Elemente von zusammengesetzten Bedingungen mindestens einmal aktiv sind.
                     </blockquote>
-                    <ul>
-                        <li>St&auml;rkeres Kriterium als Zweig&uuml;berdeckung.</li>
-                    </ul>
+
+                    <div style="float:left; width:100%">
+                            <pre><code data-trim>
+                            if (c1 and c2) then
+                                st;
+                            else
+                                sf;
+                            end if
+                        </code></pre>
+
+                        <ul>
+                                <li>St&auml;rkeres Kriterium als Zweig&uuml;berdeckung.</li>
+                            </ul>
+
+                            
+                    <aside class="notes">
+                        Wir können das Überdeckungskriterium nochmals verstärken, indem wir zu Bedingungsüberdeckung übergehen.
+                        Hier wird verlangt, dass die Testmenge T so gewählt wird, dass jeder Zweig des Kontrollflusses mindesteins
+                        einmal durchlaufen wird und alle möglichen Elemente von zusammengesetzten Bedingungen mindestens
+                        einmal aktiv sind. 
+
+                        Wir haben also einen zusätzliche Anforderung an die Bedingung. In diesem Beispiel hier, bräuchten wir 
+                        also mindestens 3 Testfälle. Einer, bei dem c1 true wird, einer für den c2 true wird und einer für den else Fall. 
+                        
+                    </aside>
+
                 </section>
 
+                <!--
                 <section>
                     <h1>Bedingungs&uuml;berdeckung und Zweig&uuml;berdeckung</h1>
                     <ul>
                         <li>Programm kann umgeschrieben werden, dass <br/> Bedingungs&uuml;berdeckung = Zweig&uuml;berdeckung</li>
                     </ul>
-                    <div style="float:left; width:50%">
-                        <pre><code data-trim>
-                        if (c1 and c2) then
-                            st;
-                        else
-                            sf;
-                        end if
-                    </code></pre>
+                 
                     </div>
                     <div style="float:right; width:50%">
                         <pre><code data-trim>
@@ -319,8 +463,15 @@
                             </code></pre>
                     </div>
 
+                    <aside class="notes">
+                        In diesem Beispiel bräuchten wir also einen 
+                        Für Programme, die keine zusammengesetzten Bedingungne haben, ist jedoch BEdingungs = Zweigüberdeckung. 
+                        Wie in diesem Beispiel gezeigt wird, können wir ausserdem jedes Programm so umschreiben, dass es 
+                        keine zusammengesetzten Bedingungen mehr enthält, indem wir einfach eine Zusammengesetzte Bedingung durch 
+                        durch zwei separate Bedingungen abfrage.
+                    </aside>
                 </section>
-
+                -->
                 <section>
                     <h1>Schw&auml;chen vom Kriterium</h1>
                     <pre><code data-trim>
@@ -340,6 +491,14 @@
                         <li>Testf&auml;lle:  x = 0, z = 1; x=1, z = 3</li>
                         <li class="fragment">Division durch 0 f&uuml;r x =0, z= 3 wird nicht entdeckt</li>
                     </ul>
+                    <aside class="notes">
+                        Leider hat aber auch dieses Kriterium noch Schwächen. In diesem Beispiel haben wir mit den hier angegebenen zwei Testfällen eine
+                        vollständige Bedingungsüberdeckung. Trotzdem gibt es hier noch einen Fehler. 
+                        Halten Sie das Video doch kurz an und überlegen sie sich, was hier schiefgehen kann, und was für einen Testfall ich bräuchte um 
+                        dies zu verhindern.
+
+                        Genau. Wir haben eine Division durch 0, die zum Beispiel auftreten kann wenn x = 0 und z = 3 gewählt wird. 
+                    </aside>
                 </section>
 
                 <section>
@@ -361,8 +520,20 @@
                             <img src="../../slides/images/cfg-eight.png" style="width:30%" class="plain" />
                     </div>
 
+                    <aside class="notes">
+                        Dies führt uns zum letzten und stärksten Kriterium, der Pfadüberdeckung. Hier wird die Testmenge so gewählt, dass jeder
+                        Pfad zwischen Initial und Enknoten im Knotrollflussgraph durchlaufen wird. In unserem Beispiel hier müssten wir also die vier Pfade durchlaufen, 
+                        indem ich jede der 4 Kombinationen die durch die zwei if bedingungen möglich sind, durch entsprechende Testfälle abdecke.
+                        Wir bräuchten also mindestens 4 TEstfälle. 
+                        Leider ist dieses Kriterium bei grossen Programmen nicht praktikabel, da die Anzahl der Testfälle exponentiell in der Anzahl 
+                        Bedingungen wächst. Es ist aber ein nützliches Ideal, das wir anstreben sollten. 
+                        Hier ist also wieder kreativität vom Tester gefordert, um Testfälle zu finden, die dieses Ideal möglichst gut annährenr. 
+                        
+                    </aside>
+
                 </section>
 
+                <!--
                 <section>
                     <h1>Limitierungen von &Uuml;berdeckungskriterien</h1>
                     <ul>
@@ -377,13 +548,27 @@
                     <blockquote>
                         100% &Uuml;berdeckung wird nie erreicht!
                     </blockquote>
+
                     </section>
-                    
+                    -->
+
                     <section class="center">
                         
                             <blockquote style="width:100%; margin-top:25%">
                                     Auch perfekte &Uuml;berdeckung kann nicht verhindern, dass Teile der Spezifikation nicht implementiert sind.
                                 </blockquote>
+
+                        <aside class="notes">
+                            Zusammenfassen können wir sagen, dass uns die Überdeckungskriterien helfen, Testfälle zu finden, die möglichst gut 
+                            der Struktur von unserem Code entsprechen. Eine 100 % Abdeckung werden wir aber für die Pfadüberdeckung nie erreichen, 
+                            und die anderen Überdeckungskriterien sind nicht stark genug um Fehler auszuschliessen. 
+
+                            Aber sogar wenn wir 100 % Pfadüberdeckung erreichen würden, wäre immer noch nicht sihcergestellt, dass die Programme der
+                            Spezifikation entsprechen, und dass die ganze Spezifikation implementiert ist. Deshalb brauchen wir zusätlizh auch 
+                            Black-box tests.
+
+                            
+                        </aside>
                     </section>
                     <!--
                     <section>
