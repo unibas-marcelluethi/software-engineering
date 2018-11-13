@@ -36,5 +36,5 @@ Sie finden auf [Adam](https://adam.unibas.ch/goto_adam_file_737986_download.html
 Speichern Sie die Dokumente im ```docs``` Ordner von Ganttproject ab. 
 
 Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie ```marcelluethi```, ```schoenja``` und ```MichaelPluess``` als Reviewer an. Abgabetermin ist Dienstag, 13. November, 23:55. 
-Die Besprechung mit den Betreuern findet am 14. Oktober, gemäss diesem [Plan](https://adam.unibas.ch/goto_adam_file_734506_download.html) statt. 
+Die Besprechung mit den Betreuern findet am 14. November, gemäss diesem [Plan](https://adam.unibas.ch/goto_adam_file_734506_download.html) statt. 
 Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 20. November, 23.55.  
