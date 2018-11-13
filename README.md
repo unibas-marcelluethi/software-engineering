@@ -46,7 +46,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 | [Woche 8](https://unibas-sweng.github.io/software-engineering/week8/index.html)  | Konstruktive und Deskriptive Softwarespezifikation  |  |
 | [Woche 9](https://unibas-sweng.github.io/software-engineering/week9/index.html) | Verifikation (überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
-| Woche 10 | Testen im Kleinen   | | 
+| [Woche 10](https://unibas-sweng.github.io/software-engineering/week10/index.html) | Testen im Kleinen   | | 
 || Testen im Grossen ||
 | Woche 11    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
@@ -59,9 +59,8 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 #### Übungen
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 6. November, 23.55 | [Bonusblatt](https://unibas-sweng.github.io/software-engineering/exercises/adt-bonus-exercise.html) | [Adam](https://adam.unibas.ch/goto_adam_exc_734775.html) / Github | (freiwillig) |
-| 7. November, 08:00 | [Individueller Test Woche 8](https://adam.unibas.ch/goto_adam_tst_736508.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_736508.html) | 
 | 14. November, 08:00 | [Individueller Test Woche 9](https://adam.unibas.ch/goto_adam_tst_740063.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_740063.html) | 
+| 20. November, 08:00 | [Individueller Test Woche 10](https://adam.unibas.ch/goto_adam_tst_742921.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_742921.html) | 
 
 #### Projekt
 
