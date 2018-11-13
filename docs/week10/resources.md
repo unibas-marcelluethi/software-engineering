@@ -7,7 +7,7 @@
     * Slides: [online](./slides/white-box-testing.html), [Druckversion](./slides/white-box-testing.html?print-pdf)
 
 * Black-box Testing
-    * Artikel: [online](./articles/black-box-testing.html)
+    * Artikel: [online](./articles/testing-in-the-small-bb.html)
 
 
 * Testen im Grossen
