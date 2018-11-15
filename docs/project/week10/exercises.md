@@ -15,14 +15,14 @@ Pro Gruppenmitglied müssen Sie mindestens 3 Modultests (Abschnitt 6.1) und 3 Fu
 
 Überlegen Sie beim Erstellen der Modultests was die Äquivalenzklassen und Grenzfälle sind. Nutzen Sie auch Ursache-Wirkungsdiagramme um Testfälle zu identifizieren.
 
-Die Funktionstest sollten anhand der Funktionalen Anforderungen im Pflichtenheft hergeleitet werden. 
+Die Funktionstest sollten anhand der funktionalen Anforderungen im Pflichtenheft hergeleitet werden. 
 
 
 
 
 ## Testcoverage 
 
-Finden Sie heraus wie hoch Testabdeckung via Unittests für Ganttproject insgesamt, und insbesondere für Ihre Erweiterung ist. Wir empfehlen, dass Sie dafür das Tool [Jacoco](https://www.jacoco.org/jacoco/) verwenden. Dieses kann einfach als Gradle Plugin zum Projekt hinzugefügt werden (Siehe diese [Dokumentation](https://docs.gradle.org/current/userguide/jacoco_plugin.html])).
+Finden Sie heraus wie hoch die Testabdeckung durch Unittests für Ganttproject insgesamt, und insbesondere für Ihre Erweiterung ist. Wir empfehlen, dass Sie dafür das Tool [Jacoco](https://www.jacoco.org/jacoco/) verwenden. Dieses kann einfach als Gradle Plugin zum Projekt hinzugefügt werden (Siehe diese [Dokumentation](https://docs.gradle.org/current/userguide/jacoco_plugin.html])).
 
 ## Automatisiertes Reporting via Travis und Codecov (Freiwillig)
 Wenn Sie möchten, können Sie das Erstellen der Coverage Reports via Travis automatisieren und via Codecov . Wie man Jacoco Coverage Reports via Gradle, Travis, und Codecov automatisiert erstellt ist [hier](https://vorba.ch/2015/java-gradle-travis-jacoco-codecov.html) beschrieben.
