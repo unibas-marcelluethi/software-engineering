@@ -1,0 +1,555 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Softwareprozesse</title>
+
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="center">
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Softwareprozesse
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">               
+                    Herzlich willkommen zu diesem Screencast.
+                    Wir haben uns inzwischen alle wichtigen Aktivitäten im Softwareentwicklungsprozess angeschaut. 
+                    In dieser Woche werden wir möglichkeiten anschauen, wie diese Aktivitäten organisisert werden können.
+
+                   
+                </aside>
+
+			</section>
+    
+
+                <section>
+                    <h1>Organisation von Aktivit&auml;ten</h1>
+                    <img src="../../slides/images/process-activities-cloud.png" class="plain" style="width:50%" />
+
+                    <blockquote style="text-align:left; width:80%">
+                        Zentrale Fragen:
+                        <ul>
+                            <li>Wie lange sollen wir das tun?</li>
+                            <li>Was sollen wir als n&auml;chstes tun?</li>
+                        </ul>
+                    </blockquote>
+                    <aside class="notes">
+                        Ein Softwaresystem zu programmieren beinhaltet viele verschiedene Schritte. 
+                        Wir müssen Anforderungen idenifizieren,  Dokumentieren, Spezifikationen schreiben,
+                        Verifizieren, Implementieren, die Software auslieferen, und vieles mehr. 
+                        Bei jeder Aktivität müssen wir uns aber folgende Fragen stellen:
+                        - Wiche lange soll ich diese Aktivität machen? Sollen wir also zum Beispiel über Monate
+                        an der Anforderungsanalyse arbeiten, oder wollen wir dies immer in kurzen Phasen machen?
+                        Die zweite Frage die wir beantworten müssen ist, welche Aktivität mache ich, wenn die
+                        aktuelle Aktivität an der ich arbeite abgeschlossen ist?
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>Software Prozessmodelle</h1>
+
+                    <div style="text-align:left">
+                    Prozessmodelle:
+                    <ul>
+                            <li>Bestimmen Aktivit&auml;ten</li>
+                            <li>Legen Ordnung und Beziehung zwischen Aktivit&auml;ten fest</li>
+                            <li>Definieren wann man zur n&auml;chsten Aktivit&auml;t &uuml;bergehen kann</li>
+
+                    </ul>
+                </div>
+                    <blockquote style="margin-top:1cm">Versuch, den Lebenszyklus zu organisieren.</blockquote>
+
+                    <aside class="notes">
+                        Diese Organisation vom Prozess nennt sich ein Softwareprozessmodell. 
+                        Ein Prozessmodell bestimmt die Aktivitäten die gemacht werden sollen, 
+                        legt eine Ordnung und Beziehungen zwischen den Aktivitäten fest, und 
+                        definiert wann man zur nächsten Aktivität übergehen sollte. 
+            
+                        Prozessmodelle sind der Versuch, den Lebenszyklus, vom ersten Entwicklungsschritt 
+                        bis zum Lebensende der Software zu organisieren.
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h1>Ziele von Prozessmodellen</h1>
+                    <ul>
+                                        <li>Standardisierung</li>
+                                        <li>Vorhersagbarkeit</li>
+                                        <li>Produktivit&auml;t</li>
+                                        <li>Hohe Produktqualit&auml;t</li>
+                                        <li>Planung von Zeit und Budget</li>
+                                    </ul>
+                    <aside class="notes">
+                        Gute Prozessmodelle erreichen dabei folgende Ziele:
+                        - Sie standardisieren  einen Prozess. Dies hat den Vorteil, dass wir erfolgreiche
+                        Prozess wiederverwenden können. Ausserdem müssen wir bei standardisiserten Prozessen 
+                        nicht alle Projektmitarbeiter in jedem Projekt neu Schulen, wie den die Entwicklung nun 
+                        organisiert ist. Standardisierte Prozess können studiert und analysiert werden, und in kursen wie 
+                        diesem gelehrt werden.
+                        - Ein weiteres wichtiges Ziel ist die Vorhersagbarkeit. Wir möchten, dass wir wenn wir in 
+                        einem bestimmten Schritt sind immer wissen, wie lange es noch dauert, bis wir zu den 
+                        nächsten Aktivitäten kommen. Dies erlaubt uns unsere Ressources optimal zu planen. 
+                        Wenn wir zum Beispiel in der Anforderungsanalyse sind, und wissen, dass es noch 2 Monate dauert, 
+                        bis die ersten Teile implementiert werden, können wir unsere Entwickler in dieser Zeit noch
+                        an anderen Projekten arbeiten lassen. 
+                        Natürlich möchten wir auch, dass die Prozessmodelle zu einer hohen Produktivität der Mitarbeiter
+                        und einer hohen Produktqualität führne. 
+                        Und schlussendlich sollten usn Prozessmodelle auch helfen, den Zeitaufwand und damit auch das Budget
+                        zu planen. 
+                    </aside>
+                            
+                </section>
+
+                <section>
+                    <h1>Softwareprozess: Blackbox-Sicht</h1>
+                    <img src="../../slides/images/process-blackbox.png" class="plain" style="width:70%"/>
+                    <ul>
+                        <li>Interaktion mit Benutzer nur am Anfang/Ende</li>
+                        <li class="fragment" data-fragment-index="1">Nicht geeignet f&uuml;r Software.</li>
+                        <ul class="fragment" data-fragment-index="1">
+                                <li>Fehler in Anforderungen werden erst am Ende entdeckt.</li>
+                            <li>Qualit&auml;tseigenschaften nicht von Endprodukt ableitbar.</li>                         
+                        </ul>
+                    </ul>
+                    <aside class="notes">
+                        Eine Mögliche Sicht auf Softwareprozesse, wäre, dass wir diese Als Blackbox betrachten. 
+                        Der Benutzer kommt mit Anforderungen, wir nehmen diese als Softwareingenieure entgegen, 
+                        und führen dann selbständig unseren Softwareprozess durch. Am Ende kommt dann das 
+                        fertige Programm heraus, welches wir dem Benutzer übergeben. 
+                        Wir haben also nur am Anfang und am Ende eine Interaktion mit dem Auftraggeber oder Benutzer. 
+
+                        Wir können uns leicht vorstellen, dass dies keine ideale Sichtweise auf den Softare prozess ist. 
+                        Das Problem ist, dss wir mit so einem Prozess, Fehler in den Anforderungen erst am Endbe
+                        des Projekts sehen würden. Und dann ist es schon zu spät. 
+                        Ausserdem lassen sich  dass wir viele Qualitätseigenschaften nur aus dem Prozess und Nicht
+                        vom Endprodukt ableiten. Der Bentzer hätte also keine Möglichkeit, zu überprüfen, ob 
+                        die gewünschten Qualitätsmerkmale erreicht würden. 
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>Softwareprozess: Whitebox-Sicht</h1>
+                    <img src="../../slides/images/process-white-box.png" class="plain" />
+                    <ul class="fragment">
+                        <li>Interaktion mit Benutzer in jeder Projektphase</li>
+                        <ul>
+                            <li>Eingehen auf Ver&auml;nderungen m&ouml;glich</li>
+                        </ul>
+                    </ul>
+                    <aside class="notes">
+                        Jeder gute Softwareprozess ist deshalb für alle beteiligten transparent. Feedback und interaktion 
+                        mit dem Benutzer oder Auftraggeber sollte explizit miteingeplant werden. Dies ermöglicht es
+                        den Entwicklern, auf Veränderungen während dem Projekt einzugehen. Und bei jedem grösseren 
+                        Projekt wird es solche Veränderungen geben. 
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h1>Erster Ansatz: "Code and fix" Modell</h1>
+                    <img src="../../slides/images/code-and-fix.png" class="plain" style="display:inline-block" />
+                    <ul>
+                        <li>Probleme:</li>
+                        <ul>
+                            <li>Unm&ouml;glich Vorhersagen zu treffen</li>
+
+                            <li>Unm&ouml;glich zu managen</li>
+                        </ul>
+                    </ul>
+                    <aside class="notes">
+                        Das erste Modell, das wir uns ansehen wollen ist das Code and Fix Modell. Die Idee hier ist, dass wir etwas programmieren, 
+                        und falls es noch nicht den Anforderungen des Benutzers entspricht, wird es entsprechend angepasst. Dieser Zyklus wird solange
+                        iteriert, bis das Programm den Anforderungen entspricht. 
+                        
+                        Diese Modell erfüllt unsere formulierten Ziele nicht. Insbesondere ist es unmöglich, bei diesem Prozess genaue Vorhersagen zu machen, 
+                        die den Entwicklungsprozess plan und managbar machen würden.
+                        
+                        Dieses Modell wurde praktiziert, bevor sich Software Engineering als Disziplin etabliert hat, und hat direkt zur Softwarekrise geführt.
+    
+                    </aside>
+
+                </section>
+
+
+
+                <section>
+                    <h1>Schrittweiser Ansatz: Wasserfall Modell</h1>
+                    <div style="float:left; width:50%">
+                        <img src="../../slides/images/waterfall-simple.png" class="plain" style="width:100%" />
+                    </div>
+                    <div style="float:right; width:50%">
+                        <ul>
+                            <li>Stark strukturierter Prozess</li>
+                            <li>Dokumentlastig (Dokument nach jeder Phase)</li>
+                        </ul>
+                    </div>
+
+                    <div style="display: inline-block">
+                        <ul class="fragment">
+                                <li>Prozess strukturiert und planbar</li>
+                                <li>Implementation erst wenn Anforderungen verstanden sind</li>
+                        </ul>
+                    </div>
+
+
+                    <aside class="notes">
+                        Der vielleicht bekannteste Softwareprozess ist das Wasserfall Modell. Das Wasserfall modell ist ein stark strukturierter prozess. 
+                        Wir beginnen mit einer Machbarkeitsstudie, identifizieren die Anforderungen, Speziifzieren und designen das System und dann implementieren
+                        und testen wir dieses. Wenn alles in Ordnung ist, machen wir einen Release und das System geht in den Wartungszustand über. 
+                        Der Ganze Prozess ist sehr Dokumentlastig. Die Dokumente dienen als Schnittstelle zwischen den Phasen, die oft auch von unterschiedlichen Teams 
+                        durchgeführt werden.
+
+                        Dieser Prozess erfüllt unsere Ziele viel besser. Der Prozess ist klar strukturiert und wir haben, falls sich die Anforderungen nicht verändern, 
+                        eine hohe planbarkeit. Die Aktivitäten folgen auch einer logischen Reihenfolge: Die Implementation wird erst gemacht, wenn die Anforderungen 
+                        verstanden sind, und das System richtig spezifiziert ist. 
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h1>Wasserfall Modell: Probleme</h1>
+
+                    <div style="text-align: left">
+                    <ul>
+                        <li>&Auml;nderung in Anforderungen nicht ber&uuml;cksichtigt </li>
+                        <li>Kein Feedback zwischen den Phasen</li>
+                        <li>Keine Parallelisierung</li>
+                        <li>Fixes Einf&uuml;hrungsdatum f&uuml;r ganzes System</li>                        
+                    </ul>
+                    </div>
+                    
+                    <div class="fragment" style="text-align:left">                    
+                    <ul>
+                        &nbsp;
+                            <li><mark class="highlight"> Originalpaper beschreibt diese Probleme </mark></li>
+                        </ul>
+
+                <div class="framebox" style="text-align: left">
+                        Royce, Winston W.  "Managing the Development of Large Software Systems", Proceedings of IEEE WESCON 26 (August): 1–9.
+            </div>
+            <aside class="notes">
+                Trotzdem gibt es wahrscheinlich kein anderes Prozessmodell, welches so oft kritisiert wurde. Das Problem ist, dass das Modell 
+                von einer idealen Welt ausgeht, bei dem sich die Anforderungen nie ändern. Auch gibt es keine vorgesehenen Feedback loops, die 
+                es erlauben, Wissen, dass beispielsweise während der Implementation erlangt wurde, wieder zurück in die Anforderungen oder die Spezifikation 
+                fliessen zu lassen. 
+                Ein Weiteres Probleme ist, dass die Phasen strikt sequentiell durchgeführt werden, und deshalb keine Paramellelsierung der ARbeiten möglich sind.
+                Zum Schluss führt dieses Modell auch dazu, dass das System erst als ganzes zu einem fixen Einführtstag eingeführt werden kann. Wir haben 
+                nicht die Möglichkeit, ein erstes Teilsystem unabhängig vom ganzen System einzuführen. 
+
+                Es entbehrt nicht einer gewissen Ironie, das im originalpaper von Winston Royce, in welchem das Modell vorgestellt wurde, bereits auf 
+                diese Problem hingewiesen wurde und auch Lösungsansätze dazu beschrieben wurden. Diese wurden dann jedoch lange von der Industrie ignoriert,
+                was zum schlechten Ruf dieses Prozessmodells geführt hat. 
+
+
+            </aside>
+        </div>        
+                </section>
+
+
+                <section>
+                    <h1>Wasserfall Modell mit Feedback</h1>
+                    <div style="float:center; width:80%">
+                        <img src="../../slides/images/waterfall-simple-feedback.png" class="plain" style="width:100%" />
+                    </div>
+                    <div style="display: inline-block; width:100%">
+                        <ul>
+                            <li>Feedback an vorherige Stufe oft nicht ausreichend.</li>
+                        </ul>
+                    </div>
+
+                    <aside class="notes">
+                        Eine Mögliche Verbesserung ist, dass wir zwischen aufeinanderfolgenden Stufen jeweils Feedback loops miteinplanen. 
+                        Damit können zum Beispiel Probleme, die während dem Design auftauchen wieder zurück in die Anforderungsanalyse fliessen. 
+                        
+                        Jedoch reicht in der praxis das Feedback über eine Stufe hinweg nicht aus. Es kann zum Beispiel auch vorkommen, dass wir während der Implmeentation 
+                        probleme entdecken, die sich auf die Anforderungen auswirken. 
+                        Auch auf sich ändernde Anforderungen können wir damit nicht reagieren.
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>V-Modell</h1>
+                    <div style="float:center; width:100%">
+                        <img src="../../slides/images/v-model.png" class="plain" style="width:100%" />
+                    </div>
+                    <div style="display: inline-block; width:100%">
+                        <ul>
+                            <li>Wasserfallmodell mit Feedback &uuml;ber mehrere Stufen</li>
+                        </ul>
+                    </div>
+                    <aside class="notes">
+                            Eine weitere Variante vom Wasserfall modell ist das V-Model. Bei diesem Modell wird jeder Stufe im Entwicklungsprozess
+                            explizit ein Validierungsschritt gegenüber gestellt. Das Programm Design wird getestet und validiert, indem Unit und Integrationstest 
+                            durchgeführt werden. Das System Design wird über einen Systemtest validiert und die Anforderungen via eines Akzeptanztests. 
+                            Wenn  bei diesen Schritten fehler gefunden werden, kann das Modell vom entsprechenden Entwicklugnsschritt auf der Linken Seite 
+                            wieder ausgeführt werden und somit der Fehler behoben werden. Natürlich gilt aber auch hier, dass Fehler die bereits in der 
+                            Anforderungsanalyse gemacht wurden, sehr teuer werden können.                         
+    
+                        </aside>
+    
+                </section>
+
+                <section>
+                    <h1>Wasserfall Modell mit Prototyping</h1>
+                    <div style="float:center; width:100%">
+                        <img src="../../slides/images/waterfall-simple-prototyping.png" class="plain" style="width:80%" />
+                    </div>
+                    <div style="display:inline-block; width:100%">
+                        <ul>
+                            <li>(Throw-away) Prototyp um An&shy;forder&shy;ungen und Design zu verstehen/verifizieren</li>                         
+                        </ul>
+                    </div>
+
+                    <aside class="notes">
+                        Eine andere Möglichkeit ist es, in einer frühen Projektphase einen Prototypen zu erstellen. Dieser Prototyp wird 
+                        mit minimalem Aufwand umgesetzt. Das Ziel ist es, möglichst früh im Projekt möglichst viele wichtige Aspekte 
+                        über das System zu lernen. Ein Prototyp hilft in vielerlei Hinsicht:
+                        Zuerst hilft er, die Machbarkeit eines Projekts besser einschätzen zu können. Wenn wir dem Auftraggeber bereits früh 
+                        im Projekt ein funktionierendes System zeigen können, hilft dies die Anforderungen zu konkretisieren, Fehler aufzudecken und 
+                        inkonsistenzen aufzudecken. Die Entwicklung eines Prototypen hilft uns auch mögliche Designs auszutesten und technische
+                        Herausforderungen zu identifizieren.
+
+                        In der Projektplanung wird das erstellen des Prototyps explizit mit eingeplant. Man sollte auch der Versuchung wiederstehen, 
+                        den entwickelten Prototypen am Ende als Grundlage für die Implementation zu nehmen. Von Beginn weg sollte klar sein, 
+                        dass dieser Prototyp ur dazu da ist Erfahrung zu gewinnen und danach weggeworfen wird. Nur dann ist man frei genug um 
+                        verschiedene Varianten auszuprobieren, ohne dabei durch Qualitätsanforderungen und anderen Einschränkungen des finalen Systems 
+                        beeinträchtigt zu werden.
+
+
+                    </aside>
+                </section>
+
+
+                    <section>
+                        <h1>Spiralmodell</h1>
+                        <figure>
+                            <img src="../../slides/images/spiral-model.png" class="plain" style="width:50%"/>
+                            <figcaption style="font-size:x-small">Von Conny aus der deutschsprachigen Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3697528</figcaption>
+                        </figure>
+                        <ul>
+                            <li></li>Risikoabschätzung in jedem Durchlauf.</li>
+                        </ul>
+                        <aside class="notes">
+                            Ein anderes Prozessmodell, das explizit die Idee von Prototpen aufnimmt, ist das Spiralmodell. 
+                            Hier wird die Software in verschiedenen Zyklen entwicklet. Jeder Zyklus besteht aus
+                            vier Phasen, Festlegen der Ziele, Beurteilen der Risiken, Entwicklung und Test, und Planung
+                            des nächsten Zyklus. Diese Zyklen werden beliebig oft iteriert. Zentral für dieses Modell ist, 
+                            dass in jedem Zyklus eine Risikoabschätzung durchgeführt wird. Die Punkte die 
+                            in jedem Zyklus als sehr Risikoreich respektive Unsicher beurteilt werden, werden durch implementation 
+                            von einem Prototypen oder einer Simulation geklärt. Nachdem diese Punkte geklärt sind, 
+                            werden typischerweise die Üblichen Phasen vom Wasserfallmodell durchgeführt, bevor 
+                            wir wieder die Ziele für den nächsten Zyklus definiern und die Risiken abgeschätzt werden.
+                            
+                             
+                        </aside>
+                    </section>
+    
+
+
+                <section>
+                    <h1>Wachstumsmodelle </h1>
+
+                    <ul>
+                            <li>Grundidee: Gliederung in kleine, aufeinander aufbauende, betriebsf&auml;hige Releases</li>
+                        <ul><li>System wird nicht konstruiert sondern w&auml;chst.</li></ul>                                                
+                    </ul>
+
+                    <div style="align-content: left">
+                    <img src="../../slides/images/small-releases-1.png"  class="plain fragment" style="width:70%"/>
+                    <img src="../../slides/images/small-releases-2.png"  class="plain fragment" style="width:70%"/>
+                </div>
+                    <aside class="notes">
+                        
+                        Eine Radikal andere Idee wird mit den sogenannten Wachstumsmodellen verfolgt. Die Grundidee ist, dass zuerst nur ein minimales System
+                        gebaut wird, dass dann sukzessive in vielen kleinen Releases zu einem kompletten System ausgebaut wird.
+                        Statt einem grossen Release, haben wir also viele kleine Releases.
+                        Die Software wird also nicht auf einem konstruiert, sondern sie wächst kontinuierlich in Richtung des vollständigen Systems.                        
+                        In jedem solchen Release werden alle Entwicklungsphasen, von Anforderungsanalyse bis Verifikation durchlaufen. Da wir aber immer nur 
+                        kleine Änderungen vornehmen, ist jede Iteration viel einfacher und deshalb weniger Risikoreich. Ausserden könenn wir viel besser auf
+
+                    </aside>
+
+                </section>
+
+           
+                <section>
+                    <h1>Wachstumsmodelle</h1>
+                    <figure >
+                            Inkrementelles Modell    
+                        <img src="../../slides/images/incremental-model.png" class="plain"/>                        
+                            <figcaption style="font-size:x-small">Abbildung nach: Pfleeger & Atlee, Software Engineering, Abbildung 2.9 </figcaption>
+                        </figure>
+    
+                    <figure>
+                            Iteratives Modell
+                    <img src="../../slides/images/iterative-model.png" class="plain"/>
+                    <figcaption style="font-size:x-small">Abbildung nach: Pfleeger & Atlee, Software Engineering, Abbildung 2.9 </figcaption>
+                </figure>
+                    <blockquote class="fragment">
+                            Disziplin und gute Planung werden verlangt, damit es nicht zu <mark class="highlight">Code and Fix</mark>
+                            Modell verkommt. 
+                        </blockquote>                    
+
+                    <aside class="notes">
+                        Wir unterscheiden dabei zwei verschiedene Ansätze: Das Inkrementelle und das Iterative Modell.
+                        Beim Inkrementellen Modell beginnen wir mit minimaler Funktionalität, die wir dann sukkzessive Ausbauen. In jedem Schritt kommt 
+                        also neue Funktionalität hinzu. 
+
+                        Beim Iterativen Modell entwickeln wir in einem ersten Schritt bereits das gesamtsystem. Die gesamte Funktionalität ist also schon im 
+                        ersten Release vorhanden. Jedoch sind die einzelnen Funktionalitäten in einem ersten Release unter umständen nur sehr einfach 
+                        implementiert und noch nicht im gewünschten Endzustand. Mit jedem Release werden dann einzelne Funktionen verbessert, bis wir am 
+                        Ende das System in der gewünschten Qualität haben. 
+                        
+                        In der Praxis müssen wir bei diesem Programm aufpassen, dass wir trotzdem jede Iteration gut planen, da das Modell ansosnten 
+                        zum Code and Fix Modell, mit all seinen Nachteilen verkommt. 
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>Agile Softwareentwicklung</h1> 
+                    <figure>
+                    <img src="../../slides/images/agile.png" class="plain"/>
+                    <figcaption style="font-size:xx-small">Adapted from: Planbox - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=19543504</figcaption>
+                </figure>
+
+                <aside class="notes">
+                    Dieses Inkrementelle Prozessmodell ist wichtiger Bestandteil der Agilen Softwareentwicklung. 
+                    Diese Methodologie wollen wir uns im folgenden etwas näher anschauen.
+                </aside>
+                </section>
+
+
+<!--
+                <section>
+                    <h3>Unit Tests</h3>
+                    <ul>
+                        <li>Wozu braucht es Software Prozesse?</li>
+                        <li>Weshalb ist ein Black Box Prozess speziell f&uuml;r die Softwareproduktion ungeeignet?</li>                        
+                        <li>Was sind die Hauptprobleme des Wasserfallmodells</li>
+                        <ul><li>Wie lassen sich diese l&ouml;sen?</li></ul>
+                        <li>Wie wird beim Spiralmodell das Risiko minimiert?</li>
+                    </ul>
+                </section>
+-->
+            </div>
+        </div>
+
+
+
+<script src="../../slides/lib/js/head.min.js"></script>
+<script src="../../slides/js/reveal.js"></script>
+
+<script>
+    file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        center: false,
+        transition: 'none',           
+        /* 
+        chalkboard: {
+            src: "chalkboard.json",
+            readOnly: undefined,
+            transition: 800,
+            theme: "whiteboard",
+            //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+            //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+            // configuration options for notes canvas and chalkboard
+            color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+            background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+            pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+        },
+        */
+        math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+
+        dependencies: [{
+            src: '../../slides/plugin/markdown/marked.js'
+        },
+        {
+            src: '../../slides/plugin/markdown/markdown.js'
+        },
+        { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+        {
+            src: '../../slides/plugin/notes/notes.js',
+            async: true
+        },
+        /*
+        {
+            src: '../../slides/plugin/chalkboard/chalkboard.js'
+        },
+        */
+        {
+            src: '../../slides/plugin/highlight/highlight.js',
+            async: true,
+            callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+        },
+        { src: '../../slides/plugin/math/math.js', async: true }
+                    ],
+        keyboard: {
+            /*
+            67: function () {
+                RevealChalkboard.toggleNotesCanvas()
+            }, // toggle notes canvas when 'c' is pressed
+            66: function () {
+                RevealChalkboard.toggleChalkboard()
+            }, // toggle chalkboard when 'b' is pressed
+            46: function () {
+                RevealChalkboard.clear()
+            }, // clear chalkboard when 'DEL' is pressed
+            8: function () {
+                RevealChalkboard.reset()
+            }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+            68: function () {
+                RevealChalkboard.download()
+            }, // downlad recorded chalkboard drawing when 'd' is pressed
+            */
+        },
+    });
+</script>
+</body>
+
+</html>
