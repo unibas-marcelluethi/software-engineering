@@ -28,7 +28,7 @@ Die folgenden Lernziele sollten *während oder nach* der Vorlesung vom 05. Dezem
 
 * Schritt 1: Schauen Sie sich das Video "Softwareprozesse" an  ([Video](https://drive.switch.ch/index.php/s/EZquvJMIrvtYgBo), [Slides](./slides/software-process.html))
 * Schritt 2: Lesen Sie den Artikel zum Thema "Agile Softwareentwicklung"  ([Artikel](./articles/agile.html))
-* Schritt 3: Lesen Sie den Artikel "Agile - The good the bad and the ugly"  ([Artikel])(./articles/agile-critic.html)
+* Schritt 3: Lesen Sie den Artikel "Agile - The good the bad and the ugly"  ([Artikel](./articles/agile-critic.html))
 * Schritt 4: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_748838.html))
 
 *Achtung: Der Test muss spätestens bis Mittwoch 28. November, 08:00 bearbeitet sein.*
