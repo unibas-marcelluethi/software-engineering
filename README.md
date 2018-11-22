@@ -48,7 +48,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |    | Theoretische Grundlagen des Testens| |
 | [Woche 10](https://unibas-sweng.github.io/software-engineering/week10/index.html) | Testen im Kleinen   | | 
 || Testen im Grossen ||
-| Woche 11    | Softwareprozesse | |
+| [Woche 11](https://unibas-sweng.github.io/software-engineering/week11/index.html)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
 | Woche 12   | Scrum  | |
 | Woche 13 | Präsentationen der Projekte | |
