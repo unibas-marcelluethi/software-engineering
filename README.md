@@ -50,7 +50,9 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 || Testen im Grossen ||
 | [Woche 11](https://unibas-sweng.github.io/software-engineering/week11/index.html)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
-| Woche 12   | Scrum  | |
+| [Woche 12](https://unibas-sweng.github.io/software-engineering/week12/index.html)| Continuous Delivery | |
+|            | Scrum  | (Gasttalk: Bluesky IT Solutions) | 
+|            | Wichtig Kompetenzen in der Praxis  | (Gasttalk: Bluesky IT Solutions) | 
 | Woche 13 | Präsentationen der Projekte | |
 | Woche 14 | Zusammenfassung und Prüfungsvorbesprechung ||
 
