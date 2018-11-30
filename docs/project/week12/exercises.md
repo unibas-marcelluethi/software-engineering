@@ -13,11 +13,11 @@ Medien: Slides und Software Demo
 
 Die Präsentation sollte mindestens folgende Punkte ansprechen:
 
-* Welches Problem sollte ihre Erweiterung lösen. 
-    * Was ist die Vision, das Ziel 
-    * Was sind die wichtigsten Anforderungen an die Software       
-* Wie ist die Architektur / das Design der Software 
-   * Was waren die wichtigsten Designentscheidungen
+* Welches Problem sollte ihre Erweiterung lösen?
+    * Was ist die Vision, das Ziel?
+    * Was sind die wichtigsten Anforderungen an die Software?
+* Wie ist die Architektur / das Design der Software?
+   * Was waren die wichtigsten Designentscheidungen?
 * Live-demo Ihrer Erweiterung
 * Reflektion / Lessons learnend
     * Welche Probleme sind während dem Projekt aufgetaucht?
