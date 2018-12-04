@@ -61,7 +61,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 #### Übungen
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 28. November, 08:00 | [Individueller Test Woche 11](https://adam.unibas.ch/goto_adam_tst_748838.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_748838.html) | 
+| 5. Dezember, 08:00 | [Individueller Test Woche 12](https://adam.unibas.ch/goto_adam_tst_752218.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_752218.html) | 
 
 #### Projekt
 
