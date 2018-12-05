@@ -1,0 +1,448 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Entwurfsmuster</title>
+
+	<link rel="stylesheet" href="../../slides/css/reveal.css">
+	<link rel="stylesheet" href="../../slides/css/theme/unibas.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../slides/lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../slides/css/print/pdf.css' : '../../slides/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="center">
+				<div class="titleblock">
+
+					<p>
+						<img class="plain" src="../../slides/images/uni-basel-logo.png" style="width:15%;float:left;display:block" />
+					</p>
+
+
+					<h1 style="clear:both;margin-top:20%">
+						Design Patterns
+
+					</h1>
+					<h3>
+						Marcel L&uuml;thi <br> Departement Mathematik und Informatik
+					</h3>
+
+                </div>
+                
+                <aside class="notes">               
+                    Herzlich willkommen zu diesem Screencast zum Thema Entwurfsmuster.
+                
+
+                   
+                </aside>
+
+			</section>
+    
+
+
+            <section>
+                <h1>Einordnung</h1>              
+                <div style="float:right; width:100%">
+                    <img src="../../slides/images/advance-organizer-design-patterns.png" style="width:100%" class="plain" />                    
+                </div>
+
+                <aside class="notes">
+                    Das Thema dieses Screencasts passt nicht ganz in die Abfolge vom Rest vom Kurs. 
+                    Es würde eigentlich irgendwo zwischen Design und Implementation angesiedelt werden. 
+                    Der Grund weshalb wir es erst jetzt yum Schluss ansprechen ist, dass es etwas weniger Fundamental als die anderen Themen, 
+                    die wir in diesem Kurs besprochen haben. 
+                    Wenn wir alle Prinzipien, die wir bisher besprochen haben folgen, aber keine Designpatterns verwenden, kommt trotzdem mit hoher
+                    wahrscheinlichkeit gute Softare dabei raus. 
+                    
+                    Trotzdem wäre kein Software Engineering Kurs wäre Komplett, ohne dieses Thema zumindest angesprochen zu haben. 
+                    Und jeder Designer und Softwareentwickler sollten zumindest wissen, was sich hinter dem Begriff Design patterns versteckt. 
+
+                    Das ist auch unser Ziel mit diesem Video. Wir wollen vermitteln, was denn Designpatterns sind, aber nicht einen exklusive Liste 
+                    aller wichtigen Designpatterns geben und die im Detail studieren. 
+                    
+                    
+                </aside>
+            </section>
+
+
+            <section class="center">
+                <blockquote>
+                    <p>"Abstraction should follow experience, </br> not precede it."</p>
+                    <p> Michael Atiyah</p>
+                </blockquote>
+
+
+
+                <aside class="notes">
+
+                </aside>
+
+            </section>
+
+            <section>
+                <h1>Design Patterns</h1>
+
+                <blockquote>
+                    Design Pattern: Bew&auml;hrte L&ouml;sungsans&auml;tze f&uuml;r wiederkehrende Designprobleme.
+                </blockquote>
+
+                <div style="float:left;width:60%; text-align:left">
+
+                    <ul>
+                        <li>Konkrete Probleme lösen</li>
+                        <li>Wiederkehrende Ansätze identifizieren</li>
+                        <li>Abstrahieren</li>
+                        <li>Benennen</li>                                                
+                        &nbsp;
+                       <li class="fragment"><mark class="highlight">Resultat: Katalogisiertes Expertenwissen</mark></li> 
+                    </ul>
+                    
+                    
+                </div>
+
+                <div style="float:right;width:40%">
+                    <img src="https://www.pearsonhighered.com/assets/bigcovers/0/2/0/1/0201633612.jpg" style="width:80%" class="plain" />
+                </div>
+
+                <aside class="notes">
+                    Gang of Four!
+                </aside>
+
+            </section>
+
+
+
+            <section>
+                <h1>Vorteile von Design Patterns</h1>
+
+                <blockquote>
+                    Ein Design Pattern "standardisiert" den L&ouml;sungsansatz
+                </blockquote>
+                <ul>
+                    <li>Bauteil f&uuml;r den Designer</li>
+                    <li>Vereinfacht Kommunikation</li>
+                    <li>Vereinfacht Lesen/Verstehen von Code</li>
+                </ul>
+            </section>
+
+
+
+            <section>
+                <h1>Klassifikation</h1>
+                <ul>
+                    <li>
+                        <mark class="highlight">Erzeugungsmuster</mark> (Creational Patterns)</li>
+                    <ul>
+                        <li>Strategien um Objekte zu erzeugen</li>
+                    </ul>
+                    <li>
+                        <mark class="highlight">Strukturmuster </mark> (Structural Patterns)</li>
+                    <ul>
+                        <li>Strategien um Beziehungen zwischen Klassen zu realisieren</li>
+                    </ul>
+                    <li>
+                        <mark class="highlight">Verhaltensmuster</mark> (Behavioral Patterns)</li>
+                    <ul>
+                        <li>Strategien um Kommunikation zwischen Objekten zu realisieren</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h1>Gang of Four Patterns</h1>
+                <div style="float:left;font-size:x-large; width:33%">
+                    <h4>Erzeugungsmuster</h4>
+                    <ul>
+                        <li class="fragment highlight-blue" data-fragment-index="1">Abstrakte Fabrik</li>
+                        <li>Erbauer</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Fabrikmethode</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Prototyp</li>
+                        <li>Singleton</li>
+                    </ul>
+                </div>
+                <div style="float:left;font-size:x-large; width:33%">
+                    <h4>Strukturmuster</h4>
+                    <ul>
+                        <li class="fragment fade-out" data-fragment-index="1">Adapter</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Br&uuml;cke</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Dekorierer</li>
+                        <li>Fassade</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Fliegengewicht</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Kompositum</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Proxy</li>
+                    </ul>
+                </div>
+                <div style="float:left;font-size:x-large; width:33%">
+                    <h4>Verhaltensmuster</h4>
+                    <ul>
+                        <li class="fragment fade-out" data-fragment-index="1">Befehl</li>
+                        <li>Beobachter (Observer)</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Besucher</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Interpreter</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Iterator</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Memento</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Schablonenmethode</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Strategie</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Vermittler</li>
+                        <li class="fragment fade-out" data-fragment-index="1">Zustand</li>
+                    </ul>
+                </div>
+            </section>
+
+        
+
+            <section>
+                <h1>Beispiel Designproblem</h3>
+                <blockquote>
+                    Ein System soll unabh&auml;ngig davon sein wie seine "Produkte" (Objekte) erzeugt werden soll.
+                </blockquote>
+
+              <div style="text-align: left">
+                <ul>
+                    <li>Beispiel: GUI Bibliothek soll Widget Klassen mit verschiedenen Look and Feels unterst&uuml;tzen</li>
+                </ul>
+                <figure>
+                    <img src="../../slides/images/patterns-factory-example-class.png" class="plain" style="width:50%"/>
+                </figure>
+            </div>
+            </section>
+
+
+        
+    
+
+            <section>
+                <h1>Abstract Factory</h1>
+                <ul>
+                    <li>Kreieren von Objekten einer Klasse ohne diese explizit angeben zu müssen.</li>
+                    <li>Verschiedene Factory Implementation erlauben es verschiedene Subtypen zu kreieren.</li>
+                </ul>
+                <figure>
+                    <img src="../../slides/images/patterns-factory-pattern-concrete.png" class="plain" style="width:60%"/>
+                </figure>
+            </section>
+
+            <section>
+                    <h1>Abstract Factory</h1>
+                    
+                         <img src="../../slides/images/patterns-factory-class-abstract.png" class="plain" style="width:100%"/>
+
+
+                </section>
+
+                <section>
+                        <h1>Abstract Factory</h1>
+                        
+    
+                            <img src="../../slides/images/patterns-factory-sequence-abstract.png" class="plain" style="width:100%"/>
+                    </section>
+    
+
+            <section>
+                <h1>Abstract Factory</h1>
+
+                <ul>
+                    <li>Beispiel, adaptiert aus Ganttproject</li>
+                    <pre style="width:100%"><code data-trim>
+                        public interface ICalendarFactory {
+                            Calendar newCalendar();
+                        }                        
+                        class DefaultCalendarFactory implements ICalendarFactory {
+                            @Override  public Calendar newCalendar() {
+                                return new GanttCalendar(...);
+                            }
+                        }                                                                
+                        public Date adjustLeft(ICalendarFactory factory, Date d) {
+                            Calendar c = factory.newCalendar();
+                            while (c.get(Calendar.DAY_OF_WEEK) != c.getFirstDayOfWeek()) {
+                                ...
+                            }
+                        }
+                            
+                    </code></pre>
+            </section>
+
+
+            <section>
+                <h1>Design Patterns im Kontext</h1>
+
+                <blockquote>
+                    Verschiedene Programmierparadigmen <br/>&rArr; Verschiedene Design Patterns
+                </blockquote>
+
+                    
+                    
+                    <ul>
+                        <li>Pattern wird von neuen Sprachen als Sprachkonstrukt implementiert</li>
+                        <ul>
+                            <li>Beispiel: Objekt als Sprachkonstrukt</li>
+                        </ul>
+                        <li>Paradigma macht Pattern unn&ouml;tig</li>
+                        <ul>
+                            <li>Beispiel: Patterns f&uuml;r Zustandsmanagement in funktionalen Programmiersprachen</li>
+                        </ul>
+                    </ul>
+
+            </section>
+
+            <!--
+            <section>
+                <h3>Beispiel: Singleton Pattern in Java und Scala</h3>
+
+                Java
+                <pre style="font-size:x-large"><code data-trim>
+                    public final class Singleton {
+                      private static Singleton theInstance = new Singleton();
+                        
+                      private Singleton() {}
+                      public static Singleton getInstance() { return theInstance; }                                             
+                      public int foo() { return 0; }                        
+                    }
+                 
+                    Singleton.getInstance().foo();
+                </code></pre> Scala (kennt Object als Sprachkonstrukt)
+                <pre style="font-size:x-large"><code data-trim class="scala">
+                       object Singleton {
+                            def foo() { return 0 }                            
+                       }
+
+                       Singleton.foo()                       
+                    </code></pre>
+
+            </section>
+-->
+
+            <section>
+                <h1>Design Patterns im Kontext</h1>
+
+
+                <blockquote>
+                    Patterns sind nicht fundamental sondern verändern sich mit der Zeit.
+                </blockquote>
+                <div style="text-align:left">
+                Aber:
+                <ul>
+                    <li>Design Patterns helfen Programmierer, Designer und Software Architekten miteinander zu kommunizieren.</li>
+                    <li>Ein Pattern sagt mehr als viele Zeilen Code!</li>
+                </ul>
+            </div>
+            </section>
+
+            <!--
+            <section>
+                <h3>Unit Tests</h3>
+                <ul>
+                    <li>Wie helfen uns Patterns beim Design von Software?</li>
+                    <li>Wie helfen uns Patterns in der Kommunikation?</li>
+                    <ul>
+                        <li>Wie helfen Patterns Code zu verstehen?</li>
+                    </ul>
+                    <li>Wie helfen uns Patterns bessere Software zu schreiben?</li>
+                    <li>Weshalb unterscheiden sich die verwendeten Patterns in den verschiedenen Programmier&shy;paradigmen?</li>
+                </ul>
+                
+            </section>
+-->      
+        </div>
+    </div>
+
+
+
+
+    <script src="../../slides/lib/js/head.min.js"></script>
+    <script src="../../slides/js/reveal.js"></script>
+    
+    <script>
+        file: ///home/luetma00/documents/teaching/sweng/theory/lecture1/admin.html#/1
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            center: false,
+            transition: 'none',           
+            /* 
+            chalkboard: {
+                src: "chalkboard.json",
+                readOnly: undefined,
+                transition: 800,
+                theme: "whiteboard",
+                //toggleChalkboardButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                //toggleNotesButton: { left: "30px", bottom: "30px", top: "auto", right: "auto" },
+                // configuration options for notes canvas and chalkboard
+                color: ['rgba(0,0,255,1)', 'rgba(255,255,255,0.5)'],
+                background: ['rgba(127,127,127,.1)', '../../slides/plugin/chalkboard/img/whiteboard.png'],
+                pen: ['url(../../slides/plugin/chalkboard/img/boardmarker.png), auto', 'url(../../slides/plugin/chalkboard/img/boardmarker.png), auto'],
+            },
+            */
+            math: {
+                    // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'
+                },
+    
+            dependencies: [{
+                src: '../../slides/plugin/markdown/marked.js'
+            },
+            {
+                src: '../../slides/plugin/markdown/markdown.js'
+            },
+            { src: '../../slides/plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+            {
+                src: '../../slides/plugin/notes/notes.js',
+                async: true
+            },
+            /*
+            {
+                src: '../../slides/plugin/chalkboard/chalkboard.js'
+            },
+            */
+            {
+                src: '../../slides/plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            { src: '../../slides/plugin/math/math.js', async: true }
+                        ],
+            keyboard: {
+                /*
+                67: function () {
+                    RevealChalkboard.toggleNotesCanvas()
+                }, // toggle notes canvas when 'c' is pressed
+                66: function () {
+                    RevealChalkboard.toggleChalkboard()
+                }, // toggle chalkboard when 'b' is pressed
+                46: function () {
+                    RevealChalkboard.clear()
+                }, // clear chalkboard when 'DEL' is pressed
+                8: function () {
+                    RevealChalkboard.reset()
+                }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+                68: function () {
+                    RevealChalkboard.download()
+                }, // downlad recorded chalkboard drawing when 'd' is pressed
+                */
+            },
+        });
+    </script>
+    </body>
+    
+    </html>
