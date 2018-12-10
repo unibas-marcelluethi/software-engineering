@@ -1,32 +1,26 @@
-# Anleitung Woche 12:  Ein Blick in die Praxis - Agile Softwareentwicklung und Continuous Delivery
+# Anleitung Woche 12:  Design Patterns
 
 ## Übersicht
 
-In dieser Woche werden wir verschiedene Vorträge aus der Industrie hören, die die Themen Agile Softwareentwicklung 
-und moderne Entwicklungswerkzeuge verbinden. 
+In dieser Woche geben wir einen kurzen Einblick in das Thema der Design Patterns (oder auf Deutsch, Entwurfsmuster). 
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 5. Dezember *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 19. Dezember *selbständig* zu erarbeiten.
 
 Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
-- erklären können, was man unter dem Begriff Continuous Delivery versteht
-- verstehen wie sich Continuous Delivery von Continuous Integration und Continuous Deployment unterscheidet
-- die Wichtigkeit von Spezifikationen und Automatisierten Tests in diesem Prozess einschätzen können.
-- die Wichtigkeit und Rolle von Werkzeugen wie Versionsverwaltung (z.B. Git), Integrationsserver (Travis) in diesem Prozess einschätzen können.
-
+- erklären können, weshalb Design Patterns ein wichtiges Tool für die Kommunikation sind
+- für jedes der besprochenen Entwurfsmuster erklären können, welches  Problem damit gelöst wird
+- die Rolle/Position von Design Patterns im Entwicklungsprozess enschätzen können
 
 ### Vorbereitung:
 
-* Schritt 1: Schauen Sie sich das Video "Continuous Delivery" von Martin Fowler an  ([Artikel zum Video](articles/continuous-delivery.html))
-* Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_752218.html))
+* Schritt 1: Schauen Sie sich das Video "Design Patterns an" [Video](...))
+* Schritt 2: Lesen Sie den Artikel "Weitere wichtige Design Patterns" [Artikel](./articles/design-patterns.html)
+* Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_755632.html))
 
-*Achtung: Der Test muss spätestens bis Mittwoch 5. Dezember, 12:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 19. Dezember, 8:00 bearbeitet sein.*
 
-
-### Übungen
-Die Studierenden Arbeiten Selbständig in Gruppen an der Fertigstellung Ihres Softwareprojekts sowie der Präsentation.
-Das Format der Präsentation ist auf diesem [Übungsblatt](../project/week12/exercises.html) beschrieben.
 
 ### Feedback
 

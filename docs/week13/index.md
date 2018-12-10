@@ -1,4 +1,4 @@
-# Woche 12: Ein Blick in die Praxis - Agile Softwareentwicklung und Continuous Delivery
+# Woche 12: Design Patterns
 
 # Studium
 
