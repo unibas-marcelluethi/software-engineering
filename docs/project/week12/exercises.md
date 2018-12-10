@@ -19,7 +19,7 @@ Die Präsentation sollte mindestens folgende Punkte ansprechen:
 * Wie ist die Architektur / das Design der Software?
    * Was waren die wichtigsten Designentscheidungen?
 * Live-demo Ihrer Erweiterung
-* Reflektion / Lessons learnend
+* Reflexion / Lessons learned
     * Welche Probleme sind während dem Projekt aufgetaucht?
     * Was war einfacher, was schwieriger als erwartet?
     * Was würden Sie beim nächsten mal anders machen?
