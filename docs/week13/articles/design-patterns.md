@@ -2,10 +2,10 @@
 # Weitere wichtige Design Patterns
 
 *In diesem Artikel schauen wir uns einige weitere wichtige Design Patterns an, die Sie wahrscheinlich in der Praxis immer wieder antreffen werden, und die auch in Ganttproject eingesetzt wurden. 
-Es handelt sich aber nur um ein kleine Auswahl von der grossen Anzahl von Patterns, die in der Praxis eingesetzt werden. Im Verlauf ihrer Karriere werden Sie wahrscheinlich noch viele weitere Patterns kennenlernen.
-Da der Katalog der relevanten Patterns sich laufend ändert, gehört das erlernen der aktuell relevanten Patterns zum Berufsalltags von Softwareingenieuren.*
+Es handelt sich aber nur um eine kleine Auswahl von der grossen Anzahl von Patterns, die in der Praxis eingesetzt werden. Im Verlauf Ihrer Karriere werden Sie wahrscheinlich noch viele weitere Patterns kennenlernen.
+Da der Katalog der relevanten Patterns sich laufend ändert, gehört das Erlernen der aktuell relevanten Patterns zum Berufsalltag von Softwareingenieuren.*
 
-## Das Singleton Pattern
+## Singleton Pattern
 
 Das allereinfachste Designpattern ist das *Singleton Pattern*. Es wird angewendet, wenn wir sicher stellen wollen, dass nur eine Instanz von einer Klasse erstellt wird. Das *Singleton* Pattern ist also ein weiteres Beispiel eines Erzeugungsmusters.
 
@@ -29,30 +29,30 @@ Um eine Instanz der Klasse zu erstellen, wird die statische Methode ```getInstan
 #### Beispielcode
 
 Die einfachste Implementation des Singleton Patterns ist hier gezeigt:
-```
-    public final class Singleton {
-        private static final Singleton instance = new Singleton();
-        
-        private Singleton() {}
-        
-        public static Singleton getInstance() {
-            return instance;
-        }
+```java
+public final class Singleton {
+    private static final Singleton instance = new Singleton();
+    
+    private Singleton() {}
+    
+    public static Singleton getInstance() {
+        return instance;
     }
+}
 ``` 
 
 Eine Referenz eines Singleton Objekts wird, wie bereits besprochen, durch den Aufruf der ```getInstance``` Methode erlangt.
-```
+```java
 Singleton singletonInstance = Singleton.getInstance()
 ```
 
 
 ## Builder Pattern
 
-Ein weiteres Beispiel eines Erzeugungsmusters ist das *Builder Pattern*. Das Builder Pattern wird immer dann eingesetzt wenn die Erzeugung eines Objekts umständlich oder komplex ist. Das Builder Pattern erreicht, dass die Erzeugung des Objekts unabh&auml;ngig von den Teilen, aus denen das Objekt besteht. Der Nutzer soll auch nicht wissen müssen,  wie die Teile intern zusammengesetzt sind.
+Ein weiteres Beispiel eines Erzeugungsmusters ist das *Builder Pattern*. Das Builder Pattern wird immer dann eingesetzt wenn die Erzeugung eines Objekts umständlich oder komplex ist. Das Builder Pattern erreicht, dass die Erzeugung des Objekts unabh&auml;ngig von den Teilen ist, aus denen das Objekt besteht. Der Nutzer soll auch nicht wissen müssen, wie die Teile intern zusammengesetzt sind.
                  
 Als Beispiel schauen wir uns folgendes Objekt an:
-```                 
+```java
 class Task {
     private int a;
     private String b;
@@ -64,17 +64,17 @@ class Task {
 ```
 Um ein Objekt via dem Konstruktor zu konstruieren, müssten wir nun 26 Argumente angeben. Auch wenn die Sprache mehrere Konstruktoren in einer Klasse unterstützt, ist es nicht möglich, für alle möglichen Untermengen spezielle Konstruktoren anzubieten. Die Anzahl der Konstruktoren würde explodieren. 
 
-Mit dem Builder Pattern können wir dieses Problem auf elegante Weise lösen. Der Stellen eine Schnittstelle zur Verfügung, mit dem der Benutzer, nur die von ihm gewünschten Teile (Hier Teil A und Teil Z) initialisieren kann. Das gesamte Objekte wird dann intern beim Aufruf der Methode ```getResult``` erstellt. 
+Mit dem Builder Pattern können wir dieses Problem auf elegante Weise lösen. Wir stellen eine Schnittstelle zur Verfügung, mit dem der Benutzer nur die von ihm gewünschten Teile (Hier Teil A und Teil Z) initialisieren kann. Das gesamte Objekte wird dann intern beim Aufruf der Methode ```getResult``` erstellt. 
 ```
 new Builder().createPartA("5").createPartZ(1.0).getResult();
 ```
 
  
- #### Klassen und Sequenzdiagramm
+#### Klassen- und Sequenzdiagramm
 
-Die Implementation besteht aus einer abstrakten Klasse Builder, die die Konstruktion steuert. Konkrete Builder Implementation können die Kreierung des Objekts unterschiedlich implementieren. Für jedes Teil gibt es eine separate *create* Methode. Häufig wird in diese *create* Methode wieder das Builder Objekt zurückgegeben, damit man die Methodenaufrufe wie in obigem Beispiel direkt hintereinander angeben kann. Wenn das Produkt erstellt ist, kann  mit der Methode ```getResult``` eine Referenz auf das konstruierte Objekt erlangt werden.
+Die Implementation besteht aus einer abstrakten Klasse Builder, die die Konstruktion steuert. Konkrete Builder Implementationen können die Kreierung des Objekts unterschiedlich implementieren. Für jedes Teil gibt es eine separate *create* Methode. Häufig wird in diese *create* Methode wieder das Builder Objekt zurückgegeben, damit man die Methodenaufrufe wie in obigem Beispiel direkt hintereinander angeben kann. Wenn das Produkt erstellt ist, kann mit der Methode ```getResult``` eine Referenz auf das konstruierte Objekt erlangt werden.
 
-Es gibt verschiedene Varianten des Builder Patterns. Im allgemeinsten Fall wird zusätzlich noch eine Separate Klasse *Director* eingeführt, die die Konstruktion, das heisst der Aufruf der verschiedenen Create Methoden durchführt. Dies kann aber auch, wie in obigem Beispiel, direkt vom Nutzer gemacht werden.
+Es gibt verschiedene Varianten des Builder Patterns. Im allgemeinsten Fall wird zusätzlich noch eine separate Klasse *Director* eingeführt, die die Konstruktion, das heisst die Aufrufe der verschiedenen *create* Methoden durchführt. Dies kann aber auch, wie in obigem Beispiel, direkt vom Nutzer gemacht werden.
 
 <img src="../../slides/images/patterns-builder-class.png" class="plain" />
 
@@ -82,61 +82,60 @@ Es gibt verschiedene Varianten des Builder Patterns. Im allgemeinsten Fall wird 
 
 #### Beispiel (adaptiert aus Ganttproject)
 
-Das Builder Pattern wird in Ganttproject an verschiedenen Stellen eingesetzt. Wir zeigen hier die wichtigsten Teile vom ```TaskBuilder```. In der in Ganttproject verwendeten Variante, wird kein Director eingesetzt, sondern die create Methoden (also ```withId```, ```withDuration```, ...) werden direkt vom Nutzer der Klasse aufgerufen.
+Das Builder Pattern wird in Ganttproject an verschiedenen Stellen eingesetzt. Wir zeigen hier die wichtigsten Teile vom ```TaskBuilder```. In der in Ganttproject verwendeten Variante wird kein Director eingesetzt, sondern die *create* Methoden (also ```withId```, ```withDuration```, ...) werden direkt vom Nutzer der Klasse aufgerufen.
 
 
- ```   
-    abstract class TaskBuilder {                        
-        Integer myId;
-        TimeDuration myDuration;
-        ...
-    
-        public TaskBuilder withId(int id) {
-            myId = id;  return this;
-        }                    
-        public TaskBuilder withDuration(TimeDuration duration) {
-            myDuration = duration;   return this;
-        }
-        ...
-        public abstract Task build();
-        }                        
-    }
+ ```java
+abstract class TaskBuilder {                        
+    Integer myId;
+    TimeDuration myDuration;
+    ...
 
-``` 
-```    
-class TaskBuilderImpl extends TaskBuilder {
-    @override public Task build() {                                
-    if (myId == null || myTaskMap.getTask(myId) != null) {
-        myId = getAndIncrementId();
-    }                                
-    if (myDuration != null) {
-        duration = myDuration;
-    } else {
-        duration = (myEndDate == null) ? createLength(defaultTimeUnit(), 1.0f) 
-            : createLength(defaultTimeUnit(), myStartDate, myEndDate);
+    public TaskBuilder withId(int id) {
+        myId = id;  return this;
+    }                    
+    public TaskBuilder withDuration(TimeDuration duration) {
+        myDuration = duration;   return this;
     }
     ...
+    public abstract Task build();
+    }                        
+}
+``` 
+
+```java
+class TaskBuilderImpl extends TaskBuilder {
+    @override public Task build() {                                
+        if (myId == null || myTaskMap.getTask(myId) != null) {
+            myId = getAndIncrementId();
+        }                                
+        if (myDuration != null) {
+            duration = myDuration;
+        } else {
+            duration = (myEndDate == null) ? createLength(defaultTimeUnit(), 1.0f) 
+                : createLength(defaultTimeUnit(), myStartDate, myEndDate);
+        }
+        ...
     }
 }
 ```
 
 Nutzung:
-```
- Task newTask = new TaskBuilderImp().withId(1).withDuration(10).build();
-                                
+```java
+Task newTask = new TaskBuilderImp().withId(1).withDuration(10).build();
 ```              
 
-## Das Facade Pattern
+## Facade Pattern
  
 Wir kommen nun zu einem Beispiel eines Strukturmusters. 
 Das *Facade Pattern* löst dabei folgendes Problem:
 Wenn ein Projekt stark modularisiert ist, muss eine Klasse unter Umständen viele andere Module nutzen, um ihre Funktionalität zu erfüllen. Das bedeutet, die Klasse wird eine hohe Kopplung aufweisen, was wir ja eigentlich vermeiden möchten.
 
-Als konkretes Beispiel nehmen wir eine GUI Anwendung. Wenn ein Client eine GUI ansteuer möchte, brauchen dieser oft gleichzeitig Window, Statusbar, Menubar, etc. Das heisst, der Client koppelt sich an alle diese GUI Elemente. Erschwerend kommt hinzu, dass die Schnittstellen eventuell auch noch inkonsistent sind. 
+Als konkretes Beispiel nehmen wir eine GUI Anwendung. Wenn ein Client eine GUI ansteuern möchte, braucht dieser oft gleichzeitig Window, Statusbar, Menubar, etc. Das heisst, der Client koppelt sich an alle diese GUI Elemente. Erschwerend kommt hinzu, dass die Schnittstellen eventuell auch noch inkonsistent sind. 
 
 Das *Facade Pattern* führt hier eine neue Klasse ein, die eine einheitliche Schnittstelle zu den verschiedenen Subsystemen anbietet, und Funktionalität aus mehreren Subsystemen zusammenfasst. Die Nutzung der Fassade führt also zu einer tieferen Kopplung, wobei jedoch die ursprüngliche Modularisierung beibehalten wird. 
 
-#### Klassen und Sequenzdiagramm
+#### Klassen- und Sequenzdiagramm
 
 Die Struktur des Facade Patterns ist extrem einfach. 
 Wie in folgendem Klassendiagramm gezeigt, wird eine 
@@ -154,7 +153,7 @@ Dieses Verhalten ist auch nochmals im Sequenzdiagramm dargestellt.
 In Ganttproject wird das Facade Pattern unter anderem für die Ansteuerung der UI genutzt. Die Klasse ```UIFacade``` stellt eine einfach zu benutzende Schnittstelle zur Verfügung, um 
 mit der UI zu interagieren.
 
-```
+```java
 class UIFacade {
     private final JFrame myMainFrame;
     ...
@@ -166,7 +165,7 @@ class UIFacade {
 
     public void setWorkbenchTitle(String title) {
         myMainFrame.setTitle(title);
-        }
+    }
     
 }
  ```
@@ -174,14 +173,14 @@ class UIFacade {
 
  ## Observer Pattern
 
-Das letzte Muster, dass wir uns anschauen ist ein Beispiel eines 
+Das letzte Muster, das wir uns anschauen, ist ein Beispiel eines 
 Verhaltensmusters. Das *Observer Pattern* wird häufig in GUI Bibliotheken, wie zum Beispiels *Java Swing* eingesetzt. 
 
 Das *Observer Pattern* kann immer dann eingesetzt werden, wenn 
-eine Menge von Objekten über eine Zustands&auml;nderungen informiert werden, muss, ohne dass man die Klassen eng aneinander koppeln will.                         
+eine Menge von Objekten über eine Zustands&auml;nderung informiert werden muss, ohne dass man die Klassen eng aneinander koppeln will.                         
 Als Beispiel können wir dafür eine Tabellenkalkulation nehmen. 
 Hier werden die Daten (die Inhalte der Zellen) von der graphischen Darstellung getrennt. Wenn sich die Daten ändern, sollten folgende Objekte aktualisiert werden:
-* alle den Daten entsprechenden Zellen
+* Alle den Daten entsprechenden Zellen
 * Alle Diagramme, die auf die Daten zugreifen 
 * Alle Berechnungen, die auf die entsprechenden Zellen zugreifen. 
 
@@ -194,49 +193,52 @@ Das Problem wird gelöst, indem eine Klasse (hier ```Subject```) Methoden zur Re
 <img src="../../slides/images/patterns-observer-class.png" class="plain" />
 
 Wenn sich der Zustand eines Objekts vom Typ ```Subject``` ändert, wird die Methode ```notifyObservers``` aufgerufen. Diese informiert, via der ```update``` Methode, alle registrierten Observer, dass sich 
-der Zustand des Objekts verändert hat. Die Observer können dann entsprechen den neuen Zustand abfragen und die entsprechenden Aktionen durchführen. 
+der Zustand des Objekts verändert hat. Die Observer können dann den neuen Zustand abfragen und die entsprechenden Aktionen durchführen. 
 
 <img src="../../slides/images/patterns-observer-sequence.png" class="plain" />
 
 #### Beispiel aus Ganttproject
 
-Ein Beispiel, wo dieses Pattern in Ganttproject eingesetzt ist, ist die Klasse ```RoleManager``. Hier können sich Objekte via der Methode ```addRoleListener``` als observer eintragen, und 
+Ein Beispiel, wo dieses Pattern in Ganttproject eingesetzt ist, ist die Klasse ```RoleManager```. Hier können sich Objekte via der Methode ```addRoleListener``` als Observer eintragen und 
 werden dann über entsprechende Änderungen in der Rolle informiert (Methode ```fireRolesChanges```).
 
-```
+```java
 public interface RoleManager {
 
-        public interface Listener extends EventListener {
-            public void rolesChanged(RoleEvent e);
-        }                                      
-        private final List&lt;Listener&gt; myListeners  = new ArrayList&lt;Listener&gt;();
-        public void addRoleListener(Listener listener) { myListeners.add(listener);}
-                                        
-        void fireRolesChanged(RoleSet changedRoleSet) {
-            for (Listener l : myListeners) {
-                l.rolesChanged(new RoleEvent(this, changedRoleSet));
-            }
-        }                   
-        public Role createRole(String name, int persistentID) {
-            ...
-            myRoleManager.fireRolesChanged(this);
+    public interface Listener extends EventListener {
+        public void rolesChanged(RoleEvent e);
+    }
+    
+    private final List<Listener> myListeners  = new ArrayList<Listener>();
+    public void addRoleListener(Listener listener) { myListeners.add(listener);}
+                                    
+    void fireRolesChanged(RoleSet changedRoleSet) {
+        for (Listener l : myListeners) {
+            l.rolesChanged(new RoleEvent(this, changedRoleSet));
         }
     }
+    
+    public Role createRole(String name, int persistentID) {
+        ...
+        myRoleManager.fireRolesChanged(this);
+    }
+}
 ```
-Ein Beispiel eines Observers ist in diesem Fall ```ResourceTreeTable```. Die Klasse registriert einen Observer (hier die anonyme Klasse ```RoleManager.Listener```), welche 
+Ein Beispiel eines Observers ist in diesem Fall ```ResourceTreeTable```. Diese Klasse registriert einen Observer (hier die anonyme Klasse ```RoleManager.Listener```), welche 
 dann in der Methode ```rolesChanged``` die entsprechenden Aktionen definiert. 
-```
+```java
 public class ResourceTreeTable extends GPTreeTableBase {
     ...
     public ResourceTreeTable(IGanttProject project, ...) {
-    myRoleManager = project.getRoleManager();
-    myRoleManager.addRoleListener(new RoleManager.Listener() {
-    
-        @Override public void rolesChanged(RoleEvent e) {
-            setEditor(getTableHeaderUiFacade().findColumnByID(
-            ResourceDefaultColumn.ROLE.getStub().getID()));
-        }
-    });
-    ...
-    }        
+        myRoleManager = project.getRoleManager();
+        myRoleManager.addRoleListener(new RoleManager.Listener() {
+        
+            @Override public void rolesChanged(RoleEvent e) {
+                setEditor(getTableHeaderUiFacade().findColumnByID(
+                ResourceDefaultColumn.ROLE.getStub().getID()));
+            }
+        });
+    }
+...
+}
 ``` 
