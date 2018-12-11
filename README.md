@@ -54,14 +54,15 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |            | Scrum  | (Gasttalk: Bluesky IT Solutions), slides [(pdf)](https://unibas-sweng.github.io/software-engineering/slides/scrum.pdf) | 
 |            | Wichtig Kompetenzen in der Praxis  | (Gasttalk: Bluesky IT Solutions) | 
 | Woche 13 | Präsentationen der Projekte | |
-| Woche 14 | Zusammenfassung und Prüfungsvorbesprechung ||
+| [Woche 14](https://unibas-sweng.github.io/software-engineering/week13/index.html) | Design patterns |
+|          | Zusammenfassung und Prüfungsvorbesprechung ||
 
 ## Nächste Deadlines
 
 #### Übungen
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 5. Dezember, 08:00 | [Individueller Test Woche 12](https://adam.unibas.ch/goto_adam_tst_752218.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_752218.html) | 
+| 19. Dezember, 08:00 | [Individueller Test Woche 14](https://adam.unibas.ch/goto_adam_tst_755632.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_755632.html) | 
 
 #### Projekt
 
