@@ -1,4 +1,4 @@
-# Anleitung Woche 12:  Design Patterns
+# Anleitung Woche 13-14:  Design Patterns
 
 ## Übersicht
 
@@ -15,7 +15,7 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 
 ### Vorbereitung:
 
-* Schritt 1: Schauen Sie sich das Video "Design Patterns an" [Video](...))
+* Schritt 1: Schauen Sie sich das Video "Design Patterns an" [Video](https://drive.switch.ch/index.php/s/F3h6gG4OMtYec4f), [Slides](./slides/design-patterns.html)
 * Schritt 2: Lesen Sie den Artikel "Weitere wichtige Design Patterns" [Artikel](./articles/design-patterns.html)
 * Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_755632.html))
 

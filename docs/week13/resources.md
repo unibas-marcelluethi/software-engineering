@@ -1,13 +1,16 @@
-# Woche 12: Ein Blick in die Praxis - Agile Softwareentwicklung und Continuous Delivery
+# Woche 13-14: Design Patterns
 
 # Folien, Videos und Artikel
 
-* Continuous delivery
-    * Video:  [youtube]((https://www.youtube.com/watch?v=aoMfbgF2D_4),  
+* Design Patterns
+    * Video:  [mp4]((https://drive.switch.ch/index.php/s/F3h6gG4OMtYec4f),  
+    * Slides: [online](./slides/design-patterns.html), [Druckversion](./slides/design-patterns.html?print-pdf)
+    * Artikel: [online](./articles/design-patterns.html)
 
-* Coming up: Folien der Präsentationen von BlueSky
 
 
 # Weiterführende Literatur
-* Humble, Jez, Chris Read, and Dan North. "The deployment production line." Agile Conference, 2006. IEEE, 2006.
+* Wikipedia [Entwurfsmuster](https://de.wikipedia.org/wiki/Entwurfsmuster)
+* Gamma, Erich, et al. "Design patterns: Abstraction and reuse of object-oriented design." European Conference on Object-Oriented Programming. Springer, Berlin, Heidelberg, 1993. [pdf](http://courses.cecs.anu.edu.au/courses/archive/comp2110.2008/lectures/lec16_4up.pdf)
+* Gamma, Erich. Design patterns: elements of reusable object-oriented software. Pearson Education India, 1995.
 
