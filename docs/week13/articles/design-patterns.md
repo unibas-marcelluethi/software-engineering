@@ -30,15 +30,15 @@ Um eine Instanz der Klasse zu erstellen, wird die statische Methode ```getInstan
 
 Die einfachste Implementation des Singleton Patterns ist hier gezeigt:
 ```java
-    public final class Singleton {
-        private static final Singleton instance = new Singleton();
-        
-        private Singleton() {}
-        
-        public static Singleton getInstance() {
-            return instance;
-        }
+public final class Singleton {
+    private static final Singleton instance = new Singleton();
+    
+    private Singleton() {}
+    
+    public static Singleton getInstance() {
+        return instance;
     }
+}
 ``` 
 
 Eine Referenz eines Singleton Objekts wird, wie bereits besprochen, durch den Aufruf der ```getInstance``` Methode erlangt.
@@ -86,23 +86,23 @@ Das Builder Pattern wird in Ganttproject an verschiedenen Stellen eingesetzt. Wi
 
 
  ```java
-    abstract class TaskBuilder {                        
-        Integer myId;
-        TimeDuration myDuration;
-        ...
-    
-        public TaskBuilder withId(int id) {
-            myId = id;  return this;
-        }                    
-        public TaskBuilder withDuration(TimeDuration duration) {
-            myDuration = duration;   return this;
-        }
-        ...
-        public abstract Task build();
-        }                        
-    }
+abstract class TaskBuilder {                        
+    Integer myId;
+    TimeDuration myDuration;
+    ...
 
+    public TaskBuilder withId(int id) {
+        myId = id;  return this;
+    }                    
+    public TaskBuilder withDuration(TimeDuration duration) {
+        myDuration = duration;   return this;
+    }
+    ...
+    public abstract Task build();
+    }                        
+}
 ``` 
+
 ```java
 class TaskBuilderImpl extends TaskBuilder {
     @override public Task build() {                                
@@ -122,7 +122,7 @@ class TaskBuilderImpl extends TaskBuilder {
 
 Nutzung:
 ```java
- Task newTask = new TaskBuilderImp().withId(1).withDuration(10).build();
+Task newTask = new TaskBuilderImp().withId(1).withDuration(10).build();
 ```              
 
 ## Facade Pattern
