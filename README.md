@@ -74,7 +74,8 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |                               | Abgabe Designdokument: 20. November | |
 | [Testplan erstellen](https://unibas-sweng.github.io/software-engineering/project/week10/exercises.html)            | Erste Version: 27. November  | Besprechung: 28. November |
 | | Endversion: 4. Dezember ||
-| [Abgabe Projekt](https://unibas-sweng.github.io/software-engineering/project/week12/exercises.html) / Abschlusspräsentation | 12. Dezember | |
+| [Abschlusspräsentation](https://unibas-sweng.github.io/software-engineering/project/week12/exercises.html) /  | 12. Dezember | |
+| [Pull Request mit finaler Abgabe](https://unibas-sweng.github.io/software-engineering/project/week12/exercises.html) /  | 16. Dezember | |
 
 
 
