@@ -134,8 +134,6 @@
 
                 <img src="../../slides/images/silver-bullet.png" class="plain" />
             </section>
-
-
             <section>
                 <h1>Software ist anders</h1>
 
@@ -182,6 +180,9 @@
                 <img src="../../slides/images/software-aging.png" class="plain" style="width:70%" />
             </section>
 
+
+
+        
             <section>
                 <h1>Software engineering</h1>
 
@@ -204,6 +205,8 @@
                 </blockquote>
 
             </section>
+
+
 
 
             <section>
@@ -265,10 +268,9 @@
                     <h5>Wasserfall</h5>
                     <img src="../../slides/images/waterfall-simple.png" class="plain" style="width:60%" />
                     <ul>
-                        <li>Stark strukturierte</li>
-                        <li>Rigide</li>
-                        <li>Dokumentlastig </li>
-
+                        <li>Stark strukturiert</li>
+                        <li>Rigide/dokumentlastig </li>
+                        <li>Getrieben von Management</li>
                     </ul>
                 </div>
                 <div style="float:right; width:50%">
@@ -276,9 +278,8 @@
                     <img src="https://images-na.ssl-images-amazon.com/images/I/51l1X81fhiL._SX396_BO1,204,203,200_.jpg" style="width:25%" class="plain" />
 
                     <ul>
-                        <li>Gegenreaktion</li>
-                        <li>Fokus:Flexibilit&auml;t</li>
-                        <li>Ziel: Weniger Regeln bei gleicher Qualit&auml;t</li>
+                        <li>Flexibles reagieren auf Veränderungen</li>
+                        <li>Entwicklerteam im Zentrum</li>
                     </ul>
                 </div>
                 
@@ -419,6 +420,26 @@
     
                 </section>
 
+                
+            <section>
+                <h1>Use-cases</h1>
+
+                <blockquote style="width:100%; margin-left:auto; margin-right:auto">
+                    Beschreibung einer Systeminteraktion aus Nutzersicht.
+                </blockquote>
+
+                <div style="float:left; width:50%">
+
+                    <figure>
+                        <img src="../../slides/images/use-case.png" class="plain" style="width:70%" />
+                        <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.9</figcaption>
+                </div>
+                <div style="float:left; width:50%">
+                    <ul>
+                        <li>Hilft Anforderungen zu identifizieren und zu kommunizieren</li>
+                    </ul>
+            </section>
+
             
             <section>
                 <h1>Sprachliche Anforderungstemplates</h1>
@@ -439,27 +460,20 @@
             </section>
 
 
+
+            <section>
+                <h1>UML Klassendiagramme</h1>
+
+                <img src="../../slides/images/ocl-example.png" class="plain" style="width:50%" />
+
+                <ul>
+                    <li>Deskriptive formal definierte Spezifikation</li>
+                    <li>Beschreibt Beziehungen zwischen Klassen/Entit&auml;ten</li>
+                    <li>Wichtigste Diagrammart in UML (und OO Entwicklung)</li>
+                </ul>
+            </section>
             
     
-            <section>
-                <h1>Use-cases</h1>
-
-                <blockquote style="width:100%; margin-left:auto; margin-right:auto">
-                    Beschreibung einer Systeminteraktion aus Nutzersicht.
-                </blockquote>
-
-                <div style="float:left; width:50%">
-
-                    <figure>
-                        <img src="../../slides/images/use-case.png" class="plain" style="width:70%" />
-                        <figcaption style="font-size:x-small">Diagramm nach Ghezzi et al., Fundamentals of Software Engineering, Abbildung 5.9</figcaption>
-                </div>
-                <div style="float:left; width:50%">
-                    <ul>
-                        <li>Hilft Anforderungen zu identifizieren und zu kommunizieren</li>
-                    </ul>
-            </section>
-
             <!--
             <section>
                 <h1>Datenflussdiagramme</h1>
@@ -480,6 +494,29 @@
                     <li>Beschreibt Kommunikation zwischen Objekten</li>
                 </ul>
             </section>
+
+            <section>
+                <h1>UML Aktivit&auml;tsdiagramme</h1>
+                
+                <div style="float:left;width:50%">
+                <ul>
+                    <li>Konstruktive Spezifikationsmethode</li>
+                    <li>Modelliert Ablauf von Anwendungsfall</li>
+                    <ul>
+                        <li>Semantik basierend auf Petri Netzen</li>
+                    </ul>
+                </ul>
+            </div>
+            <div style="float:right; width:50%">
+                    <figure>
+
+                <img src="../../slides/images/activity-diagram.png" class="plain" style="width:100%" />                  
+              </figure>
+
+                </div>
+
+            </section>
+
 
             <section>
                 <h1>Endliche Automaten (Finite State Machines)</h1>
@@ -508,39 +545,6 @@
                 </ul>
             </section>
 
-            <section>
-                    <h1>UML Aktivit&auml;tsdiagramme</h1>
-                    
-                    <div style="float:left;width:50%">
-                    <ul>
-                        <li>Konstruktive Spezifikationsmethode</li>
-                        <li>Modelliert Ablauf von Anwendungsfall</li>
-                        <ul>
-                            <li>Semantik basierend auf Petri Netzen</li>
-                        </ul>
-                    </ul>
-                </div>
-                <div style="float:right; width:50%">
-                        <figure>
-    
-                    <img src="../../slides/images/activity-diagram.png" class="plain" style="width:100%" />                  
-                  </figure>
-    
-                    </div>
-    
-                </section>
-
-            <section>
-                <h1>UML Klassendiagramme</h1>
-
-                <img src="../../slides/images/ocl-example.png" class="plain" style="width:50%" />
-
-                <ul>
-                    <li>Deskriptive formal definierte Spezifikation</li>
-                    <li>Beschreibt Beziehungen zwischen Klassen/Entit&auml;ten</li>
-                    <li>Wichtigste Diagrammart in UML (und OO Entwicklung)</li>
-                </ul>
-            </section>
 
             <section>
                 <h1>Logische Spezifikation</h1>
@@ -674,6 +678,7 @@
 
             </section>
 
+            <!--
             <section>
                 <h1>Uses Graph</h1>
                 <div style="float:left;width:50%">
@@ -686,6 +691,7 @@
                 </div>
 
             </section>
+-->
 
             <section>
                 <h1> Uses Graph und Designqualit&auml;t</h1>
@@ -1008,7 +1014,13 @@
                 </div>
             </section>
 
-
+            <section>
+                <blockquote>
+                <p>Without requirements and design, programming is the art of adding bugs to an empty text file.</p>
+            <p style="text-align:right">― Louis Srygley </p>
+        </blockquote>
+            </section>
+    
             </div>
         </div>
 
