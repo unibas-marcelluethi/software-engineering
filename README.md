@@ -53,9 +53,9 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 | [Woche 12](https://unibas-sweng.github.io/software-engineering/week12/index.html)| Continuous Delivery | |
 |            | Scrum  | (Gasttalk: Bluesky IT Solutions), slides [(pdf)](https://unibas-sweng.github.io/software-engineering/slides/scrum.pdf) | 
 |            | Wichtig Kompetenzen in der Praxis  | (Gasttalk: Bluesky IT Solutions) | 
-| Woche 13 | Präsentationen der Projekte | |
-| [Woche 14](https://unibas-sweng.github.io/software-engineering/week13/index.html) | Design patterns |
-|          | Zusammenfassung und Prüfungsvorbesprechung ||
+| [Woche 13](https://unibas-sweng.github.io/software-engineering/week13/index.html) | Design Patterns | |
+|  | Präsentationen der Projekte |
+| [Woche 14](https://unibas-sweng.github.io/software-engineering/week14/index.html)          | Zusammenfassung und Prüfungsvorbesprechung | |
 
 ## Nächste Deadlines
 
