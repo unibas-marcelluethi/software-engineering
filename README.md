@@ -1,5 +1,4 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Gitter](https://badges.gitter.im/unibas-sweng/discussion.svg)](https://gitter.im/unibas-sweng/discussion?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # 10915-01: Software Engineering
 
@@ -7,7 +6,7 @@ Departement Mathematik und [Informatik](http://informatik.unibas.ch/), Universit
 
 Dozent: Marcel Lüthi (<marcel.luethi@unibas.ch>)
 
-Tutor: Michael Plüss (<m.pluess@unibas.ch>, Github: <https://github.com/MichaelPluess>)
+Tutor: Clemens Büchner (<clemens.buechner@unibas.ch>)
 
 Tutor: Jan Schönholz (<jan.schoenholz@unibas.ch>, Github: <https://github.com/schoenja>)
 
@@ -26,56 +25,45 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 
 ## Programm 
 
-*Klicken Sie auf eine Woche um zu den entsprechenden Ressourcen zu gelangen*. 
-
 |  | Themen | Bemerkungen |
 | ------| ----- | --------- |
-| [Woche 1](https://unibas-sweng.github.io/software-engineering/week1/index.html)  | Einführung / Administratives  | |
+|Woche 1 | Einführung / Administratives  | |
 |    | Was ist Software engineering  | |
-| [Woche 2](https://unibas-sweng.github.io/software-engineering/week2/index.html)  | Kurze Geschichte des Software Engineerings  | |
+|Woche 2 | Kurze Geschichte des Software Engineerings  | |
 |    | Eigenschaften von Software ||
 |    |  Software Qualitätsmerkmale | | 
-| [Woche 3](https://unibas-sweng.github.io/software-engineering/week3/index.html)  | Prinzipien des Software engineerings   | |
+|Woche 3 | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
-| [Woche 4](https://unibas-sweng.github.io/software-engineering/week4/index.html)  | Modulstruktur  | |
+|Woche 4 | Modulstruktur  | |
 |    | ModulDesign  | |
-| [Woche 5](https://unibas-sweng.github.io/software-engineering/week5/index.html)  | OO Design |
+|Woche 5 | OO Design |
 |    | UML (statische Diagramme)  | | 
-| [Woche 6](https://unibas-sweng.github.io/software-engineering/week6/index.html)    | Anforderungsanalyse   | |
-| [Woche 7](https://unibas-sweng.github.io/software-engineering/week7/index.html)  | Softwarespezifikation  |  |
-| [Woche 8](https://unibas-sweng.github.io/software-engineering/week8/index.html)  | Konstruktive und Deskriptive Softwarespezifikation  |  |
-| [Woche 9](https://unibas-sweng.github.io/software-engineering/week9/index.html) | Verifikation (überblick)  | |
+|Woche 6   | Anforderungsanalyse   | |
+|Woche 7 | Softwarespezifikation  |  |
+|    | UML (dynamische Diagramme)  | | 
+|Woche 8 | Konstruktive und Deskriptive Softwarespezifikation  |  |
+|Woche 9| Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
-| [Woche 10](https://unibas-sweng.github.io/software-engineering/week10/index.html) | Testen im Kleinen   | | 
+| Woche 10 | Testen im Kleinen   | | 
 || Testen im Grossen ||
-| [Woche 11](https://unibas-sweng.github.io/software-engineering/week11/index.html)    | Softwareprozesse | |
+| Woche 11    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
-| [Woche 12](https://unibas-sweng.github.io/software-engineering/week12/index.html)| Continuous Delivery | |
-|            | Scrum  | (Gasttalk: Bluesky IT Solutions), slides [(pdf)](https://unibas-sweng.github.io/software-engineering/slides/scrum.pdf) | 
-|            | Wichtig Kompetenzen in der Praxis  | (Gasttalk: Bluesky IT Solutions) | 
-| [Woche 13](https://unibas-sweng.github.io/software-engineering/week13/index.html) | Design Patterns | |
-|  | Präsentationen der Projekte |
-| [Woche 14](https://unibas-sweng.github.io/software-engineering/week14/index.html)          | Zusammenfassung und Prüfungsvorbesprechung | |
+| Woche 12| Scrum  | |
+|         | Continuous delivery | | 
+| Woche 13 | Projektpräsentationen | |
+| Woche 14          | Zusammenfassung / Prüfungsvorbesprechung | |
 
 ## Nächste Deadlines
 
 #### Übungen
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 19. Dezember, 08:00 | [Individueller Test Woche 14](https://adam.unibas.ch/goto_adam_tst_755632.html) | [Adam](https://adam.unibas.ch/goto_adam_tst_755632.html) | 
+
 
 #### Projekt
 
 | Aufgabe |  Abgabe | Bemerkung |
 |---------|--------|---------------------|
-| [Pflichtenheft/Projektplan erstellen](https://unibas-sweng.github.io/software-engineering/project/week6/exercises.html) | Erste Version: 30. Oktober | Besprechung: 31. Oktober |
-|                                     | Endversion: 6. November | |
-| [Design und Prototyp erstellen](https://unibas-sweng.github.io/software-engineering/project/week8/exercises.html) | Erste Version: 13. November | Besprechung: 14. November |
-|                               | Abgabe Designdokument: 20. November | |
-| [Testplan erstellen](https://unibas-sweng.github.io/software-engineering/project/week10/exercises.html)            | Erste Version: 27. November  | Besprechung: 28. November |
-| | Endversion: 4. Dezember ||
-| [Abschlusspräsentation](https://unibas-sweng.github.io/software-engineering/project/week12/exercises.html) /  | 12. Dezember | |
-| [Pull Request mit finaler Abgabe](https://unibas-sweng.github.io/software-engineering/project/week12/exercises.html) /  | 16. Dezember | |
 
 
 
