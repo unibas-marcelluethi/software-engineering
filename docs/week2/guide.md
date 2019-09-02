@@ -13,7 +13,7 @@ qualitativ hochwertige Software ist. Dazu schauen wir uns verschiedene Qualität
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 26. September *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 25. September *selbständig* zu erarbeiten.
 
  Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
  - die Hauptcharakteristiken nennen können, die Software von anderen Industrieprodukten unterscheidet
@@ -23,36 +23,37 @@ Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* d
  
  
 ### Fortgeschrittene Lernziele
-Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 26. September erreicht werden. Die Studierenden sollten
+
+Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 25. September erreicht werden. Die Studierenden sollten
 - den Einfluss von anderen Gebieten der Informatik auf die Softwareentwicklung einschätzen können.
 - argumentieren können, weshalb  Softwareentwicklung ein intrinsisch schwieriges Unterfangen ist, d.h. keine Silver Bullet gibt. 
 - analysieren können, wie sich Qualitätsmerkmale gegenseitig beeinflussen können.
 - erklären können, weshalb die Qualität von Software schwierig zu messen ist.
 
 
-## Vorbereitung für die Vorlesungsstunde vom Mittwoch, 26. September:
+## Vorbereitung für die Vorlesungsstunde vom Mittwoch, 25. September:
 
 Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte folgende Schritte:
 
-* Schritt 1: Schauen Sie sich das Video "Eigenschaften von Software" an.  ([Video](https://drive.switch.ch/index.php/s/8ZncsAs3acnZ45b), [Slides](./slides/software-nature.html))
+* Schritt 1: Schauen Sie sich das Video "Eigenschaften von Software" an.  ([Video](https://tube.switch.ch/videos/79c515ad), [Slides](./slides/software-nature.html))
 * Schritt 2: Lesen Sie den Artikel "Qualitätsmerkmale von Software" ([Artikel](./articles/software-qualities-introduction))
-* Schritt 3: Schauen Sie sich das Video "Einige Qualitätsmerkmale im Detail" an. ([Video](https://drive.switch.ch/index.php/s/S4dDqY5HAmTRKnw), [Slides](./slides/software-qualities.html))
+* Schritt 3: Schauen Sie sich das Video "Einige Qualitätsmerkmale im Detail" an. ([Video](https://tube.switch.ch/videos/ad05eed9), [Slides](./slides/software-qualities.html))
 * Schritt 4: Lesen Sie das Paper von Fred Brooks: No Silver Bullet. ([Paper](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf))
 
-* Schritt 5: Bearbeiten Sie den Test. [Adam](https://adam.unibas.ch/goto_adam_tst_700846.html). 
+* Schritt 5: Bearbeiten Sie den Test. [Adam](https://adam.unibas.ch/goto_adam_tst_840440.html). 
 
-*Achtung: Der Test muss spätestens bis Mittwoch 26. September, 08:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 25. September, 08:00 bearbeitet sein.*
   
 
 ### Übungen
 Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](./exercises/theory-exercises.html). 
-Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_700910.html) ein .
+Falls Sie bei der Vorlesung nicht anwesend waren, schreiben Sie ihre Antworten bitte auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_840442.html) ein .
 
 Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten.
 
-*Abgabetermin ist Dienstag, 2. Oktober, 23.59*
+*Abgabetermin ist Dienstag, 01. Oktober, 23.59*
 
 ### Feedback
 
 Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_700919.html) auf dem Adam workspace.
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_840439.html) auf dem Adam-Workspace.
