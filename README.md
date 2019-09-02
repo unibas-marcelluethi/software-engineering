@@ -18,8 +18,8 @@ Aktuelle Methoden und Tools werden im Rahmen eines vorlesungsbegleitenden Projek
 
 ### Projekt
 
-Das Open Source Projekt Ganttprojekt [(Fork des Github Repositories)](https://github.com/unibas-sweng/ganttproject-hs18) dient als Grundlage für die praktischen 
-übungen. Die Studierenden implementieren in Gruppen kleine Änderungen am Projekt, studieren den Source Code und implementieren eigene Erweiterungen. 
+Das Open Source Projekt Jabref [(Fork des Github Repositories)](https://github.com/unibas-marcelluethi/jabref) dient als Grundlage für die praktischen 
+übungen. Die Studierenden bringen kleine Änderungen am Projekt an, studieren den Source Code und implementieren dann eigene Erweiterungen. 
 
 Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://unibas-sweng.github.io/software-engineering/project/project-summary.html).
 
