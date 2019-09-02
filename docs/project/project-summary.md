@@ -1,30 +1,28 @@
 # Projekt&uuml;bersicht
 
-Sie haben sich nun als Gruppe ein Projekt ausgesucht. Als n&auml;chstes geht es darum, Ihr Projekt strukturiert zu realisieren. 
+Nachdem Sie sich als Gruppe ein Projekt ausgesucht haben, sollen Sie dies strukturiert realisieren. 
 
-Wir gehen dabei in mehreren Schritten vor. 
+Wir gehen dabei in mehreren Schritten vor:
 
 
 ## Projekt&uuml;bersicht:
 
 | Aufgabe |  Abgabe | Bemerkung |
 |---------|--------|---------------------|
-| [Pflichtenheft/Projektplan erstellen](./week6/exercises.html) | Erste Version: 30. Oktober | Besprechung: 31. Oktober |
-|                                     | Endversion: 6. November | |
-| [Design und Prototyp erstellen](./week8/exercises.html) | Erste Version: 13. November | Besprechung: 14. November |
-|                               | Abgabe Designdokument: 20. November | |
-| [Testplan erstellen](./week10/exercises.html)            | Erste Version: 27. November  | Besprechung: 28. November |
-| | Endversion: 4. Dezember ||
-| [Abgabe Projekt](./week12/exercises.html) / Abschlusspräsentation | 12. Dezember | |
+| [Pflichtenheft/Projektplan erstellen](./week6/exercises.html) |  |  |
+| [Design und Prototyp erstellen](./week8/exercises.html) |  |  |
+| [Testplan erstellen](./week10/exercises.html)           | |  |
+| [Abgabe Projekt und Abschlusspräsentation](./week12/exercises.html) | | |
 
-* Projektplan als [Ganttproject Datei](project-task-milestones.gan).
+
+
 
 Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in obiger Tabelle. 
 
 ## Organisatorisches 
 
 #### Gruppen und Besprechungstermine
-Die Gruppeneinteilung und die Besprechungstermine finden Sie in dieser [Tabelle](https://adam.unibas.ch/goto_adam_file_734506_download.html).
+Die Gruppeneinteilung und Besprechungstermine werden zu gegebener Zeit bekanntgegeben.
 
 #### Github Repository
 Benutzen sie ein bestehendes Repository von ihrer Gruppe. Geben sie allen Gruppenmitgliedern entsprechende Zugriffsrechte (via Settings->Collaborators).
@@ -33,7 +31,7 @@ Kreieren sie ausgehend vom master branch einen branch `develop`. F&uuml;r jede A
 
 #### Dokumentation
 Wir führen die Dokumentation als Teil vom Projekt und speichern diese im selben Repository. 
-Kreieren sie einen Ordner `./docs` in ihrem Projekt, der alle zu produzierenden Dokumente enth&auml;lt. Wir empfehlen, dass Sie die Dokumentation in [Markdown](https://help.github.com/categories/writing-on-github/) schreiben. Dieses einfache Textformat wird von den meisten Editoren/IDE und auch von GitHub gut unterst&uuml;tzt. Ausserdem lassen sich &Auml;nderungen in der Dokumentation sehr viel einfacher nachverfolgen als in PDF Dateien.
+Kreieren sie einen Ordner `./docs` in ihrem Projekt, der alle zu produzierenden Dokumente enth&auml;lt. Erstellen Sie die Dokumentation in [Markdown](https://help.github.com/categories/writing-on-github/) Format. Dieses einfache Textformat wird von den meisten Editoren/IDE und auch von GitHub gut unterst&uuml;tzt. Ausserdem lassen sich &Auml;nderungen in der Dokumentation sehr viel einfacher nachverfolgen als in PDF Dateien.
 
 
 
