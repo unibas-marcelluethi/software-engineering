@@ -5,12 +5,12 @@
 * Geschichte des Software Engineerings
     * Slides: [online](./slides/history.html), [Druckversion](./slides/history.html?print-pdf)
 * Eigenschaften von Software
-    *  Video:  [mp4](https://drive.switch.ch/index.php/s/8ZncsAs3acnZ45b),  
+    *  Video:  [online](https://tube.switch.ch/videos/79c515ad),  
     *  Slides: [online](./slides/software-nature.html), [Druckversion](./slides/software-nature.html?print-pdf)
 * Einführung: Software Qualität
     * Artikel: [online](articles/software-qualities-introduction.html)
 * Software Qualitätsmerkmale im Detail: 
-    * Video: [mp4](https://drive.switch.ch/index.php/s/S4dDqY5HAmTRKnw)
+    * Video: [online](https://tube.switch.ch/videos/ad05eed9)
     * Slides: [online](./slides/software-qualities.html), [Druckversion](./slides/software-qualities.html?print-pdf)
 * Brooks F. No Silver Bullet: 
     * Artikel: [pdf](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)
