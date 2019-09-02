@@ -27,9 +27,9 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 
 |  | Themen | Bemerkungen |
 | ------| ----- | --------- |
-|[Woche 1](week1/index.md) | Einführung / Administratives  | |
+|[Woche 1](https://unibas-marcelluethi.github.io/software-engineering/week1/index.html) | Einführung / Administratives  | |
 |    | Was ist Software engineering  | |
-|[Woche 2](week2/index.md) | Kurze Geschichte des Software Engineerings  | |
+|[Woche 2](https://unibas-marcelluethi.github.io/software-engineering/week2/index.html) | Kurze Geschichte des Software Engineerings  | |
 |    | Eigenschaften von Software ||
 |    |  Software Qualitätsmerkmale | | 
 |Woche 3 | Prinzipien des Software engineerings   | |
