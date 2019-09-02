@@ -21,7 +21,7 @@ Aktuelle Methoden und Tools werden im Rahmen eines vorlesungsbegleitenden Projek
 Das Open Source Projekt Jabref [(Fork des Github Repositories)](https://github.com/unibas-marcelluethi/jabref) dient als Grundlage für die praktischen 
 übungen. Die Studierenden bringen kleine Änderungen am Projekt an, studieren den Source Code und implementieren dann eigene Erweiterungen. 
 
-Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://unibas-sweng.github.io/software-engineering/project/project-summary.html).
+Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://unibas-marcelluethi.github.io/software-engineering/project/project-summary.html).
 
 ## Programm 
 
