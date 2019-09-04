@@ -3,7 +3,7 @@
 
 # Übungen
 
-* [Setup von Ganttproject](./exercises/ganttproject-setup.html)
+* [Setup von JabRef](./exercises/jabref-setup.html)
 
 # Slides 
 
