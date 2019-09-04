@@ -17,7 +17,7 @@ In dieser ersten Übung werden Sie die alle wichtigen Tools und die Entwicklungs
 ## Benutzeraccount auf Github
 Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Github Benutzernamen sowie Ihre Uni Basel E-Mail  Adresse via Mail an [marcel.luethi@unibas.ch](mailto:marcel.luethi@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository geben können.  
 
-*Auf Github ist dieser Benutzername sehr prominent und wird auch in der Projektkommunikation verwendet. Achten Sie deshalb bitte darauf, dass Sie einen Benutzernamen wählen, der professionelles Arbeiten zulässt. Gute Beispiele sind: ```andreasmeier``` oder ```andreas``` oder ```ameier```. Beispiele von ungeeigneten Namen sind ```coderking```, ```cookymonster``` oder ```skaterboy```.*
+*Auf Github ist dieser Benutzername sehr prominent und wird auch in der Projektkommunikation verwendet. Achten Sie deshalb bitte darauf, dass Sie einen Benutzernamen wählen, der professionelles Arbeiten zulässt. Gute Beispiele sind: ```andreasmeier``` oder ```andreas``` oder ```ameier```. Beispiele von ungeeigneten Namen sind ```coderking```, ```cookiemonster``` oder ```skaterboy```.*
 
 ## Installation der Werkzeuge
 
@@ -90,7 +90,7 @@ können Sie das Projekt dann starten.
 
 ### Bearbeiten des Projekts in der IDE
 
-Sie werden in diesem Kurs hauptsächlich von der IDE arbeiten. Um das Projekt in Intellij Idea zu öffnen, müssen Sie die gradle build Definition öffnen 
+Sie werden in diesem Kurs hauptsächlich von der IDE arbeiten. Um das Projekt in Intellij Idea zu öffnen, müssen Sie die gradle Builddefinition öffnen 
 ```
 jabref\build.gradle
 ```
@@ -99,7 +99,7 @@ Die Datei öffnen Sie mittels ```File->Open``` oder dem ```Open``` Button auf de
 Wählen Sie nun "Open as project". Sie sollten nun mit dem Projekt arbeiten können. Um das Projekt zu kompilieren, wählen Sie im Menu ```Build->Build Project```. 
 Öffnen Sie nun die Datei ```src/main/java/org/jabref/JabRefMain.java``` und starten Sie das Programm durch klicken auf den grünen Pfeil neben der ```main``` Methode (sehe Screenshot). 
 
-Alternativ können Sie das Projekt wie zuvor in der Konsole auch in der IDE durch ausführen von Gradle tasks starten. Dazu öffnen Sie dias Gradle Tool Window und starten die
+Alternativ können Sie das Projekt wie zuvor in der Konsole auch in der IDE durch Ausführen von Gradle tasks starten. Dazu öffnen Sie dias Gradle Tool Window und starten die
 entsprechende Task (siehe Screenshot)/
 
 ![image](../../exercises/images/intellij-run-jabref.png) 
