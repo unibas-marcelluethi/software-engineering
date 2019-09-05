@@ -188,7 +188,7 @@ Auf der folgenden Seite können sie das Zielrepository auswählen. Hier würden 
 
 ![image](../../exercises/images/github-pr-repo.png)
 
-Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie die Reviewers angeben. Als Reviewers geben sie bitte ```clemensBuechner``` und ```schoenja``` an. 
+Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie die Reviewers angeben. Als Reviewers geben sie das Team ```sweng-assistants-hs19``` an. 
 
 ![image](../../exercises/images/github-pr.png)
 
