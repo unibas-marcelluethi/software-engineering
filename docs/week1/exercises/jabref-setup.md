@@ -36,6 +36,22 @@ sollte die Version von Git ausgeben, also z.B.
 > git version 2.18.0.windows.1
 ```
 
+### Installieren von Java
+
+Für die Entwicklung von JabRef benötigt Java in der Version 11 oder höher. Sie können aktuelle Versionen vom OpenJDK von [AdoptOpenJDK](https://adoptopenjdk.net/) herunterladen. 
+
+#### Test der Installation
+Um die Installation zu testen, öffnen Sie eine Konsole und geben folgendes ein:
+```
+java -version 
+```
+Die Ausgabe sollte anzeigen, dass Sie Java 11 verwenden, also z.B.
+```
+> openjdk version "11.0.4" 2019-07-16
+> OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.4+11)
+> OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.4+11, mixed mode)
+```
+
 ### IntelliJ Idea
 
 Installieren Sie die Entwicklungsumgebung [IntelliJ IDEA](https://www.jetbrains.com/idea/). Informationen zu Download und Installation finden Sie auf der [Homepage](https://www.jetbrains.com/idea/). 
@@ -96,17 +112,19 @@ jabref\build.gradle
 ```
 Die Datei öffnen Sie mittels ```File->Open``` oder dem ```Open``` Button auf dem Startscreen von Idea.
 
-Wählen Sie nun "Open as project". Sie sollten nun mit dem Projekt arbeiten können. Um das Projekt zu kompilieren, wählen Sie im Menu ```Build->Build Project```. 
-Öffnen Sie nun die Datei ```src/main/java/org/jabref/JabRefMain.java``` und starten Sie das Programm durch klicken auf den grünen Pfeil neben der ```main``` Methode (sehe Screenshot). 
+Wählen Sie nun "Open as project" um das Projekt zu öffnen. 
+Leider nutzt JabRef zur Zeit Funktionen einer Bibliothek, die nicht korrekt exportiert wurden. Dies kann innerhalb von IntelliJ zu Problemen führen. Als Workaround können Sie folgendes machen:
+Öffnen Sie ```File->Settings->Build, Execution, Development -> Java Compiler``` und fügen Sie für das Modul ```JabRef.main``` folgende Compiler Optionen hinzu (siehe Screenshot):
+```
+--add-exports org.controlsfx.controls/impl.org.controlsfx.skin=org.jabref --add-exports javafx.controls/javafx.scene.control=org.jabref --add-exports javafx.controls/com.sun.javafx.scene.control=org.controlsfx.controls --add-exports javafx.controls/com.sun.javafx.scene.control=org.jabref
+```
+![idea-compiler](../../exercises/images/idea-compiler.png)
 
-Alternativ können Sie das Projekt wie zuvor in der Konsole auch in der IDE durch Ausführen von Gradle tasks starten. Dazu öffnen Sie dias Gradle Tool Window und starten die
-entsprechende Task (siehe Screenshot)/
-
+Sie sollten nun mit dem Projekt arbeiten können. Um das Projekt zu kompilieren und  JabRef zu starten, führen Sie die entsprechenden Gradle tasks aus. Diese finden Sie im Gradle Tool Window (siehe Screenshot).
 ![image](../../exercises/images/intellij-run-jabref.png) 
 
 
-
-Wenn alles geklappt hat sind Sie nun in der Lage JabRef nach ihren Wünschen zu verändern. Mehr dazu in den nächsten Übungen. 
+Wenn alles geklappt und Sie JabRef erfolgreich starten konnten, sind Sie nun in der Lage JabRef nach ihren Wünschen zu verändern. Mehr dazu in den nächsten Übungen. 
 
 
 
