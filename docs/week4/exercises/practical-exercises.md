@@ -1,3 +1,8 @@
+TODO - irgendetwas mit modulen
+TODO - Lesen Sie WIKI (developers howto)
+TODO - CIrce CI
+TODO - Code coverage
+
 # Übungsblatt 4: Unit Tests und Continuous Integration
 
 * Dieses Übungsblatt sollte bis am 16. Oktober 2018 bearbeitet werden.  

@@ -2,20 +2,20 @@
 
 ## Administratives
 
-* Dieses Übungsblatt sollte bis am 9. Oktober 2018 bearbeitet werden.  
-* Abgabe via Pull Request bis spätestens 9. Oktober, 23.59.
+* Dieses Übungsblatt sollte bis am 8. Oktober 2019 bearbeitet werden.  
+* Abgabe via Pull Request bis spätestens 8. Oktober, 23.59.
 
 
 ## Einführung
 
 In dieser Übung werden Sie sich näher mit dem Buildsystem *Gradle* beschäftigen. Sie werden lernen, wie sie verschiedene Tasks mit Gradle ausführen, wie Sie Abhängigkeiten (Bibliotheken) zum Projekt hinzufügen, und wie sie ein neues Plugin hinzufügen können. 
 
-Im zweiten Teil der Übung werden Sie sich auch einen groben Überblick über den Code von Ganttproject verschaffen. 
+Im zweiten Teil der Übung werden Sie sich auch einen groben Überblick über den Code von Jabref verschaffen. 
 
 Nach dieser Übung sollten Sie:
 * wissen wozu man so ein Buildsystem einsetzen kann
 * die grundlegenden Operationen mit Gradle durchführen können.
-* einen Überblick über die Struktur von Ganttproject haben. 
+* einen Überblick über die Struktur von Jabref haben. 
 * einen Debugger einsetzen können, um zu verstehen, was ein Stück Code genau macht. 
 
 
@@ -44,15 +44,13 @@ git checkout uebung3
 
 #### 1.1 Build Dokumentation 
 
-"Fügen Sie Ihrem Projekt eine neue Datei ```BuildInstructions.md``` Diese Datei soll für neue Benutzer dokumentieren, wie sie folgende Tasks mit Gradle durchführen. 
-1. Kompilieren des Projekts
-2. Ausführen von Ganttproject
-3. Ausführen aller Unit Tests
-4. Generieren der Javadocs vom Projekt
-5. Erstellen eines Projekts für Eclipse
-6. Erstellen eines Zip Files, welches nach dem Entpacken eine lauffähige Version von Ganttproject enthält. 
+"Fügen Sie Ihrem Projekt eine neue Datei ```docs/BuildInstructions.md``` hinzu. Diese Datei soll für neue Benutzer dokumentieren, wie sie folgende Tasks mit Gradle durchführen. 
+1. Ausführen aller Unit Tests
+2. Überprüfen, ob der Code den Coding Guidelines entspricht. 
+3. Ein Projekt für Eclipse erstellen
+4. Erstellen eines Zip Files, welches nach dem Entpacken eine lauffähige Version von JabRef enthält. 
 
-*Tip: Mit ```gradlew tasks --all``` erhalten Sie einen Überblick über alle Gradle tasks die in Ganttproject zur Verfügung stehen.*
+*Tip: Mit ```gradlew tasks --all``` erhalten Sie einen Überblick über alle Gradle tasks die in JabRef zur Verfügung stehen.*
 
 
 
@@ -60,13 +58,13 @@ git checkout uebung3
 
 Fügen Sie die Dependency *swenglib* (in der Version 1.0) zum Projekt hinzu. Das Paket liegt im Repository [JCenter](https://bintray.com/bintray/jcenter).
 
-*Tip:* Sie können auf [JCenter](https://bintray.com/bintray/jcenter) nach dem Paket suchen und damit auf die entsprechende Seite für swenglib gelangen. Auf dieser Seite finden Sie Code-snippets, 
+*Tip:* Sie können auf [JCenter](https://bintray.com/bintray/jcenter) nach dem Paket suchen und damit auf die entsprechende Seite für *swenglib* gelangen. Auf dieser Seite finden Sie Code-snippets, 
 wie Sie diese zu den populären Buildsystemen (wie Maven oder Gradle) hinzufügen. 
 
-*Tip:* Die Dependencies von Ganttproject werden nicht direkt in die Datei *build.gradle* hinzugefügt, sondern in einer Separaten Datei. In ```build.gradle``` steht aber, wo sie diese Datei finden.
+*Achtung: * JabRef nutzt das Java Modulsystem. Im Gegensatz zu herkömmlichen Java Projekten, bei denen es reicht, die Bibliothek in Gradle als dependency zu deklarieren, müssen Sie *swnglib* bei JabRef 
+zusätzlich als *Required Dependency* deklarieren. Dies machen Sie in der Datei ```module-info.java```.
 
-
-Wenn das hinzufügen funktioniert hat sollten Sie folgenden Code zu Ganttproject hinzufügen können und das Projekt sollte entsprechend kompilieren. 
+Wenn das hinzufügen funktioniert hat sollten Sie folgenden Code zu JabRef hinzufügen können und das Projekt sollte entsprechend kompilieren. 
 ```
 import ch.unibas.informatik.sweng.HelloSweng;
 String greeting = HelloSweng.greeting();
@@ -74,6 +72,7 @@ String greeting = HelloSweng.greeting();
 
 Überprüfen Sie auch, dass sie mit ```CTRL + LeftMouseClick``` auf ```HelloSweng```, zum 
 Source Code der Bibliothek kommen. 
+
 
 #### 1.3 Hinzufügen eines Plugins
 Fügen Sie das Plugin [Stats Gradle Plugin](https://github.com/aalmiray/stats-gradle-plugin) durch anpassen der Datei ```build.gradle```zum Projekt hinzu. Die entsprechenden Instruktionen finden Sie auf
@@ -86,14 +85,17 @@ gradlew stats
 
 ## 2. Code lesen
 
-In diesem Teil der Übung geht es darum, dass sie sich einen Grobüberblick über die Struktur des Ganttproject Codes erarbeiten sowie auch lernen, fremden Code zu lesen und zu verstehen.
+In diesem Teil der Übung geht es darum, dass sie sich einen Grobüberblick über die Struktur des Jabref Codes erarbeiten sowie auch lernen, fremden Code zu lesen und zu verstehen.
 
 #### Dokumentieren sie ein Package
 
-Dokumentieren Sie die folgenden Packages mittels Javadoc:
-* biz.ganttproject.chart
-* biz.ganttproject.export
-* biz.ganttproject.parser
+Schreiben Sie für jedes der folgenden Packages eine Kurzübersicht über deren Inhalt (ca. 3-4 Sätze):
+
+* org.jabref.cli
+* org.jabref.gui.desktop
+* org.jabref.logic.formatter
+* org.jabref.migrations
+* org.jabref.model.entry
 
 Sie k&ouml;nnen diese mittels Javadoc dokumentieren, indem sie in jedes Verzeichnis eine Datei
 ```package-info.java``` erstellen, die wie folgt aussieht
@@ -101,24 +103,28 @@ Sie k&ouml;nnen diese mittels Javadoc dokumentieren, indem sie in jedes Verzeich
 /**
  * Hier kommt ihre Beschreibung
  */
-package biz.ganttproject.chart; // package name 
+package org.jabref.architecture; // package name 
 ```
-Die Beschreibung sollte in max 2-3 Sätzen den Zweck des Packages zusammenfassen.
+
 Vergessen sie nicht, diese Dateien mit dem ```git add``` command dem Repository hinzuzufügen.
+
+*Beachten Sie:* Die Kommentare sollen nicht nur beschreiben, was man direkt aus dem Paketnamen ableiten kann. Kommentare im Stile von "org.jabref.logic.formatter enthält code für die formatierung" sind nicht hilfreich. 
+Um eine gute Zusammenfassung schreiben zu können müssen Sie sich einen groben Überblick verschaffen, was in den im Package enthaltenen Klassen passiert. 
 
 
 #### Dokumentieren einer Klasse
 
 Dokumentieren sie die Klasse 
-```biz.ganttproject.task.TaskMutator``` sowie alle Methoden mittels Javadoc. Beschreiben sie in jeweils 2-3 Sätzen was die Klasse sowie jede Methode macht. 
+```package org.jabref.logic.protectedterms.ProtectedTermsLoader;``` sowie alle public Methoden mittels Javadoc. Es reicht, wenn Sie pro Methode jeweils 1-2 Sätze schreiben. 
+*Beachten Sie:* Auch hier gilt, dass Kommentare, die sich direkt aus dem Methodennamen herleiten lassen keinen Mehrwert bieten. 
+
 
 
 ### Abgabe
-Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch: 
+Die Abgabe der Übung erfolgt durch push vom Übungs-Branch: 
 ```
 git push origin uebung3
 ``` 
-und entsprechenden Pull Request, bei dem sie 
- ```michaelPluess``` und ```schoenja``` als Reviewer angeben.
-(Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
+und entsprechenden Pull Request. Geben Sie bitte das Team ```sweng-assistants-hs19``` als Reviewer an. 
+ (Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
  

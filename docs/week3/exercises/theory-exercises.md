@@ -9,23 +9,11 @@
 
 ## 2. Separieren der Verantwortlichkeiten
 
-2.1 Betrachten Sie folgendes Programm und beschreiben Sie, wie Sie die Aspekte *Korrektheit* und *Effizienz* separat behandeln können. 
-
-```python
-def quicksort(x):
-      if len(x) < 2:
-          return x
-      else:
-          pivot = x[0]
-          less = [i for i in x[1:] if i <= pivot]
-          greater = [i for i in x[1:] if i > pivot]
-          return quicksort(less) + [pivot] + quicksort(greater)
-```
+2.1 Angenommen Sie müssen einen Sortieralgorithmus implementieren. Was sind mögliche verschiedene Verantwortlichkeiten die Sie trennen könnten. 
+Beschreiben Sie eine Strategie für die Implementation, die der Trennung der Verantwortlichkeiten Rechnung trägt. 
 
 2.2 Lesen sie im Internet über *Aspektorientierte Programmierung* und
     beschreiben Sie, wie damit das Prinzip der *Teilung der Verantwortlichkeiten* umgesetzt wird.
-
-
 
 ## 3. Modularisierung
 
