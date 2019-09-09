@@ -5,18 +5,18 @@ TODO - Code coverage
 
 # Übungsblatt 4: Unit Tests und Continuous Integration
 
-* Dieses Übungsblatt sollte bis am 16. Oktober 2018 bearbeitet werden.  
-* Abgabe via Pull Request bis spätestens 16. Oktober, 23.59.
+* Dieses Übungsblatt sollte bis am 15. Oktober 2019 bearbeitet werden.  
+* Abgabe via Pull Request bis spätestens 15. Oktober, 23.59.
 
 ## Einführung
 
 In dieser Übung werden Sie lernen wie Sie ihr Projekt mit [Travis CI](https://www.travis-ci.com) automatisiert testen können und wie man mit Unit Tests arbeitet. 
-Neben dem kennenlernen dieser wichtigen Werkzeuge, werden sie bei dieser Übung auch ihr Verständnis vom Ganttproject Code vertiefen. 
+Neben dem kennenlernen dieser wichtigen Werkzeuge, werden sie bei dieser Übung auch ihr Verständnis vom JabRef Code vertiefen. 
 
 
 #### 1. Vorbereitung
 
-Da wir die &Auml;nderungen der letzten &Uuml;bung hier nicht ben&ouml;tigen, starten wir wieder vom Master branch. Wir wechseln auf den Masterbranch mit 
+Da wir die Änderungen der letzten Übung hier nicht benötigen, starten wir wieder vom Master branch. Wir wechseln auf den Masterbranch mit 
 ```
 git checkout master
 ```
@@ -26,7 +26,7 @@ Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository
 
 
 #### Vorbereitung
-Wie immer erstellen wir zuerst f&uuml;r unsere &Auml;nderungen einen lokalen Featurebranch und wechseln in diesen:
+Wie immer erstellen wir zuerst für unsere Änderungen einen lokalen Featurebranch und wechseln in diesen:
 
 ```
 git branch uebung4     
@@ -58,6 +58,7 @@ Implementieren Sie jeweils mindestens einen sinnvollen Unittest für jeder der f
 1. Was ist Continuous integration? Wozu setzt man es ein?
 2. Was ist Travis?
 3. Was macht die Datei .travis.yml, die sie im Wurzelverzeichnis ihres Projekts finden?
+4. Was ist eine Buildmatrix?
 
 Schreiben sie ihre Antworten in eine Textdatei Datei die sie ```uebung4.md``` nennen. Die Datei können sie dem Projekt mit
 ```
@@ -70,7 +71,7 @@ hinzufügen.
 #### Travis aktivieren
 
 Damit sie Travis auch für ihr Projekt verwenden können, müssen sie dies erst einrichten. Dazu gehen sie auf die die [Webseite](https://www.travis-ci.com) von Travis und melden sich mit ihrem Github Account an. Sie erhalten die Option Travis für eines oder alle Ihrer Github Repositories zu aktivieren. Aktivieren Sie 
-```ganttproject-hs18``` und erlauben Sie auch, dass Travis die Github integration vornimmt. 
+```jabref``` und erlauben Sie auch, dass Travis die Github integration vornimmt. 
 
 
 *Anmerkung: Travis ist ein kommerzieller Service. Sie haben aber 99 Trial runs zur Verfügung. Dies sollte für diesen Kurs reichen. Für Open Source Projekte ist Travis aber gratis nutzbar. Deshalb ist Travis der Standard Service in der Open Source Entwicklung*.
@@ -87,14 +88,6 @@ Nach erfolgreicher Einrichtung sollten Sie auf eine Seite gelangen die wie folgt
 * Korrigieren Sie ihren Fehler wieder und pushen Sie nochmals.
 
 
-#### Status batch ersetzen (Freiwillig)
-Auf der Übersichtsseite von Travis sehen sie oben einen "Batch" (siehe Screenshot)
-![img](../../exercises/images/travis-batch.png)
-Wenn sie auf diesen Klicken sehen sie eine URL. Diese URL zeigt auf ein kleines Bild (genannt Batch) welches den aktuellen Buildstatus von Travis anzeigt. 
-Es ist üblich, dieses Bild in die Datei ```Readme.md``` des Projekts einzufügen. Im Falle von Ganttproject wurde dies schon gemacht - jedoch ist die URL falsch. 
-
-* Ersetzen sie den Batch mit der richtigen URL. 
-
 
 
 ### Abgabe
@@ -102,9 +95,8 @@ Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch:
 ```
 git push origin uebung4
 ``` 
-und entsprechenden Pull Request, bei dem sie 
- ```michaelPluess``` und ```schoenja``` als Reviewer angeben.
-(Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
+und entsprechenden Pull Request. Geben Sie bitte das Team ```sweng-assistants-hs19``` als Reviewer an. 
+ (Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
  
 
  

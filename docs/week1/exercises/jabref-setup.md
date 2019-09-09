@@ -1,4 +1,4 @@
-# Praktische Übung 1: Setup von Ganttproject
+# Praktische Übung 1: Setup von JabRef
 
 ## Administratives
 
@@ -10,7 +10,7 @@
 
 
 Für die meisten Übungen in diesem Kurs werden Sie das Open Source Projekt [JabRef](https://www.jabref.org/) verwenden. 
-In dieser ersten Übung werden Sie die alle wichtigen Tools und die Entwicklungsumgebung aufsetzten, um im folgenden Änderungen und Erweiterungen im Code vornehmen zu können. 
+In dieser ersten Übung werden Sie alle wichtigen Tools und die Entwicklungsumgebung aufsetzten, um im folgenden Änderungen und Erweiterungen im Code vornehmen zu können. 
 
 
 
@@ -124,7 +124,7 @@ Sie sollten nun mit dem Projekt arbeiten können. Um das Projekt zu kompilieren 
 ![image](../../exercises/images/intellij-run-jabref.png) 
 
 
-Wenn alles geklappt und Sie JabRef erfolgreich starten konnten, sind Sie nun in der Lage JabRef nach ihren Wünschen zu verändern. Mehr dazu in den nächsten Übungen. 
+Wenn alles geklappt hat und Sie JabRef erfolgreich starten konnten, sind Sie nun in der Lage JabRef nach ihren Wünschen zu verändern. Mehr dazu in den nächsten Übungen. 
 
 
 
