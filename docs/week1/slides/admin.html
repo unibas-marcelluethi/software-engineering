@@ -238,12 +238,10 @@
 			<section data-state="team">
 				<h1>Wichtigste Teammitglieder</h1>
 
-				<div id="container">
-					<video autoplay="true" id="videoElement">
-
-					</video>
-				</div>
-
+				
+		<img src="../../slides/images/you.jpg" style="width:50%" class="plain">
+					
+			
 			</section>
 
 
@@ -758,30 +756,7 @@
 			},
 		});
 
-		Reveal.addEventListener('team', function () {
-			var video = document.querySelector("#videoElement");
 
-			if (navigator.mediaDevices.getUserMedia) {
-				navigator.mediaDevices.getUserMedia({ video: true })
-					.then(function (stream) {
-						video.srcObject = stream;
-					})
-					.catch(function (err0r) {
-						console.log("Something went wrong!");
-					});
-			}
-			var video = document.querySelector("#videoElement");
-
-			if (navigator.mediaDevices.getUserMedia) {
-				navigator.mediaDevices.getUserMedia({ video: true })
-					.then(function (stream) {
-						video.srcObject = stream;
-					})
-					.catch(function (err0r) {
-						console.log("Something went wrong!");
-					});
-			}
-		}, false);
 
 
 	</script>
