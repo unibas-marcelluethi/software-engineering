@@ -58,6 +58,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 #### Übungen
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
+| 25. September | Selbsttest | Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
 
 
 #### Projekt
