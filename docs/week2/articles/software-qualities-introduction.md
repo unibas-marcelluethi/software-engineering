@@ -36,7 +36,7 @@ Es gibt eine Vielzahl von möglichen Qualitätsmerkmale. Nicht alle sind für je
 * Interoperabilität (interoperability) 
 
 
-#### Typische Prozessmerkale
+#### Typische Prozessmerkmale
 
 * Produktivität (productivity)
 * Verfügbarkeit (timeliness)
