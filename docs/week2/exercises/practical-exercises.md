@@ -39,7 +39,7 @@ können Sie sich die URL davon anzeigen lassen.
 
 Damit Sie auf die Änderungen vom *upstream* Repository zugreifen können, müssen Sie dies als weiteres remote Repository hinzufügen. Das machen Sie via:
 ```
-git remote add upstream https://github.com/jabref/jabref.git
+git remote add upstream https://github.com/unibas-marcelluethi/jabref.git
 ```
 
 Verifizieren Sie, dass das Hinzufügen erfolgreich war, mithilfe dem Befehl:
@@ -66,13 +66,13 @@ Dieser Befehl kopiert die Commits vom *master* Branch des *upstream* Repositorie
 
 Falls sich nichts geändert hat, sollten Sie folgende Ausgabe sehen:
 ```
-From https://github.com/JabRef/jabref
+From https://github.com/unibas-marcelluethi/jabref
  * branch                master     -> FETCH_HEAD
 Already up to date.
 ```
 Falls es neue Commits gegeben hat, sieht die Ausgabe wie folgt aus:
 ```
-From https://github.com/JabRef/jabref
+From https://github.com/unibas-marcelluethi/jabref
  * branch                master     -> FETCH_HEAD
 Updating 84436d795..89ebaf764
 Fast-forward
