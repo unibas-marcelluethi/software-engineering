@@ -1,4 +1,4 @@
-# Übung 3 Gradle und Code Reading
+# Übung 3: Gradle und Code Reading
 
 ## Administratives
 
@@ -61,7 +61,7 @@ Fügen Sie die Dependency *swenglib* (in der Version 1.0) zum Projekt hinzu. Das
 *Tip:* Sie können auf [JCenter](https://bintray.com/bintray/jcenter) nach dem Paket suchen und damit auf die entsprechende Seite für *swenglib* gelangen. Auf dieser Seite finden Sie Code-snippets, 
 wie Sie diese zu den populären Buildsystemen (wie Maven oder Gradle) hinzufügen. 
 
-*Achtung: * JabRef nutzt das Java Modulsystem. Im Gegensatz zu herkömmlichen Java Projekten, bei denen es reicht, die Bibliothek in Gradle als dependency zu deklarieren, müssen Sie *swnglib* bei JabRef 
+*Achtung:* JabRef nutzt das Java Modulsystem. Im Gegensatz zu herkömmlichen Java Projekten, bei denen es reicht, die Bibliothek in Gradle als dependency zu deklarieren, müssen Sie *swenglib* bei JabRef 
 zusätzlich als *Required Dependency* deklarieren. Dies machen Sie in der Datei ```module-info.java```.
 
 Wenn das hinzufügen funktioniert hat sollten Sie folgenden Code zu JabRef hinzufügen können und das Projekt sollte entsprechend kompilieren. 
@@ -89,12 +89,11 @@ In diesem Teil der Übung geht es darum, dass sie sich einen Grobüberblick übe
 
 #### Dokumentieren sie ein Package
 
-Schreiben Sie für jedes der folgenden Packages eine Kurzübersicht über deren Inhalt (ca. 3-4 Sätze):
+Schreiben Sie für jedes der folgenden Packages eine Kurzübersicht über deren Inhalt (ca. 2-4 Sätze):
 
 * org.jabref.cli
 * org.jabref.gui.desktop
 * org.jabref.logic.formatter
-* org.jabref.migrations
 * org.jabref.model.entry
 
 Sie k&ouml;nnen diese mittels Javadoc dokumentieren, indem sie in jedes Verzeichnis eine Datei
@@ -115,7 +114,7 @@ Um eine gute Zusammenfassung schreiben zu können müssen Sie sich einen groben 
 #### Dokumentieren einer Klasse
 
 Dokumentieren sie die Klasse 
-```package org.jabref.logic.protectedterms.ProtectedTermsLoader;``` sowie alle public Methoden mittels Javadoc. Es reicht, wenn Sie pro Methode jeweils 1-2 Sätze schreiben. 
+```org.jabref.logic.protectedterms.ProtectedTermsLoader;``` sowie die Methode ```update``` mittels Javadoc. Es reicht, wenn Sie pro Methode jeweils 1-2 Sätze schreiben. 
 *Beachten Sie:* Auch hier gilt, dass Kommentare, die sich direkt aus dem Methodennamen herleiten lassen keinen Mehrwert bieten. 
 
 
