@@ -32,7 +32,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |[Woche 2](https://unibas-marcelluethi.github.io/software-engineering/week2/index.html) | Kurze Geschichte des Software Engineerings  | |
 |    | Eigenschaften von Software ||
 |    |  Software Qualitätsmerkmale | | 
-|Woche 3 | Prinzipien des Software engineerings   | |
+|[Woche 3](https://unibas-marcelluethi.github.io/software-engineering/week3/index.html) | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
 |Woche 4 | Modulstruktur  | |
 |    | ModulDesign  | |
