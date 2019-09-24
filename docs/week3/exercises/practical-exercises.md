@@ -113,8 +113,8 @@ Um eine gute Zusammenfassung schreiben zu können müssen Sie sich einen groben 
 
 #### Dokumentieren einer Klasse
 
-Dokumentieren Sie die Klasse 
-```org.jabref.logic.protectedterms.ProtectedTermsLoader;``` mit einem Klassenkommentar sowie die Methode ```update``` dieser Klasse. Kurze Kommentare von ca 2-3 Zeilen reichen völlig aus. 
+Schauen Sie sich die Klasse
+```org.jabref.logic.protectedterms.ProtectedTermsLoader;``` an. Schreiben Sie einen Klassenkommentar (d.h. die Klasse soll im Überblick beschrieben werden) und dokumentieren sie die Methode ```update``` dieser Klasse. Kurze Kommentare von ca 2-3 Zeilen reichen völlig aus. 
 *Beachten Sie:* Auch hier gilt, dass Kommentare, die sich direkt aus dem Methodennamen herleiten lassen keinen Mehrwert bieten. 
 
 
