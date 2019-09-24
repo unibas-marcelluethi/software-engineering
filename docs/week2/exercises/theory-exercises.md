@@ -3,7 +3,7 @@
 ## 1. Beziehung von Software Engineering zu anderen Fachgebieten in der Informatik
 Diskutieren Sie die Beziehung von "Software Engineering" zu anderen Fachgebieten wie 
 Programmiersprachen, Management, Systemsengineering, Theoretische Informatik, Künstliche Intelligenz.
-Beschrieben Sie kurz wie Fortschritte in einem Gebiet das Software Engineering beeinflussen können.
+Beschreiben Sie kurz wie Fortschritte in einem Gebiet das Software Engineering beeinflussen können.
 
 Wie ist ihre Einschätzung. Würden Sie die Fortschritte eher in Richtung Accidental Complexity oder Essential Complexity sehen.
 
