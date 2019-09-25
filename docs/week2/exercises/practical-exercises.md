@@ -103,7 +103,7 @@ git diff 84436d795..89ebaf764
 Das Erste gibt Ihnen alle Commit Messages der neuen Änderungen aus. Das Letzere zeigt die "Diffs" der Dateien an.   
 
 In jedem Fall ist Ihr (lokaler) master Branch nun wieder auf dem aktuellen Stand und Sie können damit beginnen Ihre erste Änderung zu implementieren. 
-Wenn Sie diese Änderung nicht nur auf Ihrem Computer, sondern auch im Masterbranch des *origin* Repositories auf Github haben wollen, müssen Sie diese durch 
+Damit Sie diese Änderung nicht nur auf Ihrem Computer, sondern auch im Masterbranch des *origin* Repositories auf Github haben, müssen Sie diese durch 
 ```
 git push origin master
 ```
