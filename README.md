@@ -55,16 +55,13 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 
 ## Nächste Deadlines
 
-#### Übungen
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 25. September | Selbsttest | Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
+| 01. September | Theorieübung Woche 2| Adam | Nur wer nicht in der Vorlesung vom 25.9 war |
+| 01. September | Praktische Übung Woche 2| Pull request | |
+| 02. September | Selbsttest | Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
+| 
 
-
-#### Projekt
-
-| Aufgabe |  Abgabe | Bemerkung |
-|---------|--------|---------------------|
 
 
 
