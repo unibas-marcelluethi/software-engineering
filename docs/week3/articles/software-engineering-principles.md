@@ -81,7 +81,7 @@ Häufig dauert auch die Entwicklung einer allgemeinen Version deutlich länger. 
 ## Schrittweises Entwickeln
 
 Anstatt dass wir ein Problem auf einmal lösen, können wir versuchen die Lösung inkrementell zu entwickeln. 
-Die erste Lösung ist dabei vielleicht nur eine grobe Approximation der endgültigen Lösen. In weiteren Schritten wird diese Approximation dann 
+Die erste Lösung ist dabei vielleicht nur eine grobe Approximation der endgültigen Lösung. In weiteren Schritten wird diese Approximation dann 
 verbessert, bis wir den gewünschten Endzustand erreichen. 
 
 Bei der Softwareentwicklung kann man zum Beispiel versuchen, zuerst eine minimale Menge von Funktionalitäten zu identifizieren, die für den Benutzer bereits
