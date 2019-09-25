@@ -15,6 +15,9 @@
 * Brooks F. No Silver Bullet: 
     * Artikel: [pdf](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)
 
+* Git einführung:
+    * Slides: [pdf](./exercises/git-github.pdf)
+
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 
 
