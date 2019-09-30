@@ -1,16 +1,14 @@
-# Übungsblatt 4: Modularität
+# Übungsblatt Woche 4: Modularität
 
 
 ## 1. Uses Graphen
-1. Schauen Sie sich den Dependency Graphen ([Bild](../../exercises/images/dependency-graph.png)) für das Ganttproject package ```biz.ganttproject.task``` an. 
- Interpretieren Sie diesen und beschreiben Sie ihre Beobachtungen. 
+1. Schauen Sie sich den Dependency Graphen für das Jabref package ```org.jabref.model.entry``` an, den Sie [hier](../../exercises/images/dependency-graph.png) finden. 
+Beschreiben Sie ihre Beobachtung und bewerten Sie die Modulstruktur. 
 
 ## 2. Beziehungen
 1.  Angenommen die USES beziehung ist ein Baum. Was sagt das Über die Modulstruktur aus? Möchten Sie lieber einen Baum oder einen DAG?
-2. Denken Sie sich einige weitere sinvolle Beziehungen zwischen Modulen ausser der besprochenen "uses" und "is_composed_of" Beziehung aus.
 2. In vielen Sprachen können Module als Argumente an Funktionen/Methoden übergeben werden. Angenommen ein Modul A ruft eine Funktion 
   f von Modul B auf, die dann ein Modul C als Parameter nimmt. Wie sieht der Uses Graph aus? Ist er in diesem Fall noch immer statisch bestimmt? Warum, warum nicht?
-
 
 
 ## 3. Kategorien von Modulen
@@ -25,7 +23,6 @@ Schauen Sie sich nochmals die Kategorien von Module an, die [hier](../slides/mod
     * Wie implementieren Sie eine Vergleichsfunktion ```compare(T a, T b)``` zwischen zwei Argumenten vom Typ ```T``` in dieser Sprache?
 
     
-
 ## 4. Modulsystem in Java
 Lesen Sie diesen [Artikel](https://www.oracle.com/corporate/features/understanding-java-9-modules.html) zum Thema Java 9 Module.
 
@@ -33,5 +30,4 @@ Beantworten Sie folgende Fragen:
 1. Welches Problem lösen Java Module?  Was ist der Unterschied zu Packages?
 2. Was machen die Keywords *export*, *uses* und *provides ... with*
 3. Welches Problem wird mit der *Open* Klausel gelöst?  Warum will man Reflection überhaupt einschränken?
-4. (Freiwillig) Implementieren Sie ein einfaches Modul in Java
 

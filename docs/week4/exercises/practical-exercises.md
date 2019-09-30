@@ -1,12 +1,18 @@
-TODO - irgendetwas mit modulen
-TODO - Lesen Sie WIKI (developers howto)
-TODO - CIrce CI
-TODO - Code coverage
 
 # Übungsblatt 4: Unit Tests und Continuous Integration
 
 * Dieses Übungsblatt sollte bis am 15. Oktober 2019 bearbeitet werden.  
 * Abgabe via Pull Request bis spätestens 15. Oktober, 23.59.
+
+#### Bitte haben Sie noch etwas Geduld. Details folgen. 
+
+
+<!-- 
+TODO - irgendetwas mit modulen
+TODO - Lesen Sie WIKI (developers howto)
+TODO - CIrce CI
+TODO - Code coverage
+
 
 ## Einführung
 
@@ -99,4 +105,4 @@ und entsprechenden Pull Request. Geben Sie bitte das Team ```sweng-assistants-hs
  (Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
  
 
- 
+ -->
