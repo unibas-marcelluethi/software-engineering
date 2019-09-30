@@ -34,7 +34,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |    |  Software Qualitätsmerkmale | | 
 |[Woche 3](https://unibas-marcelluethi.github.io/software-engineering/week3/index.html) | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
-|Woche 4 | Modulstruktur  | |
+|[Woche 4](https://unibas-marcelluethi.github.io/software-engineering/week4/index.html) | Modulstruktur  | |
 |    | ModulDesign  | |
 |Woche 5 | OO Design |
 |    | UML (statische Diagramme)  | | 
