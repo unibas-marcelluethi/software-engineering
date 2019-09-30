@@ -6,18 +6,18 @@
     * Artikel: [online](./articles/module-structure.html)
 
 * Beziehung zwischen Modulen
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/nWv3tZL5t73lFcS),  
+    * Video:  [online](https://tube.switch.ch/videos/ed8c549d),  
     * Slides: [online](./slides/module-relationships.html), [Druckversion](./slides/module-relationships.html?print-pdf)
 
 * Typische Architekturmuster
     * Artikel: [online](./articles/module-architectural-patterns.html)
 
 * Modul Design
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/0ZmzYUc8t1ZRJ1d)
+    * Video:  [online](https://tube.switch.ch/videos/63479caf)
     * Slides: [online](./slides/module-design.html), [Druckversion](./slides/module-design.html?print-pdf)
 
 * Kategorien von Modulen
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/5KH91ZOJOyNOsTG)
+    * Video:  [mp4](https://tube.switch.ch/videos/7d6cdc90)
     * Slides: [online](./slides/module-categories.html), [Druckversion](./slides/module-categories.html?print-pdf)
 
 * Abstrakte Datentypen und Objektorientierte Programmierung" 
