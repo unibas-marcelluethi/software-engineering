@@ -32,7 +32,10 @@ git branch
 ```
 Sie sollten nun alle ihre Branches sehen. Vor dem aktiven Branch (also master) sollte nun ein Sternchen sein. 
 
-Synchronisieren Sie allfällige Änderungen im Upstream wie im letzten Übungsblatt beschrieben. 
+Synchronisieren Sie allfällige Änderungen im Upstream wie im letzten Übungsblatt beschrieben und pushen Sie den aktualisierten master branch auf ihr github repository
+```
+git push origin master
+```
 
 Erstellen Sie dann einen neuen Branch *uebung3* mit
 ```

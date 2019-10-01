@@ -7,7 +7,7 @@
 #### Bitte haben Sie noch etwas Geduld. Details folgen. 
 
 
-<!-- 
+
 TODO - irgendetwas mit modulen
 TODO - Lesen Sie WIKI (developers howto)
 TODO - CIrce CI
@@ -27,11 +27,14 @@ Da wir die Änderungen der letzten Übung hier nicht benötigen, starten wir wie
 git checkout master
 ```
 
-Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository, wie in [Übung 2](../../week2/exercises/practical-exercises.html) beschrieben.
-
+Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository, wie in [Übung 2](../../week2/exercises/practical-exercises.html) beschrieben  und pushen Sie den aktualisierten master branch auf ihr github repository
+```
+git push origin master
+```
 
 
 #### Vorbereitung
+
 Wie immer erstellen wir zuerst für unsere Änderungen einen lokalen Featurebranch und wechseln in diesen:
 
 ```
@@ -42,18 +45,11 @@ git checkout uebung4
 
 ## Unit Tests
 
-Im Folgenden werden Sie neue Unit Tests  für die Klasse ```RoleManagerImpl``` von Ganttproject implementieren. Dazu kreieren Sie eine neue Klasse ```RoleManagerTest``` (src/test/java/biz/ganttproject/roles/RoleManagerTest.java). Als Vorlage können Sie die Klasse ```RoleSetTest``` nutzen, welche bereits ähnliche Tests implementiert.
+Im Folgenden werden Sie neue Unittests  für verschiedene Klassen in JabRef implementieren. Nehmen Sie als Vorlage die bereits bestehenden Unit Tests in Jabref. 
 
-Wir möchten, dass die Methode ```getRoleSet``` richtig auf verschiedene Klassen von Argumenten reagiert. Dafür testen wir folgende Fälle:
-* Aufruf mit einem existierenden Rollen namen (Spezifikation: hier sollte das richtige RoleSet für den angegebenen Namen zurückgegeben werden)
-* Aufruf mit einem nicht existierenden namen (Spezifikation: hier sollte null zurückgegeben werden)
-* Aufruf mit ```null``` (Spezifikation: hier sollte ```null``` zurückgegeben werden)
+* Fügen Sie mindestens 2 sinnvolle Tests für die Methode ```BibDatabase.getEntryByKey``` zu der Datei ```BibDatabaseTest``` hinzu. 
+* Fügen Sie mindestens 2 sinnvolle Tests für die Methode ```BibDatabase.getReferencedEntry``` zu der Datei ```BibDatabaseTest``` hinzu. 
 
-Implementieren Sie jeweils mindestens einen sinnvollen Unittest für jeder der folgenden Methoden von RoleManagerImpl:
-
-* ```clear()```
-* ```createRoleSet(String name)```
-* ```importData(RoleManager original)```
 
 
 
@@ -105,4 +101,3 @@ und entsprechenden Pull Request. Geben Sie bitte das Team ```sweng-assistants-hs
  (Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
  
 
- -->

@@ -9,7 +9,7 @@
 
 ## 2. Separieren der Verantwortlichkeiten
 
-2.1 Angenommen Sie müssen einen Sortieralgorithmus implementieren. Was sind mögliche verschiedene Verantwortlichkeiten die Sie trennen könnten. 
+2.1 Angenommen Sie müssen einen Sortieralgorithmus implementieren. Was sind mögliche verschiedene Verantwortlichkeiten die Sie trennen könnten?
 Beschreiben Sie eine Strategie für die Implementation, die der Trennung der Verantwortlichkeiten Rechnung trägt. 
 
 2.2 Lesen sie im Internet über *Aspektorientierte Programmierung* und
@@ -19,8 +19,8 @@ Beschreiben Sie eine Strategie für die Implementation, die der Trennung der Ver
 
 3.1 Angenommen, Sie entscheiden Sich ein Auto zu modularisieren, indem Sie dieses in kleine Würfel von 15 cm3 schneiden. 
     
-    * Was können Sie über Kopplung und Bindung sagen? 
-    * Was wäre eine bessere Dekomposition in Module?
+* Was können Sie über Kopplung und Bindung sagen? 
+* Was wäre eine bessere Dekomposition in Module?
 
 3.2 Was können Gründe sein, dass ein Programm eine eine schwache Bindung aufweist? Was können Sie dagegen tun? 
     
