@@ -15,6 +15,10 @@
 * Parnas D. L. Software Aging: 
     * Artikel: [pdf](http://www.inf.ed.ac.uk/teaching/courses/seoc/2004_2005/resources/bullet11.pdf)
 
+* Gradle Einführung
+    * Slides: [pdf](./exercises/gradle.pdf)
+
+
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 
 

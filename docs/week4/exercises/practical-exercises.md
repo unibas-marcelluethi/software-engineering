@@ -51,7 +51,14 @@ Im Folgenden werden Sie neue Unittests  für verschiedene Klassen in JabRef impl
 * Fügen Sie mindestens 2 sinnvolle Tests für die Methode ```BibDatabase.getReferencedEntry``` zu der Datei ```BibDatabaseTest``` hinzu. 
 
 
+public class GroupTreeNode extends TreeNode<GroupTreeNode>
+package org.jabref.model.groups;
+Jabref preferencefilter
+package org.jabref.model.ChainNode
 
+package org.jabref.logic.citationstyle.discoverCitationStyles
+
+    
 
 ## Travis CI
 
@@ -74,6 +81,9 @@ hinzufügen.
 
 Damit sie Travis auch für ihr Projekt verwenden können, müssen sie dies erst einrichten. Dazu gehen sie auf die die [Webseite](https://www.travis-ci.com) von Travis und melden sich mit ihrem Github Account an. Sie erhalten die Option Travis für eines oder alle Ihrer Github Repositories zu aktivieren. Aktivieren Sie 
 ```jabref``` und erlauben Sie auch, dass Travis die Github integration vornimmt. 
+
+Was beobachten Sie, wenn Sie einen fehlerhaften Commit .
+Sie müssen noch travis.yml anpassen
 
 
 *Anmerkung: Travis ist ein kommerzieller Service. Sie haben aber 99 Trial runs zur Verfügung. Dies sollte für diesen Kurs reichen. Für Open Source Projekte ist Travis aber gratis nutzbar. Deshalb ist Travis der Standard Service in der Open Source Entwicklung*.
