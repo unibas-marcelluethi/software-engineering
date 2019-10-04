@@ -7,7 +7,7 @@
 #### Bitte haben Sie noch etwas Geduld. Details folgen. 
 
 
-
+<!-- 
 TODO - irgendetwas mit modulen
 TODO - Lesen Sie WIKI (developers howto)
 TODO - CIrce CI
@@ -111,3 +111,4 @@ und entsprechenden Pull Request. Geben Sie bitte das Team ```sweng-assistants-hs
  (Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
  
 
+-->
