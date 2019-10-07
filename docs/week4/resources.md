@@ -17,7 +17,7 @@
     * Slides: [online](./slides/module-design.html), [Druckversion](./slides/module-design.html?print-pdf)
 
 * Kategorien von Modulen
-    * Video:  [mp4](https://tube.switch.ch/videos/7d6cdc90)
+    * Video:  [online](https://tube.switch.ch/videos/7d6cdc90)
     * Slides: [online](./slides/module-categories.html), [Druckversion](./slides/module-categories.html?print-pdf)
 
 * Abstrakte Datentypen und Objektorientierte Programmierung" 
