@@ -11,7 +11,7 @@ Wir diskutieren auch einige wichtige objektorienterte Designprinzipien und stell
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 17. Oktober *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 16. Oktober *selbständig* zu erarbeiten.
 
  Nach dem Selbststudium der Vorlesungsmaterialien sollten die Studierenden:
  - die Merkmale nennen können, die objektorientiertes Design ausmachen
@@ -35,7 +35,7 @@ Die folgenden Lernziele sollten während oder nach der Vorlesung vom 17. Oktober
 
 Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte folgende Schritte:
 
-* Schritt 1: Schauen Sie sich das Video "Objektorientiertes Design und Programmierung" an.  ([Video](tube.switch.ch/videos/44a4637a), [Slides](./slides/oo-design.html))
+* Schritt 1: Schauen Sie sich das Video "Objektorientiertes Design und Programmierung" an.  ([Video](https://tube.switch.ch/videos/44a4637a), [Slides](./slides/oo-design.html))
 * Schritt 2: Lesen Sie den Artikel "Vererbung und Objektkomposition" ([Artikel](./articles/oo-composition-vs-inheritance.html))
 * Schritt 3: Schauen Sie sich das Video zu den "SOLID Prinzipien" an ([Video](https://tube.switch.ch/videos/cbc347a9), [Slides](./slides/oo-solid.html))
 * Schritt 4: Lesen Sie den Artikel "Das Gesetz von Demeter" ([Artikel](http://prinzipien-der-softwaretechnik.blogspot.com/2013/06/das-gesetz-von-demeter.html))
