@@ -35,24 +35,24 @@ Die folgenden Lernziele sollten während oder nach der Vorlesung vom 17. Oktober
 
 Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte folgende Schritte:
 
-* Schritt 1: Schauen Sie sich das Video "Objektorientiertes Design und Programmierung" an.  ([Video](https://drive.switch.ch/index.php/s/eJBmEDAAkhwTUO1), [Slides](./slides/oo-design.html))
+* Schritt 1: Schauen Sie sich das Video "Objektorientiertes Design und Programmierung" an.  ([Video](tube.switch.ch/videos/44a4637a), [Slides](./slides/oo-design.html))
 * Schritt 2: Lesen Sie den Artikel "Vererbung und Objektkomposition" ([Artikel](./articles/oo-composition-vs-inheritance.html))
-* Schritt 3: Schauen Sie sich das Video zu den "SOLID Prinzipien" an ([Video](https://drive.switch.ch/index.php/s/QSMeFeYbs7Hpfky), [Slides](./slides/oo-solid.html))
+* Schritt 3: Schauen Sie sich das Video zu den "SOLID Prinzipien" an ([Video](https://tube.switch.ch/videos/cbc347a9), [Slides](./slides/oo-solid.html))
 * Schritt 4: Lesen Sie den Artikel "Das Gesetz von Demeter" ([Artikel](http://prinzipien-der-softwaretechnik.blogspot.com/2013/06/das-gesetz-von-demeter.html))
-* Schritt 5: Schauen Sie sich das Video "UML Einführung" an. ([Video](https://drive.switch.ch/index.php/s/Was9xtou8E5cHvH), [Slides](./slides/uml-static.html))
+* Schritt 5: Schauen Sie sich das Video "UML Einführung" an. ([Video](https://tube.switch.ch/videos/b43beebb))
 * Schritt 6: Lesen Sie diesen Artikel zu UML Klassendiagrammen ([Artikel](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/))
-* Schritt 7: Bearbeiten Sie den Test. ([Adam](https://adam.unibas.ch/goto_adam_tst_706003.html)). 
+* Schritt 7: Bearbeiten Sie den Test. ([Adam](https://adam.unibas.ch/goto_adam_tst_867515.html)). 
 
 *Achtung: Der Test muss spätestens bis Mittwoch 16. Oktober, 08:00 bearbeitet sein.*
   
 
 ### Übungen
 Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](./exercises/theory-exercises.html). 
-Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam]((https://adam.unibas.ch/goto_adam_exc_732787.html)) ein .
+Falls Sie bei der Vorlesung nicht anwesend waren, schreiben Sie ihre Antworten bitte auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_840442.html) ein .
 
 Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten.
 
-*Abgabetermin ist Dienstag, 23. Oktober, 23.59*
+*Abgabetermin ist Dienstag, 22. Oktober, 23.59*
 
 ### Feedback
 

@@ -1,9 +1,20 @@
 # Übungsblatt 5: Interne Datenstrukturen, Bugfix
 
-* Dieses Übungsblatt sollte bis am 23. Oktober 2018 bearbeitet werden.  
-* Abgabe via Pull Request bis spätestens 23. Oktober, 23.55.
+* Dieses Übungsblatt sollte bis am 22. Oktober 2019 bearbeitet werden.  
+* Abgabe via Pull Request bis spätestens 22. Oktober, 23.55.
+
+### Bitte haben Sie noch etwas Geduld. Die Aufgabe kommt bald.
+
+<!--
+
+Enable logging
 
 ## Einführung
+
+Lesen Sie 
+https://github.com/JabRef/jabref/wiki/Code-Howtos und https://github.com/JabRef/jabref/wiki/High-Level-Documentation
+
+
 
 In dieser Übung werden sie einige wichtige Datenstrukturen von Ganttproject kennenlernen.
 Ausserdem werden Sie ihre erste Verbesserung vornehmen.
@@ -74,3 +85,4 @@ git push origin uebung5
 und entsprechenden Pull Request, bei dem Sie 
  ```michaelPluess``` und ```schoenja``` als Reviewer angeben.
 (Details dazu finden Sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
+-->
