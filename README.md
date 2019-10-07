@@ -36,7 +36,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |    | Software design - Übersicht und Einführung |  |
 |[Woche 4](https://unibas-marcelluethi.github.io/software-engineering/week4/index.html) | Modulstruktur  | |
 |    | ModulDesign  | |
-|Woche 5 | OO Design |
+|[Woche 5](https://unibas-marcelluethi.github.io/software-engineering/week5/index.html) | OO Design |
 |    | UML (statische Diagramme)  | | 
 |Woche 6   | Anforderungsanalyse   | |
 |Woche 7 | Softwarespezifikation  |  |
