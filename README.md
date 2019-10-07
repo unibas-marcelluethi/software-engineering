@@ -57,9 +57,9 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 01. September | Theorieübung Woche 2| Adam | Nur wer nicht in der Vorlesung vom 25.9 war |
-| 01. September | Praktische Übung Woche 2| Pull request | |
-| 02. September | Selbsttest | Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
+| 08. Oktober | Praktische Übung Woche 3| Pull request | |
+| 08. Oktober | Theorieübung Woche 3| Adam | Nur wer nicht in der Vorlesung vom 02.10 war |
+| 09. Oktober | Selbsttest Woche 4| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
 | 
 
 
