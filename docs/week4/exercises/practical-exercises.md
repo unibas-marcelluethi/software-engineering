@@ -83,7 +83,7 @@ werden, ob der Artikel korrekt eingefügt und alle Felder richtig abgebildet wur
 ``` 
 
 Die Tests können Sie via der IDE einzeln ausführen, indem Sie auf den grünen Pfeil neben dem Test klicken. 
-Mit Gradle können Sie Ihre neuen Tests einzeln ausführen, indem Sie ```gradle test --tests org.jabref.model.database.MyDatabaseTest``` aufrufen.
+Mit Gradle können Sie Ihre neuen Tests einzeln ausführen, indem Sie ```gradlew test --tests org.jabref.model.database.MyDatabaseTests``` aufrufen.
 
 Wenn Sie alle Tests erfolgreich geschrieben haben, fügen Sie die neue Datei (mit *git add*) dem Repository hinzu und committen Ihre Änderungen.
 
