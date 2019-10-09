@@ -23,6 +23,10 @@
 * Abstrakte Datentypen und Objektorientierte Programmierung" 
     * Artikel: [online](./articles/module-adts-oo.html)
 
+* Einführung Projekt 
+    * Artikel: [pdf](./slides/project-introduction.pdf)
+
+
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 
 
