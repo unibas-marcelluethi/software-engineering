@@ -39,13 +39,13 @@ git checkout uebung4
 
 Im ersten Teil der Übung werden Sie eigene Unittest für die Klasse *BibDatabase* hinzufügen.  Dabei werden wir 
 
-* sehen wie komplexe Software mit Unittests getesten kann
-* nutzten dass Unittests Beispiele für die korrekte Verwendung der Klassen repräsentieren, und somit auch 
+* sehen wie komplexe Software mit Unittests getesten werden kann
+* nutzen dass Unittests Beispiele für die korrekte Verwendung der Klassen repräsentieren, und somit auch 
 als Dokumentation dienen.
 * einige zentrale Datenstrukturen von Jabref kennenlernen.
 
-*Anmerkung:* Jabref verfügt über eine hervorragende Testsuite, mit über 5000 Unittests. Auch die Klasse *BibDatabase* ist bereits gut getestet und das Ziel ist es nicht die Qualität der Tests
-oder die Testabdeckung zu verbessern, sondern das System kennenzulernen. 
+*Anmerkung:* Jabref verfügt über eine hervorragende Testsuite, mit über 5000 Unittests. Auch die Klasse *BibDatabase* ist bereits gut getestet. Unser Ziel ist nicht die Qualität der Tests
+oder die Testabdeckung zu verbessern, sondern das System kennenzulernen. Entsprechend sind die von Ihnen zu entwickelnden Unittests nicht ideale Beispiele für gutes Softwaretesting. 
 
 *Hinweis:* Wenn Sie mit dem Bibtexformat, welches von Latex benutzt wird um Referenzen zu verwalten noch nicht vertraut sind, finden Sie [hier](http://www.bibtex.org/) alle Informationen.
 
