@@ -39,7 +39,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 2: Lesen Sie den Artikel "Vererbung und Objektkomposition" ([Artikel](./articles/oo-composition-vs-inheritance.html))
 * Schritt 3: Schauen Sie sich das Video zu den "SOLID Prinzipien" an ([Video](https://tube.switch.ch/videos/cbc347a9), [Slides](./slides/oo-solid.html))
 * Schritt 4: Lesen Sie den Artikel "Das Gesetz von Demeter" ([Artikel](http://prinzipien-der-softwaretechnik.blogspot.com/2013/06/das-gesetz-von-demeter.html))
-* Schritt 5: Schauen Sie sich das Video "UML Einführung" an. ([Video](https://tube.switch.ch/videos/b43beebb))
+* Schritt 5: Schauen Sie sich das Video "UML Einführung" an. ([Video](https://tube.switch.ch/videos/b43beebb), [Slides](./slides/uml-static.html))
 * Schritt 6: Lesen Sie diesen Artikel zu UML Klassendiagrammen ([Artikel](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/))
 * Schritt 7: Bearbeiten Sie den Test. ([Adam](https://adam.unibas.ch/goto_adam_tst_867515.html)). 
 

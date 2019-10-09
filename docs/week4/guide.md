@@ -7,7 +7,7 @@ Eines der Zentralen Prinzipien war die Modularität. Auch beim Design sind wir d
 Wir haben gesehen, dass ein Software Design eigentlich nur die Aufteilung eines Systems in Module ist. Wenn wir das richtig machen, 
 erhalten wir dabei ein System, welches das wichtigste Designziel erfüllt: Die Möglichkeit, dass künftige Änderungen leicht durchgeführt werden können. 
 
-In diese Woche wollen wir besprechen, wie wir Modularität erreichen, Beziehungen zwischen Modulen besprechen und wie wir module Designen. 
+In dieser Woche wollen wir besprechen, wie wir Modularität erreichen, Beziehungen zwischen Modulen besprechen und wie wir Module designen. 
 Wir schauen uns auch konkrete Beispiele von Modulen an. 
 
 
