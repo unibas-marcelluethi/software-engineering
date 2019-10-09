@@ -57,10 +57,11 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 08. Oktober | Praktische Übung Woche 3| Pull request | |
-| 08. Oktober | Theorieübung Woche 3| Adam | Nur wer nicht in der Vorlesung vom 02.10 war |
-| 09. Oktober | Selbsttest Woche 4| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
-| 
+| 09. Oktober | Praktische Übung Woche 3| Pull request | |
+| 15. Oktober | Theorieübung Woche 4| Adam | Nur wer nicht in der Vorlesung vom 09.10 war |
+| 15. Oktober | Vorschläge für Projektthemen einreichen | Email | Siehe [Slides](docs/week4/slides/project-introduction.pdf) für Details
+| 16. Oktober | Selbsttest Woche 5| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
+
 
 
 
