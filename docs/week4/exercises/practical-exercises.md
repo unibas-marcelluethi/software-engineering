@@ -130,8 +130,8 @@ Damit sie Travis auch für ihr Projekt verwenden können, müssen sie dies erst 
 *Anmerkung 2: Wenn Sie sich für das [Github Educational Pack](https://education.github.com/pack) registriert haben, haben Sie gratis builds für private repositories. Falls Ihr Fork public ist, müssen sie auf www.travis-ci.org wechseln. Die beiden Seiten sind identisch und werden von derselben Firma betrieben.*.
 
 * Fügen Sie ihren Branch (also *uebung4*) im Abschnitt *branches* in der Datei *.travis.yml* hinzu. 
-* Probieren sie aus was passiert wenn sie einen Änderung machen, die zu einem Fehlschlagen eines Unittests führt und diese committen und auf Github pushen. Was passiert bei Travis? 
-* Gehen Sie auf Github und machen Sie einen Pull Request mit diesen fehlerhaften Unittest (Bitte Unittest auf den Master branch ihres eigenen Repositories). Was fällt Ihnen auf?
+* Probieren Sie aus was passiert wenn Sie eine Änderung machen, die zu einem Fehlschlagen eines Unittests führt und diese committen und auf Github pushen. Was passiert bei Travis? 
+* Gehen Sie auf Github und machen Sie einen Pull Request mit diesem fehlerhaften Unittest (Bitte Unittest auf den Master branch ihres eigenen Repositories). Was fällt Ihnen auf?
 * Korrigieren Sie ihren Fehler wieder und pushen Sie nochmals.
 
 
