@@ -3,11 +3,11 @@
 # Folien und Artikel
 
 * Anforderungsanalyse
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/OrCDfsJiIwGeTkm),  
+    * Video:  [mp4](https://tube.switch.ch/videos/e9a8b379),  
     * Slides: [online](./slides/requirements-engineering.html), [Druckversion](./slides/requirements-engineering.html?print-pdf)
 
 * Anforderungen
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/WJCwfDgIoE21poi),  
+    * Video:  [mp4](https://tube.switch.ch/videos/76899f60),  
     * Slides: [online](./slides/requirements.html), [Druckversion](./slides/requirements.html?print-pdf)
 
 * Anforderungen mit Sprachschablonen formulieren
