@@ -85,6 +85,7 @@ Committen Sie Ihre Änderungen.
 ## Aufgabe 4: Lokalisierung
 
 Machen Sie den Dialog aus voriger Aufgabe mittels *Localization* mehrsprachig. Die Meldung sollten mindestens für die Sprachen Deutsch und Englisch implementiert werden. 
+*Tipp: * Um die Mehrsprachigkeit zu testen können Sie die Sprache im Preferences Dialog umstellen. 
 
 Committen Sie Ihre Änderungen.
 
