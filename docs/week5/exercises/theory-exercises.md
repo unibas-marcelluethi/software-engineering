@@ -11,5 +11,5 @@ beschriebenen Heuristiken anwenden. Erstellen Sie entsprechende CRC Karten.
 *Falls Sie die Übung elektronisch abgeben, empfehlen wir Ihnen dieses [online tool](https://echeung.me/crcmaker/)* um die Karten zu erstellen. 
 
 ## 2. UML Klassendiagramm
-Kreieren Sie ein UML Klassendiagramm. Wir empfehlen ihnen, dafür die Software [Modelio](www.modelio.org) zu verwenden.
+Kreieren Sie ein UML Klassendiagramm. Wir empfehlen ihnen, dafür die Software [Modelio](https://www.modelio.org/) zu verwenden.
 
