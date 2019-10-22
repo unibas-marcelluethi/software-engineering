@@ -46,11 +46,13 @@ ob Sie das Projekt bestehen.
 
 ## Projektplan 
 
-Lesen Sie dieses [Dokument](https://adam.unibas.ch/goto_adam_file_840447_download.html) zum Thema Aufwandschätzung und überlegen Sie sich, welche der Techniken für Sie anwendbar sein könnte. 
-
 Erstellen Sie nun anhand der Anforderungen einen Projektplan. Auf dem Plan sollen alle Tasks, die Sie zur Durchführung des Projekts bearbeiten müssen aufgeführt sein. Für jede Task soll ersichtlich sein, wie lange diese dauert, wer diese bearbeitet und wann Sie mit der Bearbeitung beginnen 
 können. Wir empfehlen Ihnen dafür [Ganttproject](https://www.ganttproject.biz/) zu verwenden (Ganttproject ist für grössere Projekte gedacht und verwendet als kleinste Planungseinheit Tage. Nehmen Sie an, dass 1 Tag = 1 Stunde ist).
 
+Die Schätzung des Aufwands für eine Task ist schwierig. Je besser die funktionale Anforderungen, spezifiziert sind, desto einfacher wird es aber, da wir den Aufwand für wohldefinierte Anforderung, 
+relative kleine Tasks besser überblicken können. Natürlich hilft es auch sich mit dem Code auseinander zu setzen  um ein Gefühl für die Komplexität zu bekommen. 
+
+ Einige Möglichkeiten den Aufwand des Gesamtsystems abzuschätzen finden Sie in diesem [Buchkapitel](https://adam.unibas.ch/goto_adam_file_840447_download.html) zusammengefasst. 
 
 
 ## Abgabe: 
