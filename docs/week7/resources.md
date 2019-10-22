@@ -3,7 +3,7 @@
 # Folien und Artikel
 
 * Spezifikation von Softwareprojekten
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/kNHnLQQMO14p0sM),  
+    * Video:  [online](tube.switch.ch/videos/ab4c7b2c,  
     * Slides: [online](./slides/specification-overview.html), [Druckversion](./slides/specification-overview.html?print-pdf)
 
 * A rational design process - and how to fake it, David. L. Parnas

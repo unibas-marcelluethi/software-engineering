@@ -39,9 +39,9 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |[Woche 5](https://unibas-marcelluethi.github.io/software-engineering/week5/index.html) | OO Design |
 |    | UML (statische Diagramme)  | | 
 |[Woche 6](https://unibas-marcelluethi.github.io/software-engineering/week6/index.html)   | Anforderungsanalyse   | |
-|Woche 7 | Softwarespezifikation  |  |
-|    | UML (dynamische Diagramme)  | | 
+|[Woche 7](https://unibas-marcelluethi.github.io/software-engineering/week7/index.html) | Softwarespezifikation  |  |
 |Woche 8 | Konstruktive und Deskriptive Softwarespezifikation  |  |
+|    | UML (dynamische Diagramme)  | | 
 |Woche 9| Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
 | Woche 10 | Testen im Kleinen   | | 
