@@ -3,6 +3,10 @@
 
 *Bevor Sie die folgenden Aufgaben bearbeiten, vergewissern Sie sich bitte, dass Sie das [Dokument Projektübersicht](../project-summary.html) gelesen haben, die entsprechenden Branches auf Ihrem Repository angelegt haben, und Ihnen die Struktur vom Projekt klar ist.*
 
+#### Allgemeiner Hinweis zur Arbeitsweise
+
+In dieser Aufgabe sind die einzelnen Schritte strikte geteilt und geordnet. Es macht jedoch Sinn, diese Aufgaben iterativ zu lösen und nach der Bearbeitung jeden Schrittes zu schauen, ob daraus neue Erkenntnisse für einen anderen Schritt entstanden sind. Sie können auch schon parallel zur Erstellung des Pflichtenhefts einen Prototypen beginnen zu implementieren. Dies hilft Ihnen die Probleme früh zu erkennen. 
+
 ## Pflichtenheft
 
 #### Vorbereitung
@@ -25,23 +29,28 @@ Zur Identifizierung der funktionalen Anforderungen sollten Sie Use-cases verwend
 
 *Es müssen mindestens zweimal so viele Use-Cases geschrieben werden, wie Ihre Gruppe Mitglieder hat.*
 
-Schreiben Sie dann die funktionalen Anforderungen
+Schreiben Sie dann die funktionalen Anforderungen. Falls Sie Begriffe verwenden, die unklar sein könnten, erstellen Sie bitte ein Glossar Erstellen Sie auch ein Glossar (siehe [Template](../templates/glossar.html)).
+
+*Tipp: Falls viele von Ihren Anforderungen die Benutzeroberfläche betreffen, hilft es neuen Gui Elementen bereits grafisch zu illustrieren. Sie können diese zum Beispiel mit einem 
+Zeichenprogramm wie Inkscape oder Paint erstellen.*
 
 
-Erstellen Sie auch ein Glossar. Orientieren Sie sich an folgendem [Template](../templates/glossar.html).
 
+#### Nichtfunktionale Anforderungen
 
-#### Nichtfunktionale Anforderungen und Abnahmekriterien 
+Nun überlegen Sie sich ob Sie spezielle nichtfunktionale Anforderungen haben. Beschreiben Sie diese im Dokument. 
 
-Nun überlegen Sie sich was die nichtfunktionalen Anforderungen an ihr Projekt sind und beschreiben diese im Dokument. Überlegen Sie sich auch sinnvolle Abnahmekriterien. Diese Kriterien sollen von uns überprüfbar sein und die Grundlage für die Entscheidung bilden,
+#### Abnahmekriterien
+Überlegen Sie sich sinnvolle Abnahmekriterien. Diese Kriterien sollen von uns überprüfbar sein und die Grundlage für die Entscheidung bilden,
 ob Sie das Projekt bestehen. 
 
-## Projektplan
+## Projektplan 
 
 Lesen Sie dieses [Dokument](https://adam.unibas.ch/goto_adam_file_840447_download.html) zum Thema Aufwandschätzung und überlegen Sie sich, welche der Techniken für Sie anwendbar sein könnte. 
 
 Erstellen Sie nun anhand der Anforderungen einen Projektplan. Auf dem Plan sollen alle Tasks, die Sie zur Durchführung des Projekts bearbeiten müssen aufgeführt sein. Für jede Task soll ersichtlich sein, wie lange diese dauert, wer diese bearbeitet und wann Sie mit der Bearbeitung beginnen 
-können. Wir empfehlen Ihnen dafür [Ganttproject](https://www.ganttproject.biz/) zu verwenden (da Ganttproject als kleinste Einheit Tage verwendet. Nehmen Sie einfach an, dass 1 Tag = 1 Stunde ist).
+können. Wir empfehlen Ihnen dafür [Ganttproject](https://www.ganttproject.biz/) zu verwenden (Ganttproject ist für grössere Projekte gedacht und verwendet als kleinste Planungseinheit Tage. Nehmen Sie an, dass 1 Tag = 1 Stunde ist).
+
 
 
 ## Abgabe: 
