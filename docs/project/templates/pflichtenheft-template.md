@@ -78,9 +78,6 @@ Abnahmekriterien legen fest, wie Anforderungen bei der Abnahme auf ihre Realisie
 * /A10/ Abnahmekriterium 1
 * /A20/ Abnahmekriterium 2
 
-## 7. Subsystemstruktur (optional)
-
-Hier wird eine Aufgliederung des zu entwickelnden Systems beschreiben, wenn die Entwicklung inkrementell (Kernsystem, Ausbaustufe 1, Ausbaustufe2 usw. ) erfolgen soll.
 
 # Anhang
 
