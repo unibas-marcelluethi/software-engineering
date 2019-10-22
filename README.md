@@ -57,10 +57,13 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 21. Oktober | Allfällige Änderungen an Projektthemen | Email | Siehe [Slides](docs/week4/slides/project-introduction.pdf) für Details
 | 22. Oktober | Praktische Übung Woche 5| Pull request | |
 | 22. Oktober | Theorieübung Woche 5| Adam | Nur wer nicht in der Vorlesung vom 09.10 war |
 | 23. Oktober | Selbsttest Woche 6| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
+| 28. Oktober | Abgabe Pflichtenheft | Pull Request | | 
+| 30. Oktober | Selbsttest Woche 7| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
+| 05. November | Abgabe Finale Version vom Pflichtenheft | Pull Request || 
+
 
 
 
