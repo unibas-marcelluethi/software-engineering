@@ -40,7 +40,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |    | UML (statische Diagramme)  | | 
 |[Woche 6](https://unibas-marcelluethi.github.io/software-engineering/week6/index.html)   | Anforderungsanalyse   | |
 |[Woche 7](https://unibas-marcelluethi.github.io/software-engineering/week7/index.html) | Softwarespezifikation  |  |
-|Woche 8 | Konstruktive und Deskriptive Softwarespezifikation  |  |
+|[Woche 8](https://unibas-marcelluethi.github.io/software-engineering/week8/index.html) | Konstruktive und Deskriptive Softwarespezifikation  |  |
 |    | UML (dynamische Diagramme)  | | 
 |Woche 9| Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
@@ -57,12 +57,10 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 22. Oktober | Praktische Übung Woche 5| Pull request | |
-| 22. Oktober | Theorieübung Woche 5| Adam | Nur wer nicht in der Vorlesung vom 09.10 war |
-| 23. Oktober | Selbsttest Woche 6| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
 | 28. Oktober | Abgabe Pflichtenheft | Pull Request | Achtung! Das ist der Montag. | 
 | 30. Oktober | Selbsttest Woche 7| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
 | 05. November | Abgabe Finale Version vom Pflichtenheft | Pull Request || 
+| 06. November | Selbsttest Woche 8| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
 
 
 
