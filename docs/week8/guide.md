@@ -9,7 +9,7 @@ Wir schauen uns wichtige klassische Spezifikationsmethoden an und lernen die wic
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 7. November *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 6. November *selbständig* zu erarbeiten.
 
 Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 - Spezifikationsmethoden in Deskriptive und Konstruktive Spezifikationsmethoden unterteilen können und die unterschiede zwischen diesen Methoden erklären können.
@@ -18,20 +18,20 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 - Die wichtigsten UML Spezifikationsmethoden lesen können
 
 ### Fortgeschrittene Lernziele
-Die folgenden Lernziele sollten während oder nach der Vorlesung vom 7. November erreicht werden. Die Studierenden sollten:
+Die folgenden Lernziele sollten während oder nach der Vorlesung vom 6. November erreicht werden. Die Studierenden sollten:
 - entscheiden können, welche Spezifikationsmethode eingesetzte werden soll um spezifische Aspekte eines Systems zu spezifizieren.
 - Einfache Softwaresysteme mithilfe von den verschieden Methoden spezifizieren können.
 
 
 ### Vorbereitung für die Vorlesungsstunde vom Mittwoch:
 
-* Schritt 1: Schauen Sie sich das Video "Konstruktive und Deskriptive Spezifikationen" an  ([Video](https://drive.switch.ch/index.php/s/gGMih5zZc7V9gzA), [Slides](./slides/constructive-descriptive-specs.html))
+* Schritt 1: Schauen Sie sich das Video "Konstruktive und Deskriptive Spezifikationen" an  ([Video](https://tube.switch.ch/videos/8cfd778c), [Slides](./slides/constructive-descriptive-specs.html))
 * Schritt 2: Lesen Sie den Artikel "Petrinetze"  ([Artikel](./articles/petrinets.html))
 * Schritt 3: Lesen Sie den Artikel "Logische Spezifikationen" ([Artikel](./articles/logic.html))
-* Schritt 4: Schauen Sie sich das Video "Spezifikationsmöglichkeiten mit der UML" an ([Video](https://drive.switch.ch/index.php/s/TnuF2C8R4Keqd6F), [Slides](./slides/uml.html)) 
-* Schritt 5: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_736508.html))
+* Schritt 4: Schauen Sie sich das Video "Spezifikationsmöglichkeiten mit der UML" an ([Video](https://tube.switch.ch/videos/3f87ef71), [Slides](./slides/uml.html)) 
+* Schritt 5: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_878806.html))
 
-*Achtung: Der Test muss spätestens bis Mittwoch 7. November, 08:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 6. November, 08:00 bearbeitet sein.*
   
 
 ### Übungen
@@ -39,5 +39,5 @@ Während der Vorlesungsstunde arbeiten Sie in Gruppen an diesem [Übungsblatt](.
 
 ### Feedback
 
-Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_700919.html) auf dem Adam workspace.
+Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern, indem Sie einen Pull Request auf Github machen. 
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_840439.html) auf dem Adam workspace.

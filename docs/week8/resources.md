@@ -3,7 +3,7 @@
 # Folien und Artikel
 
 * Konstruktive und Deskriptive Spezifikationen
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/gGMih5zZc7V9gzA),  
+    * Video:  [online](https://tube.switch.ch/videos/8cfd778c),  
     * Slides: [online](./slides/constructive-descriptive-specs.html), [Druckversion](./slides/constructive-descriptive-specs.html?print-pdf)
 
 * Petrinetze
@@ -13,7 +13,7 @@
     * Artikel: [online](./articles/logic.html)
 
 * Konstruktive und Deskriptive Spezifikationen
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/TnuF2C8R4Keqd6F),  
+    * Video:  [online](https://tube.switch.ch/videos/3f87ef71),  
     * Slides: [online](./slides/uml.html), [Druckversion](./slides/uml.html?print-pdf)
 
 
