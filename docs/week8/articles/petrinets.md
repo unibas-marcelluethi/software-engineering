@@ -58,7 +58,7 @@ $$
 
 In Worten: Die Transition ist aktiviert wenn für alle Input Stellen einer Transition mindestens soviele Markierungen vorhanden sind, wie durch die entsprechende Gewichten auf der Flussreaktion vorgegeben.
 In unserem einfachen Beispiel ist Transition $$t_1$$ also aktiviert und kann schalten.
-![petri-netz] (../../slides/images/petri-net-simple-initial.png)
+![petri-netz](../../slides/images/petri-net-simple-initial.png)
                   
 Nun schauen wir uns die Dynamik noch an einem etwas komplexeren Beispiel an:
 
@@ -78,7 +78,7 @@ Ein typisches Problem in Nebenläufigen Systemen sind Deadlocks, also Zustände,
 
 ### Komplexeres Beispiel
 
-Als letztes wollen wir uns noch ein konkretes Beispiel anschauen. Wir nehmen dazu wieder unsere Bibliotheksanwendung (Abbildung nach Pfleeger & Atlee, 4.41). In diesem Beispiel sehen wir Transitionen (z.B. Auseihe initiieren) zu denen es keine Inputstellen gibt. Diese sind gemäss Definition dann immer aktiviert, können also immer schalten.
+Als letztes wollen wir uns noch ein konkretes Beispiel anschauen. Wir nehmen dazu wieder unsere Bibliotheksanwendung (Abbildung nach Pfleeger & Atlee, 4.41). In diesem Beispiel sehen wir Transitionen (z.B. Ausleihe initiieren) zu denen es keine Inputstellen gibt. Diese sind gemäss Definition dann immer aktiviert, können also immer schalten.
 
 ![petri-netz Bibliothek](../../slides/images/petri-net-book.png)
 
