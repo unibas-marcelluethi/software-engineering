@@ -42,7 +42,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |[Woche 7](https://unibas-marcelluethi.github.io/software-engineering/week7/index.html) | Softwarespezifikation  |  |
 |[Woche 8](https://unibas-marcelluethi.github.io/software-engineering/week8/index.html) | Konstruktive und Deskriptive Softwarespezifikation  |  |
 |    | UML (dynamische Diagramme)  | | 
-|[Woche 9](https://unibas-marcelluethi.github.io/software-engineering/week8/index.html) | Verifikation (Überblick)  | |
+|[Woche 9](https://unibas-marcelluethi.github.io/software-engineering/week9/index.html) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
 |    | Code reviews | |  |
 | Woche 10 | Testen im Kleinen   | | 
