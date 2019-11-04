@@ -8,27 +8,27 @@
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 14. November *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 13. November *selbständig* zu erarbeiten.
 
 Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 - erklären können, weshalb wir Software immer verifizieren müssen
 - verschiedene Methoden zur Verifikation beschreiben können
 - die Rolle von Code-Reviews im Prozess einschätzen können
-- die Ziele und theoretischen Limitierungen von Softaretests erklären können.
+- die Ziele und theoretischen Limitierungen von Softwaretests erklären können.
 
 ### Vorbereitung für die Vorlesungsstunde vom Mittwoch:
 
-* Schritt 1: Schauen Sie sich das Video "Software Verifikation" an  ([Video](https://drive.switch.ch/index.php/s/TFf0xTrCmO6jKQO), [Slides](./slides/verification-overview.html))
+* Schritt 1: Schauen Sie sich das Video "Software Verifikation" an  ([Video](https://tube.switch.ch/videos/34477d35), [Slides](./slides/verification-overview.html))
 * Schritt 2: Lesen Sie den Artikel "Theoretische Grundlagen des Testens" ([Artikel](./articles/testing-foundations.html))
-* Schritt 3: Lesen Sie den Artikel "Effizient im Team mit Architektur und Code-Reviews"  ([Artikel](https://www.heise.de/developer/artikel/Effizient-im-Team-mit-Architektur-und-Code-Reviews-1855640.html?seite=all))
-* Schritt 4: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_740063.html))
+* Schritt 3: Lesen Sie den Artikel "Modern Code Review: A case study at Google"  ([Artikel](https://pub-tools-public-publication-data.storage.googleapis.com/pdf/80735342aebcbfc8af4878373f842c25323cb985.pdf))
+* Schritt 4: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_882561.html))
 
-*Achtung: Der Test muss spätestens bis Mittwoch 14. November, 08:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 13. November, 08:00 bearbeitet sein.*
   
 ### Übungen
 Während der Vorlesungs- und Übungsstunde werden wir in Gruppen die erarbeiteten Prototypen und Designdokumente diskutieren. 
 
 ### Feedback
 
-Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_700919.html) auf dem Adam workspace.
+Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern, indem Sie einen Pull Request auf Github machen. 
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_840439.html) auf dem Adam workspace.

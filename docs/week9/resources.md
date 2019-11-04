@@ -3,14 +3,14 @@
 # Folien und Artikel
 
 * Verifikation von Software
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/TFf0xTrCmO6jKQO),  
+    * Video:  [mp4](https://tube.switch.ch/videos/34477d35),  
     * Slides: [online](./slides/verification-overview.html), [Druckversion](./slides/verification-overview.html?print-pdf)
 
 * Theoretische Grundlagen des Testens
     * Artikel: [online](./articles/testing-foundations.html)
 
-* "Effizient im Team mit Architektur und Code-Reviews
-    * Artikel: [online](https://www.heise.de/developer/artikel/Effizient-im-Team-mit-Architektur-und-Code-Reviews-1855640.html?seite=all)
+* Code Review
+    * Artikel: [online](https://pub-tools-public-publication-data.storage.googleapis.com/pdf/80735342aebcbfc8af4878373f842c25323cb985.pdf)
 
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
