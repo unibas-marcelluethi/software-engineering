@@ -1,4 +1,4 @@
-# Bonusblatt: Cleanup
+# Bonusblatt: Eigener Formatierer beim Cleanup
 
 
 * Dieses Übungsblatt sollte bis am 12. November 2019 bearbeitet werden.  
