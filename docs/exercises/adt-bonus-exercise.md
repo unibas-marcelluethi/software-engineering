@@ -46,7 +46,7 @@ Im Package ```adts``` finden Sie 3 verschiedene Implementationen eines Stack als
     * Weshalb erscheint uns die OO Version des Stacks am nat&uuml;rlichsten?
     * Wo sehen Sie die Vorteile des OO Ansatzes gegen&uuml;ber dem funktionalen Ansatz? Wo hat der funktionale Ansatz Vorteile?
 
-## Aufgabe 2: Errorhandling 
+## Aufgabe 2: Error-handling 
 
 Sie finden im package ```errorhandling``` die Datei
 ```TextFileReader```. Die Methode ```readTextFile``` liest eine Textdatei und gibt den Inhalt als String zur&uuml;ck. Falls die Datei nicht gefunden wird, wird einen Exception geworfen. 
