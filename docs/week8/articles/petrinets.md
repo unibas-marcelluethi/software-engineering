@@ -78,7 +78,7 @@ Ein typisches Problem in Nebenläufigen Systemen sind Deadlocks, also Zustände,
 
 ### Komplexeres Beispiel
 
-Als letztes wollen wir uns noch ein konkretes Beispiel anschauen. Wir nehmen dazu wieder unsere Bibliotheksanwendung (Abbildung nach Pfleeger & Atlee, 4.41). In diesem Beispiel sehen wir Transitionen (z.B. Auseihe initiieren) zu denen es keine Inputstellen gibt. Diese sind gemäss Definition dann immer aktiviert, können also immer schalten.
+Als letztes wollen wir uns noch ein konkretes Beispiel anschauen. Wir nehmen dazu wieder unsere Bibliotheksanwendung (Abbildung nach Pfleeger & Atlee, 4.41). In diesem Beispiel sehen wir Transitionen (z.B. Ausleihe initiieren) zu denen es keine Inputstellen gibt. Diese sind gemäss Definition dann immer aktiviert, können also immer schalten.
 
 ![petri-netz Bibliothek](../../slides/images/petri-net-book.png)
 
