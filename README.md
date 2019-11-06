@@ -61,7 +61,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 | 05. November | Abgabe Finale Version vom Pflichtenheft | Pull Request || 
 | 06. November | Selbsttest Woche 8| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
 | 11. November | Abgabe Designdokumentation | Pull Request | Achtung, die Deadline ist ein Montag |
-| 12. November | Abgabe [Bonusblatt](https://unibas-marcelluethi.github.io/software-engineering/exercises/jabref-bonus-exercise.html) | Pull Request | Abgabe freiwillig |
+| 12. November | Abgabe [Bonusblatt](https://github.com/unibas-marcelluethi/software-engineering/blob/master/docs/exercises/jabref-bonus-exercise.md) | Pull Request | Abgabe freiwillig |
 | 13. November | Selbsttest Woche 9 | Adam || 
 | 19. November | Abgabe Finale Version vom Designdokument | Pull Request || 
 
