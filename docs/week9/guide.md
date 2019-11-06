@@ -27,6 +27,7 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
   
 ### Übungen
 Während der Vorlesungs- und Übungsstunde werden wir in Gruppen die erarbeiteten Prototypen und Designdokumente diskutieren. 
+Sie können an der Implementation weiterarbeiten oder auch bereits anfangen den [Testplan](../project/week10/exercises.html) zu schreiben. 
 
 ### Feedback
 
