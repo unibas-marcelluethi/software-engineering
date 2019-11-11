@@ -45,7 +45,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |[Woche 9](https://unibas-marcelluethi.github.io/software-engineering/week9/index.html) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
 |    | Code reviews | |  |
-| Woche 10 | Testen im Kleinen   | | 
+| [Woche 10](https://unibas-marcelluethi.github.io/software-engineering/week10/index.html) | Testen im Kleinen   | | 
 || Testen im Grossen ||
 | Woche 11    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
@@ -58,14 +58,12 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 05. November | Abgabe Finale Version vom Pflichtenheft | Pull Request || 
-| 06. November | Selbsttest Woche 8| Adam |  Muss bis vor der Vorlesung (08.00) gelöst werden |
 | 11. November | Abgabe Designdokumentation | Pull Request | Achtung, die Deadline ist ein Montag |
 | 12. November | Abgabe [Bonusblatt](https://github.com/unibas-marcelluethi/software-engineering/blob/master/docs/exercises/jabref-bonus-exercise.md) | Pull Request | Abgabe freiwillig |
 | 13. November | Selbsttest Woche 9 | Adam || 
 | 19. November | Abgabe Finale Version vom Designdokument | Pull Request || 
-
-
+| 20. November | Selbsttest Woche 10 | Adam || 
+| 25. November | Abgabe Testdokumentation | Pull Request | Achtung, die Deadline ist ein Montag |
 
 
 ## Literatur / Weiterführende Links

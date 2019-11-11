@@ -23,3 +23,9 @@ Die Funktionstest sollten anhand der funktionalen Anforderungen im Pflichtenheft
 ## Testcoverage 
 
 Finden Sie heraus wie hoch die Testabdeckung durch Unittests für Jabref insgesamt, und insbesondere für Ihre Erweiterung ist. Dafür können Sie das Tool [Jacoco](https://www.jacoco.org/jacoco/) verwenden. Dieses ist bei JabRef bereis als Gradle Plugin eingebunden. Bei Ganttproject kann es einfach hinzugefügt werden (siehe diese [Dokumentation](https://docs.gradle.org/current/userguide/jacoco_plugin.html])).
+
+#### Abgabe:
+
+Speichern Sie die Dokumente im docs Ordner von ihrem Respository ab.
+
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie marcelluethi, schoenja und ClemensBuechner als Reviewer an. Abgabetermin ist Montag, 25. November, 23:55. Die Besprechung mit den Betreuern findet am 27. November, gemäss diesem [Plan](https://adam.unibas.ch/goto_adam_file_875739_download.html) statt. Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 04. Dezember, 23.55.
