@@ -3,7 +3,7 @@
 # Folien und Artikel
 
 * Softwareprozesse
-    * Video:  [mp4](https://drive.switch.ch/index.php/s/EZquvJMIrvtYgBo),  
+    * Video:  [online](https://tube.switch.ch/videos/2313bd63),  
     * Slides: [online](./slides/software-process.html), [Druckversion](./slides/software-process.html?print-pdf)
 
 
