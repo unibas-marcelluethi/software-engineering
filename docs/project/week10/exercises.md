@@ -22,7 +22,7 @@ Die Funktionstest sollten anhand der funktionalen Anforderungen im Pflichtenheft
 
 ## Testcoverage 
 
-Finden Sie heraus wie hoch die Testabdeckung durch Unittests für Jabref insgesamt, und insbesondere für Ihre Erweiterung ist. Dafür können Sie das Tool [Jacoco](https://www.jacoco.org/jacoco/) verwenden. Dieses ist bei JabRef bereis als Gradle Plugin eingebunden. Bei Ganttproject kann es einfach hinzugefügt werden (siehe diese [Dokumentation](https://docs.gradle.org/current/userguide/jacoco_plugin.html])).
+Finden Sie heraus wie hoch die Testabdeckung durch Unittests für Jabref insgesamt, und insbesondere für Ihre Erweiterung ist. Dafür können Sie das Tool [Jacoco](https://www.jacoco.org/jacoco/) verwenden. Dieses ist bei JabRef bereis als Gradle Plugin eingebunden. Bei Ganttproject kann es einfach hinzugefügt werden (siehe diese [Dokumentation](https://docs.gradle.org/current/userguide/jacoco_plugin.html).
 
 #### Abgabe:
 
