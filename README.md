@@ -47,7 +47,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 |    | Code reviews | |  |
 | [Woche 10](https://unibas-marcelluethi.github.io/software-engineering/week10/index.html) | Testen im Kleinen   | | 
 || Testen im Grossen ||
-| [Woche 11](https://unibas-marcelluethi.github.io/software-engineering/week10/index.html)    | Softwareprozesse | |
+| [Woche 11](https://unibas-marcelluethi.github.io/software-engineering/week11/index.html)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
 | Woche 12| Scrum  | |
 |         | Continuous delivery | | 
