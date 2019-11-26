@@ -13,7 +13,7 @@ Der Testplan sollte so geschrieben sein, dass dieser für ein externes Testteam 
 
 Pro Gruppenmitglied müssen Sie mindestens 3 Modultests (Abschnitt 6.1) und 3 Funktionstests (Abschnitt 6.2) beschreiben. Falls Sie die Modultests als automatisierte Unit Tests implementiert haben, können Sie einfach die Namen der Unittest in die Tabelle einfügen. Ansonsten müssen Sie diese detailliert beschreiben.
 
-Überlegen Sie beim Erstellen der Modultests was die Äquivalenzklassen und Grenzfälle sind. Nutzen Sie auch Ursache-Wirkungsdiagramme um Testfälle zu identifizieren.
+Überlegen Sie beim Erstellen der Modultests, was die Äquivalenzklassen und Grenzfälle sind. Nutzen Sie auch Ursache-Wirkungsdiagramme um Testfälle zu identifizieren.
 
 Die Funktionstest sollten anhand der funktionalen Anforderungen im Pflichtenheft hergeleitet werden. 
 
@@ -22,7 +22,7 @@ Die Funktionstest sollten anhand der funktionalen Anforderungen im Pflichtenheft
 
 ## Testcoverage 
 
-Finden Sie heraus wie hoch die Testabdeckung durch Unittests für Jabref insgesamt, und insbesondere für Ihre Erweiterung ist. Dafür können Sie das Tool [Jacoco](https://www.jacoco.org/jacoco/) verwenden. Dieses ist bei JabRef bereis als Gradle Plugin eingebunden. Bei Ganttproject kann es einfach hinzugefügt werden (siehe diese [Dokumentation](https://docs.gradle.org/current/userguide/jacoco_plugin.html).
+Finden Sie heraus, wie hoch die Testabdeckung durch Unittests für Jabref insgesamt, und insbesondere für Ihre Erweiterung ist. Dafür können Sie das Tool [Jacoco](https://www.jacoco.org/jacoco/) verwenden. Dieses ist bei JabRef bereis als Gradle Plugin eingebunden. Bei Ganttproject kann es einfach hinzugefügt werden (mehr in dieser [Dokumentation](https://docs.gradle.org/current/userguide/jacoco_plugin.html)).
 
 #### Abgabe:
 
