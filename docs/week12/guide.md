@@ -7,7 +7,7 @@ und moderne Entwicklungswerkzeuge verbinden.
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 5. Dezember *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 4. Dezember *selbständig* zu erarbeiten.
 
 Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 - erklären können, was man unter dem Begriff Continuous Delivery versteht
@@ -19,16 +19,16 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 ### Vorbereitung:
 
 * Schritt 1: Schauen Sie sich das Video "Continuous Delivery" von Martin Fowler an  ([Artikel zum Video](articles/continuous-delivery.html))
-* Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_752218.html))
+* Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_893959.html))
 
-*Achtung: Der Test muss spätestens bis Mittwoch 5. Dezember, 12:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 4. Dezember, 08:00 bearbeitet sein.*
 
 
 ### Übungen
-Die Studierenden Arbeiten Selbständig in Gruppen an der Fertigstellung Ihres Softwareprojekts sowie der Präsentation.
+Die Studierenden arbeiten selbständig in Gruppen an der Fertigstellung Ihres Softwareprojekts sowie der Präsentation.
 Das Format der Präsentation ist auf diesem [Übungsblatt](../project/week12/exercises.html) beschrieben.
 
 ### Feedback
 
 Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_700919.html) auf dem Adam workspace.
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_tst_893959.html) auf dem Adam workspace.
