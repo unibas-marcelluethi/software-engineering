@@ -12,7 +12,7 @@ Wir gehen dabei in mehreren Schritten vor:
 | [Pflichtenheft/Projektplan erstellen](./week6/exercises.html) |  28. Okt| 30. Okt | 05. Nov | |
 | [Design und Prototyp erstellen](./week8/exercises.html) | 11. Nov| 13. Nov|  19. Nov| | 
 | [Testplan erstellen](./week10/exercises.html) | 25 . Nov |  27. Nov| 03. Dec| | 
-| [Abgabe Projekt und Abschlusspräsentation](./week12/exercises.html) |  | 11. Dec | 18. Dec|  
+| [Abgabe Projekt und Abschlusspräsentation](./week12/exercises.html) | - | 11. Dec | 16. Dec|  
 
 Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in obiger Tabelle. 
 
