@@ -3,7 +3,7 @@
 # Folien, Videos und Artikel
 
 * Design Patterns
-    * Video:  [mp4]((https://drive.switch.ch/index.php/s/F3h6gG4OMtYec4f),  
+    * Video:  [online](https://tube.switch.ch/videos/de1c4dcf)
     * Slides: [online](./slides/design-patterns.html), [Druckversion](./slides/design-patterns.html?print-pdf)
     * Artikel: [online](./articles/design-patterns.html)
 

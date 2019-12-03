@@ -52,17 +52,18 @@ Einen Überblick über die einzelnen Projektschritte finden Sie [hier](https://u
 | [Woche 12](https://unibas-marcelluethi.github.io/software-engineering/week12/index.html)| Scrum  | |
 |         | Continuous delivery | | 
 | Woche 13 | Projektpräsentationen | |
-| Woche 14          | Zusammenfassung / Prüfungsvorbesprechung | |
+| [Woche 14](https://unibas-marcelluethi.github.io/software-engineering/week13/index.html)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung | |
 
 ## Nächste Deadlines
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 27. November | Selbsttest Woche 11 | Adam || 
 | 04. Dezember | Abgabe Finale Version Testdokumentation | Pull Request | |
 | 04. November | Selbsttest Woche 12 | Adam || 
 | 11. Dezember | Schlusspräsentation projekt | Vortrag im Plenum| | 
 | 16. Dezember | Finale Abgabe  | Pull request | | 
+| 18. November | Selbsttest Woche 13-14 | Adam || 
+
 ## Literatur / Weiterführende Links
 
 #### Empfohlene Lehrbücher 
