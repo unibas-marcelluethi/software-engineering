@@ -15,8 +15,8 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 
 ### Vorbereitung:
 
-* Schritt 1: Schauen Sie sich das Video "Design Patterns an" [Video](https://tube.switch.ch/videos/de1c4dcf), [Slides](./slides/design-patterns.html)
-* Schritt 2: Lesen Sie den Artikel "Weitere wichtige Design Patterns" [Artikel](./articles/design-patterns.html)
+* Schritt 1: Schauen Sie sich das Video "Design Patterns an" ([Video](https://tube.switch.ch/videos/de1c4dcf), [Slides](./slides/design-patterns.html))
+* Schritt 2: Lesen Sie den Artikel "Weitere wichtige Design Patterns" ([Artikel](./articles/design-patterns.html))
 * Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_896681.html))
 
 *Achtung: Der Test muss spätestens bis Mittwoch 18. Dezember, 8:00 bearbeitet sein.*
