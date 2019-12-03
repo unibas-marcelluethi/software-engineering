@@ -1,15 +1,17 @@
 
 # Weitere wichtige Design Patterns
 
-*In diesem Artikel schauen wir uns einige weitere wichtige Design Patterns an, die Sie wahrscheinlich in der Praxis immer wieder antreffen werden, und die auch in Ganttproject eingesetzt wurden. 
-Es handelt sich aber nur um eine kleine Auswahl von der grossen Anzahl von Patterns, die in der Praxis eingesetzt werden. Im Verlauf Ihrer Karriere werden Sie wahrscheinlich noch viele weitere Patterns kennenlernen.
-Da der Katalog der relevanten Patterns sich laufend ändert, gehört das Erlernen der aktuell relevanten Patterns zum Berufsalltag von Softwareingenieuren.*
+*In diesem Artikel schauen wir uns einige weitere wichtige Design Patterns an, die Sie wahrscheinlich in der Praxis immer wieder antreffen werden. 
+Moderne Anwendungen wie JabRef setzen eine Vielzahl von solchen Patterns ein und wir können auch hier nur eine kleine Auswahl geben.*
+
+Im Verlauf Ihrer Karriere werden Sie wahrscheinlich noch viele weitere Patterns kennenlernen.
+Da der Katalog der relevanten Patterns sich laufend ändert, gehört das Erlernen der aktuell relevanten Patterns zum Berufsalltag von Softwareingenieuren.
 
 ## Singleton Pattern
 
 Das allereinfachste Designpattern ist das *Singleton Pattern*. Es wird angewendet, wenn wir sicher stellen wollen, dass nur eine Instanz von einer Klasse erstellt wird. Das *Singleton* Pattern ist also ein weiteres Beispiel eines Erzeugungsmusters.
 
-Beispiele von Designproblemen wo der Einsatz eines Singletons Sinn macht gibt es viele: So sollte in einem Betriebssystem immer nur ein Window-Management-System aktiv sein, das alle Fenster verwaltet. Beim Drucken laufen alle Aufträge über genau einen *Druckerspooler*. Oder wir wollen, dass wir genau über ein Objekt Zugriff auf die Konfiguration eines Systems haben. 
+Beispiele von Designproblemen wo der Einsatz eines Singletons Sinn macht gibt es Viele: So sollte in einem Betriebssystem immer nur ein Window-Management-System aktiv sein, das alle Fenster verwaltet. Beim Drucken laufen alle Aufträge über genau einen *Druckerspooler*. Oder wir wollen, dass wir genau über ein Objekt Zugriff auf die Konfiguration eines Systems haben. 
 
 #### Klassen- und Sequenzdiagramm
 
@@ -46,6 +48,11 @@ Eine Referenz eines Singleton Objekts wird, wie bereits besprochen, durch den Au
 Singleton singletonInstance = Singleton.getInstance()
 ```
 
+#### Beispielcode in Jabref
+
+In Jabref wird das Singleton pattern zum Beispiel in der Klasse ```org.jabref.logic.logging.LogMessages``` eingesetzt. Die Umsetzung ist klassisch: Die einzige Instanz eines Objekts vom Typ ```LogMessages``` kann über die statische Methode ```getInstance``` erlangt werden. 
+
+
 
 ## Builder Pattern
 
@@ -80,50 +87,62 @@ Es gibt verschiedene Varianten des Builder Patterns. Im allgemeinsten Fall wird 
 
 <img src="../../slides/images/patterns-builder-seq.png" class="plain" />
 
-#### Beispiel (adaptiert aus Ganttproject)
+#### Beispiel aus Jabref
 
-Das Builder Pattern wird in Ganttproject an verschiedenen Stellen eingesetzt. Wir zeigen hier die wichtigsten Teile vom ```TaskBuilder```. In der in Ganttproject verwendeten Variante wird kein Director eingesetzt, sondern die *create* Methoden (also ```withId```, ```withDuration```, ...) werden direkt vom Nutzer der Klasse aufgerufen.
-
-
- ```java
-abstract class TaskBuilder {                        
-    Integer myId;
-    TimeDuration myDuration;
-    ...
-
-    public TaskBuilder withId(int id) {
-        myId = id;  return this;
-    }                    
-    public TaskBuilder withDuration(TimeDuration duration) {
-        myDuration = duration;   return this;
-    }
-    ...
-    public abstract Task build();
-    }                        
-}
-``` 
+Das Builder Pattern wird in JabRef zum Beispiel beim Erstellen von BibTex Einträgen in der Klasse ```org.jabref.model.entry.BibEntryTypeBuilder``` eingesetzt.  In der in Jabref verwendeten Variante, wird kein 
+Director eingesetzt, sondern die *create* Methoden werden direkt vom Benutzer aufgerufen. Die *create* Methoden heissen hier ```withType```, ```withImportantFields``` und ```withRequiredFields```. Um das Objekt zu bauen, wird dann die Methode ```build``` aufgerufen.  
 
 ```java
-class TaskBuilderImpl extends TaskBuilder {
-    @override public Task build() {                                
-        if (myId == null || myTaskMap.getTask(myId) != null) {
-            myId = getAndIncrementId();
-        }                                
-        if (myDuration != null) {
-            duration = myDuration;
-        } else {
-            duration = (myEndDate == null) ? createLength(defaultTimeUnit(), 1.0f) 
-                : createLength(defaultTimeUnit(), myStartDate, myEndDate);
-        }
-        ...
+
+public class BibEntryTypeBuilder {
+    private EntryType type = StandardEntryType.Misc;
+    private Set<BibField> fields = new HashSet<>();
+    private Set<OrFields> requiredFields = new HashSet<>();
+
+    public BibEntryTypeBuilder withType(EntryType type) {
+        this.type = type;
+        return this;
     }
-}
+
+
+    public BibEntryTypeBuilder withImportantFields(Collection<Field> newFields) {
+        this.fields = Streams.concat(fields.stream(), newFields.stream().map(field -> new BibField(field, FieldPriority.IMPORTANT)))
+                            .collect(Collectors.toSet());
+        return this;
+    }
+
+    
+    public BibEntryTypeBuilder withRequiredFields(Set<OrFields> requiredFields) {
+        this.requiredFields = requiredFields;
+        return this;
+    }
+
+    ...
+
+    public BibEntryType build() {
+        Stream<BibField> requiredAsImportant = requiredFields.stream()
+                                                             .flatMap(TreeSet::stream)
+                                                             .map(field -> new BibField(field, FieldPriority.IMPORTANT));
+        Set<BibField> allFields = Stream.concat(fields.stream(), requiredAsImportant).collect(Collectors.toSet());
+        return new BibEntryType(type, allFields, requiredFields);
+    }
 ```
 
-Nutzung:
+
+
+Eine Beispielanwendung findet man zum Beispiel in der Klasse ```org.jabref.model.entry.BibEntryTypesManager```. Der Aufruf sieht dann wie folgt aus:
 ```java
-Task newTask = new TaskBuilderImp().withId(1).withDuration(10).build();
-```              
+
+... 
+
+BibEntryTypeBuilder entryTypeBuilder = new BibEntryTypeBuilder()
+                .withType(type)
+                .withImportantFields(FieldFactory.parseFieldList(optFields))
+                .withRequiredFields(FieldFactory.parseOrFieldsList(reqFields));
+entryTypeBuilder.build();
+
+... 
+```
 
 ## Facade Pattern
  
@@ -148,26 +167,38 @@ Dieses Verhalten ist auch nochmals im Sequenzdiagramm dargestellt.
 <img src="../../slides/images/patterns-facade-sequence.png" class="plain" />
 
 
-#### Beispiel aus Ganttproject
+#### Beispiel aus Jabref
 
-In Ganttproject wird das Facade Pattern unter anderem für die Ansteuerung der UI genutzt. Die Klasse ```UIFacade``` stellt eine einfach zu benutzende Schnittstelle zur Verfügung, um 
-mit der UI zu interagieren.
+Ein Beispiel des Facade Pattern in Jabref ist der ```org.jabref.logic.citationstyle.CitationStyleGenerator```. Diese Klasse implementiert keine eigene Funktionalität, sondern stellt nur 
+verschiedene Methoden zur Verfügung, um dieselbe Funktionalität (das generieren von Zitationsstile) komfortabel anzusprechen. 
 
 ```java
-class UIFacade {
-    private final JFrame myMainFrame;
+public class CitationStyleGenerator {
+
+    // Interen Klasse die die Funktionalität übernimmt
+    private static final CSLAdapter CSL_ADAPTER = new CSLAdapter();
+
     ...
-    private final GanttStatusBar myStatusBar
 
-    public void setStatusText(String text) {
-        myStatusBar.setFirstText(text, 2000);
+    protected static String generateCitation(BibEntry entry, CitationStyle style) {
+        return generateCitation(entry, style.getSource(), CitationStyleOutputFormat.HTML);
     }
 
-    public void setWorkbenchTitle(String title) {
-        myMainFrame.setTitle(title);
+    protected static String generateCitation(BibEntry entry, String style) {
+        return generateCitation(entry, style, CitationStyleOutputFormat.HTML);
     }
-    
+
+    public static String generateCitation(BibEntry entry, String style, CitationStyleOutputFormat outputFormat) {
+        return generateCitations(Collections.singletonList(entry), style, outputFormat).stream().findFirst().orElse("");
+    }
+
+    public static List<String> generateCitations(List<BibEntry> bibEntries, String style, CitationStyleOutputFormat outputFormat) {
+        ...
+            return CSL_ADAPTER.makeBibliography(bibEntries, style, outputFormat);
+        ...
+    }
 }
+
  ```
 
 
@@ -197,48 +228,41 @@ der Zustand des Objekts verändert hat. Die Observer können dann den neuen Zust
 
 <img src="../../slides/images/patterns-observer-sequence.png" class="plain" />
 
-#### Beispiel aus Ganttproject
+#### Beispiel aus Jabref
 
-Ein Beispiel, wo dieses Pattern in Ganttproject eingesetzt ist, ist die Klasse ```RoleManager```. Hier können sich Objekte via der Methode ```addRoleListener``` als Observer eintragen und 
-werden dann über entsprechende Änderungen in der Rolle informiert (Methode ```fireRolesChanges```).
+Ein Beispiel, wo dieses Pattern in Jabref eingesetzt ist, ist der Eventbus. Das Folgende Beispiel aus dem JabRef Wiki illustriert das Prinzip. Der Observer wird hier Listener genannt.
 
 ```java
-public interface RoleManager {
+public class Listener {
+   
+   private int value = 0;
+   
+   @Subscribe
+   public void listen(int value) {
+      this.value = value;
+   }
 
-    public interface Listener extends EventListener {
-        public void rolesChanged(RoleEvent e);
-    }
-    
-    private final List<Listener> myListeners  = new ArrayList<Listener>();
-    public void addRoleListener(Listener listener) { myListeners.add(listener);}
-                                    
-    void fireRolesChanged(RoleSet changedRoleSet) {
-        for (Listener l : myListeners) {
-            l.rolesChanged(new RoleEvent(this, changedRoleSet));
-        }
-    }
-    
-    public Role createRole(String name, int persistentID) {
-        ...
-        myRoleManager.fireRolesChanged(this);
-    }
+   public int getValue() {
+      return this.value;
+   }
 }
 ```
-Ein Beispiel eines Observers ist in diesem Fall ```ResourceTreeTable```. Diese Klasse registriert einen Observer (hier die anonyme Klasse ```RoleManager.Listener```), welche 
-dann in der Methode ```rolesChanged``` die entsprechenden Aktionen definiert. 
+
+Der Listener wird beim Eventbus registriert. Wenn ein Event mittels der Methode ```post``` an den Eventbus gesendet wird, werden alle registrierten Listeners entsprechend 
+informiert.
+
 ```java
-public class ResourceTreeTable extends GPTreeTableBase {
-    ...
-    public ResourceTreeTable(IGanttProject project, ...) {
-        myRoleManager = project.getRoleManager();
-        myRoleManager.addRoleListener(new RoleManager.Listener() {
-        
-            @Override public void rolesChanged(RoleEvent e) {
-                setEditor(getTableHeaderUiFacade().findColumnByID(
-                ResourceDefaultColumn.ROLE.getStub().getID()));
-            }
-        });
-    }
-...
+public class Main {
+   private static EventBus eventBus = new EventBus();
+   
+   public static void main(String[] args) {
+      Main main = new Main();
+      Listener listener = new Listener();
+      eventBus.register(listener);
+      eventBus.post(1); // 1 represents the passed event
+
+      // Output should be 1
+      System.out.println(listener.getValue());
+   }
 }
 ``` 
