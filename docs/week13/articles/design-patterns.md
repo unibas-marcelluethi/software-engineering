@@ -202,7 +202,7 @@ public class CitationStyleGenerator {
  ```
 
 
- ## Observer Pattern
+## Observer Pattern
 
 Das letzte Muster, das wir uns anschauen, ist ein Beispiel eines 
 Verhaltensmusters. Das *Observer Pattern* wird häufig in GUI Bibliotheken, wie zum Beispiels *Java Swing* eingesetzt. 
