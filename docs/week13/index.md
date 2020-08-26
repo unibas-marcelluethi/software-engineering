@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 13
+---
+
 # Woche 13: Design Patterns
 
 # Studium

@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 3
+---
+
 # Woche 3: Prinzipien des Software Engineerings
 
 # Studium

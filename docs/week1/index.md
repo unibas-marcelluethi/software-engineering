@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 1
+---
+
 # Woche 1: Einführung
 
 

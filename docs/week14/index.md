@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 14
+---
+
 # Woche 14: Zusammenfassung
 
 *In dieser Woche werden wir uns nochmals die ganze Vorlesung im Zusammenhang anschauen.*

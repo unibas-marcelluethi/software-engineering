@@ -1,3 +1,9 @@
+---
+layout: default
+title : Woche 1
+---
+
+
 # Woche 2: Eigenschaften von Software
 
 ## Vorbereitung und Studium Woche 2

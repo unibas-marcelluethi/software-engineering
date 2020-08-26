@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 12
+---
+
 # Woche 12: Ein Blick in die Praxis - Agile Softwareentwicklung und Continuous Delivery
 
 # Studium

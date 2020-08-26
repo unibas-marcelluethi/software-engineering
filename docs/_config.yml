@@ -1,7 +1,6 @@
 theme: jekyll-theme-slate
 
-title: Software Engineering
-description: ' ' 
+title: Software Engineering - HS 2020
 
 includes_dir     : ./_includes
 layouts_dir:  ./_layouts

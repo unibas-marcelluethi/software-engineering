@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 4
+---
+
 # Woche 4: Modulstruktur und Moduldesign
 
 # Studium

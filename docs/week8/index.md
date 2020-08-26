@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 8
+---
+
 # Woche 8: Konstruktive und Deskriptive Spezifikationen
 
 # Studium

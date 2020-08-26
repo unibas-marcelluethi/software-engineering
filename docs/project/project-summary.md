@@ -1,3 +1,8 @@
+---
+layout: default
+title : Übersicht
+---
+
 # Projektübersicht
 
 Nachdem Sie sich als Gruppe ein Projekt ausgesucht haben, sollen Sie dies strukturiert realisieren. 
@@ -9,10 +14,10 @@ Wir gehen dabei in mehreren Schritten vor:
 
 | Aufgabe |  Abgabe | Besprechung | Finale Version | Bemerkung |
 |---------|--------|---------------------|---------|-----------|
-| [Pflichtenheft/Projektplan erstellen](./week6/exercises.html) |  28. Okt| 30. Okt | 05. Nov | |
-| [Design und Prototyp erstellen](./week8/exercises.html) | 11. Nov| 13. Nov|  19. Nov| | 
-| [Testplan erstellen](./week10/exercises.html) | 25 . Nov |  27. Nov| 03. Dec| | 
-| [Abgabe Projekt und Abschlusspräsentation](./week12/exercises.html) | - | 11. Dec | 16. Dec|  
+| [Pflichtenheft/Projektplan erstellen](underconstruction) |  |  | | |
+| [Design und Prototyp erstellen](underconstruction) || || | 
+| [Testplan erstellen](underconstruction) |  | | | | 
+| [Abgabe Projekt und Abschlusspräsentation](underconstruction) |  | ||  
 
 Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in obiger Tabelle. 
 
@@ -24,7 +29,7 @@ Die Gruppeneinteilung und Besprechungstermine werden zu gegebener Zeit bekanntge
 #### Github Repository
 Benutzen sie ein bestehendes Repository von ihrer Gruppe. Geben sie allen Gruppenmitgliedern entsprechende Zugriffsrechte (via Settings->Collaborators).
 
-Kreieren sie ausgehend vom master branch einen branch `develop`. Für jede Abgabe (und jedes Feature) kreieren sie ausgehend vom branch `develop` einen neuen Featurebranch. Der Pull Request hat jeweils den `develop` branch als Ziel. Damit haben sie am Ende alle projektrelevanten Änderungen im `develop` branch. 
+<!--Kreieren sie ausgehend vom master branch einen branch `develop`. Für jede Abgabe (und jedes Feature) kreieren sie ausgehend vom branch `develop` einen neuen Featurebranch. Der Pull Request hat jeweils den `develop` branch als Ziel. Damit haben sie am Ende alle projektrelevanten Änderungen im `develop` branch. -->
 
 #### Dokumentation
 Wir führen die Dokumentation als Teil vom Projekt und speichern diese im selben Repository. 

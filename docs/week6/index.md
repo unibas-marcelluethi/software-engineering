@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 6
+---
+
 # Woche 6: Anforderungsanalyse
 
 # Studium
