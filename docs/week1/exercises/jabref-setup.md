@@ -20,9 +20,16 @@ In dieser ersten Übung werden Sie alle wichtigen Tools und die Entwicklungsumge
 
 
 ## Benutzeraccount auf Github
-Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Github Benutzernamen sowie Ihre Uni Basel E-Mail  Adresse via Mail an [marcel.luethi@unibas.ch](mailto:marcel.luethi@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository geben können.  
+Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Github Benutzernamen sowie Ihre Uni Basel E-Mail  Adresse via Mail an [marcel.luethi@unibas.ch](mailto:marcel.luethi@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository und den Gitter Chatroom geben können.  
 
 *Auf Github ist dieser Benutzername sehr prominent und wird auch in der Projektkommunikation verwendet. Achten Sie deshalb bitte darauf, dass Sie einen Benutzernamen wählen, der professionelles Arbeiten zulässt. Gute Beispiele sind: ```andreasmeier``` oder ```andreas``` oder ```ameier```. Beispiele von ungeeigneten Namen sind ```coderking```, ```cookiemonster``` oder ```skaterboy```.*
+
+
+### Gitter Chat
+
+Nachdem Sie uns Ihren Github Benutzernamen gemeldet haben, können wir Sie zu unserem [Chat](https://gitter.im/unibas-10915-01/software-engineering) hinzufügen. Hier können Sie Ihre Fragen stellen. Unsere Tutoren werden diesen im Auge behalten und Ihnen so schnell als möglich versuchen zu helfen.
+Natürlich freuen wir uns, wenn Sie sich auch gegenseitig helfen. 
+
 
 ## Installation der Werkzeuge
 
@@ -40,6 +47,15 @@ sollte die Version von Git ausgeben, also z.B.
 ```bash
 > git version 2.18.0.windows.1
 ```
+
+Als nächstes müssen Sie git noch mit ihrem Namen und Ihrer E-Mail Adressekonfigurieren. Öffnen Sie dazu ein Terminal und geben Sie folgendes ein:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+```
+
+Nutzen Sie hierzu die E-Mail Adresse, die Sie auch für die Erzeugung vom Github Account verwendet haben. 
 
 ### Installieren von Java und JavaFX
 
@@ -87,7 +103,7 @@ Nachdem wir nun alle Werkzeuge installiert haben, müssen wir noch das JabRef Pr
 ### Forken des Github Repositories
 Im ersten Teil dieses Kurses arbeiten wir nicht mit dem offiziellen JabRef Code repository, sondern mit einem privaten Fork. Damit sind ihre Änderungen und unsere Bemerkungen für die Öffentlichkeit nicht zugänglich.  
 Damit Sie auf unseren Fork von JabRef zugreifen können, müssen wir Ihnen Zugriff auf dieses Repository geben. Sie können überprüfen ob Sie Zugriff haben indem Sie auf [https://github.com/unibas-marcelluethi/jabref](https://github.com/unibas-marcelluethi/jabref) gehen. 
-Falls Sie bereits Zugriff haben, sollte die Seite wie folgt aussehen:
+Falls Sie bereits Zugriff haben, sollte die Seite etwa wie folgt aussehen:
 ![image](images/github-jabref.png)
  
 
@@ -139,8 +155,10 @@ Lesen Sie die Erklärung durch und führen Sie alle Einstellungen wie angegeben 
 Wie bereits in der [Development Documentation] angesprochen, können wir JabRef sowohl via IntelliJ direkt, oder aus IntelliJ via Gradle starten. Die erste Variante ist etwas komfortabler und schneller, kann aber manchmal zu Problemen führen, wenn Dateien nicht korrekt von Gradle generiert werden. 
 Deshalb werden wir hier nur die zweite Variante beschreiben, wo wir Gradle direkt verwenden. Dazu öffnen Sie das Gradle Fenster und starten die Gradle Task *jabref [run]* indem Sie diese Doppelklicken (siehe Screenshot).
 ![Gradle-run](images/idea-run-gradle.png)
-Wenn alles funktioniert hat, sollte nun wieder JabRef erfolgreich gestartet werden.
 
+Wenn alles funktioniert hat, sollte nun JabRef erfolgreich aus der IDE gestartet werden. 
+
+Sie können uns Ihren Erfolg gerne im Chat mitteilen. Falls Sie Lust haben, können Sie nun auch gerne ihren Kolleginnen oder Kollegen, die noch mit der Installation am kämpfen sind, versuchen zu helfen.
 
 
 
