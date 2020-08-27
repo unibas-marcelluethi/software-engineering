@@ -12,3 +12,7 @@
 *.cb
 *.cb2
 ~*
+*.lock
+docs/_site
+vendor
+**/.sass-cache/
