@@ -16,6 +16,11 @@ Tutor: Günes Aydin (<guenes.aydin@unibas.ch>)
 
 Tutor: Joey Zgraggen (<joey.zgraggen@unibas.ch>)
 
+Github: [https://github.com/unibas-marcelluethi/software-engineering](https://github.com/unibas-marcelluethi/software-engineering)
+
+[![Gitter](https://badges.gitter.im/unibas-10915-01/software-engineering.svg)](https://gitter.im/unibas-10915-01/software-engineering?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+
 ## Kursbeschreibung
 
 Die Vorlesung gibt eine erste Einführung in das Software Engineering. 
