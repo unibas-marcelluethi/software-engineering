@@ -20,7 +20,7 @@ In dieser ersten Übung werden Sie alle wichtigen Tools und die Entwicklungsumge
 
 
 ## Benutzeraccount auf Github
-Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Github Benutzernamen sowie Ihre Uni Basel E-Mail  Adresse via Mail an [marcel.luethi@unibas.ch](mailto:marcel.luethi@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository und den Gitter Chatroom geben können.  
+Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Github Benutzernamen sowie Ihre Uni Basel E-Mail  Adresse via Mail an [guenes.aydin@unibas.ch](mailto:guenes.aydin@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository und den Gitter Chatroom geben können.  
 
 *Auf Github ist dieser Benutzername sehr prominent und wird auch in der Projektkommunikation verwendet. Achten Sie deshalb bitte darauf, dass Sie einen Benutzernamen wählen, der professionelles Arbeiten zulässt. Gute Beispiele sind: ```andreasmeier``` oder ```andreas``` oder ```ameier```. Beispiele von ungeeigneten Namen sind ```coderking```, ```cookiemonster``` oder ```skaterboy```.*
 
@@ -48,7 +48,8 @@ sollte die Version von Git ausgeben, also z.B.
 > git version 2.18.0.windows.1
 ```
 
-Als nächstes müssen Sie git noch mit ihrem Namen und Ihrer E-Mail Adressekonfigurieren. Öffnen Sie dazu ein Terminal und geben Sie folgendes ein:
+#### Git Konfiguration
+Als nächstes müssen Sie git noch mit ihrem Namen und Ihrer E-Mail Adresse konfigurieren. Öffnen Sie dazu ein Terminal und geben Sie folgendes ein:
 
 ```bash
 git config --global user.name "Your Name"
@@ -98,7 +99,7 @@ Sie können die Entwicklungsumgebung starten. Eine grafische Oberfläche sollte 
 
 ## JabRef
 
-Nachdem wir nun alle Werkzeuge installiert haben, müssen wir noch das JabRef Projekt herunterladen. Wir machen das via Github.
+Nachdem wir nun alle Werkzeuge installiert haben, müssen wir noch das JabRef Projekt herunterladen. Dies geschieht via Github.
 
 ### Forken des Github Repositories
 Im ersten Teil dieses Kurses arbeiten wir nicht mit dem offiziellen JabRef Code repository, sondern mit einem privaten Fork. Damit sind ihre Änderungen und unsere Bemerkungen für die Öffentlichkeit nicht zugänglich.  
@@ -107,7 +108,7 @@ Falls Sie bereits Zugriff haben, sollte die Seite etwa wie folgt aussehen:
 ![image](images/github-jabref.png)
  
 
-Nun erstellen Sie, ausgehend von unserem privaten Fork,  ihren eigenen Privaten fork. Dazu klicken Sie oben rechts auf den "Fork" Button klicken. Nach erfolgreichem Fork landen Sie nun auf Ihrer persönlichen Kopie des Projekts auf Github, mit der Sie von nun an arbeiten werden. 
+Nun erstellen Sie, ausgehend von unserem privaten Fork,  ihren eigenen privaten fork. Dazu klicken Sie oben rechts auf den "Fork" Button klicken. Nach erfolgreichem Fork landen Sie nun auf Ihrer persönlichen Kopie des Projekts auf Github, mit der Sie von nun an arbeiten werden. 
 
 
 ### Klonen des Projekts
@@ -147,18 +148,21 @@ können Sie das Projekt dann starten.
 
 ## Bearbeiten des Projekts in der IDE
 
-Von nun an werden Sie hautsächlich mit der IDE arbeiten. Wie sie JabRef einrichten, ist detailliert in der JabRef [Development Documentatation](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace) erklärt.
-Lesen Sie die Erklärung durch und führen Sie alle Einstellungen wie angegeben durch. Aktivieren Sie auch Checkstyle, wie im Abschnitt *Using JabRef's code style* beschrieben. Damit wird sichergestellt, dass ihr Code jeweils nach den Projektvorgaben formatiert ist. 
+Von nun an werden Sie hautsächlich mit der IDE arbeiten. Wie sie JabRef einrichten, ist detailliert in der JabRef [Development Documentatation](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace#configure-your-ide) erklärt.
+Lesen Sie die Erklärung durch und führen Sie alle Einstellungen wie angegeben durch.  Den Abschnitt *Using IntelliJ's internal build system* können Sie überspringen, da dies nicht zuverlässig funktioniert und wir das Projekt deshalb immer via Gradle bauen uns ausführen werden.
+Aktivieren Sie aber Checkstyle, wie im Abschnitt *Using JabRef's code style* beschrieben. Damit wird sichergestellt, dass ihr Code jeweils nach den Projektvorgaben formatiert ist. 
+
 
 ### Ausführen des Projekts aus der IDE
 
-Wie bereits in der [Development Documentation] angesprochen, können wir JabRef sowohl via IntelliJ direkt, oder aus IntelliJ via Gradle starten. Die erste Variante ist etwas komfortabler und schneller, kann aber manchmal zu Problemen führen, wenn Dateien nicht korrekt von Gradle generiert werden. 
-Deshalb werden wir hier nur die zweite Variante beschreiben, wo wir Gradle direkt verwenden. Dazu öffnen Sie das Gradle Fenster und starten die Gradle Task *jabref [run]* indem Sie diese Doppelklicken (siehe Screenshot).
+Um JabRef aus der IDE zu starten öffnen Sie das Gradle Fenster und starten die Gradle Task *jabref [run]* indem Sie diese Doppelklicken (siehe Screenshot).
 ![Gradle-run](images/idea-run-gradle.png)
 
 Wenn alles funktioniert hat, sollte nun JabRef erfolgreich aus der IDE gestartet werden. 
 
-Sie können uns Ihren Erfolg gerne im Chat mitteilen. Falls Sie Lust haben, können Sie nun auch gerne ihren Kolleginnen oder Kollegen, die noch mit der Installation am kämpfen sind, versuchen zu helfen.
+### Alles erfolgreich installiert?
+Sie können uns Ihre Erfolg gerne im Chat mitteilen. Falls Sie Lust haben, können Sie nun auch gerne ihren Kolleginnen oder Kollegen, die noch mit der Installation am kämpfen sind, versuchen zu helfen.
+
 
 
 
