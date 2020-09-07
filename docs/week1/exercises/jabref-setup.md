@@ -113,7 +113,7 @@ Nun erstellen Sie, ausgehend von unserem privaten Fork,  ihren eigenen privaten 
 
 ### Klonen des Projekts
 
-Damit Sie an dem Projekt arbeiten können müssen Sie das Repository noch auf Ihren eigenen Computer bringen (d.h. das Repository "klonen"). Drücken Sie den grünen Button "Clone or Download" und kopieren Sie die URL.
+Damit Sie an dem Projekt arbeiten können müssen Sie das Repository noch auf Ihren eigenen Computer bringen (d.h. das Repository "klonen"). Drücken Sie den grünen Button mit Namen "Code" und kopieren Sie die URL.
  
 Öffnen Sie eine Konsole, wechseln Sie in ihr gewünschtes Arbeitsverzeichnis und geben Sie folgendes ein:
 
@@ -161,7 +161,7 @@ Um JabRef aus der IDE zu starten öffnen Sie das Gradle Fenster und starten die 
 Wenn alles funktioniert hat, sollte nun JabRef erfolgreich aus der IDE gestartet werden. 
 
 ### Alles erfolgreich installiert?
-Sie können uns Ihre Erfolg gerne im Chat mitteilen. Falls Sie Lust haben, können Sie nun auch gerne ihren Kolleginnen oder Kollegen, die noch mit der Installation am kämpfen sind, versuchen zu helfen.
+Sie können uns Ihre Erfolge gerne im Chat mitteilen. Falls Sie Lust haben, können Sie nun auch gerne ihren Kolleginnen oder Kollegen, die noch mit der Installation am kämpfen sind, versuchen zu helfen.
 
 
 
