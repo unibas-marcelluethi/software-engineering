@@ -1,3 +1,10 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
 # Qualitätsmerkmale von Software
 
 *Wir haben gesehen, dass wir die Qualität der Software hauptsächlich während der Entwicklungsphase erreichen können. 

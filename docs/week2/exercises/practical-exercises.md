@@ -1,10 +1,14 @@
+---
+layout: default
+title : Woche 1
+---
+
 # Praktische Übung 2: Erste Codeänderungen und Pull Requests
 
 ## Administratives
 
-* Vorbesprechung, eine kurze Einführung in Git/Github und Hilfestellungen zu den Aufgaben gibt es in der Übungsstunde vom 25. September 2019
-* Dieses Übungsblatt sollte bis am 1. Oktober 2019 bearbeitet werden.  
-* Abgabe via Pull Request bis spätestens 1. Oktober, 23.59.
+* Vorbesprechung, eine kurze Einführung in Git/Github und Hilfestellungen zu den Aufgaben gibt es in der Übungsstunde vom 23. September 2020
+* Dieses Übungsblatt muss bis spätestens am 29 September 2020 via Pull Request abgegeben werden. 
 
 ## Einführung
 
@@ -17,12 +21,6 @@ Sie werden zudem auch ihre ersten kleinen Änderungen in Jabref vornehmen. Dabei
 *Bemerkung:* Obwohl es viele grafische Tools gibt die das Arbeiten mit *Git* unterstützen, nutzen wir in unseren Übungen die Kommandozeile. Wir empfehlen auch Ihnen am Anfang nur mit der Kommandozeile zu arbeiten. Sie sehen besser was passiert und es ist einfacher bei Problemen eine Antwort im Internet zu finden. 
 
 
-## Benutzername und Email
-Damit Sie mit git einen Commit erstellen können, müssen Sie zuerst Ihren Namen und Email konfigurieren. Dies können Sie mit den folgenden Befehlen machen.
-```
-git config user.name "Ihr Name"
-git config user.email "Ihre Universitäts-Email"
-```
 
 ## Upstream Repository hinzufügen
 
@@ -70,37 +68,36 @@ From https://github.com/unibas-marcelluethi/jabref
  * branch                master     -> FETCH_HEAD
 Already up to date.
 ```
-Falls es neue Commits gegeben hat, sieht die Ausgabe wie folgt aus:
+Falls es neue Commits gegeben hat, könnte die Ausgabe etwa so aussehen (die spezifischen Commits können sich unterscheiden, je nachdem wann Sie dies ausführen).
 ```
 From https://github.com/unibas-marcelluethi/jabref
- * branch                master     -> FETCH_HEAD
-Updating 84436d795..89ebaf764
+ * branch            master     -> FETCH_HEAD
+Updating 5c9edc9..fedf4c5
 Fast-forward
- .gitignore                                         |  5 ++--
- .idea/runConfigurations/JabRef_Main.xml            | 13 +++++++++
- build.gradle                                       | 31 +++++++++++++++-------
- .../jabref/gui/copyfiles/CopyFilesDialogView.java  | 21 +++++++--------
- .../copyfiles/CopyFilesResultItemViewModel.java    |  9 ++++---
- .../jabref/gui/fieldeditors/LinkedFilesEditor.java |  7 +++--
- .../org/jabref/gui/groups/GroupNodeViewModel.java  |  3 +--
- src/main/java/org/jabref/gui/icon/IconTheme.java   |  5 ++--
- .../jabref/gui/util/ViewModelListCellFactory.java  | 20 ++++++--------
- .../jabref/logic/groups/DefaultGroupsFactory.java  |  6 ++---
- src/main/resources/csl-styles                      |  2 +-
- .../MainArchitectureTestsWithArchUnit.java         |  7 ++++-
- 12 files changed, 75 insertions(+), 54 deletions(-)
-```
+ .github/workflows/automerge.yml                   |  48 +-
+ .github/workflows/check-links.yaml                |  44 +-
+ .github/workflows/check-outdated-dependencies.yml |  52 +--
+ .github/workflows/cleanup_pr.yml                  |  72 +--
+ .github/workflows/deployment.yml                  | 398 ++++++++--------
+ .github/workflows/refresh-csl-subtrees.yml        |  86 ++--
+ .github/workflows/refresh-journal-lists.yml       | 118 ++---
+ .github/workflows/snap.yml                        |  80 ++--
+ .github/workflows/stale.yml                       |  36 +-
+ .github/workflows/tests-fetchers.yml              | 114 ++---
+ .github/workflows/tests.yml                       | 526 +++++++++++-----------
+ 11 files changed, 787 insertions(+), 787 deletions(-)
+ ```
 
-Die Zeile ```Updating 84436d795..89ebaf764``` gibt ihnen die Commit Ids der ersten und letzten Änderung an (Achtung, je nachdem wann Sie diese Übung machen, können die Commits und die entsprechenden Ids bei Ihnen unterschiedlich sein).
+Die Zeile ```Updating 5c9edc9..fedf4c5``` gibt ihnen die Commit Ids der ersten und letzten Änderung an (Achtung, je nachdem wann Sie diese Übung machen, können die Commits und die entsprechenden Ids bei Ihnen unterschiedlich sein).
 Um zu sehen welche Änderungen mit diesem Pull vorgenommen wurden, nutzen sie folgende *Git* Kommandos:
 ```
-git log 84436d795..89ebaf764
+git log  5c9edc9..fedf4c5
 ```
 oder
 ```
-git diff 84436d795..89ebaf764
+git diff  5c9edc9..fedf4c5
 ```
-Das Erste gibt Ihnen alle Commit Messages der neuen Änderungen aus. Das Letzere zeigt die "Diffs" der Dateien an.   
+Das Erste gibt Ihnen alle Commit Messages der neuen Änderungen aus. Das letzere zeigt die "Diffs" der Dateien an.   
 
 In jedem Fall ist Ihr (lokaler) master Branch nun wieder auf dem aktuellen Stand und Sie können damit beginnen Ihre erste Änderung zu implementieren. 
 Damit Sie diese Änderung nicht nur auf Ihrem Computer, sondern auch im Masterbranch des *origin* Repositories auf Github haben, müssen Sie diese durch 
@@ -111,7 +108,7 @@ synchronisieren.
 
 ## Einen Featurebranch erstellen
 
-Bevor Sie irgendeine Änderung am Projekt vornehmen, sollten Sie immer mit git einen neuen Feature Branch erstellen. Damit sind immer alle 
+Bevor Sie irgendeine Änderung am Projekt vornehmen, sollten Sie immer mit git einen neuen Featurebranch erstellen. Damit sind immer alle 
 Änderungen, die zu einem Feature gehören, klar getrennt. Das gibt Ihnen die Möglichkeit an mehreren unterschiedlichen Aspekten des Projekts parallel zu arbeiten, 
 ohne dass sich die jeweiligen Änderungen beeinflussen. Ausserdem werden so Ihre Änderungen auch logisch strukturiert, was es später einfacher macht die *Git History*, also den Verlauf der Änderungen, zu verstehen. 
 
@@ -144,9 +141,11 @@ Ihre Aufgabe ist es nun, erste Änderungen an Jabref vorzunehmen.
 #### Änderung 1: 
 
 
-* Fügen Sie die Zeile "IHR_NAME added this to the about box" In den ```About Dialog``` von JabRef hinzu. Sie finden diesen Dialog im Hilfe Menu ("Menu: Help -> About JabRef"). 
+* In der About box ("Menu: Help -> About JabRef") gibt es einen Link mit dem Namen "Engagieren Sie sich" oder "Get Involved", je nachdem ob bei Ihnen JabRef auf Deutsch oder English läuft. Ändern Sie den Link so, 
+dass dieser neu auf die Vorlesungsseite (https://unibas-marcelluethi/github.com/software-engineering) zeigt. 
 
-*Tip:* Verwenden Sie die Suchfunktionen *Search Everywhere* (```Shift Shift```) oder *Find in Path* (```Ctrl-Shift-F```) um die entsprechenden Stellen im Code zu finden.  
+*Tipp 1:* Verwenden Sie die Suchfunktionen *Search Everywhere* (```Shift Shift```) oder *Find in Path* (```Ctrl-Shift-F```) um die entsprechenden Stellen im Code zu finden.  
+*Tipp 2:* Neben den java Dateien, müssen Sie auch die Dateien mit der Endung *.fxml anschauen. Diese enthält das eigentliche Layout der Elemente in der Dialogbox. 
 
 Wenn Sie die Änderung erfolgreich implementiert und getestet haben, können Sie diese committen. Dies machen Sie mit dem Befehl:
 ```
@@ -156,7 +155,7 @@ Bitte schreiben Sie eine sinnvolle Commit-Message. Einige Hinweise wie gute Comm
 
 
 #### Änderung 2
-* Ersetzen Sie das Twitter Icon in der Toolbar durch ein Symbol ihrer Wahl. Beim drücken dieses Icons soll anstelle von Twitter die Vorlesungsseite (https://github.com/unibas-marcelluethi/software-engineering) aufgemacht werden.
+* Fügen Sie in die Toolbar zusätzlich zum Twitter, Facebook und Github Icon auch ein Icon hinzu, welches beim drücken auf unseren Gitter Chat springt. 
 
 Wenn Sie die Änderung erfolgreich implementiert und getestet haben, können Sie auch diese committen. Achten Sie auch hier auf eine sinnvolle Commit-Message. 
 
@@ -175,22 +174,22 @@ welcher den Maintainer des *upstream* Repositories darüber informiert, dass man
 
 Dazu zeigen Sie sich zuerst alle verfügbaren Branches an: 
 
-![](../../exercises/images/github-branches.png)
+![](images/jabref-branches.png)
  
 
 Wählen Sie beim Branch uebung_2 ```New pull request```.
 
-![image](../../exercises/images/github-branch-view.png)
+![image](images/jabref-new-pr.png)
 
 Auf der folgenden Seite können sie das Zielrepository auswählen. Hier würden Sie normalerweise das Upstream repository wählen. 
 
 *WICHTIG! Da wir in diesem Projekt nicht alle Ihre Änderungen im upstream Repository wollen, wählen Sie hier stattdessen Ihr eigenes Repository (also ```YOUR_USERNAME/jabref```).*
 
-![image](../../exercises/images/github-pr-repo.png)
+![image](images/jabref-target-repo.png) 
 
-Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie die Reviewers angeben. Als Reviewers geben sie das Team ```sweng-assistants-hs19``` oder direkt ```schoenja``` und ```clemensBuechner``` an. 
+Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie die Reviewers angeben. Als Reviewers geben Sie ```joeyzgraggen``` und ```guenesaydin``` an. 
 
-![image](../../exercises/images/github-pr.png)
+![image](images/jabref-pr-reviewers.png) 
 
 Danach schliessen Sie den Pull Request ab indem Sie ```Create Pull Request``` wählen.
  

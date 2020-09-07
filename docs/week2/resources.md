@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 2
+---
+
 # Woche 2: Eigenschaften von Software
 
 ## Folien und Artikel

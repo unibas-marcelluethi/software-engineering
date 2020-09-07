@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 1
+---
 # Übungsaufgaben Woche 2:
 
 ## 1. Beziehung von Software Engineering zu anderen Fachgebieten in der Informatik
@@ -8,7 +12,7 @@ Beschreiben Sie kurz wie Fortschritte in einem Gebiet das Software Engineering b
 Wie ist ihre Einschätzung. Würden Sie die Fortschritte eher in Richtung Accidental Complexity oder Essential Complexity sehen.
 
 Literatur: 
-* Ghezzi et al., Kapitel 1.5 [Scan auf Adam workspace: ](https://adam.unibas.ch/goto_adam_file_840450_download.html)
+* Ghezzi et al., Kapitel 1.5 [Scan auf Adam workspace: ](https://adam.unibas.ch/goto_adam_file_1019348_download.html)
 * Fred Brooks: No Silver Bullet. ([Paper](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf))
 
 ## 2. Qualitätsmerkmale: 
