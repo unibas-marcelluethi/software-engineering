@@ -110,6 +110,16 @@ Falls Sie bereits Zugriff haben, sollte die Seite etwa wie folgt aussehen:
 
 Nun erstellen Sie, ausgehend von unserem privaten Fork,  ihren eigenen privaten fork. Dazu klicken Sie oben rechts auf den "Fork" Button klicken. Nach erfolgreichem Fork landen Sie nun auf Ihrer persönlichen Kopie des Projekts auf Github, mit der Sie von nun an arbeiten werden. 
 
+### Zugriffsrechte für Assistenten
+
+Damit unsere Assistenten Ihre Abgaben anschauen können, müssen Sie diesen noch Zugriffsrechte auf ihr neues Repository geben. Dafür gehen Sie auf *Settings* und dann *Manage access*:
+![github-manage-access](images/github-manage-access.png)
+
+Klicken Sie dann auf *Invite Teams or people* und fügen Sie ```guenesaydin``` und ```joeyzgraggen``` hinzu.
+![github-manage-access](images/github-manage-access-invite.png)
+
+Als Rolle im nachfolgenden Dialog wählen Sie *Write*.
+![github-manage-access](images/github-manage-access-role.png)
 
 ### Klonen des Projekts
 
