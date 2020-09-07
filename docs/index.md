@@ -69,7 +69,9 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| | | | | 
+| 22.9.2020 23:55 | [Theorie Selbsttest](https://adam.unibas.ch/goto_adam_tst_1018565.html)| Adam  | | 
+| 23.9.2020 vor Übungsstunde| [JabRef-Setup fertig](week1/exercises/jabref-setup)| Keine Abgabe | | 
+
 
 
 ## Literatur / Weiterführende Links
