@@ -86,6 +86,11 @@ contains com.sun.javafx.scene.control.skin.modena
 contains com.sun.javafx.scene.control.skin.resources
 ```
 
+Überprüfen Sie auch nochmals, dass wirklich Java 14 aufgerufen wird, indem Sie das Kommando 
+```bash
+java -version
+``` 
+eingeben. Falls noch eine ältere Version von Java aufgerufen wird, müssen Sie die Umgebungsvariablen ```PATH``` und ```JAVA_HOME``` entsprechend anpassen. 
 
 ### IntelliJ Idea
 
