@@ -61,6 +61,9 @@ Nutzen Sie hierzu die E-Mail Adresse, die Sie auch für die Erzeugung vom Github
 ### Installieren von Java und JavaFX
 
 Für die Entwicklung von JabRef benötigt Java in der Version 14 sowie JavaFX. Wir empfehlen Ihnen, die [Liberica OpenJDK](https://bell-sw.com/pages/downloads/) version zu installieren, welches das OpenJDK zusammen mit JavaFX bündelt. 
+
+*Wichtig: Damit JavaFX mitinstalliert wird müssen Sie im Auswahlmenu die Version **Full JDK** wählen.*
+
 Um zu überprüfen ob java als auch JavaFX korrekt auf Ihrem System verfügbar ist, können Sie folgendes Kommando eingeben:
 ```
  java -d javafx.controls
