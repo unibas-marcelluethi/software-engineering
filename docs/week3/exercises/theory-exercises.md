@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Übungsaufgaben Woche 3:
 
 ## 1. Beziehungen zwischen den Prinzipien

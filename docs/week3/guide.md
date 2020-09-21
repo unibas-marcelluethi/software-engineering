@@ -1,9 +1,14 @@
+---
+layout: default
+title : Woche 3
+---
+
 # Anleitung Woche 3: Prinzipien des Software Engineerings
 
 ## Übersicht
 
 In dieser Woche beschäftigen wir uns mit den fundamentalen Prinzipien in der Software Entwicklung. Wir werden sieben Prinzipien kennenlernen, 
-die uns durch den ganzen Kurs begleiten werden. Viele dieser Prinzipien sind bereits seit den 80er Jahren bekannt, haben ihre Gültigkeit und Wichtigkeit bis heute behalten. 
+die uns durch den ganzen Kurs begleiten werden. Viele dieser Prinzipien sind bereits seit den 80er Jahren bekannt, haben ihre Gültigkeit und Wichtigkeit bis heute erhalten. 
 
 ## Lernziele
 
@@ -23,9 +28,9 @@ Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* d
 
 Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 2. Oktober erreicht werden. Die Studierenden sollten
 
-- Beschreiben können, wie sich die verschiedenen Prinzipien gegenseitig beeinflussen und verstärken
-- Die Prinzipien in konkreten Beispielen umsetzen können
-- Ein System in sinnvolle Module aufteilen können und  betreffend Bindung und Kopplung analysieren können.
+- beschreiben können, wie sich die verschiedenen Prinzipien gegenseitig beeinflussen und verstärken
+- die Prinzipien in konkreten Beispielen umsetzen können
+- ein System in sinnvolle Module aufteilen können und  betreffend Bindung und Kopplung analysieren können.
 
 
 
@@ -40,20 +45,19 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 3: Schauen Sie sich das Video "Einführung in Software Design" an. ([Video](https://tube.switch.ch/videos/f184e7aa), [Slides](./slides/design-objectives.html))
 * Schritt 4: Lesen Sie den Artikel "Modularität". ([Artikel](./articles/modularity.html))
 * Schritt 5: Lesen Sie den Artikel "Software Aging" von David L. Parnas. ([Paper](http://www.inf.ed.ac.uk/teaching/courses/seoc/2004_2005/resources/bullet11.pdf))
-* Schritt 6: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_841902.html). 
+* Schritt 6: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_1038470.html). 
 
-*Achtung: Der Test muss spätestens bis Mittwoch 2. Oktober, 08:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 30. September, 08:00 bearbeitet sein.*
   
 
 ### Übungen
-Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](./exercises/theory-exercises.html). 
-Schreiben Sie ihre Antworten auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_840442.html) ein .
 
-Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten.
+* Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](underconstruction).  Falls Sie nicht an der Vorlesung teilnehmen, schreiben Sie Ihre Antworten auf und reichesn Sie diese via [Adam](https://adam.unibas.ch/goto_adam_exc_1019320.html) ein.
+* In der Übungsstunde arbeiten wir an diesen [praktischen Übungen](underconstruction).
 
-*Abgabetermin ist Dienstag, 8. Oktober, 23.55*
+*Abgabetermin ist Dienstag, 6. Oktober, 23.55*
 
 ### Feedback
 
 Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_840439.html) auf dem Adam-Workspace.
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_1019343.html) auf dem Adam-Workspace.

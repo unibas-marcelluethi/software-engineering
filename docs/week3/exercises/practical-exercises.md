@@ -1,9 +1,13 @@
+---
+layout: default
+title : Woche 3
+---
 # Übung 3: Gradle und Code Reading
 
 ## Administratives
 
-* Dieses Übungsblatt sollte bis am 8. Oktober 2019 bearbeitet werden.  
-* Abgabe via Pull Request bis spätestens 8. Oktober, 23.59.
+* Dieses Übungsblatt sollte bis am 6. Oktober 2020 bearbeitet werden.  
+* Abgabe via Pull Request bis spätestens 6. Oktober, 23.59.
 
 
 ## Einführung
@@ -82,7 +86,7 @@ Fügen Sie das Plugin [Stats Gradle Plugin](https://github.com/aalmiray/stats-gr
 der Github Seite vom [Stats Gradle Plugin](https://github.com/aalmiray/stats-gradle-plugin).
 Nachdem das Plugin korrekt hinzugefügt wurde, sollten Sie durch folgenden Befehl eine Statistik über die Anzahl Dateien und Codezeilen ausgeben können:
 ```
-gradlew stats
+./gradlew stats
 ```
 
 
@@ -127,6 +131,6 @@ Die Abgabe der Übung erfolgt durch push vom Übungs-Branch:
 ```
 git push origin uebung3
 ``` 
-und entsprechenden Pull Request. Geben Sie bitte das Team ```sweng-assistants-hs19``` als Reviewer an. 
- (Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
+und entsprechenden Pull Request. Als Reviewers geben Sie ```joeyzgraggen``` und ```guenesaydin``` an. 
+(Details dazu finden sie in [&Uuml;bungsblatt 2](week3/practical-exercises)).
  

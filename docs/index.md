@@ -37,17 +37,17 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 ## Programm 
 
 |  | Themen | Bemerkungen |
-| ------| ----- | --------- |
+|------| ----- | --------- |
 |[Woche 1](week1/index) | Einführung / Administratives  | |
 |    | Was ist Software engineering  | |
 |[Woche 2](week2/index) | Kurze Geschichte des Software Engineerings  | |
 |    | Eigenschaften von Software ||
 |    |  Software Qualitätsmerkmale | | 
-|[Woche 3](./underconstruction) | Prinzipien des Software engineerings   | |
+|[Woche 3](./week3/index) | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
 |[Woche 4](./underconstruction) | Modulstruktur  | |
 |    | Modul Design  | |
-|[Woche 5](./underconstruction) | OO Design |
+|[Woche 5](./underconstruction) | OO Design | |
 |    | UML (statische Diagramme)  | | 
 |[Woche 6](underconstruction)   | Anforderungsanalyse   | |
 |[Woche 7](underconstruction) | Softwarespezifikation  |  |
@@ -55,7 +55,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | UML (dynamische Diagramme)  | | 
 |[Woche 9](underconstruction) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
-|    | Code reviews | |  |
+|    | Code reviews | |  
 | [Woche 10](underconstruction) | Testen im Kleinen   | | 
 || Testen im Grossen ||
 | [Woche 11](underconstruction)    | Softwareprozesse | |
@@ -69,8 +69,11 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 23.9.2020 vor 08.00 | [Theorie Selbsttest](https://adam.unibas.ch/goto_adam_tst_1018565.html)| Adam  | | 
+| 23.9.2020 vor 08.00 | [Theorie Selbsttest Woche 2](https://adam.unibas.ch/goto_adam_tst_1018565.html)| Adam  | | 
 | 23.9.2020 vor Übungsstunde| [JabRef-Setup fertig](week1/exercises/jabref-setup)| Keine Abgabe | | 
+| 29.9.2020 23.59| [Übungsblatt Theorie Woche 2](https://unibas-marcelluethi.github.io/software-engineering/week2/exercises/theory-exercises.html)| Adam | | 
+| 29.9.2020 23.59| [Übungsblatt Praxis Woche 2](https://unibas-marcelluethi.github.io/software-engineering/week2/exercises/practical-exercises.html)| Pull Request auf Github | | 
+| 30.9.2020 vor 08.00| [Theorie Selbsttest Woche 3](https://adam.unibas.ch/goto_adam_tst_1038470.html)| Adam | | 
 
 
 

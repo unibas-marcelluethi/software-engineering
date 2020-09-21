@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Modularität
             
 *Wir haben gesehen, dass das Prinzip der Modularität eine zentrale Rolle im Software Engineering einnimmt. In diesem Artikel wollen wir einige allgemeine

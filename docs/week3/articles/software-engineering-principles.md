@@ -1,10 +1,14 @@
+---
+layout: default
+---
+
 # Prinzipien des Software Engineerings
 
 
-*Wir haben bereits die ersten der 7 wichtigen Grundprinzipien genauer angeschaut, nämlich *Teilen der Verantwortlichkeiten*, *Modularisierung* und *Abstraktion*. 
-In diesem Artikel werden wir die weiteren Grundprinzipien genauer anschauen.*
+*Wir haben bereits die ersten der 7 wichtigen Grundprinzipien genauer angeschaut, nämlich* Teilen der Verantwortlichkeiten, Modularisierung *und* Abstraktion. 
+*In diesem Artikel werden wir die weiteren Grundprinzipien genauer anschauen.*
 
-## Genauigkeit und formales Vorgehen. 
+## Genauigkeit und formales Vorgehen 
 
 Softwareentwicklung ist ein kreativer Prozess. Trotzdem ist es unerlässlich, dass wir dabei ingenieursmässig, also systematisch, exakt und wenn möglich auch formal arbeiten. 
 Nur durch dieses systematisch und exakte Arbeiten wird es möglich, zuverlässig Software von hoher Qualität zu entwickeln. 
@@ -29,7 +33,7 @@ interface Stream<T> extends BaseStream<T, Stream<T> > {
 }
 ```
 
-## Veränderungen Voraussehen
+## Veränderungen voraussehen
 
 
 Software ist andauernden Veränderungen ausgesetzt. Häufige Beispiele für Änderungen sind, dass Fehler behoben werden müssen, neue Anforderungen gestellt werden, oder sich die Umgebung (z.B. das Betriebssystem) ändert. Deshalb haben wir auch Wartbarkeit als eines der wichtigen Qualitätskriterien definiert.  
@@ -78,7 +82,7 @@ Wir sehen jedoch auch, dass die Verallgemeinerung nicht ganz gratis kommt. Die T
 Häufig dauert auch die Entwicklung einer allgemeinen Version deutlich länger. Es ist also immer gut abzuwägen, wie allgemein man werden will. 
 
 
-## Schrittweises Entwickeln
+## Schrittweises entwickeln
 
 Anstatt dass wir ein Problem auf einmal lösen, können wir versuchen die Lösung inkrementell zu entwickeln. 
 Die erste Lösung ist dabei vielleicht nur eine grobe Approximation der endgültigen Lösung. In weiteren Schritten wird diese Approximation dann 
