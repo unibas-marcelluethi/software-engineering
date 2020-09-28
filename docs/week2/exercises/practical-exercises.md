@@ -197,5 +197,5 @@ Damit werden die von Ihnen angegebenen Reviewers darüber informiert, dass Sie g
 
 In unserem Fall dient der Pull Request als Abgabe und erlaubt uns Ihre Änderungen komfortabel durchzuschauen. Sie erhalten das Feedback dann direkt via Github. 
 
-*Beachten Sie: Es ist wichtig, dass Sie diese Pull Requests gewissenhaft machen und den richtigen Zielbranch angeben. Falls versehentlich ein solcher Pull Request vom Maintainer des Originalprojekts übernommen wird, kann dies zu erheblichem Chaos im Repository führen. Wir werden dies auch bei der Bewertung der Übung berücksichtigt.* 
+*Beachten Sie: Es ist wichtig, dass Sie diese Pull Requests gewissenhaft machen und den richtigen Zielbranch angeben. Falls versehentlich ein solcher Pull Request vom Maintainer des Originalprojekts übernommen wird, kann dies zu erheblichem Chaos im Repository führen. Wir werden dies auch bei der Bewertung der Übung berücksichtigen.* 
  
