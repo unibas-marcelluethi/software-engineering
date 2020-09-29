@@ -10,16 +10,16 @@ layout: default
 
 ## Genauigkeit und formales Vorgehen 
 
-Softwareentwicklung ist ein kreativer Prozess. Trotzdem ist es unerlässlich, dass wir dabei ingenieursmässig, also systematisch, exakt und wenn möglich auch formal arbeiten. 
+Softwareentwicklung ist ein kreativer Prozess. Trotzdem ist es unerlässlich, dass wir dabei ingenieurmässig, also systematisch, exakt und wenn möglich auch formal arbeiten. 
 Nur durch dieses systematisch und exakte Arbeiten wird es möglich, zuverlässig Software von hoher Qualität zu entwickeln. 
 Exaktes und auch formales Arbeiten steht keineswegs im Kontrast zu kreativem arbeiten. Im Gegenteil: Klare Regeln und klar definierte Komponenten können eine wichtige 
-Voraussetzung für das erschaffen von kreativen Werken sein. So würde niemand auf die Idee kommen, Johann Sebastian Bach als nicht kreativ zu bezeichnen, weil er sich 
+Voraussetzung für das Erschaffen von kreativen Werken sein. So würde niemand auf die Idee kommen, Johann Sebastian Bach als nicht kreativ zu bezeichnen, weil er sich 
 an die starren Regeln der Musik und Harmonielehre gehalten hat. 
 
 Es gibt ganz verschiedene Stufen von Exaktheit. Die höchste Form ist dabei das (mathematisch) formale Vorgehen. Obwohl im Bereich Softwareengineering viel Forschungsarbeit im Gebiet der formalen Verifikation geleistet wurden, werden die wenigsten Softwareingenieure in ihrer Karriere ein Programm komplett formal spezifizieren können. Genaues und systematisches Arbeiten ist aber trotzdem während dem gesamten Entwicklungsprozess gefragt. So ist es zum Beispiel wichtig, dass ein Programm systematisch getestet wird, oder, dass der Entwicklungsprozess exakt und systematisch dokumentiert wird. 
 
-Ein Bereich, in dem sogar auch in der Praxis formal gearbeitet wird ist die Spezifikation von Typsignaturen in Code.
-So sagt uns zum Beispiel dieser Code
+Ein Bereich, in dem sogar auch in der Praxis formal gearbeitet wird, ist die Spezifikation von Typsignaturen in Code.
+So sagt uns zum Beispiel dieser Code,
 ```java
 int foo(String bar) { ??? }
 ```
@@ -40,7 +40,7 @@ Software ist andauernden Veränderungen ausgesetzt. Häufige Beispiele für Änd
 
 
 Die Fähigkeit von Software sich Veränderungen anpassen zu können passiert nicht aus Zufall. Zur Designzeit muss vorausgesehen werden, welche Aspekte einer Software sich wahrscheinlich ändern werden. Das Design kann dann so angepasst werden, dass diese Veränderungen einfach durchgeführt werden können. 
-Als Beispiel nehmen wir die Programmiersprache Java. Wir wissen, dass sich Betriebssystemfunktionalitäten laufend ändern. Bei Java ist das so gelöst, dass Java Programme nicht direkt auf dem Betriebssystem laufen, sondern auf einer Virtuellen Maschine. Ändert sich nun die funktionalität vom Betriebssystem, muss nur die Virtuelle Maschine angepasst werden. Die Java Software kann jedoch unverändert weiterlaufen. 
+Als Beispiel nehmen wir die Programmiersprache Java. Wir wissen, dass sich Betriebssystemfunktionalitäten laufend ändern. Bei Java ist das so gelöst, dass Java Programme nicht direkt auf dem Betriebssystem laufen, sondern auf einer Virtuellen Maschine. Ändert sich nun die Funktionalität vom Betriebssystem, muss nur die Virtuelle Maschine angepasst werden. Die Java Software kann jedoch unverändert weiterlaufen. 
   
 
 ## Allgemeinheit
