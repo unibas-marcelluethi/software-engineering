@@ -52,7 +52,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 
 ### Übungen
 
-* Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](underconstruction).  Falls Sie nicht an der Vorlesung teilnehmen, schreiben Sie Ihre Antworten auf und reichen Sie diese via [Adam](https://adam.unibas.ch/goto_adam_exc_1019320.html) ein.
+* Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](exercises/theory-exercises).  Falls Sie nicht an der Vorlesung teilnehmen, schreiben Sie Ihre Antworten auf und reichen Sie diese via [Adam](https://adam.unibas.ch/goto_adam_exc_1019320.html) ein.
 * In der Übungsstunde arbeiten wir an diesen [praktischen Übungen](exercises/practical-exercises).
 
 *Abgabetermin ist Dienstag, 6. Oktober, 23.55*
