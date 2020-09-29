@@ -1,3 +1,9 @@
+---
+layout: default
+title : Woche 4
+---
+
+
 # Anleitung Woche 4: Modulstruktur und Moduldesign
 
 ## Übersicht
@@ -15,7 +21,7 @@ Wir schauen uns auch konkrete Beispiele von Modulen an.
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 09. Oktober *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 07. Oktober *selbständig* zu erarbeiten.
 
  Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
  - Die Modulstruktur formal hinschreiben können und anhand der Struktur Eigenschaften (Hierarchie, Ebenen) bestimmen können.
@@ -28,7 +34,7 @@ Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* d
  
 ### Fortgeschrittene Lernziele
 
-Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 09. Oktober erreicht werden. Nach dieser Woche sollten die Studierenden:
+Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 07. Oktober erreicht werden. Nach dieser Woche sollten die Studierenden:
 
 - Unterschiede in der Abstraktion "uses" and "is_component_of" verstehen und erklären können
 - Designs anhand von Kriterien wie Fan-In, Hierarchien, etc. beurteilen können
@@ -48,20 +54,20 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 5: Schauen Sie sich das Video "Moduldesign an" ([Video](https://tube.switch.ch/videos/63479caf)), [Slides](./slides/module-design.html))
 * Schritt 6: Schauen Sie sich das Video "Kategorien von Modulen" an. ([Video](https://tube.switch.ch/videos/7d6cdc90), [Slides](./slides/module-categories.html))
 * Schritt 7: Lesen Sie den Artikel "Abstrakte Datentypen und Objektorientierte Programmierung " ([Artikel](./articles/module-adts-oo.html))
-* Schritt 8: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_842414.html).  
+* Schritt 8: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_1047457.html).  
 
-*Achtung: Der Test muss spätestens bis Mittwoch 09. Oktober, 08:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 07. Oktober, 08:00 bearbeitet sein.*
   
 
 ### Übungen
-Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](./exercises/theory-exercises.html). 
-Falls Sie bei der Vorlesung nicht anwesend waren, schreiben Sie ihre Antworten bitte auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_840442.html) ein.
+Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](../underconstruction). 
+Falls Sie bei der Vorlesung nicht anwesend waren, schreiben Sie ihre Antworten bitte auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_1019320.html) ein.
 
-Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten.
+Vergessen Sie auch nicht die [praktischen Übungen](../underconstruction) zu bearbeiten.
 
-*Abgabetermin ist Dienstag, 15. Oktober, 23.55*
+*Abgabetermin ist Dienstag, 13. Oktober, 23.55*
 
 ### Feedback
 
 Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_840439.html) auf dem Adam-Workspace.
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_1030287.html) auf dem Adam-Workspace.

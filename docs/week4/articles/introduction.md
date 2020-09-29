@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 4
+---
+
 # Einführung Woche 4
 
 In dieser Woche beschäftigen wir uns mit Modularität. Als erstes schauen wir uns die Beziehung zwischen Modulen auf sehr formaler/abstrakter Ebene an.

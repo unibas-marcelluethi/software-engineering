@@ -60,4 +60,4 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 ### Feedback
 
 Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_1019343.html) auf dem Adam-Workspace.
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_1030287.html) auf dem Adam-Workspace.

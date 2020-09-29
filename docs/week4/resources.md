@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 4
+---
+
 # Woche 4: Modularität
 
 # Folien und Artikel
@@ -20,12 +25,13 @@
     * Video:  [online](https://tube.switch.ch/videos/7d6cdc90)
     * Slides: [online](./slides/module-categories.html), [Druckversion](./slides/module-categories.html?print-pdf)
 
-* Abstrakte Datentypen und Objektorientierte Programmierung" 
+* Abstrakte Datentypen und Objektorientierte Programmierung
     * Artikel: [online](./articles/module-adts-oo.html)
 
+<!--
 * Einführung Projekt 
     * Artikel: [pdf](./slides/project-introduction.pdf)
-
+-->
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
 

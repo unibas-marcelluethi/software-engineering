@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 4
+---
+
 {% include head.html %}
 
 # Modulstruktur

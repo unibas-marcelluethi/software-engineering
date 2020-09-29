@@ -1,13 +1,18 @@
+---
+layout: default
+title : Woche 4
+---
+
 {% include head.html %}
 
 # Einige wichtige Architekturmuster
 
 *Im folgenden werden wir einige wichtige Architekturmuster, also verbreitete Strukturierungen von "uses" Graphen anschauen. Es gibt noch viele weitere verbreitete Architekturmuster.
 Das Ziel dieses Artikels ist nicht die Vollständigkeit, sondern Ihnen einen Eindruck zu geben was ein Architekturmuster ist, und wie wir bereits auf dieser Abstrakten Ebene Eigenschaften
-eines Systems diskutieren können. 
+eines Systems diskutieren können.*
 
-Das Ziel dieses Artikels ist Ihnen einen Einblick zu geben, 
-wie man bereits auf dieser Abstrakten Ebene über Eigenschaften des Systems 
+*Das Ziel dieses Artikels ist Ihnen einen Einblick zu geben, 
+wie man bereits auf dieser Abstrakten Ebene über Eigenschaften des Systems*
 
 ## Layering
 
