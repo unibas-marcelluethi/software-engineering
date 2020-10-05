@@ -5,8 +5,8 @@ title : Woche 4
 
 # Übungsblatt 4: Unit Tests und Continuous Integration
 
-* Dieses Übungsblatt muss bis spätestens 15. Oktober, 23.59 bearbeitet und via Pull Request abgegeben werden. 
-
+* Dieses Übungsblatt muss bis spätestens 13. Oktober, 23.59 bearbeitet und via Pull Request abgegeben werden. 
+* Wir empfehlen, diese Übungsblatt in Zweiergruppen zu bearbeiten (siehe Abgabeinstruktionen am Ende dieses Dokuments)
 
 
 ## Einführung
@@ -56,35 +56,41 @@ oder die Testabdeckung zu verbessern, sondern das System kennenzulernen. Entspre
 #### Schreiben eigener Unittests
 Schauen Sie sich die Klasse *BibDatabase* und die  vorhandenen Unittests (in der Klasse *BibDatabaseTest*) an. Stellen Sie sicher, dass Sie verstehen, wozu die Klasse im Programm benutzt wird. 
 
-Erstellen Sie dann eine eigene Testklasse *MyDatabaseTests* (im selben Verzeichnis wie die Klasse *BibDatabaseTest*). 
+Erstellen Sie dann eine eigene Testklasse *MyDatabaseTest* (im selben Verzeichnis wie die Klasse *BibDatabaseTest*). 
 
-* Schreiben Sie die Methode ```setup``` die vor jeder Ausführung eines Unittests ausgeführt werden 
-soll. In dieser Methode öffnen Sie die bestehende Datenbank ```testjabref.bib``` welche Sie im 
-Verzeichnis ```src/test/resources/testbib``` finden.
-Sie finden Details wie sie das machen in der Klasse *OpenDatabaseTests*.
+* Schreiben Sie die Methode ```setUp``` die vor jeder Ausführung eines Unittests ausgeführt werden 
+soll. In dieser Methode erstellen Sie eine Datenbank mit 3 Einträgen. Die Einträge sollte die untenstehenden Bibtex Einträge repräsentieren. Wie sie Bibtex-Einträge erstellen, sehen Sie in der Klasse ```BibEntryTest```. 
+
+```
+@book{brooks1987no,
+  title={No silver bullet},
+  author={Brooks, Frederic},
+  year={1987}
+}
+
+@inproceedings{parnas1994software,
+  title={Software aging},
+  author={Parnas, David Lorge},
+  booktitle={Proceedings of 16th International Conference on Software Engineering},
+  year={1994},
+}
+
+@article{liskov1974programming,
+  title={Programming with abstract data types},
+  author={Liskov, Barbara and Zilles, Stephen},
+  journal={ACM Sigplan Notices}, 
+  year={1974},
+}
+``` 
 
 * Schreiben Sie dann einen Test ```correctlyCountsNumberOfEntries``` welcher prüft, dass die 
   Anzahl Einträge in der Datenbank richtig angegeben werden.
 * Schreiben Sie einen Test ```getEntriesSortedOnFieldYear``` welches prüft, ob die Einträge 
   mit der Methode ```getEntriesSorted``` korrekt nach Jahr sortiert werden können.  
 * Schreiben Sie einen Test ```getEntryByCitationKeyFindsEntry``` welcher überprüft ob für einen gegebenen 
-Schlüssel (Citationkey) der richtige Eintrag zurückgegeben wird. Schreiben Sie auch einen Test ```getEntryByKeyDoesNotFindIndexistentEntry```, welcher prüft ob sich die Methode richtig verhält wenn 
-der gesuchte Schlüssel nicht in der Datenbank ist. 
-* Schreiben Sie einen Test ```newlyInsertedArticleCanBeRetrievedByCitationKey``` welcher einen neuen Artikel in die Datenbank schreibt. Der neue Artikel soll unten angegebenem  Bibtex Eintrag entsprechen. Es soll dabei überprüft
-werden, ob der Artikel korrekt eingefügt und alle Felder richtig abgebildet wurden. *Tipp:* Schauen Sie sich auch die Tests in der Klasse ```BibEntryTests``` an.
+Schlüssel (Citationkey) der richtige Eintrag zurückgegeben wird. (Der CitationKey ist der Eintrag auf der ersten Zeile nach dem Eintragstyp, also z.b. *liskov1974programming*).
  
-```
-@article{lamport1978time,
-  title={Time, clocks, and the ordering of events in a distributed system},
-  author={Lamport, Leslie},
-  journal={Communications of the ACM},
-  volume={21},
-  number={7},
-  pages={558--565},
-  year={1978},
-  publisher={ACM}
-}
-``` 
+
 
 Die Tests können Sie via der IDE einzeln ausführen, indem Sie auf den grünen Pfeil neben dem Test klicken. 
 Mit Gradle können Sie Ihre neuen Tests einzeln ausführen, indem Sie ```gradlew test --tests org.jabref.model.database.MyDatabaseTests``` aufrufen.
@@ -105,47 +111,29 @@ package org.jabref.logic.citationstyle.discoverCitationStyles
 
     
 
-## Travis CI
+## Github Actions
 
-In diesem Teil der Übung lernen Sie das System Travis CI kennen. 
+In diesem Teil der Übung lernen Sie Github Actions kennen. Lesen Sie [hier](https://github.com/features/actions) was Github Actions sind und wie man diese für Java konfiguriert.
 
-Suchen Sie im Internet nach Travis CI und versuchen Sie herauszufinden was das System macht. 
-Lösen sie parallel dazu auch die nächste Aufgabe. Danach sollten Sie in der Lage sein folgende
-Fragen zu beantworten:
-1. Was ist Continuous integration? Wozu setzt man es ein?
-2. Was ist Travis?
-3. Was macht die Datei *.travis.yml*, die sie im Wurzelverzeichnis ihres Projekts finden?
-4. Was macht der Eintrag *branches* in der Datei *.travis.yml*
-5. Was ist eine Buildmatrix?
-6. Was passiert, wenn Sie einen push auf ihr Repository machen?
-
-Schreiben sie ihre Antworten in eine Textdatei Datei die sie ```uebung4.md``` nennen und fügen Sie 
-diese zum Projekt hinzu.  
-
-
-#### Travis aktivieren
-
-Damit sie Travis auch für ihr Projekt verwenden können, müssen sie dies erst einrichten. Dazu gehen sie auf die die [Webseite](https://www.travis-ci.com) von Travis und melden sich mit ihrem Github Account an. Sie erhalten die Option Travis für eines oder alle Ihrer Github Repositories zu aktivieren. Aktivieren Sie 
-```jabref``` und erlauben Sie auch, dass Travis die Github integration vornimmt. 
-
-
-*Anmerkung: Travis ist ein kommerzieller Service. Sie haben aber 99 Trial runs zur Verfügung. Dies sollte für diesen Kurs reichen. Für Open Source Projekte ist Travis aber gratis nutzbar. Deshalb ist Travis der Standard Service in der Open Source Entwicklung*.
-
-*Anmerkung 2: Wenn Sie sich für das [Github Educational Pack](https://education.github.com/pack) registriert haben, haben Sie gratis builds für private repositories. Falls Ihr Fork public ist, müssen sie auf www.travis-ci.org wechseln. Die beiden Seiten sind identisch und werden von derselben Firma betrieben.*.
-
-* Fügen Sie ihren Branch (also *uebung4*) im Abschnitt *branches* in der Datei *.travis.yml* hinzu. 
-* Probieren Sie aus was passiert wenn Sie eine Änderung machen, die zu einem Fehlschlagen eines Unittests führt und diese committen und auf Github pushen. Was passiert bei Travis? 
-* Gehen Sie auf Github und machen Sie einen Pull Request mit diesem fehlerhaften Unittest (Bitte Unittest auf den Master branch ihres eigenen Repositories). Was fällt Ihnen auf?
-* Korrigieren Sie ihren Fehler wieder und pushen Sie nochmals.
-
+Jabref nutzt eigentlich Github Actions. Wir habe die entsprechenden Konfigurationsdateien für unsere Übungen jedoch entfernt. 
+Schauen Sie sich im [offiziellen JabRef Repository](https://github.com/JabRef/jabref) auf Github an wie Github Actions benutzt werden. Finden Sie heraus, welche Teile der Konfigurationsdateien Sie brauchen um die Unittests bei jedem Push auf Github automatisch ausführen zu können. Aktivieren Sie diese Funktion für ihr Projekt. Die Tests sollen nur ausgeführt werden, wenn Sie den Branch *uebung4* auf Github pushen. 
 
 
 
 ### Abgabe
-Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch: 
+Die Abgabe der Übung erfolgt durch push vom Übungs-Branch: 
 ```
 git push origin uebung4
 ``` 
-und entsprechenden Pull Request. Geben Sie bitte das Team ```sweng-assistants-hs19``` oder ```clemensBuechner``` und ```schoenja``` als Reviewer an. 
- (Details dazu finden sie in [&Uuml;bungsblatt 2](https://unibas-sweng.github.io/software-engineering/week2/practical-exercises.html)).
- 
+und entsprechenden Pull Request. Als Reviewers geben Sie ```joeyzgraggen``` und ```guenesaydin``` an. 
+(Details dazu finden sie in [&Uuml;bungsblatt 2](/../../week2/exercises/practical-exercises)).
+
+Wenn Sie die Übung zu zweit bearbeitet hat, soll nur eine Person der Gruppe einen pull-request machen.
+Die andere Person soll als *Collaborator* zum Projekt hinzugefügt, und dann als *Assignee* ausgewählt werden 
+(siehe Screenshots)
+![collaborator](images/collaborator.png)
+![assignees](images/assignees.png)
+
+
+
+
