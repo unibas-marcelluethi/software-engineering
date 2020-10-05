@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 5
+---
 # Bankomat Szenario
 
 Die Software die geschrieben werden muss, simuliert die Funktionalität eines

@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 5
+---
 # Übungsblatt 5: OO-Design
 
 In dieser Übung entwickeln Sie ein Design für eine Software, die 

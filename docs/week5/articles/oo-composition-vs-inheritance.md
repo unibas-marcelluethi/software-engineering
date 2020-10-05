@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 5
+---
 # Vererbung und Objektkomposition
 
 *Neben der "uses" und der "is_composed_of" Beziehung, spielt in der 

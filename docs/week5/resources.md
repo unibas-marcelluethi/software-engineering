@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 5
+---
 # Woche 5: Objektorientiertes Design
 
 # Folien und Artikel

@@ -47,7 +47,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | Software design - Übersicht und Einführung |  |
 |[Woche 4](./week4/index) | Modulstruktur  | |
 |    | Modul Design  | |
-|[Woche 5](./underconstruction) | OO Design | |
+|[Woche 5](./week5/index) | OO Design | |
 |    | UML (statische Diagramme)  | | 
 |[Woche 6](underconstruction)   | Anforderungsanalyse   | |
 |[Woche 7](underconstruction) | Softwarespezifikation  |  |
