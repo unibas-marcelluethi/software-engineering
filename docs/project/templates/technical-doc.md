@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 6
+---
 # Technische Dokumentation (Template)
 
 | Version | Projektname | Autor  | Status | Datum | Kommentar |

@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 6
+---
 # Glossar
 
 | Version | Autor | Quelle | Status | Datum | Kommentar |

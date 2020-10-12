@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 6
+---
 # Testplan template 
 
 *Dieses Template ist eine Adaption des von der Uni Bremen vorgeschlagenen [Testplans (Softwareprojekt 2009/10)](http://www.informatik.uni-bremen.de/st/Lehre/swp0910/beispiele/testplan.pdf). Sie finden darin auch detailliertere Beschreibungen der einzelnen Abschnitte.* 

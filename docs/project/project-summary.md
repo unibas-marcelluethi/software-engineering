@@ -14,7 +14,7 @@ Wir gehen dabei in mehreren Schritten vor:
 
 | Aufgabe |  Abgabe | Besprechung | Finale Version | Bemerkung |
 |---------|--------|---------------------|---------|-----------|
-| [Pflichtenheft/Projektplan erstellen](underconstruction) |  |  | | |
+| [Pflichtenheft/Projektplan erstellen](week6/exercises) | 25. Oktober | 28. Oktober  | 3. November | |
 | [Design und Prototyp erstellen](underconstruction) || || | 
 | [Testplan erstellen](underconstruction) |  | | | | 
 | [Abgabe Projekt und Abschlusspräsentation](underconstruction) |  | ||  

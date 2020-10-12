@@ -49,7 +49,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | Modul Design  | |
 |[Woche 5](./week5/index) | OO Design | |
 |    | UML (statische Diagramme)  | | 
-|[Woche 6](underconstruction)   | Anforderungsanalyse   | |
+|[Woche 6](./week6/index)   | Anforderungsanalyse   | |
 |[Woche 7](underconstruction) | Softwarespezifikation  |  |
 |[Woche 8](underconstruction) | Konstruktive und Deskriptive Softwarespezifikation  |  |
 |    | UML (dynamische Diagramme)  | | 
@@ -73,7 +73,8 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | 13.10.2020 23.59| [Übungsblatt Praxis Woche 4](https://unibas-marcelluethi.github.io/software-engineering/week4/exercises/practical-exercises.html)| Pull Request auf Github | | 
 | 14.10.2020 vor 08.00| [Theorie Selbsttest Woche 5](https://adam.unibas.ch/goto_adam_tst_1052588.html)| Adam | | 
 | 14.10.2020 08.00| [Projekt gewählt](https://github.com/JabRef/jabref/projects/9)| [Spreadsheet](https://docs.google.com/spreadsheets/d/1szU4kNH7-bgU6xjehqFTFImYS31PwB8z-Nkq8thpi0U/edit?usp=sharing) | | 
-
+| 21.10.2020 vor 08.00| [Theorie Selbsttest Woche 6](https://adam.unibas.ch/goto_adam_tst_1059773.html)| Adam | | 
+| 25.10.2020 23.55 | [Pflichtenheft abgeben](project/week6/exercises) | Pull Request | | 
 
 ## Literatur / Weiterführende Links
 

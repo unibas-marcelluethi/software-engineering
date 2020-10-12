@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 6
+---
 # Projektschritt 1: Pflichtenheft und Projektplan
 
 
@@ -10,13 +14,13 @@ In dieser Aufgabe sind die einzelnen Schritte strikte geteilt und geordnet. Es m
 ## Pflichtenheft
 
 #### Vorbereitung
-Lesen Sie diesen [Artikel](https://adam.unibas.ch/goto_adam_file_840448_download.html). überlegen Sie, wer Ihre Stakeholder sind und ermitteln Sie das Projektumfeld. Überlegen Sie sich auch, welche der Techniken Sie für Ihr Projekt anwenden können und was in diesem Umfeld keinen Sinn macht. 
+Lesen Sie diesen [Artikel](https://adam.unibas.ch/goto_adam_file_1059779_download.html). überlegen Sie, wer Ihre Stakeholder sind und ermitteln Sie das Projektumfeld. Überlegen Sie sich auch, welche der Techniken Sie für Ihr Projekt anwenden können und was in diesem Umfeld keinen Sinn macht. 
 
 #### Vision, Rahmenbedingungen und Überblick
 
 Schauen Sie sich das [Template](../templates/pflichtenheft-template.html) für das Pflichtenheft an. 
 
-Schreiben Sie die Abschnitte 1 - 3 für ihr Projekt. Orientieren Sie sich dabei an diesen [Beispielen](https://adam.unibas.ch/goto_adam_file_840446_download.html).
+Schreiben Sie die Abschnitte 1 - 3 für ihr Projekt. Orientieren Sie sich dabei an diesen [Beispielen](https://adam.unibas.ch/goto_adam_file_1019350_download.html).
 
 *Hinweis: Sie finden alle Templates als Markdown Files im [docs Ordner](https://github.com/unibas-marcelluethi/software-engineering/tree/master/docs/project) des Github Repositories.*
 
@@ -52,12 +56,12 @@ können. Wir empfehlen Ihnen dafür [Ganttproject](https://www.ganttproject.biz/
 Die Schätzung des Aufwands für eine Task ist schwierig. Je besser die funktionale Anforderungen, spezifiziert sind, desto einfacher wird es aber, da wir den Aufwand für wohldefinierte Anforderung, 
 relative kleine Tasks besser überblicken können. Natürlich hilft es auch sich mit dem Code auseinander zu setzen  um ein Gefühl für die Komplexität zu bekommen. 
 
- Einige Möglichkeiten den Aufwand des Gesamtsystems abzuschätzen finden Sie in diesem [Buchkapitel](https://adam.unibas.ch/goto_adam_file_840447_download.html) zusammengefasst. 
+ Einige Möglichkeiten den Aufwand des Gesamtsystems abzuschätzen finden Sie in diesem [Buchkapitel](https://adam.unibas.ch/goto_adam_file_1059784_download.html) zusammengefasst. 
 
 
 ## Abgabe: 
 Speichern Sie die Dokumente im Ordner ```docs/sweng``` von Jabref.
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie ```marcelluethi``` ```schoenja``` und ```ClemensBuechner``` als Reviewer an. Abgabetermin ist Montag, 28. Oktober, 23:55. 
-Die Besprechung mit den Betreuern findet am 30. Oktober, gemäss diesem [Plan](https://adam.unibas.ch/goto_adam_file_875739_download.html) statt. 
-Die Abgabe der Überarbeiteten und finalen Version erfolgt dann bis spätestens 5. November, 23.55.  
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie ```joeyzgraggen``` und ```guenesaydin``` als Reviewer an. Abgabetermin ist Sonntag, 25. Oktober, 23:55. 
+Die Besprechung mit den Betreuern findet am 28. Oktober statt. 
+Die Abgabe der Überarbeiteten und finalen Version erfolgt dann bis spätestens 3. November, 23.55.  

@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 6
+---
 # Anforderungen mit Sprachschablonen definieren 
 
 *Anforderungen sollten so präzise wie möglich definiert werden. Idealerweise würden wir eine formale Sprache verwenden, die keine Mehrdeutigkeiten zulässt. In der Praxis ist 

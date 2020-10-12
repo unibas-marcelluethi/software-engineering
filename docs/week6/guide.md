@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 6
+---
 # Anleitung Woche 6: Anforderungsanalyse
 
 ## Übersicht
@@ -9,7 +13,7 @@ wichtigen Frage *wie weiss ich, was ich entwerfen muss*. Dies herauszufinden ist
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 23. Oktober *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 21. Oktober *selbständig* zu erarbeiten.
 
 Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 - Die Wichtigkeit der Anforderungsanalyse einschätzen können
@@ -19,7 +23,7 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
  
 ### Fortgeschrittene Lernziele 
 
-Die folgenden Lernziele sollten während oder nach der Vorlesung vom 23. Oktober erreicht werden. Die Studierenden sollten
+Die folgenden Lernziele sollten während oder nach der Vorlesung vom 21. Oktober erreicht werden. Die Studierenden sollten
 - Anforderungen mittels Sprachschablonen formulieren können
 - Selbständig für ein kleines Projekt die Anforderungen erfassen, und ein Pflichtenheft erstellen können. 
 - Verschiedene Techniken zur Aufwandschätzung kennen und anwenden können.
@@ -35,17 +39,17 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 4: Lesen Sie den Artikel "Anforderungen mit Sprachschablonen formulieren" ([Artikel](./articles/language-templates.html))
 * Schritt 5: Lesen Sie den Artikel "Anforderungen ermitteln und spezifizieren" von Helmut Balzert ([Artikel](https://adam.unibas.ch/goto_adam_file_840448_download.html))
  * Schritt 6: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./articles/pflichtenheft2.html))
-* Schritt 7: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_871381.html)). 
+* Schritt 7: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1059773.html)). 
 
-*Achtung: Der Test muss spätestens bis Mittwoch 23. Oktober, 08:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 21. Oktober, 08:00 bearbeitet sein.*
   
 
 ### Übungen
 Während der Vorlesungsstunde arbeiten Sie in Gruppen an diesem [Übungsblatt](../project/week6/exercises.html). 
 
-*Abgabetermin ist Montag, 28. Oktober, 23.55*
+*Abgabetermin ist Sonntag, 25. Oktober, 23.55*
 
 ### Feedback
 
 Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_840439.html) auf dem Adam workspace.
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_1030287.html) auf dem Adam-Workspace.

@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 6
+---
 # Woche 6: Anforderungsanalyse
 
 # Folien und Artikel
@@ -14,13 +18,13 @@
     * Artikel [online](./articles/language-templates.html)
 
 * Anforderungen ermitteln und spezifizieren (Helmut Balzert, Lehrbuch der Softwaretechnik)
-    * Artikel [adam](https://adam.unibas.ch/goto_adam_file_732353_download.html)
+    * Artikel [adam](https://adam.unibas.ch/goto_adam_file_840448_download.html)
 
 * Aufwandschätzung  (Helmut Balzert, Lehrbuch der Softwaretechnik)
-    * Artikel [adam](https://adam.unibas.ch/goto_adam_file_732352_download.html)
+    * Artikel [adam](https://adam.unibas.ch/goto_adam_file_1059784_download.html)
 
 * Beispiel Lastenheft / Pflichtenheft
-    * Artikel [adam](https://adam.unibas.ch/goto_adam_file_732351_download.html)
+    * Artikel [adam](https://adam.unibas.ch/goto_adam_file_1019350_download.html)
 
 * Use-cases:
     * Slides: [online](./slides/use-cases.html), [Druckversion](./slides/use-cases.html?print-pdf)
