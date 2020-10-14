@@ -82,7 +82,7 @@ Als nächsten passen Sie die Klasse ```BrooksHandler``` so an, dass wenn der Aut
 
 
 Nutzen Sie dazu die Methode ```showInformationDialogAndWait``` der Schnittstelle ```DialogService```.  
-*Tipp: * Nutzen sie auch hier wieder die Suchfunktionen und die Funktion *Find Usages* von IntellJ um relevante Codebeispiele zu finden. 
+*Tipp:* Nutzen sie auch hier wieder die Suchfunktionen und die Funktion *Find Usages* von IntellJ um relevante Codebeispiele zu finden. 
 
 Committen Sie Ihre Änderungen.
 
