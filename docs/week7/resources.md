@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 7
+---
+
 # Woche 7: Spezifikation von Software
 
 # Folien und Artikel
