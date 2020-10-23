@@ -69,7 +69,6 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-
 | 21.10.2020 vor 08.00| [Theorie Selbsttest Woche 6](https://adam.unibas.ch/goto_adam_tst_1059773.html)| Adam | | 
 | 25.10.2020 23.55 | [Pflichtenheft abgeben](project/week6/exercises) | Pull Request | *Achtung: Abgabetermin ist Sonntag* | 
 | 28.10.2020 vor 08.00| [Theorie Selbsttest Woche 7](https://adam.unibas.ch/goto_adam_tst_1064870.html)| Adam | | 
