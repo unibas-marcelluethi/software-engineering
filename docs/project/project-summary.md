@@ -15,9 +15,9 @@ Wir gehen dabei in mehreren Schritten vor:
 | Aufgabe |  Abgabe | Besprechung | Finale Version | Bemerkung |
 |---------|--------|---------------------|---------|-----------|
 | [Pflichtenheft/Projektplan erstellen](week6/exercises) | 25. Oktober | 28. Oktober  | 3. November | |
-| [Design und Prototyp erstellen](underconstruction) || || | 
-| [Testplan erstellen](underconstruction) |  | | | | 
-| [Abgabe Projekt und Abschlusspräsentation](underconstruction) |  | ||  
+| [Design und Prototyp erstellen](underconstruction) | 8. November | 11. November | 17. November | | 
+| [Testplan erstellen](underconstruction) | 22. November | 25. November | 1. Dezember| | 
+| [Abgabe Projekt und Abschlusspräsentation](underconstruction) | 8. Dezember |  9. Dezember | 16. Dezember |  
 
 Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in obiger Tabelle. 
 
