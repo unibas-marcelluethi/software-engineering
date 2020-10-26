@@ -31,7 +31,9 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
   
 
 ### Übungen
-Während der Übungsstunde werden wir in Gruppen die erarbeiteten Pflichtenhefte diskutieren. 
+Während der Übungsstunde werden wir in Gruppen die erarbeiteten Pflichtenhefte diskutieren. Überarbeiten Sie ihr Pflichtenheft entsprechend. Danach können Sie 
+auch bereits den nächsten Projektschritt, nämlich die Implementation des Prototyps, zu bearbeiten. Details finden Sie [hier](../project/week8/exercises.html). 
+
 
 ### Feedback
 

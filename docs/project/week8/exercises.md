@@ -7,7 +7,7 @@ layout: default
 Bevor Sie die folgenden Aufgaben bearbeiten, vergewissern Sie sich bitte, dass Sie das Dokument [Projektübersicht](../project-summary.html)  gelesen haben, 
 und die entsprechenden Schritte und Deadlines kennen. Sie sollten auch alle Unterrichtsmaterialen (also Video und Artikel) bis und mit Woche 8 durchgearbeitet haben
 
-Erstellen Sie, ausgehend von develop branch in Ihrem Projektrepository, einen neuen Featurebranch designdoc.
+Erstellen Sie, ausgehend von develop branch in Ihrem Projekt-Repository, einen neuen Featurebranch ```designdoc```.
 
 #### Einführung
 
@@ -24,18 +24,18 @@ Erstellen Sie die Technische Dokumentation. Nutzen Sie dazu dieses  [Template](.
 
 Neben den im Template vorgegebenen Aspekten, muss das Dokument mindestens die folgenden Anforderungen erfüllen:
 
-* Es soll ein UML Klassendiagramm enthalten, welches die Beziehungen zwischen den relevanten Klassen Ihrer Erweiterung und JabRef/Ganttproject zeigt.
+* Es soll ein UML Klassendiagramm enthalten, welches die Beziehungen zwischen den relevanten Klassen Ihrer Erweiterung und JabRef zeigt.
 * Pro Gruppenmitglied soll jeweils die Dynamik für einen Teilaspekt mithilfe von Sequenz/Kollaborationsdiagrammen, Aktivitätsdiagrammen oder Zustandsdiagrammen spezifiziert werden.  
 (In einer 4er Gruppe, sollen also 4 dynamische Diagramme erstellt werden. Wählen Sie die jeweils passendste Diagrammart für jeden zu spezifizierenden Teilaspekt ihres Systems).
 * Pro Gruppenmitglied sollen mindestens 2 OCL Constraints formuliert werden. (In einer 4er Gruppe sollen also mindestens 8 Constraints formuliert werden.)
 
-Sie finden auf Adam zwei [Beispielspezifikationen](https://adam.unibas.ch/goto_adam_file_840449_download.html) für die SemOrg und Fensterheber Fallstudie, die sie als Inspiration nehmen können.
+Sie finden auf Adam zwei [Beispielspezifikationen](https://adam.unibas.ch/goto_adam_file_1059780_download.html) für die SemOrg und Fensterheber Fallstudie, die sie als Inspiration nehmen können.
 
 * *Bemerkung 1:* In diesen Dokumenten finden Sie auch Use-Cases. Wir haben diese bereits als Teil vom Pflichtenheft beschrieben.
 * *Bemerkung 2:* Wir empfehlen die Open Source Software [PlantUML](http://plantuml.com/) oder [Modelio](https://www.modelio.org/) um die Diagramme zu erstellen. 
 
 #### Abgabe:
 
-Speichern Sie die Dokumente im docs Ordner von ihrem Respository ab.
+Speichern Sie die Dokumente im docs Ordner von ihrem Repository ab.
 
 Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie Ihren Betreuer (also ```marcelluethi```, ```joeyzgraggen``` oder ```guenesaydin```) als Reviewer an. Abgabetermin ist Sonntag, 8. November, 23:55. Die Besprechung mit den Betreuern findet am 11. November statt. Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 17. November, 23.55.

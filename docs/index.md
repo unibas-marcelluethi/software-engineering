@@ -51,7 +51,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | UML (statische Diagramme)  | | 
 |[Woche 6](./week6/index)   | Anforderungsanalyse   | |
 |[Woche 7](./week7/index) | Softwarespezifikation  |  |
-|[Woche 8](underconstruction) | Konstruktive und Deskriptive Softwarespezifikation  |  |
+|[Woche 8](./week8/index) | Konstruktive und Deskriptive Softwarespezifikation  |  |
 |    | UML (dynamische Diagramme)  | | 
 |[Woche 9](underconstruction) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
@@ -69,10 +69,12 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 21.10.2020 vor 08.00| [Theorie Selbsttest Woche 6](https://adam.unibas.ch/goto_adam_tst_1059773.html)| Adam | | 
 | 25.10.2020 23.55 | [Pflichtenheft abgeben](project/week6/exercises) | Pull Request | *Achtung: Abgabetermin ist Sonntag* | 
 | 28.10.2020 vor 08.00| [Theorie Selbsttest Woche 7](https://adam.unibas.ch/goto_adam_tst_1064870.html)| Adam | | 
 |  3.11.2020 23.55 | [Pflichtenheft - finale Abgabe ]((project/week6/exercises)) | Pull Request | |
+| 04.11.2020 vor 08.00| [Theorie Selbsttest Woche 8](https://adam.unibas.ch/goto_adam_tst_1069533.html)| Adam | | 
+
+
 
 ## Literatur / Weiterführende Links
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title : Woche 8
+---
+
 {% include head.html %}
 
 # Logische Spezifikation
