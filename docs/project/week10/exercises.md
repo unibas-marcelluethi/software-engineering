@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Testen 
 
 *Bevor Sie die folgenden Aufgaben bearbeiten, vergewissern Sie sich bitte, dass Sie das [Dokument Projektübersicht](../project-summary.html) gelesen haben, und die entsprechenden Schritte und Deadlines kennen. 
@@ -26,6 +29,6 @@ Finden Sie heraus, wie hoch die Testabdeckung durch Unittests für Jabref insges
 
 #### Abgabe:
 
-Speichern Sie die Dokumente im docs Ordner von ihrem Respository ab.
+Speichern Sie die Dokumente im docs Ordner von ihrem Repository ab.
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie marcelluethi, schoenja und ClemensBuechner als Reviewer an. Abgabetermin ist Montag, 25. November, 23:55. Die Besprechung mit den Betreuern findet am 27. November, gemäss diesem [Plan](https://adam.unibas.ch/goto_adam_file_875739_download.html) statt. Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 04. Dezember, 23.55.
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie Ihren Betreuer (also ```marcelluethi```, ```joeyzgraggen``` oder ```guenesaydin```) als Reviewer an. Abgabetermin ist Sonntag, 22. November, 23:55. Die Besprechung mit den Betreuern findet am 25. November statt. Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 1. Dezember, 23.55.
