@@ -35,7 +35,7 @@ Die folgenden Lernziele sollten während oder nach der Vorlesung vom 4. November
 * Schritt 4: Schauen Sie sich das Video "Spezifikationsmöglichkeiten mit der UML" an ([Video](https://tube.switch.ch/videos/3f87ef71), [Slides](./slides/uml.html)) 
 * Schritt 5: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_1069533.html))
 
-*Achtung: Der Test muss spätestens bis Mittwoch 6. November, 08:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 4. November, 08:00 bearbeitet sein.*
   
 
 ### Übungen
