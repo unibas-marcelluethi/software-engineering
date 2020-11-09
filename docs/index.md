@@ -5,7 +5,7 @@
 layout: default
 title : Übersicht
 ---
- 
+
 # 10915-01: Software Engineering
 
 Departement Mathematik und [Informatik](http://informatik.unibas.ch/), Universität Basel
@@ -23,18 +23,18 @@ Github: [https://github.com/unibas-marcelluethi/software-engineering](https://gi
 
 ## Kursbeschreibung
 
-Die Vorlesung gibt eine erste Einführung in das Software Engineering. 
-Das Hauptziel der Vorlesung ist die Studierenden mit den Grundprinzipien der Softwaretechnik, sowie, zu einem gewissen Grad, auch mit der Geschichte des Gebiets vertraut zu machen. 
+Die Vorlesung gibt eine erste Einführung in das Software Engineering.
+Das Hauptziel der Vorlesung ist die Studierenden mit den Grundprinzipien der Softwaretechnik, sowie, zu einem gewissen Grad, auch mit der Geschichte des Gebiets vertraut zu machen.
 Aktuelle Methoden und Tools werden im Rahmen eines vorlesungsbegleitenden Projekts eingeführt.
 
 ### Projekt
 
-Das Open Source Projekt Jabref [(Offizielles Github Repositories)](https://github.com/jabref/jabref) dient als Grundlage für die praktischen 
-übungen. Die Studierenden bringen kleine Änderungen am Projekt an, studieren den Source Code und implementieren dann eigene Erweiterungen. 
+Das Open Source Projekt Jabref [(Offizielles Github Repositories)](https://github.com/jabref/jabref) dient als Grundlage für die praktischen
+übungen. Die Studierenden bringen kleine Änderungen am Projekt an, studieren den Source Code und implementieren dann eigene Erweiterungen.
 
 Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projektseite](project/project-summary.html).
 
-## Programm 
+## Programm
 
 |  | Themen | Bemerkungen |
 |------| ----- | --------- |
@@ -42,26 +42,26 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | Was ist Software engineering  | |
 |[Woche 2](week2/index) | Kurze Geschichte des Software Engineerings  | |
 |    | Eigenschaften von Software ||
-|    |  Software Qualitätsmerkmale | | 
+|    |  Software Qualitätsmerkmale | |
 |[Woche 3](./week3/index) | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
 |[Woche 4](./week4/index) | Modulstruktur  | |
 |    | Modul Design  | |
 |[Woche 5](./week5/index) | OO Design | |
-|    | UML (statische Diagramme)  | | 
+|    | UML (statische Diagramme)  | |
 |[Woche 6](./week6/index)   | Anforderungsanalyse   | |
 |[Woche 7](./week7/index) | Softwarespezifikation  |  |
 |[Woche 8](./week8/index) | Konstruktive und Deskriptive Softwarespezifikation  |  |
-|    | UML (dynamische Diagramme)  | | 
+|    | UML (dynamische Diagramme)  | |
 |[Woche 9](./week9/index) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
-|    | Code reviews | |  
-| [Woche 10](underconstruction) | Testen im Kleinen   | | 
+|    | Code reviews | |
+| [Woche 10](./week10/index) | Testen im Kleinen   | |
 || Testen im Grossen ||
 | [Woche 11](underconstruction)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
 | [Woche 12](underconstruction)| Scrum  | |
-|         | Continuous delivery | | 
+|         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen | |
 | [Woche 14](underconstruction)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung | |
 
@@ -69,16 +69,15 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-|  3.11.2020 23.55 | [Pflichtenheft - finale Abgabe ]((project/week6/exercises)) | Pull Request | |
-| 04.11.2020 vor 08.00| [Theorie Selbsttest Woche 8](https://adam.unibas.ch/goto_adam_tst_1069533.html)| Adam | | 
-|  8.11.2020 23.55 | [Designdokument ](project/week8/exercises) | Pull Request |(Achtung, Abgabetermin ist Sonntag) |
-| 11.11.2020 vor 08.00| [Theorie Selbsttest Woche 9](https://adam.unibas.ch/goto_adam_tst_1076994.html)| Adam | | 
+| 11.11.2020 vor 08.00| [Theorie Selbsttest Woche 9](https://adam.unibas.ch/goto_adam_tst_1076994.html)| Adam | |
 | 17.11.2020 23.55 | [Designdokument - finale Abgabe ](project/week8/exercises) | Pull Request | |
-
+| 18.11.2020 vor 08.00| [Theorie Selbsttest Woche 10](https://adam.unibas.ch/goto_adam_tst_1081491.html)| Adam | |
+| 22.11.2020 23.55 | [Testplan ](project/week10/exercises) | Pull Request |(Achtung, Abgabetermin ist Sonntag) |
+| 01.12.2020 23.55 | [Testplan - finale Abgabe](project/week10/exercises) | Pull Request | Pull Request |
 
 ## Literatur / Weiterführende Links
 
-#### Empfohlene Lehrbücher 
+#### Empfohlene Lehrbücher
 
 
 * [S. L. Pfleeger, und J. M. Atlee. Software engineering: theory and practice](https://www.pearson.com/us/higher-education/program/Pfleeger-Pfleeger-Software-Engineering-4-4th-Edition/PGM58925.html)
