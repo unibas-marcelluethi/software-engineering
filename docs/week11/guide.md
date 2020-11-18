@@ -1,3 +1,7 @@
+---
+layout: default
+title : Woche 11
+---
 # Anleitung Woche 11: Softwareprozesse
 
 ## Übersicht
@@ -10,7 +14,7 @@ und geben auch eine Einführung in Agile Softwareentwicklungsmethoden.
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 27. November *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 25. November *selbständig* zu erarbeiten.
 
 Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 - die Ziele nennen können, die man mit einem Softwareprozess erreichen möchte
@@ -20,7 +24,7 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 
 
 ### Fortgeschrittene Lernziele
-Die folgenden Lernziele sollten *während oder nach* der Vorlesung vom 27. Dezember erreicht werden. Die Studierenden sollten:
+Die folgenden Lernziele sollten *während oder nach* der Vorlesung vom 25. Dezember erreicht werden. Die Studierenden sollten:
 - Die Hauptmerkmale (Aktivitäten, Artefakte, Rollen) von Scrum kennen
 - am Beispiel von Scrum und XP erklären können, wie agile Methodologien den Softwareprozess organisieren.
 
@@ -29,12 +33,12 @@ Die folgenden Lernziele sollten *während oder nach* der Vorlesung vom 27. Dezem
 * Schritt 1: Schauen Sie sich das Video "Softwareprozesse" an  ([Video](https://tube.switch.ch/videos/2313bd63), [Slides](./slides/software-process.html))
 * Schritt 2: Lesen Sie den Artikel zum Thema "Agile Softwareentwicklung"  ([Artikel](./articles/agile.html))
 * Schritt 3: Lesen Sie den Artikel "Agile - The good the bad and the ugly"  ([Artikel](./articles/agile-critic.html))
-* Schritt 4: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_890889.html))
+* Schritt 4: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_1088179.html))
 
-*Achtung: Der Test muss spätestens bis Mittwoch 27. November, 08:00 bearbeitet sein.*
-  
+*Achtung: Der Test muss spätestens bis Mittwoch 25. November, 08:00 bearbeitet sein.*
+
 
 ### Feedback
 
-Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern, indem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_840439.html) auf dem Adam workspace.
+Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen.
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_1030287.html) auf dem Adam-Workspace.

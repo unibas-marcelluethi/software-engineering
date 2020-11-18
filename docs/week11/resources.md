@@ -1,16 +1,20 @@
+---
+layout: default
+title : Woche 11
+---
 # Woche 11: Softwareprozesse
 
 # Folien und Artikel
 
 * Softwareprozesse
-    * Video:  [online](https://tube.switch.ch/videos/2313bd63),  
+    * Video:  [online](https://tube.switch.ch/videos/2313bd63),
     * Slides: [online](./slides/software-process.html), [Druckversion](./slides/software-process.html?print-pdf)
 
 
 * Agile Softwareentwicklung
     * Artikel:  [online](./articles/agile.html)
 
-* Buchauszug: Agile: The good, the bad and the ugly 
+* Buchauszug: Agile: The good, the bad and the ugly
     * Artikel: [online](./articles/agile-critic.html)
 
 *Anmerkung: Die Druckversion der Slides ist für den Chrome und Chromium Browser optimiert*
