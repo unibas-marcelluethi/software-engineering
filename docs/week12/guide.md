@@ -1,13 +1,17 @@
+---
+layout: default
+title : Woche 12
+---
 # Anleitung Woche 12:  Ein Blick in die Praxis - Agile Softwareentwicklung und Continuous Delivery
 
 ## Übersicht
 
-In dieser Woche werden wir verschiedene Vorträge aus der Industrie hören, die die Themen Agile Softwareentwicklung 
-und moderne Entwicklungswerkzeuge verbinden. 
+In dieser Woche werden wir verschiedene Vorträge aus der Industrie hören, die die Themen Agile Softwareentwicklung
+und moderne Entwicklungswerkzeuge verbinden.
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 4. Dezember *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 2. Dezember *selbständig* zu erarbeiten.
 
 Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 - erklären können, was man unter dem Begriff Continuous Delivery versteht
@@ -19,9 +23,9 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 ### Vorbereitung:
 
 * Schritt 1: Schauen Sie sich das Video "Continuous Delivery" von Martin Fowler an  ([Artikel zum Video](articles/continuous-delivery.html))
-* Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_893959.html))
+* Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_1091874.html))
 
-*Achtung: Der Test muss spätestens bis Mittwoch 4. Dezember, 08:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 2. Dezember, 08:00 bearbeitet sein.*
 
 
 ### Übungen
@@ -30,5 +34,5 @@ Das Format der Präsentation ist auf diesem [Übungsblatt](../project/week12/exe
 
 ### Feedback
 
-Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_tst_893959.html) auf dem Adam workspace.
+Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen.
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_1030287.html) auf dem Adam-Workspace.

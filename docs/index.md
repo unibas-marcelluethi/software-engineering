@@ -60,7 +60,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 || Testen im Grossen ||
 | [Woche 11](./week11/index)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
-| [Woche 12](underconstruction)| Scrum  | |
+| [Woche 12](./week12/index)| Scrum  | |
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen | |
 | [Woche 14](underconstruction)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung | |
@@ -70,7 +70,11 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
 | 22.11.2020 23.55 | [Testplan ](project/week10/exercises) | Pull Request |(Achtung, Abgabetermin ist Sonntag) |
-| 25.11.2020 vor 08.00| [Theorie Selbsttest Woche 11](https://adam.unibas.ch/goto_adam_tst_1088179.html)| Adam | 01.12.2020 23.55 | [Testplan - finale Abgabe](project/week10/exercises) | Pull Request | Pull Request |
+| 25.11.2020 vor 08.00| [Theorie Selbsttest Woche 11](https://adam.unibas.ch/goto_adam_tst_1088179.html)| Adam |
+| 01.12.2020 23.55 | [Testplan - finale Abgabe](project/week10/exercises) | Pull Request | |
+| 02.12.2020 vor 08.00| [Theorie Selbsttest Woche 12](https://adam.unibas.ch/goto_adam_tst_1091874.html) | Adam |
+| 09.12.2020 | Slides der Projektpräsentation  | Pull Request |
+| 15.12.2020 23.59 | [Finale Version des Projekts](project/week12/exercises) | Pull Request |
 
 ## Literatur / Weiterführende Links
 
