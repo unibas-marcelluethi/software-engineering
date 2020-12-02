@@ -63,19 +63,15 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | [Woche 12](./week12/index)| Scrum  | |
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen | |
-| [Woche 14](underconstruction)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung | |
+| [Woche 14](./week13/index)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung | |
 
 ## Nächste Deadlines
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 22.11.2020 23.55 | [Testplan ](project/week10/exercises) | Pull Request |(Achtung, Abgabetermin ist Sonntag) |
-| 25.11.2020 vor 08.00| [Theorie Selbsttest Woche 11](https://adam.unibas.ch/goto_adam_tst_1088179.html)| Adam |
-| 01.12.2020 23.55 | [Testplan - finale Abgabe](project/week10/exercises) | Pull Request | |
-| 02.12.2020 vor 08.00| [Theorie Selbsttest Woche 12](https://adam.unibas.ch/goto_adam_tst_1091874.html) | Adam |
 | 09.12.2020 | Slides der Projektpräsentation  | Pull Request |
 | 15.12.2020 23.59 | [Finale Version des Projekts](project/week12/exercises) | Pull Request |
-
+| 16.12.2020 vor 08.00| [Theorie Selbsttest Woche 13 und 14 ](https://adam.unibas.ch/goto_adam_tst_1099159.html) | Adam |
 ## Literatur / Weiterführende Links
 
 #### Empfohlene Lehrbücher
