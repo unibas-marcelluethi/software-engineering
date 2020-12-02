@@ -1,6 +1,6 @@
 ---
 layout: default
-title : Woche 13
+title : Woche 13 und 14
 ---
 # Anleitung Woche 13-14:  Design Patterns
 

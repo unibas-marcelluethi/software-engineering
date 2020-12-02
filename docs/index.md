@@ -71,7 +71,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | ------------ | ------------ | ---- | ------- |
 | 09.12.2020 | Slides der Projektpräsentation  | Pull Request |
 | 15.12.2020 23.59 | [Finale Version des Projekts](project/week12/exercises) | Pull Request |
-| 16.12.2020 vor 08.00| [Theorie Selbsttest Woche 13 und 14 ](https://adam.unibas.ch/goto_adam_tst_1099159.html) | Adam |
+| 16.12.2020 vor 08.00 | [Theorie Selbsttest Woche 13 und 14 ](https://adam.unibas.ch/goto_adam_tst_1099159.html) | Adam |
 ## Literatur / Weiterführende Links
 
 #### Empfohlene Lehrbücher
