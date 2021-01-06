@@ -63,7 +63,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | [Woche 12](./week12/index)| Scrum  | |
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen | |
-| [Woche 14](./week13/index)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung | |
+| [Woche 14](./week13/index)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung | Slides [(adam)](https://adam.unibas.ch/goto_adam_file_1110146_download.html) |
 
 ## Nächste Deadlines
 
