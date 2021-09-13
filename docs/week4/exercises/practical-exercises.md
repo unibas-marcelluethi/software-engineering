@@ -125,7 +125,7 @@ Die Abgabe der Übung erfolgt durch push vom Übungs-Branch:
 ```
 git push origin uebung4
 ``` 
-und entsprechenden Pull Request. Als Reviewers geben Sie ```joeyzgraggen``` und ```guenesaydin``` an. 
+und entsprechenden Pull Request. Als Reviewers geben Sie ```emugdan```, ```colinhex``` und ```guenesaydin``` an. 
 (Details dazu finden sie in [&Uuml;bungsblatt 2](/../../week2/exercises/practical-exercises)).
 
 Wenn Sie die Übung zu zweit bearbeitet hat, soll nur eine Person der Gruppe einen pull-request machen.
