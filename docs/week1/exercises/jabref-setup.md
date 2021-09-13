@@ -123,7 +123,7 @@ Nun erstellen Sie, ausgehend von unserem privaten Fork,  ihren eigenen privaten 
 Damit unsere Assistenten Ihre Abgaben anschauen können, müssen Sie diesen noch Zugriffsrechte auf ihr neues Repository geben. Dafür gehen Sie auf *Settings* und dann *Manage access*:
 ![github-manage-access](images/github-manage-access.png)
 
-Klicken Sie dann auf *Invite Teams or people* und fügen Sie ```guenesaydin``` und ```joeyzgraggen``` hinzu.
+Klicken Sie dann auf *Invite Teams or people* und fügen Sie ```guenesaydin```, ```emugdan``` und ```colinhex``` hinzu.
 ![github-manage-access](images/github-manage-access-invite.png)
 
 Als Rolle im nachfolgenden Dialog wählen Sie *Write*.
