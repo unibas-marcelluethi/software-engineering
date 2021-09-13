@@ -135,6 +135,6 @@ Die Abgabe der Übung erfolgt durch push vom Übungs-Branch:
 ```
 git push origin uebung3
 ``` 
-und entsprechenden Pull Request. Als Reviewers geben Sie ```joeyzgraggen``` und ```guenesaydin``` an. 
+und entsprechenden Pull Request. Als Reviewers geben Sie ```emugdan```, ```colinhex``` und ```guenesaydin``` an. 
 (Details dazu finden sie in [&Uuml;bungsblatt 2](/../../week2/exercises/practical-exercises)).
  

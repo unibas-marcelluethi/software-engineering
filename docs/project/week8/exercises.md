@@ -38,4 +38,4 @@ Sie finden auf Adam zwei [Beispielspezifikationen](https://adam.unibas.ch/goto_a
 
 Speichern Sie die Dokumente im docs Ordner von ihrem Repository ab.
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie Ihren Betreuer (also ```marcelluethi```, ```joeyzgraggen``` oder ```guenesaydin```) als Reviewer an. Abgabetermin ist Sonntag, 8. November, 23:55. Die Besprechung mit den Betreuern findet am 11. November statt. Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 17. November, 23.55.
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie Ihren Betreuer (also ```marcelluethi```, ```emugdan```, ```guenesaydin``` oder ```colinhex```) als Reviewer an. Abgabetermin ist Sonntag, 8. November, 23:55. Die Besprechung mit den Betreuern findet am 11. November statt. Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 17. November, 23.55.

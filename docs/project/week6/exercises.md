@@ -62,6 +62,6 @@ relative kleine Tasks besser überblicken können. Natürlich hilft es auch sich
 ## Abgabe: 
 Speichern Sie die Dokumente im Ordner ```docs/sweng``` von Jabref.
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie Ihren Betreuer (also ```marcelluethi```, ```joeyzgraggen``` oder ```guenesaydin```) als Reviewer an.. 
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie Ihren Betreuer (also ```marcelluethi```, ```emugdan```, ```colinhex``` oder ```guenesaydin```) als Reviewer an.. 
 Die Besprechung mit den Betreuern findet am 28. Oktober statt. 
 Die Abgabe der Überarbeiteten und finalen Version erfolgt dann bis spätestens 3. November, 23.55.  

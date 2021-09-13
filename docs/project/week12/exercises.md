@@ -35,7 +35,7 @@ Die Präsentationen finden am 9. Dezember (08.15-10.00 und 12.15 - 14.00) statt.
 #### Abgabe der Präsentationsfolien
 
 Erstellen Sie, ausgehend vom Branch ```develop``` einen neuen Branch ```praesentation``` im Jabref Repository. Speichern Sie ihre Slides im ```docs``` Ordner von Jabref ab.
-Die Abgabe erfolgt pro Gruppe, jeweils mittels Pull Request. Geben Sie ```marcelluethi```, ```joeyzgraggen``` und ```guenesaydin``` als Reviewer an.
+Die Abgabe erfolgt pro Gruppe, jeweils mittels Pull Request. Geben Sie ```marcelluethi```, ```emugdan```, ```colinhex``` und ```guenesaydin``` als Reviewer an.
 Abgabetermin ist Mittwoch, 9. Dezember, vor Ihrer Präsentation.
 
 
