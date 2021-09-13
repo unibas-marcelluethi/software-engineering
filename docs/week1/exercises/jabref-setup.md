@@ -34,7 +34,7 @@ Nachdem Sie uns Ihren Github Benutzernamen gemeldet haben, können wir Sie zu un
 
 ### Git
 
-Installieren Sie das Versionsverwaltungswerkzeug *Git*, welches Sie auf der offiziellen [Git Webseite] (https://git-scm.com/) herunterladen können.
+Installieren Sie das Versionsverwaltungswerkzeug *Git*, welches Sie auf der offiziellen [Git Webseite](https://git-scm.com/) herunterladen können.
 
 #### Test der Installation
 
@@ -72,9 +72,7 @@ Wir empfehlen Ihnen, die Version *Eclipse Temurin* der Eclipse foundation, die s
 
 Als nächstes müssen Sie noch JavaFX zum JDK hinzufügen. Wechseln Sie in das Verzeichnis, in welches das JDK installiert wurde
 (unter Windows ist dies C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot).
-Laden Sie dann das "jmods" JavaFX 16 zip archiv herunter ([Windows](https://download2.gluonhq.com/openjfx/16/openjfx-16_windows-x64_bin-jmods.zip), [MacOS](https://download2.gluonhq.com/openjfx/16/openjfx-16_osx-x64_bin-jmods.zip), [Linux](https://download2.gluonhq.com/openjfx/16/openjfx-16_linux-x64_bin-jmods.zip))
-
-[https://gluonhq.com/products/javafx/](https://gluonhq.com/products/javafx/) herunter, entpacken dieses und kopieren alle .mod Dateien in das Verzeichnis jmods.
+Laden Sie dann das "jmods" JavaFX 16 zip archiv herunter ([Windows](https://download2.gluonhq.com/openjfx/16/openjfx-16_windows-x64_bin-jmods.zip), [MacOS](https://download2.gluonhq.com/openjfx/16/openjfx-16_osx-x64_bin-jmods.zip), [Linux](https://download2.gluonhq.com/openjfx/16/openjfx-16_linux-x64_bin-jmods.zip)), entpacken dieses und kopieren alle .mod Dateien in das Verzeichnis jmods Ihres JDKs.
 
 --
 Um zu überprüfen ob java korrekt auf Ihrem System verfügbar ist, öffnen Sie ein Terminal, und setzen die
@@ -159,12 +157,12 @@ Installieren Sie die Entwicklungsumgebung [IntelliJ IDEA](https://www.jetbrains.
 
 *Bemerkung 1:* Wir arbeiten in diesem Kurs mit der *Community Edition*, die als Open Source uneingeschränkt zugänglich ist.
 
-Öffnen Sie nun Ihre JabRef Projekt in IntelliJ Idea, indem Sie auf dem *Welcome Screen* auf *Open*  gehen oder, falls Sie sich schon in der IDE befinden auf *File->Open* gehen. Dann wählen Sie die Datei ```build.gradle``` in Ihrem JabRef Verzeichnis.
+Öffnen Sie nun Ihre JabRef Projekt in IntelliJ Idea, indem Sie auf dem *Welcome Screen* auf *Open*  gehen oder, falls Sie sich schon in der IDE befinden, im Menu *File->Open* wählen. Dann wählen Sie die Datei ```build.gradle``` in Ihrem JabRef Verzeichnis.
 
 Nun müssen Sie die Einstellungen in IntelliJ noch für die Entwicklung von JabRef anapssen. Wie das geht ist detailliert in der JabRef [Development Documentation](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace#configure-your-ide) erklärt.
 Lesen Sie die Erklärung durch und führen Sie alle Einstellungen wie angegeben durch.  Den Abschnitt *Using IntelliJ's internal build system* können Sie überspringen, da dies nicht zuverlässig funktioniert und wir das Projekt deshalb immer via Gradle bauen uns ausführen werden.
 Aktivieren Sie aber Checkstyle, wie im Abschnitt *Using JabRef's code style* beschrieben. Damit wird sichergestellt, dass ihr Code jeweils nach den Projektvorgaben formatiert ist.
-*Falls Sie unter *Tools* keinen Eintrag Checkstyle finden, müssen Sie zuerst noch das Checkstyle plugin installieren*(*File->Settings->Plugins*).
+Falls Sie unter *Tools* keinen Eintrag Checkstyle finden sollten, müssen Sie zuerst noch das Checkstyle plugin installieren(via *File->Settings->Plugins*).
 
 
 ### Ausführen des Projekts aus der IDE
