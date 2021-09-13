@@ -159,10 +159,12 @@ Installieren Sie die Entwicklungsumgebung [IntelliJ IDEA](https://www.jetbrains.
 
 *Bemerkung 1:* Wir arbeiten in diesem Kurs mit der *Community Edition*, die als Open Source uneingeschränkt zugänglich ist.
 
+Öffnen Sie nun Ihre JabRef Projekt in IntelliJ Idea, indem Sie auf dem *Welcome Screen* auf *Open*  gehen oder, falls Sie sich schon in der IDE befinden auf *File->Open* gehen. Dann wählen Sie die Datei ```build.gradle``` in Ihrem JabRef Verzeichnis.
 
-Von nun an werden Sie hautsächlich mit der IDE arbeiten. Wie sie JabRef für die Entwicklung mit IntelliJ einrichten, ist detailliert in der JabRef [Development Documentation](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace#configure-your-ide) erklärt.
+Nun müssen Sie die Einstellungen in IntelliJ noch für die Entwicklung von JabRef anapssen. Wie das geht ist detailliert in der JabRef [Development Documentation](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace#configure-your-ide) erklärt.
 Lesen Sie die Erklärung durch und führen Sie alle Einstellungen wie angegeben durch.  Den Abschnitt *Using IntelliJ's internal build system* können Sie überspringen, da dies nicht zuverlässig funktioniert und wir das Projekt deshalb immer via Gradle bauen uns ausführen werden.
 Aktivieren Sie aber Checkstyle, wie im Abschnitt *Using JabRef's code style* beschrieben. Damit wird sichergestellt, dass ihr Code jeweils nach den Projektvorgaben formatiert ist.
+*Falls Sie unter *Tools* keinen Eintrag Checkstyle finden, müssen Sie zuerst noch das Checkstyle plugin installieren*(*File->Settings->Plugins*).
 
 
 ### Ausführen des Projekts aus der IDE
