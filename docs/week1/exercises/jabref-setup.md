@@ -75,7 +75,7 @@ Als nächstes müssen Sie noch JavaFX zum JDK hinzufügen. Wechseln Sie in das V
 Laden Sie dann das "jmods" JavaFX 16 zip archiv herunter ([Windows](https://download2.gluonhq.com/openjfx/16/openjfx-16_windows-x64_bin-jmods.zip), [MacOS](https://download2.gluonhq.com/openjfx/16/openjfx-16_osx-x64_bin-jmods.zip), [Linux](https://download2.gluonhq.com/openjfx/16/openjfx-16_linux-x64_bin-jmods.zip)), entpacken dieses und kopieren alle .mod Dateien in das Verzeichnis jmods Ihres JDKs.
 
 --
-Um zu überprüfen ob java korrekt auf Ihrem System verfügbar ist, öffnen Sie ein Terminal, und setzen die
+Um zu überprüfen ob Java korrekt auf Ihrem System verfügbar ist, öffnen Sie ein Terminal, und setzen die
 Umgebungsvariable ```JAVA_HOME``` und ```PATH```:
 ```
 set JAVA_HOME=C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot
@@ -104,7 +104,7 @@ Falls Sie bereits Zugriff haben, sollte die Seite etwa wie folgt aussehen:
 ![image](images/github-jabref.png)
 
 
-Nun erstellen Sie, ausgehend von unserem privaten Fork,  ihren eigenen privaten fork. Dazu klicken Sie oben rechts auf den "Fork" Button klicken. Nach erfolgreichem Fork landen Sie nun auf Ihrer persönlichen Kopie des Projekts auf Github, mit der Sie von nun an arbeiten werden.
+Nun erstellen Sie, ausgehend von unserem privaten Fork, ihren eigenen privaten Fork. Dazu klicken Sie oben rechts auf den "Fork" Button. Nach erfolgreichem Fork landen Sie nun auf Ihrer persönlichen Kopie des Projekts auf Github, mit der Sie von nun an arbeiten werden.
 
 ### Zugriffsrechte für Assistenten
 
