@@ -66,7 +66,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | [Woche 12](underconstruction)| Scrum  | |
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen | |
-| [Woche 14](underconstruction)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung | Slides [(adam)](https://adam.unibas.ch/goto_adam_file_1110146_download.html) |
+| [Woche 14](underconstruction)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung |  |
 
 ## Nächste Deadlines
 
