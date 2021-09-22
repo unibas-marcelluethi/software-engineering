@@ -8,7 +8,7 @@ title : Woche 1
 ## Administratives
 
 * Vorbesprechung, eine kurze Einführung in Git/Github und Hilfestellungen zu den Aufgaben gibt es in der Übungsstunde vom 29. September 2021
-* Dieses Übungsblatt muss bis spätestens am 06 Oktober 2021 via Pull Request abgegeben werden.
+* Dieses Übungsblatt muss bis spätestens am 05. Oktober 2021 via Pull Request abgegeben werden.
 
 ## Einführung
 
