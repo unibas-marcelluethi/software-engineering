@@ -88,7 +88,7 @@ Fast-forward
  11 files changed, 787 insertions(+), 787 deletions(-)
  ```
 
-*Hinweis: Diese Commits sind nur ein Beispiel und werden bei Ihnen anders aussehen. *
+*Hinweis: Diese Commits sind nur ein Beispiel und werden bei Ihnen anders aussehen.*
 
 Die Zeile ```Updating 5c9edc9..fedf4c5``` gibt ihnen die Commit-ids der ersten und letzten Änderung an.
 Um zu sehen welche Änderungen mit diesem Pull vorgenommen wurden, nutzen sie folgende *Git* Kommandos:
@@ -144,7 +144,8 @@ Ihre Aufgabe ist es nun, erste Änderungen an Jabref vorzunehmen.
 
 
 * In der About box ("Menu: Help -> About JabRef") gibt es einen Link mit dem Namen "Engagieren Sie sich" oder "Get Involved", je nachdem ob bei Ihnen JabRef auf Deutsch oder English läuft. Ändern Sie den Link so,
-dass dieser neu auf die Vorlesungsseite (https://unibas-marcelluethi.github.io/software-engineering) zeigt.
+dass dieser neu nicht auf die JabRef Github Seite, sondern auf ihr privates
+JabRef Repository zeigt (https://github.com/GITHUB_USERNAME/jabref) zeigt.
 
 *Tipp 1:* Verwenden Sie die Suchfunktionen *Search Everywhere* (```Shift Shift```) oder *Find in Path* (```Ctrl-Shift-F```) um die entsprechenden Stellen im Code zu finden.
 *Tipp 2:* Neben den java Dateien, müssen Sie auch die Dateien mit der Endung *.fxml anschauen. Diese enthält das eigentliche Layout der Elemente in der Dialogbox.
@@ -153,7 +154,7 @@ Wenn Sie die Änderung erfolgreich implementiert und getestet haben, können Sie
 ```
 git commit -a -m "Ihre aussagekräftige Commit-Message"
 ```
-Bitte schreiben Sie eine sinnvolle Commit-Message. Einige Hinweise wie gute Commit Messages aussehen sollen finden sie in diesem [Artikel](https://chris.beams.io/posts/git-commit/).
+Bitte schreiben Sie eine sinnvolle Commit-Message. Einige Hinweise wie gute Commit Messages aussehen sollen finden sie in diesem [Artikel](https://chris.beams.io/posts/git-commit/). Schauen Sie sich auch den Stil der [Commit-Messages](https://github.com/JabRef/jabref/commits/main) bei JabRef an. Welche Zeitform wird verwendet?
 
 
 #### Änderung 2
