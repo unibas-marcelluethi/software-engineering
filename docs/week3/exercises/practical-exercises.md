@@ -99,13 +99,11 @@ Source Code der Bibliothek kommen.
 
 
 #### 1.3 Hinzufügen eines Plugins
-Fügen Sie das Plugin [Stats Gradle Plugin](https://github.com/aalmiray/stats-gradle-plugin) durch anpassen der Datei ```build.gradle```zum Projekt hinzu. Die entsprechenden Instruktionen finden Sie auf
-der Github Seite vom [Stats Gradle Plugin](https://github.com/aalmiray/stats-gradle-plugin).
-Nachdem das Plugin korrekt hinzugefügt wurde, sollten Sie durch folgenden Befehl eine Statistik über die Anzahl Dateien und Codezeilen ausgeben können:
-```
-./gradlew stats
-```
+Fügen Sie das Plugin [Gradle-License-Report](https://github.com/jk1/Gradle-License-Report) durch anpassen der Datei ```build.gradle```zum Projekt hinzu. Die entsprechenden Instruktionen finden Sie auf
+der Github Seite vom [Gradle-License-Report](https://github.com/jk1/Gradle-License-Report).
 
+Testen Sie das Plugin und schauen Sie sich den generierte Report an.
+Fügen Sie einen Kommentar in der Datei ```build.gradle``` hinzu. Dieser soll ganz kurz (in Ihren eigenen Worten) dokumentieren, was das Plugin macht und wozu wir es brauchen.
 
 ## 2. Code lesen
 
@@ -142,7 +140,7 @@ Sie finden, wenn Sie einen Rechtsklick auf ein Symbol (also Klasse, Methode, Var
 #### Dokumentieren einer Klasse
 
 Schauen Sie sich die Klasse
-```org.jabref.logic.bibtex.BibEntryWriter;``` an. Dokumentieren Sie die Klasse mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
+```package org.jabref.logic.formatter;;``` an. Dokumentieren Sie die Klasse mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
 
 
 
