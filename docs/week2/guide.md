@@ -56,6 +56,8 @@ Falls Sie bei der Vorlesung nicht anwesend waren, schreiben Sie ihre Antworten b
 
 Vergessen Sie auch nicht die [praktischen Übungen](./exercises/practical-exercises.html) zu bearbeiten.
 
+* Die Slides zu Git aus den praktischen Übungen finden Sie [hier](./exercises/git-github.pdf).
+
 *Abgabetermin ist Dienstag, 05. Oktober, 23.55*
 
 ### Feedback
