@@ -46,7 +46,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 2](week2/index) | Kurze Geschichte des Software Engineerings  | |
 |    | Eigenschaften von Software ||
 |    |  Software Qualitätsmerkmale | |
-|[Woche 3](underconstruction) | Prinzipien des Software engineerings   | |
+|[Woche 3](week3/index) | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
 |[Woche 4](underconstruction) | Modulstruktur  | |
 |    | Modul Design  | |
@@ -74,6 +74,10 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | ------------ | ------------ | ---- | ------- |
 | 29.09.2021 vor 08.00  | Theorie Selbsttest Woche 2  | Adam  | |
 | 29.09.2021 vor 12.15  | Entwicklungsumgebung aufsetzen | keine | [Anleitung](week1/exercises/jabref-setup.html)
+| 05.09.2021 23.59 | Theorieübungsblatt Woche 2 | Adam | falls bei Vorlesung nicht anwesend |
+| 05.09.2021 23.59 | Praktische Übung Woche 2 | Github | Pull Request gemäss Anleitung|
+| 06.09.2021 vor 08.00  | Theorie Selbsttest Woche 3  | Adam  | |
+
 
 ## Literatur / Weiterführende Links
 
