@@ -45,7 +45,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 3: Schauen Sie sich das Video "Einige Qualitätsmerkmale im Detail" an. ([Video](https://tube.switch.ch/videos/ad05eed9), [Slides](./slides/software-qualities.html))
 * Schritt 4: Lesen Sie das Paper von Fred Brooks: No Silver Bullet. ([Paper](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf))
 
-* Schritt 5: Bearbeiten Sie den Test. [Adam](https://adam.unibas.ch/goto_adam_tst_1018565.html).
+* Schritt 5: Bearbeiten Sie den Test. [Adam](https://adam.unibas.ch/goto_adam_tst_1250181.html).
 
 *Achtung: Der Test muss spätestens bis Mittwoch 29. September, 08:00 bearbeitet sein.*
 
