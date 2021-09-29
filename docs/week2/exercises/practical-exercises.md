@@ -37,7 +37,7 @@ können Sie sich die URL davon anzeigen lassen.
 
 Damit Sie auf die Änderungen vom *upstream* Repository zugreifen können, müssen Sie dies als weiteres remote Repository hinzufügen. Das machen Sie via:
 ```
-git remote add upstream https://github.com/unibas-marcelluethi/jabref.git
+git remote add upstream git@github.com:unibas-marcelluethi/jabref.git
 ```
 
 Verifizieren Sie, dass das Hinzufügen erfolgreich war, mithilfe dem Befehl:
