@@ -8,37 +8,37 @@ title : Woche 4
 
 ## Übersicht
 
-Letzte Woche haben wir uns wichtige Prinzipien des Software Engineerings angeschaut, und haben begonnen über Design zu sprechen. 
-Eines der Zentralen Prinzipien war die Modularität. Auch beim Design sind wir dann auf Module gestossen. 
-Wir haben gesehen, dass ein Software Design eigentlich nur die Aufteilung eines Systems in Module ist. Wenn wir das richtig machen, 
-erhalten wir dabei ein System, welches das wichtigste Designziel erfüllt: Die Möglichkeit, dass künftige Änderungen leicht durchgeführt werden können. 
+Letzte Woche haben wir uns wichtige Prinzipien des Software Engineerings angeschaut, und haben begonnen über Design zu sprechen.
+Eines der Zentralen Prinzipien war die Modularität. Auch beim Design sind wir dann auf Module gestossen.
+Wir haben gesehen, dass ein Software Design eigentlich nur die Aufteilung eines Systems in Module ist. Wenn wir das richtig machen,
+erhalten wir dabei ein System, welches das wichtigste Designziel erfüllt: Die Möglichkeit, dass künftige Änderungen leicht durchgeführt werden können.
 
-In dieser Woche wollen wir besprechen, wie wir Modularität erreichen, Beziehungen zwischen Modulen besprechen und wie wir Module designen. 
-Wir schauen uns auch konkrete Beispiele von Modulen an. 
+In dieser Woche wollen wir besprechen, wie wir Modularität erreichen, Beziehungen zwischen Modulen besprechen und wie wir Module designen.
+Wir schauen uns auch konkrete Beispiele von Modulen an.
 
 
 ## Lernziele
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 07. Oktober *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 13. Oktober *selbständig* zu erarbeiten.
 
- Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
+ Nach dem Selbststudium der Vorlesungsmaterialien sollten die Studierenden:
  - Die Modulstruktur formal hinschreiben können und anhand der Struktur Eigenschaften (Hierarchie, Ebenen) bestimmen können.
- - Die Beziehungen "uses" und "is_component_of" kennen 
+ - Die Beziehungen "uses" und "is_component_of" kennen
  - Einige typische Architekturmuster mittels einem Modulgraphen beschreiben können
  - Die wichtigsten Kategorien von Modulen nennen können.
- 
 
- 
- 
+
+
+
 ### Fortgeschrittene Lernziele
 
-Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 07. Oktober erreicht werden. Nach dieser Woche sollten die Studierenden:
+Die Folgenden Lernziele sollten während oder nach der Vorlesung vom 13. Oktober erreicht werden. Nach dieser Woche sollten die Studierenden:
 
 - Unterschiede in der Abstraktion "uses" and "is_component_of" verstehen und erklären können
 - Designs anhand von Kriterien wie Fan-In, Hierarchien, etc. beurteilen können
-- Erklären können wie Information Hiding von den unterschiedlichen Modulkategorien umgesetzt wird. 
+- Erklären können wie Information Hiding von den unterschiedlichen Modulkategorien umgesetzt wird.
 - Modulkategorien auf Sprachkonstrukte in Java abbilden können.
 
 
@@ -54,20 +54,20 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 5: Schauen Sie sich das Video "Moduldesign an" ([Video](https://tube.switch.ch/videos/63479caf)), [Slides](./slides/module-design.html))
 * Schritt 6: Schauen Sie sich das Video "Kategorien von Modulen" an. ([Video](https://tube.switch.ch/videos/7d6cdc90), [Slides](./slides/module-categories.html))
 * Schritt 7: Lesen Sie den Artikel "Abstrakte Datentypen und Objektorientierte Programmierung " ([Artikel](./articles/module-adts-oo.html))
-* Schritt 8: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_1047457.html).  
+* Schritt 8: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_1263978.html).
 
-*Achtung: Der Test muss spätestens bis Mittwoch 07. Oktober, 08:00 bearbeitet sein.*
-  
+*Achtung: Der Test muss spätestens bis Mittwoch 13. Oktober, 08:00 bearbeitet sein.*
+
 
 ### Übungen
-Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](exercises/theory-exercises). 
-Falls Sie bei der Vorlesung nicht anwesend waren, schreiben Sie ihre Antworten bitte auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_1019320.html) ein.
+Während der Vorlesungsstunde diskutieren wir die Fragen auf diesem [Übungsblatt](exercises/theory-exercises).
+Falls Sie bei der Vorlesung nicht anwesend waren, schreiben Sie ihre Antworten bitte auf und reichen Sie diese (in PDF Format) auf [Adam](https://adam.unibas.ch/goto_adam_exc_1238085.html) ein.
 
 Vergessen Sie auch nicht die [praktischen Übungen](exercises/practical-exercises) zu bearbeiten.
 
-*Abgabetermin ist Dienstag, 13. Oktober, 23.55*
+*Abgabetermin ist Dienstag, 19. Oktober, 23.55*
 
 ### Feedback
 
-Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen. 
-Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_1030287.html) auf dem Adam-Workspace.
+Haben Sie einen Fehler entdeckt? Sie können uns helfen das Kursmaterial zu verbessern in dem Sie einen Pull Request auf Github machen.
+Haben Sie Feedback zu den Lernmaterialien, dem Kurs oder den Übungen. Geben sie uns direkt in der Vorlesung Feedback oder nutzen Sie das [Forum](https://adam.unibas.ch/goto_adam_frm_1250178.html) auf dem Adam-Workspace.
