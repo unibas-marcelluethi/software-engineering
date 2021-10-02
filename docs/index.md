@@ -72,12 +72,12 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 29.09.2021 vor 08.00  | Theorie Selbsttest Woche 2  | Adam  | |
-| 29.09.2021 vor 12.15  | Entwicklungsumgebung aufsetzen | keine | [Anleitung](week1/exercises/jabref-setup.html)
-| 05.09.2021 23.59 | Theorieübungsblatt Woche 2 | Adam | falls bei Vorlesung nicht anwesend |
+| 05.09.2021 23.55 | Theorieübungsblatt Woche 2 | Adam | falls bei Vorlesung nicht anwesend |
 | 05.09.2021 23.59 | Praktische Übung Woche 2 | Github | Pull Request gemäss Anleitung|
 | 06.09.2021 vor 08.00  | Theorie Selbsttest Woche 3  | Adam  | |
-
+| 12.09.2021 23.55 | Theorieübungsblatt Woche 3 | Adam | falls bei Vorlesung nicht anwesend |
+| 12.09.2021 23.59 | Praktische Übung Woche 3 | Github | Pull Request gemäss Anleitung|
+| 13.09.2021 vor 08.00  | Theorie Selbsttest Woche 4  | Adam  | |
 
 ## Literatur / Weiterführende Links
 
