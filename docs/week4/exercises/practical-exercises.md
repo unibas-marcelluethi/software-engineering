@@ -12,7 +12,7 @@ title : Woche 4
 ## Einführung
 
 In dieser Übung werden Sie lernen wie man mit Unit Tests arbeitet und wie Sie Builds und Tests mittels Continuous Integration pipelines automatisieren können.
-Neben dem kennenlernen dieser wichtigen Werkzeuge, werden sie bei dieser Übung auch ihr Verständnis vom JabRef Code vertiefen.
+Neben dem Kennenlernen dieser wichtigen Werkzeuge, werden sie bei dieser Übung auch ihr Verständnis vom JabRef Code vertiefen.
 
 
 #### 1. Vorbereitung
@@ -84,10 +84,10 @@ soll. In dieser Methode erstellen Sie eine Datenbank mit 3 Einträgen. Die Eintr
 
 * Schreiben Sie dann einen Test ```correctlyCountsNumberOfEntries``` welcher prüft, dass die
   Anzahl Einträge in der Datenbank richtig angegeben werden.
-* Schreiben Sie einen Test ```getEntriesSortedOnFieldYear``` welches prüft, ob die Einträge
+* Schreiben Sie einen Test ```getEntriesSortedOnFieldYear``` welcher prüft, ob die Einträge
   mit der Methode ```getEntriesSorted``` korrekt nach Jahr sortiert werden können.
 * Schreiben Sie einen Test ```getEntryByCitationKeyFindsEntry``` welcher überprüft ob für einen gegebenen
-Schlüssel (Citationkey) der richtige Eintrag zurückgegeben wird. (Der CitationKey ist der Eintrag auf der ersten Zeile nach dem Eintragstyp, also z.b. *liskov1974programming*).
+Schlüssel (Citationkey) der richtige Eintrag zurückgegeben wird. (Der CitationKey ist der Eintrag auf der ersten Zeile nach dem Eintragstyp, also z.B. *liskov1974programming*).
 
 
 
