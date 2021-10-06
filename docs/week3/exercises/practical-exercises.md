@@ -140,7 +140,7 @@ Sie finden, wenn Sie einen Rechtsklick auf ein Symbol (also Klasse, Methode, Var
 #### Dokumentieren einer Klasse
 
 Schauen Sie sich die Klasse
-```package org.jabref.logic.formatter;;``` an. Dokumentieren Sie die Klasse mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
+```org.jabref.logic.bibtex.BibEntryWriter``` an. Dokumentieren Sie die Klasse mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
 
 
 
