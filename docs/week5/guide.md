@@ -56,7 +56,7 @@ Falls Sie bei der Vorlesung nicht anwesend waren, schreiben Sie ihre Antworten b
 
 Vergessen Sie auch nicht die [praktischen Übungen](exercises/practical-exercises) zu bearbeiten.
 
-*Abgabetermin ist Dienstag, 20. Oktober, 23.59*
+*Abgabetermin ist Dienstag, 26. Oktober, 23.59*
 
 ### Feedback
 
