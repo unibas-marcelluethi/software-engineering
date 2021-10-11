@@ -50,7 +50,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | Software design - Übersicht und Einführung |  |
 |[Woche 4](week4/index) | Modulstruktur  | |
 |    | Modul Design  | |
-|[Woche 5](underconstruction) | OO Design | |
+|[Woche 5](week5/index) | OO Design | |
 |    | UML (statische Diagramme)  | |
 |[Woche 6](underconstruction)   | Anforderungsanalyse   | |
 |[Woche 7](underconstruction) | Softwarespezifikation  |  |
@@ -72,12 +72,12 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 05.09.2021 23.55 | Theorieübungsblatt Woche 2 | Adam | falls bei Vorlesung nicht anwesend |
-| 05.09.2021 23.59 | Praktische Übung Woche 2 | Github | Pull Request gemäss Anleitung|
-| 06.09.2021 vor 08.00  | Theorie Selbsttest Woche 3  | Adam  | |
 | 12.09.2021 23.55 | Theorieübungsblatt Woche 3 | Adam | falls bei Vorlesung nicht anwesend |
 | 12.09.2021 23.59 | Praktische Übung Woche 3 | Github | Pull Request gemäss Anleitung|
 | 13.09.2021 vor 08.00  | Theorie Selbsttest Woche 4  | Adam  | |
+| 19.09.2021 23.55 | Theorieübungsblatt Woche 4 | Adam | falls bei Vorlesung nicht anwesend |
+| 12.09.2021 23.59 | Praktische Übung Woche 4 | Github | Pull Request gemäss Anleitung|
+| 20.09.2021 vor 08.00  | Theorie Selbsttest Woche 5  | Adam  | |
 
 ## Literatur / Weiterführende Links
 
