@@ -24,14 +24,14 @@ In den folgenden Aufgaben entwickeln Sie diese Erweiterung Schritt für Schritt.
 
 ####  Erstellen eines Feature branch
 
-Da wir die Änderungen der letzten Übung hier nicht benötigen, starten wir wieder vom Masterbranch.
+Da wir die Änderungen der letzten Übung hier nicht benötigen, starten wir wieder vom Main branch.
 ```
-git checkout master
+git checkout main
 ```
 
-Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository, wie in [Übung 2](../../week2/exercises/practical-exercises.html) beschrieben  und pushen Sie den aktualisierten masterbranch auf ihr github repository
+Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository, wie in [Übung 2](../../week2/exercises/practical-exercises.html) beschrieben  und pushen Sie den aktualisierten main Branch auf ihr Github repository
 ```
-git push origin master
+git push origin main
 ```
 
 Wie immer erstellen wir zuerst für unsere Änderungen einen lokalen Featurebranch und wechseln in diesen:
@@ -88,7 +88,7 @@ Committen Sie Ihre Änderungen.
 ## Aufgabe 4: Lokalisierung
 
 Machen Sie den Dialog aus voriger Aufgabe mittels *Localization* mehrsprachig. Die Meldung sollten mindestens für die Sprachen Deutsch und Englisch implementiert werden.
-*Tipp: * Um die Mehrsprachigkeit zu testen können Sie die Sprache im Preferences Dialog umstellen.
+*Tipp:* Um die Mehrsprachigkeit zu testen können Sie die Sprache im Preferences Dialog umstellen.
 
 Committen Sie Ihre Änderungen.
 
