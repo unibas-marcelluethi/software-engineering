@@ -29,7 +29,7 @@ Die Gruppeneinteilung und Besprechungstermine werden zu gegebener Zeit bekanntge
 
 #### Github Repository
 Benutzen sie ein bestehendes Repository von ihrer Gruppe. Geben sie allen Gruppenmitgliedern entsprechende Zugriffsrechte (via Settings->Collaborators).
-Bitte fügen Sie auch die Entwickler ```koppor```, ```Siedlerchr```, ```calixtus``` von JabRef zum Repository hinzu. So können diese früh eingreifen, falls Sie eine Anforderung ganz falsch verstanden haben, und Ihnen somit viel Arbeit ersparen.
+Bitte fügen Sie auch die Entwickler ```koppor```, ```Siedlerchr```, ```calixtus``` und ```btut``` von JabRef zum Repository hinzu. So können diese früh eingreifen, falls Sie eine Anforderung ganz falsch verstanden haben, und Ihnen somit viel Arbeit ersparen.
 
 
 Da Sie von nun an gegen die offizielle Version von JabRef programmieren, müssen Sie Ihr Repository auch immer aktuell halten und die Änderungen der JabRef Entwickler. Dazu gehen Sie wie folgt vor:
