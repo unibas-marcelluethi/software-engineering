@@ -40,14 +40,17 @@ Zur Identifizierung der funktionalen Anforderungen sollten Sie die oben erstellt
 Zeichenprogramm wie Inkscape oder Paint erstellen.*
 
 
-
-#### Nichtfunktionale Anforderungen
-
-Nun überlegen Sie sich ob Sie spezielle nicht funktionale Anforderungen haben. Beschreiben Sie diese im Dokument.
-
 #### Abnahmekriterien
 Überlegen Sie sich sinnvolle Abnahmekriterien. Diese Kriterien sollen von uns überprüfbar sein und die Grundlage für die Entscheidung bilden,
 ob Sie das Projekt bestehen.
+
+
+#### Offene Fragen an Betreuer und JabRef Entwickler
+
+Notieren Sie sich Unklarheiten und offene Fragen, die sie nicht selber herausfinden können, direkt im Dokument. Kennzeichnen Sie diese klar mit dem Vermerk *OPEN QUESTION:* .
+Ihre Betreuer können diese dann mit dem JabRef Team aufnehmen.
+
+
 
 ## Projektplan
 
