@@ -2,7 +2,7 @@
 layout: default
 title : Woche 6
 ---
-# Pflichtenheft 
+# Pflichtenheft
 #####  (Vorlage nach Balzert, Lehrbuch der Softwaretechnik (3 Auflage, Kapitel 20.3))
 
 Das Pflichtenheft ist eine Verfeinerung und Pr&auml;zisierung des Lastenhefts.
@@ -13,55 +13,54 @@ Das Pflichtenheft ist eine Verfeinerung und Pr&auml;zisierung des Lastenhefts.
 |  0.1    |  Name   | Name | in Bearbeitung | 01.01.1970 | |
 
 
-## 1. Visionen und Ziele 
-Beschreibung der Visionen und Ziele, die durch den Einsatz des Systems erreicht werden sollen. 
+## 1. Ziele
+Beschreibung der Ziele, die durch den Einsatz des Systems erreicht werden sollen.
 
-* /V10/ Vision 1 des Systems
 * /Z10/ Ziel 1 des Systems
 
 
 ## 2. Rahmenbedingungen
 
-Beschreibung der organisatorischen Rahmenbedingungen: Anwendungsbereiche, Zielgruppen, Betriebsbedingungen
-(Wenn nicht relevant entsprechende Beispielkategorie l&ouml;schen)
+Beschreibung der organisatorischen Rahmenbedingungen: Anwendungsbereiche, Zielgruppen, Betriebsbedingungen.
+Wenn ein Punkt nicht relevant ist, löschen Sie die entsprechende Kategorie einfach.
 
-* /R10/ Anwendungsbereich 1
-* /R20/ Zielgruppe 1
-* /R30/ Physikalische Umgebung 
-* /R40/ Betriebszeit des Systems
-* /R50/ Beobachtung des Systems durch Nutzer oder unbeaufsichtigter Betrieb
-* /R60/ Eingesetzte Software auf der Zielmaschine
-* /R70/ Eingesetzte Hardware einschl. Konfiguration auf der Zielmaschine
-* /R80/ Organisatorische Randbedingungen
-* /R90/ Software auf dem Entwicklungssystems
-* /R100/ Hardware des Entwicklungssystems
-* /R110/ Orgware (zur Bedienung/Einsatz benötigte Materialien (z.B. Betriebsanweisungen, Organisationspläne)
-* /R120/ Entwicklungsschnittstellen
+* /R10/ Anwendungsbereich
+* /R20/ Zielgruppe
+* /R30/ Eingesetzte Software auf der Zielmaschine
+* /R40/ Eingesetzte Hardware einschl. Konfiguration auf der Zielmaschine
+* /R50/ Organisatorische Randbedingungen
+* /R60/ Software auf dem Entwicklungssystems
+* /R70/ Hardware des Entwicklungssystems
+* /R80/ Orgware (zur Bedienung/Einsatz benötigte Materialien (z.B. Betriebsanweisungen, Organisationspläne)
+* /R90/ Entwicklungsschnittstellen
 
-## 3. Kontext und &Uuml;berblick
+## 3. Kontext und Überblick
 
-Festlegung der relevanten Systemumgebung (Kontext) und &Uuml;berblick &uuml;ber das System:
+Festlegung der relevanten Systemumgebung (Kontext) und Überblick über das System.
+An dieser Stelle sollten zum Beispiel alle externen Systeme, mit denen Ihre Anwendung kommuniziert beschrieben werden.
 
 * /K10/ Kontext 1
 
 
 ## 4. Funktionale Anforderungen
-Die Kernfunktionailt&auml;t des Systems ist aus Auftraggebersicht auf oberster Abstraktionsebene zu beschreiben. 
-Auf Detailbeschreibung ist zu verzichten. 
+
+Hier soll die Funktionalität des Systems beschrieben werden. Zur Formulierung sollen Sprachschablonen eingesetzt werden. D.h. Anforderungen sollen nach dem Scheme Das System muss/soll/sollte in Zukunft Funktionalität X erbringen können.
+
 
 * /F10/ Funktion 1 des Systems
 * /F20/ Funktion 2 des Systems
 
-Erfolgt die spezifikation natürlichsprachlich, dann sollten Sprachtemplates verwendet werden. 
 
-Die Funktionalen Anforderungen können mithilfe von Use-cases erhoben werden. Die Use-cases sollen in Anhang A detailliert beschrieben werden. 
+Die Funktionalen Anforderungen sollen mithilfe von Use-cases erhoben werden. Die Use-cases sollen in Anhang A detailliert beschrieben werden.
 
 
-## 5. Qualit&auml;tsanforderungen 
-Es sollte anhand einer Tabelle eine Qualit&auml;tszielbestimmung f&uuml;r das Systems vorgenommen werden. 
+## 5. Qualit&auml;tsanforderungen
+Es sollte anhand einer Tabelle eine Qualitätszielbestimmung für das Systems vorgenommen werden.
+Überlegen Sie sich, ob Sie spezielle Anforderungen in einem Bereich erfüllen müssen. Wenn nicht,
+belassen Sie das entsprechende Kritierum auf "normal".
 
 | Systemqualit&auml;t  | sehr gut | gut | normal | nicht relevant |
-| -------------------  | -------- | --- | ------ | -------------- | 
+| -------------------  | -------- | --- | ------ | -------------- |
 | Funktionalit&auml;t  |          |     |   x    |                 |
 | Zuverl&auml;ssigkeit |          |     |   x    |                 |
 | Benutzbarkeit        |          |     |   x    |                |
@@ -76,8 +75,9 @@ Einzelne Anforderungen k&ouml;nnen wie folgt festgelegt werden:
 * /QE10/ Qualit&auml;tsanforderung zur Effizienz des Systems
 
 
-## 6. Abnahmekriterien  
-Abnahmekriterien legen fest, wie Anforderungen bei der Abnahme auf ihre Realisierung &uuml;berpr&uuml;ft werden k&ouml;nnen. 
+## 6. Abnahmekriterien
+
+Abnahmekriterien legen fest, wie Anforderungen bei der Abnahme auf ihre Realisierung überprüft werden können.
 
 * /A10/ Abnahmekriterium 1
 * /A20/ Abnahmekriterium 2
@@ -94,7 +94,7 @@ An dieser Stelle können detaillierte Use-cases angegeben werden
 * Name: *Name des Use-cases*
 * Akteure: *Akteur1, Akteur2, ...*
 * Vorbedingungen: *Was muss vor Beginn des Ablaufs gelten*
-* Standardablauf 
+* Standardablauf
     * Schritt 1
     * Schritt 2
 * Nachbedingungen Erfolg: *Was muss nach dem Ende des erfolgreichen Ablaufs gelten*
@@ -105,7 +105,7 @@ An dieser Stelle können detaillierte Use-cases angegeben werden
 * Name: *Name des Use-cases*
 * Akteure: *Akteur1, Akteur2, ...*
 * Vorbedingungen: *Was muss vor Beginn des Ablaufs gelten*
-* Standardablauf 
+* Standardablauf
     * Schritt 1
     * Schritt 2
 * Nachbedingungen Erfolg: *Was muss nach dem Ende des erfolgreichen Ablaufs gelten*
