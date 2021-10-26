@@ -53,7 +53,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 5](week5/index) | OO Design | |
 |    | UML (statische Diagramme)  | |
 |[Woche 6](week6/index)   | Anforderungsanalyse   | |
-|[Woche 7](underconstruction) | Softwarespezifikation  |  |
+|[Woche 7](week7/index) | Softwarespezifikation  |  |
 |[Woche 8](underconstruction) | Konstruktive und Deskriptive Softwarespezifikation  |  |
 |    | UML (dynamische Diagramme)  | |
 |[Woche 9](underconstruction) | Verifikation (Überblick)  | |
@@ -72,12 +72,12 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 19.10.2021 23.55 | Theorieübungsblatt Woche 4 | Adam | falls bei Vorlesung nicht anwesend |
-| 19.10.2021 23.59 | Praktische Übung Woche 4 | Github | Pull Request gemäss Anleitung|
-| 20.10.2021 vor 08.00  | Theorie Selbsttest Woche 5  | Adam  | |
 | 26.10.2021 23.55 | Theorieübungsblatt Woche 5 | Adam | falls bei Vorlesung nicht anwesend |
 | 26.10.2021 23.59 | Praktische Übung Woche 5 | Github | Pull Request gemäss Anleitung|
-| 27.10.2021 vor 08.00  | Theorie Selbsttest Woche 6  | Adam  | |
+| 31.10.2021 23.59 | Pflichtenheft  | Github | Pull Request gemäss Anleitung|
+| 03.11.2021 vor 08.00  | Theorie Selbsttest Woche 7  | Adam  | |
+| 10.11.2021 23.59 | Pflichtenheft - finale Version  | Github | Pull Request gemäss Anleitung|
+
 
 ## Literatur / Weiterführende Links
 
