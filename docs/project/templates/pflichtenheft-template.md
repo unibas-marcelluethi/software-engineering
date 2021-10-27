@@ -2,83 +2,74 @@
 layout: default
 title : Woche 6
 ---
-# Pflichtenheft 
-#####  (Vorlage nach Balzert, Lehrbuch der Softwaretechnik (3 Auflage, Kapitel 20.3))
-
-Das Pflichtenheft ist eine Verfeinerung und Pr&auml;zisierung des Lastenhefts.
+# Pflichtenheft
+#####  (Nach Lichter & Ludwig, Software Engineering: Grundlagen, Menschen, Prozesse, Techniken)
 
 
-| Version | Autor | Quelle | Status | Datum | Kommentar |
-| ------- | ----- | ------ | ------ | ----- | --------- |
-|  0.1    |  Name   | Name | in Bearbeitung | 01.01.1970 | |
+## 1. Einleitung
+
+### 1.1 Zweck
+
+Beschreibt den Zweck und den Leserkreis der Spezifikation.
+
+### 1.2 Einsatzbereich und Ziele
+Gibt an, wo die Software eingesetzt werden soll und welche wesentlichen Funktionen es haben wird. Wo sinnvoll, sollte auch definiert werden, was die Software nicht leisten wird.
+
+Beschreibt die mit der Software verfolgten Ziele.
+
+### 1.3 Definitionen
+
+Dokumentiert alle verwendeten Fachbegriffe und Abkürzungen. Alternativ können Sie auch ein separates Glossar nutzen.
+
+### 1.4 Referenzierte Dokumente
+
+Verzeichnet alle Dokumente, auf die in der Spezifikation verwiesen wird.
+
+### 1.5 Überblick
+
+Beschreibt, wie der Rest der Spezifikation aufgebaut ist, insbesondere, wie Kapitel 3 strukturiert ist.
+
+## 2. Allgemeine Beschreibung
+
+### 2.1 Einbettung
+
+Beschreibt, wie das System in seine Umgebung eingebettet ist und wie die Software mit den umgebenden Komponenten und Systemen zusammenspielt. Dazu werden die Schnittstellen, Kommunikationsprotokolle etc. definiert.
+
+### 2.2 Funktionen
+
+Skizziert die wichtigsten Funktionen
+
+### 2.3 Benutzerprofile
+
+Charakterisiert die Benutzergruppen und die Voraussetzungen die diese jeweils mitbringen (Ausbildung, Know-how, Sprache)
+
+### 2.4 Einschränkungen
+Dokumentiert Einschränkungen, die die Freiheit der Entwicklung reduzieren (Basis-Software, Ziel-Hardware, Gesetzliche Grundlagen, ...)
+
+### 2.5 Annahmen und Abhängigkeiten
+Nennt explizit die Annahmen und externen Voraussetzungen, von denen bei der Spezifikation ausgegangen wurde.
 
 
-## 1. Visionen und Ziele 
-Beschreibung der Visionen und Ziele, die durch den Einsatz des Systems erreicht werden sollen. 
+## 3. Einzelanforderungen
 
-* /V10/ Vision 1 des Systems
-* /Z10/ Ziel 1 des Systems
+Beschreibt die Anforderung i so genau, dass bei der Verwendung der Spezifikation (im Entwurf usw.) keine Rückfragen dazu notwendig sind.
 
+Identifizieren Sie jede Funktionale Anforderung mit einer Nummer, so dass diese Nachverfolgbar sind. Zusammengehörende Funktionale Anforderungen können durch geeignete Nummerierung angezeigt werden.
 
-## 2. Rahmenbedingungen
-
-Beschreibung der organisatorischen Rahmenbedingungen: Anwendungsbereiche, Zielgruppen, Betriebsbedingungen
-(Wenn nicht relevant entsprechende Beispielkategorie l&ouml;schen)
-
-* /R10/ Anwendungsbereich 1
-* /R20/ Zielgruppe 1
-* /R30/ Physikalische Umgebung 
-* /R40/ Betriebszeit des Systems
-* /R50/ Beobachtung des Systems durch Nutzer oder unbeaufsichtigter Betrieb
-* /R60/ Eingesetzte Software auf der Zielmaschine
-* /R70/ Eingesetzte Hardware einschl. Konfiguration auf der Zielmaschine
-* /R80/ Organisatorische Randbedingungen
-* /R90/ Software auf dem Entwicklungssystems
-* /R100/ Hardware des Entwicklungssystems
-* /R110/ Orgware (zur Bedienung/Einsatz benötigte Materialien (z.B. Betriebsanweisungen, Organisationspläne)
-* /R120/ Entwicklungsschnittstellen
-
-## 3. Kontext und &Uuml;berblick
-
-Festlegung der relevanten Systemumgebung (Kontext) und &Uuml;berblick &uuml;ber das System:
-
-* /K10/ Kontext 1
-
-
-## 4. Funktionale Anforderungen
-Die Kernfunktionailt&auml;t des Systems ist aus Auftraggebersicht auf oberster Abstraktionsebene zu beschreiben. 
-Auf Detailbeschreibung ist zu verzichten. 
+Zur Spezifikation der Software sollen Sprachschablonen benutzt werden.
 
 * /F10/ Funktion 1 des Systems
+* /F11/ Weitere Detaillierung Funkion 1
 * /F20/ Funktion 2 des Systems
 
-Erfolgt die spezifikation natürlichsprachlich, dann sollten Sprachtemplates verwendet werden. 
 
-Die Funktionalen Anforderungen können mithilfe von Use-cases erhoben werden. Die Use-cases sollen in Anhang A detailliert beschrieben werden. 
+Die Funktionalen Anforderungen sollen mithilfe von Use-cases erhoben werden. Die Use-cases sollen in Anhang A detailliert beschrieben werden.
 
+## 4. Abnahmekriterien
 
-## 5. Qualit&auml;tsanforderungen 
-Es sollte anhand einer Tabelle eine Qualit&auml;tszielbestimmung f&uuml;r das Systems vorgenommen werden. 
+Beschreiben Sie hier, wie die Anforderungen bei der Abnahme auf ihre Realisierung überprüft werden können.
 
-| Systemqualit&auml;t  | sehr gut | gut | normal | nicht relevant |
-| -------------------  | -------- | --- | ------ | -------------- | 
-| Funktionalit&auml;t  |          |     |   x    |                 |
-| Zuverl&auml;ssigkeit |          |     |   x    |                 |
-| Benutzbarkeit        |          |     |   x    |                |
-| Effizienz            |          |     |   x    |                 |
-| Wartbarkeit          |          |     |   x    |                 |
-| Portabilit&auml;t    |          |     |   x    |                 |
-
-
-Einzelne Anforderungen k&ouml;nnen wie folgt festgelegt werden:
-
-* /QB10/ Qualit&auml;tsanforderung zur Benutzbarkeit des Systems
-* /QE10/ Qualit&auml;tsanforderung zur Effizienz des Systems
-
-
-## 6. Abnahmekriterien  
-Abnahmekriterien legen fest, wie Anforderungen bei der Abnahme auf ihre Realisierung &uuml;berpr&uuml;ft werden k&ouml;nnen. 
-
+Definieren Sie hier mindestens ein Abnahmekriterium
 * /A10/ Abnahmekriterium 1
 * /A20/ Abnahmekriterium 2
 
@@ -94,22 +85,36 @@ An dieser Stelle können detaillierte Use-cases angegeben werden
 * Name: *Name des Use-cases*
 * Akteure: *Akteur1, Akteur2, ...*
 * Vorbedingungen: *Was muss vor Beginn des Ablaufs gelten*
-* Standardablauf 
+* Standardablauf
     * Schritt 1
     * Schritt 2
 * Nachbedingungen Erfolg: *Was muss nach dem Ende des erfolgreichen Ablaufs gelten*
-* Nachbedingung Fehlschlag: *Was gilt nach dem Ende, wenn der Ablauf fehlgeschlagen ist*
+* Nachbedingung Sonderfall: *Was gilt nach dem Ende, wenn der Ablauf fehlgeschlagen ist*
+
+
+#### Sonderfall 1a: Ausnahme 1
+* Ablauf Sonderfall 1a
+    * Schritt 1
+    * Schritt 2
+
+#### Sonderfall 1b: Ausnahme 2
+* Ablauf Sonderfall 1b
+    * Schritt 1
+    * Schritt 2
 
 
 ### Use Case 2:
 * Name: *Name des Use-cases*
 * Akteure: *Akteur1, Akteur2, ...*
 * Vorbedingungen: *Was muss vor Beginn des Ablaufs gelten*
-* Standardablauf 
+* Standardablauf
     * Schritt 1
     * Schritt 2
 * Nachbedingungen Erfolg: *Was muss nach dem Ende des erfolgreichen Ablaufs gelten*
-* Nachbedingung Fehlschlag: *Was gilt nach dem Ende, wenn der Ablauf fehlgeschlagen ist*
+* Nachbedingung Sonderfall: *Was gilt nach dem Ende, wenn der Ablauf fehlgeschlagen ist*
 
-
+#### Sonderfall 2a: Ausnahme 1
+* Ablauf Sonderfall 1a
+    * Schritt 1
+    * Schritt 2
 

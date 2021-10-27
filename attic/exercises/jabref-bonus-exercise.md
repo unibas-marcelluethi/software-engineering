@@ -4,8 +4,8 @@ layout: default
 # Bonusblatt: Eigener Formatierer beim Cleanup
 
 
-* Dieses Übungsblatt sollte bis am 17. November 2020 bearbeitet werden.
-* Abgabe via Pull Request bis spätestens 17. November, 23.55.
+* Dieses Übungsblatt sollte bis am 10. November 2021 bearbeitet werden.
+* Abgabe via Pull Request bis spätestens 10. November, 23.59.
 
 *WICHTIG! Die Abgabe muss einzeln bearbeitet werden. Gruppenarbeiten sind nicht möglich.*
 
