@@ -39,6 +39,7 @@ Da Sie von nun an gegen die offizielle Version von JabRef programmieren, müssen
 ```git fetch upstream```
 6. Ersetzen Sie die Commits in Ihrem Main Branch durch die vom JabRef Main Branch:
 ```git reset --hard upstream/main```
+7. Pushen Sie Ihre Änderungen in Ihr eigenes Github repository: ```git push --force origin main```
 
 
 <!--Kreieren sie ausgehend vom master branch einen branch `develop`. Für jede Abgabe (und jedes Feature) kreieren sie ausgehend vom branch `develop` einen neuen Featurebranch. Der Pull Request hat jeweils den `develop` branch als Ziel. Damit haben sie am Ende alle projektrelevanten Änderungen im `develop` branch. -->
