@@ -23,7 +23,7 @@ Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 
 ### Fortgeschrittene Lernziele
 
-Die folgenden Lernziele sollten während oder nach der Vorlesung vom 21. Oktober erreicht werden. Die Studierenden sollten
+Die folgenden Lernziele sollten während oder nach der Vorlesung vom 27. Oktober erreicht werden. Die Studierenden sollten
 - Anforderungen mittels Sprachschablonen formulieren können
 - Selbständig für ein kleines Projekt die Anforderungen erfassen, und ein Pflichtenheft erstellen können.
 - Verschiedene Techniken zur Aufwandschätzung kennen und anwenden können.
