@@ -24,9 +24,6 @@ Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in 
 
 ## Organisatorisches
 
-#### Gruppen und Besprechungstermine
-Die Gruppeneinteilung und Besprechungstermine werden zu gegebener Zeit bekanntgegeben.
-
 #### Github Repository
 Benutzen sie ein bestehendes Repository von ihrer Gruppe. Geben sie allen Gruppenmitgliedern entsprechende Zugriffsrechte (via Settings->Collaborators).
 Bitte fügen Sie auch die Entwickler ```koppor```, ```Siedlerchr```, ```calixtus``` und ```btut``` von JabRef zum Repository hinzu. So können diese früh eingreifen, falls Sie eine Anforderung ganz falsch verstanden haben, und Ihnen somit viel Arbeit ersparen.
