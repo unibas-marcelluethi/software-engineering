@@ -33,11 +33,15 @@ Bitte fügen Sie auch die Entwickler ```koppor```, ```Siedlerchr```, ```calixtus
 
 
 Da Sie von nun an gegen die offizielle Version von JabRef programmieren, müssen Sie Ihr Repository auch immer aktuell halten und die Änderungen der JabRef Entwickler. Dazu gehen Sie wie folgt vor:
-1. Wechseln Sie auf den main branch:  ```git checkout main```
-2. Löschen Sie das bisherige ```upstream``` repository ```git remote rm upstream```
-4. Fügen sie das JabRef Repository als neues upstream repository hinzu: ```git remote add upstream git@github.com:JabRef/jabref.git``` (oder ```https://github.com/JabRef/jabref.git``` falls Sie über https synchronisieren)
-5. Holen Sie die Commits und Änderungen vom offiziellen Repository ab: ```git fetch upstream```
-6. Ersetzen Sie die Commits in Ihrem Main Branch durch die vom JabRef Main Branch ```git reset --hard upstream/main```
+1. Wechseln Sie auf den main branch:
+```git checkout main```
+2. Löschen Sie das bisherige ```upstream``` repository: ```git remote rm upstream```
+4. Fügen sie das JabRef Repository als neues upstream repository hinzu:
+```git remote add upstream git@github.com:JabRef/jabref.git``` (oder ```https://github.com/JabRef/jabref.git``` falls Sie über https synchronisieren)
+5. Holen Sie die Commits und Änderungen vom offiziellen Repository ab:
+```git fetch upstream```
+6. Ersetzen Sie die Commits in Ihrem Main Branch durch die vom JabRef Main Branch:
+```git reset --hard upstream/main```
 
 
 <!--Kreieren sie ausgehend vom master branch einen branch `develop`. Für jede Abgabe (und jedes Feature) kreieren sie ausgehend vom branch `develop` einen neuen Featurebranch. Der Pull Request hat jeweils den `develop` branch als Ziel. Damit haben sie am Ende alle projektrelevanten Änderungen im `develop` branch. -->
