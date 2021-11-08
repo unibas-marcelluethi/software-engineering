@@ -6,7 +6,7 @@ layout: default
 *Bevor Sie die folgenden Aufgaben bearbeiten, vergewissern Sie sich bitte, dass Sie das [Dokument Projektübersicht](../project-summary.html) gelesen haben, und die entsprechenden Schritte und Deadlines kennen.
 Sie sollten auch alle Unterrichtsmaterialen (also Video und Artikel) bis und mit [Woche 10](../../week10/guide.html) durchgearbeitet haben*
 
-Erstellen Sie, ausgehend von ```develop``` branch in Ihrem Jabref Repository, einen neuen Featurebranch ```testplan```.
+Erstellen Sie, ausgehend von ```main``` branch in Ihrem Jabref Repository, einen neuen Featurebranch ```testplan```.
 
 
 ## Testplan
