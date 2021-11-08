@@ -56,7 +56,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 7](week7/index) | Softwarespezifikation  |  |
 |[Woche 8](week8/index) | Konstruktive und Deskriptive Softwarespezifikation  |  |
 |    | UML (dynamische Diagramme)  | |
-|[Woche 9](underconstruction) | Verifikation (Überblick)  | |
+|[Woche 9](week9/index) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
 |    | Code reviews | |
 | [Woche 10](underconstruction) | Testen im Kleinen   | |
@@ -72,11 +72,11 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 03.11.2021 vor 08.00  | Theorie Selbsttest Woche 7  | Adam  | |
 | 10.11.2021 23.59 | Pflichtenheft - finale Version  | Github | Pull Request gemäss
 Anleitung|
 | 10.11.2021 vor 08.00  | Theorie Selbsttest Woche 8  | Adam  | |
 | 14.11.2021 23.59 | Abgabe Designdoc  | Github | Pull Request gemäss
+| 17.11.2021 vor 08.00  | Theorie Selbsttest Woche 9  | Adam  | |
 
 ## Literatur / Weiterführende Links
 
