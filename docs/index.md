@@ -59,7 +59,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 9](week9/index) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
 |    | Code reviews | |
-| [Woche 10](underconstruction) | Testen im Kleinen   | |
+| [Woche 10](week10/index) | Testen im Kleinen   | |
 || Testen im Grossen ||
 | [Woche 11](underconstruction)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
@@ -72,11 +72,11 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 10.11.2021 23.59 | Pflichtenheft - finale Version  | Github | Pull Request gemäss
-Anleitung|
-| 10.11.2021 vor 08.00  | Theorie Selbsttest Woche 8  | Adam  | |
 | 14.11.2021 23.59 | Abgabe Designdoc  | Github | Pull Request gemäss
 | 17.11.2021 vor 08.00  | Theorie Selbsttest Woche 9  | Adam  | |
+| 23.11.2021 23.59 | Finale Version Designdoc  | Github | Pull Request gemäss
+| 24.11.2021 vor 08.00  | Theorie Selbsttest Woche 10  | Adam  | |
+
 
 ## Literatur / Weiterführende Links
 
