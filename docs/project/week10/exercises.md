@@ -31,4 +31,4 @@ Finden Sie heraus, wie hoch die Testabdeckung durch Unittests für Jabref insges
 
 Speichern Sie die Dokumente im docs Ordner von ihrem Repository ab.
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie Ihren Betreuer (also ```marcelluethi```, ```emugdan```, ```colinhex``` oder ```guenesaydin```) als Reviewer an. Abgabetermin ist Sonntag, 22. November, 23:55. Die Besprechung mit den Betreuern findet am 25. November statt. Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 1. Dezember, 23.55.
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request. Geben Sie Ihren Betreuer (also ```marcelluethi```, ```emugdan```, ```colinhex``` oder ```guenesaydin```) als Reviewer an. Abgabetermin ist Sonntag, 28. November, 23:55. Die Besprechung mit den Betreuern findet am 1. Dezember statt. Die Abgabe der überarbeiteten und finalen Version erfolgt dann bis spätestens 8. Dezember, 23.55.
