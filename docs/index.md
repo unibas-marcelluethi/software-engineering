@@ -54,12 +54,12 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | UML (statische Diagramme)  | |
 |[Woche 6](week6/index)   | Anforderungsanalyse   | |
 |[Woche 7](week7/index) | Softwarespezifikation  |  |
-|[Woche 8](underconstruction) | Konstruktive und Deskriptive Softwarespezifikation  |  |
+|[Woche 8](week8/index) | Konstruktive und Deskriptive Softwarespezifikation  |  |
 |    | UML (dynamische Diagramme)  | |
-|[Woche 9](underconstruction) | Verifikation (Überblick)  | |
+|[Woche 9](week9/index) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
 |    | Code reviews | |
-| [Woche 10](underconstruction) | Testen im Kleinen   | |
+| [Woche 10](week10/index) | Testen im Kleinen   | |
 || Testen im Grossen ||
 | [Woche 11](underconstruction)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
@@ -72,11 +72,10 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 26.10.2021 23.55 | Theorieübungsblatt Woche 5 | Adam | falls bei Vorlesung nicht anwesend |
-| 26.10.2021 23.59 | Praktische Übung Woche 5 | Github | Pull Request gemäss Anleitung|
-| 31.10.2021 23.59 | Pflichtenheft  | Github | Pull Request gemäss Anleitung|
-| 03.11.2021 vor 08.00  | Theorie Selbsttest Woche 7  | Adam  | |
-| 10.11.2021 23.59 | Pflichtenheft - finale Version  | Github | Pull Request gemäss Anleitung|
+| 14.11.2021 23.59 | Abgabe Designdoc  | Github | Pull Request gemäss
+| 17.11.2021 vor 08.00  | Theorie Selbsttest Woche 9  | Adam  | |
+| 23.11.2021 23.59 | Finale Version Designdoc  | Github | Pull Request gemäss
+| 24.11.2021 vor 08.00  | Theorie Selbsttest Woche 10  | Adam  | |
 
 
 ## Literatur / Weiterführende Links

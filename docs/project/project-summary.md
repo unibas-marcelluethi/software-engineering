@@ -24,20 +24,22 @@ Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in 
 
 ## Organisatorisches
 
-#### Gruppen und Besprechungstermine
-Die Gruppeneinteilung und Besprechungstermine werden zu gegebener Zeit bekanntgegeben.
-
 #### Github Repository
 Benutzen sie ein bestehendes Repository von ihrer Gruppe. Geben sie allen Gruppenmitgliedern entsprechende Zugriffsrechte (via Settings->Collaborators).
 Bitte fügen Sie auch die Entwickler ```koppor```, ```Siedlerchr```, ```calixtus``` und ```btut``` von JabRef zum Repository hinzu. So können diese früh eingreifen, falls Sie eine Anforderung ganz falsch verstanden haben, und Ihnen somit viel Arbeit ersparen.
 
 
 Da Sie von nun an gegen die offizielle Version von JabRef programmieren, müssen Sie Ihr Repository auch immer aktuell halten und die Änderungen der JabRef Entwickler. Dazu gehen Sie wie folgt vor:
-1. Wechseln Sie auf den main branch:  ```git checkout main```
-2. Löschen Sie das bisherige ```upstream``` repository ```git remote rm upstream```
-4. Fügen sie das JabRef Repository als neues upstream repository hinzu: ```git remote add upstream git@github.com:JabRef/jabref.git``` (oder ```https://github.com/JabRef/jabref.git``` falls Sie über https synchronisieren)
-5. Holen Sie die Commits und Änderungen vom offiziellen Repository ab: ```git fetch upstream```
-6. Ersetzen Sie die Commits in Ihrem Main Branch durch die vom JabRef Main Branch ```git reset --hard upstream/main```
+1. Wechseln Sie auf den main branch:
+```git checkout main```
+2. Löschen Sie das bisherige ```upstream``` repository: ```git remote rm upstream```
+4. Fügen sie das JabRef Repository als neues upstream repository hinzu:
+```git remote add upstream git@github.com:JabRef/jabref.git``` (oder ```https://github.com/JabRef/jabref.git``` falls Sie über https synchronisieren)
+5. Holen Sie die Commits und Änderungen vom offiziellen Repository ab:
+```git fetch upstream```
+6. Ersetzen Sie die Commits in Ihrem Main Branch durch die vom JabRef Main Branch:
+```git reset --hard upstream/main```
+7. Pushen Sie Ihre Änderungen in Ihr eigenes Github repository: ```git push --force origin main```
 
 
 <!--Kreieren sie ausgehend vom master branch einen branch `develop`. Für jede Abgabe (und jedes Feature) kreieren sie ausgehend vom branch `develop` einen neuen Featurebranch. Der Pull Request hat jeweils den `develop` branch als Ziel. Damit haben sie am Ende alle projektrelevanten Änderungen im `develop` branch. -->
