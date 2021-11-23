@@ -24,7 +24,7 @@ Nach dem Selbststudium der Vorlesungsmaterialien sollten die Studierenden:
 
 
 ### Fortgeschrittene Lernziele
-Die folgenden Lernziele sollten *während oder nach* der Vorlesung vom 18. November erreicht werden. Die Studierenden sollten:
+Die folgenden Lernziele sollten *während oder nach* der Vorlesung vom 24. November erreicht werden. Die Studierenden sollten:
 - Ursache-Wirkungsgraphen und Entscheidungstabellen für eine gegebene Spezifikation erstellen und diese zur Findung von Testfällen anwenden können.
 - Eine Teststrategie für Funktionale und Nichtfunktionale Anforderungen entwickeln und diese in einem Testplan beschreiben können
 - Die Testabdeckung für ein System mithilfe von automatisierten Tools bestimmen können

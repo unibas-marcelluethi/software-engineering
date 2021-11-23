@@ -61,7 +61,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | Code reviews | |
 | [Woche 10](week10/index) | Testen im Kleinen   | |
 || Testen im Grossen ||
-| [Woche 11](underconstruction)    | Softwareprozesse | |
+| [Woche 11](week11/index)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
 | [Woche 12](underconstruction)| Scrum  | |
 |         | Continuous delivery | |
@@ -72,10 +72,10 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 14.11.2021 23.59 | Abgabe Designdoc  | Github | Pull Request gemäss
-| 17.11.2021 vor 08.00  | Theorie Selbsttest Woche 9  | Adam  | |
 | 23.11.2021 23.59 | Finale Version Designdoc  | Github | Pull Request gemäss
 | 24.11.2021 vor 08.00  | Theorie Selbsttest Woche 10  | Adam  | |
+| 28.11.2021 23.59 | Erste Version Testplan  | Github | Pull Request gemäss
+| 1.12.2021 vor 08.00  | Theorie Selbsttest Woche 11  | Adam  | |
 
 
 ## Literatur / Weiterführende Links
