@@ -63,7 +63,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 || Testen im Grossen ||
 | [Woche 11](week11/index)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
-| [Woche 12](underconstruction)| Scrum  | |
+| [Woche 12](week12/index)| Scrum  | |
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen | |
 | [Woche 14](underconstruction)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung |  |
@@ -72,11 +72,9 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 23.11.2021 23.59 | Finale Version Designdoc  | Github | Pull Request gemäss
-| 24.11.2021 vor 08.00  | Theorie Selbsttest Woche 10  | Adam  | |
-| 28.11.2021 23.59 | Erste Version Testplan  | Github | Pull Request gemäss
-| 1.12.2021 vor 08.00  | Theorie Selbsttest Woche 11  | Adam  | |
-
+| 07.12.2021 23.59 | Finale Version Testplan  | Github | Pull Request gemäss
+| 08.12.2021 vor 08.00  | Theorie Selbsttest Woche 12  | Adam  | |
+| 15.12.2021 vor 08.00  | Abschlusspräsentation Projekt  |  | |
 
 ## Literatur / Weiterführende Links
 

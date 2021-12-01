@@ -11,21 +11,21 @@ und moderne Entwicklungswerkzeuge verbinden.
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 2. Dezember *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 8. Dezember *selbständig* zu erarbeiten.
 
 Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
 - erklären können, was man unter dem Begriff Continuous Delivery versteht
 - verstehen wie sich Continuous Delivery von Continuous Integration und Continuous Deployment unterscheidet
 - die Wichtigkeit von Spezifikationen und Automatisierten Tests in diesem Prozess einschätzen können.
-- die Wichtigkeit und Rolle von Werkzeugen wie Versionsverwaltung (z.B. Git), Integrationsserver (Travis) in diesem Prozess einschätzen können.
+- die Wichtigkeit und Rolle von Werkzeugen wie Versionsverwaltung (z.B. Git), Integrationsserver in diesem Prozess einschätzen können.
 
 
 ### Vorbereitung:
 
 * Schritt 1: Schauen Sie sich das Video "Continuous Delivery" von Martin Fowler an  ([Artikel zum Video](articles/continuous-delivery.html))
-* Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_1091874.html))
+* Schritt 2: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_1310430.html))
 
-*Achtung: Der Test muss spätestens bis Mittwoch 2. Dezember, 08:00 bearbeitet sein.*
+*Achtung: Der Test muss spätestens bis Mittwoch 8. Dezember, 08:00 bearbeitet sein.*
 
 
 ### Übungen
