@@ -66,15 +66,14 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | [Woche 12](week12/index)| Scrum  | |
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen | |
-| [Woche 14](underconstruction)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung |  |
+| [Woche 14](week13/index)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung |  |
 
 ## Nächste Deadlines
 
 | Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
 | ------------ | ------------ | ---- | ------- |
-| 07.12.2021 23.59 | Finale Version Testplan  | Github | Pull Request gemäss
-| 08.12.2021 vor 08.00  | Theorie Selbsttest Woche 12  | Adam  | |
 | 15.12.2021 vor 08.00  | Abschlusspräsentation Projekt  |  | |
+| 22.12.2021 vor 08.00  | Theorie Selbsttest Woche 13-14  | Adam  | |
 
 ## Literatur / Weiterführende Links
 
