@@ -29,7 +29,7 @@ Die Präsentation sollte mindestens folgende Punkte ansprechen:
     * Was ist die wichtigste Einsicht die Sie erlangt haben?
 
 #### Zeitplan
-Die Präsentationen finden am 15. Dezember (08.15-10.00 und 12.15 - 14.00) statt. Die Reihenfolge der Präsentationen entspricht der jeweiligen Projektnummer.
+Die Präsentationen finden am 15. Dezember (08.15-10.00 und 12.15 - 14.00) statt. Die Reihenfolge der Präsentationen wird noch bekanntgegeben.
 
 
 #### Abgabe der Präsentationsfolien
