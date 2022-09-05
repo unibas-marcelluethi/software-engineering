@@ -11,18 +11,23 @@ title : Übersicht
 Departement Mathematik und [Informatik](http://informatik.unibas.ch/), Universität Basel
 
 
-Dozent: Marcel Lüthi (<marcel.luethi@unibas.ch>)
+##### Dozent
+* [Marcel Lüthi](mailto:marcel.luethi@unibas.ch)
 
-Tutor*innen:
+##### Tutoren
 
-* Esther Mugdan(<esther.mugdan@unibas.ch>)
-* Günes Aydin (<guenes.aydin@unibas.ch>)
-* Colin Fingerlin(<colin.fingerlin@unibas.ch>)
+* [Guillaume Joyet](mailto:guillaume.joyet@unibas.ch)
+* [Linus Petrucci](mailto:l.petrucci@stud.unibas.ch)
+* [Sylvain Rousselle](mailto:sylvain.rousselle@unibas.ch)
 
-[Diese Vorlesungsseite auf Github](https://github.com/unibas-marcelluethi/software-engineering)
+##### Vorlesungsseite
 
-[Diskussionsforum zum Kurs (Gitter)]([https://gitter.im/unibas-software-engineering/software-engineering-hs21?utm_source=share-link&utm_medium=link&utm_campaign=share-link])
+* [Diese Vorlesungsseite auf Github](https://github.com/unibas-marcelluethi/software-engineering)
 
+Wenn Sie Fehler auf der Seite entdecken, dürfen Sie gerne direkt einen [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) erstellen. 
+
+* [Internes Diskussionsforum zur Theorie (Auf Adam)](https://adam.unibas.ch/goto_adam_frm_1435344.html)
+* [Diskussionsforum zu den Übungen (Auf Github)](https://github.com/unibas-marcelluethi/jabref/discussions)
 
 ## Kursbeschreibung
 
@@ -68,19 +73,13 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | Woche 13 | Projektpräsentationen | |
 | [Woche 14](week13/index)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung |  |
 
-## Nächste Deadlines
-
-| Abgabetermin | Beschreibung | Abgabeart | Anmerkung |
-| ------------ | ------------ | ---- | ------- |
-| 15.12.2021 vor 08.00  | Abschlusspräsentation Projekt  |  | |
-| 22.12.2021 vor 08.00  | Theorie Selbsttest Woche 13-14  | Adam  | |
 
 ## Literatur / Weiterführende Links
 
 ### Empfohlene Lehrbücher
 
 Der Vorlesungstoff kann gut mit dem zur Verfügung gestellten Material erarbeitet werden.
-Als Ergänzung empfehlen wir folgende Lehrbücher.
+Wer trotzdem ein Lehrbuch kaufen möchte, kann mit einem der folgenden, klassischen Büchern, keinen Fehler machen. 
 
 
 * [S. L. Pfleeger, und J. M. Atlee. Software engineering: theory and practice](https://www.pearson.com/us/higher-education/program/Pfleeger-Pfleeger-Software-Engineering-4-4th-Edition/PGM58925.html)
@@ -89,14 +88,4 @@ Als Ergänzung empfehlen wir folgende Lehrbücher.
     * Deutschsprachiges Lehrbuch
 * [C. Ghezzi, M. Jazayeri und D. Mandrioli, Fundamentals of Software Engineering](https://www.pearson.com/us/higher-education/program/Ghezzi-Fundamentals-of-Software-Engineering-2nd-Edition/PGM13112.html)
     * Sehr empfehlenswerter Klassiker, welcher die Grundlage dieser Vorlesung bildet. Kann wegen dem horrenden Preis jedoch nicht zum Kauf empfohlen werden.
-
-
-### Weiterführende Links und Literaturempfehlungen für besonders Interessierte
-
-* The mythical man month, Fred Brooks: [(Link zu Buchhandlung))](https://www.orellfuessli.ch/shop/home/artikeldetails/ID27907949.html)
-    * Software Engineering Klassiker. Einfach und unterhaltsam zu lesen aber voller wertvoller Informationen.
-* The Good, the Hype and the Ugly, Bertrand Mejer [(Link zu Buchhandlung)](https://www.orellfuessli.ch/shop/home/artikeldetails/ID38663616.html)
-    * Gute Einführung in Agile Methoden, die Agile Methoden auch in Kontext mit traditionellen Software Engineering Ansätzen setzt.
-* Seminal papers in Software Engineering, The Carnegie Mellon Canonical Collection [(pdf)](http://reports-archive.adm.cs.cmu.edu/anon/isr2015/CMU-ISR-15-107.pdf)
-    * Annotierter Katalog von klassischen Software Engineering Paper
 
