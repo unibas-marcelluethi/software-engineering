@@ -105,7 +105,7 @@ Nun erstellen Sie, ausgehend von unserem privaten Fork, ihren eigenen privaten F
 Damit unsere Assistenten Ihre Abgaben anschauen können, müssen Sie diesen noch Zugriffsrechte auf ihr neues Repository geben. Dafür gehen Sie auf *Settings* und dann *Manage access*:
 ![github-manage-access](images/github-manage-access.png)
 
-Klicken Sie dann auf *Invite Teams or people* und fügen Sie ```guenesaydin``` und ```emugdan``` und ```colinhex``` hinzu.
+Klicken Sie dann auf *Invite Teams or people* und fügen Sie ```TODO``` und ```TODO``` und ```TODO``` hinzu.
 ![github-manage-access](images/github-manage-access-invite.png)
 
 Als Rolle im nachfolgenden Dialog wählen Sie *Write*.
@@ -113,7 +113,7 @@ Als Rolle im nachfolgenden Dialog wählen Sie *Write*.
 
 ### Klonen des Projekts
 
-Damit Sie an dem Projekt arbeiten können müssen Sie das Repository noch auf Ihren eigenen Computer bringen (d.h. das Repository "klonen"). Drücken Sie den grünen Button mit Namen "Code" und kopieren Sie die URL.
+Damit Sie an dem Projekt arbeiten können müssen Sie das Repository noch auf Ihren eigenen Computer bringen (d.h. das Repository "klonen"). Drücken Sie den grünen Button mit Namen "Code", wählen Sie *SSH* und und kopieren Sie die URL. (Anmerkung: Falls Sie statt mit SSH mit einem Access-token arbeiten, müssen Sie an dieser Stelle statt *SSH* *HTTPS* wählen).
 
 Öffnen Sie eine Konsole, wechseln Sie in ihr gewünschtes Arbeitsverzeichnis und geben Sie folgendes ein:
 
@@ -164,10 +164,11 @@ Falls Sie unter *Tools* keinen Eintrag Checkstyle finden sollten, müssen Sie zu
 Um JabRef aus der IDE zu starten öffnen Sie das Gradle Fenster und starten die Gradle Task *jabref [run]* indem Sie diese Doppelklicken (siehe Screenshot).
 ![Gradle-run](images/idea-run-gradle.png)
 
-Wenn alles funktioniert hat, sollte nun JabRef erfolgreich aus der IDE gestartet werden.
+Wenn alles funktioniert hat, sollte nun JabRef erfolgreich aus der IDE gestartet werden können.
 
 ### Alles erfolgreich installiert?
-Sie können uns Ihre Erfolge gerne im Chat mitteilen. Sie können nun auch gerne ihren Kolleginnen oder Kollegen, die noch mit der Installation am kämpfen sind, versuchen zu helfen.
+Sie können uns Ihren Erfolg gerne im [Diskussionforum](https://github.com/unibas-marcelluethi/jabref/discussions) mitteilen. 
+
 
 
 
