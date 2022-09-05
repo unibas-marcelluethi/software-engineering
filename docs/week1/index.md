@@ -9,11 +9,11 @@ title : Woche 1
 ## Slides 
 
 * Einführung in Software Engineering
-    * Slides: [pdf](/slides/einfuehrung.pdf)
+    * Slides: [pdf](../slides/einfuehrung.pdf)
 
 ## Übungen
 
-* Aufsetzen von JabRef gemäss dieser [Anleitung](/exercises/jabref-setup)
+* Aufsetzen von JabRef gemäss dieser [Anleitung](../exercises/jabref-setup)
 
 ## Literatur
 
