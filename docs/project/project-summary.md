@@ -5,41 +5,34 @@ title : Übersicht
 
 # Projektübersicht
 
+Ein Teil dieser Vorlesung ist ein Projekt, welches Sie selbständig oder in Gruppen realisieren. 
+Die Aufgabe ist es, eine Erweiterung für die Open Source Software [JabRef](https://www.jabref.org/). Sie können entweder versuchen 
+einen der [bestehenden Issues](https://github.com/JabRef/jabref/issues) in Jabref zu lösen, oder können sich selbst eine Erweiterung ausdenken. 
+
 Nachdem Sie sich als Gruppe ein Projekt ausgesucht haben, sollen Sie dies strukturiert realisieren.
 
 Wir gehen dabei in mehreren Schritten vor:
-
 
 ## Projektübersicht
 
 | Aufgabe |  Abgabe | Besprechung | Finale Version | Bemerkung |
 |---------|--------|---------------------|---------|-----------|
-| [Pflichtenheft/Projektplan erstellen](week6/exercises) | 31. Oktober | 3. November  | 10. November | |
-| [Design und Prototyp erstellen](week8/exercises) | 14. November | 17. November | 24. November | |
-| [Testplan erstellen](week10/exercises) | 28. November | 1. Dezember | 8. Dezember| |
-| [Abschlusspräsentation](week12/exercises) | 15. Dezember |  --  |  |
-| [Finale Abgabe ganzes Projekt](week12/exercises) | 22. Dezember | -- |  |
+| JabRef kennenlernen | - | - | - | - | - |
+| Gruppen bilden, Projekt wählen | 12.10 | 12.10 | 26.10 | Am 26.10 muss das Projektthema fix sein |
+| [Pflichtenheft/Projektplan erstellen](week6/exercises) | 30. Oktober | 2. November  | 9. November | |
+| [Design und Prototyp erstellen](week8/exercises) | 13. November | 16. November | 23. November | |
+| [Testplan erstellen](week10/exercises) | 13. November | 27. November | 30. November| |
+| [Abschlusspräsentation](week12/exercises) | 14. Dezember |  --  |  |
+| [Finale Abgabe ganzes Projekt](week12/exercises) | -- | 21. Dezember |  |
 
 Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in obiger Tabelle.
 
 ## Organisatorisches
 
 #### Github Repository
-Benutzen sie ein bestehendes Repository von ihrer Gruppe. Geben sie allen Gruppenmitgliedern entsprechende Zugriffsrechte (via Settings->Collaborators).
-Bitte fügen Sie auch die Entwickler ```koppor```, ```Siedlerchr```, ```calixtus``` und ```btut``` von JabRef zum Repository hinzu. So können diese früh eingreifen, falls Sie eine Anforderung ganz falsch verstanden haben, und Ihnen somit viel Arbeit ersparen.
 
-
-Da Sie von nun an gegen die offizielle Version von JabRef programmieren, müssen Sie Ihr Repository auch immer aktuell halten und die Änderungen der JabRef Entwickler. Dazu gehen Sie wie folgt vor:
-1. Wechseln Sie auf den main branch:
-```git checkout main```
-2. Löschen Sie das bisherige ```upstream``` repository: ```git remote rm upstream```
-4. Fügen sie das JabRef Repository als neues upstream repository hinzu:
-```git remote add upstream git@github.com:JabRef/jabref.git``` (oder ```https://github.com/JabRef/jabref.git``` falls Sie über https synchronisieren)
-5. Holen Sie die Commits und Änderungen vom offiziellen Repository ab:
-```git fetch upstream```
-6. Ersetzen Sie die Commits in Ihrem Main Branch durch die vom JabRef Main Branch:
-```git reset --hard upstream/main```
-7. Pushen Sie Ihre Änderungen in Ihr eigenes Github repository: ```git push --force origin main```
+Wenn Sie in der Gruppe arbeiten, einigen Sie sich auf ein bestehendes Repository von ihrer Gruppe, welches nun als offizielles Repository für Ihr Projekt fungiert. 
+Fügen Sie `marcelluethi`, `s-rousselle`, `linuspetrucci` und `gjoyet` als *Collaborator* hinzu (via Settings->Collaborators).
 
 
 <!--Kreieren sie ausgehend vom master branch einen branch `develop`. Für jede Abgabe (und jedes Feature) kreieren sie ausgehend vom branch `develop` einen neuen Featurebranch. Der Pull Request hat jeweils den `develop` branch als Ziel. Damit haben sie am Ende alle projektrelevanten Änderungen im `develop` branch. -->

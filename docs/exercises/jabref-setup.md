@@ -7,27 +7,21 @@ title : Woche 1
 
 ## Administratives
 
-* Dieses Übungsblatt wird in der Übungsstunde vom 22. September besprochen und bearbeitet. Falls die Zeit in der Übungsstunde nicht reicht, sollte das Setup bis zur Übungsstunde am 29. September fertiggestellt werden.
+* Dieses Übungsblatt wird in der Übungsstunde vom 21. September eingeführt und bearbeitet. Falls die Zeit in der Übungsstunde nicht reicht, sollte das Setup bis zur Übungsstunde am 28. September fertiggestellt werden.
 
 * Es ist keine Abgabe erforderlich.
 
 ## Einführung
 
-
 Für die meisten Übungen in diesem Kurs werden Sie das Open Source Projekt [JabRef](https://www.jabref.org/) verwenden.
 In dieser ersten Übung werden Sie alle wichtigen Tools und die Entwicklungsumgebung aufsetzten, um im folgenden Änderungen und Erweiterungen im Code vornehmen zu können.
 
 
-
 ## Benutzeraccount auf Github
-Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Github Benutzernamen sowie Ihre Uni Basel E-Mail  Adresse via Mail an [esther.mugdan@unibas.ch](mailto:esther.mugdan@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository und den Gitter Chatroom geben können.
+Falls Sie noch keinen Benutzeraccount auf [Github](https://www.github.com) haben, erstellen Sie bitte einen. Teilen Sie uns Ihren Github Benutzernamen via E-Mail an [marcel.luethi@unibas.ch](mailto:marcel.luethi@unibas.ch) mit, damit wir Ihnen Zugriff auf das Code-Repository geben können.
 
 *Auf Github ist dieser Benutzername sehr prominent und wird auch in der Projektkommunikation verwendet. Achten Sie deshalb bitte darauf, dass Sie einen Benutzernamen wählen, der professionelles Arbeiten zulässt. Gute Beispiele sind: ```andreasmeier``` oder ```andreas``` oder ```ameier```. Beispiele von ungeeigneten Namen sind ```coderking```, ```cookiemonster``` oder ```skaterboy```.*
 
-
-### Gitter Chat
-
-Nachdem Sie uns Ihren Github Benutzernamen gemeldet haben, können wir Sie zu unserem [Chat](https://gitter.im/unibas-software-engineering/software-engineering-hs21) hinzufügen. Hier können Sie Ihre Fragen stellen. Die Tutorierenden werden diesen im Auge behalten und Ihnen versuchen zu helfen. Wir möchten Sie aber auch ermutigen, sich gegenseitig zu unterstützen.
 
 
 ## Installation der Entwicklungswerkzeuge
@@ -65,37 +59,37 @@ Bitte konsultieren Sie dazu die [Github Dokumentation](
 https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 ), welche diesen Schritt für die drei wichtigen Betriebssysteme (Windows, Linux und MacOS) detailliert beschreibt.
 
+Falls Sie Probleme haben SSH einzurichten, können Sie alternativ auch ein Access Token erstellen und 
+mit diesem Arbeiten. Eine Anleitung dazu finden Sie [hier](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). 
+
 ### Installieren von Java und JavaFX
 
-Für die Entwicklung von JabRef wird Java in der Version 16 sowie JavaFX benötigt.
-Wir empfehlen Ihnen, die Version *Eclipse Temurin* der Eclipse foundation, die sie [hier](https://adoptium.net/?variant=openjdk16&jvmVariant=hotspot) herunterladen können. Installieren Sie dieses.
-
-Als nächstes müssen Sie noch JavaFX zum JDK hinzufügen. Wechseln Sie in das Verzeichnis, in welches das JDK installiert wurde
-(unter Windows ist dies C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot).
-Laden Sie dann das "jmods" JavaFX 16 zip archiv herunter ([Windows](https://download2.gluonhq.com/openjfx/16/openjfx-16_windows-x64_bin-jmods.zip), [MacOS](https://download2.gluonhq.com/openjfx/16/openjfx-16_osx-x64_bin-jmods.zip), [Linux](https://download2.gluonhq.com/openjfx/16/openjfx-16_linux-x64_bin-jmods.zip)), entpacken dieses und kopieren alle .mod Dateien in das Verzeichnis jmods Ihres JDKs.
+Für die Entwicklung von JabRef nutzen wir Java in der Version 18. Wir empfehlen Ihnen die Version 
+von Eclipse Temurin, die Sie [hier](https://adoptium.net/temurin/releases?version=18) herunterladen
+können. 
 
 --
 Um zu überprüfen ob Java korrekt auf Ihrem System verfügbar ist, öffnen Sie ein Terminal, und setzen die
-Umgebungsvariable ```JAVA_HOME``` und ```PATH```:
+Umgebungsvariable ```JAVA_HOME``` und ```PATH``` wie hier Beispielhaft für die Windows Powershell gezeigt:
 ```
-set JAVA_HOME=C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot
-set Path=%JAVA_HOME%\bin;%Path%
+$env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-18.0.1.10-hotspot"
+$env:PATH="C:\Program Files\Eclipse Adoptium\jdk-18.0.1.10-hotspot\bin;$env:PATH" 
 ```
 auf das neu installierte JDK. Dann geben Sie folgendes Kommando ein:
-
 ```
  java -version
 ```
 Die Ausgabe sollte ungefähr wie folgt aussehen:
 ```bash
-openjdk version "16.0.2" 2021-07-20
-OpenJDK Runtime Environment Temurin-16.0.2+7 (build 16.0.2+7)
-OpenJDK 64-Bit Server VM Temurin-16.0.2+7 (build 16.0.2+7, mixed mode, sharing)
+openjdk version "18.0.1" 2022-04-19
+OpenJDK Runtime Environment Temurin-18.0.1+10 (build 18.0.1+10)
+OpenJDK 64-Bit Server VM Temurin-18.0.1+10 (build 18.0.1+10, mixed mode, sharing)
 ```
 
 ## JabRef
 
 Nachdem wir nun alle Werkzeuge installiert haben, müssen wir noch das JabRef Projekt herunterladen. Dies geschieht via Github.
+
 
 ### Forken des Github Repositories
 Im ersten Teil dieses Kurses arbeiten wir nicht mit dem offiziellen JabRef Code repository, sondern mit einem privaten Fork. Damit sind ihre Änderungen und unsere Bemerkungen für die Öffentlichkeit nicht zugänglich.

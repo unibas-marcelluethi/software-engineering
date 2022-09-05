@@ -18,8 +18,6 @@ Diese Funktion soll sich via den *Preferences* an und ausschalten lassen.
 
 In den folgenden Aufgaben entwickeln Sie diese Erweiterung Schritt für Schritt.
 
-
-
 ## Aufgabe 0: Vorbereitung
 
 ####  Erstellen eines Feature branch
