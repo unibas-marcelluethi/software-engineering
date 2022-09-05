@@ -17,7 +17,7 @@ Wir gehen dabei in mehreren Schritten vor:
 
 | Aufgabe |  Abgabe | Besprechung | Finale Version | Bemerkung |
 |---------|--------|---------------------|---------|-----------|
-| JabRef kennenlernen | - | - | - | - | - |
+| JabRef kennenlernen | - | - | - | - |
 | Gruppen bilden, Projekt wählen | 12.10 | 12.10 | 26.10 | Am 26.10 muss das Projektthema fix sein |
 | [Pflichtenheft/Projektplan erstellen](week6/exercises) | 30. Oktober | 2. November  | 9. November | |
 | [Design und Prototyp erstellen](week8/exercises) | 13. November | 16. November | 23. November | |
