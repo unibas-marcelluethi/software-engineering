@@ -11,9 +11,19 @@ title : Woche 1
 * Einführung in Software Engineering
     * Slides: [pdf](../slides/einfuehrung.pdf)
 
-## Übungen
 
-* Aufsetzen von JabRef gemäss dieser [Anleitung](../exercises/jabref-setup)
+## Hausaufgaben
+
+Zu bearbeiten bis 27. September
+
+##### Theorie
+
+- Lesen des Papers [No silver bullet - Essence and Accidents in Software Engineering](http://www.sci.brooklyn.cuny.edu/~sklar/teaching/s10/cis20.2/papers/brooks-no-silver-bullet.pdf)
+- Selbsttest ([auf Adam](https://adam.unibas.ch/goto_adam_tst_1435781.html) bearbeiten.)
+
+##### Praxis
+- Einrichten der Entwicklungsumgebung und JabRef gemäss dieser [Anleitung](../exercises/jabref-setup)
+
 
 ## Literatur
 
