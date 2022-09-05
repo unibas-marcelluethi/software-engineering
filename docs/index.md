@@ -48,30 +48,30 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |------| ----- | --------- |
 |[Woche 1](week1/index) | Einführung / Administratives  | |
 |    | Was ist Software engineering  | |
-|[Woche 2](week2/index) | Kurze Geschichte des Software Engineerings  | |
+|[Woche 2](underconstruction) | Kurze Geschichte des Software Engineerings  | |
 |    | Eigenschaften von Software ||
 |    |  Software Qualitätsmerkmale | |
-|[Woche 3](week3/index) | Prinzipien des Software engineerings   | |
+|[Woche 3](underconstruction) | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
-|[Woche 4](week4/index) | Modulstruktur  | |
+|[Woche 4](underconstruction) | Modulstruktur  | |
 |    | Modul Design  | |
-|[Woche 5](week5/index) | OO Design | |
+|[Woche 5](underconstruction) | OO Design | |
 |    | UML (statische Diagramme)  | |
-|[Woche 6](week6/index)   | Anforderungsanalyse   | |
-|[Woche 7](week7/index) | Softwarespezifikation  |  |
-|[Woche 8](week8/index) | Konstruktive und Deskriptive Softwarespezifikation  |  |
+|[Woche 6](underconstruction)   | Anforderungsanalyse   | |
+|[Woche 7](underconstruction) | Softwarespezifikation  |  |
+|[Woche 8](underconstruction) | Konstruktive und Deskriptive Softwarespezifikation  |  |
 |    | UML (dynamische Diagramme)  | |
-|[Woche 9](week9/index) | Verifikation (Überblick)  | |
+|[Woche 9](underconstruction) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
 |    | Code reviews | |
-| [Woche 10](week10/index) | Testen im Kleinen   | |
+| [Woche 10](underconstruction) | Testen im Kleinen   | |
 || Testen im Grossen ||
-| [Woche 11](week11/index)    | Softwareprozesse | |
+| [Woche 11](underconstruction)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
-| [Woche 12](week12/index)| Scrum  | |
+| [Woche 12](underconstruction)| Scrum  | |
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen | |
-| [Woche 14](week13/index)     | Design-Patterns / Zusammenfassung / Prüfungsvorbesprechung |  |
+| [Woche 14](underconstruction)     |Zusammenfassung / Prüfungsvorbesprechung |  |
 
 
 ## Literatur / Weiterführende Links
