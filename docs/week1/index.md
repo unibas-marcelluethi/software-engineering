@@ -13,7 +13,7 @@ title : Woche 1
 
 ## Übungen
 
-* Aufsetzen von JabRef gemäss dieser [Anleitung](./exercises/jabref-setup)
+* Aufsetzen von JabRef gemäss dieser [Anleitung](/exercises/jabref-setup)
 
 ## Literatur
 
