@@ -32,7 +32,7 @@ Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in 
 #### Github Repository
 
 Wenn Sie in der Gruppe arbeiten, einigen Sie sich auf ein bestehendes Repository von ihrer Gruppe, welches nun als offizielles Repository für Ihr Projekt fungiert. 
-Fügen Sie `marcelluethi`, `s-rousselle`, `linuspetrucci` und `gjoyet` als *Collaborator* hinzu (via Settings->Collaborators).
+Fügen Sie `marcelluethi`, `Luujauhe`, `linuspetrucci` und `gjoyet` als *Collaborator* hinzu (via Settings->Collaborators).
 
 
 <!--Kreieren sie ausgehend vom master branch einen branch `develop`. Für jede Abgabe (und jedes Feature) kreieren sie ausgehend vom branch `develop` einen neuen Featurebranch. Der Pull Request hat jeweils den `develop` branch als Ziel. Damit haben sie am Ende alle projektrelevanten Änderungen im `develop` branch. -->

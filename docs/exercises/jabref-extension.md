@@ -111,5 +111,5 @@ Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch:
 ```
 git push origin uebung5
 ```
-und entsprechenden Pull Request.
+und entsprechenden Pull Request. Als Reviewers geben Sie `Luujauhe`, `linuspetrucci` und `gjoyet` an.
 Wenn Sie zu zweit gearbeitet haben, fügen Sie bitte ihre(n) Partner(in) als *Assignee* hinzu.

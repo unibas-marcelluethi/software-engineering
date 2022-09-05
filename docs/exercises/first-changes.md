@@ -190,7 +190,7 @@ Auf der folgenden Seite können sie das Zielrepository auswählen. Hier würden 
 
 ![image](images/jabref-target-repo.png)
 
-Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie die Reviewers angeben. Als Reviewers geben Sie ```emugdan```, ```colinhex``` und ```guenesaydin``` an.
+Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie die Reviewers angeben. Als Reviewers geben Sie `Luujauhe`, `linuspetrucci` und `gjoyet` an.
 
 ![image](images/jabref-pr-reviewers.png)
 

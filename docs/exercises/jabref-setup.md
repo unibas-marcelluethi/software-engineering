@@ -105,7 +105,7 @@ Nun erstellen Sie, ausgehend von unserem privaten Fork, ihren eigenen privaten F
 Damit unsere Assistenten Ihre Abgaben anschauen können, müssen Sie diesen noch Zugriffsrechte auf ihr neues Repository geben. Dafür gehen Sie auf *Settings* und dann *Manage access*:
 ![github-manage-access](images/github-manage-access.png)
 
-Klicken Sie dann auf *Invite Teams or people* und fügen Sie ```TODO``` und ```TODO``` und ```TODO``` hinzu.
+Klicken Sie dann auf *Invite Teams or people* und fügen Sie `Luujauhe`, `linuspetrucci` und `gjoyet` hinzu.
 ![github-manage-access](images/github-manage-access-invite.png)
 
 Als Rolle im nachfolgenden Dialog wählen Sie *Write*.
