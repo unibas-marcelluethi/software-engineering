@@ -136,6 +136,8 @@ Damit Sie an dem Projekt arbeiten können müssen Sie das Repository noch auf Ih
 git clone THE_URL_FOR_YOUR_PROJECT
 ```
 
+*Warnung: * Das Arbeitsverzeichnis darf nicht auf einem synchronisiert Drive sein. Dies führt zum einen zu Problemen mit JabRef selbst, vor allem aber auch mit git. 
+
 ### Kompilieren des Projekts von der Kommandozeile
 
 Bevor Sie das Projekt in der IDE bearbeiten, versuchen Sie es zuerst von der Kommandozeile zu kompilieren und auszuführen.
