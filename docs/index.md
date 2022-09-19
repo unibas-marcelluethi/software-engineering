@@ -49,7 +49,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 1](week1/index) | Einführung / Administratives  | |
 |    | Was ist Software engineering  | |
 |    | Kurze Geschichte des Software Engineerings  | |
-|[Woche 2](underconstruction) | Eigenschaften von Software | |
+|[Woche 2](week2/index) | Eigenschaften von Software | |
 |    |  Software Qualitätsmerkmale | |
 |[Woche 3](underconstruction) | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
