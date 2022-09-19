@@ -70,12 +70,27 @@ können.
 
 --
 Um zu überprüfen ob Java korrekt auf Ihrem System verfügbar ist, öffnen Sie ein Terminal, und setzen die
-Umgebungsvariable ```JAVA_HOME``` und ```PATH``` wie hier Beispielhaft für die Windows Powershell gezeigt:
+Umgebungsvariable ```JAVA_HOME``` und ```PATH``` auf das neu installierte JDK.
+
+Unter Windows (Powershell) machen Sie das wie folgt:
 ```
 $env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-18.0.1.10-hotspot"
 $env:PATH="C:\Program Files\Eclipse Adoptium\jdk-18.0.1.10-hotspot\bin;$env:PATH" 
 ```
-auf das neu installierte JDK. Dann geben Sie folgendes Kommando ein:
+
+Unter MacOS sollte das folgende Kommando funktionieren:
+```
+export "JAVA_HOME=$(/usr/libexec/java_home)"
+export “PATH=$JAVA_HOME/bin:$PATH”
+```
+
+und unter Linux setzen Sie diese Variablen wie folgt:
+```
+export JAVA_HOME=PFAD_ZU_IHRER_JAVA_18_INSTALLATION
+export “PATH=$JAVA_HOME/bin:$PATH”
+```
+
+Danach geben Sie folgendes Kommando ein:
 ```
  java -version
 ```
