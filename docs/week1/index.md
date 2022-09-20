@@ -21,7 +21,7 @@ Die Studierenden
 ## Slides und weitere Literatur
 
 * Einführung in Software Engineering
-    * Slides: [pdf](../slides/einfuehrung.pdf)
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1450685_download.html)
 
 * [No silver bullet - Essence and Accidents in Software Engineering](http://www.sci.brooklyn.cuny.edu/~sklar/teaching/s10/cis20.2/papers/brooks-no-silver-bullet.pdf)
 
