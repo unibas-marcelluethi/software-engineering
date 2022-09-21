@@ -81,7 +81,7 @@ $env:PATH="C:\Program Files\Eclipse Adoptium\jdk-18.0.1.10-hotspot\bin;$env:PATH
 Unter MacOS sollte das folgende Kommando funktionieren:
 ```
 export "JAVA_HOME=$(/usr/libexec/java_home)"
-export “PATH=$JAVA_HOME/bin:$PATH”
+export "PATH=$JAVA_HOME/bin:$PATH"
 ```
 
 und unter Linux setzen Sie diese Variablen wie folgt:
