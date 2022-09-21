@@ -7,7 +7,7 @@ title : Übersicht
 
 Ein Teil dieser Vorlesung ist ein Projekt, welches Sie selbständig oder in Gruppen realisieren. 
 Die Aufgabe ist es, eine Erweiterung für die Open Source Software [JabRef](https://www.jabref.org/). Sie können entweder versuchen 
-einen der [bestehenden Issues](https://github.com/JabRef/jabref/issues) in Jabref zu lösen, oder können sich selbst eine Erweiterung ausdenken. 
+einen der [für Universitätskurse empfohlenen Issues](https://github.com/orgs/JabRef/projects/3) in Jabref zu lösen, oder können sich selbst eine Erweiterung ausdenken. 
 
 Nachdem Sie sich als Gruppe ein Projekt ausgesucht haben, sollen Sie dies strukturiert realisieren.
 
