@@ -160,10 +160,15 @@ JabRef in der Entwicklungsumgebung (IntelliJ)
 
 
 
-Wenn Sie die Änderung erfolgreich implementiert und getestet haben, können Sie diese committen. Dies machen Sie mit dem Befehl:
+Wenn Sie die Änderung erfolgreich implementiert und getestet haben, können Sie diese committen. Dies machen Sie indem Sie die Dateien mit dem Befehl 
 ```
-git commit -a -m "Ihre aussagekräftige Commit-Message"
+git add PFAD_ZU_DATEI_1 PFAD_ZU_DATEI_2 ... PFAD_ZU_DATEI_N
 ```
+stagen und danach mit 
+```
+git commit -m "Ihre aussagekräftige Commitmessage"
+```
+commiten. 
 Bitte schreiben Sie eine sinnvolle Commit-Message. 
 Einige Hinweise wie gute Commit Messages aussehen sollen finden sie in diesem [Artikel](https://chris.beams.io/posts/git-commit/).
 Schauen Sie sich auch den Stil der [Commit-Messages](https://github.com/JabRef/jabref/commits/main) bei JabRef an. Welche Zeitform wird verwendet?
