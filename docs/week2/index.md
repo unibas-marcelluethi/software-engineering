@@ -39,15 +39,15 @@ Die Teilnehmenden
 
 Die folgenden Hausaufgaben sollten bis zum 04. Oktober bearbeitet werden. 
 
-- Bearbeiten des Selbsttest ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1448851.html) bearbeiten.
+- Selbsttest ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1448851.html) bearbeiten.
 - Lesen des Paper [Software Aging](https://dl.acm.org/doi/pdf/10.5555/257734.257788) von D. L. Parnas. 
+- Fertigstellen der [Übung 2](../exercises/first-changes)
 
-##### Praxis
-
-- Erste Änderungen an Jabref [Anleitung](../exercises/first-changes)
-- Gruppen bilden - Projektideen suchen. 
 
 ## Ressourcen zum Nachlesen / Nachschauen der Theorie
+
+Die nachfolgenden Videos/Artikel sind aus der Vorjahresvorlesung. Diese sind noch relevant, aber nicht genau deckungsgleich mit 
+dem in dieser Vorlesung behandelten Themen. 
 
 * "Eigenschaften von Software" ([Video](https://tube.switch.ch/videos/79c515ad), [Slides](./slides/software-nature.html))
 * "Qualitätsmerkmale von Software" ([Artikel](./articles/software-qualities-introduction))
