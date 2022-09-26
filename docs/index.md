@@ -51,7 +51,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | Kurze Geschichte des Software Engineerings  | |
 |[Woche 2](week2/index) | Eigenschaften von Software | |
 |    |  Software Qualitätsmerkmale | |
-|[Woche 3](underconstruction) | Prinzipien des Software engineerings   | |
+|[Woche 3](week3/index) | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
 |[Woche 4](underconstruction) | Modulstruktur  | |
 |    | Modul Design  | |

@@ -6,8 +6,9 @@ title : Woche 3
 
 ## Administratives
 
-* Dieses Übungsblatt sollte bis am 12. Oktober 2021 bearbeitet werden.
-* Abgabe via Pull Request bis spätestens 12. Oktober, 23.59.
+Eine Einführung in Gradle gibt es in der Übungsstunde vom 5. Oktober. 
+* Dieses Übungsblatt sollte bis am 11. Oktober 2022 bearbeitet werden.
+* Abgabe via Pull Request bis spätestens 11. Oktober, 23.59.
 
 
 ## Einführung
@@ -88,17 +89,23 @@ repositories {
 *Achtung:* JabRef nutzt das Java Modulsystem. Im Gegensatz zu herkömmlichen Java Projekten, bei denen es reicht, die Bibliothek in Gradle als dependency zu deklarieren, müssen Sie *swenglib* bei JabRef
 zusätzlich als *Required Dependency* deklarieren. Dies machen Sie indem Sie in der Datei ```module-info.java``` den Eintrag ```requires swenglib;``` hinzufügen.
 
-Wenn das hinzufügen funktioniert hat sollten Sie folgenden Code zu JabRef hinzufügen können und das Projekt sollte entsprechend kompilieren.
+Wenn das hinzufügen funktioniert hat sollten Sie in der main-Methode folgenden Code zu JabRef hinzufügen können und das Projekt sollte entsprechend kompilieren.
 ```
 import ch.unibas.informatik.sweng.HelloSweng;
 String greeting = HelloSweng.greeting();
+System.out.println(greeting);
 ```
 
 Überprüfen Sie auch, dass sie mit ```CTRL + LeftMouseClick``` auf ```HelloSweng```, zum
 Source Code der Bibliothek kommen.
 
+#### 1.3 Maven central
 
-#### 1.3 Hinzufügen eines Plugins
+In der Java-Welt werden viele frei verfügbare Bibliotheken auf [Maven Central](https://search.maven.org) publiziert. 
+Suchen Sie da nach dem Paket `opencsv`. Auf der Seite wird Ihnen auch angezeigt, wie Sie das Paket in Gradle als Abhängigkeit hinzufügen 
+können. Finden Sie heraus wo und wie? Fügen Sie auch dieses Paket hinzu. 
+
+#### 1.4 Hinzufügen eines Plugins
 Fügen Sie das Plugin [Gradle-License-Report](https://github.com/jk1/Gradle-License-Report) durch anpassen der Datei ```build.gradle```zum Projekt hinzu. Die entsprechenden Instruktionen finden Sie auf
 der Github Seite vom [Gradle-License-Report](https://github.com/jk1/Gradle-License-Report).
 
