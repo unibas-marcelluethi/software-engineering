@@ -24,9 +24,9 @@ Die Teilnehmenden
 ## Slides 
 
 * Eigenschaften und Qualitätsmerkmale von Software 
-    * Slides: [pdf](underconstruction)
+    * Slides: [pdf](https://adam.unibas.ch/goto_adam_file_1460550_download.html)
 * Einführung in Git und Github
-    * Slides: [pdf](underconstruction)
+    * Slides: [pdf](https://adam.unibas.ch/goto_adam_file_1460551_download.html)
 
 
 ## Übungsstunde
@@ -42,6 +42,7 @@ Die folgenden Hausaufgaben sollten bis zum 04. Oktober bearbeitet werden.
 - Selbsttest ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1448851.html) bearbeiten.
 - Lesen des Paper [Software Aging](https://dl.acm.org/doi/pdf/10.5555/257734.257788) von D. L. Parnas. 
 - Fertigstellen der [Übung 2](../exercises/first-changes)
+- Projektideen überlegen
 
 
 ## Ressourcen zum Nachlesen / Nachschauen der Theorie
