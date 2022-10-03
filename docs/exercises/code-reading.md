@@ -117,16 +117,14 @@ Fügen Sie einen Kommentar in der Datei ```build.gradle``` hinzu. Dieser soll ga
 In diesem Teil der Übung geht es darum, dass sie sich einen Grobüberblick über die Struktur des Jabref Codes erarbeiten sowie auch lernen, fremden Code zu lesen und zu verstehen. Ein gute Vorgehensweise ist Teile des Codes bei dieser Gelegenheit gerade zu
 Dokumentieren.
 
-#### Dokumentieren sie ein Package
+#### Dokumentieren von Packages
 
 Lesen Sie den [Auszug aus dem Buch](https://adam.unibas.ch/goto_adam_file_1253996_download.html) Java By Comparison zum Thema API Doc.
 
 
-Dokumentieren Sie dann die folgenden Packages.
+Dokumentieren Sie dann die zwei folgenden Packages.
 
 * org.jabref.cli
-* org.jabref.gui.desktop
-* org.jabref.logic.pdf
 * org.jabref.model.database
 
 Sie k&ouml;nnen diese mittels Javadoc dokumentieren, indem sie in jedes Verzeichnis eine Datei
@@ -148,8 +146,11 @@ Sie finden, wenn Sie einen Rechtsklick auf ein Symbol (also Klasse, Methode, Var
 
 Schauen Sie sich die Klasse
 ```org.jabref.logic.bibtex.BibEntryWriter``` an. Dokumentieren Sie die Klasse mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
+Die als `private` deklarierten Methoden müssen Sie nicht dokumentieren. Dokumentieren Sie auch keine reinen getter/setter Methoden. 
 
+Orientieren Sie sich auch hier an den Leitlinien im Buch [Java by Comparison](https://adam.unibas.ch/goto_adam_file_1253996_download.html). 
 
+*Hinweis:* Nutzen Sie den Debugger um herauszufinden, welche Werte die einzelnen Felder/Variablen in der Klasse annehmen. Dies kann Ihnen wichtige Informationen geben. 
 
 
 ### Abgabe
