@@ -37,10 +37,12 @@ git branch
 ```
 Sie sollten nun alle ihre Branches sehen. Vor dem aktiven Branch (also main) sollte nun ein Sternchen sein.
 
-Synchronisieren Sie allfällige Änderungen im Upstream wie im letzten Übungsblatt beschrieben und pushen Sie den aktualisierten main branch auf ihr github repository
+Synchronisieren Sie allfällige Änderungen im Upstream indem Sie folgende Befehle ausführen: 
 ```
+git pull upstream main
 git push origin main
 ```
+(für Details, siehe [Übungsblatt 2](../../week2/exercises/practical-exercises)).
 
 Erstellen Sie dann einen neuen Branch *uebung3* mit
 ```
@@ -86,8 +88,12 @@ repositories {
     ...
 }
 ```
-*Achtung:* JabRef nutzt das Java Modulsystem. Im Gegensatz zu herkömmlichen Java Projekten, bei denen es reicht, die Bibliothek in Gradle als dependency zu deklarieren, müssen Sie *swenglib* bei JabRef
-zusätzlich als *Required Dependency* deklarieren. Dies machen Sie indem Sie in der Datei ```module-info.java``` den Eintrag ```requires swenglib;``` hinzufügen.
+*Achtung: Beachten Sie unbedingt folgende Hinweise!*
+
+* Wenn Sie eine Änderung an der Datei `build.gradle` machen, müssen Sie die Gradle Konfiguration in IntelliJ zuerst neu laden. Dies machen Sie indem Sie im Gradle-Fenster *Reload all Gradle Projects* wählen. Dies ist der Button mit den zwei entgegengesetzten Pfeilen. 
+* JabRef nutzt das Java Modulsystem. Im Gegensatz zu herkömmlichen Java Projekten, bei denen es reicht, die Bibliothek in Gradle als dependency zu deklarieren, müssen Sie *swenglib* bei JabRef
+zusätzlich als *Required Dependency* deklarieren. Dies machen Sie, indem Sie in der Datei ```module-info.java``` den Eintrag ```requires swenglib;``` hinzufügen.
+
 
 Wenn das hinzufügen funktioniert hat sollten Sie in der main-Methode folgenden Code zu JabRef hinzufügen können und das Projekt sollte entsprechend kompilieren.
 ```
@@ -103,7 +109,7 @@ Source Code der Bibliothek kommen.
 
 In der Java-Welt werden viele frei verfügbare Bibliotheken auf [Maven Central](https://search.maven.org) publiziert. 
 Suchen Sie da nach dem Paket `opencsv`. Auf der Seite wird Ihnen auch angezeigt, wie Sie das Paket in Gradle als Abhängigkeit hinzufügen 
-können. Finden Sie heraus wo und wie? Fügen Sie auch dieses Paket hinzu. 
+können. Finden Sie heraus wo und wie? Fügen Sie auch dieses Paket hinzu. Sie müssen auch hier wieder die Datei `module-info.java` anpassen, und bei `requires` den Namen des top-level Pakets von `opencsv` angeben (also `com.opencsv`). 
 
 #### 1.4 Hinzufügen eines Plugins
 Fügen Sie das Plugin [Gradle-License-Report](https://github.com/jk1/Gradle-License-Report) durch anpassen der Datei ```build.gradle```zum Projekt hinzu. Die entsprechenden Instruktionen finden Sie auf
