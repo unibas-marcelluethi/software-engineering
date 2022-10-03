@@ -34,7 +34,7 @@ Die Teilnehmenden
  auf das Buildsystem Gradle ein. Danach arbeiten Sie selbständig am Übung 3. Das Ziel dieser Übung ist, dass Sie sich einen 
  Überblick über die Strukturierung von JabRef verschaffen und lernen, wie Sie Code verstehen lernen können. 
 
-[Übungsblatt 3](../exercises/code-reading) vor. 
+* [Übungsblatt 3](../exercises/code-reading). 
 
 
 ## Hausaufgaben
