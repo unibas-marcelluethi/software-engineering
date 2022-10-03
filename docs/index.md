@@ -51,12 +51,11 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | Kurze Geschichte des Software Engineerings  | |
 |[Woche 2](week2/index) | Eigenschaften von Software | |
 |    |  Software Qualitätsmerkmale | |
-|[Woche 3](week3/index) | Prinzipien des Software engineerings   | |
-|    | Software design - Übersicht und Einführung |  |
-|[Woche 4](week4/index) | Modulstruktur  | |
-|    | Modul Design  | |
+|[Woche 3](week3/index) | Prinzipien des Software-Engineerings   | |
+|    | Modulbeziehungen |  |
+|[Woche 4](week4/index) | Softwaredesign | |
 |[Woche 5](underconstruction) | OO Design | |
-|    | UML (statische Diagramme)  | |
+|    | Solid Prinzipien | |
 |[Woche 6](underconstruction)   | Anforderungsanalyse   | |
 |[Woche 7](underconstruction) | Softwarespezifikation  |  |
 |[Woche 8](underconstruction) | Konstruktive und Deskriptive Softwarespezifikation  |  |
