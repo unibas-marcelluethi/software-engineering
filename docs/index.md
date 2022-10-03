@@ -53,7 +53,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    |  Software Qualitätsmerkmale | |
 |[Woche 3](week3/index) | Prinzipien des Software engineerings   | |
 |    | Software design - Übersicht und Einführung |  |
-|[Woche 4](underconstruction) | Modulstruktur  | |
+|[Woche 4](week4/index) | Modulstruktur  | |
 |    | Modul Design  | |
 |[Woche 5](underconstruction) | OO Design | |
 |    | UML (statische Diagramme)  | |

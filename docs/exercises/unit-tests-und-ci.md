@@ -5,7 +5,7 @@ title : Woche 4
 
 # Übungsblatt 4: Unit Tests und Continuous Integration
 
-* Dieses Übungsblatt muss bis spätestens 19. Oktober, 23.59 bearbeitet und via Pull Request abgegeben werden.
+* Dieses Übungsblatt muss bis spätestens 18. Oktober, 23.59 bearbeitet und via Pull Request abgegeben werden.
 * Wir empfehlen, diese Übungsblatt in Zweiergruppen zu bearbeiten (siehe Abgabeinstruktionen am Ende dieses Dokuments)
 
 
@@ -127,11 +127,6 @@ git push origin uebung4
 und entsprechenden Pull Request. Als Reviewers geben Sie `Luujauhe`, `linuspetrucci` und `gjoyet` an.
 (Details dazu finden sie in [&Uuml;bungsblatt 2](/../../week2/exercises/practical-exercises)).
 
-Wenn Sie die Übung zu zweit bearbeitet hat, soll nur eine Person der Gruppe einen pull-request machen.
-Die andere Person soll als *Collaborator* zum Projekt hinzugefügt, und dann als *Assignee* ausgewählt werden
-(siehe Screenshots)
-![collaborator](images/collaborator.png)
-![assignees](images/assignees.png)
 
 
 

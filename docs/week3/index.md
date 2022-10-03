@@ -3,21 +3,23 @@ layout: default
 title : Woche 3
 ---
 
-# Woche 3: Prinzipien des Software Engineerings
+# Woche 3: Prinzipien des Software Engineerings / Modulbeziehungen
 
 In dieser Woche besprechen wir wichtigste Prinzipen des Software Engineerings, welche allen klassischen wie auch 
-modernen Softwareentwicklungsmethoden zugrunde liegen. 
+modernen Softwareentwicklungsmethoden zugrunde liegen. Wir werden uns das Prinzip Modularität genauer anschauen und 
+das Konzept von Modulgraphen anschauen. 
 
 ## Lernziele 
 
 Die Teilnehmenden 
 
 * können den Unterschied zwischen Prinzipien, Methoden, Methodologien und Werkzeuge erklären
-* kennen die Ziele des Softwaredesigns
 * kennen die Gründe, weshalb Software altert und wie man dieser Alterung entgegenwirkt. (Software Aging)
 * kennen die fundamentalen Prinzipien und können diese in konkreten Beispielen erkennen und anwenden 
-* können einfache Systeme in sinnvolle Module aufteilen 
-* können einen Modulgraph betreffend Bindung und Kopplung analysieren.
+* können Unterschiede in der Abstraktion "uses" and "is_component_of" verstehen und erklären können
+* können Eingenschaften eines Modulgraphen (Hierarchie, Ebenen) erkennen.
+* können die Ebene eines Moduls anhand des Modulgraphen bestimmen.
+* können praktische Anwendungen von Modulgraphen nennen.
 
 ## Slides 
 
@@ -47,10 +49,11 @@ Die folgenden Hausaufgaben sollten bis zum 11. Oktober bearbeitet werden.
 Die nachfolgenden Videos/Artikel sind aus der Vorjahresvorlesung. Diese sind noch relevant, aber nicht genau deckungsgleich mit 
 dem in dieser Vorlesung behandelten Themen. 
 
-* "Prinzipien des Software Engineerings" an.  ([Video](https://tube.switch.ch/videos/9b67c31a), [Slides](./slides/software-engineering-principles.html))
+* "Prinzipien des Software Engineerings" ([Video](https://tube.switch.ch/videos/9b67c31a), [Slides](./slides/software-engineering-principles.html))
 * "Weitere Prinzipien des Software Engineerings im Detail" ([Artikel](./articles/software-engineering-principles.html))
-* "Einführung in Software Design" an. ([Video](https://tube.switch.ch/videos/f184e7aa), [Slides](./slides/design-objectives.html))
 * "Modularität". ([Artikel](./articles/modularity.html))
+* "Beziehungen zwischen Modulen"  ([Video](https://tube.switch.ch/videos/ed8c549d), [Slides](./slides/module-relationships.html))
+* "Modulstruktur - Formale Aspekte - ".  ([Artikel](./articles/module-structure.html))
 
 
 
