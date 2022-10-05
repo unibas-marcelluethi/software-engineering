@@ -125,7 +125,7 @@ Dokumentieren.
 
 #### Dokumentieren von Packages
 
-Lesen Sie den [Auszug aus dem Buch](https://adam.unibas.ch/goto_adam_file_1253996_download.html) Java By Comparison zum Thema API Doc.
+Lesen Sie den [Auszug aus dem Buch](https://adam.unibas.ch/goto_adam_file_1467339.html) Java By Comparison zum Thema API Doc.
 
 
 Dokumentieren Sie dann die zwei folgenden Packages.
@@ -154,7 +154,7 @@ Schauen Sie sich die Klasse
 ```org.jabref.logic.bibtex.BibEntryWriter``` an. Dokumentieren Sie die Klasse mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
 Die als `private` deklarierten Methoden müssen Sie nicht dokumentieren. Dokumentieren Sie auch keine reinen getter/setter Methoden. 
 
-Orientieren Sie sich auch hier an den Leitlinien im Buch [Java by Comparison](https://adam.unibas.ch/goto_adam_file_1253996_download.html). 
+Orientieren Sie sich auch hier an den Leitlinien im Buch [Java by Comparison](https://adam.unibas.ch/goto_adam_file_1467339.html). 
 
 *Hinweis:* Nutzen Sie den Debugger um herauszufinden, welche Werte die einzelnen Felder/Variablen in der Klasse annehmen. Dies kann Ihnen wichtige Informationen geben. 
 
