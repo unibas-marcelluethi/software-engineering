@@ -24,9 +24,9 @@ Die Teilnehmenden
 ## Slides 
 
 * Prinzipien des Software-Engineerings
-    * Slides: [pdf](underconstruction)
+    * Slides: [pdf](https://adam.unibas.ch/goto_adam_file_1466917_download.html)
 * Einführung in Buildsysteme und Gradle
-    * Slides: [pdf](underconstruction)
+    * Slides: [pdf](https://adam.unibas.ch/goto_adam_file_1466918_download.html)
 
 ## Übungsstunde
 
