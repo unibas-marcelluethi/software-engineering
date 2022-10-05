@@ -42,7 +42,7 @@ Synchronisieren Sie allfällige Änderungen im Upstream indem Sie folgende Befeh
 git pull upstream main
 git push origin main
 ```
-(für Details, siehe [Übungsblatt 2](../../week2/exercises/practical-exercises)).
+(für Details, siehe [Übungsblatt 2](./first-changes)).
 
 Erstellen Sie dann einen neuen Branch *uebung3* mit
 ```
@@ -165,5 +165,5 @@ Die Abgabe der Übung erfolgt durch push vom Übungs-Branch:
 git push origin uebung3
 ```
 und entsprechenden Pull Request. Als Reviewers geben Sie `Luujauhe`, `linuspetrucci` und `gjoyet` an.
-(Details dazu finden sie in [&Uuml;bungsblatt 2](../../week2/exercises/practical-exercises)).
+(Details dazu finden sie in [&Uuml;bungsblatt 2](./first-changes)).
 
