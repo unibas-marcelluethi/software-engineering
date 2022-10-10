@@ -117,7 +117,12 @@ In diesem Teil der Übung lernen Sie Github Actions kennen. Lesen Sie [hier](htt
 Jabref nutzt eigentlich Github Actions. Wir habe die entsprechenden Konfigurationsdateien für unsere Übungen jedoch entfernt.
 Schauen Sie sich im [offiziellen JabRef Repository](https://github.com/JabRef/jabref) auf Github an wie Github Actions benutzt werden. Finden Sie heraus, welche Teile der Konfigurationsdateien Sie brauchen um die Unittests bei jedem Push auf Github automatisch ausführen zu können. Aktivieren Sie diese Funktion für ihr Projekt. Die Tests sollen nur ausgeführt werden, wenn Sie den Branch *uebung4* auf Github pushen.
 
-*Hinweis: Bei der von uns verwendeten JabRef Version laufen nicht alle Tests fehlerfrei durch. Sie müssen also nichts unternehmen wenn Sie sehen, dass einige Tests fehlschlagen.*
+*Hinweise:*
+
+* Bei der von uns verwendeten JabRef Version laufen nicht alle Tests fehlerfrei durch. Sie müssen also nichts unternehmen wenn Sie sehen, dass einige Tests fehlschlagen.
+* Für private Repositories ist github action ein Bezahldienst. Sie werden deshalb wahrscheinlich eine E-Mail erhalten, dass ihr freies Quota aufgebraucht ist. Sie können diese ignorieren. Falls Sie keine Kreditkarte hinterlegt haben, entstehen keine Kosten. Wenn Sie auf Nummer sicher gehen wollen, können Sie aber auch die hinzugefügten workflow Dateien wieder löschen und damit den Service deaktivieren. 
+
+
 
 ### Abgabe
 Die Abgabe der Übung erfolgt durch push vom Übungs-Branch:
