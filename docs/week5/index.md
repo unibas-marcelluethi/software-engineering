@@ -5,10 +5,43 @@ title : Woche 5
 
 # Woche 5: Objektorientiertes Design
 
-# Studium
+## Lernziele
 
-* [Anleitung zum Studium / Übungen](guide.html)
+Die Teilnehmenden
 
-## Lernmaterialien
-* Auf der [Ressourcenseite](resources.html) finden Sie nochmals alle Lernmaterien sowie Links zu weiterführender Literatur. 
+- können die Merkmale nennen, die objektorientiertes Design ausmachen
+- können die grundlegenden Ideen der Objektorientierung in den Kontext vom Moduldesign setzen
+- Anhand eines Szenarios Kandidaten für Module/Klassen identifizieren
+- können die SOLID Prinzipien im Kontext der allgemeineren Software-Engineering Prinzipien setzen
+- kennen die SOLID Prinzipien und können Code auf deren Umsetzung analysieren
+
+## Slides
+
+* Objektorientiertes Design
+    * Slides: [underconstruction]
+
+## Übungsstunde
+
+Im praktischen Teil der Veranstaltung werden Sie eine erste eigene Erweiterung von JabRef schreiben. 
+
+[Übungsblatt 5](../exercises/jabref-extension) vor. 
+
+
+## Hausaufgaben
+
+Die folgenden Hausaufgaben sollten bis zum 25. Oktober bearbeitet werden. 
+
+- Selbsttest ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1470254.html) bearbeiten.
+- Fertigstellen von [Übung  5](../exercises/unit-tests-und-ci)
+- Projektgruppe und Projektthema endgültig gewählt. 
+
+## Ressourcen zum Nachlesen / Nachschauen der Theorie
+
+Die nachfolgenden Videos/Artikel sind aus der Vorjahresvorlesung. Diese sind noch relevant, aber nicht genau deckungsgleich mit 
+dem in dieser Vorlesung behandelten Themen. 
+
+* Objektorientiertes Design und Programmierung ([Video](https://tube.switch.ch/videos/44a4637a), [Slides](./slides/oo-design.html))
+* Vererbung und Objektkomposition ([Artikel](./articles/oo-composition-vs-inheritance.html))
+* SOLID Prinzipien ([Video](https://tube.switch.ch/videos/cbc347a9), [Slides](./slides/oo-solid.html))
+* "Das Gesetz von Demeter" ([Artikel](http://prinzipien-der-softwaretechnik.blogspot.com/2013/06/das-gesetz-von-demeter.html))
 

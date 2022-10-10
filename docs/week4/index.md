@@ -37,7 +37,7 @@ Die Teilnehmenden
 Die folgenden Hausaufgaben sollten bis zum 18. Oktober bearbeitet werden. 
 
 - Selbsttest ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1464679.html) bearbeiten.
-- Fertigstellen von [Übung  3](../exercises/unit-tests-und-ci)
+- Fertigstellen von [Übung  4](../exercises/unit-tests-und-ci)
 - Kurzpräsentation (1 Minute) Ihrer Erweiterung
     * Was macht unsere Erweiterung
     * Welche Hauptschwierigkeit erwarten wir

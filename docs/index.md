@@ -54,7 +54,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 3](week3/index) | Prinzipien des Software-Engineerings   | |
 |    | Modulbeziehungen |  |
 |[Woche 4](week4/index) | Softwaredesign | |
-|[Woche 5](underconstruction) | OO Design | |
+|[Woche 5](week5/index) | OO Design | |
 |    | Solid Prinzipien | |
 |[Woche 6](underconstruction)   | Anforderungsanalyse   | |
 |[Woche 7](underconstruction) | Softwarespezifikation  |  |

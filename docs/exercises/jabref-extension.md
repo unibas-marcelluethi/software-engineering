@@ -5,7 +5,7 @@ title : Woche 5
 # Übungsblatt 5: Eine erste Erweiterung
 
 
-* Dieses Übungsblatt muss bis spätestens 26. Oktober, 23.59 bearbeitet und via Pull Request abgegeben werden.
+* Dieses Übungsblatt muss bis spätestens 25. Oktober, 23.59 bearbeitet und via Pull Request abgegeben werden.
 * Wir empfehlen, diese Übungsblatt in Zweiergruppen zu bearbeiten (siehe Abgabeinstruktionen am Ende dieses Dokuments)
 
 
@@ -27,7 +27,7 @@ Da wir die Änderungen der letzten Übung hier nicht benötigen, starten wir wie
 git checkout main
 ```
 
-Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository, wie in [Übung 2](../../week2/exercises/practical-exercises.html) beschrieben  und pushen Sie den aktualisierten main Branch auf ihr Github repository
+Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository, wie in [Übung 2](first-changes) beschrieben  und pushen Sie den aktualisierten main Branch auf ihr Github repository
 ```
 git push origin main
 ```
@@ -48,13 +48,23 @@ Lesen Sie auch die [High-Level Dokumentation](https://jabref.readthedocs.io/en/l
 
 
 
+#### Lesen der Jabref Dokumentation
+
+Wir werden in dieser Übung einige zentrale Mechanismen von JabRef kennenlernen. Diese Sind auf dem JabRef Wiki Dokumentiert.
+Verschaffen Sie sich bitte einen Überblick über die wichtigsten Konzepte die in den [Code-HowTos](https://jabref.readthedocs.io/en/latest/getting-into-the-code/code-howtos/) von JabRef besprochen werden.
+Kommen Sie später in den Übungen darauf zurück wenn Sie an einem bestimmten Konzept arbeiten.
+Lesen Sie auch die [High-Level Dokumentation](https://jabref.readthedocs.io/en/latest/getting-into-the-code/high-level-documentation/).
+
+
+
 ## Aufgabe 1: Arbeiten mit dem Eventbus
 
 In dieser Aufgabe nutzen Sie den EventBus. Erstellen Sie eine neue Klasse ```BrooksHandler``` in einem neuen Package ```org.jabref.gui.sillyextensions```.
 Diese Klasse soll auf auf Events vom Typ ```EntriesAddedEvent``` und ```EntryChangedEvent``` reagieren. Wenn immer ein solches Event von Jabref generiert wird, soll
 die Meldung "Entries Added" sowie der Titel des entsprechenden Eintrags auf der Konsole (mit ```System.out.println```) ausgebgeben werden.
 
-*Tipp:* Als Vorlage schauen Sie sich an, wie dies für die Klasse ```CitationStyleCache``` implementiert ist. Nutzen Sie auch die Funktion *Find Usages*, die Sie durch das Context Menu in Intellij erreichen können um herauszufinden, wo eine bestimmte Funktionalität benutzt wird.
+*Tipp:* Als Vorlage schauen Sie sich an, wie dies für die Klasse ```CitationStyleCache``` implementiert ist. 
+Nutzen Sie auch die Funktion *Find Usages*, die Sie durch das Context Menu in Intellij erreichen können um herauszufinden, wo eine bestimmte Funktionalität benutzt wird.
 
 Committen Sie Ihre Änderungen.
 
@@ -66,8 +76,9 @@ In einem realen Projekt wollen Sie nicht Meldungen  mit ```System.out.println```
 Ändern Sie die Ausgabe so ab, dass der Logger verwendet wird. Die Loggingnachrichten sollen mit dem Level ```info``` gelogged werden.
 
 
-Schauen Sie sich danach die Datei ```log4j2.xml``` an, die Sie im Verzeichnis ```src\main\resources\``` finden. In dieser Datei können Sie den Logging Level verändern.
-Setzen Sie den Logging Level für ```org.jabref``` von ```Info``` auf ```Debug```? Was beobachten Sie wenn Sie JabRef starten?
+Schauen Sie sich danach die Datei ```tinylog.properties``` an, die Sie im Verzeichnis ```src\main\resources\``` finden. In dieser Datei können Sie den Logging Level verändern.
+Setzen Sie den Logging Level ```Info``` auf ```Debug```? Schauen Sie sich die Meldungen an, die 
+auf die Konsole ausgegeben werden, wenn Sie JabRef start. Was beobachten Sie?
 
 Committen Sie Ihre Änderungen.
 
@@ -79,7 +90,7 @@ Als nächsten passen Sie die Klasse ```BrooksHandler``` so an, dass wenn der Aut
 
 
 Nutzen Sie dazu die Methode ```showInformationDialogAndWait``` der Schnittstelle ```DialogService```.
-*Tipp:* Nutzen sie auch hier wieder die Suchfunktionen und die Funktion *Find Usages* von IntellJ um relevante Codebeispiele zu finden.
+*Tipp:* Nutzen sie auch hier wieder die Suchfunktionen und die Funktion *Find Usages* von IntelliJ um relevante Codebeispiele zu finden.
 
 Committen Sie Ihre Änderungen.
 
@@ -112,4 +123,5 @@ Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch:
 git push origin uebung5
 ```
 und entsprechenden Pull Request. Als Reviewers geben Sie `Luujauhe`, `linuspetrucci` und `gjoyet` an.
-Wenn Sie zu zweit gearbeitet haben, fügen Sie bitte ihre(n) Partner(in) als *Assignee* hinzu.
+Wenn Sie zu zweit gearbeitet haben, fügen Sie bitte ihre(n) Partner(in) als *Assignee* hinzu
+(eventuell müssen Sie in den Einstellungen noch Zugriff erteilen).
