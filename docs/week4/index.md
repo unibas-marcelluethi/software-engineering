@@ -20,11 +20,7 @@ Die Teilnehmenden
 ## Slides 
 
 * Softwaredesign
-    * Slides: [pdf](underconstruction)
-
-# Studium
-
-* [Anleitung zum Studium / Übungen](guide.html)
+    * Slides: [pdf](https://adam.unibas.ch/goto_adam_file_1470217_download.html)
 
 
 ## Übungsstunde
@@ -47,6 +43,7 @@ Die folgenden Hausaufgaben sollten bis zum 18. Oktober bearbeitet werden.
     * Welche Hauptschwierigkeit erwarten wir
     * Schätzung des Projektaufwands (unmöglich, aber macht's trotzdem)
     * Mögliche Aufteilung der Arbeiten
+    * Wird PR an JabRef angestrebt
 
 ## Ressourcen zum Nachlesen / Nachschauen der Theorie
 
