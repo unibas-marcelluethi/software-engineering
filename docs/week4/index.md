@@ -29,7 +29,7 @@ Die Teilnehmenden
  wie Sie mittels Github-Actions, Github dazu bringen, bei jedem commit alle Tests durchlaufen zu lassen und Sie bei allfälligen 
  Fehlern zu warnen. 
 
-[Übungsblatt 4](../exercises/unit-tests-und-ci) vor. 
+* [Übungsblatt 4](../exercises/unit-tests-und-ci) 
 
 
 ## Hausaufgaben
