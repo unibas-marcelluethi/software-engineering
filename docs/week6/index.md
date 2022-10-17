@@ -23,7 +23,7 @@ Die Teilnehmenden
 
 ## Übungsstunde
 
-* [Projektschritt I: Pflichtenheft erstellen](./project/step1/exercises)
+* [Projektschritt I: Pflichtenheft erstellen](../project/step1/exercises)
 
 
 ## Hausaufgaben
