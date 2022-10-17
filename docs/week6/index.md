@@ -37,12 +37,12 @@ Die folgenden Hausaufgaben sollten bis zum 1. November bearbeitet werden.
 
 ## Ressourcen zum Nachlesen / Nachschauen der Theorie
 
-* Requirements Engineering [Video](https://tube.switch.ch/videos/e9a8b379)
-* Pflichtenheft / Lastenheft an ([Artikel](./articles/pflichtenheft1.html)
-* Anforderungen [Video](https://tube.switch.ch/videos/76899f60)
-* Anforderungen mit Sprachschablonen formulieren [Artikel](./articles/language-templates.html)
-* [Beispiele von Spezifikationen (Balzert)](https://adam.unibas.ch/goto_adam_file_1474955_download.html)
-* [Anforderungen ermitteln (Balzert)](https://adam.unibas.ch/goto_adam_file_1474961_download.html)
+* Requirements Engineering ([Video](https://tube.switch.ch/videos/e9a8b379))
+* Pflichtenheft / Lastenheft ([Artikel](./articles/pflichtenheft1.html))
+* Anforderungen ([Video](https://tube.switch.ch/videos/76899f60))
+* Anforderungen mit Sprachschablonen formulieren ([Artikel](./articles/language-templates.html))
+* Beispiele von Spezifikationen (Balzert) [pdf]](https://adam.unibas.ch/goto_adam_file_1474955_download.html)
+* Anforderungen ermitteln (Balzert) [pdf](https://adam.unibas.ch/goto_adam_file_1474961_download.html)
 
 
 
