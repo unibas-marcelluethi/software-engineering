@@ -24,7 +24,7 @@ Die Teilnehmenden
 
 Im praktischen Teil der Veranstaltung werden Sie eine erste eigene Erweiterung von JabRef schreiben. 
 
-[Übungsblatt 5](../exercises/jabref-extension) vor. 
+[Übungsblatt 5](../exercises/jabref-extension)
 
 
 ## Hausaufgaben
@@ -32,7 +32,7 @@ Im praktischen Teil der Veranstaltung werden Sie eine erste eigene Erweiterung v
 Die folgenden Hausaufgaben sollten bis zum 25. Oktober bearbeitet werden. 
 
 - Selbsttest ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1470254.html) bearbeiten.
-- Fertigstellen von [Übung  5](../exercises/unit-tests-und-ci)
+- Fertigstellen von [Übung  5](../exercises/jabref-extension)
 - Projektgruppe und Projektthema endgültig gewählt. 
 
 ## Ressourcen zum Nachlesen / Nachschauen der Theorie
