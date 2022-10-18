@@ -37,6 +37,12 @@ Die folgenden Hausaufgaben sollten bis zum 25. Oktober bearbeitet werden.
 
 ## Ressourcen zum Nachlesen / Nachschauen der Theorie
 
+Die folgende Präsentation sowie die Replik von Robert Martin geben einen guten Überblick über die Vor- und Nachteile der SOLID-Prinzipien
+
+* [Why Every Single Element of SOLID is wrong (by Dan North)](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong)
+* [Replik von Robert Martin](https://blog.cleancoder.com/uncle-bob)
+
+
 Die nachfolgenden Videos/Artikel sind aus der Vorjahresvorlesung. Diese sind noch relevant, aber nicht genau deckungsgleich mit 
 dem in dieser Vorlesung behandelten Themen. 
 
