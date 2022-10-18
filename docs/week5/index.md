@@ -18,7 +18,7 @@ Die Teilnehmenden
 ## Slides
 
 * Objektorientiertes Design
-    * Slides: [underconstruction]
+    * Slides: [https://adam.unibas.ch/goto_adam_file_1475925_download.html]
 
 ## Übungsstunde
 
