@@ -25,6 +25,8 @@ Dokumentiert alle verwendeten Fachbegriffe und Abkürzungen. Alternativ können 
 
 Verzeichnet alle Dokumente, auf die in der Spezifikation verwiesen wird.
 
+Falls ein JabRef Issue bearbeitet wird, bitte diesen hier referenzieren und verlinken. 
+
 ### 1.5 Überblick
 
 Beschreibt, wie der Rest der Spezifikation aufgebaut ist, insbesondere, wie Kapitel 3 strukturiert ist.
