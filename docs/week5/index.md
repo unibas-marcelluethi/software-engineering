@@ -9,7 +9,7 @@ title : Woche 5
 
 Die Teilnehmenden
 
-- können die Merkmale nennen, die objektorientiertes Design ausmachen
+- kennen die Merkmale und Mechanismen, der Objektorientierung und können diese anwenden
 - können die grundlegenden Ideen der Objektorientierung in den Kontext vom Moduldesign setzen
 - Anhand eines Szenarios Kandidaten für Module/Klassen identifizieren
 - können die SOLID Prinzipien im Kontext der allgemeineren Software-Engineering Prinzipien setzen
@@ -18,7 +18,7 @@ Die Teilnehmenden
 ## Slides
 
 * Objektorientiertes Design
-    * Slides: [https://adam.unibas.ch/goto_adam_file_1475925_download.html]
+    * [Slides:](https://adam.unibas.ch/goto_adam_file_1475925_download.html)
 
 ## Übungsstunde
 
