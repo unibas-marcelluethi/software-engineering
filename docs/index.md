@@ -57,7 +57,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 5](week5/index) | OO Design | |
 |    | Solid Prinzipien | |
 |[Woche 6](week6/index)   | Anforderungsanalyse   | |
-|[Woche 7](underconstruction) | Softwarespezifikation  |  |
+|[Woche 7](week7/index) | Softwarespezifikation  |  |
 |[Woche 8](underconstruction) | Konstruktive und Deskriptive Softwarespezifikation  |  |
 |    | UML (dynamische Diagramme)  | |
 |[Woche 9](underconstruction) | Verifikation (Überblick)  | |
