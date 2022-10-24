@@ -31,4 +31,4 @@ Neben den im Template vorgegebenen Aspekten, muss das Dokument mindestens die fo
 #### Abgabe:
 
 Speichern Sie die Dokumente im Ordner ```docs/sweng``` von Jabref.
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request bis zur in der [Übersicht](../project-summary) spezifizierten deadline.  Geben Sie Ihren ```marcelluethi``` als Reviewer an..
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request bis zur in der [Übersicht](../project-summary) spezifizierten deadline.  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an..
