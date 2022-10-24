@@ -19,7 +19,7 @@ Die Teilnehmenden
 ## Slides
 
 * Anforderungen 
-   * Slides: [underconstruction]
+   * Slides: [https://adam.unibas.ch/goto_adam_file_1480327_download.html]
 
 ## Übungsstunde
 
