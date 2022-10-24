@@ -24,7 +24,7 @@ Schauen Sie sich das [Template](../templates/pflichtenheft-template.html) für d
 
 Schreiben Sie die Abschnitte 1 - 2 für ihr Projekt.
 
-Schauen Sie sich als Inspiration auch die nachfolgend verlinkten Beispiele ané
+Schauen Sie sich als Inspiration auch die nachfolgend verlinkten Beispiele an:
 
 * [Beispiel früheres Projekt](https://adam.unibas.ch/goto_adam_file_1480294_download.html)
 * [Beispiel nach Lehrbuch von Balzert](https://adam.unibas.ch/goto_adam_file_1474955_download.html).

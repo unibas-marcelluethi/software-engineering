@@ -19,11 +19,11 @@ Wir gehen dabei in mehreren Schritten vor:
 |---------|--------|---------------------|---------|-----------|
 | JabRef kennenlernen | - | - | - | - |
 | Gruppen bilden, Projekt wählen | 12. Oktober | 12. Oktober | 26. Oktober | Am 26.Oktober muss das Projektthema fix sein |
-| [Pflichtenheft/Projektplan erstellen](week6/exercises) | 31. Oktober | 2. November  | 9. November | |
-| [Design und Prototyp erstellen](week8/exercises) | 14. November | 16. November | 23. November | |
-| [Testplan erstellen](week10/exercises) | 21. November | 27. November | 30. November| |
-| [Abschlusspräsentation](week12/exercises) | 14. Dezember |  --  |  |
-| [Finale Abgabe ganzes Projekt](week12/exercises) | -- | 21. Dezember |  |
+| [Pflichtenheft/Projektplan erstellen]((./step1/exercises) | 31. Oktober | 2. November  | 9. November | |
+| [Design und Prototyp erstellen]((./step2/exercises) | 14. November | 16. November | 23. November | |
+| [Testplan erstellen]((./step3/exercises) | 21. November | 27. November | 30. November| |
+| [Abschlusspräsentation]((./step4/exercises) | 14. Dezember |  --  |  |
+| [Finale Abgabe ganzes Projekt]((./step4/exercises) | -- | 21. Dezember |  |
 
 Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in obiger Tabelle.
 
