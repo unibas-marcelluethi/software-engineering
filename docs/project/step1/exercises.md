@@ -24,7 +24,10 @@ Schauen Sie sich das [Template](../templates/pflichtenheft-template.html) für d
 
 Schreiben Sie die Abschnitte 1 - 2 für ihr Projekt.
 
-Schauen Sie sich als Inspiration auch die verlinkten [Beispiele](https://adam.unibas.ch/goto_adam_file_1474955_download.html) an. In den Beispielen wird zwar ein anderes Template verwendet, es werden aber genau dieselben Aspekte definiert.
+Schauen Sie sich als Inspiration auch die nachfolgend verlinkten Beispiele ané
+
+* [Beispiel früheres Projekt](https://adam.unibas.ch/goto_adam_file_1480294_download.html)
+* [Beispiel nach Lehrbuch von Balzert](https://adam.unibas.ch/goto_adam_file_1474955_download.html).
 
 *Hinweis: Sie finden alle Templates als Markdown Files im [docs Ordner](https://github.com/unibas-marcelluethi/software-engineering/tree/main/docs/project) des Github Repositories.*
 
