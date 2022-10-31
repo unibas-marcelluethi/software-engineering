@@ -59,7 +59,6 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 6](week6/index)   | Anforderungsanalyse   | |
 |[Woche 7](week7/index) | Softwarespezifikation  |  |
 |[Woche 8](week8/index) | UML |  |
-|    | UML (dynamische Diagramme)  | |
 |[Woche 9](underconstruction) | Verifikation (Überblick)  | |
 |    | Theoretische Grundlagen des Testens| |
 |    | Code reviews | |
