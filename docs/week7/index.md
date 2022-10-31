@@ -15,6 +15,11 @@ Wir besprechen was genau eine Softwarespezifikation ist, welchen Zweck sie erfü
 Die Teilnehmenden
 - Kennen den Zweck von Softwarespezifikationen
 - Können wichtige Qualitätsmerkmale von Softwarespezifikationen nennen und wissen, weshalb diese schwierig zu erreichen sind.
+- können  Spezifikationsmethoden in deskriptive und konstruktive Spezifikationsmethoden unterteilen und die Unterschiede zwischen diesen Methoden erklären.
+- können erklären, wie deskriptive und konstruktive Methoden zur Verifikation eines Systems eingesetzt werden können. 
+- kennen Datenflussdiagramme und können diese lesen. 
+- Kennen die Notation und Semantik von Petri-Netzen und können einfache Petrinetze simulieren. 
+- Können einfache OCL-Constraints lesen 
 - Können erklären, wie ein idealer Softwarespezifikationsprozess aussieht und weshalb man diesen in der Praxis nie erreichen kann.
 
 
@@ -33,12 +38,12 @@ Die folgenden Hausaufgaben sollten bis zum 9. November bearbeitet werden.
 
 - Verbessern Sie das Pflichtenheft
 - Lesen Sie das Paper [A rational design process - and how to fake it](http://beethoven.site.uottawa.ca/SEG-2106-2506/Notes/Curiosities/Parnas/Fake%20rational%20design%20process%20-1986.pdf)
-
 - Bearbeiten Sie den Selbsttest für Woche 7 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1480370.html) .
-
-
 
 ## Ressourcen zum Nachlesen / Nachschauen der Theorie
 
-* Spezifikation von Softwareprojekten ([Video](https://tube.switch.ch/videos/ab4c7b2c), [Slides](./slides/specification-overview.html))
+* Spezifikation von Softwareprojekten ([Video](https://tube.switch.ch/videos/ab4c7b2c)
+* Konstruktive und Deskriptive Spezifikationen  ([Video](https://tube.switch.ch/videos/8cfd778c)
+* Petrinetze  ([Artikel](./articles/petrinets.html))
+* Logische Spezifikationen ([Artikel](./articles/logic.html))
 * A Rational Design Process - and how to fake it" ([Artikel](https://users.ece.utexas.edu/~perry/education/SE-Intro/fakeit.pdf))
