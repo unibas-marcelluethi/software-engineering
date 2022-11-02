@@ -25,7 +25,7 @@ Die Teilnehmenden
 
 ## Slides
 
-* Softwarespezifikation
+* [Softwarespezifikation](https://adam.unibas.ch/goto_adam_file_1486740_download.html)
 
 ## Übungsstunde
 
