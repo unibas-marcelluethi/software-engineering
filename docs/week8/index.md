@@ -22,7 +22,7 @@ Die Teilnehmenden
 
 ## Slides
 
-* Spezifizieren mit der UML
+* [Spezifizieren mit der UML](https://adam.unibas.ch/goto_adam_file_1490821_download.html)
 
 ## Übungsstunde
 
