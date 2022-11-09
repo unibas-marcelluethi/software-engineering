@@ -23,7 +23,7 @@ Geben sie hier andere relevante Dokumente an, wie z.B. das Pflichtenheft
 
 Hier sollte eine kurze &Uuml;bersicht &uuml;ber das System gegeben werden. 
 Das Ziel dieses Abschnitts ist, dass der Leser weiss, was entwickelt wird. Also zum Beispiel sollte man erwähnen, 
-dass es sich um eine Erweiterung für Ganttproject handelt, und was das Ziel dieser Erweiterung ist. 
+dass es sich um eine Erweiterung für Jabref handelt, und was das Ziel dieser Erweiterung ist. 
 
 
 # 3. Designziele
