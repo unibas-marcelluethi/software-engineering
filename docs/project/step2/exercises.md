@@ -19,7 +19,9 @@ Die Funktionalität soll in dieser Phase nicht vollständig implementiert werden
 
 #### Technische Dokumentation erstellen
 
-Erstellen Sie die Technische Dokumentation. Nutzen Sie dazu dieses  [Template](../templates/technical-doc.html).
+Erstellen Sie die Technische Dokumentation. Nutzen Sie dazu dieses  [Template](../templates/technical-doc.html) 
+
+* [Link zum template im Markdown Format](https://raw.githubusercontent.com/unibas-marcelluethi/software-engineering/main/docs/project/templates/technical-doc.md)
 
 Neben den im Template vorgegebenen Aspekten, muss das Dokument mindestens die folgenden Anforderungen erfüllen:
 
