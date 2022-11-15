@@ -3,12 +3,44 @@ layout: default
 title : Woche 10
 ---
 
-# Woche 10: Testen im Kleinen und im Grossen
+# Woche 10: Testen im Kleinen 
 
-# Studium
+## Übersicht
 
-* [Anleitung zum Studium / Übungen](guide.html)
+In dieser Woche diskutieren wir Teststrategien, die wir als individuelle 
+Entwickler*innen anwenden können. Dabei lassen wir uns von der Idee der
+Überdeckung leiten und diskutieren verschiedene Überdeckungskriterien. 
+Wir lernen auch konkrete Methoden kennen, mit denen wir Testfälle finden können. 
 
-## Lernmaterialien
-* Auf der [Ressourcenseite](resources.html) finden Sie nochmals alle Lernmaterien sowie Links zu weiterführender Literatur.
+## Lernziele
+
+Die Teilnehmenden 
+
+- können den Unterschied zwischen Blackbox und Whitebox Tests erklären und wie sich dies auf die Softwarewartung auswirkt. 
+- können Ursache-Wirkungsdiagramme erstellen und aus diesen Testfälle 
+herleiten. 
+- Kennen verschiedene Überdeckungskriterien und können diese einsetzen um  Testfälle zu finden
+- Können Äquivalenzklassen und Grenzfälle in einfachen Beispielspezifikationen identifizieren
+
+
+
+## Slides
+
+* [Testen im Kleinen](/underconstruction)
+
+## Übungsstunde
+
+Während der Übungsstunde werden Sie für Ihre Erweiterung einen [Testplan]() erstellen.
+
+## Hausaufgaben
+
+Die folgenden Aufgaben müssen bis zum 21/22. November erledigt werden. 
+- Erstellen Sie den Testplan, wie in dieser [Anleitung](https://unibas-marcelluethi.github.io/software-engineering/project/step3/exercises) beschrieben. Deadline: 21. November
+- Bearbeiten Sie den Selbsttest für Woche 10 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1495810.html) bis zum 22. November.
+
+
+## Ressourcen zum Nachlesen / Nachschauen der Theorie
+
+* White-box Testing [Video](https://tube.switch.ch/videos/13379a18),
+* Black-box Testing [Artikel](./articles/testing-in-the-small-bb.html)
 

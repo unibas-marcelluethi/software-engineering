@@ -61,8 +61,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 8](week8/index) | UML |  |
 |[Woche 9](week9/index) | Verifikation / Grundlagen des Testens | |
 |                       | Testen im Grossen | | 
-| [Woche 10](underconstruction) | Testen im Kleinen   | |
-|| Testen im Grossen ||
+| [Woche 10](week10/index) | Testen im Kleinen   | |
 | [Woche 11](underconstruction)    | Softwareprozesse | |
 |             | Agile Softwareentwicklung   | |
 | [Woche 12](underconstruction)| Scrum  | |
