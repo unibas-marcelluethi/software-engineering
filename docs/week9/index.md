@@ -20,15 +20,15 @@ Die Teilnehmenden
 - können erklären, weshalb wir Software immer verifiziert werden muss.
 - können verschiedene Methoden zur Verifikation aufzählen.
 - kennen die verschiedenen Arten von Tests (also Unittest, Regressionstest, Integrationstests, etc. ) und wissen, wie diese eingesetzt werden.
-- kennen die Ziele und Limitierungen von Softwaretests und können die Ausirkungen dieser Limitierungen einschätzen.
-- können Äquivalenzklassen und Grenzfälle in einfachen Beispielsspezifikationen identifizieren.
+- kennen die Ziele und Limitierungen von Softwaretests und können die Auswirkungen dieser Limitierungen einschätzen.
+- können Äquivalenzklassen und Grenzfälle in einfachen Beispielspezifikationen identifizieren.
 - Verstehen, wie Stubs und Drivers eingesetzt werden um Module im Systemkontext zu testen.
 - Kennen die Vor- und Nachteile von Top-Down und Bottom-up Integration.
 
 
 ## Slides
 
-* Spezifizieren mit der UML
+* [Verifikation und Testen](https://adam.unibas.ch/goto_adam_file_1496294_download.html)
 
 ## Übungsstunde
 
