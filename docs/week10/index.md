@@ -30,13 +30,13 @@ herleiten.
 
 ## Übungsstunde
 
-Während der Übungsstunde werden Sie für Ihre Erweiterung einen [Testplan]() erstellen.
+Während der Übungsstunde werden Sie für Ihre Erweiterung einen [Testplan](/project/step3/exercises) erstellen.
 
 ## Hausaufgaben
 
-Die folgenden Aufgaben müssen bis zum 21/22. November erledigt werden. 
-- Erstellen Sie den Testplan, wie in dieser [Anleitung](https://unibas-marcelluethi.github.io/software-engineering/project/step3/exercises) beschrieben. Deadline: 21. November
-- Bearbeiten Sie den Selbsttest für Woche 10 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1495810.html) bis zum 22. November.
+Die folgenden Aufgaben müssen bis zum 28/29. November erledigt werden. 
+- Erstellen Sie den Testplan, wie in dieser [Anleitung](https://unibas-marcelluethi.github.io/software-engineering/project/step3/exercises) beschrieben. Deadline: 28. November
+- Bearbeiten Sie den Selbsttest für Woche 10 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1495810.html) bis zum 29. November.
 
 
 ## Ressourcen zum Nachlesen / Nachschauen der Theorie
