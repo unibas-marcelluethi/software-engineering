@@ -31,7 +31,7 @@ herleiten.
 
 ## Übungsstunde
 
-Während der Übungsstunde werden Sie für Ihre Erweiterung einen [Testplan](/project/step3/exercises) erstellen.
+Während der Übungsstunde werden Sie für Ihre Erweiterung einen [Testplan](https://unibas-marcelluethi.github.io/software-engineering/project/step3/exercises) erstellen.
 
 ## Hausaufgaben
 
