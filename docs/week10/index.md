@@ -26,7 +26,7 @@ herleiten.
 
 ## Slides
 
-* [Testen im Kleinen](/underconstruction)
+* [Testen im Kleinen](https://adam.unibas.ch/goto_adam_file_1501148_download.html)
 
 ## Übungsstunde
 
