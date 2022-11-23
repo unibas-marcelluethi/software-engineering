@@ -27,6 +27,7 @@ herleiten.
 ## Slides
 
 * [Testen im Kleinen](https://adam.unibas.ch/goto_adam_file_1501148_download.html)
+* [JQqik - Software für Property-based Testing in Java](https://jqwik.net/)
 
 ## Übungsstunde
 
