@@ -18,7 +18,6 @@ Teil Teilnehmenden
 - können die Wichtigkeit von Spezifikationen und automatisierten Tests in diesem Prozess einschätzen.
 - kennen die Wichtigkeit und Rolle von Werkzeugen wie Versionsverwaltung (z.B. Git), Integrationsserver in Continuous Deployment.
 
-|
 ### Theorie
 * Diese Woche findet keine Vorlesung von 8-10 statt.*
 
@@ -29,7 +28,7 @@ Teil Teilnehmenden
 
 Bearbeiten Sie folgende Aufgaben bis zum 13. Dezember, 23.55.
 - Bearbeiten Sie den Selbsttest für Woche 12 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1503702.html)
-- Bereiten Sie die Präsentation ihres Projekts vor (siehe [Anleitung](/project/step4/exercise))
+- Bereiten Sie die Präsentation ihres Projekts vor (siehe [Anleitung](/project/step4/exercises))
 
 ### Übungsstunde
 
