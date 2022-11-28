@@ -28,7 +28,7 @@ Teil Teilnehmenden
 
 Bearbeiten Sie folgende Aufgaben bis zum 13. Dezember, 23.55.
 - Bearbeiten Sie den Selbsttest für Woche 12 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1503702.html)
-- Bereiten Sie die Präsentation ihres Projekts vor (siehe [Anleitung](/project/step4/exercises))
+- Bereiten Sie die Präsentation ihres Projekts vor (siehe [Anleitung](../project/step4/exercises))
 
 ### Übungsstunde
 
