@@ -1,14 +1,49 @@
 ---
 layout: default
 ---
-# Projektschritt 4: Abschliessen der Implementation, Testen und Projektabgabe
+# Projektschritt 4: Projektpräsentation und Abgabe
 
-Nun sollten Sie soweit sein, dass Sie die Implementation fertigstellen und testen können.
-Sobald alles funktioniert, können Sie Ihr Projekt abgeben.  
+## Präsentation:
+Präsentieren Sie die von Ihnen entwickelte Erweiterung ihren Kolleginnen und Kollegen.
 
-Dazu mergen Sie nun alle erstellten Feature Branches (also ```pflichtenheft```, ```designdoc```, ```testplan```), sowie alle sonst von Ihnen für die Entwicklung verwendeten Branches in den branch ```main```.
-Erstellen Sie nun einen Pull Request von ```main``` auf das *upstream* Repository (also von dem Sie ursprünglich geklont haben). Wir haben für jedes Projekt einen eigenen Branch erstellt. Geben Sie diesen als Zielbranch im Pull Request an. Sie erkennen diesen daran, dass er mit dem Wort `gyminf` beginnt, gefolgt
-von einem Wort, welches das Projekt beschreibt (also zum Beispiel `gyminf-tranlation` für das Übersetzungsprojekt.)
 
+#### Präsentationsformat:
+
+* Dauer: Maximal 10 Minuten
+* Medien: Slides und Software Demo
+
+#### Inhalt
+
+Die Präsentation sollte mindestens folgende Punkte ansprechen:
+
+* Welches Problem sollte ihre Erweiterung lösen?
+    * Was ist die Vision, das Ziel?
+    * Was sind die wichtigsten Anforderungen an die Software?
+* Wie ist die Architektur / das Design der Software?
+   * Was waren die wichtigsten Designentscheidungen?
+* Live-demo Ihrer Erweiterung
+* Reflexion / Lessons learned
+    * Welche Probleme sind während dem Projekt aufgetaucht?
+    * Was war einfacher, was schwieriger als erwartet?
+    * Was würden Sie beim nächsten mal anders machen?
+    * Was ist die wichtigste Einsicht die Sie erlangt haben?
+
+#### Zeitplan
+Die Präsentationen finden am 14. Dezember (08.15-10.00 und 12.15 - 14.00) statt. Die Reihenfolge der Präsentationen wird noch bekanntgegeben.
+
+
+#### Abgabe der Präsentationsfolien
+
+Erstellen Sie, ausgehend vom Branch ```main``` einen neuen Branch ```praesentation``` im Jabref Repository. Speichern Sie ihre Slides im ```docs``` Ordner von Jabref ab.
+Die Abgabe erfolgt pro Gruppe, jeweils mittels Pull Request. Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an..
+Abgabetermin ist Mittwoch, 14. Dezember, vor Ihrer Präsentation.
+
+
+## Finale Abgabe aller erstellten Artefakte
+
+Falls Sie es noch nicht gemacht haben, mergen Sie nun alle erstellten Feature Branches (also ```pflichtenheft```, ```designdoc```, ```testplan```, ```praesentation```), sowie alle sonst von Ihnen für die Entwicklung verwendeten Branches in den branch ```main```.
+Erstellen Sie nun einen Pull Request von ```main``` auf das *upstream* Repository (also von dem Sie ursprünglich geklont haben). Wir haben für jede Gruppe einen eigenen Branch erstellt. Geben Sie diesen als Zielbranch im Pull Request an.
+
+Der Pull Request mit ihrer finalen Abgabe muss bis am 20. Dezember, 23.59 gemacht sein.
 
 
