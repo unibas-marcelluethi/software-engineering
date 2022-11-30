@@ -45,7 +45,7 @@ Welche Aspekte werden explizit nicht getestet?
 
 ## 4 Vorgehensweise
 
-### 4.1 Komponenten und Integrationstests
+### 4.1 Modul und Integrationstests
 Hier können sie angeben wie sie diese Tests durchführen möchten. Wir empfehlen wenn möglich die Komponenten mittels automatischen Unit Tests zu testen.
 
 ### 4.2 Funktionstest
@@ -63,12 +63,15 @@ z.b. Internetzugriff,  Account bei Google, spezielle Software, ...
 
 ### 6.1 Modultests
 
-Falls die Module durch automatisierte Unit Tests durchgeführt werden, können diese hier kurz (tabellarisch) aufgelistet werden.
+Ihre Module sollten wenn immer möglich über automatisierte Unittests getestet werden. 
+Diese können Sie hier kurz (tabellarisch) auflisten. Es reicht, wenn Sie den Klassennamen und den Namen des Testfalls anschreiben. 
 
 | Name der Klasse | Name des Testfalls |
+|-----------------|--------------------|
+|   Testklasse 1  |   Testfall 1       |
 
-Ansonsten müssen die Testfälle hier detailliert aufgeführt werden.
 
+Falls Sie ein Modul nicht automatisiert Testen können, müssen Sie den manuellen Testablauf nachfolgend beschreiben. 
 
 ##### Testfall: /TM10/
 *Testziel:*
