@@ -67,7 +67,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | [Woche 12](week12/index)| Scrum  | |
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen | |
-| [Woche 14](underconstruction)     |Zusammenfassung / Prüfungsvorbesprechung |  |
+| Woche 14 | Zusammenfassung / Prüfungsvorbesprechung | [(Link zu Slides)](https://adam.unibas.ch/goto_adam_file_1518294_download.html) |
 
 
 ## Literatur / Weiterführende Links
