@@ -6,42 +6,23 @@ title : Übersicht
 # Projektübersicht
 
 Ein Teil dieser Vorlesung ist ein Projekt, welches Sie selbständig oder in Gruppen realisieren. 
-Die Aufgabe ist es, eine Erweiterung für die Open Source Software [JabRef](https://www.jabref.org/). Sie können entweder versuchen 
-einen der [für Universitätskurse empfohlenen Issues](https://github.com/orgs/JabRef/projects/3) in Jabref zu lösen, oder können sich selbst eine Erweiterung ausdenken. 
+Die Aufgabe ist es, eine Erweiterung für die Open Source Software [JabRef](https://www.jabref.org/). 
 
-Nachdem Sie sich als Gruppe ein Projekt ausgesucht haben, sollen Sie dies strukturiert realisieren.
+Sie denken sich als Gruppe ein Projekt aus und müssen dies dann strukturiert realisieren. Die einzelnen Projektschritte sind in der nachfolgenden Tabelle aufgelistet. Für jeden Schritt gibt es eine eigene Seite, welche die Aufgabe genauer beschreibt.
 
-Wir gehen dabei in mehreren Schritten vor:
 
-## Projektübersicht
-
-| Aufgabe |  Abgabe | Besprechung | Finale Version | Bemerkung |
+| Aufgabe |  Erste Abgabe | Besprechung | Finale Version | Bemerkung |
 |---------|--------|---------------------|---------|-----------|
-| JabRef kennenlernen | - | - | - | - |
-| Gruppen bilden, Projekt wählen | 12. Oktober | 12. Oktober | 26. Oktober | Am 26.Oktober muss das Projektthema fix sein |
-| [Pflichtenheft/Projektplan erstellen](./step1/exercises) | 31. Oktober | 2. November  | 9. November | |
-| [Design und Prototyp erstellen](./step2/exercises) | 14. November | 16. November | 23. November | |
-| [Testplan erstellen](./step3/exercises) | 28. November | 30. November | 7. Dezember| |
-| [Abschlusspräsentation](./step4/exercises) | 14. Dezember |  --  |  |
-| [Finale Abgabe ganzes Projekt](./step4/exercises) | -- | 21. Dezember |  |
-
-Für detaillierte Instruktionen zu jedem Projektschritt folgen Sie den Links in obiger Tabelle.
-
-## Organisatorisches
-
-#### Github Repository
-
-Wenn Sie in der Gruppe arbeiten, einigen Sie sich auf ein bestehendes Repository von ihrer Gruppe, welches nun als offizielles Repository für Ihr Projekt fungiert. 
-Fügen Sie `marcelluethi`, `Luujauhe`, `linuspetrucci` und `gjoyet` als *Collaborator* hinzu (via Settings->Collaborators).
+| JabRef kennenlernen | - | - | - | Eigene Experimente / Übungen 1 - 4 |
+| [Projektauswahl und Pitch](./pitch.md)  | 11. Oktober | 11. Oktober | 25. Oktober | Projektbeginn ist 25. Oktober |
+| [Gruppenrepository einrichten](./group-repository) | 25. Oktober | --   | 25. Oktober | | 
+| [Pflichtenheft/Projektplan erstellen](./requirements) | 30. Oktober | 1. November  | 8. November |  | 
+| [Design und Prototyp erstellen](./technical-doc) | 13. November | 15. November | 22. November | |
+| [Testplan erstellen](./testplan) | 20. November | 22. November | 29. Dezember| |
+| [Abschlusspräsentation](./presentation) | 13. Dezember |  --  | 13. Dezember | Präsentationen vor Ort | 
+| [Finale Abgabe ganzes Projekt](./submission) | 20. Dezember | --  | 20. Dezember |
 
 
-<!--Kreieren sie ausgehend vom master branch einen branch `develop`. Für jede Abgabe (und jedes Feature) kreieren sie ausgehend vom branch `develop` einen neuen Featurebranch. Der Pull Request hat jeweils den `develop` branch als Ziel. Damit haben sie am Ende alle projektrelevanten Änderungen im `develop` branch. -->
-
-
-
-#### Dokumentation
-Wir führen die Dokumentation als Teil vom Projekt und speichern diese im selben Repository.
-Kreieren Sie einen Ordner `./docs/sweng` in ihrem Projekt, der alle zu produzierenden Dokumente enthält. Erstellen Sie die Dokumentation in [Markdown](https://help.github.com/categories/writing-on-github/) Format. Dieses einfache Textformat wird von den meisten Editoren/IDE und auch von GitHub gut unterstützt. Ausserdem lassen sich Änderungen in der Dokumentation sehr viel einfacher nachverfolgen als in PDF Dateien.
 
 
 

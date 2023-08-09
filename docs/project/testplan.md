@@ -8,7 +8,8 @@ In diesem Projektschritt erstellen wir anhand der Spezifikationen einen Testplan
 #### Vorbereitung
 
 
-Erstellen Sie, ausgehend von ```main``` branch in Ihrem Jabref Repository, einen neuen Featurebranch ```testplan```.
+Wechseln Sie auf den `project` branch. 
+Erzeugen Sie dann, ausgehend vom Branch `project`, einen neuen Branch mit dem Namen `testplan`. 
 
 #### Testplan
 
@@ -28,5 +29,5 @@ Finden Sie heraus, wie hoch die Testabdeckung durch Unittests für Jabref insges
 
 #### Abgabe:
 
-Speichern Sie die Dokumente im Ordner ```docs/sweng``` von Jabref.
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request bis zur in der [Übersicht](../project-overview) spezifizierten Deadline.  Geben Sie Ihren ```marcelluethi``` als Reviewer an..
+
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](../project-summary).  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an.

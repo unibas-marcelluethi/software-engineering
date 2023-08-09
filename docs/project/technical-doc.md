@@ -4,13 +4,16 @@ layout: default
 # Prototyp und Design
 
 
+
 #### Einführung
 
 Der nächste Schritt im Projekt ist es anhand der Anforderungen das zu entwickelnde System zu spezifizieren und die technische Umsetzung zu planen. Wir wir im Artikel [A rational design process - and how to fake](https://users.ece.utexas.edu/~perry/education/SE-Intro/fakeit.pdf) it gesehen haben, werden wir es nie schaffen, bereits in der Designphase alle möglichen Probleme vorauszusehen. Deshalb sollten Sie die nächsten zwei Schritte, nämlich Prototyp schreiben und technische Dokumentation erstellen, parallel ausführen. Überlegen Sie sich auch, ob die neuen Erkenntnisse, die Sie durch diese Schritte erlangen, Auswirkungen auf die im Pflichtenheft spezifizierten Anforderungen haben.
 
 #### Vorbereitung
 
-Erstellen Sie, ausgehend von ```main``` branch in Ihrem Projekt-Repository, einen neuen Featurebranch ```designdoc```.
+Wechseln Sie auf den `project` branch. 
+Erzeugen Sie dann, ausgehend vom Branch `project`, einen neuen Branch mit dem Namen `technical-doc`. 
+
 
 #### Prototyp schreiben
 
@@ -32,5 +35,4 @@ Neben den im Template vorgegebenen Aspekten, muss das Dokument mindestens die fo
 
 #### Abgabe:
 
-Speichern Sie die Dokumente im Ordner ```docs/sweng``` von Jabref.
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request bis zur in der [Übersicht](../project-summary) spezifizierten deadline.  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an..
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](../project-summary).  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an.
