@@ -7,8 +7,8 @@ title : Woche 2
 
 ## Administratives
 
-* Vorbesprechung, eine kurze Einführung in Git/Github und Hilfestellungen zu den Aufgaben gibt es in der Übungsstunde vom 28. September 2022
-* Dieses Übungsblatt muss bis spätestens am 04. Oktober 2022 via Pull Request abgegeben werden.
+* Eine kurze Einführung in Git/Github und Hilfestellungen zu den Aufgaben gibt es in der Übungsstunde.
+* Dieses Übungsblatt muss bis spätestens am 03. Oktober via Pull Request abgegeben werden.
 
 
 In dieser Übung werden Sie einen typischen Arbeitsablauf mit Git durchspielen. 
@@ -43,7 +43,7 @@ git remote -v
 können Sie sich die URL davon anzeigen lassen.
 
 Damit Sie auf die Änderungen vom *upstream* Repository zugreifen können, müssen Sie dies als weiteres remote Repository hinzufügen. 
-Wenn Sie ssh benuzten (also in der vorigen Übung ssh eingerichtet haben) geben 
+Wenn Sie ssh benutzen (also in der vorigen Übung ssh eingerichtet haben) geben 
 Sie dafür folgendes Kommando ein
 ```
 git remote add upstream git@github.com:unibas-marcelluethi/jabref.git
