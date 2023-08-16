@@ -7,13 +7,9 @@ title : Woche 1
 ## 1. Beziehung von Software Engineering zu anderen Fachgebieten in der Informatik
 Diskutieren Sie die Beziehung von "Software Engineering" zu anderen Fachgebieten wie
 Programmiersprachen, Betriebssysteme, Management, Systemsengineering, Theoretische Informatik, Künstliche Intelligenz.
-Beschreiben Sie kurz wie Fortschritte in einem Gebiet das Software Engineering beeinflussen können.
+Beschreiben Sie kurz wie Fortschritte in diesen Disziplinen das Software Engineering beeinflussen können.
 
 Wie ist ihre Einschätzung. Würden Sie die Fortschritte eher in Richtung Accidental Complexity oder Essential Complexity sehen.
-
-Literatur:
-* Ghezzi et al., Kapitel 1.5 [Scan auf Adam workspace: ](https://adam.unibas.ch/goto_adam_file_1253964_download.html)
-* Fred Brooks: No Silver Bullet. ([Paper](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf))
 
 ## 2. Qualitätsmerkmale:
 
@@ -22,7 +18,7 @@ Literatur:
 Knoten dargestellt, und wenn ein Qualitätsmerkmal ein anderes beeinflusst, wird dies durch einen Pfeil dargestellt.
     * Was können Sie aus dem resultierenden Graphen ableiten?
     * Gibt es Zyklen im Graph? Was bedeuten diese?
-
+    * Angenommen, Sie haben in Zukunft einen KI Assistenten zur Verfügung. Ändert sich die Wichtigkeit dieser Qualitätsmerkmale? Wie?
 
 ### 2.2 Messbarkeit
 * Was halten Sie von "Lines of Code" als Produktivitätsmass in der Softwareentwicklung? Was spricht dafür, was dagegen?
@@ -33,6 +29,7 @@ Knoten dargestellt, und wenn ein Qualitätsmerkmal ein anderes beeinflusst, wird
     * Welche Leute sind im Projekt involviert?
     * Welche Leute sind in der Produktion der Software involviert? Welche in der Wartung?
     * Was sind die Rollen?
+    * Welche dieser Rollen können einfach durch Künstliche Intelligenz ersetzt werden?
 
 
 
