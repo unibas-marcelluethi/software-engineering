@@ -23,30 +23,19 @@ Die Studierenden
 * Einführung in Software Engineering
     * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1450685_download.html)
 
-* [No silver bullet - Essence and Accidents in Software Engineering](http://www.sci.brooklyn.cuny.edu/~sklar/teaching/s10/cis20.2/papers/brooks-no-silver-bullet.pdf)
-
 
 ## Übungsstunde
 
  Im praktischen Teil der Veranstaltung geben wir eine kurze Einführung in 
- Jabref und helfen Ihnen die Entwicklungsumgebung und JabRef einzurichten. Sie gehen dabei gemäss dieser [Anleitung](../exercises/jabref-setup) vor. 
+ Jabref und helfen Ihnen, die Entwicklungsumgebung und JabRef einzurichten. Sie gehen dabei gemäss dieser [Anleitung](../exercises/jabref-setup) vor. 
 
 
 ## Hausaufgaben
 
-Zu bearbeiten bis 27. September
+Bitte bearbeiten Sie folgende Aufgaben vor Mittwoch, 27. September. 
 
-##### Theorie
-
-- Lesen des Papers [No silver bullet - Essence and Accidents in Software Engineering](http://www.sci.brooklyn.cuny.edu/~sklar/teaching/s10/cis20.2/papers/brooks-no-silver-bullet.pdf)
-- Selbsttest ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1435781.html) bearbeiten.
-
-##### Praxis
-
-- Einrichten der Entwicklungsumgebung und JabRef gemäss dieser [Anleitung](../exercises/jabref-setup)
-
-
-
-
+* Arbeiten Sie den [Selbststudiumsteil Woche 2](../week2/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
+* Richten Sie die Entwicklungsumgebung und JabRef gemäss obiger [Anleitung](../exercises/jabref-setup) ein.
+* Experimentieren Sie mit JabRef und finden Sie heraus, was Sie mit der Software machen können. 
 
 

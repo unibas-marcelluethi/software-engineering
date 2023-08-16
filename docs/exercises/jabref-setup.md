@@ -7,7 +7,7 @@ title : Woche 1
 
 ## Administratives
 
-* Dieses Übungsblatt wird in der Übungsstunde vom 21. September eingeführt und bearbeitet. Falls die Zeit in der Übungsstunde nicht reicht, sollte das Setup bis zur Übungsstunde am 28. September fertiggestellt werden.
+* Dieses Übungsblatt wird in der Übungsstunde vom 20. September eingeführt und bearbeitet. Falls die Zeit in der Übungsstunde nicht reicht, sollte das Setup bis zur Übungsstunde am 27. September fertiggestellt werden.
 
 * Es ist keine Abgabe erforderlich.
 
@@ -65,7 +65,7 @@ mit diesem Arbeiten. Eine Anleitung dazu finden Sie [hier](https://docs.github.c
 ### Installieren von Java und JavaFX
 
 Für die Entwicklung von JabRef nutzen wir Java in der Version 18. Wir empfehlen Ihnen die Version 
-von Eclipse Temurin, die Sie [hier](https://adoptium.net/temurin/releases?version=18) herunterladen
+von Eclipse Temurin, die Sie [hier](https://adoptium.net/temurin/releases?version=19) herunterladen
 können. 
 
 --
@@ -74,9 +74,10 @@ Umgebungsvariable ```JAVA_HOME``` und ```PATH``` auf das neu installierte JDK.
 
 Unter Windows (Powershell) machen Sie das wie folgt:
 ```
-$env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-18.0.1.10-hotspot"
-$env:PATH="C:\Program Files\Eclipse Adoptium\jdk-18.0.1.10-hotspot\bin;$env:PATH" 
+$env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-19.0.2.7-hotspot"
+$env:PATH="H" 
 ```
+*Achtung:* Der Pfad kann sich je nach Version unterscheiden. Bitte passen Sie den Pfad entsprechend an.
 
 Unter MacOS sollte das folgende Kommando funktionieren:
 ```
@@ -86,7 +87,7 @@ export "PATH=$JAVA_HOME/bin:$PATH"
 
 und unter Linux setzen Sie diese Variablen wie folgt:
 ```
-export JAVA_HOME=PFAD_ZU_IHRER_JAVA_18_INSTALLATION
+export JAVA_HOME=PFAD_ZU_IHRER_JAVA_19_INSTALLATION
 export “PATH=$JAVA_HOME/bin:$PATH”
 ```
 
@@ -96,10 +97,11 @@ Danach geben Sie folgendes Kommando ein:
 ```
 Die Ausgabe sollte ungefähr wie folgt aussehen:
 ```bash
-openjdk version "18.0.1" 2022-04-19
-OpenJDK Runtime Environment Temurin-18.0.1+10 (build 18.0.1+10)
-OpenJDK 64-Bit Server VM Temurin-18.0.1+10 (build 18.0.1+10, mixed mode, sharing)
+openjdk version "19.0.2" 2023-01-17
+OpenJDK Runtime Environment Temurin-19.0.2+7 (build 19.0.2+7)
+OpenJDK 64-Bit Server VM Temurin-19.0.2+7 (build 19.0.2+7, mixed mode, sharing)
 ```
+*Anmerkung:* Das Buildsystem Gradle, welches wir für das kompilieren und ausführen von JabRef verwenden, nutzt die Umgebungsvariable ```JAVA_HOME``` um das JDK zu finden. Diese Umgebungsvariable muss also immer richtig gesetzt sein, wenn Sie JabRef aus einem Terminal kompilieren oder ausführen wollen.
 
 ## JabRef
 
@@ -107,7 +109,8 @@ Nachdem wir nun alle Werkzeuge installiert haben, müssen wir noch das JabRef Pr
 
 
 ### Forken des Github Repositories
-Im ersten Teil dieses Kurses arbeiten wir nicht mit dem offiziellen JabRef Code repository, sondern mit einem privaten Fork. Damit sind ihre Änderungen und unsere Bemerkungen für die Öffentlichkeit nicht zugänglich.
+
+In diesem Kurs arbeiten wir nicht mit dem offiziellen JabRef Code repository, sondern mit einem privaten Fork. Damit sind ihre Änderungen und unsere Bemerkungen für die Öffentlichkeit nicht zugänglich.
 Damit Sie auf unseren Fork von JabRef zugreifen können, müssen wir Ihnen Zugriff auf dieses Repository geben. Sie können überprüfen ob Sie Zugriff haben indem Sie auf [https://github.com/unibas-marcelluethi/jabref](https://github.com/unibas-marcelluethi/jabref) gehen.
 Falls Sie bereits Zugriff haben, sollte die Seite etwa wie folgt aussehen:
 ![image](images/github-jabref.png)
@@ -120,11 +123,11 @@ Nun erstellen Sie, ausgehend von unserem privaten Fork, ihren eigenen privaten F
 Damit unsere Assistenten Ihre Abgaben anschauen können, müssen Sie diesen noch Zugriffsrechte auf ihr neues Repository geben. Dafür gehen Sie auf *Settings* und dann *Manage access*:
 ![github-manage-access](images/github-manage-access.png)
 
-Klicken Sie dann auf *Invite Teams or people* und fügen Sie `Luujauhe`, `linuspetrucci` und `gjoyet` hinzu.
+Klicken Sie dann auf *Add people* und fügen Sie `TODO github name`, `TODO github name` und `TODO github name` hinzu.
 ![github-manage-access](images/github-manage-access-invite.png)
 
 Als Rolle im nachfolgenden Dialog wählen Sie *Write*.
-![github-manage-access](images/github-manage-access-role.png)
+
 
 ### Klonen des Projekts
 
@@ -133,10 +136,10 @@ Damit Sie an dem Projekt arbeiten können müssen Sie das Repository noch auf Ih
 Öffnen Sie eine Konsole, wechseln Sie in ihr gewünschtes Arbeitsverzeichnis und geben Sie folgendes ein:
 
 ```
-git clone THE_URL_FOR_YOUR_PROJECT
+git clone THE_URL_FOR_YOUR_PROJECT JabRef
 ```
 
-*Warnung: * Das Arbeitsverzeichnis darf nicht auf einem synchronisiert Drive sein. Dies führt zum einen zu Problemen mit JabRef selbst, vor allem aber auch mit git. 
+***Warnung:* Das Arbeitsverzeichnis darf nicht auf einem synchronisiert Drive sein. Dies führt zum einen zu Problemen mit JabRef selbst, vor allem aber auch mit git.** 
 
 ### Kompilieren des Projekts von der Kommandozeile
 
@@ -160,7 +163,10 @@ Mit dem Befehl
 ```
 können Sie das Projekt dann starten.
 
-## Bearbeiten des Projekts in der IDE
+Wenn Sie nun das JabRef Programm sehen, dann konnten Sie ihr Projekt erfolgreich kompilieren und ausführen. Herzlichen Glückwunsch!
+Sie werden in der Praxis aber nie direkt mit Gradle arbeiten, sondern meist über die IDE. Falls aber mal etwas nicht funktioniert (was bei so einem so grossen Projekt immer mal wieder vorkommt), können Sie mit diesen Kommandos von der Kommandozeile aus das Projekt bauen und ausführen, und so herausfinden, ob das Problem bei der IDE liegt.
+
+## Öffnen des Projekts in der IDE
 
 ### IntelliJ Idea
 
@@ -168,12 +174,10 @@ Installieren Sie die Entwicklungsumgebung [IntelliJ IDEA](https://www.jetbrains.
 
 *Bemerkung 1:* Wir arbeiten in diesem Kurs mit der *Community Edition*, die als Open Source uneingeschränkt zugänglich ist.
 
-Öffnen Sie nun Ihre JabRef Projekt in IntelliJ Idea, indem Sie auf dem *Welcome Screen* auf *Open*  gehen oder, falls Sie sich schon in der IDE befinden, im Menu *File->Open* wählen. Dann wählen Sie die Datei ```build.gradle``` in Ihrem JabRef Verzeichnis.
+Folgen Sie dann der Anleitung [Setup a local workspace](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace/) in der JabRef [Development Documentation](https://devdocs.jabref.org/). 
+Die ersten 3 Schritte, die mit *Pre condition* beginnen, können Sie überspringen, da Sie diese bereits erfüllt haben.
 
-Nun müssen Sie die Einstellungen in IntelliJ noch für die Entwicklung von JabRef anapssen. Wie das geht ist detailliert in der JabRef [Development Documentation](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace#configure-your-ide) erklärt.
-Lesen Sie die Erklärung durch und führen Sie alle Einstellungen wie angegeben durch.  Den Abschnitt *Using IntelliJ's internal build system* können Sie überspringen, da dies nicht zuverlässig funktioniert und wir das Projekt deshalb immer via Gradle bauen uns ausführen werden.
-Aktivieren Sie aber Checkstyle, wie im Abschnitt *Using JabRef's code style* beschrieben. Damit wird sichergestellt, dass ihr Code jeweils nach den Projektvorgaben formatiert ist.
-Falls Sie unter *Tools* keinen Eintrag Checkstyle finden sollten, müssen Sie zuerst noch das Checkstyle plugin installieren(via *File->Settings->Plugins*).
+*Bemerkung 2:* In der Anleitung wird bereits Java 20 verwendet. Wir verwenden aber Java 19. Sie müssen also bei der Auswahl des JDKs die Version 19 wählen.	
 
 
 ### Ausführen des Projekts aus der IDE
