@@ -7,9 +7,8 @@ title : Woche 4
 
 # Modulstruktur
 
-*Eine Software besteht aus Teilen - den Modulen -. Diese Teile stehen nicht alleine, 
-sondern in Beziehung zueinander. In diesem Artikel schauen wir uns an, wie wir 
-diese Beziehung formalisieren können.*
+*Wir haben gesehen, dass einzelne Module einer Software miteinander interagieren, um die Funktionalität erfüllen zu können. Ein Modul steht also immer mit einem oder mehreren anderen Modulen in Beziehung. 
+In diesem Artikel schauen wir uns an, wie wir diese Beziehungen formalisieren können.*
 
 ## Modulbeziehung als Zweistellige (binäre) Relation 
 
@@ -25,12 +24,16 @@ und meinen damit, dass das Module $$M_i$$ in Beziehung (gemäss Relation $$r$$) 
 
 
 Als Beispiel nehmen wir die Menge $$S = \{M_1, \ldots, M_6\}$$. Es gilt also, dass
-$$r \subset \{(M_1, M_1), (M_1, M_2), \ldots, (M_6, M_5), (M_6, M_6) \} $$. Beispielsweise können wir die Relation
-$$r = \{(M_1, M_2), (M_1, M_3), (M_2, M_4), (M_3, M_4), (M_3, M_5), (M_4, M_5), (M_4, M_6), (M_5, M_6), (M_6, M_2), (M_6, M_1) \} $$ definieren. 
+$$
+r \subset \{(M_1, M_1), (M_1, M_2), \ldots, (M_6, M_5), (M_6, M_6) \}
+$$. Beispielsweise können wir die Relation
+$$
+r = \{ (M_1, M_2), (M_1, M_3), (M_2, M_4), (M_3, M_4), (M_3, M_5), (M_4, M_5), (M_4, M_6), (M_5, M_6), (M_6, M_2), (M_6, M_1) \}
+$$ definieren. 
 Binäre Relationen lassen sich als gerichtete Graphen darstellen. Für die oben definierte Relation $$r$$ sieht der Graph wie folgt aus. 
 
 
-<img src="../../slides/images/module-dag.png" class="plain"/>
+<img src="./images/module-dag.png" class="plain"/>
 
 ### Transitive Hülle
 
@@ -67,8 +70,8 @@ Wir können uns die Ebene eines Moduls in der Relation wie folgt definieren:
 ## Übung:
 Schauen Sie sich folgenden Graph an und beantworten Sie die folgenden Fragen:
 
-![module dag](../../slides/images/module-dag.png)
-![module dag](../../slides/images/module-hierarchy.png)
+![module dag](./images/module-dag.png)
+![module hierarchy](./images/module-hierarchy.png)
 
 1. Welcher dieser Graphen beschreibt eine Hierarchie?
 2. Was ist die transitive H&uuml;lle von $$M_2$$ im zweiten Graphen

@@ -23,15 +23,9 @@ Beschreiben Sie eine Strategie für die Implementation, die der Trennung der Ver
 
 ## 3. Modularisierung
 
-3.1 Angenommen, Sie entscheiden Sich ein Auto zu modularisieren, indem Sie dieses in kleine Würfel von 15 $$cm^3$$ schneiden. 
-    
-* Was können Sie über Kopplung und Bindung sagen? 
-* Was wäre eine bessere Dekomposition in Module?
+![Modulgraph](images/uses-graph-jabref.png)
 
-3.2 Was können Gründe sein, dass ein Programm eine eine schwache Bindung aufweist? Was können Sie dagegen tun? 
-    
-3.3 Was können Gründe sein, dass ein Programm eine hohe Kopplung zwischen zwei Modulen aufweist? Was können Sie dagegen tun?
-
-
+Schauen Sie sich obigen Uses-graphen an. Was können Sie daraus über die Modularisierung von JabRef lernen? 
+Welche Module sind besonders wichtig?  Gibt es Dinge, die Ihnen nicht gefallen?
 
 

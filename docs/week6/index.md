@@ -41,7 +41,7 @@ Die folgenden Hausaufgaben sollten bis zum 1. November bearbeitet werden.
 * Pflichtenheft / Lastenheft ([Artikel](./articles/pflichtenheft1.html))
 * Anforderungen ([Video](https://tube.switch.ch/videos/76899f60))
 * Anforderungen mit Sprachschablonen formulieren ([Artikel](./articles/language-templates.html))
-* Beispiele von Spezifikationen (Balzert) [pdf]](https://adam.unibas.ch/goto_adam_file_1474955_download.html)
+* Beispiele von Spezifikationen (Balzert) [pdf](https://adam.unibas.ch/goto_adam_file_1474955_download.html)
 * Anforderungen ermitteln (Balzert) [pdf](https://adam.unibas.ch/goto_adam_file_1474961_download.html)
 
 
