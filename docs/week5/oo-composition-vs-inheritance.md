@@ -17,51 +17,41 @@ In diesem Kontext wird A auch als Superklasse und B als Subklasse bezeichnet.
 Diese Beziehung bedeutet, dass das Modul B alle Eigenschaften von Modul A hat sowie alle Funktionalität auch anbietet, 
 zusätzlich aber Modul A auch noch um eigene Eigenschaften und Funktionalität erweitern kann.
 
-Wir schauen uns zuerst ein Beispiel in unserer Modulsprache an:
+Wir schauen uns zuerst ein Beispiel an:
 Angenommen wir haben folgende Klasse ```Employee``` die relevante Aspekte von Mitarbeitern im Rahmen einer Mitarbeiterverwaltungssoftware modelliert.
-```pascal
-class EMPLOYEE
-    exports
-        function FIRST_NAME(): STRING;
-        function LAST_NAME(): STRING;
-        function AGE(): INTEGER;
-        procedure HIRE (FIRST_N: STRING, LAST_N: STRING; age : INTEGER);
-        procedure FIRE();    
-    implementation 
-        var firstName : STRING;
-        var lastName : STRING;
-        var age : INTEGER;
-    end EMPLOYEE    
+```java
+class Employee {
+  public final String firstName;
+  public final String lastName;
+  public final Integer age;
+  public void hire(String firstName, String lastName, Integer age) { /* Implementation */ }
+  public void fire() { /* Implementation */ };
+}
 ```
 Die hier modellierten Attribute gelten für alle Mitarbeiter. Nun gibt es jedoch verschiedene
 Arten von Mitarbeitern, die jeweils noch zusätzliche Eigenschaften haben. 
 Mittels Vererbung können wir nun diese zusätzlichen Eigenschaften modellieren, indem 
-wir die allgemeinen Eigenschaften, die wir bereits in der Klasse ```EMPLOYEE``` definiert haben, erben.
+wir die allgemeinen Eigenschaften, die wir bereits in der Klasse ```Employee``` definiert haben, erben.
 
-```pascal
-class ADMINISTRATIVE_STAFF inherits EMPLOYEE
-exports 
-    procedure DO_THIS (F: FOLDER);
-end ADMINISTRATIVE_STAFF
+```java
+class AdministrativeStaff extends Employee {
+  void doThis() { /** Implementation */ }
+}
 ```
-```pascal
-class TECHNICAL_STAFF inherits EMPLOYEE
-exports 
-    function GET_SKILL(): SKILL;
-    procedure DEF_SKILL (SK: SKILL);
-end TECHNICAL_STAFF   
+```java
+class TecnicalStaff extends Employee {
+  void addSkill(Skill skill) { /** Implementation */ }
+}
 ```
-Dadurch, dass ```ADMINISTRATIVE_STAFF``` und ```TECHICAL_STAFF``` alle Eigenschaften von 
-```EMPLOYEE``` haben, können wir Instanzen von diesen Klassen auch überall dort verwenden, wo wir diese zwei speziellen Typen von Mitarbeitern nicht unterscheiden möchten; also überall da wo wir einfach nur ein Objekt vom typ ```EMPLOYEE``` brauchen. 
 
 ## Schnittstellenvererbung und Implementationsvererbung
-Die meisten objektorientierten Programmiersprachen unterstützen zwei Varianten des
+
+Die meisten objektorientierten Programmiersprachen unterstützen  zwei Varianten des
 Vererbungskonzepts. Die erste Variante ist die *Schnittstellenvererbung*. Dabei wird bei 
 der Vererbung einfach garantiert, dass die Subklasse alle Methoden und Attribute, die in der 
 Schnittstelle definiert sind, unterstützt. Es werden jedoch keine Implementationen von der
 Superklasse vererbt. In der Programmiersprache Java wird Schnittstellenvererbung durch das Konstrukt ```Interface``` unterstützt, dass dann
-von den Klassen implementiert wird. Es ist auch möglich, *abstrakte Klassen* zu definieren, bei der die Methoden nicht implementiert sind, und dann von 
-dieser zu erben.
+von den Klassen implementiert wird. Dieses Konzept ist enorm wichtig und führt zu flexiblem und einfach zu erweiterbarem Code.
 
 Bei der *Implementationsvererbung* wird zusätzlich auch die Implementation der Superklasse
 mitvererbt. Die Subklasse muss also nur noch eine Implementation für die neuen, nicht bereits
@@ -77,7 +67,8 @@ wird häufig davon abgeraten, diese Art der Vererbung zu verwenden.
 
 
 ## Implementationsvererbung versus Komposition
-Im Folgenden illustrieren wir das Problem der Implementationsvererbung anhand eines Konkreten Beispiels. Wir zeigen auch, wie wir mit Komposition von Objekten ein besseres Design erhalten, ohne dass wir Code duplizieren müssen. 
+
+Im Folgenden illustrieren wir das Problem der Implementationsvererbung anhand eines konkreten Beispiels. Wir zeigen auch, wie wir mit Komposition von Objekten ein besseres Design erhalten, ohne dass wir Code duplizieren müssen. 
 
 Dazu schauen wir uns folgende Klassendefinition an
 ```java
