@@ -23,6 +23,9 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 
 *Achtung: Der Test muss spätestens bis Mittwoch 20. Oktober, 08:00 bearbeitet sein.*
 
+####  Präsenzveranstaltung vom 18. Oktober
+
+In der Präsenzveranstaltung werden wir die SOLID-Prinzipien vertieft diskutieren. Wir werden auch ein Objektorientiertes Design für eine einfache Anwendung erstellen und dabei CRC Karten praktisch einsetzen. 
 
 
 ## Praxis
@@ -34,7 +37,7 @@ Im praktischen Teil der Veranstaltung werden Sie eine erste eigene Erweiterung v
 
 ## Hausaufgaben
 
-Die folgenden Hausaufgaben sollten bis zum 25. Oktober bearbeitet werden. 
+Die folgenden Hausaufgaben sollten bis zum 24. Oktober bearbeitet werden. 
 
 * Arbeiten Sie den [Selbststudiumsteil Woche 6](../week6/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
 * Falls Sie an der Präsenzveranstaltung nicht anwesend waren, bearbeiten Sie die [Theoriefragen](theory-exercises) und reichen diese bis zum 25.10 auf [Adam](https://adam.unibas.ch/goto_adam_exc_1629562.html) ein. 

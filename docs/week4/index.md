@@ -27,7 +27,7 @@ Als Vorbereitung für die Präsenzveranstaltung in dieser Woche bearbeiten Sie b
 
 *Achtung: Der Test muss spätestens bis Mittwoch 13. Oktober, 08:00 bearbeitet sein.*
 
-####  Präsenzveranstaltung vom 4. Oktober
+####  Präsenzveranstaltung vom 11. Oktober
 
 In der Präsenzveranstaltung werden wir die im Selbststudium bearbeiten Themen in Diskussionen und Gruppenarbeiten vertiefen. 
 Wir werden uns nochmals über Modulbeziehungen Gedanken machen, das Java Modulsystem anschauen und uns mit UML Klassendiagrammen beschäftigen.

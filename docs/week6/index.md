@@ -5,6 +5,41 @@ title : Woche 6
 
 # Woche 6: Anforderungsanalyse
 
+Diese Woche beginnen wir mit einem ganz wichtigen Thema: der Anforderungsanalyse.
+Die Anforderungsanalyse ist der erste Schritt in der Softwareentwicklung. Alle anderen Schritte bauen auf den Anforderungen, die in diesem Schritt ermittelt werden, auf. Entsprechend wirken sich Fehler in diesem Schritt auf alle folgenden Schritte aus. 
+
+In dieser Woche beginnen Sie auch offiziell mit Ihrem Projekt. Sie werden die Anforderungen für Ihr Projekt ermitteln und in einem Pflichtenheft festhalten, die Theorie also direkt in die Praxis umsetzen.
+
+
+## Theorie
+
+#### Vorbereitung (zu bearbeiten bis 24. Oktober)
+
+* Schritt 1: Schauen Sie das Video zum Thema "Anforderungsanalyse".  ([Video](https://tube.switch.ch/videos/e9a8b379), [Slides](./slides/requirements-engineering.html))
+* Schritt 2: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./pflichtenheft1))
+* Schritt 3: Schauen Sie das Video zum Thema "Anforderungen". ([Video](xxx), [Slides](xxx))
+* Schritt 4: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./pflichtenheft2))
+* Schritt 5: Lesen Sie den Artikel "Anforderungen mit Sprachschablonen formulieren" ([Artikel](./language-templates.html))
+* Schritt 6: Lesen Sie den Artikel "Anforderungen mithilfe von Use Cases ermitteln" ([Artikel](./use-cases))
+* Schritt 7: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1629489.html)).
+
+#### Präsenzveranstaltung vom 25. Okteober
+
+In der Präsenzveranstaltung werden wir die im Selbststudium besprochen Themen vertieft diskutieren. Zudem werden Sie beginnen, ein Anforderungsdokument (Pflichtenheft) für ihr eigenes Projekt zu erstellen.
+
+* [Projektschritt I: Pflichtenheft erstellen](../project/step1/exercises)
+
+## Übungsstunde
+
+Im praktischen Teil der Veranstaltung, können Sie an Ihrem Pflichtenheft weiterarbeiten. Sie können auch mit der Implementation eines Prototypen für ihr Projekt beginnen.
+
+## Hausaufgaben
+
+Die folgenden Hausaufgaben sollten bis zum 31. Oktober bearbeitet werden. 
+
+* Arbeiten Sie den [Selbststudiumsteil Woche 7](../week7/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
+* Erstellen Sie das Pflichtenheft und reichen Sie dieses wie angegeben per Pull Request ein.
+
 ## Lernziele
 
 Die Teilnehmenden 
@@ -14,36 +49,3 @@ Die Teilnehmenden
 - kennen den Unterschied zwischen funktionalen und nicht-funktionalen Anforderungen.
 - kennen Wege, um die Anforderungen strukturiert zu ermitteln.
 - können Anforderungen mittels Sprachschablonen strukturiert formulieren
-
-
-## Slides
-
-* Anforderungen 
-   * [Slides:](https://adam.unibas.ch/goto_adam_file_1480327_download.html)
-
-## Übungsstunde
-
-* [Projektschritt I: Pflichtenheft erstellen](../project/step1/exercises)
-
-
-## Hausaufgaben
-
-Die folgenden Hausaufgaben sollten bis zum 31. Oktober bearbeitet werden. 
-
-- Pflichtenheft schreiben und mittels PR abgeben.
-
-Die folgenden Hausaufgaben sollten bis zum 1. November bearbeitet werden. 
-- Selbsttest ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1474883.html) bearbeiten.
-
-## Ressourcen zum Nachlesen / Nachschauen der Theorie
-
-* Requirements Engineering ([Video](https://tube.switch.ch/videos/e9a8b379))
-* Pflichtenheft / Lastenheft ([Artikel](./articles/pflichtenheft1.html))
-* Anforderungen ([Video](https://tube.switch.ch/videos/76899f60))
-* Anforderungen mit Sprachschablonen formulieren ([Artikel](./articles/language-templates.html))
-* Beispiele von Spezifikationen (Balzert) [pdf](https://adam.unibas.ch/goto_adam_file_1474955_download.html)
-* Anforderungen ermitteln (Balzert) [pdf](https://adam.unibas.ch/goto_adam_file_1474961_download.html)
-
-
-
-
