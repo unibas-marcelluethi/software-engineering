@@ -13,15 +13,13 @@ Nachdem wir letzte Woche die Grundlagen des Softwaredesigns kennengelernt haben,
 
 Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte folgende Schritte:
 
-* Schritt 1: Schauen Sie das Video zum Thema "Objektorientierung".  ([Video](https://tube.switch.ch/videos/44a4637a), [Slides](./slides/oo-design.html))
+* Schritt 1: Schauen Sie das Video zum Thema "Objektorientierung".  ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c790f755-19db-40a2-8e87-b06700bf7366), [Slides](./slides/OO-Design.pdf))
 * Schritt 2: Lesen Sie den Artikel "Vererbung und Objektkomposition" ([Artikel](./oo-composition-vs-inheritance.html))
 * Schritt 3: Lesen Sie den Artikel zum Thema "Designheuristiken" ([Artikel](./oo-design-heuristics))
-* Schritt 4: Schauen Sie das Video zu den "SOLID Prinzipien" an ([Video](https://tube.switch.ch/videos/cbc347a9), [Slides](./slides/oo-solid.html))
-* Schritt 5a: Schauen Sie Lesen Sie die Slides zum Talk von Dan North, [Why Every single element of SOLID is wrong](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong?slide=20) an. 
+* Schritt 4: Schauen Sie das Video zu den "SOLID Prinzipien" an ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=aa0ba520-7e28-4ad8-b112-b06700bf7364), [Slides](./slides/OO-Solid.pdf))
+* Schritt 5a: Schauen Sie sich die Slides zum Talk von Dan North, [Why Every single element of SOLID is wrong](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong?slide=20), an. 
 * Schritt 5b: Lesen Sie die Ausführungen von Dan North auf [seinem Blog](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong?slide=18)
 * Schritt 6: Bearbeiten Sie den Test. ([Adam](https://adam.unibas.ch/goto_adam_tst_1629488.html)).
-
-*Achtung: Der Test muss spätestens bis Mittwoch 20. Oktober, 08:00 bearbeitet sein.*
 
 ####  Präsenzveranstaltung vom 18. Oktober
 
