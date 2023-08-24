@@ -59,7 +59,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | Solid Prinzipien | Übung 4: Jabref erweitern |
 |[Woche 6](underconstruction)   | Anforderungsanalyse   | Projektrepository erstellen  | 
 |         |    |   Pflichtenheft erstellen |
-|[Woche 7](underconstruction) | Softwarespezifikation  | Prototyping |
+|[Woche 7](underconstruction) | Softwarespezifikation  | Prototyping / Design|
 |[Woche 8](underconstruction) | UML | Prototyping / Design  |
 |[Woche 9](underconstruction) | Verifikation / Grundlagen des Testens | Design / Testplan erstellen |
 |                       | Testen im Grossen | | 

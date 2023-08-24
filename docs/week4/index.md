@@ -32,6 +32,11 @@ Als Vorbereitung für die Präsenzveranstaltung in dieser Woche bearbeiten Sie b
 In der Präsenzveranstaltung werden wir die im Selbststudium bearbeiten Themen in Diskussionen und Gruppenarbeiten vertiefen. 
 Wir werden uns nochmals über Modulbeziehungen Gedanken machen, das Java Modulsystem anschauen und uns mit UML Klassendiagrammen beschäftigen.
 
+#### Weitere Ressourcen 
+
+* Als Referenz zum Thema Klassendiagramme finden Sie einen Auszug aus dem Buch "UML-Distilled" von Martin Fowler auf [Adam](https://adam.unibas.ch/goto_adam_file_1631331_download.html).
+
+* Zur Erstellung von einfachen UML Diagrammen eignet sich die Open Source Software [PlantUML](https://plantuml.com/). Mit dieser Software können Sie UML Diagramme als einfache Textdateien erstellen, welche dann in grafische Diagramme umgewandelt werden.
 
 ## Praxis
 

@@ -23,7 +23,7 @@ In dieser Woche beginnen Sie auch offiziell mit Ihrem Projekt. Sie werden die An
 * Schritt 6: Lesen Sie den Artikel "Anforderungen mithilfe von Use Cases ermitteln" ([Artikel](./use-cases))
 * Schritt 7: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1629489.html)).
 
-#### Präsenzveranstaltung vom 25. Okteober
+#### Präsenzveranstaltung vom 25. Oktober
 
 In der Präsenzveranstaltung werden wir die im Selbststudium besprochen Themen vertieft diskutieren. Zudem werden Sie beginnen, ein Anforderungsdokument (Pflichtenheft) für ihr eigenes Projekt zu erstellen.
 

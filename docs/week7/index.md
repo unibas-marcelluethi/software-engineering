@@ -10,6 +10,33 @@ title : Woche 7
 Mit der Anforderungsanalyse sind wir in das Gebiet der Softwarespezifikation vorgedrungen. In dieser Woche schauen wir uns Softwarespezifikation im Allgemeinen an.
 Wir besprechen was genau eine Softwarespezifikation ist, welchen Zweck sie erfüllt und wir wir zu einer guten Spezifikation kommen.
 
+## Theorie
+
+#### Vorbereitung (zu bearbeiten bis 31. Oktober)
+
+* Schritt 1 Schauen Sie das Video zum Thema Softwarespezifikation   ([Video](https://adam.unibas.ch/goto_adam_file_1486740_download.html))
+* Schritt 2: Schauen Sie das Video "Beispiele klassischer Diagramme zur Modellierung"  ([Artikel](./articles/petrinets.html))
+* Schritt 3: Lesen Sie den Artikel "Logische Spezifikationen" ([Artikel](./articles/logic.html))
+* Schritt 4: Lesen Sie den Artikel  "A rational design process - and how to fake it" ([Artikel](https://users.ece.utexas.edu/~perry/education/SE-Intro/fakeit.pdf))
+
+#### Präsenzveranstaltung vom 1. November
+
+In der Präsenzveranstaltung werden wir Fragen zum Selbststudium besprechen und uns einige Anwendungen anschauen. 
+Wir werden auch die ersten Entwürfe ihrer Pflichtenhefte miteinander besprechen. 
+
+## Übungsstunde
+
+Während der Übungsstunde werden wir in Gruppen die erarbeiteten Pflichtenhefte diskutieren. Zudem haben Sie Zeit am Prototypen zu arbeiten und mit dem Design (UML Klassendiagramm) zu beginnen. Folgen Sie dazu diesem Projektschritt [../project/technical-doc]. 
+
+
+## Hausaufgaben
+
+Die folgenden Hausaufgaben sollten bis zum 7. November bearbeitet werden. 
+
+* Arbeiten Sie den [Selbststudiumsteil Woche 8](../week8/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
+* Arbeiten Sie am Prototypen und am Design (UML Klassendiagramm) für Ihr Projekt.
+
+
 ## Lernziele
 
 Die Teilnehmenden
@@ -19,31 +46,6 @@ Die Teilnehmenden
 - können erklären, wie deskriptive und konstruktive Methoden zur Verifikation eines Systems eingesetzt werden können. 
 - kennen Datenflussdiagramme und können diese lesen. 
 - Kennen die Notation und Semantik von Petri-Netzen und können einfache Petrinetze simulieren. 
-- Können einfache OCL-Constraints lesen 
 - Können erklären, wie ein idealer Softwarespezifikationsprozess aussieht und weshalb man diesen in der Praxis nie erreichen kann.
 
 
-## Slides
-
-* [Softwarespezifikation](https://adam.unibas.ch/goto_adam_file_1486740_download.html)
-
-## Übungsstunde
-
-Während der Übungsstunde werden wir in Gruppen die erarbeiteten Pflichtenhefte diskutieren. Überarbeiten Sie ihr Pflichtenheft entsprechend. Danach können Sie
-auch bereits den nächsten Projektschritt, nämlich die Implementation des Prototyps, zu bearbeiten. Details finden Sie [hier](../project/step2/exercises).
-
-## Hausaufgaben
-
-Die folgenden Hausaufgaben sollten bis zum 9. November bearbeitet werden. 
-
-- Verbessern Sie das Pflichtenheft
-- Lesen Sie das Paper [A rational design process - and how to fake it](http://beethoven.site.uottawa.ca/SEG-2106-2506/Notes/Curiosities/Parnas/Fake%20rational%20design%20process%20-1986.pdf)
-- Bearbeiten Sie den Selbsttest für Woche 7 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1480370.html) .
-
-## Ressourcen zum Nachlesen / Nachschauen der Theorie
-
-* Spezifikation von Softwareprojekten ([Video](https://tube.switch.ch/videos/ab4c7b2c)
-* Konstruktive und Deskriptive Spezifikationen  ([Video](https://tube.switch.ch/videos/8cfd778c)
-* Petrinetze  ([Artikel](./articles/petrinets.html))
-* Logische Spezifikationen ([Artikel](./articles/logic.html))
-* A Rational Design Process - and how to fake it" ([Artikel](https://users.ece.utexas.edu/~perry/education/SE-Intro/fakeit.pdf))
