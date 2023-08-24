@@ -15,11 +15,11 @@ In dieser Woche beginnen Sie auch offiziell mit Ihrem Projekt. Sie werden die An
 
 #### Vorbereitung (zu bearbeiten bis 24. Oktober)
 
-* Schritt 1: Schauen Sie das Video zum Thema "Anforderungsanalyse".  ([Video](https://tube.switch.ch/videos/e9a8b379), [Slides](./slides/requirements-engineering.html))
+* Schritt 1: Schauen Sie das Video zum Thema "Anforderungsanalyse".  ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6fc1cb17-1d31-4801-ba1f-b06800dc59f4), [Slides](./slides/Anforderungsanalyse.pdf))
 * Schritt 2: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./pflichtenheft1))
-* Schritt 3: Schauen Sie das Video zum Thema "Anforderungen". ([Video](xxx), [Slides](xxx))
+* Schritt 3: Schauen Sie das Video zum Thema "Anforderungen". ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0478c9a3-c17f-4dff-9bf4-b06800dc59ee), [Slides](./slides/Anforderungen.pdf))
 * Schritt 4: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./pflichtenheft2))
-* Schritt 5: Lesen Sie den Artikel "Anforderungen mit Sprachschablonen formulieren" ([Artikel](./language-templates.html))
+* Schritt 5: Lesen Sie den Artikel "Anforderungen mit Sprachschablonen formulieren" ([Artikel](./language-templates))
 * Schritt 6: Lesen Sie den Artikel "Anforderungen mithilfe von Use Cases ermitteln" ([Artikel](./use-cases))
 * Schritt 7: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1629489.html)).
 
