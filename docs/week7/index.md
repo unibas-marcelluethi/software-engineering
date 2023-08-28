@@ -15,8 +15,8 @@ Wir besprechen was genau eine Softwarespezifikation ist, welchen Zweck sie erfü
 #### Vorbereitung (zu bearbeiten bis 31. Oktober)
 
 * Schritt 1 Schauen Sie das Video zum Thema Softwarespezifikation   ([Video](https://adam.unibas.ch/goto_adam_file_1486740_download.html))
-* Schritt 2: Schauen Sie das Video "Beispiele klassischer Diagramme zur Modellierung"  ([Artikel](./articles/petrinets.html))
-* Schritt 3: Lesen Sie den Artikel "Logische Spezifikationen" ([Artikel](./articles/logic.html))
+* Schritt 2: Schauen Sie das Video "Beispiele klassischer Diagramme zur Modellierung"   ([Video](https://adam.unibas.ch/goto_adam_file_1486740_download.html))
+* Schritt 3: Lesen Sie den Artikel "Logische Spezifikationen" ([Artikel](./articles/logic))
 * Schritt 4: Lesen Sie den Artikel  "A rational design process - and how to fake it" ([Artikel](https://users.ece.utexas.edu/~perry/education/SE-Intro/fakeit.pdf))
 
 #### Präsenzveranstaltung vom 1. November

@@ -34,7 +34,7 @@ Wir werden uns nochmals über Modulbeziehungen Gedanken machen, das Java Modulsy
 
 #### Weitere Ressourcen 
 
-* Als Referenz zum Thema Klassendiagramme finden Sie einen Auszug aus dem Buch "UML-Distilled" von Martin Fowler auf [Adam](https://adam.unibas.ch/goto_adam_file_1631331_download.html).
+* Als Referenz zum Thema Klassendiagramme finden Sie einen Auszug aus dem Buch "UML-Distilled" von Martin Fowler auf [Adam](https://adam.unibas.ch/goto_adam_file_1632200_download.html).
 
 * Zur Erstellung von einfachen UML Diagrammen eignet sich die Open Source Software [PlantUML](https://plantuml.com/). Mit dieser Software können Sie UML Diagramme als einfache Textdateien erstellen, welche dann in grafische Diagramme umgewandelt werden.
 
