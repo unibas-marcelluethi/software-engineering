@@ -18,7 +18,7 @@ Sie denken sich als Gruppe ein Projekt aus und müssen dies dann strukturiert re
 | [Gruppenrepository einrichten](./group-repository) | 25. Oktober | --   | 25. Oktober | | 
 | [Pflichtenheft/Projektplan erstellen](./requirements) | 30. Oktober | 1. November  | 8. November |  | 
 | [Design und Prototyp erstellen](./technical-doc) | 13. November | 15. November | 22. November | |
-| [Testplan erstellen](./testplan) | 20. November | 22. November | 29. Dezember| |
+| [Testplan erstellen](./testplan) | 20. November | 22. November | 29. November| |
 | [Abschlusspräsentation](./presentation) | 13. Dezember |  --  | 13. Dezember | Präsentationen vor Ort | 
 | [Finale Abgabe ganzes Projekt](./submission) | 20. Dezember | --  | 20. Dezember |
 

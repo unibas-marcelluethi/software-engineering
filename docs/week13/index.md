@@ -3,12 +3,6 @@ layout: default
 title : Woche 13
 ---
 
-# Woche 13 und 14: Design Patterns
+# Woche 13 - Projektpräsentation
 
-# Studium
-
-* [Anleitung zum Studium / Übungen](guide.html)
-
-## Lernmaterialien
-* Auf der [Ressourcenseite](resources.html) finden Sie nochmals alle Lernmaterien sowie Links zu weiterführender Literatur.
-
+In dieser Woche werden wir die Projektpräsentationen durchführen. Lesen Sie dazu die Anweisungen auf der [Projektseite](../project/presentation).
