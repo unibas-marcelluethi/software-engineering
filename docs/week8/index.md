@@ -14,12 +14,12 @@ In dieser Woche lernen Sie weitere Spezifikationsmöglichkeiten mit der UML kenn
 
 #### Vorbereitung (zu bearbeiten bis 7. November)
 
-* Schritt 1: Schauen Sie sich das Übersichtsvideo Spezifizieren mit der UML an. 
+* Schritt 1: Schauen Sie sich das Übersichtsvideo Spezifizieren mit der UML an. ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4132b7e1-6433-4f9c-b854-b07000f6fd82) [Slides](./slides/UML.pdf))
 * Schritt 2: Lesen Sie den Auszug aus dem Buch "UML-Distilled" zum Thema Sequenzdiagramme ([Artikel (auf Adam)](https://adam.unibas.ch/goto_adam_file_1632199_download.html))
 * Schritt 3: Lesen Sie den Auszug aus dem Buch "UML-Distilled" zum Thema Aktivitätsdiagramme ([Artikel (auf Adam)](https://adam.unibas.ch/goto_adam_file_1632198_download.html))
 * Schritt 4: Lesen Sie den Auszug aus dem Buch "UML-Distilled" zum Thema Zustandsdiagramme ([Artikel (auf Adam)](https://adam.unibas.ch/goto_adam_file_1632197_download.html))
 * Schritt 5: Lesen Sie den Artikel "Logische Spezifikationen mit OCL" ([Artikel](./articles/ocl))
-* Schritt 7: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1629496.html)).
+* Schritt 6: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1629496.html)).
 
 #### Präsenzveranstaltung vom 8. November
 
