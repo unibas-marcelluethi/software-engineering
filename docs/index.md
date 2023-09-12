@@ -47,10 +47,10 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 
 |  | Theorie | Übung / Projekt 
 |------| ----- | --------- |
-|[Woche 1](underconstruction) | Einführung / Administratives  | Übung 0: Jabref Setup | 
+|[Woche 1](./week1) | Einführung / Administratives  | Übung 0: Jabref Setup | 
 |    | Was ist Software engineering  | | |
 |    | Kurze Geschichte des Software Engineerings  | | 
-|[Woche 2](underconstruction) | Eigenschaften von Software | Übung 1: Erste Änderungen an Jabref |
+|[Woche 2](./week2) | Eigenschaften von Software | Übung 1: Erste Änderungen an Jabref |
 |    |  Software Qualitätsmerkmale | | 
 |[Woche 3](underconstruction) | Prinzipien des Software-Engineerings   | Übung 2: Code verstehen | 
 |    | Modulbeziehungen |  | 
