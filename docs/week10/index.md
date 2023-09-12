@@ -18,8 +18,8 @@ Wir lernen auch konkrete Methoden kennen, mit denen wir Testfälle finden könne
 
 
 * Schritt 1: Lesen Sie den Artikel "Theoretische Grundlagen des Testens" ([Artikel](./testing-foundations))
-* Schritt 2: Schauen Sie das Video zum Thema White box testing ([Video](xxxx)
-* Schritt 3: Lesen Sie den Artikel zum Thema black box testing ([Artikel](./testing-in-the-small-bb))
+* Schritt 2: Schauen Sie das Video zum Thema White box testing ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f8358f9a-b865-498f-a8ca-b07b00e32ce3), [Slides](./slides/Testen-im-kleinen.pdf))
+* Schritt 3: Lesen Sie den Artikel zum Thema Black box testing ([Artikel](./testing-in-the-small-bb))
 * Schritt 4: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1629487.html)).
 
 #### Präsenzveranstaltung vom 22. November
