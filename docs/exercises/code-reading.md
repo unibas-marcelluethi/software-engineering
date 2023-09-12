@@ -164,6 +164,6 @@ Die Abgabe der Übung erfolgt durch push vom Übungs-Branch:
 ```
 git push origin uebung3
 ```
-und entsprechenden Pull Request. Als Reviewers geben Sie `Luujauhe`, `linuspetrucci` und `gjoyet` an.
+und entsprechenden Pull Request. Als Reviewers geben Sie `fabiandudler `, `Giovvvvva` und `josphstar` an.
 (Details dazu finden sie in [&Uuml;bungsblatt 2](./first-changes)).
 
