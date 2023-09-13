@@ -32,6 +32,7 @@ In der Übungsstunde werden wir mit Ihnen den Testplan besprechen. Sie können z
 
 ## Hausaufgaben
 
+Die folgenden Hausaufgaben sollten bis zum 28. November bearbeitet werden. 
 * Arbeiten Sie den [Selbststudiumsteil Woche 11](../week11/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
 
 

@@ -15,10 +15,10 @@ und geben auch eine Einführung in Agile Softwareentwicklungsmethoden.
 
 ####  Vorbereitung (zu bearbeiten bis 28. November)
 
-* Schritt 1: Softwareprozesse ([Video](https://tube.switch.ch/videos/2313bd63), Slides[]())
+* Schritt 1: Softwareprozesse ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=412f9e91-dde8-467a-b3b6-b07c008935ca), [Slides](./slides/Prozesse.pdf))
 * Schritt 2: Lesen Sie den Artikel: Agile Softwareentwicklung  ([Artikel](./agile))
 * Schritt 3: Lesen Sie das Kapitel "Agile - The good the bad and the ugly"  ([Artikel](./agile-critic.html))
-* Schritt 4: Bearbeiten Sie den Selbsttest für Woche 11 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1629490.html).
+* Schritt 4: Bearbeiten Sie den Selbsttest für Woche 11 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1629490.html)).
 
 ## Übungsstunde
 
@@ -26,9 +26,8 @@ Während der Übungsstunde können Sie an Ihrem Projekt arbeiten. Die Tutoren st
 
 ## Hausaufgaben
 
-Die folgenden Aufgaben müssen bis zum 6. Dezember erledigt werden. 
-- Lesen Sie das Buchkapitel [Agile, the good the bad and the ugly](https://adam.unibas.ch/goto_adam_file_1500482.html)
-- 
+Die folgenden Aufgaben müssen bis zum 5. Dezember erledigt werden. 
+- Arbeiten Sie den [Selbststudiumsteil Woche 12](../week12/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
 
 
 ## Lernziele
