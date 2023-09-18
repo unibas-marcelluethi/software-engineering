@@ -31,7 +31,11 @@ Wir werden auch auf das Paper von Fred Brooks eingehen und diskutieren, inwiefer
 ## Praxis:
 
  Im praktischen Teil der Veranstaltung geben wir eine kurze Einführung in Versionsverwaltung mit Git. 
- Jabref und helfen Ihnen die Entwicklungsumgebung und JabRef einzurichten. Sie gehen dabei gemäss dieser [Anleitung](../exercises/first-changes) vor. 
+
+Danach werden Sie selbst erste, kleine Änderungen an Jabref anbringen. 
+
+* [Übungsblatt 2](../exercises/code-changes). 
+
 
 ## Hausaufgaben
 

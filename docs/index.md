@@ -52,7 +52,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    | Kurze Geschichte des Software Engineerings  | | 
 |[Woche 2](./week2) | Eigenschaften von Software | Übung 1: Erste Änderungen an Jabref |
 |    |  Software Qualitätsmerkmale | | 
-|[Woche 3](underconstruction) | Prinzipien des Software-Engineerings   | Übung 2: Code verstehen | 
+|[Woche 3](./week3) | Prinzipien des Software-Engineerings   | Übung 2: Code verstehen | 
 |    | Modulbeziehungen |  | 
 |[Woche 4](underconstruction) | Softwaredesign | Übung 3: Unit tests | 
 |[Woche 5](underconstruction) | OO Design | Pitch: Projektideen  | 
