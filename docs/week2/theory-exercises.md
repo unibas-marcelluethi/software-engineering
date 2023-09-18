@@ -1,12 +1,12 @@
 ---
 layout: default
-title : Woche 1
+title : Woche 2
 ---
 # Übungsaufgaben Woche 2:
 
 ## 1. Beziehung von Software Engineering zu anderen Fachgebieten in der Informatik
 Diskutieren Sie die Beziehung von "Software Engineering" zu anderen Fachgebieten wie
-Programmiersprachen, Betriebssysteme, Management, Systemsengineering, Theoretische Informatik, Künstliche Intelligenz.
+Programmiersprachen, Betriebssysteme, Management, Theoretische Informatik und Künstliche Intelligenz.
 Beschreiben Sie kurz wie Fortschritte in diesen Disziplinen das Software Engineering beeinflussen können.
 
 Wie ist ihre Einschätzung. Würden Sie die Fortschritte eher in Richtung Accidental Complexity oder Essential Complexity sehen.
