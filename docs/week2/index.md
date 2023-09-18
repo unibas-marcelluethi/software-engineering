@@ -37,7 +37,7 @@ Wir werden auch auf das Paper von Fred Brooks eingehen und diskutieren, inwiefer
 
 * Arbeiten Sie den [Selbststudiumsteil Woche 3](../week3/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
 * Falls Sie an der Präsenzveranstaltung nicht anwesend waren, bearbeiten Sie die [Theoriefragen](theory-exercises) und reichen diese bis zum 4.10 auf [Adam](https://adam.unibas.ch/goto_adam_exc_1629562.html) ein. 
-* Bearbeiten Sie die [praktische Übung](../exercises/first-change) und reichen Sie diese wie angegeben per Pull Request ein. 
+* Bearbeiten Sie die [praktische Übung](../exercises/first-changes) und reichen Sie diese wie angegeben per Pull Request ein. 
 
 ## Lernziele 
 
