@@ -12,10 +12,10 @@ Zudem werden wir Ihnen mitteilen, wie die Vorlesung funktioniert und was wir von
 
 Die Studierenden
 
-* kennen die Voraussetzungen zum Belegen der Vorlesung
+* kennen die Voraussetzungen zum Belegen der Vorlesung.
 * wissen, welche Leistungen Sie erbringen müssen um die Vorlesung erfolgreich zu belegen. 
-* können die Wichtigkeit des Gebiets einschätzen
-* wissen, was Software Engineering ist und wie es sich von Programmieren unterscheidet
+* können die Wichtigkeit des Gebiets einschätzen.
+* wissen, was Software Engineering ist und wie es sich von Programmieren unterscheidet.
 
 
 ## Slides und weitere Literatur

@@ -5,7 +5,7 @@ title : Gruppenrepository einrichten
 
 # Projektschritt 0: Gruppenrepository einrichten
 
-Nachdem Sie die Gruppen gebildet haben, müssen Sie sich auf ein Projektrepository eignen, auf welchem Sie arbeiten. Am einfachsten ist es, wenn Sie ein schon bestehendes Repository aus den Übungen nehmen, und einfach alle Teammitglieder als *Collaborators* hinzufügen (siehe [Übung 1](../exercises/jabref-setup))
+Nachdem Sie die Gruppen gebildet haben, müssen Sie sich auf ein Projektrepository einigen, auf welchem Sie arbeiten. Am einfachsten ist es, wenn Sie ein schon bestehendes Repository aus den Übungen nehmen, und einfach alle Teammitglieder als *Collaborators* hinzufügen (siehe [Übung 1](../exercises/jabref-setup))
 
 Erstellen Sie dann ausgehend vom main Branch einen neuen Branch mit dem Namen `project`. Dieser Branch wird für das Projekt verwendet. Wechseln Sie auf diesen Branch. 
 

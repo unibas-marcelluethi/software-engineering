@@ -64,7 +64,7 @@ mit diesem Arbeiten. Eine Anleitung dazu finden Sie [hier](https://docs.github.c
 
 ### Installieren von Java und JavaFX
 
-Für die Entwicklung von JabRef nutzen wir Java in der Version 18. Wir empfehlen Ihnen die Version 
+Für die Entwicklung von JabRef nutzen wir Java in der Version 19. Wir empfehlen Ihnen die Version 
 von Eclipse Temurin, die Sie [hier](https://adoptium.net/temurin/releases?version=19) herunterladen
 können. 
 
@@ -110,7 +110,7 @@ Nachdem wir nun alle Werkzeuge installiert haben, müssen wir noch das JabRef Pr
 
 ### Forken des Github Repositories
 
-In diesem Kurs arbeiten wir nicht mit dem offiziellen JabRef Code repository, sondern mit einem privaten Fork. Damit sind ihre Änderungen und unsere Bemerkungen für die Öffentlichkeit nicht zugänglich.
+In diesem Kurs arbeiten wir nicht mit dem offiziellen JabRef Code Repository, sondern mit einem privaten Fork. Damit sind ihre Änderungen und unsere Bemerkungen für die Öffentlichkeit nicht zugänglich.
 Damit Sie auf unseren Fork von JabRef zugreifen können, müssen wir Ihnen Zugriff auf dieses Repository geben. Sie können überprüfen ob Sie Zugriff haben indem Sie auf [https://github.com/unibas-marcelluethi/jabref](https://github.com/unibas-marcelluethi/jabref) gehen.
 Falls Sie bereits Zugriff haben, sollte die Seite etwa wie folgt aussehen:
 ![image](images/github-jabref.png)
@@ -123,7 +123,7 @@ Nun erstellen Sie, ausgehend von unserem privaten Fork, ihren eigenen privaten F
 Damit unsere Assistenten Ihre Abgaben anschauen können, müssen Sie diesen noch Zugriffsrechte auf ihr neues Repository geben. Dafür gehen Sie auf *Settings* und dann *Manage access*:
 ![github-manage-access](images/github-manage-access.png)
 
-Klicken Sie dann auf *Add people* und fügen Sie `TODO github name`, `TODO github name` und `TODO github name` hinzu.
+Klicken Sie dann auf *Add people* und fügen Sie `fabiandudler`, `Giovvvvva` und `josphstar` hinzu.
 ![github-manage-access](images/github-manage-access-invite.png)
 
 Als Rolle im nachfolgenden Dialog wählen Sie *Write*.

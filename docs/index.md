@@ -39,7 +39,7 @@ Alles Material, welches nicht öffentlich zugänglich sein soll, wird auf unsere
 ### Übungen und Vorlesungsbegleitendes Projekt
 
 Das Open Source Projekt Jabref [(Offizielles Github Repositories)](https://github.com/jabref/jabref) dient als Grundlage für die praktischen
-übungen und Projekt. Die Studierenden bringen kleine Änderungen am Projekt an, studieren den Source Code und implementieren dann eigene, grössere Erweiterungen.
+Übungen und Projekt. Die Studierenden bringen kleine Änderungen am Projekt an, studieren den Source Code und implementieren dann eigene, grössere Erweiterungen.
 
 Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projektseite](project/project-summary.html).
 
