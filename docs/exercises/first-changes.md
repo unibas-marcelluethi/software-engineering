@@ -209,7 +209,7 @@ Hier würden Sie normalerweise das Upstream repository wählen.
 
 ![image](images/jabref-target-repo.png)
 
-Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie die Reviewers angeben.Als Reviewers geben Sie `Luujauhe`, `Giovvvvva` und `josphstar` an.
+Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie die Reviewers angeben.Als Reviewers geben Sie `fabiandudler`, `Giovvvvva` und `josphstar` an.
 
 ![image](images/jabref-pr-reviewers.png)
 
