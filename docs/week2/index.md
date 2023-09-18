@@ -34,7 +34,7 @@ Wir werden auch auf das Paper von Fred Brooks eingehen und diskutieren, inwiefer
 
 Danach werden Sie selbst erste, kleine Änderungen an Jabref anbringen. 
 
-* [Übungsblatt 2](../exercises/code-changes). 
+* [Übungsblatt 2](../exercises/first-changes). 
 
 
 ## Hausaufgaben
