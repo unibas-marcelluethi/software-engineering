@@ -6,14 +6,14 @@ title : Woche 3
 
 ## Administratives
 
-Eine Einführung in Gradle gibt es in der Übungsstunde vom 5. Oktober. 
-* Dieses Übungsblatt sollte bis am 11. Oktober 2022 bearbeitet werden.
-* Abgabe via Pull Request bis spätestens 11. Oktober, 23.59.
+Eine Einführung in Gradle gibt es in der Übungsstunde vom 4. Oktober. 
+* Abgabe via Pull Request bis spätestens 10. Oktober, 23.59.
 
 
 ## Einführung
 
-In dieser Übung werden Sie sich näher mit dem Buildsystem *Gradle* beschäftigen. Sie werden lernen, wie sie verschiedene Tasks mit Gradle ausführen, wie Sie Abhängigkeiten (Bibliotheken) zum Projekt hinzufügen, und wie sie ein neues Plugin hinzufügen können.
+In dieser Übung werden Sie sich näher mit dem Buildsystem *Gradle* beschäftigen. Sie werden lernen, wie sie verschiedene Tasks mit Gradle ausführen, 
+wie Sie Abhängigkeiten (Bibliotheken) zum Projekt hinzufügen, und wie sie ein neues Plugin hinzufügen können.
 
 Im zweiten Teil der Übung werden Sie sich auch einen groben Überblick über den Code von Jabref verschaffen.
 
@@ -55,17 +55,16 @@ git checkout uebung3
 #### 1.1 Build Dokumentation
 
 Fügen Sie Ihrem Projekt eine neue Datei ```docs/BuildInstructions.md``` hinzu. Diese Datei soll für neue Benutzer dokumentieren, wie sie folgende Tasks mit Gradle durchführen.
-1. Erstellen der API Dokumentation
+1. Erstellen der API Dokumentation 
 2. Eine Übersicht über alle von JabRef benutzten Bibliotheken erhalten
 3. Testen ob der Code der Unit-Tests den Stilvorgaben entspricht
 4. Erstellen eines Zip Files, welches nach dem Entpacken eine lauffähige Version von JabRef enthält.
 
 Beschreiben Sie auch, was die Task ```generateSource``` macht.
 
-
 *Tip: Mit ```gradlew tasks --all``` erhalten Sie einen Überblick über alle Gradle tasks die in JabRef zur Verfügung stehen.*
 
-
+*Hinweis: Das erstellen der API Doc funktioniert in der aktuellen JabRef Version nicht fehlerfrei. Das entsprechende Kommando bricht nach einiger Zeit mit einer Fehlermeldung ab.*
 
 #### 1.2 Hinzufügen einer neuen Bibliothek
 
@@ -95,7 +94,7 @@ repositories {
 zusätzlich als *Required Dependency* deklarieren. Dies machen Sie, indem Sie in der Datei ```module-info.java``` den Eintrag ```requires swenglib;``` hinzufügen.
 
 
-Wenn das hinzufügen funktioniert hat sollten Sie in der main-Methode folgenden Code zu JabRef hinzufügen können und das Projekt sollte entsprechend kompilieren.
+Wenn das hinzufügen funktioniert hat sollten Sie in der main Methode (wie finden Sie die?) folgenden Code zu JabRef hinzufügen können und das Projekt sollte entsprechend kompilieren
 ```
 import ch.unibas.informatik.sweng.HelloSweng;
 String greeting = HelloSweng.greeting();
@@ -151,8 +150,8 @@ Sie finden, wenn Sie einen Rechtsklick auf ein Symbol (also Klasse, Methode, Var
 #### Dokumentieren einer Klasse
 
 Schauen Sie sich die Klasse
-```org.jabref.logic.bibtex.BibEntryWriter``` an. Dokumentieren Sie die Klasse mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
-Die als `private` deklarierten Methoden müssen Sie nicht dokumentieren. Dokumentieren Sie auch keine reinen getter/setter Methoden. 
+```org.jabref.logic.protectedterms.ProtectedTermsLoader``` an. Dokumentieren Sie die Klasse selbst und die Methoden `addNewProtectedTermsList` und `getInternalLists` mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
+
 
 Orientieren Sie sich auch hier an den Leitlinien im Buch [Java by Comparison](https://adam.unibas.ch/goto_adam_file_1467339.html). 
 
