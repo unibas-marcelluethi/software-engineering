@@ -34,8 +34,9 @@ Die Studierenden
 
 Bitte bearbeiten Sie folgende Aufgaben vor Mittwoch, 27. September. 
 
-* Arbeiten Sie den [Selbststudiumsteil Woche 2](../week2/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
+* Bearbeiten Sie den [Selbsttest für Woche 1](https://adam.unibas.ch/goto_adam_tst_1650779.html)
 * Richten Sie die Entwicklungsumgebung und JabRef gemäss obiger [Anleitung](../exercises/jabref-setup) ein.
+* Arbeiten Sie den [Selbststudiumsteil Woche 2](../week2/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
 * Experimentieren Sie mit JabRef und finden Sie heraus, was Sie mit der Software machen können. 
 
 
