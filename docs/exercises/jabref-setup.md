@@ -75,7 +75,7 @@ Umgebungsvariable ```JAVA_HOME``` und ```PATH``` auf das neu installierte JDK.
 Unter Windows (Powershell) machen Sie das wie folgt:
 ```
 $env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-19.0.2.7-hotspot"
-$env:PATH="H" 
+$env:PATH="$env:JAVA_HOME\bin:$PATH" 
 ```
 *Achtung:* Der Pfad kann sich je nach Version unterscheiden. Bitte passen Sie den Pfad entsprechend an.
 
