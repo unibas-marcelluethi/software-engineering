@@ -23,7 +23,7 @@ Beschreiben Sie eine Strategie für die Implementation, die der Trennung der Ver
 
 ## 3. Modularisierung
 
-![Modulgraph](images/uses-graph-jabref.png)
+![Modulgraph](images/uses-graph-jabref.svg)
 
 Schauen Sie sich obigen Uses-graphen an. Was können Sie daraus über die Modularisierung von JabRef lernen? 
 Welche Module sind besonders wichtig?  Gibt es Dinge, die Ihnen nicht gefallen?
