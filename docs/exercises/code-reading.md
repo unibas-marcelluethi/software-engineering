@@ -60,7 +60,7 @@ Fügen Sie Ihrem Projekt eine neue Datei ```docs/BuildInstructions.md``` hinzu. 
 3. Testen ob der Code der Unit-Tests den Stilvorgaben entspricht
 4. Erstellen eines Zip Files, welches nach dem Entpacken eine lauffähige Version von JabRef enthält.
 
-Beschreiben Sie auch, was die Task ```generateSource``` macht.
+Beschreiben Sie auch, was der Task ```generateSource``` macht.
 
 *Tip: Mit ```gradlew tasks --all``` erhalten Sie einen Überblick über alle Gradle tasks die in JabRef zur Verfügung stehen.*
 
@@ -94,7 +94,7 @@ repositories {
 zusätzlich als *Required Dependency* deklarieren. Dies machen Sie, indem Sie in der Datei ```module-info.java``` den Eintrag ```requires swenglib;``` hinzufügen.
 
 
-Wenn das hinzufügen funktioniert hat sollten Sie in der main Methode (wie finden Sie die?) folgenden Code zu JabRef hinzufügen können und das Projekt sollte entsprechend kompilieren
+Wenn das Hinzufügen funktioniert hat sollten Sie in der main Methode (wie finden Sie die?) folgenden Code zu JabRef hinzufügen können und das Projekt sollte entsprechend kompilieren.
 ```
 import ch.unibas.informatik.sweng.HelloSweng;
 String greeting = HelloSweng.greeting();
@@ -104,7 +104,7 @@ System.out.println(greeting);
 Überprüfen Sie auch, dass sie mit ```CTRL + LeftMouseClick``` auf ```HelloSweng```, zum
 Source Code der Bibliothek kommen.
 
-#### 1.3 Maven central
+#### 1.3 Maven Central
 
 In der Java-Welt werden viele frei verfügbare Bibliotheken auf [Maven Central](https://search.maven.org) publiziert. 
 Suchen Sie da nach dem Paket `opencsv`. Auf der Seite wird Ihnen auch angezeigt, wie Sie das Paket in Gradle als Abhängigkeit hinzufügen 
@@ -114,17 +114,16 @@ können. Finden Sie heraus wo und wie? Fügen Sie auch dieses Paket hinzu. Sie m
 Fügen Sie das Plugin [Gradle-License-Report](https://github.com/jk1/Gradle-License-Report) durch anpassen der Datei ```build.gradle```zum Projekt hinzu. Die entsprechenden Instruktionen finden Sie auf
 der Github Seite vom [Gradle-License-Report](https://github.com/jk1/Gradle-License-Report).
 
-Testen Sie das Plugin und schauen Sie sich den generierte Report an.
+Testen Sie das Plugin und schauen Sie sich den generierten Report an.
 Fügen Sie einen Kommentar in der Datei ```build.gradle``` hinzu. Dieser soll ganz kurz (in Ihren eigenen Worten) dokumentieren, was das Plugin macht und wozu wir es brauchen.
 
 ## 2. Code lesen
 
-In diesem Teil der Übung geht es darum, dass sie sich einen Grobüberblick über die Struktur des Jabref Codes erarbeiten sowie auch lernen, fremden Code zu lesen und zu verstehen. Ein gute Vorgehensweise ist Teile des Codes bei dieser Gelegenheit gerade zu
-Dokumentieren.
+In diesem Teil der Übung geht es darum, dass sie sich einen Grobüberblick über die Struktur des Jabref Codes erarbeiten sowie auch lernen, fremden Code zu lesen und zu verstehen. Ein gute Vorgehensweise ist Teile des Codes bei dieser Gelegenheit gerade zu dokumentieren.
 
 #### Dokumentieren von Packages
 
-Lesen Sie den [Auszug aus dem Buch](https://adam.unibas.ch/goto_adam_file_1467339.html) Java By Comparison zum Thema API Doc.
+Lesen Sie den [Auszug aus dem Buch](https://adam.unibas.ch/goto_adam_file_1629485.html) Java By Comparison zum Thema API Doc.
 
 
 Dokumentieren Sie dann die zwei folgenden Packages.
@@ -153,7 +152,7 @@ Schauen Sie sich die Klasse
 ```org.jabref.logic.protectedterms.ProtectedTermsLoader``` an. Dokumentieren Sie die Klasse selbst und die Methoden `addNewProtectedTermsList` und `getInternalLists` mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
 
 
-Orientieren Sie sich auch hier an den Leitlinien im Buch [Java by Comparison](https://adam.unibas.ch/goto_adam_file_1467339.html). 
+Orientieren Sie sich auch hier an den Leitlinien im Buch [Java by Comparison](https://adam.unibas.ch/goto_adam_file_1629485.html). 
 
 *Hinweis:* Nutzen Sie den Debugger um herauszufinden, welche Werte die einzelnen Felder/Variablen in der Klasse annehmen. Dies kann Ihnen wichtige Informationen geben. 
 
