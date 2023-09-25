@@ -54,7 +54,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |    |  Software Qualitätsmerkmale | | 
 |[Woche 3](./week3) | Prinzipien des Software-Engineerings   | Übung 2: Code verstehen | 
 |    | Modulbeziehungen |  | 
-|[Woche 4](underconstruction) | Softwaredesign | Übung 3: Unit tests | 
+|[Woche 4](./week4) | Softwaredesign | Übung 3: Unit tests | 
 |[Woche 5](underconstruction) | OO Design | Pitch: Projektideen  | 
 |    | Solid Prinzipien | Übung 4: Jabref erweitern |
 |[Woche 6](underconstruction)   | Anforderungsanalyse   | Projektrepository erstellen  | 
