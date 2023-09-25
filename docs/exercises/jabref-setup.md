@@ -91,7 +91,7 @@ export JAVA_HOME=PFAD_ZU_IHRER_JAVA_19_INSTALLATION
 export “PATH=$JAVA_HOME/bin:$PATH”
 ```
 
-Danach geben Sie folgendes Kommando ein:
+Danach starten Sie ein neues Terminal und geben folgendes Kommando ein:
 ```
  java -version
 ```
@@ -101,7 +101,9 @@ openjdk version "19.0.2" 2023-01-17
 OpenJDK Runtime Environment Temurin-19.0.2+7 (build 19.0.2+7)
 OpenJDK 64-Bit Server VM Temurin-19.0.2+7 (build 19.0.2+7, mixed mode, sharing)
 ```
-*Anmerkung:* Das Buildsystem Gradle, welches wir für das kompilieren und ausführen von JabRef verwenden, nutzt die Umgebungsvariable ```JAVA_HOME``` um das JDK zu finden. Diese Umgebungsvariable muss also immer richtig gesetzt sein, wenn Sie JabRef aus einem Terminal kompilieren oder ausführen wollen.
+*Anmerkung:* Das Buildsystem Gradle, welches wir für das Kompilieren und Ausführen von JabRef verwenden, nutzt die Umgebungsvariable ```JAVA_HOME``` um das JDK zu finden. Diese Umgebungsvariable muss also immer richtig gesetzt sein, wenn Sie JabRef aus einem Terminal kompilieren oder ausführen wollen.
+
+*Anmerkung 2:* Beim Setzen der Umgebungsvariable wird diese für laufende Prozesse nicht unmittelbar aktualisiert, deshalb müssen Sie Prozesse wie zum Beispiel die PowerShell neu starten um Änderungen in der Java-Version zu sehen. 
 
 ## JabRef
 
