@@ -26,7 +26,7 @@ Die Situation ist bildlich in folgender Grafik zusammengefasst:
 
 <figure>
 <img src = "./images/module-low-coupling.png" class="plain" width="400px"/><img src = "./images/module-high-coupling.png" class="plain" width="400px"/>
-<figcaption align = "center"><b>Links:</b> Die Idealsituation. Lose Kopplung und starke Bindung. <b>Rechts:</b> Ein (problematisches) Design mit starker Kopplung und niedriger Bindung. </b></figcaption>
+<figcaption align = "center"><b>Links:</b> Die Idealsituation. Lose Kopplung und starke Bindung. <b>Rechts:</b> Ein (problematisches) Design mit starker Kopplung und niedriger Bindung.</figcaption>
 </figure>
 
 
@@ -40,7 +40,7 @@ Besser ist es, wenn wir ein Design haben, bei dem die Beziehungen eine Hierarchi
 <figure>
 <img src = "./images/module-simple-cycle.png" class="plain" width="200px" style="margin: 0px 100px 0px 0px">
 <img src = "./images/module-simple-hierarchy.png" class="plain" width="200px"/>
-<figcaption align = "center"><b>Links:</b> Modul E hat einen hohen Fan-in. Es ist eine gute Abstraktion. <b>Rechts:</b> Modul A hat einen hohen Fan-out. Es macht wahrscheinlich zu viel. </b></figcaption>
+<figcaption align = "center"><b>Links:</b> Modul E hat einen hohen Fan-in. Es ist eine gute Abstraktion. <b>Rechts:</b> Modul A hat einen hohen Fan-out. Es macht wahrscheinlich zu viel.</figcaption>
 </figure>
 
 ## Fan-in und Fan-out
@@ -50,6 +50,6 @@ Ein hoher Fan in, ist ein Indikator dafür, dass das Modul die angebotene Funkti
 Ein Hoher Fan-out hingegen ist eher ein schlechtest Zeichen. Es ist ein Zeichen dafür, dass das Modul zu umfangreich ist, also nicht nur eine einzelne Verantwortung übernimmt. Deshalb muss es die Funktionalität von ganz vielen anderen Modulen in Anspruch nehmen. 
 
 <figure>
-<img src = "./images/module-high-fan-in.png" class="plain" width="400px"/><img src = "./images/module-high-fan-out.png" class="plain" width="400px"/>
-<figcaption align = "center"><b>Links:</b> Modul E hat einen hohen Fan-in. Es ist eine gute Abstraktion. <b>Rechts:</b> Modul A hat einen hohen Fan-out. Es macht wahrscheinlich zu viel. </b></figcaption>
+<img src = "./images/module-high-fan-in.png" class="plain" width="300px"/><img src = "./images/module-high-fan-out.png" class="plain" width="300px"/>
+<figcaption align = "center"><b>Links:</b> Modul E hat einen hohen Fan-in. Es ist eine gute Abstraktion. <b>Rechts:</b> Modul A hat einen hohen Fan-out. Es macht wahrscheinlich zu viel. </figcaption>
 </figure>
