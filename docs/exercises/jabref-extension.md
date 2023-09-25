@@ -117,6 +117,6 @@ Die Abgabe der Übung erfolgt durch push vom entsprechenden Branch:
 ```
 git push origin uebung5
 ```
-und entsprechenden Pull Request. Als Reviewers geben Sie `fabiandudler`, `Giovvvvva` und `josphstar` an.
+und entsprechenden Pull Request. Geben Sie hier den Ihnen zugeordneten Reviewer (siehe [diese Liste](https://adam.unibas.ch/goto_adam_file_1659074_download.html)) an. 
 Wenn Sie zu zweit gearbeitet haben, fügen Sie bitte ihre(n) Partner(in) als *Assignee* hinzu
 (eventuell müssen Sie in den Einstellungen noch Zugriff erteilen).

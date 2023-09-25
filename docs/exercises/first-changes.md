@@ -209,7 +209,7 @@ Hier würden Sie normalerweise das Upstream repository wählen.
 
 ![image](images/jabref-target-repo.png)
 
-Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie die Reviewers angeben.Als Reviewers geben Sie `fabiandudler`, `Giovvvvva` und `josphstar` an.
+Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie einen Reviewer angeben. Geben Sie hier den Ihnen zugeordneten Reviewer (siehe [diese Liste](https://adam.unibas.ch/goto_adam_file_1659074_download.html)) an. 
 
 ![image](images/jabref-pr-reviewers.png)
 
