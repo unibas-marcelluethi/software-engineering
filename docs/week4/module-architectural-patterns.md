@@ -7,12 +7,12 @@ title : Woche 4
 
 # Einige wichtige Architekturmuster
 
-*Im folgenden werden wir einige wichtige Architekturmuster, also verbreitete Strukturierungen von "uses" Graphen anschauen. Es gibt noch viele weitere verbreitete Architekturmuster.
-Das Ziel dieses Artikels ist nicht die Vollständigkeit, sondern Ihnen einen Eindruck zu geben was ein Architekturmuster ist, und wie wir bereits auf dieser Abstrakten Ebene Eigenschaften
+*Im Folgenden werden wir einige wichtige Architekturmuster, also verbreitete Strukturierungen von "uses" Graphen anschauen. Es gibt noch viele weitere verbreitete Architekturmuster.
+Das Ziel dieses Artikels ist nicht die Vollständigkeit, sondern Ihnen einen Eindruck zu geben was ein Architekturmuster ist, und wie wir bereits auf dieser abstrakten Ebene Eigenschaften
 eines Systems diskutieren können.*
 
 *Das Ziel dieses Artikels ist Ihnen einen Einblick zu geben, 
-wie man bereits auf dieser Abstrakten Ebene über Eigenschaften des Systems*
+wie man bereits auf dieser abstrakten Ebene über Eigenschaften des Systems diskutieren kann.*
 
 ## Layering
 
@@ -20,9 +20,9 @@ Das erste wichtige Muster ist das *Layering*. Hier werden die Module in verschie
 Die Kommunikation zwischen den Modulen findet nur zwischen den Ebenen, und immer nur mit der nächst tieferen Ebene statt. 
 Das klassische Beispiel ist die sogenannte 3-Tier Architektur. Hier gibt es die folgenden 3 Ebenen:
 
-1. Die Präsentationsschicht. Die Präsentationsschicht entspricht typischweise der Benutzerschnittstelle. Hier wird die Information für den Benutzer aufbearbeitet. Diese Schicht enthält keine Anwendungslogik.
+1. Die Präsentationsschicht. Die Präsentationsschicht entspricht typischerweise der Benutzerschnittstelle. Hier wird die Information für den Benutzer aufbearbeitet. Diese Schicht enthält keine Anwendungslogik.
 2. Die Anwendungslogik. Module auf dieser Ebene sind für die Anwendungslogik/Businesslogik zuständig. Diese Schicht ist komplett unabhängig von der Darstellung. 
-3. Die Datenhaltungsschicht: Module auf dieser Ebene kümmern sich um die Repräsentation der Daten und deren Persistenz. Typischwerweise kümmert sich diese Schicht auch um die Datenbankanbindung und kapselt technische Details der Datenhaltung.
+3. Die Datenhaltungsschicht: Module auf dieser Ebene kümmern sich um die Repräsentation der Daten und deren Persistenz. Typischerweise kümmert sich diese Schicht auch um die Datenbankanbindung und kapselt technische Details der Datenhaltung.
 			
 <img src="./images/module-layering.png" class="plain" />
 
@@ -34,7 +34,7 @@ Auch die wiederverwendbarkeit von Komponenten ist hoch. So kann zum Beispiel ein
 
 <img src="./images/osi-model.png" />
 
-Es teilt die Kommunkation in verschiedene Ebenen ein. Auf der Ebenen 0 haben wir den Physical Layer. Die Aufgabe dieser Ebene ist 
+Es teilt die Kommunikation in verschiedene Ebenen ein. Auf der Ebenen 0 haben wir den Physical Layer. Die Aufgabe dieser Ebene ist 
 das  -->
 
 ## Pipelines
@@ -53,7 +53,7 @@ Pipelines ind auch im Betriebssystem Unix weit verbreitet.
 ```
 $ cat /etc/passwd | cut -d":" -f1 | grep bart | less 
 ```
-Bei obigem Kommando wird zuerst ein Text durch das Modul ```cat``` dargestellt. Das Modul ```cut``` nimmt diesen Input und schneidet die erste, durch : getrennte Spalte 
+Bei obigem Kommando wird zuerst ein Text durch das Modul ```cat``` dargestellt. Das Modul ```cut``` nimmt diesen Input und schneidet die erste, durch: getrennte Spalte 
 ab. Das Modul ```grep``` filtert alle Zeilen raus, die den Teilstring "bart" beinhalten. Schlussendlich zeigt das Modul ```less``` den Output Zeilenweise an. 
 
 
