@@ -22,7 +22,7 @@ Als Vorbereitung für die Präsenzveranstaltung in dieser Woche bearbeiten Sie b
 * Schritt 1: Schauen Sie das Video "Softwaredesign" ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d335d440-5091-44d1-b108-b06600bd5a05), [Slides](./slides/Design.pdf))
 * Schritt 2: Lesen Sie den Artikel  "Einige Merkmale guten Designs"  ([Artikel](./design-hints))"
 * Schritt 3: Lesen Sie den Artikel "Typische Architekturmuster". ([Artikel](./module-architectural-patterns))
-* Schritt 4: Schauen Sie sich das Video "Einführung in die UML" an. ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8c8cffc1-41ce-442c-b391-b06600bd5a47)), [Slides](./slides/UML-Klassendiagramme.pdf)
+* Schritt 4: Schauen Sie sich das Video "Einführung in die UML" an. ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8c8cffc1-41ce-442c-b391-b06600bd5a47), [Slides](./slides/UML-Klassendiagramme.pdf))
 * Schritt 5: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_1629491.html).
 
 *Achtung: Der Test muss spätestens bis Mittwoch 13. Oktober, 08:00 bearbeitet sein.*
