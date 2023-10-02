@@ -18,7 +18,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 
 * Schritt 1: Schauen Sie das Video "Eine kurze Geschichte des Software Engineerings".  ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=bb9396c3-7d6c-428b-9409-b0600042e57c), [Slides](./slides/Geschichte.pdf))
 * Schritt 2: Schauen Sie das Video "Eigenschaften von Software".  ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=dfb42bd3-b31b-48bc-85e2-b0600042e578), [Slides](./slides/Eigenschaften.pdf))
-* Schritt 3: Schauen  Sie das Video "Qualitätsmerkmale von Software" ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4a260faf-a95b-4ca0-b0ee-b0600042e58a) [Slides](./slides/Qualitätsmerkmale.pdf
+* Schritt 3: Schauen  Sie das Video "Qualitätsmerkmale von Software" ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4a260faf-a95b-4ca0-b0ee-b0600042e58a), [Slides](./slides/Qualitätsmerkmale.pdf
 ))
 * Schritt 4: Lesen Sie das Paper von Fred Brooks: No Silver Bullet. ([Paper](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf))
 * Schritt 5: Überprüfen Sie ihr Wissen, indem sie den Selbsttest auf Adam bearbeiten. [Adam](https://adam.unibas.ch/goto_adam_tst_1629494.html).
