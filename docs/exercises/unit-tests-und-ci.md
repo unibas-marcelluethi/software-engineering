@@ -6,7 +6,7 @@ title : Woche 4
 # Übungsblatt 4: Unit Tests und Continuous Integration
 
 * Dieses Übungsblatt muss bis spätestens 18. Oktober, 23.59 bearbeitet und via Pull Request abgegeben werden.
-* Wir empfehlen, diese Übungsblatt in Zweiergruppen zu bearbeiten (siehe Abgabeinstruktionen am Ende dieses Dokuments)
+* Wir empfehlen, dieses Übungsblatt in Zweiergruppen zu bearbeiten (siehe Abgabeinstruktionen am Ende dieses Dokuments)
 
 
 ## Einführung
@@ -43,7 +43,7 @@ git checkout uebung4
 Im ersten Teil der Übung werden Sie eigene Unittest für die Klasse *BibDatabase* hinzufügen.  Dabei werden wir
 
 * sehen wie komplexe Software mit Unittests getesten werden kann
-* nutzen dass Unittests Beispiele für die korrekte Verwendung der Klassen repräsentieren, und somit auch
+* nutzen, dass Unittests Beispiele für die korrekte Verwendung der Klassen repräsentieren, und somit auch
 als Dokumentation dienen.
 * einige zentrale Datenstrukturen von Jabref kennenlernen.
 
