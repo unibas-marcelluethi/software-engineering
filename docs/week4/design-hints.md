@@ -40,7 +40,7 @@ Besser ist es, wenn wir ein Design haben, bei dem die Beziehungen eine Hierarchi
 <figure>
 <img src = "./images/module-simple-cycle.png" class="plain" width="200px" style="margin: 0px 100px 0px 0px">
 <img src = "./images/module-simple-hierarchy.png" class="plain" width="200px"/>
-<figcaption align = "center"><b>Links:</b> Modul E hat einen hohen Fan-in. Es ist eine gute Abstraktion. <b>Rechts:</b> Modul A hat einen hohen Fan-out. Es macht wahrscheinlich zu viel.</figcaption>
+<figcaption align = "center"><b>Links:</b> Zyklische Beziehung zwischen den Modulen. <b>Rechts:</b> Hierarchische Beziehung. Module B, D und E können gut isoliert verstanden werden. </figcaption>
 </figure>
 
 ## Fan-in und Fan-out
