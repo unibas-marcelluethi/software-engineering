@@ -57,7 +57,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 4](./week4) | Softwaredesign | Übung 3: Unit tests | 
 |[Woche 5](./week5) | OO Design | Übung 4: Jabref erweitern  | 
 |    | Solid Prinzipien | Pitch: Projektideen|
-|[Woche 6](underconstruction)   | Anforderungsanalyse   | Projektrepository erstellen  | 
+|[Woche 6](./week6)   | Anforderungsanalyse   | Projektrepository erstellen  | 
 |         |    |   Pflichtenheft erstellen |
 |[Woche 7](underconstruction) | Softwarespezifikation  | Prototyping / Design|
 |[Woche 8](underconstruction) | UML | Prototyping / Design  |
