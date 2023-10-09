@@ -40,7 +40,7 @@ Wir werden auch praktische Anwendungen von Modulgraphen kennenlernen.
 ## Hausaufgaben
 
 * Arbeiten Sie den [Selbststudiumsteil Woche 4](../week4/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Falls Sie an der Präsenzveranstaltung nicht anwesend waren, bearbeiten Sie die [Theoriefragen](theory-exercises) und reichen diese bis zum 4.10 auf [Adam](https://adam.unibas.ch/goto_adam_exc_1629562.html) ein. 
+* Falls Sie an der Präsenzveranstaltung nicht anwesend waren, bearbeiten Sie die [Theoriefragen](theory-exercises) und reichen diese bis zum 11.10. auf [Adam](https://adam.unibas.ch/goto_adam_exc_1629562.html) ein. 
 * Bearbeiten Sie die [praktische Übung](../exercises/code-reading) und reichen Sie diese wie angegeben per Pull Request ein. 
 
 
