@@ -28,7 +28,7 @@ Investieren Sie etwas Zeit in diesen Schritt. Wenn Sie ein Projekt definieren, a
 
 ## Pitch
 
-Am 11. Oktober werden Sie in der Übungsstunde ihr Projekt vorstellen. Dieser Pitch soll dazu dienen, dass Sie sich mit dem Projekt auseinandersetzen und sich Gedanken über die Machbarkeit machen und auch erfahren, was andere machen. Sie sollen sich auch überlegen, wie Sie das Projekt angehen wollen und wie Sie die Arbeit in der Gruppe aufteilen wollen. 
+Am 18. Oktober werden Sie in der Übungsstunde ihr Projekt vorstellen. Dieser Pitch soll dazu dienen, dass Sie sich mit dem Projekt auseinandersetzen und sich Gedanken über die Machbarkeit machen und auch erfahren, was andere machen. Sie sollen sich auch überlegen, wie Sie das Projekt angehen wollen und wie Sie die Arbeit in der Gruppe aufteilen wollen. 
 
 In dieser Kurzpräsentation sollen Sie folgende Punkte ansprechen:
 * Was macht unsere Erweiterung?

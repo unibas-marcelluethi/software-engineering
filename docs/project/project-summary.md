@@ -14,7 +14,7 @@ Sie denken sich als Gruppe ein Projekt aus und müssen dies dann strukturiert re
 | Aufgabe |  Erste Abgabe | Besprechung | Finale Version | Bemerkung |
 |---------|--------|---------------------|---------|-----------|
 | JabRef kennenlernen | - | - | - | Eigene Experimente / Übungen 1 - 4 |
-| [Projektauswahl und Pitch](./pitch.md)  | 11. Oktober | 11. Oktober | 25. Oktober | Projektbeginn ist 25. Oktober |
+| [Projektauswahl und Pitch](./pitch.md)  | 11. Oktober | 18. Oktober | 25. Oktober | Projektbeginn ist 25. Oktober |
 | [Gruppenrepository einrichten](./group-repository) | 25. Oktober | --   | 25. Oktober | | 
 | [Pflichtenheft/Projektplan erstellen](./requirements) | 30. Oktober | 1. November  | 8. November |  | 
 | [Design und Prototyp erstellen](./technical-doc) | 13. November | 15. November | 22. November | |
