@@ -27,7 +27,7 @@ In dieser Woche beginnen Sie auch offiziell mit Ihrem Projekt. Sie werden die An
 
 In der Präsenzveranstaltung werden wir die im Selbststudium besprochen Themen vertieft diskutieren. Zudem werden Sie beginnen, ein Anforderungsdokument (Pflichtenheft) für ihr eigenes Projekt zu erstellen.
 
-* [Projektschritt I: Pflichtenheft erstellen](../project/step1/exercises)
+* [Projektschritt I: Pflichtenheft erstellen](../project/requirements)
 
 ## Übungsstunde
 
