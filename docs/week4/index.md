@@ -25,8 +25,6 @@ Als Vorbereitung für die Präsenzveranstaltung in dieser Woche bearbeiten Sie b
 * Schritt 4: Schauen Sie sich das Video "Einführung in die UML" an. ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8c8cffc1-41ce-442c-b391-b06600bd5a47), [Slides](./slides/UML-Klassendiagramme.pdf))
 * Schritt 5: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_1629491.html).
 
-*Achtung: Der Test muss spätestens bis Mittwoch, 13. Oktober 08:00 bearbeitet sein.*
-
 ####  Präsenzveranstaltung vom 11. Oktober
 
 In der Präsenzveranstaltung werden wir die im Selbststudium bearbeiten Themen in Diskussionen und Gruppenarbeiten vertiefen. 
