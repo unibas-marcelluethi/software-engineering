@@ -14,13 +14,13 @@ Kopieren Sie das [Pflichtenheft Markdown Template](https://raw.githubusercontent
 
 ### Einleitung und allgemeine Beschreibung
 
-Schauen Sie sich die Theorie zum Thema [Anforderungsanalyse](../../week6/index.md) nochmals genau an. Überlegen Sie sich wer ihre Stakeholder sind und wie diese von den Änderungen betroffen sind. Schauen Sie sich die nachfolgenden Beispiele für Pflichtenhefte an:
+Schauen Sie sich die Theorie zum Thema [Anforderungsanalyse](../../week6) nochmals genau an. Überlegen Sie sich wer ihre Stakeholder sind und wie diese von den Änderungen betroffen sind. Schauen Sie sich die nachfolgenden Beispiele für Pflichtenhefte an:
 
 * [Beispiel früheres Projekt](https://adam.unibas.ch/goto_adam_file_1480294_download.html)
 * [Beispiel nach Lehrbuch von Balzert](https://adam.unibas.ch/goto_adam_file_1474955_download.html).
 
 
-Schreiben Sie nun die Abschnitte 1 - 2 im Pflichtenheft für ihr Projekt. 
+Schreiben Sie nun die Abschnitte 1 - 2 im Pflichtenheft für ihr Projekt. Nachdem Sie die Abschnitte geschrieben haben, machen Sie mit den nachfolgenden Schritten weiter. 
 
 #### Anwendungsfälle
 
@@ -56,6 +56,6 @@ relative kleine Tasks besser überblicken können. Natürlich hilft es auch sich
 
 ## Abgabe
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](../project-summary).  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an.
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](./project-summary).  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an.
 
 
