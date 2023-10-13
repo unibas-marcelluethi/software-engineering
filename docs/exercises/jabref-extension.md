@@ -13,7 +13,7 @@ title : Woche 5
 
 
 In dieser Übung werden Sie eine komplette (jedoch sinnfreie) Erweiterung an Jabref vornehmen.
-Ihre Erweiterung soll erkennen, dass ein Paper vom Autor "Fred Brooks" zur Datenbank hinzugefügt wurde. Wenn das Paper hinzugefügt wird soll eine Dialogbox angezeigt werden.
+Ihre Erweiterung soll erkennen, dass ein Paper vom Autor "Fred Brooks" zur Datenbank hinzugefügt wurde. Wenn das Paper hinzugefügt wird, soll eine Dialogbox angezeigt werden.
 Diese Funktion soll sich via den *Preferences* an und ausschalten lassen.
 
 In den folgenden Aufgaben entwickeln Sie diese Erweiterung Schritt für Schritt.
@@ -43,9 +43,9 @@ git checkout uebung5
 
 #### Lesen der Jabref Dokumentation
 
-Wir werden in dieser Übung einige zentrale Mechanismen von JabRef kennenlernen. Diese Sind auf dem JabRef Wiki Dokumentiert.
-Verschaffen Sie sich bitte einen Überblick über die wichtigsten Konzepte die in den [Code-HowTos](https://jabref.readthedocs.io/en/latest/getting-into-the-code/code-howtos/) von JabRef besprochen werden.
-Kommen Sie später in den Übungen darauf zurück wenn Sie an einem bestimmten Konzept arbeiten.
+Wir werden in dieser Übung einige zentrale Mechanismen von JabRef kennenlernen. Diese Sind auf dem JabRef Wiki dokumentiert.
+Verschaffen Sie sich bitte einen Überblick über die wichtigsten Konzepte, die in den [Code-HowTos](https://jabref.readthedocs.io/en/latest/getting-into-the-code/code-howtos/) von JabRef besprochen werden.
+Kommen Sie später in den Übungen darauf zurück, wenn Sie an einem bestimmten Konzept arbeiten.
 Lesen Sie auch die [High-Level Dokumentation](https://jabref.readthedocs.io/en/latest/getting-into-the-code/high-level-documentation/).
 
 
@@ -53,8 +53,8 @@ Lesen Sie auch die [High-Level Dokumentation](https://jabref.readthedocs.io/en/l
 ## Aufgabe 1: Arbeiten mit dem Eventbus
 
 In dieser Aufgabe nutzen Sie den EventBus. Erstellen Sie eine neue Klasse ```BrooksHandler``` in einem neuen Package ```org.jabref.gui.sillyextensions```.
-Diese Klasse soll auf auf Events vom Typ ```EntriesAddedEvent``` und ```EntryChangedEvent``` reagieren. Wenn immer ein solches Event von Jabref generiert wird, soll
-die Meldung "Entries Added" sowie der Titel des entsprechenden Eintrags auf der Konsole (mit ```System.out.println```) ausgebgeben werden.
+Diese Klasse soll auf Events vom Typ ```EntriesAddedEvent``` und ```EntryChangedEvent``` reagieren. Wenn immer ein solches Event von Jabref generiert wird, soll
+die Meldung "Entries Added" beziehungsweise "Entries Changed" sowie der Titel des entsprechenden Eintrags auf der Konsole (mit ```System.out.println```) ausgegeben werden.
 
 *Tipp:* Als Vorlage schauen Sie sich an, wie dies für die Klasse ```CitationStyleCache``` implementiert ist. 
 Nutzen Sie auch die Funktion *Find Usages*, die Sie durch das Context Menu in Intellij erreichen können um herauszufinden, wo eine bestimmte Funktionalität benutzt wird.
@@ -65,13 +65,12 @@ Committen Sie Ihre Änderungen.
 
 ## Aufgabe 2: Arbeiten mit dem Logger
 
-In einem realen Projekt wollen Sie nicht Meldungen  mit ```System.out.println``` auf die Konsole ausgeben. Stattdessen verwendet man ein logging System um Meldungen auszugeben.
+In einem realen Projekt wollen Sie nicht Meldungen mit ```System.out.println``` auf die Konsole ausgeben. Stattdessen verwendet man ein logging System, um Meldungen auszugeben.
 Ändern Sie die Ausgabe so ab, dass der Logger verwendet wird. Die Loggingnachrichten sollen mit dem Level ```info``` gelogged werden.
 
 
 Schauen Sie sich danach die Datei ```tinylog.properties``` an, die Sie im Verzeichnis ```src\main\resources\``` finden. In dieser Datei können Sie den Logging Level verändern.
-Setzen Sie den Logging Level ```Info``` auf ```Debug```? Schauen Sie sich die Meldungen an, die 
-auf die Konsole ausgegeben werden, wenn Sie JabRef start. Was beobachten Sie?
+Setzen Sie den Logging Level ```Info``` auf ```Debug```. Schauen Sie sich die Meldungen an, die auf die Konsole ausgegeben werden, wenn Sie JabRef starten. Was beobachten Sie?
 
 *Hinweis:* In der Dokumentation steht, dass der Logger mittels ```LogFactory.getLog(<ClassName>.class);``` instantiiert werden kann. Es sollte jedoch ```LoggerFactory.getLogger(<ClassName>.class)``` sein. 
 
@@ -80,8 +79,8 @@ Committen Sie Ihre Änderungen.
 
 ## Aufgabe 3: Anzeigen eines Infodialogs
 
-Als nächsten passen Sie die Klasse ```BrooksHandler``` so an, dass wenn der Autor eines Eintrags "Brooks" ist, ein Infodialog mit der Meldung
-"Neues Paper von Frederick Brook hinzugefügt"  angezeigt wird.
+Als nächsten passen Sie die Klasse ```BrooksHandler``` so an, dass wenn der Autor eines Eintrags von Frederick Brooks ist, ein Infodialog mit der Meldung
+"Neues Paper von Frederick Brooks hinzugefügt" angezeigt wird.
 
 
 Nutzen Sie dazu die Methode ```showInformationDialogAndWait``` der Schnittstelle ```DialogService```.
@@ -92,7 +91,7 @@ Committen Sie Ihre Änderungen.
 ## Aufgabe 4: Lokalisierung
 
 Machen Sie den Dialog aus voriger Aufgabe mittels *Localization* mehrsprachig. Die Meldung sollten mindestens für die Sprachen Deutsch und Englisch implementiert werden.
-*Tipp:* Um die Mehrsprachigkeit zu testen können Sie die Sprache im Preferences Dialog umstellen.
+*Tipp:* Um die Mehrsprachigkeit zu testen, können Sie die Sprache im Preferences Dialog umstellen.
 
 Committen Sie Ihre Änderungen.
 
@@ -107,7 +106,7 @@ Committen Sie Ihre Änderungen.
 
 ## Aufgabe 6: Abfragen der Preferences.
 
-Als letztes passen Sie die Klasse ```BrooksHandler``` so an, dass die Dialogbox nur angezeigt wird, wenn die entsprechende Checkbox in den Preferences gesetzt ist.
+Als Letztes passen Sie die Klasse ```BrooksHandler``` so an, dass die Dialogbox nur angezeigt wird, wenn die entsprechende Checkbox in den Preferences gesetzt ist.
 
 Committen Sie Ihre Änderungen.
 
