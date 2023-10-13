@@ -18,7 +18,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 * Schritt 3: Lesen Sie den Artikel zum Thema "Designheuristiken" ([Artikel](./oo-design-heuristics))
 * Schritt 4: Schauen Sie das Video zu den "SOLID Prinzipien" an ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=aa0ba520-7e28-4ad8-b112-b06700bf7364), [Slides](./slides/OO-Solid.pdf))
 * Schritt 5a: Schauen Sie sich die Slides zum Talk von Dan North, [Why Every single element of SOLID is wrong](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong?slide=20), an. 
-* Schritt 5b: Lesen Sie die Ausführungen von Dan North auf [seinem Blog](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong?slide=18)
+* Schritt 5b: Lesen Sie die Ausführungen von Dan North auf [seinem Blog](https://dannorth.net/cupid-the-back-story/)
 * Schritt 6: Bearbeiten Sie den Test. ([Adam](https://adam.unibas.ch/goto_adam_tst_1629488.html)).
 
 ####  Präsenzveranstaltung vom 18. Oktober
