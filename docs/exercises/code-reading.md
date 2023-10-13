@@ -121,7 +121,7 @@ Fügen Sie einen Kommentar in der Datei ```build.gradle``` hinzu. Dieser soll ga
 
 In diesem Teil der Übung geht es darum, dass sie sich einen Grobüberblick über die Struktur des Jabref Codes erarbeiten sowie auch lernen, fremden Code zu lesen und zu verstehen. Ein gute Vorgehensweise ist Teile des Codes bei dieser Gelegenheit gerade zu dokumentieren.
 
-#### Dokumentieren von Packages
+#### 2.1 Dokumentieren von Packages
 
 Lesen Sie den [Auszug aus dem Buch](https://adam.unibas.ch/goto_adam_file_1629485.html) Java By Comparison zum Thema API Doc.
 
@@ -146,7 +146,7 @@ Vergessen sie nicht, diese Dateien mit dem ```git add``` command dem Repository 
 Um eine gute Zusammenfassung schreiben zu können müssen Sie sich einen groben Überblick verschaffen, was in den im Package enthaltenen Klassen passiert. Nutzen Sie dazu auch die Funktion ```Find Usages``` von IntelliJ, welche
 Sie finden, wenn Sie einen Rechtsklick auf ein Symbol (also Klasse, Methode, Variable, ...) im Sourcecode machen.
 
-#### Dokumentieren einer Klasse
+#### 2.2 Dokumentieren einer Klasse
 
 Schauen Sie sich die Klasse
 ```org.jabref.logic.protectedterms.ProtectedTermsLoader``` an. Dokumentieren Sie die Klasse selbst und die Methoden `addNewProtectedTermsList` und `getInternalLists` mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
