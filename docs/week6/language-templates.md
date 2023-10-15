@@ -22,6 +22,6 @@ Wir beginnen also unsere Sätze immer mit dem Wort *Das System* oder *Die Kompon
  Beispiele von so definierten Anforderungen sind:
 * Das System muss dem Kunden die M&ouml;glichkeit bieten, Geld zu beziehen
 * Das System muss ein Aktivit&auml;tsjournal f&uuml;hren.
-* Die Konsole sollte dem Benutzer verst&auml;ndliche Fehlermeldungen ausgeben. Viele weitere Beispiele finden Sie im Beispiel Pflichtenheft auf dem [Adam workspace](https://adam.unibas.ch/goto_adam_file_732351_download.html).
+* Die Konsole sollte dem Benutzer verst&auml;ndliche Fehlermeldungen ausgeben. Viele weitere Beispiele finden Sie im Beispiel Pflichtenheft auf dem [Adam workspace](https://adam.unibas.ch/goto_adam_file_1629482.html).
                         
 *Achtung: Sprachschablonen sind keine Formalen Spezifikationen. Sie sind lediglich eine Hilfe, um Anforderungen etwas präziser zu formulieren und sie leicht lesbar zu machen. Sie haben aber noch immer alle Vor-und Nachteile, die natürlichsprachige Anforderungen mit sich bringen.*
