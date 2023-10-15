@@ -13,7 +13,7 @@ Für jede Vorlesungswoche finden Sie einen entsprechenden Ordner mit den Unterri
 
 ## Mitwirkung
 
-Haben Sie einen Fehler gefunden oder haben Sie einen Verbesserungsvorschlag. *We accept Pull-Requests!*
+Haben Sie einen Fehler gefunden oder haben Sie einen Verbesserungsvorschlag. *We accept Pull-Requests!* 
 
 
 
