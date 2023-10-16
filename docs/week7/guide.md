@@ -7,15 +7,15 @@ title : Woche 7
 ## Übersicht
 
 Mit der Anforderungsanalyse sind wir in das Gebiet der Softwarespezifikation vorgedrungen. In dieser Woche schauen wir uns Softwarespezifikation im Allgemeinen an.
-Wir besprechen was genau eine Softwarespezifikation ist, welchen Zweck sie erfüllt und wir wir zu einer guten Spezifikation kommen.
+Wir besprechen was genau eine Softwarespezifikation ist, welchen Zweck sie erfüllt und wie wir zu einer guten Spezifikation kommen.
 
 ## Lernziele
 
 ### Grundlegende Lernziele
 
-Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 03. November *selbständig* zu erarbeiten.
+Alle Studierenden sind verantwortlich, sich die untenstehenden Lernziele *vor* der Vorlesungsstunde am 01. November *selbständig* zu erarbeiten.
 
-Nach dem Selbstudium der Vorlesungsmaterialien sollten die Studierenden:
+Nach dem Selbststudium der Vorlesungsmaterialien sollten die Studierenden:
 - Kennen den Zweck von Softwarespezifikationen
 - Können wichtige Qualitätsmerkmale von Softwarespezifikationen nennen und wissen, weshalb diese schwierig zu erreichen sind.
 - Können erklären, wie ein idealer Softwarespezifikationsprozess aussieht und weshalb man diesen in der Praxis nie erreichen kann.
