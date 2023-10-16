@@ -35,4 +35,4 @@ Neben den im Template vorgegebenen Aspekten, muss das Dokument mindestens die fo
 
 #### Abgabe:
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](../project-summary).  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an.
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](./project-summary).  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an.
