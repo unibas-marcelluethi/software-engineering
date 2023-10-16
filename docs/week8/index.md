@@ -32,10 +32,8 @@ Details finden Sie [in dieser Anleitung](../project/step2/exercises).
 
 ## Hausaufgaben
 
-Die folgenden Hausaufgaben sollten bis zum 13/15 November bearbeitet werden. 
-
 * Arbeiten Sie den [Selbststudiumsteil Woche 9](../week9/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Erstellen Sie die technische Dokumentation (Designdoc) gemäss [dieser Anleitung](https://unibas-marcelluethi.github.io/software-engineering/project/step2/exercises)
+* Erstellen Sie die technische Dokumentation (Designdoc) gemäss [dieser Anleitung](https://unibas-marcelluethi.github.io/software-engineering/project/step2/exercises) und reichen Sie dieses bis am Sonntag, 12. November ein.
 
 
 

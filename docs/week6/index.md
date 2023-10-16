@@ -35,10 +35,8 @@ Im praktischen Teil der Veranstaltung, können Sie an Ihrem Pflichtenheft weiter
 
 ## Hausaufgaben
 
-Die folgenden Hausaufgaben sollten bis zum 31. Oktober bearbeitet werden. 
-
 * Arbeiten Sie den [Selbststudiumsteil Woche 7](../week7/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Erstellen Sie das Pflichtenheft und reichen Sie dieses wie angegeben per Pull Request ein.
+* Erstellen Sie das Pflichtenheft und reichen Sie dieses wie angegeben per Pull Request bis am Sonntag, 29. Oktober ein.
 
 ## Lernziele
 
