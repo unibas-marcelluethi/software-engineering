@@ -41,7 +41,7 @@ Die folgenden Hausaufgaben sollten bis zum 21. November bearbeitet werden.
 
 Die Teilnehmenden
 
-- können erklären, weshalb wir Software immer verifiziert werden muss.
+- können erklären, weshalb Software immer verifiziert werden muss.
 - können verschiedene Methoden zur Verifikation aufzählen.
 - kennen die verschiedenen Arten von Tests (also Unittest, Regressionstest, Integrationstests, etc. ) und wissen, wie diese eingesetzt werden.
 - kennen die Ziele und Limitierungen von Softwaretests und können die Auswirkungen dieser Limitierungen einschätzen.
