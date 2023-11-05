@@ -35,7 +35,7 @@ In der Übungsstunde beginnen Sie, den Testplan zu schreiben. Zudem können Sie 
 Die folgenden Hausaufgaben sollten bis zum 21. November bearbeitet werden. 
 
 * Arbeiten Sie den [Selbststudiumsteil Woche 10](../week10/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Erstellen Sie den [Testplan](../project/step3/exercises) und reichen Sie diesen bis am Sonntag, 19. November ein.
+* Erstellen Sie den [Testplan](../project/testplan) und reichen Sie diesen bis am Sonntag, 19. November ein.
 
 ## Lernziele
 
