@@ -28,7 +28,7 @@ Stellen sie sich vor, dass die Tests typischerweise von einem eigenen Testteam d
 
 ## 2. Systemübersicht
 
-Hier sollte eine kurze übersicht über das System gegeben werden, mit besonderem Fokus auf die zu testenden Komponenten.
+Hier sollte eine kurze Übersicht über das System gegeben werden, mit besonderem Fokus auf die zu testenden Komponenten.
 
 
 ## 3. Merkmale
@@ -37,7 +37,7 @@ Hier sollte eine kurze übersicht über das System gegeben werden, mit besondere
 
 #### 3.1.1 Funktionale Anforderungen
 
-Welche spezifizierten Funktionalen Anforderungen werden getestet? Referenzieren sie auch mittels dem Identifier (z.B. /LF10/ ) im Pflichtenheft.
+Welche spezifizierten funktionalen Anforderungen werden getestet? Referenzieren sie auch mittels dem Identifier (z.B. /LF10/ ) im Pflichtenheft.
 
 ### 3.2 Nicht zu testende Merkmale (Features / Funktionen)
 

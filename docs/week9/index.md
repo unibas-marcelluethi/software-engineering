@@ -35,13 +35,13 @@ In der Übungsstunde beginnen Sie, den Testplan zu schreiben. Zudem können Sie 
 Die folgenden Hausaufgaben sollten bis zum 21. November bearbeitet werden. 
 
 * Arbeiten Sie den [Selbststudiumsteil Woche 10](../week10/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Erstellen Sie den [Testplan](../project/step3/exercises) und reichen Sie diesen bis am Sonntag, 19. November ein.
+* Erstellen Sie den [Testplan](../project/testplan) und reichen Sie diesen bis am Sonntag, 19. November ein.
 
 ## Lernziele
 
 Die Teilnehmenden
 
-- können erklären, weshalb wir Software immer verifiziert werden muss.
+- können erklären, weshalb Software immer verifiziert werden muss.
 - können verschiedene Methoden zur Verifikation aufzählen.
 - kennen die verschiedenen Arten von Tests (also Unittest, Regressionstest, Integrationstests, etc. ) und wissen, wie diese eingesetzt werden.
 - kennen die Ziele und Limitierungen von Softwaretests und können die Auswirkungen dieser Limitierungen einschätzen.
