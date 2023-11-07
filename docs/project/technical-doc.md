@@ -22,17 +22,19 @@ Die Funktionalität soll in dieser Phase nicht vollständig implementiert werden
 
 #### Technische Dokumentation erstellen
 
-Erstellen Sie die Technische Dokumentation. Nutzen Sie dazu dieses  [Template](../project/templates/technical-doc)
+Erstellen Sie dann die Technische Dokumentation. Nutzen Sie dazu dieses  [Template](../templates/technical-doc)
 
 * [Link zum template im Markdown Format](https://raw.githubusercontent.com/unibas-marcelluethi/software-engineering/main/docs/project/templates/technical-doc.md)
 
 Neben den im Template vorgegebenen Aspekten, muss das Dokument mindestens die folgenden Anforderungen erfüllen:
 
-* Es soll ein UML Klassendiagramm enthalten, welches die Beziehungen zwischen den relevanten Klassen Ihrer Erweiterung und JabRef zeigt.
-* Die Dynamik soll für mindestens einen Teilaspekt mithilfe von Sequenz/Kollaborationsdiagrammen, Aktivitätsdiagrammen oder Zustandsdiagrammen spezifiziert werden.
-* Können Sie auch OCL-Constraints für einen Aspekt ihrer Erweiterung definieren?
+* Es soll ein UML Klassendiagramm enthalten, welches die Beziehungen zwischen den relevanten Klassen Ihrer Erweiterung und JabRef zeigt. Kennzeichnen Sie klar, 
+welche Klassen bereits in JabRef vorhanden sind und welche Sie neu hinzufügen. 
+* Erstellen Sie dann ein Sequenzdiagramm, ein Aktivitätsdiagramm und ein Zustandsdiagramm, für jeweils einen Teilaspekt ihres Systems. 
+* Schreiben Sie einen Abschnitt zur Logik des Systems. Hier sollen die wichtigsten logischen Einschränkungen, die nicht direkt aus den obigen Diagrammen hervorgehen. Sie können dies entweder in 
+natürlicher Sprache beschreiben oder OCL Constraints definieren.
 
 
 #### Abgabe:
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](./project-summary).  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an.
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](./project-summary).  Geben Sie Ihren Betreuer als Reviewer an.

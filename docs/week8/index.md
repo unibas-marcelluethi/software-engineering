@@ -28,7 +28,7 @@ In der Präsenzveranstaltung werden Sie die Möglichkeit haben, unter Anleitung 
 ## Übungsstunde
 
 Während der Übungsstunde werden sie in Ihren Projektgruppen das Designdokument erstellen und an Ihrem Prototypen weiterarbeiten.
-Details finden Sie [in dieser Anleitung](../project/step2/exercises).
+Details finden Sie [in dieser Anleitung](../project/technical-doc).
 
 ## Hausaufgaben
 
