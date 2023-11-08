@@ -25,6 +25,7 @@ Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte 
 
 In der Präsenzveranstaltung werden wir die SOLID-Prinzipien vertieft diskutieren. Wir werden auch ein Objektorientiertes Design für eine einfache Anwendung erstellen und dabei CRC Karten praktisch einsetzen. 
 
+* [Bankomaten Szenario](./atm-scenario)
 
 ## Praxis
 

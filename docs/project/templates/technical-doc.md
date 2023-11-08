@@ -1,6 +1,6 @@
 ---
 layout: default
-title : Woche 6
+title : Technische Dokumentation
 ---
 # Technische Dokumentation (Template)
 

@@ -60,10 +60,10 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 6](./week6)   | Anforderungsanalyse   | Projektrepository erstellen  | 
 |         |    |   Pflichtenheft erstellen |
 |[Woche 7](./week7) | Softwarespezifikation  | Prototyping / Design|
-|[Woche 8](underconstruction) | UML | Prototyping / Design  |
-|[Woche 9](underconstruction) | Verifikation / Grundlagen des Testens | Design / Testplan erstellen |
+|[Woche 8](./week8) | UML | Prototyping / Design  |
+|[Woche 9](./week9) | Verifikation / Grundlagen des Testens | Design / Testplan erstellen |
 |                       | Testen im Grossen | | 
-| [Woche 10](underconstruction) | Testen im Kleinen   | Implementation / Testen |
+| [Woche 10](./week10) | Testen im Kleinen   | Implementation / Testen |
 | [Woche 11](underconstruction)    | Softwareprozesse | Implementation / Testen |
 |             | Agile Softwareentwicklung   | |
 | [Woche 12](underconstruction)| Scrum  | Implementation / Testen|

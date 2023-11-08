@@ -35,7 +35,7 @@ In diesem Beispiel haben wir eine Aussage, die immer falsch ist. Auch hier ist d
 
 ##### Beispiel 4: $$ x > 3 \texttt{ or } x  < -6$$
 
-Im Gegensatz dazu können wir den Wahrheitswert dieser Formel nur für konkrete Werte von $$x$$ bestimmen, nicht aber im allgemeinen.
+Im Gegensatz dazu können wir den Wahrheitswert dieser Formel nur für konkrete Werte von $$x$$ bestimmen, nicht aber im Allgemeinen.
 
 ##### Beispiel 5: $$ \texttt{forall } x,y,z \; (x > y \texttt{ and } y > z \texttt{ implies } x > z)$$
 

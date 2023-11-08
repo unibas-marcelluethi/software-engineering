@@ -143,15 +143,11 @@ Stattdessen versuchen wir unsere ideale Testmenge zu approximieren, indem wir Te
 und $$x=2,y=3$$ diejenige Klasse, für die die erste Bedingung $$\texttt{false}$$ ist. Jeder weitere Testfall würde hier nicht mehr helfen weitere Fehler zu entdecken.
 
 Das allgemeinere Konzept, das hier zugrunde liegt ist das Definieren von Äquivalenzklassen von Tests. Im oberen Beispiel haben wir die Äquivalenzklassen gemäss der Struktur vom Code definiert (also welcher Teil der if Bedinung erfüllt war). 
-Wir werden nächste Woche sehen, dass es ganz verschiedene Arten gibt, die Äquivalenzklassen zu formulieren. Auf abstrakter Ebene, können wir aber bereits unser Ziel formulieren. Wir möchten 
+Auf abstrakter Ebene, können wir aber bereits unser Ziel formulieren. Wir möchten 
 unsere Testfälle in Äquivalenzklassen $$D_1, D_2, \ldots, D_n$$ einteilen, so dass
 * Elemente von $D_i$ dasselbe Verhalten haben
 * wir eine möglichst *vollst&auml;ndige Testabdeckung* erreichen, also $$\cup_i D_i = D$$
 * die Testfälle möglichst spezifisch für eine Gruppe sind, also $D_i \cap D_j = \emptyset$. Falls $D_i \cap D_j \neq \emptyset$, sollte der Testfall in der Schnittmenge der Klassen liegen, also sowohl die Kriterien von Äquivalenzklasse $$D_i$$ also auch der Klasse $$D_j$$ testen.
-
-Dieser Sachverhalt wird in untenstehender Abbildung illustriert.
-
-<img src="../../slides/images/equivalenceclasses.png" style="width:30%" class="plain"/>
 
 
            
