@@ -41,16 +41,17 @@ Welche spezifizierten funktionalen Anforderungen werden getestet? Referenzieren 
 
 ### 3.2 Nicht zu testende Merkmale (Features / Funktionen)
 
-Welche Aspekte werden explizit nicht getestet?
+Welche Aspekte werden explizit nicht getestet? Bitte begründen weshalb nicht. 
 
 ## 4 Vorgehensweise
 
 ### 4.1 Modul und Integrationstests
-Hier können sie angeben wie sie diese Tests durchführen möchten. Wir empfehlen wenn möglich die Komponenten mittels automatischen Unit Tests zu testen.
+Hier können sie angeben wie sie diese Tests durchführen möchten. Wir empfehlen wenn möglich viel über automatisierte Unittests zu testen. 
+Vor allem grafische Komponenten können aber nicht immer automatisiert getestet werden und erfordern manuelle Tests.
 
 ### 4.2 Funktionstest
 
-Wie werden die funktionalen Anforderungen getestet?
+Wie werden die funktionalen Anforderungen (aus dem Pflichtenheft) getestet?
 Beispielsweise können sie angeben, dass die Funktionalität via Graphischer Benutzeroberfläche getestet wird.
 
 ### 5 Hardware und Softwareanforderungen
