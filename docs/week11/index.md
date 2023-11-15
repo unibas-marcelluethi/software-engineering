@@ -17,7 +17,7 @@ und geben auch eine Einführung in Agile Softwareentwicklungsmethoden.
 
 * Schritt 1: Softwareprozesse ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=412f9e91-dde8-467a-b3b6-b07c008935ca), [Slides](./slides/Prozesse.pdf))
 * Schritt 2: Lesen Sie den Artikel: Agile Softwareentwicklung  ([Artikel](./agile))
-* Schritt 3: Lesen Sie das Kapitel "Agile - The good the bad and the ugly"  ([Artikel](./agile-critic.html))
+* Schritt 3: Lesen Sie das Kapitel "Agile!: The Good, the Hype and the Ugly"  ([Artikel](./agile-critic.html))
 * Schritt 4: Bearbeiten Sie den Selbsttest für Woche 11 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1646918.html)).
 
 ## Übungsstunde
@@ -37,5 +37,6 @@ Die Studierenden
 - können die Ziele nennen, die man mit einem Softwareprozess erreichen möchte
 - kennen die wichtigsten Softwareprozessmodelle und deren Charakteristika
 - können die Hauptmerkmale von agilen Methodologien erklären
-- können agile Methodologien mit traditionellen Softwareprozessen vergleichen können und Vor- und Nachteile beider Modelle nennen. 
+- können agile Methodologien mit traditionellen Softwareprozessen vergleichen 
+- können und Vor- und Nachteile beider Modelle nennen. 
 
