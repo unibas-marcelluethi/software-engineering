@@ -43,7 +43,7 @@ Die Teilnehmenden
 - können den Unterschied zwischen Blackbox und Whitebox Tests erklären und wie sich dies auf die Softwarewartung auswirkt. 
 - können Ursache-Wirkungsdiagramme erstellen und aus diesen Testfälle 
 herleiten. 
-- Kennen verschiedene Überdeckungskriterien und können diese einsetzen um  Testfälle zu finden
-- Können Äquivalenzklassen und Grenzfälle in einfachen Beispielspezifikationen identifizieren
-- Verstehen, wie Stubs und Drivers eingesetzt werden um Module im Systemkontext zu testen.
-- Kennen die Vor- und Nachteile von Top-Down und Bottom-up Integration.
+- kennen verschiedene Überdeckungskriterien und können diese einsetzen um  Testfälle zu finden
+- können Äquivalenzklassen und Grenzfälle in einfachen Beispielspezifikationen identifizieren
+- verstehen, wie Stubs und Drivers eingesetzt werden um Module im Systemkontext zu testen.
+- kennen die Vor- und Nachteile von Top-Down und Bottom-up Integration.

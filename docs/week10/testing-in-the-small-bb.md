@@ -67,8 +67,7 @@ Wir schauen uns zuerst wieder ein Beispielszenario an:
 > Falls dies der Fall ist wird der Ausleihwunsch zurückgewiesen.
 > Ansonsten wird dem Kunden das gewünschte Buch ausgeliehen.
 
-Wir können daraus folgenden Ursache-Wirkungsgraph erstellen.
-![Ursache-Wirkungsgraph](../../slides/images/cause-effect-graph.png)
+Wir können daraus folgenden Ursache-Wirkungsgraph erstellen. ![Ursache-Wirkungsgraph](../slides/images/cause-effect-graph.png)
 Auf der linken Seite sehen wir die verschiedenen möglichen Ursachen, auf der rechten Seite die möglichen Aktionen.
 Ein Pfeil zwischen einer Ursache und einer Aktion bedeutet, dass wenn die entsprechende Bedingung erfüllt ist, dass dann daraus die entsprechende Aktion folgt. Für bestimmte Aktionen müssen mehrere Bedingungen erfüllt sein, oder es reicht, wenn eine von mehreren Bedingungen erfüllt ist. Dies modellieren wir mit den logischen Konjunktoren, ```and```und ```or```.  Es kann auch sein, dass für eine Aktion eine bestimmte Ursache nicht gelten kann, also die entsprchende Bedingung nicht erfüllt ist. Um dies auszudrücken, können wir die Negation ```not``` verwenden.
 Wir können aus diesem Usrsache-Wirkungsgraphen unter anderem folgende Zusammenhänge ablesen:
