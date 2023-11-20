@@ -23,6 +23,7 @@ Die Präsentation sollte mindestens folgende Punkte ansprechen:
 * Live-demo Ihrer Erweiterung 
 * Reflexion / Lessons learned
     * Was ist das wichtigste, das Sie beim Entwickeln der Erweiterung gelernt haben?
+    * Was war unerwartet am Prozess? 
     * Was würden Sie beim nächsten Mal anders machen?
 
 #### Zeitplan
