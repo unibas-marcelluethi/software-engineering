@@ -66,7 +66,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | [Woche 10](./week10) | Testen im Kleinen   | Implementation / Testen |
 | [Woche 11](./week11)    | Softwareprozesse | Implementation / Testen |
 |             | Agile Softwareentwicklung   | |
-| [Woche 12](underconstruction)| Scrum  | Implementation / Testen|
+| [Woche 12](./week12)| Scrum  | Implementation / Testen|
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen (I) | Projektpräsentationen (II) |
 | Woche 14 | Zusammenfassung / Prüfungsvorbesprechung | - |
