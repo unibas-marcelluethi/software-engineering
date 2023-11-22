@@ -20,7 +20,7 @@ Wir lernen auch konkrete Methoden kennen, mit denen wir Testfälle finden könne
 * Schritt 1: Lesen Sie den Artikel "Theoretische Grundlagen des Testens" ([Artikel](./testing-foundations))
 * Schritt 2: Schauen Sie das Video zum Thema White box testing ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f8358f9a-b865-498f-a8ca-b07b00e32ce3), [Slides](./slides/Testen-im-kleinen.pdf))
 * Schritt 3: Lesen Sie den Artikel zum Thema Black box testing ([Artikel](./testing-in-the-small-bb))
-* Schritt 4: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1629487.html)).
+* Schritt 4: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1646911.html)).
 
 #### Präsenzveranstaltung vom 22. November
 
@@ -43,7 +43,7 @@ Die Teilnehmenden
 - können den Unterschied zwischen Blackbox und Whitebox Tests erklären und wie sich dies auf die Softwarewartung auswirkt. 
 - können Ursache-Wirkungsdiagramme erstellen und aus diesen Testfälle 
 herleiten. 
-- Kennen verschiedene Überdeckungskriterien und können diese einsetzen um  Testfälle zu finden
-- Können Äquivalenzklassen und Grenzfälle in einfachen Beispielspezifikationen identifizieren
-- Verstehen, wie Stubs und Drivers eingesetzt werden um Module im Systemkontext zu testen.
-- Kennen die Vor- und Nachteile von Top-Down und Bottom-up Integration.
+- kennen verschiedene Überdeckungskriterien und können diese einsetzen um  Testfälle zu finden
+- können Äquivalenzklassen und Grenzfälle in einfachen Beispielspezifikationen identifizieren
+- verstehen, wie Stubs und Drivers eingesetzt werden um Module im Systemkontext zu testen.
+- kennen die Vor- und Nachteile von Top-Down und Bottom-up Integration.

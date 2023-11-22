@@ -22,9 +22,9 @@ Da wir die Änderungen der letzten Übung hier nicht benötigen, starten wir wie
 git checkout main
 ```
 
-Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository, wie in [Übung 2](./first-changes) beschrieben  und pushen Sie den aktualisierten main branch auf ihr github repository
+Synchronisieren Sie ihr Repository mit den Änderungen vom *upstream* Repository, wie in [Übung 2](./first-changes) beschrieben  und pullen Sie vom main branch 
 ```
-git push origin main
+git pull origin main
 ```
 
 

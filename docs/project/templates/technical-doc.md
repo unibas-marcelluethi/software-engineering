@@ -1,6 +1,6 @@
 ---
 layout: default
-title : Woche 6
+title : Technische Dokumentation
 ---
 # Technische Dokumentation (Template)
 
@@ -21,7 +21,7 @@ Geben sie hier andere relevante Dokumente an, wie z.B. das Pflichtenheft
 
 # 2. Systemübersicht
 
-Hier sollte eine kurze &Uuml;bersicht &uuml;ber das System gegeben werden. 
+Hier sollte eine kurze Übersicht über das System gegeben werden. 
 Das Ziel dieses Abschnitts ist, dass der Leser weiss, was entwickelt wird. Also zum Beispiel sollte man erwähnen, 
 dass es sich um eine Erweiterung für Jabref handelt, und was das Ziel dieser Erweiterung ist. 
 
@@ -53,7 +53,7 @@ An dieser Stelle sollten die statischen Aspekte, zum Beispiel mit Hilfe von UML 
 
 ## 5.2 Dynamik
 
-An dieser Stelle sollten die dynamische Aspekte, zum Beispiel mit Hilfe von UML Sequenz/Kollaborationsdiagrammen, oder Akivitätsdiagrammen beschrieben werden. 
+An dieser Stelle sollten die dynamische Aspekte, zum Beispiel mit Hilfe von UML Sequenz-, Aktivitäts- oder Zustandsdiagrammen spezifiziert werden. 
 
 ## 5.3 Logik 
 

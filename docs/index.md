@@ -55,18 +55,18 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 3](./week3) | Prinzipien des Software-Engineerings   | Übung 2: Code verstehen | 
 |    | Modulbeziehungen |  | 
 |[Woche 4](./week4) | Softwaredesign | Übung 3: Unit tests | 
-|[Woche 5](./week5) | OO Design | Pitch: Projektideen  | 
-|    | Solid Prinzipien | Übung 4: Jabref erweitern |
-|[Woche 6](underconstruction)   | Anforderungsanalyse   | Projektrepository erstellen  | 
+|[Woche 5](./week5) | OO Design | Übung 4: Jabref erweitern  | 
+|    | Solid Prinzipien | Pitch: Projektideen|
+|[Woche 6](./week6)   | Anforderungsanalyse   | Projektrepository erstellen  | 
 |         |    |   Pflichtenheft erstellen |
-|[Woche 7](underconstruction) | Softwarespezifikation  | Prototyping / Design|
-|[Woche 8](underconstruction) | UML | Prototyping / Design  |
-|[Woche 9](underconstruction) | Verifikation / Grundlagen des Testens | Design / Testplan erstellen |
+|[Woche 7](./week7) | Softwarespezifikation  | Prototyping / Design|
+|[Woche 8](./week8) | UML | Prototyping / Design  |
+|[Woche 9](./week9) | Verifikation / Grundlagen des Testens | Design / Testplan erstellen |
 |                       | Testen im Grossen | | 
-| [Woche 10](underconstruction) | Testen im Kleinen   | Implementation / Testen |
-| [Woche 11](underconstruction)    | Softwareprozesse | Implementation / Testen |
+| [Woche 10](./week10) | Testen im Kleinen   | Implementation / Testen |
+| [Woche 11](./week11)    | Softwareprozesse | Implementation / Testen |
 |             | Agile Softwareentwicklung   | |
-| [Woche 12](underconstruction)| Scrum  | Implementation / Testen|
+| [Woche 12](./week12)| Scrum  | Implementation / Testen|
 |         | Continuous delivery | |
 | Woche 13 | Projektpräsentationen (I) | Projektpräsentationen (II) |
 | Woche 14 | Zusammenfassung / Prüfungsvorbesprechung | - |

@@ -28,7 +28,7 @@ Stellen sie sich vor, dass die Tests typischerweise von einem eigenen Testteam d
 
 ## 2. Systemübersicht
 
-Hier sollte eine kurze übersicht über das System gegeben werden, mit besonderem Fokus auf die zu testenden Komponenten.
+Hier sollte eine kurze Übersicht über das System gegeben werden, mit besonderem Fokus auf die zu testenden Komponenten.
 
 
 ## 3. Merkmale
@@ -37,20 +37,21 @@ Hier sollte eine kurze übersicht über das System gegeben werden, mit besondere
 
 #### 3.1.1 Funktionale Anforderungen
 
-Welche spezifizierten Funktionalen Anforderungen werden getestet? Referenzieren sie auch mittels dem Identifier (z.B. /LF10/ ) im Pflichtenheft.
+Welche spezifizierten funktionalen Anforderungen werden getestet? Referenzieren sie auch mittels dem Identifier (z.B. /LF10/ ) im Pflichtenheft.
 
 ### 3.2 Nicht zu testende Merkmale (Features / Funktionen)
 
-Welche Aspekte werden explizit nicht getestet?
+Welche Aspekte werden explizit nicht getestet? Bitte begründen weshalb nicht. 
 
 ## 4 Vorgehensweise
 
 ### 4.1 Modul und Integrationstests
-Hier können sie angeben wie sie diese Tests durchführen möchten. Wir empfehlen wenn möglich die Komponenten mittels automatischen Unit Tests zu testen.
+Hier können sie angeben wie sie diese Tests durchführen möchten. Wir empfehlen wenn möglich viel über automatisierte Unittests zu testen. 
+Vor allem grafische Komponenten können aber nicht immer automatisiert getestet werden und erfordern manuelle Tests.
 
 ### 4.2 Funktionstest
 
-Wie werden die funktionalen Anforderungen getestet?
+Wie werden die funktionalen Anforderungen (aus dem Pflichtenheft) getestet?
 Beispielsweise können sie angeben, dass die Funktionalität via Graphischer Benutzeroberfläche getestet wird.
 
 ### 5 Hardware und Softwareanforderungen
