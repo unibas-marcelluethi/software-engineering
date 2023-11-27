@@ -8,27 +8,22 @@ Präsentieren Sie die von Ihnen entwickelte Erweiterung ihren Kolleginnen und Ko
 
 #### Präsentationsformat:
 
-* Dauer: 5 bis maximal 8 Minuten
+* Dauer: 5 Minuten
 * Medien: Slides und Software Demo
 
 #### Inhalt
 
 Die Präsentation sollte mindestens folgende Punkte ansprechen:
 
-* Welches Problem sollte ihre Erweiterung lösen? 
-    * Was sind die wichtigsten Anforderungen an die Software?
-* Kurzübersicht Design 
-    * Was musste erweitert/geändert werden?
-    * Was war die wichtigste Designentscheidungen
+* Was ist das Ziel Ihrer Erweiterung? 
+* Was waren die wichtigsten Designentscheide
+    * Kurzübersicht Ihres Softwaredesigns
 * Live-demo Ihrer Erweiterung 
 * Reflexion / Lessons learned
-    * Was ist das wichtigste, das Sie beim Entwickeln der Erweiterung gelernt haben?
-    * Was war unerwartet am Prozess? 
-    * Was würden Sie beim nächsten Mal anders machen?
+    * Eine Erkenntnis aus diesem Projekt, die Sie in weitere Projekte mitnehmen werden.
 
 #### Zeitplan
 Die Präsentationen finden am 13. Dezember (08.15-10.00 und 12.15 - 14.00) statt. Die Reihenfolge der Präsentationen wird noch bekanntgegeben.
-
 
 #### Abgabe der Präsentationsfolien
 
