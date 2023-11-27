@@ -9,7 +9,8 @@ title : Woche 14
 
 # Folien, Videos und Artikel
 
-* Slides (auf Adam)
+Die Slides werden vor der Vorlesung hier veröffentlicht.
+* <!-- Slides (auf Adam) -->
 
 ### Weitere Ressourcen  
 

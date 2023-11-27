@@ -21,7 +21,7 @@ und moderne Entwicklungswerkzeuge verbinden.
 
 ### Präsenzveranstaltung vom 6 Dezember
 
-* In der Präsenzveranstaltung von 8-10 können Sie an Ihrem Projekt arbeiten. Der Theorie-Input wird stattdessen in der Übungsstunde erfolgen. Wir werden da einen Gastvortrag zum Thema Agile Softwareentwicklung hören. *
+* In der Präsenzveranstaltung von 8-10 können Sie an Ihrem Projekt arbeiten. Der Theorie-Input wird stattdessen in der Übungsstunde erfolgen. Wir werden da einen Gastvortrag zum Thema Agile Softwareentwicklung hören. 
 
 
 ## Übungsstunde

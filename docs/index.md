@@ -68,8 +68,8 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |             | Agile Softwareentwicklung   | |
 | [Woche 12](./week12)| Scrum  | Implementation / Testen|
 |         | Continuous delivery | |
-| Woche 13 | Projektpräsentationen (I) | Projektpräsentationen (II) |
-| Woche 14 | Zusammenfassung / Prüfungsvorbesprechung | - |
+| [Woche 13](./week13) | Projektpräsentationen (I) | Projektpräsentationen (II) |
+| [Woche 14](./week14) | Zusammenfassung / Prüfungsvorbesprechung | - |
 
 
 ## Literatur / Weiterführende Links
