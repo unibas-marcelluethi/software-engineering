@@ -28,7 +28,7 @@ Eine Erweiterung, die Grundsätzlich unabhängig von JabRef laufen könnte und n
 Investieren Sie etwas Zeit in diesen Schritt. Wenn Sie ein Projekt definieren, an dem Sie gerne Arbeiten, wird Ihnen das Projekt auch mehr Spass machen.
 
 
-## Kurze Projetbeschreibung
+## Kurze Projektbeschreibung
 
 Schreiben Sie eine kurze Projektbeschreibung. Nutzen Sie dazu das folgende Template:
 
