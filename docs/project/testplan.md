@@ -30,4 +30,4 @@ Finden Sie heraus, wie hoch die Testabdeckung durch Unittests für Jabref insges
 #### Abgabe:
 
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](../project/project-summary.html).  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an.
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](../project/project-summary.html).  Geben Sie Ihren Betreuer  als Reviewer an.

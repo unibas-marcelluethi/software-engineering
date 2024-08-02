@@ -7,7 +7,8 @@ layout: default
 
 #### Einführung
 
-Der nächste Schritt im Projekt ist es anhand der Anforderungen das zu entwickelnde System zu spezifizieren und die technische Umsetzung zu planen. Wie wir im Artikel [A rational design process - and how to fake](https://users.ece.utexas.edu/~perry/education/SE-Intro/fakeit.pdf) it gesehen haben, werden wir es nie schaffen, bereits in der Designphase alle möglichen Probleme vorauszusehen. Deshalb sollten Sie die nächsten zwei Schritte, nämlich Prototyp schreiben und technische Dokumentation erstellen, parallel ausführen. Überlegen Sie sich auch, ob die neuen Erkenntnisse, die Sie durch diese Schritte erlangen, Auswirkungen auf die im Pflichtenheft spezifizierten Anforderungen haben.
+Der nächste Schritt im Projekt ist es anhand der Anforderungen das zu entwickelnde System zu spezifizieren und die technische Umsetzung zu planen. Um eine gute Vorstellung über das Problem zu bekommen, sollten Sie versuchen, parallel dazu einen groben Prototypen zu erstellen. 
+Überlegen Sie sich auch, ob die neuen Erkenntnisse, die Sie durch diese Schritte erlangen, Auswirkungen auf die im Pflichtenheft spezifizierten Anforderungen haben.
 
 #### Vorbereitung
 

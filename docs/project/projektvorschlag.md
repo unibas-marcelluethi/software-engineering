@@ -2,7 +2,7 @@
 layout: default
 title : Projektauswahl und Projektpitch
 ---
-# Projektauswahl und Pitch
+# Projektvorschlag
 
 Im ersten Projektschritt werden sie sich in Gruppen von 2-5 Studierenden zusammenfinden und ein Projekt auswählen. Dieses Projekt werden Sie dann in den folgenden Wochen realisieren. Das Projekt muss eine Erweiterung von JabRef sein. Ansonsten sind Sie in der Wahl des Projekts frei.
 
@@ -20,20 +20,23 @@ Falls Sie keine Ideen haben, können Sie sich aber auch von den [offenen Issues]
 * Anbindung JabRef an Master/Bachelorarbeit Archiv der Uni Basel 
 * Diverse Gamifications
 * Integration von ChatGPT (via API) um direkt aus JabRef Fragen zu einem Paper stellen zu können 
-* ...
+* Gamification: Punkte für das Lesen von Papers, für das Schreiben von Reviews, für das Hinzufügen von Papers
 
+Eine wichtige Anforderung ist, dass sich die Anwendung in Jabref integriert und einige der bestehenden Funktionalitäten von JabRef nutzt. 
+Eine Erweiterung, die Grundsätzlich unabhängig von JabRef laufen könnte und nur über einen Button in JabRef gestartet wird, ist nicht erlaubt.
 
 Investieren Sie etwas Zeit in diesen Schritt. Wenn Sie ein Projekt definieren, an dem Sie gerne Arbeiten, wird Ihnen das Projekt auch mehr Spass machen.
 
 
-## Pitch
+## Kurze Projetbeschreibung
 
-Am 18. Oktober werden Sie in der Übungsstunde ihr Projekt vorstellen. Dieser Pitch soll dazu dienen, dass Sie sich mit dem Projekt auseinandersetzen und sich Gedanken über die Machbarkeit machen und auch erfahren, was andere machen. Sie sollen sich auch überlegen, wie Sie das Projekt angehen wollen und wie Sie die Arbeit in der Gruppe aufteilen wollen. 
+Schreiben Sie eine kurze Projektbeschreibung. Nutzen Sie dazu das folgende Template:
 
-In dieser Kurzpräsentation sollen Sie folgende Punkte ansprechen:
-* Was macht unsere Erweiterung?
-* Welche Hauptschwierigkeit erwarten wir?
-* Erste Schätzung des Projektaufwands.
-* Mögliche Aufteilung der Arbeiten.
+- [Template Projektvorschlag](./templates/Projektvorschlag.md)
 
-Sie können entweder frei sprechen, oder auch eine Präsentationsfolie als Unterstützung verwenden. Die Vorstellung sollte nicht länger als 1 Minute dauern. 
+
+## Abgabe
+
+Reichen Sie Ihren Projektvorschlag auf [Adam](https://adam.unibas.ch/goto_adam_exc_1841758.html) ein.
+
+

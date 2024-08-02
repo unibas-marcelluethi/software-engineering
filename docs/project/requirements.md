@@ -55,6 +55,6 @@ Die Schätzung des Aufwands für eine Task ist schwierig. Je besser die funktion
 
 ## Abgabe
 
-Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](./project-summary).  Geben Sie Ihren Betreuer sowie ```marcelluethi``` als Reviewer an.
+Die Abgabe erfolgt pro Gruppe, mittels Pull Request auf ihren `project` branch. Den Abgabetermin finden Sie in der [Übersicht](./project-summary).  Geben Sie Ihren Betreuer als Reviewer an.
 
 
