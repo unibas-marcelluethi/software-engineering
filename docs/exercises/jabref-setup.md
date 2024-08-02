@@ -7,7 +7,7 @@ title : Woche 1
 
 ## Administratives
 
-* Dieses Übungsblatt wird in der Übungsstunde vom 20. September eingeführt und bearbeitet. Falls die Zeit in der Übungsstunde nicht reicht, sollte das Setup bis zur Übungsstunde am 27. September fertiggestellt werden.
+* Dieses Übungsblatt wird in der Übungsstunde vom 20. September eingeführt und bearbeitet. Falls die Zeit in der Übungsstunde nicht reicht, muss das Setup bis zur Übungsstunde am 24. September fertiggestellt werden.
 
 * Es ist keine Abgabe erforderlich.
 
@@ -62,20 +62,20 @@ https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-
 Falls Sie Probleme haben SSH einzurichten, können Sie alternativ auch ein Access Token erstellen und 
 mit diesem Arbeiten. Eine Anleitung dazu finden Sie [hier](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). 
 
-### Installieren von Java und JavaFX
+### Installieren von Java 
 
-Für die Entwicklung von JabRef nutzen wir Java in der Version 19. Wir empfehlen Ihnen die Version 
-von Eclipse Temurin, die Sie [hier](https://adoptium.net/temurin/releases?version=19) herunterladen
+Für die Entwicklung von JabRef nutzen wir Java in der Version 21. Wir empfehlen Ihnen die Version 
+von Eclipse Temurin, die Sie [hier](https://adoptium.net/) herunterladen
 können. 
 
 --
 Um zu überprüfen ob Java korrekt auf Ihrem System verfügbar ist, öffnen Sie ein Terminal, und setzen die
 Umgebungsvariable ```JAVA_HOME``` und ```PATH``` auf das neu installierte JDK.
 
-Unter Windows (Powershell) machen Sie das wie folgt:
+Unter Windows (Powershell) machen Sie das wie folgt: 
 ```
-$env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-19.0.2.7-hotspot"
-$env:PATH="$env:JAVA_HOME\bin:$PATH" 
+$env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot"
+$env:PATH="$env:JAVA_HOME\bin;$env:PATH" 
 ```
 *Achtung:* Der Pfad kann sich je nach Version unterscheiden. Bitte passen Sie den Pfad entsprechend an.
 
@@ -87,7 +87,7 @@ export "PATH=$JAVA_HOME/bin:$PATH"
 
 und unter Linux setzen Sie diese Variablen wie folgt:
 ```
-export JAVA_HOME=PFAD_ZU_IHRER_JAVA_19_INSTALLATION
+export JAVA_HOME=PFAD_ZU_IHRER_JAVA_21_INSTALLATION
 export “PATH=$JAVA_HOME/bin:$PATH”
 ```
 
@@ -97,9 +97,9 @@ Danach starten Sie ein neues Terminal und geben folgendes Kommando ein:
 ```
 Die Ausgabe sollte ungefähr wie folgt aussehen:
 ```bash
-openjdk version "19.0.2" 2023-01-17
-OpenJDK Runtime Environment Temurin-19.0.2+7 (build 19.0.2+7)
-OpenJDK 64-Bit Server VM Temurin-19.0.2+7 (build 19.0.2+7, mixed mode, sharing)
+openjdk version "21.0.4" 2024-07-16 LTS
+OpenJDK Runtime Environment Temurin-21.0.4+7 (build 21.0.4+7-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.4+7 (build 21.0.4+7-LTS, mixed mode, sharing)
 ```
 *Anmerkung:* Das Buildsystem Gradle, welches wir für das Kompilieren und Ausführen von JabRef verwenden, nutzt die Umgebungsvariable ```JAVA_HOME``` um das JDK zu finden. Diese Umgebungsvariable muss also immer richtig gesetzt sein, wenn Sie JabRef aus einem Terminal kompilieren oder ausführen wollen.
 
@@ -178,8 +178,6 @@ Installieren Sie die Entwicklungsumgebung [IntelliJ IDEA](https://www.jetbrains.
 
 Folgen Sie dann der Anleitung [Setup a local workspace](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace/) in der JabRef [Development Documentation](https://devdocs.jabref.org/). 
 Die ersten 3 Schritte, die mit *Pre condition* beginnen, können Sie überspringen, da Sie diese bereits erfüllt haben.
-
-*Bemerkung 2:* In der Anleitung wird bereits Java 20 verwendet. Wir verwenden aber Java 19. Sie müssen also bei der Auswahl des JDKs die Version 19 wählen.	
 
 
 ### Ausführen des Projekts aus der IDE
