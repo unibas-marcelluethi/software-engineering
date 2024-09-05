@@ -21,7 +21,7 @@ Die Studierenden
 ## Slides und weitere Literatur
 
 * Einführung in Software Engineering
-    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1648782_download.html)
+    * Slides (Auf Adam): [pdf](../underconstruction)
 
 
 ## Übungsstunde
@@ -32,11 +32,10 @@ Die Studierenden
 
 ## Hausaufgaben
 
-Bitte bearbeiten Sie folgende Aufgaben vor Mittwoch, 27. September. 
+Bitte bearbeiten Sie folgende Aufgaben vor Dienstag, 24. September. 
 
-* Bearbeiten Sie den [Selbsttest für Woche 1](https://adam.unibas.ch/goto_adam_tst_1650779.html)
-* Richten Sie die Entwicklungsumgebung und JabRef gemäss obiger [Anleitung](../exercises/jabref-setup) ein.
-* Arbeiten Sie den [Selbststudiumsteil Woche 2](../week2/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
+* Richten Sie die Entwicklungsumgebung und JabRef gemäss obiger [Anleitung](../exercises/jabref-setup) ein. 
 * Experimentieren Sie mit JabRef und finden Sie heraus, was Sie mit der Software machen können. 
+* Machen Sie sich erste Gedanken zu möglichen Erweiterungen und mit welchen Mitstudierenden Sie zusammenarbeiten möchten.
 
 

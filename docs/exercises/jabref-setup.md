@@ -7,7 +7,7 @@ title : Woche 1
 
 ## Administratives
 
-* Dieses Übungsblatt wird in der Übungsstunde vom 20. September eingeführt und bearbeitet. Falls die Zeit in der Übungsstunde nicht reicht, muss das Setup bis zur Übungsstunde am 24. September fertiggestellt werden.
+* Dieses Übungsblatt wird in der Übungsstunde vom 17. September eingeführt und bearbeitet. Falls die Zeit in der Übungsstunde nicht reicht, muss das Setup bis zur Übungsstunde am 24. September fertiggestellt werden.
 
 * Es ist keine Abgabe erforderlich.
 
