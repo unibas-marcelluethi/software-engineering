@@ -16,7 +16,7 @@ Sie denken sich als Gruppe ein Projekt aus und müssen dies dann strukturiert re
 | JabRef kennenlernen | - | - | - | Eigene Experimente / Übungen 1 - 4 |
 | [Projektvorschag einreichen](./projektvorschlag.md)  | 4. Oktober | 8. Oktober | - | Projektbeginn ist der 8. Oktober |
 | [Gruppenrepository einrichten](./group-repository) | 8. Oktober | --   | 8. Oktober | | 
-| [Pflichtenheft/Projektplan erstellen](./requirements) | 11. Oktober | 15. Oktober  | 22. November |  | 
+| [Pflichtenheft/Projektplan erstellen](./requirements) | 11. Oktober | 15. Oktober  | 22. Oktober |  | 
 | [Design und Prototyp erstellen](./technical-doc) | 1. November | 5. November | 12. November | |
 | [Testplan erstellen](./testplan) | 15. November | 19. November | 26. November| |
 | [Abschlusspräsentation](./presentation) | 3/10. Dezember |  --  | 3/10. Dezember | Präsentationen vor Ort | 
