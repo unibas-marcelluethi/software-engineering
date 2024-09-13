@@ -4,53 +4,42 @@ title : Woche 2
 ---
 
 
-# Woche 2: Eigenschaften und Qualitätsmerkmale von Software
+# Woche 2: Prozesse und Werkzeuge des Software Engineerings
 
-In dieser Woche diskutieren wir Eigenschaften von Software und wie sich Software von anderen Produkten unterscheidet. 
-Wir lernen auch einige Qualitätsmerkmale von Software kennen. 
+In dieser Woche beschäftigen wir uns mit Prozessen und Werkzeugen des modernen Software Engineerings. 
+Wir diskutieren, die Wichtigkeit von Softwareprozessen und wie sich Softwareprozesse mit den 
+veränderten Anforderungen entwickelt haben. Dies führt uns zur modernen Softwareentwicklung, und 
+*continuous deployment*. Wir besprechen, welche Werkzeuge wir für Continuous Integration und Continuous Deployment benötigen und wie diese zusammenarbeiten. Zudem besprechen wir die Wichtigkeit von Versionsverwaltung und wie wir diese in der Praxis einsetzen. 
+
+## Lernziele 
+
+Die Studierenden
+
+* wissen was ein Softwareprozess und ein Softwareprozessmodell ist
+* können die wichtigsten Fragen nennen, die ein Softwareprozess beantworten soll.
+* kennen einige wichtige Softwareprozesse und können die Vor- und Nachteile dieser Prozesse diskutieren.
+* wissen was Continuous Integration und Continuous Deployment ist und welche Rolle Versionsverwaltung, automatisierte Buildsysteme und automatisierte Tests spielen.
+* können erklären, wieso Versionsverwaltung für Continuous Deployment wichtig ist.
+* können erklären, weshalb agile Prozesse in der modernen Softwareentwicklung eine wichtige Rolle spielen.
 
 
-## Theorie
+## Übungsstunde:
 
-#### Vorbereitung (zu bearbeiten bis 26. September)
-
-Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte folgende Schritte:
-
-* Schritt 1: Schauen Sie das Video "Eine kurze Geschichte des Software Engineerings".  ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=bb9396c3-7d6c-428b-9409-b0600042e57c), [Slides](./slides/Geschichte.pdf))
-* Schritt 2: Schauen Sie das Video "Eigenschaften von Software".  ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=dfb42bd3-b31b-48bc-85e2-b0600042e578), [Slides](./slides/Eigenschaften.pdf))
-* Schritt 3: Schauen  Sie das Video "Qualitätsmerkmale von Software" ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4a260faf-a95b-4ca0-b0ee-b0600042e58a), [Slides](./slides/Qualitätsmerkmale.pdf
-))
-* Schritt 4: Lesen Sie das Paper von Fred Brooks: No Silver Bullet. ([Paper](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf))
-* Schritt 5: Überprüfen Sie ihr Wissen, indem sie den Selbsttest auf Adam bearbeiten. [Adam](https://adam.unibas.ch/goto_adam_tst_1629494.html).
-
-####  Präsenzveranstaltung vom 27. September
-
-In der Präsenzveranstaltung werden wir die im Selbststudium bearbeiten Themen in Diskussionen und Gruppenarbeiten vertiefen. 
-Wir werden auch auf das Paper von Fred Brooks eingehen und diskutieren, inwiefern seine Prognosen vor 40 Jahren noch heute relevant sind. 
-
-## Praxis:
-
- Im praktischen Teil der Veranstaltung geben wir eine kurze Einführung in Versionsverwaltung mit Git. 
+ Im praktischen Teil der Veranstaltung geben wir eine kurze Einführung in Versionsverwaltung mit Git geben. 
 
 Danach werden Sie selbst erste, kleine Änderungen an Jabref anbringen. 
 
 * [Übungsblatt 2](../exercises/first-changes). 
 
 
+
+## Slides und weitere Literatur
+
+* Einführung in Software Engineering
+    * Slides (Auf Adam): [pdf](../underconstruction)
+* Netflix Blog: [Continuous Deployment](https://netflixtechblog.com/deploying-the-netflix-api-79b6176cc3f0)
+
 ## Hausaufgaben
 
-* Arbeiten Sie den [Selbststudiumsteil Woche 3](../week3/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Falls Sie an der Präsenzveranstaltung nicht anwesend waren, bearbeiten Sie die [Theoriefragen](theory-exercises) und reichen diese bis zum 4.10 auf [Adam](https://adam.unibas.ch/goto_adam_exc_1629562.html) ein. 
 * Bearbeiten Sie die [praktische Übung](../exercises/first-changes) und reichen Sie diese wie angegeben per Pull Request ein. 
-
-## Lernziele 
-
-Die Teilnehmenden
-* können die Hauptcharakteristiken nennen, die Software von anderen Industrieprodukten unterscheidet.
-* kennen die wichtigsten Qualitätsmerkmale von Software und Softwareprozessen und können einschätzen, wie sich diese Gegenseitig beeinflussen.
-* können interne von externen Qualitätsmerkmalen unterscheiden und den Unterschied erklären. 
-* können den Unterschied zwischen Essential und Accidental Komplexität erklären.
-* verstehen, weshalb der Mensch in der Softwareentwicklung eine zentrale Rolle spielt und einige Auswirkungen davon ableiten.
-* können argumentieren, weshalb Softwareentwicklung ein intrinsisch schwieriges Unterfangen ist.
-
-
+* Beginnen Sie an Ihrem [Projektvorschlag](../project/projektvorschlag) zu arbeiten.

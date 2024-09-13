@@ -43,17 +43,15 @@ Das Open Source Projekt Jabref [(Offizielles Github Repositories)](https://githu
 
 Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projektseite](project/project-summary.html).
 
-## Programm
+## Programm (Vorläufig)
 
 |  | Theorie | Übung / Projekt 
 |------| ----- | --------- |
 |[Woche 1](./week1) | Was ist Software engineering  | Übung 0: Jabref Setup | 
-|    | Prinzipien des Software Engineerings | |
 |    | Eigenschaften von Software | | 
-|[Woche 2](./underconstruction) | Prozesse und Werkzeuge des Software Engineerings| Übung 1: Erste Änderungen an Jabref |
-|    |  Software Qualitätsmerkmale | | 
-|[Woche 3](./underconstruction) | Anforderungsanalyse  | Übung 2: Code verstehen | 
-|    | Modulbeziehungen | Gruppe gewählt / Projektvorschlag eingereicht | 
+|[Woche 2](./week2) | Prozesse und Werkzeuge des Software Engineerings| Übung 1: Erste Änderungen an Jabref |
+|[Woche 3](./underconstruction) | Qualitätsmerkmale von Software  | Übung 2: Code verstehen | 
+|    | nforderungsanalyse | Gruppe gewählt / Projektvorschlag eingereicht | 
 |[Woche 4](./underconstruction) | Architektur / Design | Übung 3: Unit tests | 
 |    | UML | Entwurf Pflichtenheft | 
 |[Woche 5](./underconstruction) | Modularität / Design Patterns I | Übung 4: Jabref erweitern  | 
