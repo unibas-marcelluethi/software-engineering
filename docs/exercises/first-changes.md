@@ -8,7 +8,7 @@ title : Woche 2
 ## Administratives
 
 * Eine kurze Einführung in Git/Github und Hilfestellungen zu den Aufgaben gibt es in der Übungsstunde.
-* Dieses Übungsblatt muss bis spätestens am 03. Oktober via Pull Request abgegeben werden.
+* Dieses Übungsblatt muss bis spätestens am 30. September via Pull Request abgegeben werden.
 
 
 In dieser Übung werden Sie einen typischen Arbeitsablauf mit Git durchspielen. 

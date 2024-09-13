@@ -5,7 +5,7 @@ title : Woche 5
 # Übungsblatt 5: Eine erste Erweiterung
 
 
-* Dieses Übungsblatt muss bis spätestens 25. Oktober, 23.59 bearbeitet und via Pull Request abgegeben werden.
+* Dieses Übungsblatt muss bis spätestens 21. Oktober, 23.59 bearbeitet und via Pull Request abgegeben werden.
 * Wir empfehlen, diese Übungsblatt in Zweiergruppen zu bearbeiten (siehe Abgabeinstruktionen am Ende dieses Dokuments)
 
 
