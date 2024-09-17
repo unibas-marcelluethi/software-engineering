@@ -4,7 +4,7 @@ title : Projektauswahl und Projektpitch
 ---
 # Projektvorschlag
 
-Im ersten Projektschritt werden sie sich in Gruppen von 2-5 Studierenden zusammenfinden und ein Projekt auswählen. Dieses Projekt werden Sie dann in den folgenden Wochen realisieren. Das Projekt muss eine Erweiterung von JabRef sein. Ansonsten sind Sie in der Wahl des Projekts frei.
+Im ersten Projektschritt werden sie sich in Gruppen von 3-5 Studierenden zusammenfinden und ein Projekt auswählen. Dieses Projekt werden Sie dann in den folgenden Wochen realisieren. Das Projekt muss eine Erweiterung von JabRef sein. Ansonsten sind Sie in der Wahl des Projekts frei.
 
 Wir empfehlen Ihnen, sich eine eigene Erweiterung auszudenken. Diese kann, muss aber nicht von praktischem Nutzen sein. Das Wichtigste ist, dass diese vom Arbeitsumfang und Schwierigkeitsgrad her angemessen ist, sich gut spezifizieren lässt und sich in Jabref integriert.
 Falls Sie keine Ideen haben, können Sie sich aber auch von den [offenen Issues](https://github.com/JabRef/jabref/issues) in JabRef inspirieren lassen. Im speziellen finden Sie auch speziell [für Universitätsprojekte geeignete issues](https://github.com/orgs/JabRef/projects/3). Stellen Sie aber sicher, dass dieser nicht bereits von jemand anderem bearbeitet wird und dass Sie das im Issue diskutierte Problem auch wirklich verstehen.  
