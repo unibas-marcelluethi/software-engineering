@@ -62,10 +62,10 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 9](./underconstruction) | Verifikation / Grundlagen des Testens | Implementation eigene Erweiterung|
 |                       | Testen im Grossen | | 
 | [Woche 10](./underconstruction) | Testen im Kleinen   | Testplan erstellen|
-| [Woche 11](./underconstruction)    | Gastvortrag Agile Softwareentwicklung  | Besprechung Testplan |
-| [Woche 12](./underconstruction)|  Arbeit am Projekt | Projektpräsentationen (I)  |
-| [Woche 13](./underconstruction) | Geschichte / Reflexion / Diskussion (I) | Projektpräsentationen (II)|
-| [Woche 14](./underconstruction) | Geschichte / Reflexion / Diskussion (II) |  |
+| [Woche 11](./underconstruction)    |Geschichte / Reflexion / Diskussion  | Besprechung Testplan |
+| [Woche 12](./underconstruction)|    Projektpräsentationen | Projektpräsentationen   |
+| [Woche 13](./underconstruction) | Gastvortrag Agile Softwareentwicklung ||
+| [Woche 14](./underconstruction) | Zusammenfassung |  |
 
 
 ## Literatur / Weiterführende Links
