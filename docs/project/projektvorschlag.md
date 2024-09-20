@@ -23,9 +23,9 @@ Falls Sie keine Ideen haben, können Sie sich aber auch von den [offenen Issues]
 * Gamification: Punkte für das Lesen von Papers, für das Schreiben von Reviews, für das Hinzufügen von Papers
 
 Eine wichtige Anforderung ist, dass sich die Anwendung in Jabref integriert und einige der bestehenden Funktionalitäten von JabRef nutzt. 
-Eine Erweiterung, die Grundsätzlich unabhängig von JabRef laufen könnte und nur über einen Button in JabRef gestartet wird, ist nicht erlaubt.
+Eine Erweiterung, die grundsätzlich unabhängig von JabRef laufen könnte und nur über einen Button in JabRef gestartet wird, ist nicht erlaubt.
 
-Investieren Sie etwas Zeit in diesen Schritt. Wenn Sie ein Projekt definieren, an dem Sie gerne Arbeiten, wird Ihnen das Projekt auch mehr Spass machen.
+Investieren Sie etwas Zeit in diesen Schritt. Wenn Sie ein Projekt definieren, an dem Sie gerne arbeiten, wird Ihnen das Projekt auch mehr Spass machen.
 
 
 ## Kurze Projektbeschreibung
