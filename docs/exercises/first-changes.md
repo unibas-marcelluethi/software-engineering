@@ -155,7 +155,9 @@ JabRef in der Entwicklungsumgebung (IntelliJ)
 Ändern Sie den Link so, dass dieser neu nicht auf die JabRef Github Seite, sondern auf ihr privates JabRef Repository zeigt (https://github.com/GITHUB_USERNAME/jabref) zeigt.
 
 *Tipp 1:* Verwenden Sie die Suchfunktionen *Search Everywhere* (```Shift Shift```) oder *Find in Path* (```Ctrl-Shift-F```) um die entsprechenden Stellen im Code zu finden.
+
 *Tipp 2:* Neben den Java Dateien, müssen Sie auch die Dateien mit der Endung *.fxml anschauen. Diese enthält das eigentliche Layout der Elemente in der Dialogbox.
+
 *Tipp 3:* Um zur Implementation einer Methode oder Klasse zu springen, drücken Sie die `Ctrl`-Taste und klicken Sie auf den Methoden oder Klassennamen. 
 
 
@@ -209,7 +211,7 @@ Hier würden Sie normalerweise das Upstream repository wählen.
 
 ![image](images/jabref-target-repo.png)
 
-Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie einen Reviewer angeben. Geben Sie hier den Ihnen zugeordneten Reviewer (siehe [diese Liste](https://adam.unibas.ch/goto_adam_file_1659074_download.html)) an. 
+Auf der folgenden Seite können Sie nun Ihre Änderung kurz beschreiben, sowie einen Reviewer angeben. Geben Sie hier den Ihnen zugeordneten Reviewer (siehe [diese Liste](https://adam.unibas.ch/goto_adam_file_1879922_download.html)) an. 
 
 ![image](images/jabref-pr-reviewers.png)
 
