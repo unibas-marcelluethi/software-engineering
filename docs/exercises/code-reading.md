@@ -6,8 +6,8 @@ title : Woche 3
 
 ## Administratives
 
-Eine Einführung in Gradle gibt es in der Übungsstunde vom 30. November. 
-* Abgabe via Pull Request bis spätestens 7. Oktober, 23.59.
+Eine Einführung in Gradle gibt es in der Übungsstunde vom 1. Oktober. 
+* Abgabe via Pull Request bis spätestens 7. Oktober, 15:00.
 
 
 ## Einführung
