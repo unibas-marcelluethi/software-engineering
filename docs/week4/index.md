@@ -14,7 +14,7 @@ Wir werden in dieser Woche auch eine erste Einführung in eine grafische Modelli
 
 ## Theorie
 
-#### Vorbereitung (zu bearbeiten bis 08. Oktober)
+#### Vorbereitung (zu bearbeiten bis 07. Oktober)
 
 Als Vorbereitung für die Präsenzveranstaltung in dieser Woche bearbeiten Sie bitte folgende Schritte:
 
@@ -24,7 +24,7 @@ Als Vorbereitung für die Präsenzveranstaltung in dieser Woche bearbeiten Sie b
 * Schritt 4: Schauen Sie sich das Video "Einführung in die UML" an. ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8c8cffc1-41ce-442c-b391-b06600bd5a47), [Slides](./slides/UML-Klassendiagramme.pdf))
 * Schritt 5: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_1629491.html). <!-- gibt es das Jahr wieder Adamtests? ich habe auf der aktuellsten.  Lg Giovanni-->
 
-####  Präsenzveranstaltung vom 09. Oktober 
+####  Präsenzveranstaltung vom 08. Oktober 
 
 In der Präsenzveranstaltung werden wir die im Selbststudium bearbeiten Themen in Diskussionen und Gruppenarbeiten vertiefen. 
 Wir werden uns nochmals über Modulbeziehungen Gedanken machen, das Java Modulsystem anschauen und uns mit UML Klassendiagrammen beschäftigen.
