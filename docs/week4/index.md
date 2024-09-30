@@ -14,8 +14,7 @@ Wir werden in dieser Woche auch eine erste Einführung in eine grafische Modelli
 
 ## Theorie
 
-#### Vorbereitung (zu bearbeiten bis 10. Oktober)
-
+#### Vorbereitung (zu bearbeiten bis 08. Oktober)
 
 Als Vorbereitung für die Präsenzveranstaltung in dieser Woche bearbeiten Sie bitte folgende Schritte:
 
@@ -23,16 +22,16 @@ Als Vorbereitung für die Präsenzveranstaltung in dieser Woche bearbeiten Sie b
 * Schritt 2: Lesen Sie den Artikel  "Einige Merkmale guten Designs"  ([Artikel](./design-hints))"
 * Schritt 3: Lesen Sie den Artikel "Typische Architekturmuster". ([Artikel](./module-architectural-patterns))
 * Schritt 4: Schauen Sie sich das Video "Einführung in die UML" an. ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8c8cffc1-41ce-442c-b391-b06600bd5a47), [Slides](./slides/UML-Klassendiagramme.pdf))
-* Schritt 5: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_1629491.html).
+* Schritt 5: Bearbeiten Sie den Test. [(Adam)](https://adam.unibas.ch/goto_adam_tst_1629491.html). <!-- gibt es das Jahr wieder Adamtests? ich habe auf der aktuellsten.  Lg Giovanni-->
 
-####  Präsenzveranstaltung vom 11. Oktober
+####  Präsenzveranstaltung vom 09. Oktober 
 
 In der Präsenzveranstaltung werden wir die im Selbststudium bearbeiten Themen in Diskussionen und Gruppenarbeiten vertiefen. 
 Wir werden uns nochmals über Modulbeziehungen Gedanken machen, das Java Modulsystem anschauen und uns mit UML Klassendiagrammen beschäftigen.
 
 #### Weitere Ressourcen 
 
-* Als Referenz zum Thema Klassendiagramme finden Sie einen Auszug aus dem Buch "UML-Distilled" von Martin Fowler auf [Adam](https://adam.unibas.ch/goto_adam_file_1632200_download.html).
+* Als Referenz zum Thema Klassendiagramme finden Sie einen Auszug aus dem Buch "UML-Distilled" von Martin Fowler auf [Adam](https://adam.unibas.ch/goto_adam_file_1885900_download.html).
 
 * Zur Erstellung von einfachen UML Diagrammen eignet sich die Open Source Software [PlantUML](https://plantuml.com/). Mit dieser Software können Sie UML Diagramme als einfache Textdateien erstellen, welche dann in grafische Diagramme umgewandelt werden.
 
@@ -47,12 +46,12 @@ Wir werden uns nochmals über Modulbeziehungen Gedanken machen, das Java Modulsy
 
 ## Hausaufgaben
 
-Die folgenden Hausaufgaben sollten bis zum 18. Oktober bearbeitet werden. 
+Die folgenden Hausaufgaben sollten bis zum 14. Oktober bearbeitet werden. <!-- Ich bin mir nicht sicher wie viel von diesem Teil so bleibt, wegen des wechsels auf Frontal Unterricht. Letztes Jahr war es ja Flipped Classroom. Lg Giovanni -->
 
-* Arbeiten Sie den [Selbststudiumsteil Woche 5](../week5/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Falls Sie an der Präsenzveranstaltung nicht anwesend waren, bearbeiten Sie die [Theoriefragen](../week4/exercises/theory-exercises.md) und reichen diese bis zum 18.10. auf [Adam](https://adam.unibas.ch/goto_adam_exc_1629562.html) ein. 
-* Erstellen eines Projektpitchs für Ihre JabRef Erweiterung [Projektschritt I](../project/pitch)
-* Bearbeiten Sie die [praktische Übung](../exercises/unit-tests-und-ci) und reichen Sie diese wie angegeben per Pull Request ein. 
+* Arbeiten Sie den [Selbststudiumsteil Woche 5](../week5/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. <!-- Muss das angepasst oder gelöscht werden? Lg Giovanni -->
+* Falls Sie an der Präsenzveranstaltung nicht anwesend waren, bearbeiten Sie die [Theoriefragen](../week4/exercises/theory-exercises.md) und reichen diese bis zum 18.10. auf [Adam](https://adam.unibas.ch/goto_adam_exc_1629562.html) ein. <!-- Muss das angepasst oder gelöscht werden? Lg Giovanni -->
+* Erstellen eines Projektpitchs für Ihre JabRef Erweiterung [Projektschritt II](../project/group-repository.md)<!-- das wurde angepasst. Lg Giovanni -->
+* Bearbeiten Sie die [praktische Übung](../exercises/unit-tests-und-ci) und reichen Sie diese wie angegeben per Pull Request ein.
 
 
 ## Lernziele 
