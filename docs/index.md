@@ -50,7 +50,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 1](./week1) | Was ist Software engineering  | Übung 0: Jabref Setup | 
 |    | Eigenschaften von Software | | 
 |[Woche 2](./week2) | Prozesse und Werkzeuge des Software Engineerings| Übung 1: Erste Änderungen an Jabref |
-|[Woche 3](./underconstruction) | Qualitätsmerkmale von Software  | Übung 2: Code verstehen | 
+|[Woche 3](./week3) | Qualitätsmerkmale von Software  | Übung 2: Code verstehen | 
 |    | Anforderungsanalyse | Gruppe gewählt / Projektvorschlag eingereicht | 
 |[Woche 4](./underconstruction) | Architektur / Design | Übung 3: Unit tests | 
 |    | UML | Entwurf Pflichtenheft | 

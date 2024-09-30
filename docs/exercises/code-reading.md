@@ -123,7 +123,7 @@ In diesem Teil der Übung geht es darum, dass sie sich einen Grobüberblick übe
 
 #### 2.1 Dokumentieren von Packages
 
-Lesen Sie den [Auszug aus dem Buch](https://adam.unibas.ch/goto_adam_file_1629485.html) Java By Comparison zum Thema API Doc.
+Lesen Sie den [Auszug aus dem Buch](https://adam.unibas.ch/goto_adam_file_1885896_download.html) Java By Comparison zum Thema API Doc.
 
 
 Dokumentieren Sie dann die zwei folgenden Packages.
@@ -152,7 +152,7 @@ Schauen Sie sich die Klasse
 ```org.jabref.logic.protectedterms.ProtectedTermsLoader``` an. Dokumentieren Sie die Klasse selbst und die Methoden `addNewProtectedTermsList` und `getInternalLists` mit Javadoc. Folgen Sie dabei auch hier den im Buch beschriebenen Prinzipien.
 
 
-Orientieren Sie sich auch hier an den Leitlinien im Buch [Java by Comparison](https://adam.unibas.ch/goto_adam_file_1629485.html). 
+Orientieren Sie sich auch hier an den Leitlinien im Buch [Java by Comparison](https://adam.unibas.ch/goto_adam_file_1885896_download.html). 
 
 *Hinweis:* Nutzen Sie den Debugger um herauszufinden, welche Werte die einzelnen Felder/Variablen in der Klasse annehmen. Dies kann Ihnen wichtige Informationen geben. 
 
@@ -162,6 +162,6 @@ Die Abgabe der Übung erfolgt durch push vom Übungs-Branch:
 ```
 git push origin uebung3
 ```
-und entsprechenden Pull Request. Geben Sie hier den Ihnen zugeordneten Reviewer (siehe [diese Liste](https://adam.unibas.ch/goto_adam_file_1659074_download.html)) an. 
+und entsprechenden Pull Request. Geben Sie hier den Ihnen zugeordneten Reviewer (siehe [diese Liste](https://adam.unibas.ch/goto_adam_file_1879922_download.html)) an. 
 (Details dazu finden sie in [&Uuml;bungsblatt 2](./first-changes)).
 
