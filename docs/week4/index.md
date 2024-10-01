@@ -39,4 +39,4 @@ Dokumentieren.
 ## Hausaufgaben
 
 * Bearbeiten Sie die [praktische Übung](../exercises/unit-tests-und-ci) und reichen Sie diese wie angegeben per Pull Request ein. 
-* Reichen Sie Ihren [Projektvorschlag](../project/requirements) bis spätestens 11. Oktober ein. 
+* Reichen Sie Ihren [Pflichtenheft](../project/requirements) bis spätestens 11. Oktober ein. 
