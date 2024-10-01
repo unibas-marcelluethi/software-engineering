@@ -37,7 +37,7 @@ Dokumentieren.
 ## Slides und weitere Literatur
 
 * Prozesse und Werkzeuge des Software Engineerings
-    * Slides (Auf Adam): [pdf](../underconstruction)
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1891606_download.html)
 
 ## Hausaufgaben
 
