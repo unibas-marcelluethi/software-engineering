@@ -52,7 +52,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 2](./week2) | Prozesse und Werkzeuge des Software Engineerings| Übung 1: Erste Änderungen an Jabref |
 |[Woche 3](./week3) | Qualitätsmerkmale von Software  | Übung 2: Code verstehen | 
 |    | Anforderungsanalyse | Gruppe gewählt / Projektvorschlag eingereicht | 
-|[Woche 4](./underconstruction) | Architektur / Design | Übung 3: Unit tests | 
+|[Woche 4](./week4) | Architektur / Design | Übung 3: Unit tests | 
 |    | UML | Entwurf Pflichtenheft | 
 |[Woche 5](./underconstruction) | Modularität / Design Patterns I | Übung 4: Jabref erweitern  | 
 |[Woche 6](./underconstruction)   | Modularität / Design Patterns II   | Prototyping eigene Erweiterung | 
