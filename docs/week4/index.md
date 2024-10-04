@@ -22,7 +22,7 @@ Die Studierenden
 
 ## Übungsstunde:
 
- Im praktischen Teil der Veranstaltung werden Sie Unit Tests 
+ Im praktischen Teil der Veranstaltung werden Sie Unit Tests erstellen.
 
 Danach werden Sie versuchen, die Struktur von Jabref zu verstehen und auch einige Teile im Detail anschauen und 
 Dokumentieren. 
@@ -34,7 +34,7 @@ Dokumentieren.
 ## Slides und weitere Literatur
 
 * Design und Spezifikation mit der UML
-    * Slides (Auf Adam): [pdf](../underconstruction.md)
+    * Slides (Auf Adam): [pdf](../underconstruction.md) <!--auf adam noch nicht gefunden -->
 
 ## Hausaufgaben
 

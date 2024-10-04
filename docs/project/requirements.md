@@ -9,7 +9,7 @@ Wechseln Sie auf den `project` branch.
 Erzeugen Sie dann, ausgehend vom Branch `project`, einen neuen Branch mit dem Namen `requirements`. 
 
 
-Kopieren Sie das [Pflichtenheft Markdown Template](https://raw.githubusercontent.com/unibas-marcelluethi/software-engineering/main/docs/project/templates/pflichtenheft-template.md) in den Ordner ```docs/sweng```.
+Kopieren Sie das [Pflichtenheft Markdown Template](https://raw.githubusercontent.com/unibas-marcelluethi/software-engineering/main/docs/project/templates/pflichtenheft-template.md) in den Ordner ```docs/sweng```. <!-- here the current title is still title: woche 6 -->
 
 
 ### Einleitung und allgemeine Beschreibung
