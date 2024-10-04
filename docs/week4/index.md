@@ -34,7 +34,7 @@ Dokumentieren.
 ## Slides und weitere Literatur
 
 * Design und Spezifikation mit der UML
-    * Slides (Auf Adam): [pdf](../underconstruction.md)
+    * Slides (Auf Adam): [pdf](../underconstruction.md) <!--auf adam noch nicht gefunden -->
 
 ## Hausaufgaben
 
