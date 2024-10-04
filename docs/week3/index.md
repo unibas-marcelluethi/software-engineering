@@ -30,7 +30,7 @@ Die Studierenden
 Danach werden Sie versuchen, die Struktur von Jabref zu verstehen und auch einige Teile im Detail anschauen und 
 Dokumentieren. 
 
-* [Übungsblatt 2](../exercises/code-reading). 
+* [Übungsblatt 3](../exercises/code-reading). 
 
 
 
