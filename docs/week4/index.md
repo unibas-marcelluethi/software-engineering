@@ -22,7 +22,7 @@ Die Studierenden
 
 ## Übungsstunde:
 
- Im praktischen Teil der Veranstaltung werden Sie Unit Tests 
+ Im praktischen Teil der Veranstaltung werden Sie Unit Tests erstellen.
 
 Danach werden Sie versuchen, die Struktur von Jabref zu verstehen und auch einige Teile im Detail anschauen und 
 Dokumentieren. 
