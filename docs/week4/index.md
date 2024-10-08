@@ -33,7 +33,7 @@ Dokumentieren.
 ## Vorlesungsslides
 
 * Design und Spezifikation mit der UML
-    * Slides (Auf Adam): [pdf](../underconstruction.md) <!--auf adam noch nicht gefunden -->
+    * Slides (Auf Adam): [pdf](04-design-architektur-uml.pdf) <!--auf adam noch nicht gefunden -->
 
 ## Artikel und Videos zum Thema UML (zum Selbststudium)
 
