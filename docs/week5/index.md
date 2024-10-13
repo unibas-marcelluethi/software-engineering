@@ -41,3 +41,4 @@ Die Studierenden
 
 * Bearbeiten Sie die [praktische Übung](../exercises/jabref-extension) und reichen Sie diese wie angegeben per Pull Request ein. 
 * Überarbeiten Sie Ihr [Pflichtenheft](../project/requirements) und reichen Sie die verbesserte Version bis spätestens 22. Oktober ein.
+* Beginnen Sie einen Prototypen Ihrer Erweiterung zu implementieren und machen Sie sich Gedanken zum Design. Orientieren Sie sich an dieser Anleitung [../project/technical-doc](Design Doc).
