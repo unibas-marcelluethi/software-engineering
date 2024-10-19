@@ -5,7 +5,7 @@ title : Woche 5
 
 # Woche 5: Modularität und Design 
 
-In dieser Woche beschäftigen wir uns mit der Architekur und dem Design von Software. 
+In dieser Woche beschäftigen wir uns mit der Architektur und dem Design von Software. 
 Im Zentrum stehen dabei der Begriff der Modularität und das Ziel, eine Tiefe Koppelung und hohe Kohäsion zu erreichen. Wir werden verschiedene Modulbeziehungen diskutieren, und uns dann verschiedene Wichtige Architekturpatterns anschauen. Zum Schluss führen wir ein erstes Design Pattern ein. 
 
 ## Lernziele 

@@ -3,47 +3,37 @@ layout: default
 title : Woche 6
 ---
 
-# Woche 6: Anforderungsanalyse
+# Woche 6: Modularität und Design (II)
 
-Diese Woche beginnen wir mit einem ganz wichtigen Thema: der Anforderungsanalyse.
-Die Anforderungsanalyse ist der erste Schritt in der Softwareentwicklung. Alle anderen Schritte bauen auf den Anforderungen, die in diesem Schritt ermittelt werden, auf. Entsprechend wirken sich Fehler in diesem Schritt auf alle folgenden Schritte aus. 
+In dieser Woche beschäftigen wir uns nochmals mit den Themen Modularität und 
+Design von Software. Wir schauen uns Objektorientierte Programmierung an, die SOLID Prinzipien, 
+die uns Prinzipien vorgeben wie wir ein Design erstellen können, das einfach zu warten und zu erweitern ist. Danach schauen wir uns einige spezifische Design Patterns an.
 
-In dieser Woche beginnen Sie auch offiziell mit Ihrem Projekt. Sie werden die Anforderungen für Ihr Projekt ermitteln und in einem Pflichtenheft festhalten, die Theorie also direkt in die Praxis umsetzen.
+## Lernziele 
+
+Die Studierenden
+
+- kennen die Methoden und Prinzipien der objektorientierten Programmierung.
+- kennen die SOLID Prinzipien und können erkennen, wann diese verletzt werden.
+- können argumentieren, weshalb jedes der SOLID Prinzipien wichtig ist.
+- wissen, was ein Design Pattern ist und können für die besprochenen Designpatterns erklären, welches Problem sie lösen und wie die Lösungsstrategie aussieht.
 
 
-## Theorie
+## Übungsstunde:
 
-#### Vorbereitung (zu bearbeiten bis 24. Oktober)
+Im praktischen Teil der Veranstaltung arbeiten Sie an einem ersten Prototypen für Ihre Erweiterung und machen sich Gedanken zum Design. Ergänzen Sie dazu Ihr Pflichtenheft wenn 
+durch den Prototypen neue Anforderungen entstehen.
+Beginnen Sie mit der Erstellung eines Design Dokuments. Folgend Sie dabei den folgenden Anweisungen:
 
-* Schritt 1: Schauen Sie das Video zum Thema "Anforderungsanalyse".  ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6fc1cb17-1d31-4801-ba1f-b06800dc59f4), [Slides](./slides/Anforderungsanalyse.pdf))
-* Schritt 2: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./pflichtenheft1))
-* Schritt 3: Schauen Sie das Video zum Thema "Anforderungen". ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0478c9a3-c17f-4dff-9bf4-b06800dc59ee), [Slides](./slides/Anforderungen.pdf))
-* Schritt 4: Schauen Sie sich das Beispiel: Pflichtenheft / Lastenheft an ([Artikel](./pflichtenheft2))
-* Schritt 5: Lesen Sie den Artikel "Anforderungen mit Sprachschablonen formulieren" ([Artikel](./language-templates))
-* Schritt 6: Lesen Sie den Artikel "Anforderungen mithilfe von Use Cases ermitteln" ([Artikel](./use-cases))
-* Schritt 7: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1646916.html)).
+* [Design und Prototyp erstellen](../project/technical-doc). 
 
-#### Präsenzveranstaltung vom 25. Oktober
+## Vorlesungsslides
 
-In der Präsenzveranstaltung werden wir die im Selbststudium besprochen Themen vertieft diskutieren. Zudem werden Sie beginnen, ein Anforderungsdokument (Pflichtenheft) für ihr eigenes Projekt zu erstellen.
+* Modularität und Design (II)
+    * Slides (Auf Adam): [pdf](../underconstruction) <!--auf adam noch nicht gefunden -->
 
-* [Projektschritt I: Pflichtenheft erstellen](../project/requirements)
-
-## Übungsstunde
-
-Im praktischen Teil der Veranstaltung, können Sie an Ihrem Pflichtenheft weiterarbeiten. Sie können auch mit der Implementation eines Prototypen für ihr Projekt beginnen.
 
 ## Hausaufgaben
 
-* Arbeiten Sie den [Selbststudiumsteil Woche 7](../week7/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Erstellen Sie das Pflichtenheft und reichen Sie dieses wie angegeben per Pull Request bis am Sonntag, 29. Oktober ein.
-
-## Lernziele
-
-Die Teilnehmenden 
-- können die Wichtigkeit der Anforderungsanalyse einschätzen.
-- kennen den Unterschied zwischen Lastenheft und Pflichtenheft
-- können Gründe nennen, die die Anforderungsanalyse schwierig machen.
-- kennen den Unterschied zwischen funktionalen und nicht-funktionalen Anforderungen.
-- kennen Wege, um die Anforderungen strukturiert zu ermitteln.
-- können Anforderungen mittels Sprachschablonen strukturiert formulieren
+* Beginnen Sie zum Design. Orientieren Sie sich an dieser Anleitung [Design Doc](../project/technical-doc).
+* Erstellen Sie die finale Version des Pflichtenhefts und reichen Sie diese bis spätestens 29. Oktober ein. 
