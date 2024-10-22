@@ -57,7 +57,6 @@ An dieser Stelle sollten die dynamische Aspekte, zum Beispiel mit Hilfe von UML 
 
 ## 5.3 Logik 
 
-An dieser Stelle können noch logische Aspekte, wie zum Beispiel logische Einschränkungen spezifiziert werden. Hierzu kann zum Beispiel OCL verwendet werden. 
-
+An dieser Stelle können noch logische Aspekte, wie zum Beispiel logische Einschränkungen spezifiziert werden. 
 
 
