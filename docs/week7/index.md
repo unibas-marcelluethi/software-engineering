@@ -8,7 +8,7 @@ title : Woche 7
 ## Übersicht
 
 Mit der Anforderungsanalyse sind wir in das Gebiet der Softwarespezifikation vorgedrungen. In dieser Woche schauen wir uns Softwarespezifikation im Allgemeinen an.
-Wir besprechen was genau eine Softwarespezifikation ist, welchen Zweck sie erfüllt und wir wir zu einer guten Spezifikation kommen.
+Wir besprechen was genau eine Softwarespezifikation ist, welchen Zweck sie erfüllt und wie wir zu einer guten Spezifikation kommen.
 
 ## Theorie
 
