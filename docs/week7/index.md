@@ -20,7 +20,7 @@ Wir besprechen was genau eine Softwarespezifikation ist, welchen Zweck sie erfü
 * Schritt 4: Lesen Sie den Artikel  "A rational design process - and how to fake it" ([Artikel](https://users.ece.utexas.edu/~perry/education/SE-Intro/fakeit.pdf))
 
 
-#### Präsenzveranstaltung vom 1. November
+#### Präsenzveranstaltung vom 29. Oktober
 
 In der Präsenzveranstaltung werden wir Fragen zum Selbststudium besprechen und uns einige Anwendungen anschauen. 
 Wir werden auch die ersten Entwürfe ihrer Pflichtenhefte miteinander besprechen. 
