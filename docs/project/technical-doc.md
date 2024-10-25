@@ -11,7 +11,7 @@ Der nächste Schritt im Projekt ist es anhand der Anforderungen das zu entwickel
 Überlegen Sie sich auch, ob die neuen Erkenntnisse, die Sie durch diese Schritte erlangen, Auswirkungen auf die im Pflichtenheft spezifizierten Anforderungen haben.
 
 #### Vorbereitung
-
+<!-- Ich denke das ist noch die alte version der Woche 7, das ist mir erst jetzt aufgefallen. -->
 Wechseln Sie auf den `project` branch. 
 Erzeugen Sie dann, ausgehend vom Branch `project`, einen neuen Branch mit dem Namen `technical-doc`. 
 
