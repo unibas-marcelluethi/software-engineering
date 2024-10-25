@@ -6,6 +6,7 @@ title : Woche 8
 {% include head.html %}
 
 # Logische Spezifikation
+<!--Bei mir zeigt es das komisch an, ich denke es liegt an meinen Einstellungen im VSCODE zur visualisierung von .md files -->
 
 *In diesem Artikel sehen wir uns eine wichtige Klasse von deskriptiven Spezifikationen an, nämlich Spezifikationen, die auf Mathematischer Logik (erster Stufe) basieren. Spezifikationen in Logik lassen uns nicht nur Eigenschaften von Systemen formal ausdrücken, sondern auch neue, nicht spezifizierte
 Eigenschaften durch logisches Schliessen herleiten.*
