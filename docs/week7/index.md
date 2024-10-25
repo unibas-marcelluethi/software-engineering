@@ -18,7 +18,7 @@ Wir besprechen was genau eine Softwarespezifikation ist, welchen Zweck sie erfü
 * Schritt 2: Schauen Sie das Video "Beispiele klassischer Diagramme zur Modellierung"   ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=bcf7ebeb-0b58-4ef7-a66a-b07000ddf8f6), [Slides](./slides/Klassische-spezifikationen.pdf))
 * Schritt 3: Lesen Sie den Artikel "Logische Spezifikationen" ([Artikel](./logic))
 * Schritt 4: Lesen Sie den Artikel  "A rational design process - and how to fake it" ([Artikel](https://users.ece.utexas.edu/~perry/education/SE-Intro/fakeit.pdf))
-* Schritt 5: Bearbeiten Sie den Test. ([Adam](https://adam.unibas.ch/goto_adam_tst_1629497.html)).
+
 
 #### Präsenzveranstaltung vom 1. November
 
