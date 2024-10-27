@@ -59,9 +59,10 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |         |    |   Pflichtenheft Besprechung |
 |[Woche 7](./week7) | Verifikation / Grundlagen des Testens | Entwurf Designdoc |
 |                       | Testen im Grossen | | 
-|[Woche 8](./underconstruction) | Testen im Kleinen | Besprechen Designdoc  |
-|[Woche 9](./underconstruction) | Modellieren mit Alloy I |Testplan erstellen |
-| [Woche 10](./underconstruction) |  Modellieren mit Alloy II  | Besprechung Testplan |
+|[Woche 8](./week8) | Testen im Kleinen | Besprechen Designdoc  |
+|                               |                   | Testplan erstellen | 
+|[Woche 9](./underconstruction) | Modellieren mit Alloy I |Besprechung Testplan |
+| [Woche 10](./underconstruction) |  Modellieren mit Alloy II  | Implementation eigene Erweiterung |
 | [Woche 11](./underconstruction)    |Geschichte / Reflexion / Diskussion  | Implementation eigene Erweiterung|
 | [Woche 12](./underconstruction)|    Projektpräsentationen | Projektpräsentationen   |
 | [Woche 13](./underconstruction) | Gastvortrag Agile Softwareentwicklung ||
