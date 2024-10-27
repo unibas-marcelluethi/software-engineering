@@ -57,7 +57,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 5](./week5) | Modularität / Architektur / Design Patterns I | Übung 4: Jabref erweitern  | 
 |[Woche 6](./week6)   | Modularität / Design Patterns II   | Prototyping eigene Erweiterung | 
 |         |    |   Pflichtenheft Besprechung |
-|[Woche 7](./underconstruction) | Verifikation / Grundlagen des Testens | Entwurf Designdoc |
+|[Woche 7](./week7) | Verifikation / Grundlagen des Testens | Entwurf Designdoc |
 |                       | Testen im Grossen | | 
 |[Woche 8](./underconstruction) | Testen im Kleinen | Besprechen Designdoc  |
 |[Woche 9](./underconstruction) | Modellieren mit Alloy I |Testplan erstellen |
