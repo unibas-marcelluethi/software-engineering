@@ -34,6 +34,9 @@ welche Klassen bereits in JabRef vorhanden sind und welche Sie neu hinzufügen.
 * Erstellen Sie dann ein Sequenzdiagramm, ein Aktivitätsdiagramm und ein Zustandsdiagramm, für jeweils einen Teilaspekt ihres Systems. 
 * Schreiben Sie einen Abschnitt zur Logik des Systems. Hier sollen die wichtigsten logischen Einschränkungen, die nicht direkt aus den obigen Diagrammen hervorgehen. 
 
+### Beispiel
+
+Ein Beispieldokument von einem früheren Projekt finden Sie auf [Adam](https://adam.unibas.ch/goto_adam_file_1915042_download.html).
 
 #### Abgabe:
 
