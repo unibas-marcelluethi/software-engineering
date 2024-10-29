@@ -55,17 +55,16 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |[Woche 4](./week4) | Architektur / Design | Übung 3: Unit tests | 
 |    | UML | Entwurf Pflichtenheft | 
 |[Woche 5](./week5) | Modularität / Architektur / Design Patterns I | Übung 4: Jabref erweitern  | 
-|[Woche 6](./week6)   | Modularität / Design Patterns II   | Prototyping eigene Erweiterung | 
+|[Woche 6](./week6)   | Modularität    | Prototyping eigene Erweiterung | 
 |         |    |   Pflichtenheft Besprechung |
-|[Woche 7](./week7) | Verifikation / Grundlagen des Testens | Entwurf Designdoc |
-|                       | Testen im Grossen | | 
-|[Woche 8](./week8) | Testen im Kleinen | Besprechen Designdoc  |
-|                               |                   | Testplan erstellen  | 
+|[Woche 7](./week6) | Design patterns (Zweiter Teil von Woche 6) | Entwurf Designdoc |
+|[Woche 8](./week7) | Verifikation / Grundlagen des Testens| Besprechen Designdoc  |
+|                               |       Testen im Grossen            | Testplan erstellen  | 
 |                               |                   | Implementation eigene Erweiterung  | 
-|[Woche 9](./underconstruction) | Modellieren mit Alloy I | Testplan erstellen|
+|[Woche 9](./week8) | Testen im Kleinen | Testplan erstellen|
 |                               |                   |  Implementation eigene Erweiterung | 
-| [Woche 10](./underconstruction) |  Modellieren mit Alloy II  | Besprechung Testplan |
-| [Woche 11](./underconstruction)    |Geschichte / Reflexion / Diskussion  | Implementation eigene Erweiterung|
+| [Woche 10](./underconstruction) |  Modellieren mit Alloy I  | Besprechung Testplan |
+| [Woche 11](./underconstruction)    |Modellieren mit Alloy II  | Implementation eigene Erweiterung|
 | [Woche 12](./underconstruction)|    Projektpräsentationen | Projektpräsentationen   |
 | [Woche 13](./underconstruction) | Gastvortrag Agile Softwareentwicklung |Gastvortrag Agile Softwareentwicklung|
 | [Woche 14](./underconstruction) | Zusammenfassung |  |
