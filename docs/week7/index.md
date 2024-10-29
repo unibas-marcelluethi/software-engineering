@@ -29,7 +29,7 @@ Im praktischen Teil werden Sie am Design Ihrer Erweiterung arbeiten und dies in 
 ## Vorlesungsslides
 
 * Verifikation und Testen
-    * Slides (Auf Adam): [pdf](../underconstruction) 
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1915392_download.html) 
 
 
 ## Hausaufgaben
