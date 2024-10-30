@@ -32,6 +32,8 @@ Beginnen Sie mit der Erstellung eines Design Dokuments. Folgend Sie dabei den fo
 * Modularität und Design (II)
     * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1910297_download.html) <!--auf adam noch nicht gefunden -->
 
+## Zusätzliche Materialien und Ressourcen
+* Katalog / Beschreibung von Design Patterns: [Design Patterns](https://refactoring.guru/design-patterns/catalog)
 
 ## Hausaufgaben
 
