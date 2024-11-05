@@ -3,29 +3,24 @@ layout: default
 title : Woche 8
 ---
 
-
-# Woche 8: Testen im Grossen und im Kleinen 
+# Woche 8: Verifikation / Testen im Grossen
 
 ## Übersicht
 
-In dieser Woche diskutieren wir konkrete Strategien, um Testfälle zu finden. Teststrategien, die wir als individuelle 
-Entwickler*innen anwenden können. Dabei lassen wir uns von der Idee der
-Überdeckung leiten und diskutieren verschiedene Überdeckungskriterien. 
-Wir lernen auch konkrete Methoden kennen, mit denen wir Testfälle finden können und schauen uns kurz Property-based Testing und Fuzzing an.
-
+In dieser Woche besprechen wir, wie wir die Spezifikationen validieren, und besprechen 
+verschiedene Methode, wie wir Programme verifizieren können. Dabei legen wir den Fokus auf das Testen ud besprechen das Testen im Grossen.
 
 ## Lernziele 
 
 Die Studierenden
 
-- können den Unterschied zwischen Blackbox und Whitebox Tests erklären und wie sich dies auf die Softwarewartung auswirkt. 
-- können Ursache-Wirkungsdiagramme erstellen und aus diesen Testfälle 
-herleiten. 
-- kennen verschiedene Überdeckungskriterien und können diese einsetzen um  Testfälle zu finden
-- können Äquivalenzklassen und Grenzfälle in einfachen Beispielspezifikationen identifizieren
-- verstehen, wie Stubs und Drivers eingesetzt werden um Module im Systemkontext zu testen.
-- können die Grundidee von Property-based Testing und Fuzzing erklären und die Unterschiede zu herkömmlichen Teststrategien aufzeigen.
-- können die Wichtigkeit genauer Spezifikationen für das Testen erklären.
+- können erklären, weshalb Software immer verifiziert werden muss.
+- können verschiedene Methoden zur Verifikation aufzählen.
+- kennen die verschiedenen Arten von Tests (also Unittest, Regressionstest, Integrationstests, etc. ) und wissen, wie diese eingesetzt werden.
+- kennen die Ziele und Limitierungen von Softwaretests und können die Auswirkungen dieser Limitierungen einschätzen.
+- kennen einige Vorteile und Nachteile von Bottom Up respektive Top Down integrations im Bezug auf Testen
+
+
 
 
 
@@ -35,10 +30,12 @@ Im praktischen Teil der Veranstaltung werden wir mit Ihnen Ihre Designdokumente 
 
 ## Vorlesungsslides
 
+
 * Verifikation und Testen
-    * Slides (Auf Adam): [pdf](../underconstruction) 
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1915392_download.html) 
 
 
 ## Hausaufgaben
 
-* Reichen Sie Ihren Testplan bis zum 8 November 23.59, via Pull Request ein.
+* Verbessern Sie Ihr Designdokument basierend auf dem Feedback aus der Übungsstunde.
+* Arbeiten sie am Testplan sowie der Implementierung der Erweiterung.

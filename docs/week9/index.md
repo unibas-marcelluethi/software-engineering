@@ -3,45 +3,37 @@ layout: default
 title : Woche 9
 ---
 
-# Woche 9: Verifikation / Grundlagen des Testens
 
+# Woche 9: Testen im Grossen und im Kleinen 
 
 ## Übersicht
 
-In dieser Woche besprechen wir, wie wir die Spezifikationen validieren, und anhand der 
-Spezifikationen die Implementation verifizieren können. Dabei legen wir den Fokus auf 
-das Testen. 
+In dieser Woche diskutieren wir konkrete Strategien, um Testfälle zu finden. Teststrategien, die wir als individuelle 
+Entwickler*innen anwenden können. Dabei lassen wir uns von der Idee der
+Überdeckung leiten und diskutieren verschiedene Überdeckungskriterien. 
+Wir lernen auch konkrete Methoden kennen, mit denen wir Testfälle finden können und schauen uns kurz Property-based Testing und Fuzzing an.
 
-## Theorie
 
-#### Vorbereitung (zu bearbeiten bis 14. November)
+## Lernziele 
 
-* Schritt 1: Schauen Sie das Übersichtsvideo zum Thema Validieren und Verifikation ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b09981e6-d667-45d2-87a1-b07b0095eb8c) [Slides](./slides/Verifikation.pdf)) 
-* Schritt 2: Schauen Sie das Video zum Thema Testen  ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=320a33bd-c710-4512-b93d-b07b00b49461) [Slides](./slides/Testing-overview.pdf)) 
-* Schritt 3: Lesen Sie den Artikel zum Thema "Testen im Grossen" ([Artikel](./testing-in-the-large))
-* Schritt 4: Bearbeiten Sie den Test auf Adam ([Adam](https://adam.unibas.ch/goto_adam_tst_1646923.html)).
+Die Studierenden
 
-#### Präsenzveranstaltung vom 15. November
+- können den Unterschied zwischen Blackbox und Whitebox Tests erklären und wie sich dies auf die Softwarewartung auswirkt. 
+- können Ursache-Wirkungsdiagramme erstellen und aus diesen Testfälle 
+herleiten. 
+- kennen verschiedene Überdeckungskriterien und können diese einsetzen um  Testfälle zu finden
+- können Äquivalenzklassen und Grenzfälle in einfachen Beispielspezifikationen identifizieren
+- verstehen, wie Stubs und Drivers eingesetzt werden um Module im Systemkontext zu testen.
+- können die Grundidee von Property-based Testing und Fuzzing erklären und die Unterschiede zu herkömmlichen Teststrategien aufzeigen.
+- können die Wichtigkeit genauer Spezifikationen für das Testen erklären.
 
-In der Präsenzveranstaltung werden Sie auf die Fragen zum Selbststudium eingehen und die Grundlagen des Testens vertiefen.
-Zudem schauen wir uns an, wie wir ein Code-Review durchführen können und werden auch eine Einführung in den Testplan geben. 
+## Vorlesungsslides
 
-## Übungsstunde
 
-In der Übungsstunde beginnen Sie, den Testplan zu schreiben. Zudem können Sie damit beginnen, Ihre Erweiterung zu implementieren.
+* Verifikation und Testen
+    * Slides (Auf Adam): [pdf](../underconstruction) 
 
-## Hausaufgaben
 
-Die folgenden Hausaufgaben sollten bis zum 21. November bearbeitet werden. 
 
-* Arbeiten Sie den [Selbststudiumsteil Woche 10](../week10/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Erstellen Sie den [Testplan](../project/testplan) und reichen Sie diesen bis am Sonntag, 19. November ein.
-
-## Lernziele
-
-Die Teilnehmenden
-
-- können erklären, weshalb Software immer verifiziert werden muss.
-- können verschiedene Methoden zur Verifikation aufzählen.
-- kennen die verschiedenen Arten von Tests (also Unittest, Regressionstest, Integrationstests, etc. ) und wissen, wie diese eingesetzt werden.
-- kennen die Ziele und Limitierungen von Softwaretests und können die Auswirkungen dieser Limitierungen einschätzen.
+## Übungsstunde:
+Im praktischen Teil der Veranstaltung sollten Sie an Ihrem Testplan arbeiten, automatisierte Tests implementieren sowie die Implementierung Ihrer Erweiterung vorantreiben.

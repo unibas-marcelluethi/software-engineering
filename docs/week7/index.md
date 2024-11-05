@@ -3,34 +3,22 @@ layout: default
 title : Woche 7
 ---
 
-# Woche 7: Verifikation / Testen im Grossen
+# Woche 7: Design patterns
 
 ## Übersicht
 
-In dieser Woche besprechen wir, wie wir die Spezifikationen validieren, und besprechen 
-verschiedene Methode, wie wir Programme verifizieren können. Dabei legen wir den Fokus auf das Testen ud besprechen das Testen im Grossen.
-
-## Lernziele 
-
-Die Studierenden
-
-- können erklären, weshalb Software immer verifiziert werden muss.
-- können verschiedene Methoden zur Verifikation aufzählen.
-- kennen die verschiedenen Arten von Tests (also Unittest, Regressionstest, Integrationstests, etc. ) und wissen, wie diese eingesetzt werden.
-- kennen die Ziele und Limitierungen von Softwaretests und können die Auswirkungen dieser Limitierungen einschätzen.
-- kennen einige Vorteile und Nachteile von Bottom Up respektive Top Down integrations im Bezug auf Testen
+In dieser Woche beschäftigen wir uns nochmals mit den Themen Modularität und vor allem Design von Software. Wir schauen uns Design Patterns an, die uns Prinzipien vorgeben wie wir ein Design erstellen können, das einfach zu warten und zu erweitern ist.
 
 
 ## Übungsstunde:
-
-Im praktischen Teil werden Sie am Design Ihrer Erweiterung arbeiten und dies in einem Design Dokument festhalten. Details dazu finden Sie [hier](../project/technical-doc).
+In der Übungsstunde können Sie an Ihrem Designdokument arbeiten. Zudem werden wir mit Ihnen den Stand Ihres Projekts besprechen.
 
 
 ## Vorlesungsslides
 
-* Verifikation und Testen
-    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1915392_download.html) 
-
+* Modularität und Design (II)
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1910297_download.html) <!--auf adam noch nicht gefunden -->
+    
 
 ## Hausaufgaben
 
