@@ -3,51 +3,42 @@ layout: default
 title : Woche 5
 ---
 
-# Woche 5: Objektorientiertes Design
+# Woche 5: Modularität und Design 
 
-Nachdem wir letzte Woche die Grundlagen des Softwaredesigns kennengelernt haben, werden wir uns in dieser Woche mit dem objektorientierten Design beschäftigen. Wir werden dabei die Grundlagen der Objektorientierung kennenlernen und uns mit den SOLID-Prinzipien auseinandersetzen.
+In dieser Woche beschäftigen wir uns mit der Architektur und dem Design von Software. 
+Im Zentrum stehen dabei der Begriff der Modularität und das Ziel, eine Tiefe Koppelung und hohe Kohäsion zu erreichen. Wir werden verschiedene Modulbeziehungen diskutieren, und uns dann verschiedene Wichtige Architekturpatterns anschauen. Zum Schluss führen wir ein erstes Design Pattern ein. 
 
-## Theorie
+## Lernziele 
 
-#### Vorbereitung (zu bearbeiten bis 17. Oktober)
+Die Studierenden
 
-Als Vorbereitung für die Vorlesungsstunde in dieser Woche bearbeiten Sie bitte folgende Schritte:
+- wissen, was wir unter einem Softwaredesign verstehen 
+- können erklären, weshalb sich Architektur und Design nicht klar abtrennen können
+- kennen die Vorteile, die durch Zerlegung eines Systems in Module erreicht werden können.
+- können Modulbeziehungen formal beschreiben und können Hierarchien, Transitive Abhängigkeiten und Ebenen anhand des entsprechenden DAGs erklären.
+- kennen das Prinzip des Information Hiding und wissen wie es in Java umgesetzt werden kann. 
+- können designs anhand von Kriterien wie Bindung, Kopplung, Fan-In, Hierarchien, etc. analysieren.
+- kennen die Architekturmuster Layering, Pipeline, Blackboard und MVC, MVVM und können diese erklären.	
+- kennen das Design Pattern Observer und können erklären, wie es bei der Blackboard und MVC Architektur eingesetzt werden könnte. 
 
-* Schritt 1: Schauen Sie das Video zum Thema "Objektorientierung".  ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c790f755-19db-40a2-8e87-b06700bf7366), [Slides](./slides/OO-Design.pdf))
-* Schritt 2: Lesen Sie den Artikel "Vererbung und Objektkomposition" ([Artikel](./oo-composition-vs-inheritance.html))
-* Schritt 3: Lesen Sie den Artikel zum Thema "Designheuristiken" ([Artikel](./oo-design-heuristics))
-* Schritt 4: Schauen Sie das Video zu den "SOLID Prinzipien" an ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=aa0ba520-7e28-4ad8-b112-b06700bf7364), [Slides](./slides/OO-Solid.pdf))
-* Schritt 5a: Schauen Sie sich die Slides zum Talk von Dan North, [Why Every single element of SOLID is wrong](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong?slide=20), an. 
-* Schritt 5b: Lesen Sie die Ausführungen von Dan North auf [seinem Blog](https://dannorth.net/cupid-the-back-story/)
-* Schritt 6: Bearbeiten Sie den Test. ([Adam](https://adam.unibas.ch/goto_adam_tst_1629488.html)).
 
-####  Präsenzveranstaltung vom 18. Oktober
+## Übungsstunde:
 
-In der Präsenzveranstaltung werden wir die SOLID-Prinzipien vertieft diskutieren. Wir werden auch ein Objektorientiertes Design für eine einfache Anwendung erstellen und dabei CRC Karten praktisch einsetzen. 
+ Im praktischen Teil der Veranstaltung werden Sie eine erste Erweiterung für Jabref implementieren, 
+ die sich durch die ganze Software zieht. Zudem werden wir Ihnen Feedback zum Pflichtenheft geben.
 
-* [Bankomaten Szenario](./atm-scenario)
+* [Übungsblatt 5](../exercises/jabref-extension). 
 
-## Praxis
 
-Im praktischen Teil der Veranstaltung werden Sie eine erste eigene Erweiterung von JabRef schreiben. 
 
-[Übungsblatt 5](../exercises/jabref-extension)
+## Vorlesungsslides
+
+* Modularität und Design
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1903037_download.html) <!--auf adam noch nicht gefunden -->
 
 
 ## Hausaufgaben
 
-Die folgenden Hausaufgaben sollten bis zum 24. Oktober bearbeitet werden. 
-
-* Arbeiten Sie den [Selbststudiumsteil Woche 6](../week6/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-* Falls Sie an der Präsenzveranstaltung nicht anwesend waren, bearbeiten Sie die [Theoriefragen](theory-exercises) und reichen diese bis zum 25.10 auf [Adam](https://adam.unibas.ch/goto_adam_exc_1629562.html) ein. 
 * Bearbeiten Sie die [praktische Übung](../exercises/jabref-extension) und reichen Sie diese wie angegeben per Pull Request ein. 
-
-## Lernziele
-
-Die Teilnehmer*innen
-
-- kennen die Merkmale und Mechanismen, der Objektorientierung und können diese anwenden
-- können die grundlegenden Ideen der Objektorientierung in den Kontext vom Moduldesign setzen
-- Anhand eines Szenarios Kandidaten für Module/Klassen identifizieren
-- können die SOLID Prinzipien im Kontext der allgemeineren Software-Engineering Prinzipien setzen
-- kennen die SOLID Prinzipien und können Code auf deren Umsetzung analysieren
+* Überarbeiten Sie Ihr [Pflichtenheft](../project/requirements) und reichen Sie die verbesserte Version bis spätestens 22. Oktober ein.
+* Beginnen Sie einen Prototypen Ihrer Erweiterung zu implementieren und machen Sie sich Gedanken zum Design. Orientieren Sie sich an dieser Anleitung [Design Doc](../project/technical-doc).

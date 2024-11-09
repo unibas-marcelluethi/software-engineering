@@ -32,9 +32,11 @@ Neben den im Template vorgegebenen Aspekten, muss das Dokument mindestens die fo
 * Es soll ein UML Klassendiagramm enthalten, welches die Beziehungen zwischen den relevanten Klassen Ihrer Erweiterung und JabRef zeigt. Kennzeichnen Sie klar, 
 welche Klassen bereits in JabRef vorhanden sind und welche Sie neu hinzufügen. 
 * Erstellen Sie dann ein Sequenzdiagramm, ein Aktivitätsdiagramm und ein Zustandsdiagramm, für jeweils einen Teilaspekt ihres Systems. 
-* Schreiben Sie einen Abschnitt zur Logik des Systems. Hier sollen die wichtigsten logischen Einschränkungen, die nicht direkt aus den obigen Diagrammen hervorgehen. Sie können dies entweder in 
-natürlicher Sprache beschreiben oder OCL Constraints definieren.
+* Schreiben Sie einen Abschnitt zur Logik des Systems. Hier sollen die wichtigsten logischen Einschränkungen, die nicht direkt aus den obigen Diagrammen hervorgehen. 
 
+### Beispiel
+
+Ein Beispieldokument von einem früheren Projekt finden Sie auf [Adam](https://adam.unibas.ch/goto_adam_file_1915042_download.html).
 
 #### Abgabe:
 

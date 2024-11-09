@@ -190,7 +190,7 @@ Um ihre Änderung einzureichen, "pushen" Sie den aktuellen Branch mittels dem Ko
 git push origin uebung2
 ```
 zurück auf github. 
-Wenn Sie jetzt auf ihre Github Projektseite gehen (also https://github.com/YOUR_USERNAME/jabref), sollte Ihnen Github anzeigen, dass Sie soeben den neuen Branch ```uebung_2``` auf Github gepushed haben.
+Wenn Sie jetzt auf ihre Github Projektseite gehen (also https://github.com/YOUR_USERNAME/jabref), sollte Ihnen Github anzeigen, dass Sie soeben den neuen Branch ```uebung2``` auf Github gepushed haben.
 
 In einem realen Open Source Projekt möchten Sie jetzt Ihre Änderungen wieder in das *upstream* Repository einfliessen lassen. 
 Dies macht man via einem *Pull Request*, welcher den Maintainer des *upstream* Repositories darüber informiert, dass man Änderungen vorgenommen hat, die man gerne zurückführen möchte.
@@ -200,7 +200,7 @@ Dazu zeigen Sie sich zuerst alle verfügbaren Branches an:
 ![](images/jabref-branches.png)
 
 
-Wählen Sie beim Branch uebung_2 ```New pull request```.
+Wählen Sie beim Branch uebung2 ```New pull request```.
 
 ![image](images/jabref-new-pr.png)
 

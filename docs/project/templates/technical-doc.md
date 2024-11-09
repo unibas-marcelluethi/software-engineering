@@ -49,7 +49,11 @@ Für diese kleine Änderung, muss diese Unterscheidung aber nicht gemacht werden
 
 ## 5.1 Statik
 
-An dieser Stelle sollten die statischen Aspekte, zum Beispiel mit Hilfe von UML Klassendiagrammen oder Paketdiagrammen beschrieben werden.
+An dieser Stelle sollten die statischen Aspekte, mit Hilfe von UML Klassendiagrammen beschrieben werden.
+Wenn Ihre Erweiterungen Klassen von JabRef nutzt, sollten diese auch hier beschrieben werden.
+Erklären Sie die wichtigsten Klassen und wie diese zusammenarbeiten.
+
+Wenn Sie ein Interface (API) einer fremden Anwendung nutzen, beschreiben Sie auch hier die Kommunikation (wo relevant) oder verweisen sie auf die entsprechende Dokumentation. 
 
 ## 5.2 Dynamik
 
@@ -57,7 +61,6 @@ An dieser Stelle sollten die dynamische Aspekte, zum Beispiel mit Hilfe von UML 
 
 ## 5.3 Logik 
 
-An dieser Stelle können noch logische Aspekte, wie zum Beispiel logische Einschränkungen spezifiziert werden. Hierzu kann zum Beispiel OCL verwendet werden. 
-
+An dieser Stelle können noch logische Aspekte, wie zum Beispiel logische Einschränkungen spezifiziert werden. 
 
 
