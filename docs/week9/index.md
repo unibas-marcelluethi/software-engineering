@@ -26,12 +26,13 @@ herleiten.
 - verstehen, wie Stubs und Drivers eingesetzt werden um Module im Systemkontext zu testen.
 - können die Grundidee von Property-based Testing und Fuzzing erklären und die Unterschiede zu herkömmlichen Teststrategien aufzeigen.
 - können die Wichtigkeit genauer Spezifikationen für das Testen erklären.
+- kennen die Grundidee von Property based testing und können erklären, wie es sich von herkömmlichen Teststrategien unterscheidet und was die Vorteile sind.
 
 ## Vorlesungsslides
 
 
 * Verifikation und Testen
-    * Slides (Auf Adam): [pdf](../underconstruction) 
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1926291_download.html) 
 
 
 
