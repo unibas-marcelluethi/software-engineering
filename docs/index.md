@@ -67,7 +67,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | [Woche 11](./underconstruction)    |Modellieren mit Alloy II  | Implementation eigene Erweiterung|
 | [Woche 12](./underconstruction)|    Projektpräsentationen | Projektpräsentationen   |
 | [Woche 13](./underconstruction) | Gastvortrag Agile Softwareentwicklung |Gastvortrag Agile Softwareentwicklung|
-| [Woche 14](./underconstruction) | Zusammenfassung |  |
+| [Woche 14](./underconstruction) | Zusammenfassung | Besprechung der Alloy Übungen |
 
 
 ## Literatur / Weiterführende Links

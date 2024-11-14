@@ -3,47 +3,45 @@ layout: default
 title : Woche 10
 ---
 
-# Woche 10: Testen im Grossen und im Kleinen 
+# Woche 10: Modellieren mit Alloy (I)
 
 ## Übersicht
 
-In dieser Woche diskutieren wir konkrete Strategien, um Testfälle zu finden. Teststrategien, die wir als individuelle 
-Entwickler*innen anwenden können. Dabei lassen wir uns von der Idee der
-Überdeckung leiten und diskutieren verschiedene Überdeckungskriterien. 
-Wir lernen auch konkrete Methoden kennen, mit denen wir Testfälle finden können. 
+In dieser Woche werden wir uns mit dem Modellierungswerkzeug Alloy beschäftigen. Alloy ist eine formale Spezifikationssprache, mit der wir Designs analysieren und früh im Entwicklungsprozess Fehler finden können. 
+Das Ziel dieser Einführung ist nicht, sie zu Expert:innen in der Formalen Modellierung zu machen, sondern Ihnen zu zeige, wie solche Werkzeuge aussehen und wie sie eingesetzt werden können.
 
-## Theorie
+## Lernziele 
 
-#### Vorbereitung (zu bearbeiten bis 21. November)
+Die Studierenden
 
-
-* Schritt 1: Lesen Sie den Artikel "Theoretische Grundlagen des Testens" ([Artikel](./testing-foundations))
-* Schritt 2: Schauen Sie das Video zum Thema White box testing ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f8358f9a-b865-498f-a8ca-b07b00e32ce3), [Slides](./slides/Testen-im-kleinen.pdf))
-* Schritt 3: Lesen Sie den Artikel zum Thema Black box testing ([Artikel](./testing-in-the-small-bb))
-* Schritt 4: Bearbeiten Sie den Test. ([(Adam)](https://adam.unibas.ch/goto_adam_tst_1646911.html)).
-
-#### Präsenzveranstaltung vom 22. November
-
-In der Präsenzveranstaltung werden wir verschiedene Teststrategien diskutieren und uns mit der Frage beschäftigen, wie wir diese in der Praxis einsetzen können.
-
-## Übungsstunde
-
-In der Übungsstunde werden wir mit Ihnen den Testplan besprechen. Sie können zudem weiter an Ihrer Erweiterung arbeiten. 
-
-## Hausaufgaben
-
-Die folgenden Hausaufgaben sollten bis zum 28. November bearbeitet werden. 
-* Arbeiten Sie den [Selbststudiumsteil Woche 11](../week11/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
+- kennen die Grundidee von Alloy und können erklären, wie Alloy im Software Engineering eingesetzt werden kann.
+- können einfache statische Modelle in Alloy erstellen und analysieren.
+- kennen die Grundlegende Annahme die Alloy zugrunde liegt und wie sich der Ansatz von Alloy von der Überprüfung mittels Testen unterscheidet.
+- kennen den Unterschied zwischen facts, predicates und assertion und wissen, wie sie diese in Alloy einsetzen können.
 
 
-## Lernziele
 
-Die Teilnehmenden 
+## Vorlesungsslides
 
-- können den Unterschied zwischen Blackbox und Whitebox Tests erklären und wie sich dies auf die Softwarewartung auswirkt. 
-- können Ursache-Wirkungsdiagramme erstellen und aus diesen Testfälle 
-herleiten. 
-- kennen verschiedene Überdeckungskriterien und können diese einsetzen um  Testfälle zu finden
-- können Äquivalenzklassen und Grenzfälle in einfachen Beispielspezifikationen identifizieren
-- verstehen, wie Stubs und Drivers eingesetzt werden um Module im Systemkontext zu testen.
-- kennen die Vor- und Nachteile von Top-Down und Bottom-up Integration.
+
+* Verifikation und Testen
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1926291_download.html) 
+
+## Ressourcen
+
+- [Offizielle Seite für Alloy](http://alloytools.org/)
+- [Download Alloy](http://alloytools.org/download.html)
+- [Formal software design with Alloy](https://haslab.github.io/formal-software-design/index.html)
+
+
+## Übungen
+
+Lösen Sie Teil 1 des [Alloy Übungsblatt](exercises/alloy). 
+
+- Das Übungsblatt muss nicht abgegeben werden. 
+- Wir werden die Übungen in der letzten Übungsstunde am 17. Dezember besprechen.
+- Das bearbeiten der Übungen ist freiwillig. Alloy wird aber ein Teil der Prüfung sein.
+
+## Übungsstunde:
+
+Im Praktischen Teil der Vorlesung werden wir mit Ihnen Ihren Testplan besprechen. Zudem sollten Sie Ihre Implementation fertigstellen und an der Präsentation arbeiten.
