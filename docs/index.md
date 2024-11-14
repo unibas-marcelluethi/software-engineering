@@ -63,7 +63,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 |                               |                   | Implementation eigene Erweiterung  | 
 |[Woche 9](./week9) | Testen im Kleinen | Testplan erstellen|
 |                               |                   |  Implementation eigene Erweiterung | 
-| [Woche 10](./underconstruction) |  Modellieren mit Alloy I  | Besprechung Testplan |
+| [Woche 10](./week10) |  Modellieren mit Alloy I  | Besprechung Testplan |
 | [Woche 11](./underconstruction)    |Modellieren mit Alloy II  | Implementation eigene Erweiterung|
 | [Woche 12](./underconstruction)|    Projektpräsentationen | Projektpräsentationen   |
 | [Woche 13](./underconstruction) | Gastvortrag Agile Softwareentwicklung |Gastvortrag Agile Softwareentwicklung|
