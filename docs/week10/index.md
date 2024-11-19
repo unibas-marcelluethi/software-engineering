@@ -24,8 +24,8 @@ Die Studierenden
 ## Vorlesungsslides
 
 
-* Verifikation und Testen
-    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1926291_download.html) 
+* Modellieren mit Alloy
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1932030_download.html) 
 
 ## Ressourcen
 
@@ -36,7 +36,7 @@ Die Studierenden
 
 ## Übungen
 
-Lösen Sie Teil 1 des [Alloy Übungsblatt](exercises/alloy). 
+Versuchen Sie die Aufgaben im [Alloy Übungsblatt](exercises/alloy-static) zu lösen. 
 
 - Das Übungsblatt muss nicht abgegeben werden. 
 - Wir werden die Übungen in der letzten Übungsstunde am 17. Dezember besprechen.
