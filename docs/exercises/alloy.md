@@ -77,14 +77,12 @@ one sig Me extends Person {}
 
 ### Aufgabe 4
 
-# Traffic Lights
-
 Schreiben Sie ein dynamisches Modell für Ampeln in Alloy.
 
 Die Ampeln sollten die folgenden Eigenschaften haben:
 
-- Jede Ampel kann die Farben $\text{Rot}$, $\text{Grün}$ und $\text{Gelb}$ anzeigen.
-- Alle Ampeln beginnen mit ${\text{Rot}}$.
+- Jede Ampel kann die Farben Rot, Grün und Gelb anzeigen.
+- Alle Ampeln beginnen mit Rot.
 - Zu jedem Zeitpunkt kann eine Ampel unverändert bleiben oder einen der folgenden Übergänge machen:
     - Rot -> {Rot, Gelb},
     - {Rot, Gelb} -> Grün,
