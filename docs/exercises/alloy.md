@@ -86,11 +86,12 @@ Die Ampeln sollten die folgenden Eigenschaften haben:
 - Jede Ampel kann die Farben $\text{Rot}$, $\text{Grün}$ und $\text{Gelb}$ anzeigen.
 - Alle Ampeln beginnen mit ${\text{Rot}}$.
 - Zu jedem Zeitpunkt kann eine Ampel unverändert bleiben oder einen der folgenden Übergänge machen:
-    - ${\text{Rot}} \rightarrow {\text{Rot}, \text{Gelb}}$,
-    - ${\text{Rot}, \text{Gelb}} \rightarrow {\text{Grün}}$,
-    - ${\text{Grün}} \rightarrow {\text{Gelb}}$,
-    - ${\text{Gelb}} \rightarrow {\text{Rot}}$.
-- Zu jedem Zeitpunkt darf nur eine Ampel etwas anderes als ${\text{Rot}}$ anzeigen.
+    - Rot -> {Rot, Gelb},
+    - {Rot, Gelb} -> Grün,
+    - Grün -> Gelb,
+    - Gelb -> Rot.
+
+- Zu jedem Zeitpunkt darf nur eine Ampel etwas anderes als Rot anzeigen.
 - Jede Ampel muss irgendwann ein grünes Licht gezeigt haben.
 
 Simulieren Sie Ihr Modell für mindestens 2 Ampeln. Funktioniert es auch für mehr?
