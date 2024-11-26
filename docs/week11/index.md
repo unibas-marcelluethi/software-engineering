@@ -3,40 +3,46 @@ layout: default
 title : Woche 11
 ---
 
-# Woche 11: Softwareprozesse
+# Woche 11: Modellieren mit Alloy (II)
 
 ## Übersicht
 
-In dieser Woche schauen wir uns an, wie man die verschiedenen Aktivitäten und Phasen
-des Softwareengineering organisiert. Wir besprechen dabei traditionelle Softwareprozessmodelle
-und geben auch eine Einführung in Agile Softwareentwicklungsmethoden.
+In dieser Woche werden wir das Modellierungswerkzeug Alloy vertiefen. Insbesondere werden wir 
+sehen, wie wir dynamische Modelle in Alloy erstellen können. Zudem werden wir anhand von 
+Anwendungsbeispielen sehen, wie wir Alloy für die Modellierung von Software Systemen einsetzen können.
 
-## Theorie
-
-####  Vorbereitung (zu bearbeiten bis 28. November)
-
-* Schritt 1: Softwareprozesse ([Video](https://unibas.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=412f9e91-dde8-467a-b3b6-b07c008935ca), [Slides](./slides/Prozesse.pdf))
-* Schritt 2: Lesen Sie den Artikel: Agile Softwareentwicklung  ([Artikel](./agile))
-* Schritt 3: Lesen Sie das Kapitel "Agile!: The Good, the Hype and the Ugly"  ([Artikel](./agile-critic.html))
-* Schritt 4: Bearbeiten Sie den Selbsttest für Woche 11 ([auf Adam)](https://adam.unibas.ch/goto_adam_tst_1646918.html)).
-
-## Übungsstunde
-
-Während der Übungsstunde können Sie an Ihrem Projekt arbeiten. Die Tutoren stehen Ihnen unterstützend zur Seite.	
-
-## Hausaufgaben
-
-Die folgenden Aufgaben müssen bis zum 5. Dezember erledigt werden. 
-- Arbeiten Sie den [Selbststudiumsteil Woche 12](../week12/index) durch und bearbeiten Sie die dort angegebenen Aufgaben. 
-
-
-## Lernziele
+## Lernziele 
 
 Die Studierenden
 
-- können die Ziele nennen, die man mit einem Softwareprozess erreichen möchte
-- kennen die wichtigsten Softwareprozessmodelle und deren Charakteristika
-- können die Hauptmerkmale von agilen Methodologien erklären
-- können agile Methodologien mit traditionellen Softwareprozessen vergleichen 
-- können und Vor- und Nachteile beider Modelle nennen. 
+- kennen die Zeitoperatoren von Alloy und können damit einfache temporale Eigenschaften modellieren.
+- kennen die Grundlegende Strategie um dynamische Modelle in Alloy zu erstellen.
+- können den Visualizer einsetzen um dynamische Aspekte von Modellen zu verstehen.
+- können einfache dymamische Modelle in Alloy erstellen und analysieren.
 
+
+
+## Vorlesungsslides
+
+
+* Modellieren mit Alloy
+    * Slides (Auf Adam): [pdf](https://adam.unibas.ch/goto_adam_file_1932030_download.html) 
+
+## Ressourcen
+
+- [Offizielle Seite für Alloy](http://alloytools.org/)
+- [Alloy Dokumentation](https://alloy.readthedocs.io/en/latest/)
+- [Formal software design with Alloy](https://haslab.github.io/formal-software-design/index.html)
+- [Alloy 6 - It's all about time](https://www.hillelwayne.com/post/alloy6/)
+
+## Übungen
+
+Versuchen Sie die Aufgaben im [Alloy Übungsblatt](../exercises/alloy) zu lösen. 
+
+- Das Übungsblatt muss nicht abgegeben werden. 
+- Wir werden die Übungen in der letzten Übungsstunde am 17. Dezember besprechen.
+- Das bearbeiten der Übungen ist freiwillig. Alloy wird aber ein Teil der Prüfung sein.
+
+## Übungsstunde:
+
+Im Praktischen Teil der Vorlesung werden Sie weiter an Ihrem Projekt arbeiten und die Präsentation vorbereiten.	

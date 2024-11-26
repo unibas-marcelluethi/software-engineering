@@ -36,7 +36,7 @@ Die Studierenden
 
 ## Übungen
 
-Versuchen Sie die Aufgaben im [Alloy Übungsblatt](../exercises/alloy-static) zu lösen. 
+Versuchen Sie die Aufgaben im [Alloy Übungsblatt](../exercises/alloy) zu lösen. 
 
 - Das Übungsblatt muss nicht abgegeben werden. 
 - Wir werden die Übungen in der letzten Übungsstunde am 17. Dezember besprechen.
