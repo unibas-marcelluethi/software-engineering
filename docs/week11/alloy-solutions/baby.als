@@ -14,6 +14,11 @@ pred my_baby[b: Person] {
   (all p: Person | b in p.loves) and b.loves = Me
 }
 
+// what she might have meant
+pred my_baby2[b : Person] {
+  (all p: Person - b | b in p.loves)  and b.loves = Me
+}
+
 assert song {
   all p: Person| my_baby[p] implies Me = p
 }

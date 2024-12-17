@@ -47,7 +47,7 @@ Versuchen Sie die Aufgaben im [Alloy Übungsblatt](../exercises/alloy) zu lösen
 ### Lösungen zu den Übungen
 
 - [Students](./alloy-solutions/students.als)
-- [Barber paradox](https://alloytools.org/tutorials/day-course/barber.als)
+- [Barber paradox](./alloy-solutions/barber.als)
 - [Doris Day (My own baby)](./alloy-solutions/baby.als)
 - [Traffic lights](./alloy-solutions/traffic.als)
 
