@@ -10,7 +10,7 @@ title : Woche 14
 # Folien, Videos und Artikel
 
 Die Slides werden vor der Vorlesung hier veröffentlicht.
-* <!-- Slides (auf Adam) -->
+* [Slides](https://adam.unibas.ch/goto_adam_file_1951808_download.html)
 
 ### Weitere Ressourcen  
 

@@ -67,7 +67,7 @@ Einen Überblick über die einzelnen Projektschritte finden Sie auf der [Projekt
 | [Woche 11](./week11)    |Modellieren mit Alloy II  | Implementation eigene Erweiterung|
 | [Woche 12](./week12)|    Projektpräsentationen | Projektpräsentationen   |
 | [Woche 13](./week13) | Gastvortrag Agile Softwareentwicklung |Gastvortrag Agile Softwareentwicklung|
-| [Woche 14](./underconstruction) | Zusammenfassung | Besprechung der Alloy Übungen |
+| [Woche 14](./week14) | Zusammenfassung | Besprechung der Alloy Übungen |
 
 
 ## Literatur / Weiterführende Links
