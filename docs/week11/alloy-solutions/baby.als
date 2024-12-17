@@ -9,7 +9,6 @@ sig Person {
 
 one sig Me extends Person {}
 
-one sig MyBaby in Person {}
 
 pred my_baby[b: Person] {
   (all p: Person | b in p.loves) and b.loves = Me
