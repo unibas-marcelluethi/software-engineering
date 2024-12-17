@@ -43,6 +43,15 @@ Versuchen Sie die Aufgaben im [Alloy Übungsblatt](../exercises/alloy) zu lösen
 - Wir werden die Übungen in der letzten Übungsstunde am 17. Dezember besprechen.
 - Das bearbeiten der Übungen ist freiwillig. Alloy wird aber ein Teil der Prüfung sein.
 
+
+### Lösungen zu den Übungen
+
+- [Students](./alloy-solutions/students.als)
+- [Barber paradox](https://alloytools.org/tutorials/day-course/barber.als)
+- [Doris Day (My own baby)](./alloy-solutions/baby.als)
+- [Traffic lights](./alloy-solutions/traffic.als)
+
+
 ## Übungsstunde:
 
 Im Praktischen Teil der Vorlesung werden Sie weiter an Ihrem Projekt arbeiten und die Präsentation vorbereiten.	

@@ -7,10 +7,13 @@ title : Woche 14
 
 *In dieser Woche werden wir uns nochmals die ganze Vorlesung im Zusammenhang anschauen. Wir werden auch besprechen, was in der Prüfung wichtig sein wird.*
 
-# Folien, Videos und Artikel
+# Slides
 
-Die Slides werden vor der Vorlesung hier veröffentlicht.
 * [Slides](https://adam.unibas.ch/goto_adam_file_1951808_download.html)
+
+# Übungen
+
+Die Lösung zu den Alloy Übungen finden Sie in [Woche 11](../week11) verlinkt.
 
 ### Weitere Ressourcen  
 
