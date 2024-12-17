@@ -9,3 +9,6 @@ title : Woche 13
 
 In dieser Woche werden wir verschiedene Vorträge aus der Industrie hören, die die Themen Agile Softwareentwicklung
 und moderne Entwicklungswerkzeuge verbinden.
+
+
+* [Slides](./slides/agile.pdf)
